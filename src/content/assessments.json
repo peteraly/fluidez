@@ -1,0 +1,64 @@
+{
+  "week1": {
+    "title": "Week 1 Assessment",
+    "description": "Test your knowledge of basics, SER/ESTAR, and present tense",
+    "passingScore": 0.7,
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "How do you say 'I am a student'?",
+        "options": ["Estoy estudiante", "Soy estudiante", "Tengo estudiante", "Hay estudiante"],
+        "correctAnswer": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "'Ella está cansada' means:",
+        "options": ["She is tired", "She is tall", "She is a student", "She is Spanish"],
+        "correctAnswer": 0
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Complete: Nosotros ___ en Madrid. (vivir)",
+        "options": ["vivo", "vives", "vive", "vivimos"],
+        "correctAnswer": 3
+      },
+      {
+        "type": "multiple_choice",
+        "question": "'Tengo hambre' means:",
+        "options": ["I have food", "I am hungry", "I am eating", "I want food"],
+        "correctAnswer": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Complete: Yo ___ español. (hablar)",
+        "options": ["hablas", "habla", "hablo", "hablan"],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "week2": {
+    "title": "Week 2 Assessment",
+    "description": "Test your knowledge of past tenses",
+    "passingScore": 0.7,
+    "questions": [
+      {
+        "type": "multiple_choice",
+        "question": "'Hablé' is which tense?",
+        "options": ["Present", "Preterite", "Imperfect", "Future"],
+        "correctAnswer": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Ayer yo ___ al cine. (ir)",
+        "options": ["voy", "fui", "iba", "iré"],
+        "correctAnswer": 1
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Cuando era niño, ___ en México. (vivir)",
+        "options": ["viví", "vivía", "vivo", "viviré"],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}
