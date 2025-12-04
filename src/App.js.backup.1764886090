@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import AIPractice from './AIPractice';
 
 const theme = {
   primary: '#2D5A27', primaryLight: '#4A7C43', success: '#228B22',
@@ -345,8 +344,6 @@ function App() {
   
   // Assessment state
   const [currentAssessment, setCurrentAssessment] = useState(null);
-  const [showAIPractice, setShowAIPractice] = useState(false);
-  const [aiPracticeDay, setAiPracticeDay] = useState(null);
   const [assessmentIdx, setAssessmentIdx] = useState(0);
   const [assessmentAnswers, setAssessmentAnswers] = useState([]);
   const [assessmentComplete, setAssessmentComplete] = useState(false);
@@ -584,19 +581,6 @@ function App() {
     );
   }
 
-  // AI PRACTICE
-
-
-  if (showAIPractice && aiPracticeDay) {
-
-
-    return <AIPractice dayData={aiPracticeDay} onBack={() => { setShowAIPractice(false); setAiPracticeDay(null); }} />;
-
-
-  }
-
-
-
   // DAY DETAIL
   if (screen === 'day') {
     const day = curriculum[currentDay];
@@ -637,17 +621,6 @@ function App() {
               </div>
             );
           })}
-
-          {/* AI Practice - Unlimited exercises */}
-          <div
-            onClick={() => { setAiPracticeDay(curriculum[currentDay]); setShowAIPractice(true); }}
-            style={{ ...s.card, cursor: 'pointer', marginBottom: 10, padding: 14, background: 'linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)', color: '#fff' }}
-          >
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ fontWeight: 500 }}>🤖 AI Practice</span>
-              <span style={{ opacity: 0.9 }}>Unlimited →</span>
-            </div>
-          </div>
         </div>
       </div>
     );
