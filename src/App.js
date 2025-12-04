@@ -1,764 +1,889 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 const theme = {
-  colors: {
-    primary: '#2D5A27',
-    primaryLight: '#4A7C43',
-    success: '#228B22',
-    warning: '#DAA520',
-    error: '#CD5C5C',
-    background: '#FAF9F6',
-    surface: '#FFFFFF',
-    text: '#2C2C2C',
-    textLight: '#666666',
-    border: '#E0E0E0',
-  },
+  primary: '#2D5A27', primaryLight: '#4A7C43', success: '#228B22',
+  warning: '#DAA520', error: '#CD5C5C', bg: '#FAFAFA', surface: '#FFF',
+  text: '#1A1A1A', textLight: '#666', border: '#E8E8E8'
 };
 
-const TOTAL_DAYS = 11;
+const TOTAL_DAYS = 30;
 
+// ============================================
+// 1000+ VOCABULARY DATABASE (Practice Anytime)
+// ============================================
+const VOCAB = {
+  greetings: { title: "Greetings", icon: "👋", words: [
+    ["hola","hello"],["buenos días","good morning"],["buenas tardes","good afternoon"],["buenas noches","good night"],["¿cómo estás?","how are you?"],["muy bien","very well"],["gracias","thank you"],["de nada","you're welcome"],["por favor","please"],["perdón","sorry"],["lo siento","I'm sorry"],["adiós","goodbye"],["hasta luego","see you later"],["hasta mañana","see you tomorrow"],["mucho gusto","nice to meet you"],["¿cómo te llamas?","what's your name?"],["me llamo...","my name is..."],["encantado","pleased to meet you"],["bienvenido","welcome"],["¿qué tal?","what's up?"],["más o menos","so-so"],["con permiso","excuse me"],["claro","of course"],["por supuesto","of course"],["¡salud!","cheers/bless you"]
+  ]},
+  numbers: { title: "Numbers", icon: "🔢", words: [
+    ["cero","0"],["uno","1"],["dos","2"],["tres","3"],["cuatro","4"],["cinco","5"],["seis","6"],["siete","7"],["ocho","8"],["nueve","9"],["diez","10"],["once","11"],["doce","12"],["trece","13"],["catorce","14"],["quince","15"],["dieciséis","16"],["diecisiete","17"],["dieciocho","18"],["diecinueve","19"],["veinte","20"],["veintiuno","21"],["treinta","30"],["cuarenta","40"],["cincuenta","50"],["sesenta","60"],["setenta","70"],["ochenta","80"],["noventa","90"],["cien","100"],["doscientos","200"],["quinientos","500"],["mil","1000"],["un millón","1 million"],["primero","first"],["segundo","second"],["tercero","third"],["cuarto","fourth"],["quinto","fifth"],["décimo","tenth"]
+  ]},
+  time: { title: "Time & Calendar", icon: "📅", words: [
+    ["el segundo","second"],["el minuto","minute"],["la hora","hour"],["el día","day"],["la semana","week"],["el mes","month"],["el año","year"],["hoy","today"],["ayer","yesterday"],["mañana","tomorrow"],["ahora","now"],["luego","later"],["siempre","always"],["nunca","never"],["a veces","sometimes"],["lunes","Monday"],["martes","Tuesday"],["miércoles","Wednesday"],["jueves","Thursday"],["viernes","Friday"],["sábado","Saturday"],["domingo","Sunday"],["enero","January"],["febrero","February"],["marzo","March"],["abril","April"],["mayo","May"],["junio","June"],["julio","July"],["agosto","August"],["septiembre","September"],["octubre","October"],["noviembre","November"],["diciembre","December"],["la primavera","spring"],["el verano","summer"],["el otoño","fall"],["el invierno","winter"]
+  ]},
+  family: { title: "Family", icon: "👨‍👩‍👧‍👦", words: [
+    ["la familia","family"],["la madre","mother"],["el padre","father"],["los padres","parents"],["la mamá","mom"],["el papá","dad"],["la hermana","sister"],["el hermano","brother"],["la hija","daughter"],["el hijo","son"],["los hijos","children"],["la abuela","grandmother"],["el abuelo","grandfather"],["la tía","aunt"],["el tío","uncle"],["la prima","cousin (f)"],["el primo","cousin (m)"],["la sobrina","niece"],["el sobrino","nephew"],["la esposa","wife"],["el esposo","husband"],["la novia","girlfriend"],["el novio","boyfriend"],["el bebé","baby"],["los parientes","relatives"]
+  ]},
+  food: { title: "Food & Drinks", icon: "🍽️", words: [
+    ["el agua","water"],["el café","coffee"],["el té","tea"],["la leche","milk"],["el jugo","juice"],["el vino","wine"],["la cerveza","beer"],["el pan","bread"],["el arroz","rice"],["la pasta","pasta"],["la carne","meat"],["el pollo","chicken"],["el pescado","fish"],["el huevo","egg"],["el queso","cheese"],["la fruta","fruit"],["la manzana","apple"],["la naranja","orange"],["el plátano","banana"],["la fresa","strawberry"],["la verdura","vegetable"],["la lechuga","lettuce"],["el tomate","tomato"],["la cebolla","onion"],["la zanahoria","carrot"],["la ensalada","salad"],["la sopa","soup"],["el postre","dessert"],["el helado","ice cream"],["el desayuno","breakfast"],["el almuerzo","lunch"],["la cena","dinner"],["delicioso","delicious"],["la sal","salt"],["el azúcar","sugar"]
+  ]},
+  body: { title: "Body Parts", icon: "🫀", words: [
+    ["la cabeza","head"],["el pelo","hair"],["la cara","face"],["los ojos","eyes"],["la nariz","nose"],["la boca","mouth"],["los dientes","teeth"],["las orejas","ears"],["el cuello","neck"],["el hombro","shoulder"],["el brazo","arm"],["la mano","hand"],["los dedos","fingers"],["el pecho","chest"],["la espalda","back"],["el estómago","stomach"],["la pierna","leg"],["la rodilla","knee"],["el pie","foot"],["el corazón","heart"],["los pulmones","lungs"],["el cerebro","brain"],["la piel","skin"],["los huesos","bones"]
+  ]},
+  clothing: { title: "Clothing", icon: "👕", words: [
+    ["la ropa","clothes"],["la camisa","shirt"],["la camiseta","t-shirt"],["los pantalones","pants"],["los jeans","jeans"],["la falda","skirt"],["el vestido","dress"],["la chaqueta","jacket"],["el abrigo","coat"],["el suéter","sweater"],["los zapatos","shoes"],["las botas","boots"],["los calcetines","socks"],["el sombrero","hat"],["el cinturón","belt"],["la corbata","tie"],["la bufanda","scarf"],["los guantes","gloves"],["el bolso","bag"],["el reloj","watch"],["los lentes","glasses"],["el anillo","ring"]
+  ]},
+  house: { title: "House & Home", icon: "🏠", words: [
+    ["la casa","house"],["el apartamento","apartment"],["la habitación","room"],["el dormitorio","bedroom"],["la cocina","kitchen"],["el baño","bathroom"],["la sala","living room"],["el comedor","dining room"],["el jardín","garden"],["la puerta","door"],["la ventana","window"],["el techo","roof"],["el piso","floor"],["la pared","wall"],["las escaleras","stairs"],["la cama","bed"],["la mesa","table"],["la silla","chair"],["el sofá","sofa"],["el escritorio","desk"],["la lámpara","lamp"],["el espejo","mirror"],["el refrigerador","refrigerator"],["la estufa","stove"],["la ducha","shower"]
+  ]},
+  weather: { title: "Weather", icon: "🌤️", words: [
+    ["el tiempo","weather"],["el sol","sun"],["la lluvia","rain"],["la nieve","snow"],["el viento","wind"],["la nube","cloud"],["la tormenta","storm"],["hace calor","it's hot"],["hace frío","it's cold"],["hace sol","it's sunny"],["hace viento","it's windy"],["está lloviendo","it's raining"],["está nevando","it's snowing"],["la temperatura","temperature"],["húmedo","humid"],["seco","dry"]
+  ]},
+  professions: { title: "Professions", icon: "💼", words: [
+    ["el médico","doctor"],["la enfermera","nurse"],["el abogado","lawyer"],["el profesor","teacher"],["el ingeniero","engineer"],["el arquitecto","architect"],["el policía","police officer"],["el bombero","firefighter"],["el cocinero","cook"],["el mesero","waiter"],["el vendedor","salesperson"],["el periodista","journalist"],["el escritor","writer"],["el artista","artist"],["el músico","musician"],["el programador","programmer"],["el dentista","dentist"],["el piloto","pilot"],["el estudiante","student"],["el gerente","manager"]
+  ]},
+  animals: { title: "Animals", icon: "🐾", words: [
+    ["el perro","dog"],["el gato","cat"],["el pájaro","bird"],["el pez","fish"],["el caballo","horse"],["la vaca","cow"],["el cerdo","pig"],["la gallina","chicken"],["el conejo","rabbit"],["el ratón","mouse"],["el león","lion"],["el tigre","tiger"],["el elefante","elephant"],["el mono","monkey"],["el oso","bear"],["la serpiente","snake"],["la tortuga","turtle"],["la mariposa","butterfly"],["el tiburón","shark"],["el delfín","dolphin"]
+  ]},
+  transport: { title: "Transportation", icon: "🚗", words: [
+    ["el coche","car"],["el autobús","bus"],["el tren","train"],["el metro","subway"],["el avión","airplane"],["el barco","boat"],["la bicicleta","bicycle"],["la moto","motorcycle"],["el taxi","taxi"],["el camión","truck"],["la parada","stop"],["la estación","station"],["el aeropuerto","airport"],["el boleto","ticket"],["el pasaporte","passport"],["manejar","to drive"]
+  ]},
+  places: { title: "Places", icon: "📍", words: [
+    ["la ciudad","city"],["el pueblo","town"],["el país","country"],["la calle","street"],["el centro","downtown"],["el parque","park"],["el mercado","market"],["la tienda","store"],["el banco","bank"],["el hospital","hospital"],["la farmacia","pharmacy"],["la escuela","school"],["la universidad","university"],["la biblioteca","library"],["el museo","museum"],["el cine","movie theater"],["el restaurante","restaurant"],["el hotel","hotel"],["la playa","beach"],["la montaña","mountain"]
+  ]},
+  adjectives: { title: "Adjectives", icon: "📝", words: [
+    ["grande","big"],["pequeño","small"],["alto","tall"],["bajo","short"],["largo","long"],["corto","short"],["nuevo","new"],["viejo","old"],["joven","young"],["bonito","pretty"],["feo","ugly"],["bueno","good"],["malo","bad"],["fácil","easy"],["difícil","difficult"],["rápido","fast"],["lento","slow"],["caliente","hot"],["frío","cold"],["feliz","happy"],["triste","sad"],["cansado","tired"],["enfermo","sick"],["limpio","clean"],["sucio","dirty"],["lleno","full"],["vacío","empty"],["abierto","open"],["cerrado","closed"],["importante","important"]
+  ]},
+  verbs: { title: "Common Verbs", icon: "🏃", words: [
+    ["ser","to be (permanent)"],["estar","to be (temporary)"],["tener","to have"],["hacer","to do/make"],["ir","to go"],["venir","to come"],["poder","can"],["querer","to want"],["saber","to know (facts)"],["conocer","to know (people)"],["decir","to say"],["hablar","to speak"],["comer","to eat"],["beber","to drink"],["vivir","to live"],["trabajar","to work"],["estudiar","to study"],["aprender","to learn"],["escribir","to write"],["leer","to read"],["escuchar","to listen"],["ver","to see"],["mirar","to watch"],["dormir","to sleep"],["caminar","to walk"],["correr","to run"],["jugar","to play"],["comprar","to buy"],["vender","to sell"],["abrir","to open"],["cerrar","to close"],["empezar","to start"],["terminar","to finish"],["llegar","to arrive"],["salir","to leave"],["buscar","to look for"],["encontrar","to find"],["dar","to give"],["pensar","to think"],["gustar","to like"]
+  ]},
+  phrases: { title: "Essential Phrases", icon: "💬", words: [
+    ["¿cómo se dice...?","how do you say...?"],["¿qué significa...?","what does...mean?"],["no entiendo","I don't understand"],["¿puede repetir?","can you repeat?"],["más despacio","slower"],["¿cuánto cuesta?","how much?"],["la cuenta, por favor","the check, please"],["¿dónde está...?","where is...?"],["a la derecha","to the right"],["a la izquierda","to the left"],["todo recto","straight ahead"],["tengo hambre","I'm hungry"],["tengo sed","I'm thirsty"],["tengo frío","I'm cold"],["tengo calor","I'm hot"],["tengo sueño","I'm sleepy"],["me gusta","I like"],["no me gusta","I don't like"],["me encanta","I love it"],["¡qué bien!","how nice!"],["¡qué lástima!","what a pity!"],["estoy de acuerdo","I agree"],["no importa","it doesn't matter"],["depende","it depends"],["te quiero","I love you"]
+  ]}
+};
+
+// ============================================
+// 30-DAY CURRICULUM
+// ============================================
 const curriculum = {
-  1: {
-    title: "Spanish Sounds & The Alphabet",
-    subtitle: "Foundation of pronunciation",
-    grammar: {
-      title: "Pronunciation Fundamentals",
-      screens: [
-        { type: 'lesson', heading: "Welcome to Spanish!", content: "Spanish is a phonetic language—once you learn the sounds, you can pronounce any word correctly just by reading it.", tip: "Spanish has only 5 vowel sounds (English has 14+)!" },
-        { type: 'lesson', heading: "The 5 Spanish Vowels", content: "Each vowel has ONE sound, always:", examples: [
-          { spanish: "A = 'ah'", pronunciation: "like 'father'", word: "casa", meaning: "house" },
-          { spanish: "E = 'eh'", pronunciation: "like 'pet'", word: "este", meaning: "this" },
-          { spanish: "I = 'ee'", pronunciation: "like 'feet'", word: "sí", meaning: "yes" },
-          { spanish: "O = 'oh'", pronunciation: "like 'hope'", word: "hola", meaning: "hello" },
-          { spanish: "U = 'oo'", pronunciation: "like 'food'", word: "uno", meaning: "one" },
-        ]},
-        { type: 'lesson', heading: "Key Consonants", content: "These sound different from English:", examples: [
-          { spanish: "H", pronunciation: "Always SILENT", word: "hola = 'oh-la'", meaning: "hello" },
-          { spanish: "J", pronunciation: "Like English 'h'", word: "Juan", meaning: "John" },
-          { spanish: "LL", pronunciation: "Like 'y'", word: "llamar", meaning: "to call" },
-          { spanish: "Ñ", pronunciation: "Like 'ny'", word: "mañana", meaning: "tomorrow" },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "How is 'H' pronounced in Spanish?", options: ["Like English 'h'", "It's silent", "Like 'ch'"], correctAnswer: 1, explanation: "H is always silent in Spanish." },
-      ]
-    },
-    vocabulary: {
-      title: "Essential First Words",
-      screens: [
-        { type: 'vocab', category: "Greetings", words: [
-          { spanish: "¡Hola!", english: "Hello!", example: "¡Hola! ¿Cómo estás?" },
-          { spanish: "Buenos días", english: "Good morning", example: "Buenos días, señor." },
-          { spanish: "Buenas tardes", english: "Good afternoon", example: "Buenas tardes." },
-          { spanish: "Buenas noches", english: "Good evening", example: "Buenas noches." },
-        ]},
-        { type: 'vocab', category: "Courtesy", words: [
-          { spanish: "Gracias", english: "Thank you", example: "Muchas gracias." },
-          { spanish: "De nada", english: "You're welcome", example: "De nada." },
-          { spanish: "Por favor", english: "Please", example: "Un café, por favor." },
-          { spanish: "Adiós", english: "Goodbye", example: "Adiós, hasta luego." },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "How do you say 'Good morning'?", options: ["Buenas noches", "Buenos días", "Hola"], correctAnswer: 1, explanation: "'Buenos días' = Good morning" },
-      ]
-    },
-    listening: {
-      title: "Listening Practice",
-      screens: [
-        { type: 'listening', instruction: "🔊 Listen and select:", transcript: "Buenos días", options: ["Buenas noches", "Buenos días", "Buenas tardes"], correctAnswer: 1 },
-      ]
-    },
-    reading: {
-      title: "Reading: First Conversation",
-      screens: [
-        { type: 'reading', title: "En el café", passage: "—¡Hola! Buenos días.\n—Buenos días. ¿Cómo estás?\n—Muy bien, gracias.\n—Un café, por favor.\n—Aquí tiene.\n—Gracias.\n—De nada.", translation: "—Hello! Good morning.\n—Good morning. How are you?\n—Very well, thanks.\n—A coffee, please.\n—Here you go.\n—Thanks.\n—You're welcome.", wordCount: 25 },
-      ]
-    }
-  },
-  2: {
-    title: "Introducing Yourself",
-    subtitle: "Subject pronouns & SER",
-    grammar: {
-      title: "Subject Pronouns & SER",
-      screens: [
-        { type: 'lesson', heading: "Subject Pronouns", content: "Subject pronouns tell us WHO does the action:", examples: [
-          { spanish: "yo", pronunciation: "I", word: "Yo soy María.", meaning: "I am María." },
-          { spanish: "tú", pronunciation: "you (informal)", word: "Tú eres mi amigo.", meaning: "You are my friend." },
-          { spanish: "él/ella", pronunciation: "he/she", word: "Él es alto.", meaning: "He is tall." },
-          { spanish: "nosotros", pronunciation: "we", word: "Nosotros somos estudiantes.", meaning: "We are students." },
-          { spanish: "ellos", pronunciation: "they", word: "Ellos son amigos.", meaning: "They are friends." },
-        ]},
-        { type: 'lesson', heading: "SER Conjugation", content: "SER = to be (permanent):", examples: [
-          { spanish: "yo soy", pronunciation: "I am", word: "Soy americano.", meaning: "I am American." },
-          { spanish: "tú eres", pronunciation: "you are", word: "Eres inteligente.", meaning: "You are intelligent." },
-          { spanish: "él/ella es", pronunciation: "he/she is", word: "Es alta.", meaning: "She is tall." },
-          { spanish: "nosotros somos", pronunciation: "we are", word: "Somos amigos.", meaning: "We are friends." },
-          { spanish: "ellos son", pronunciation: "they are", word: "Son estudiantes.", meaning: "They are students." },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "Yo ___ estudiante.", options: ["soy", "eres", "es", "somos"], correctAnswer: 0, explanation: "Yo soy = I am" },
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "Ella ___ doctora.", options: ["soy", "eres", "es", "son"], correctAnswer: 2, explanation: "Ella es = She is" },
-      ]
-    },
-    vocabulary: {
-      title: "Personal Information",
-      screens: [
-        { type: 'vocab', category: "Introductions", words: [
-          { spanish: "¿Cómo te llamas?", english: "What's your name?", example: "¡Hola! ¿Cómo te llamas?" },
-          { spanish: "Me llamo...", english: "My name is...", example: "Me llamo Juan." },
-          { spanish: "Mucho gusto", english: "Nice to meet you", example: "Mucho gusto." },
-          { spanish: "¿De dónde eres?", english: "Where are you from?", example: "Soy de México." },
-        ]},
-      ]
-    },
-    listening: {
-      title: "Listening Practice",
-      screens: [
-        { type: 'listening', instruction: "🔊 Listen:", transcript: "Me llamo Carlos", options: ["My friend is Carlos", "My name is Carlos", "I call Carlos"], correctAnswer: 1 },
-      ]
-    },
-    reading: {
-      title: "Reading: Meeting Someone",
-      screens: [
-        { type: 'reading', title: "Nueva estudiante", passage: "Hoy hay una estudiante nueva. Se llama Ana y es de Colombia. Es muy simpática.", translation: "Today there is a new student. Her name is Ana and she is from Colombia. She is very nice.", wordCount: 20 },
-      ]
-    }
-  },
-  3: {
-    title: "Being & Describing",
-    subtitle: "SER vs ESTAR",
-    grammar: {
-      title: "SER vs ESTAR",
-      screens: [
-        { type: 'lesson', heading: "Two Verbs for 'To Be'", content: "SER = permanent. ESTAR = temporary/location.", tip: "This is the most important distinction in Spanish!" },
-        { type: 'lesson', heading: "ESTAR Conjugation", content: "ESTAR = to be (temporary):", examples: [
-          { spanish: "yo estoy", pronunciation: "I am", word: "Estoy cansado.", meaning: "I am tired." },
-          { spanish: "tú estás", pronunciation: "you are", word: "¿Estás bien?", meaning: "Are you okay?" },
-          { spanish: "él/ella está", pronunciation: "he/she is", word: "Está en casa.", meaning: "He is at home." },
-          { spanish: "nosotros estamos", pronunciation: "we are", word: "Estamos contentos.", meaning: "We are happy." },
-          { spanish: "ellos están", pronunciation: "they are", word: "Están aquí.", meaning: "They are here." },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "María ___ en la oficina. (location)", options: ["es", "está"], correctAnswer: 1, explanation: "Use ESTAR for location." },
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "Ella ___ doctora. (profession)", options: ["es", "está"], correctAnswer: 0, explanation: "Use SER for profession." },
-      ]
-    },
-    vocabulary: {
-      title: "Descriptions",
-      screens: [
-        { type: 'vocab', category: "Physical (SER)", words: [
-          { spanish: "alto/a", english: "tall", example: "Mi padre es alto." },
-          { spanish: "bajo/a", english: "short", example: "Mi madre es baja." },
-          { spanish: "grande", english: "big", example: "La casa es grande." },
-        ]},
-        { type: 'vocab', category: "Emotions (ESTAR)", words: [
-          { spanish: "contento/a", english: "happy", example: "Estoy contento." },
-          { spanish: "triste", english: "sad", example: "Está triste." },
-          { spanish: "cansado/a", english: "tired", example: "Estoy cansado." },
-        ]},
-      ]
-    },
-    listening: {
-      title: "Listening Practice",
-      screens: [
-        { type: 'listening', instruction: "🔊 Listen:", transcript: "Estoy muy cansado", options: ["I'm happy", "I'm tired", "I'm tall"], correctAnswer: 1 },
-      ]
-    },
-    reading: {
-      title: "Reading: Descriptions",
-      screens: [
-        { type: 'reading', title: "Mi familia", passage: "Mi padre es alto. Mi madre es baja. Hoy estoy cansado pero estoy feliz.", translation: "My father is tall. My mother is short. Today I am tired but I am happy.", wordCount: 20 },
-      ]
-    }
-  },
-  4: {
-    title: "Present Tense Regular Verbs",
-    subtitle: "-AR, -ER, -IR conjugations",
-    grammar: {
-      title: "Regular Verb Conjugation",
-      screens: [
-        { type: 'lesson', heading: "The Three Verb Families", content: "Spanish verbs end in -AR, -ER, or -IR.", tip: "Learn these patterns—they apply to hundreds of verbs!" },
-        { type: 'lesson', heading: "-AR Verbs: HABLAR", content: "Remove -AR and add:", examples: [
-          { spanish: "yo hablo", pronunciation: "I speak", word: "Hablo español.", meaning: "I speak Spanish." },
-          { spanish: "tú hablas", pronunciation: "you speak", word: "¿Hablas inglés?", meaning: "Do you speak English?" },
-          { spanish: "él habla", pronunciation: "he speaks", word: "Habla rápido.", meaning: "He speaks fast." },
-          { spanish: "nosotros hablamos", pronunciation: "we speak", word: "Hablamos español.", meaning: "We speak Spanish." },
-          { spanish: "ellos hablan", pronunciation: "they speak", word: "Hablan mucho.", meaning: "They speak a lot." },
-        ]},
-        { type: 'lesson', heading: "-ER/-IR Verbs", content: "Similar pattern:", examples: [
-          { spanish: "comer: como, comes, come, comemos, comen", pronunciation: "to eat", word: "Como a las doce.", meaning: "I eat at twelve." },
-          { spanish: "vivir: vivo, vives, vive, vivimos, viven", pronunciation: "to live", word: "Vivo en Madrid.", meaning: "I live in Madrid." },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "Yo ___ español. (hablar)", options: ["hablo", "hablas", "habla"], correctAnswer: 0, explanation: "Yo hablo = I speak" },
-      ]
-    },
-    vocabulary: {
-      title: "Daily Activities",
-      screens: [
-        { type: 'vocab', category: "Common Verbs", words: [
-          { spanish: "trabajar", english: "to work", example: "Trabajo mucho." },
-          { spanish: "estudiar", english: "to study", example: "Estudio español." },
-          { spanish: "comer", english: "to eat", example: "Como a la una." },
-          { spanish: "vivir", english: "to live", example: "Vivo en Madrid." },
-        ]},
-      ]
-    },
-    listening: {
-      title: "Listening Practice",
-      screens: [
-        { type: 'listening', instruction: "🔊 What does the person do?", transcript: "Trabajo en una oficina", options: ["Studies", "Works in an office", "Lives"], correctAnswer: 1 },
-      ]
-    },
-    reading: {
-      title: "Reading: Daily Routine",
-      screens: [
-        { type: 'reading', title: "Un día típico", passage: "Me llamo Roberto. Trabajo en una oficina. Como a la una. Vivo en Madrid.", translation: "My name is Roberto. I work in an office. I eat at one. I live in Madrid.", wordCount: 20 },
-      ]
-    }
-  },
-  5: {
-    title: "Essential Irregular Verbs",
-    subtitle: "IR, TENER, HACER",
-    grammar: {
-      title: "Key Irregular Verbs",
-      screens: [
-        { type: 'lesson', heading: "IR (to go)", content: "Completely irregular:", examples: [
-          { spanish: "yo voy", pronunciation: "I go", word: "Voy al trabajo.", meaning: "I go to work." },
-          { spanish: "tú vas", pronunciation: "you go", word: "¿Adónde vas?", meaning: "Where are you going?" },
-          { spanish: "él va", pronunciation: "he goes", word: "Va al cine.", meaning: "He goes to the movies." },
-          { spanish: "nosotros vamos", pronunciation: "we go", word: "Vamos a la playa.", meaning: "We go to the beach." },
-          { spanish: "ellos van", pronunciation: "they go", word: "Van de vacaciones.", meaning: "They go on vacation." },
-        ]},
-        { type: 'lesson', heading: "TENER (to have)", content: "Irregular yo + stem change:", examples: [
-          { spanish: "yo tengo", pronunciation: "I have", word: "Tengo dos hermanos.", meaning: "I have two siblings." },
-          { spanish: "tú tienes", pronunciation: "you have", word: "¿Tienes hambre?", meaning: "Are you hungry?" },
-          { spanish: "él tiene", pronunciation: "he has", word: "Tiene mucho trabajo.", meaning: "He has a lot of work." },
-        ]},
-        { type: 'lesson', heading: "TENER Expressions", content: "Used where English uses 'to be':", examples: [
-          { spanish: "tener hambre", pronunciation: "to be hungry", word: "Tengo hambre.", meaning: "I am hungry." },
-          { spanish: "tener sed", pronunciation: "to be thirsty", word: "Tengo sed.", meaning: "I am thirsty." },
-          { spanish: "tener...años", pronunciation: "to be...years old", word: "Tengo 25 años.", meaning: "I am 25." },
-          { spanish: "tener que", pronunciation: "to have to", word: "Tengo que estudiar.", meaning: "I have to study." },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "'I am hungry' is:", options: ["Estoy hambre", "Soy hambre", "Tengo hambre"], correctAnswer: 2, explanation: "Tengo hambre (use TENER)" },
-      ]
-    },
-    vocabulary: {
-      title: "Places",
-      screens: [
-        { type: 'vocab', category: "Common Places", words: [
-          { spanish: "la casa", english: "house/home", example: "Voy a casa." },
-          { spanish: "el trabajo", english: "work", example: "Voy al trabajo." },
-          { spanish: "el supermercado", english: "supermarket", example: "Voy al supermercado." },
-          { spanish: "el cine", english: "movie theater", example: "Vamos al cine." },
-        ]},
-      ]
-    },
-    listening: {
-      title: "Listening Practice",
-      screens: [
-        { type: 'listening', instruction: "🔊 Where?", transcript: "Voy al supermercado", options: ["Bank", "Supermarket", "Restaurant"], correctAnswer: 1 },
-      ]
-    },
-    reading: {
-      title: "Reading: Weekend Plans",
-      screens: [
-        { type: 'reading', title: "El fin de semana", passage: "El sábado voy al gimnasio. Tengo que ir al supermercado. Quiero ir al cine con mis amigos.", translation: "On Saturday I go to the gym. I have to go to the supermarket. I want to go to the movies with my friends.", wordCount: 25 },
-      ]
-    }
-  },
-  6: {
-    title: "Questions & Negation",
-    subtitle: "Forming questions and saying no",
-    grammar: {
-      title: "Question Formation",
-      screens: [
-        { type: 'lesson', heading: "Question Words", content: "All have accents:", examples: [
-          { spanish: "¿Qué?", pronunciation: "What?", word: "¿Qué quieres?", meaning: "What do you want?" },
-          { spanish: "¿Quién?", pronunciation: "Who?", word: "¿Quién es?", meaning: "Who is it?" },
-          { spanish: "¿Dónde?", pronunciation: "Where?", word: "¿Dónde vives?", meaning: "Where do you live?" },
-          { spanish: "¿Cuándo?", pronunciation: "When?", word: "¿Cuándo llegas?", meaning: "When do you arrive?" },
-          { spanish: "¿Por qué?", pronunciation: "Why?", word: "¿Por qué?", meaning: "Why?" },
-          { spanish: "¿Cómo?", pronunciation: "How?", word: "¿Cómo estás?", meaning: "How are you?" },
-        ]},
-        { type: 'lesson', heading: "Negation", content: "Put 'no' before the verb:", examples: [
-          { spanish: "No hablo francés.", pronunciation: "I don't speak French", word: "", meaning: "" },
-          { spanish: "No tengo tiempo.", pronunciation: "I don't have time", word: "", meaning: "" },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "'Where do you live?'", options: ["¿Qué vives?", "¿Dónde vives?", "¿Cómo vives?"], correctAnswer: 1, explanation: "¿Dónde? = Where?" },
-      ]
-    },
-    vocabulary: {
-      title: "Conversation",
-      screens: [
-        { type: 'vocab', category: "Opinions", words: [
-          { spanish: "me gusta", english: "I like", example: "Me gusta el chocolate." },
-          { spanish: "no me gusta", english: "I don't like", example: "No me gusta el café." },
-          { spanish: "me encanta", english: "I love", example: "Me encanta la música." },
-        ]},
-      ]
-    },
-    listening: {
-      title: "Listening Practice",
-      screens: [
-        { type: 'listening', instruction: "🔊 What is asked?", transcript: "¿Dónde está el banco?", options: ["What is the bank?", "Where is the bank?", "When?"], correctAnswer: 1 },
-      ]
-    },
-    reading: {
-      title: "Reading: Conversation",
-      screens: [
-        { type: 'reading', title: "En la calle", passage: "—¿Dónde está el banco?\n—No sé. No soy de aquí.\n—Gracias.", translation: "—Where is the bank?\n—I don't know. I'm not from here.\n—Thanks.", wordCount: 15 },
-      ]
-    }
-  },
-  7: {
-    title: "Week 1 Review",
-    subtitle: "Consolidating your foundation",
-    grammar: {
-      title: "Comprehensive Review",
-      screens: [
-        { type: 'lesson', heading: "Week 1 Summary", content: "You've learned essential Spanish!", examples: [
-          { spanish: "Day 1-2", pronunciation: "SER + pronouns", word: "Soy estudiante.", meaning: "I am a student." },
-          { spanish: "Day 3", pronunciation: "SER vs ESTAR", word: "Estoy cansado.", meaning: "I am tired." },
-          { spanish: "Day 4-5", pronunciation: "Verbs", word: "Voy al trabajo.", meaning: "I go to work." },
-          { spanish: "Day 6", pronunciation: "Questions", word: "¿Dónde vives?", meaning: "Where do you live?" },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "Ella ___ de México. (origin)", options: ["es", "está"], correctAnswer: 0, explanation: "Origin uses SER" },
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "Él ___ en la oficina. (location)", options: ["es", "está"], correctAnswer: 1, explanation: "Location uses ESTAR" },
-      ]
-    },
-    vocabulary: {
-      title: "Review Vocabulary",
-      screens: [
-        { type: 'vocab', category: "Essential Verbs", words: [
-          { spanish: "ser", english: "to be (permanent)", example: "Soy estudiante." },
-          { spanish: "estar", english: "to be (temporary)", example: "Estoy bien." },
-          { spanish: "ir", english: "to go", example: "Voy a casa." },
-          { spanish: "tener", english: "to have", example: "Tengo hambre." },
-        ]},
-      ]
-    },
-    listening: {
-      title: "Listening Review",
-      screens: [
-        { type: 'listening', instruction: "🔊 Listen:", transcript: "Soy de Colombia y vivo en Madrid", options: ["From Madrid, lives in Colombia", "From Colombia, lives in Madrid"], correctAnswer: 1 },
-      ]
-    },
-    reading: {
-      title: "Reading: Introduction",
-      screens: [
-        { type: 'reading', title: "Mi presentación", passage: "Me llamo Carlos. Soy de Argentina pero vivo en Madrid. Tengo treinta años. Soy ingeniero.", translation: "My name is Carlos. I'm from Argentina but I live in Madrid. I'm thirty years old. I'm an engineer.", wordCount: 22 },
-      ]
-    }
-  },
-  8: {
-    title: "Preterite Tense: -AR Verbs",
-    subtitle: "Completed past actions",
-    grammar: {
-      title: "Preterite -AR",
-      screens: [
-        { type: 'lesson', heading: "The Preterite", content: "For completed past actions.", tip: "English: 'I spoke', 'I ate'" },
-        { type: 'lesson', heading: "-AR Preterite Endings", content: "Remove -AR and add:", examples: [
-          { spanish: "yo hablé", pronunciation: "I spoke", word: "Hablé con María.", meaning: "I spoke with María." },
-          { spanish: "tú hablaste", pronunciation: "you spoke", word: "¿Hablaste con él?", meaning: "Did you speak with him?" },
-          { spanish: "él habló", pronunciation: "he spoke", word: "Habló muy bien.", meaning: "He spoke very well." },
-          { spanish: "nosotros hablamos", pronunciation: "we spoke", word: "Hablamos ayer.", meaning: "We spoke yesterday." },
-          { spanish: "ellos hablaron", pronunciation: "they spoke", word: "Hablaron mucho.", meaning: "They spoke a lot." },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "Yo ___ con María ayer. (hablar)", options: ["hablo", "hablé", "habló"], correctAnswer: 1, explanation: "Yo hablé = I spoke" },
-      ]
-    },
-    vocabulary: {
-      title: "Time Expressions",
-      screens: [
-        { type: 'vocab', category: "Past Time", words: [
-          { spanish: "ayer", english: "yesterday", example: "Ayer trabajé." },
-          { spanish: "anoche", english: "last night", example: "Anoche cené tarde." },
-          { spanish: "la semana pasada", english: "last week", example: "La semana pasada estudié." },
-        ]},
-      ]
-    },
-    listening: {
-      title: "Listening Practice",
-      screens: [
-        { type: 'listening', instruction: "🔊 When?", transcript: "Ayer trabajé mucho", options: ["Today", "Yesterday", "Tomorrow"], correctAnswer: 1 },
-      ]
-    },
-    reading: {
-      title: "Reading: Yesterday",
-      screens: [
-        { type: 'reading', title: "Mi día ayer", passage: "Ayer trabajé mucho. Llegué a casa a las ocho. Cené y llamé a mi madre.", translation: "Yesterday I worked a lot. I arrived home at eight. I had dinner and called my mother.", wordCount: 20 },
-      ]
-    }
-  },
-  9: {
-    title: "Preterite: -ER/-IR & Irregulars",
-    subtitle: "More past tense patterns",
-    grammar: {
-      title: "Preterite -ER/-IR & Irregulars",
-      screens: [
-        { type: 'lesson', heading: "-ER/-IR Preterite", content: "Same endings for both:", examples: [
-          { spanish: "yo comí / viví", pronunciation: "I ate / lived", word: "Comí pizza.", meaning: "I ate pizza." },
-          { spanish: "tú comiste", pronunciation: "you ate", word: "¿Comiste bien?", meaning: "Did you eat well?" },
-          { spanish: "él comió", pronunciation: "he ate", word: "Comió mucho.", meaning: "He ate a lot." },
-        ]},
-        { type: 'lesson', heading: "IR & SER (Same!)", content: "Identical in preterite:", examples: [
-          { spanish: "fui", pronunciation: "I went / was", word: "Fui al cine.", meaning: "I went to movies." },
-          { spanish: "fue", pronunciation: "he went / was", word: "Fue increíble.", meaning: "It was incredible." },
-          { spanish: "fuimos", pronunciation: "we went / were", word: "Fuimos a España.", meaning: "We went to Spain." },
-        ]},
-        { type: 'lesson', heading: "HACER", content: "Key irregular:", examples: [
-          { spanish: "hice", pronunciation: "I did", word: "Hice la tarea.", meaning: "I did homework." },
-          { spanish: "hizo", pronunciation: "he did", word: "Hizo ejercicio.", meaning: "He exercised." },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "Yo ___ a la fiesta. (ir)", options: ["fui", "fue", "fueron"], correctAnswer: 0, explanation: "Yo fui = I went" },
-      ]
-    },
-    vocabulary: {
-      title: "Travel",
-      screens: [
-        { type: 'vocab', category: "Travel Verbs", words: [
-          { spanish: "viajar", english: "to travel", example: "Viajé a México." },
-          { spanish: "llegar", english: "to arrive", example: "Llegué tarde." },
-          { spanish: "visitar", english: "to visit", example: "Visité el museo." },
-        ]},
-      ]
-    },
-    listening: {
-      title: "Listening Practice",
-      screens: [
-        { type: 'listening', instruction: "🔊 Where?", transcript: "Fui a Barcelona", options: ["Madrid", "Barcelona", "Seville"], correctAnswer: 1 },
-      ]
-    },
-    reading: {
-      title: "Reading: A Trip",
-      screens: [
-        { type: 'reading', title: "Mi viaje", passage: "El año pasado fui a Barcelona. Visité la Sagrada Familia. ¡Fue increíble!", translation: "Last year I went to Barcelona. I visited the Sagrada Familia. It was incredible!", wordCount: 18 },
-      ]
-    }
-  },
-  10: {
-    title: "The Imperfect Tense",
-    subtitle: "Habitual past actions",
-    grammar: {
-      title: "Imperfect Tense",
-      screens: [
-        { type: 'lesson', heading: "Imperfect vs Preterite", content: "IMPERFECT = ongoing, habitual past.", tip: "Think: 'used to', 'was doing'" },
-        { type: 'lesson', heading: "-AR Imperfect", content: "Remove -AR and add:", examples: [
-          { spanish: "yo hablaba", pronunciation: "I used to speak", word: "Hablaba español.", meaning: "I used to speak Spanish." },
-          { spanish: "tú hablabas", pronunciation: "you used to speak", word: "Hablabas mucho.", meaning: "You used to talk a lot." },
-          { spanish: "él hablaba", pronunciation: "he used to speak", word: "Hablaba rápido.", meaning: "He used to speak fast." },
-        ]},
-        { type: 'lesson', heading: "Only 3 Irregulars!", content: "SER, IR, VER:", examples: [
-          { spanish: "era", pronunciation: "I was (ser)", word: "Era estudiante.", meaning: "I was a student." },
-          { spanish: "iba", pronunciation: "I used to go", word: "Iba al cine.", meaning: "I used to go to movies." },
-          { spanish: "veía", pronunciation: "I used to see", word: "Veía televisión.", meaning: "I used to watch TV." },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "Cuando era niño, ___ al parque. (ir)", options: ["fui", "iba", "voy"], correctAnswer: 1, explanation: "Habitual → imperfect: iba" },
-      ]
-    },
-    vocabulary: {
-      title: "Childhood",
-      screens: [
-        { type: 'vocab', category: "Childhood", words: [
-          { spanish: "cuando era niño", english: "when I was a child", example: "Cuando era niño, jugaba mucho." },
-          { spanish: "siempre", english: "always", example: "Siempre íbamos a la playa." },
-          { spanish: "todos los días", english: "every day", example: "Todos los días comía helado." },
-        ]},
-      ]
-    },
-    listening: {
-      title: "Listening Practice",
-      screens: [
-        { type: 'listening', instruction: "🔊 Habitual or single event?", transcript: "Cuando era joven, iba al gimnasio todos los días", options: ["Single event", "Habitual action"], correctAnswer: 1 },
-      ]
-    },
-    reading: {
-      title: "Reading: Childhood",
-      screens: [
-        { type: 'reading', title: "Mi infancia", passage: "Cuando era niño, vivía en un pueblo pequeño. Todos los días jugaba con mis hermanos. La vida era más simple.", translation: "When I was a child, I lived in a small town. Every day I played with my siblings. Life was simpler.", wordCount: 25 },
-      ]
-    }
-  },
-  11: {
-    title: "Preterite vs Imperfect",
-    subtitle: "Using both tenses together",
-    grammar: {
-      title: "Combining Tenses",
-      screens: [
-        { type: 'lesson', heading: "The Key Distinction", content: "Preterite = completed. Imperfect = ongoing/habitual.", tip: "Imperfect sets scene, preterite advances action." },
-        { type: 'lesson', heading: "Together in Stories", content: "Imperfect for background, preterite for action:", examples: [
-          { spanish: "Era de noche...", pronunciation: "Setting scene", word: "It was nighttime...", meaning: "(imperfect)" },
-          { spanish: "...cuando oí un ruido.", pronunciation: "Action", word: "...when I heard a noise.", meaning: "(preterite)" },
-          { spanish: "Estaba durmiendo...", pronunciation: "Ongoing", word: "I was sleeping...", meaning: "(imperfect)" },
-          { spanish: "...cuando sonó el teléfono.", pronunciation: "Interruption", word: "...when the phone rang.", meaning: "(preterite)" },
-        ]},
-        { type: 'lesson', heading: "Trigger Words", content: "Indicators for each tense:", examples: [
-          { spanish: "PRETERITE", pronunciation: "completed", word: "ayer, anoche, de repente", meaning: "yesterday, last night, suddenly" },
-          { spanish: "IMPERFECT", pronunciation: "ongoing", word: "siempre, todos los días, mientras", meaning: "always, every day, while" },
-        ]},
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "Mientras yo ___ (estudiar), mi hermano llegó.", options: ["estudié", "estudiaba"], correctAnswer: 1, explanation: "Ongoing action → imperfect" },
-        { type: 'exercise', exerciseType: 'multiple_choice', instruction: "Ayer ___ (ir) al cine.", options: ["iba", "fui"], correctAnswer: 1, explanation: "'Ayer' = completed → preterite" },
-      ]
-    },
-    vocabulary: {
-      title: "Story Connectors",
-      screens: [
-        { type: 'vocab', category: "Connectors", words: [
-          { spanish: "mientras", english: "while", example: "Mientras comía, leía." },
-          { spanish: "cuando", english: "when", example: "Cuando llegué, ya estaban." },
-          { spanish: "de repente", english: "suddenly", example: "De repente, oí un ruido." },
-          { spanish: "entonces", english: "then", example: "Entonces decidí salir." },
-        ]},
-      ]
-    },
-    listening: {
-      title: "Listening Practice",
-      screens: [
-        { type: 'listening', instruction: "🔊 What was happening?", transcript: "Mientras dormía, sonó el teléfono", options: ["Eating", "Sleeping", "Reading"], correctAnswer: 1 },
-      ]
-    },
-    reading: {
-      title: "Reading: A Story",
-      screens: [
-        { type: 'reading', title: "El accidente", passage: "Era un día normal. Hacía sol. Caminaba por el parque. De repente, oí un ruido fuerte. Miré y vi un accidente.", translation: "It was a normal day. It was sunny. I was walking through the park. Suddenly, I heard a loud noise. I looked and saw an accident.", wordCount: 30 },
-      ]
-    }
-  }
+  1: { title: "Spanish Sounds & Alphabet", subtitle: "Foundation of pronunciation", level: "A1",
+    grammar: { content: "Spanish has 5 pure vowel sounds: A (ah), E (eh), I (ee), O (oh), U (oo). H is always silent. Ñ = 'ny'. RR is trilled.", examples: ["casa (KAH-sah)", "hola (OH-lah)", "año (AH-nyo)"], tip: "Spanish is phonetic - learn sounds, read anything!" },
+    vocabulary: ["hola","adiós","gracias","por favor","sí","no","buenos días","buenas noches"],
+    exercise: { q: "How is 'H' pronounced?", opts: ["Like English H","Silent","Like CH"], a: 1 },
+    listening: "Buenos días, ¿cómo estás?",
+    reading: "Hola. Me llamo María. Soy de España. Mucho gusto." },
+  2: { title: "Introducing Yourself", subtitle: "Subject pronouns & SER", level: "A1",
+    grammar: { content: "Subject pronouns: yo, tú, él/ella, nosotros, ellos. SER (to be permanent): soy, eres, es, somos, son.", examples: ["Yo soy estudiante","Ella es doctora","Nosotros somos amigos"], tip: "SER = DOCTOR: Description, Origin, Characteristics, Time, Occupation, Relationship" },
+    vocabulary: ["yo","tú","él","ella","nosotros","ellos","soy","eres","es","somos","son"],
+    exercise: { q: "Yo ___ estudiante.", opts: ["soy","estoy","tengo"], a: 0 },
+    listening: "Me llamo Carlos. Soy de México. Soy ingeniero.",
+    reading: "Hola, me llamo Ana. Soy profesora. Soy de Colombia pero vivo en Madrid." },
+  3: { title: "Being & Describing", subtitle: "SER vs ESTAR", level: "A1",
+    grammar: { content: "ESTAR (temporary/location): estoy, estás, está, estamos, están. SER = permanent, ESTAR = temporary/location.", examples: ["Soy alto (permanent)","Estoy cansado (temporary)","Madrid está en España (location)"], tip: "ESTAR = PLACE: Position, Location, Action, Condition, Emotion" },
+    vocabulary: ["estoy","estás","está","cansado","feliz","triste","enfermo","bien","mal","aquí","allí"],
+    exercise: { q: "Ella ___ en casa.", opts: ["es","está"], a: 1 },
+    listening: "¿Cómo estás? Estoy muy bien, gracias.",
+    reading: "Mi hermano es alto. Hoy está cansado porque trabaja mucho. Está en su casa." },
+  4: { title: "Present Tense Regular Verbs", subtitle: "-AR, -ER, -IR conjugations", level: "A1",
+    grammar: { content: "-AR: hablo, hablas, habla, hablamos, hablan. -ER: como, comes, come, comemos, comen. -IR: vivo, vives, vive, vivimos, viven.", examples: ["Yo hablo español","Ella come pizza","Nosotros vivimos en Madrid"], tip: "Remove ending, add new ending based on subject!" },
+    vocabulary: ["hablar","comer","vivir","trabajar","estudiar","escribir","leer","beber","comprar","vender"],
+    exercise: { q: "Nosotros ___ español.", opts: ["hablo","hablas","hablamos"], a: 2 },
+    listening: "Trabajo en una oficina. Como a las dos. Vivo cerca del centro.",
+    reading: "María habla español e inglés. Trabaja en un banco. Come en casa con su familia." },
+  5: { title: "Essential Irregular Verbs", subtitle: "IR, TENER, HACER", level: "A1",
+    grammar: { content: "IR: voy, vas, va, vamos, van. TENER: tengo, tienes, tiene, tenemos, tienen. HACER: hago, haces, hace, hacemos, hacen.", examples: ["Voy al trabajo","Tengo dos hermanos","Hago la tarea"], tip: "TENER expressions: tengo hambre/sed/frío/calor/sueño/miedo" },
+    vocabulary: ["ir","voy","vas","va","tener","tengo","hacer","hago","hambre","sed","frío","calor","sueño"],
+    exercise: { q: "'I am hungry':", opts: ["Estoy hambre","Soy hambre","Tengo hambre"], a: 2 },
+    listening: "Voy al supermercado. Tengo que comprar leche y pan.",
+    reading: "Tengo mucha hambre. Voy a la cocina y hago un sándwich. Tengo sed también." },
+  6: { title: "Questions & Negation", subtitle: "Asking and saying no", level: "A1",
+    grammar: { content: "Question words: ¿Qué? ¿Quién? ¿Dónde? ¿Cuándo? ¿Por qué? ¿Cómo? ¿Cuánto? Negation: NO before verb.", examples: ["¿Dónde vives?","¿Cuántos años tienes?","No hablo francés"], tip: "All question words have accents!" },
+    vocabulary: ["qué","quién","dónde","cuándo","por qué","cómo","cuánto","cuál","no"],
+    exercise: { q: "'Where' in Spanish:", opts: ["Qué","Dónde","Cuándo"], a: 1 },
+    listening: "¿De dónde eres? Soy de Argentina. ¿Dónde vives? Vivo en Buenos Aires.",
+    reading: "¿Cómo te llamas? Me llamo Pedro. ¿Dónde trabajas? No trabajo, soy estudiante." },
+  7: { title: "Week 1 Review", subtitle: "Consolidating your foundation", level: "A1",
+    grammar: { content: "Review: SER (permanent) vs ESTAR (temporary/location). Regular -AR/-ER/-IR verbs. IR/TENER/HACER. TENER expressions.", examples: ["Soy de España pero estoy en México","Tengo hambre, voy a comer"], tip: "Practice switching between SER and ESTAR!" },
+    vocabulary: ["ser","estar","ir","tener","hacer","hablar","comer","vivir"],
+    exercise: { q: "Origin uses:", opts: ["ESTAR","SER"], a: 1 },
+    listening: "Soy Carlos. Soy de Colombia. Estoy en Nueva York. Tengo 25 años.",
+    reading: "Me llamo Ana. Soy profesora. Soy de Madrid pero ahora estoy en Barcelona." },
+  8: { title: "Preterite: -AR Verbs", subtitle: "Completed past actions", level: "A2",
+    grammar: { content: "Preterite -AR: hablé, hablaste, habló, hablamos, hablaron. For completed actions at specific times.", examples: ["Ayer hablé con mi madre","Ella trabajó mucho","Compramos una casa"], tip: "Triggers: ayer, anoche, la semana pasada, una vez" },
+    vocabulary: ["ayer","anoche","la semana pasada","hablé","trabajé","compré","llegué","viajé","cené"],
+    exercise: { q: "Yo ___ ayer.", opts: ["hablo","hablé","hablaba"], a: 1 },
+    listening: "Ayer trabajé todo el día. Llegué a casa muy tarde.",
+    reading: "El sábado pasado viajé a Barcelona. Visité la Sagrada Familia. Caminé por las Ramblas." },
+  9: { title: "Preterite: -ER/-IR & Irregulars", subtitle: "More past tense", level: "A2",
+    grammar: { content: "-ER/-IR preterite: comí, comiste, comió, comimos, comieron. Irregulars: IR/SER→fui, ESTAR→estuve, TENER→tuve, HACER→hice.", examples: ["Fui al cine","Estuve en París","Hice la tarea"], tip: "IR and SER share the same preterite!" },
+    vocabulary: ["fui","estuve","tuve","hice","dije","vine","pude","vi","di"],
+    exercise: { q: "Yo ___ al cine ayer.", opts: ["voy","fui","iba"], a: 1 },
+    listening: "Ayer fui al restaurante. Comí paella. Estuve tres horas.",
+    reading: "El verano pasado fui a España. Estuve dos semanas. Hice muchos amigos." },
+  10: { title: "The Imperfect Tense", subtitle: "Habitual past actions", level: "A2",
+    grammar: { content: "-AR imperfect: hablaba, hablabas, hablaba, hablábamos, hablaban. -ER/-IR: comía. Only 3 irregulars: ser→era, ir→iba, ver→veía.", examples: ["Cuando era niño, jugaba mucho","Siempre comía a las dos"], tip: "Imperfect = 'used to' or 'was doing'" },
+    vocabulary: ["cuando era niño","siempre","todos los días","mientras","hablaba","comía","vivía","era","iba"],
+    exercise: { q: "Cuando era niño, ___ al parque.", opts: ["fui","iba","voy"], a: 1 },
+    listening: "Cuando era niño, vivía en un pueblo. Jugaba con mis amigos todos los días.",
+    reading: "Mi abuela era muy cariñosa. Siempre cocinaba platos deliciosos." },
+  11: { title: "Preterite vs Imperfect", subtitle: "Using both tenses", level: "A2",
+    grammar: { content: "Preterite: completed, specific. Imperfect: ongoing, background. Together: imperfect sets scene, preterite advances action.", examples: ["Mientras dormía, sonó el teléfono","Era de noche cuando llegué"], tip: "Imperfect = movie background, Preterite = main events" },
+    vocabulary: ["mientras","cuando","de repente","entonces","ya","todavía"],
+    exercise: { q: "Mientras ___ (comer), llegó.", opts: ["comí","comía"], a: 1 },
+    listening: "Estaba en casa cuando llamó mi hermano.",
+    reading: "Era una noche fría. Caminaba por la calle cuando de repente vi a un amigo." },
+  12: { title: "Direct Object Pronouns", subtitle: "Lo, la, los, las", level: "A2",
+    grammar: { content: "Direct object pronouns: me, te, lo/la, nos, los/las. Go BEFORE conjugated verbs.", examples: ["El libro → Lo leo","La pizza → La como"], tip: "LO=him/it(m), LA=her/it(f), LOS/LAS=them" },
+    vocabulary: ["me","te","lo","la","nos","los","las"],
+    exercise: { q: "El libro. ___ leo.", opts: ["Le","Lo","La"], a: 1 },
+    listening: "¿Tienes el libro? Sí, lo tengo aquí.",
+    reading: "Compré una camisa. La compré en el centro. Vi zapatos pero no los compré." },
+  13: { title: "Indirect Object Pronouns", subtitle: "Me, te, le, nos, les", level: "A2",
+    grammar: { content: "Indirect objects (to whom?): me, te, le, nos, les. Double pronouns: indirect first (me lo, te la, se lo).", examples: ["Me da el libro","Le escribo una carta","Te lo digo"], tip: "LE/LES → SE before lo/la/los/las" },
+    vocabulary: ["dar","decir","escribir","enviar","mostrar","preguntar","contestar"],
+    exercise: { q: "María ___ da un regalo.", opts: ["me","lo","la"], a: 0 },
+    listening: "Mi madre me llama todos los días. Le cuento todo.",
+    reading: "Ayer le escribí una carta a mi abuela. Ella me escribió una respuesta." },
+  14: { title: "Reflexive Verbs", subtitle: "Actions to oneself", level: "A2",
+    grammar: { content: "Reflexive pronouns: me, te, se, nos, se. Daily routines: levantarse, ducharse, vestirse, acostarse.", examples: ["Me levanto a las 7","Se ducha por la mañana"], tip: "Many daily routine verbs are reflexive in Spanish!" },
+    vocabulary: ["levantarse","ducharse","vestirse","peinarse","acostarse","despertarse","sentarse","llamarse"],
+    exercise: { q: "'I wake up':", opts: ["Despierto","Me despierto","Se despierta"], a: 1 },
+    listening: "Me despierto a las seis. Me levanto, me ducho y me visto.",
+    reading: "Todos los días me levanto temprano. Me ducho, me visto y desayuno." },
+  15: { title: "Week 2 Review", subtitle: "Past tenses & pronouns", level: "A2",
+    grammar: { content: "Review: Preterite (completed), Imperfect (ongoing/habitual). Direct objects (lo/la), Indirect (le/les), Reflexives (me/te/se).", examples: ["Ayer me levanté tarde","Se lo di a María"], tip: "Practice telling stories with both past tenses!" },
+    vocabulary: ["ayer","cuando era niño","mientras","me","te","lo","la","le","se"],
+    exercise: { q: "Completed action uses:", opts: ["Imperfect","Preterite"], a: 1 },
+    listening: "Ayer me desperté temprano. Fui al gimnasio.",
+    reading: "Cuando era niño, mi padre me llevaba al parque. Un día me caí." },
+  16: { title: "Gustar & Similar Verbs", subtitle: "Expressing likes", level: "A2",
+    grammar: { content: "GUSTAR is backwards: Me gusta (singular), Me gustan (plural). Similar: encantar, interesar, molestar, faltar.", examples: ["Me gusta el café","Me gustan los libros","Nos encanta la música"], tip: "The thing liked is the subject!" },
+    vocabulary: ["gustar","encantar","interesar","molestar","faltar","importar","parecer"],
+    exercise: { q: "Me ___ los libros.", opts: ["gusta","gustan","gusto"], a: 1 },
+    listening: "Me gusta mucho la comida mexicana. Me encantan los tacos.",
+    reading: "A mi hermana le encanta bailar. A mí me gusta más la música." },
+  17: { title: "Comparatives & Superlatives", subtitle: "More, less, the most", level: "A2",
+    grammar: { content: "más...que, menos...que, tan...como. Superlatives: el/la más + adj. Irregulars: mejor, peor, mayor, menor.", examples: ["Soy más alto que tú","Es el más inteligente"], tip: "Mejor/peor don't use 'más'" },
+    vocabulary: ["más","menos","que","tan","como","mejor","peor","mayor","menor"],
+    exercise: { q: "Juan es más alto ___ Pedro.", opts: ["de","que","como"], a: 1 },
+    listening: "Mi hermano es más alto que yo. Mi hermana es la más inteligente.",
+    reading: "Este restaurante es mejor que el otro. La comida es más barata." },
+  18: { title: "Por vs Para", subtitle: "Two 'for's", level: "B1",
+    grammar: { content: "POR: cause, exchange, duration, through, per. PARA: purpose, destination, deadline, recipient, opinion.", examples: ["Gracias por todo","Es para ti","Trabajo por la mañana"], tip: "PARA = destination/purpose, POR = cause/exchange" },
+    vocabulary: ["por","para","por favor","por qué","para qué","por eso","para siempre"],
+    exercise: { q: "Gracias ___ tu ayuda.", opts: ["para","por"], a: 1 },
+    listening: "Este regalo es para ti. Gracias por venir.",
+    reading: "Salgo para México mañana. Voy por dos semanas. Gracias por tu ayuda." },
+  19: { title: "Demonstratives", subtitle: "This, that, those", level: "B1",
+    grammar: { content: "Este/esta/estos/estas (this/these near). Ese/esa/esos/esas (that/those). Aquel/aquella (that over there).", examples: ["Este libro","Esa casa","Aquellos árboles"], tip: "Three levels of distance!" },
+    vocabulary: ["este","esta","estos","estas","ese","esa","esos","esas","aquel","aquella"],
+    exercise: { q: "This house (la casa):", opts: ["Este casa","Esta casa","Esa casa"], a: 1 },
+    listening: "Quiero este libro, no ese.",
+    reading: "—¿Cuánto cuesta este vestido? —Este cuesta cincuenta. Ese cuesta treinta." },
+  20: { title: "Possessives", subtitle: "My, your, his/her", level: "B1",
+    grammar: { content: "Short: mi/tu/su/nuestro + noun. Long: mío/tuyo/suyo after noun or alone. Agreement with possessed item.", examples: ["mi casa","la casa mía","Es mío"], tip: "Short forms before, long forms after or standalone" },
+    vocabulary: ["mi","tu","su","nuestro","mío","tuyo","suyo","nuestro"],
+    exercise: { q: "My house:", opts: ["mío casa","mi casa","casa mía"], a: 1 },
+    listening: "Esta es mi casa. El coche es mío también.",
+    reading: "Mi hermana y yo vivimos con nuestros padres. Mi habitación es pequeña." },
+  21: { title: "Week 3 Review", subtitle: "Structures consolidated", level: "B1",
+    grammar: { content: "Review: Gustar construction, comparatives (más/menos...que), por vs para, demonstratives (este/ese/aquel), possessives.", examples: ["Me gustan más estos que esos","Es para mi hermano"], tip: "Practice combining these structures!" },
+    vocabulary: ["me gusta","más que","por","para","este","ese","mi","tu"],
+    exercise: { q: "I like movies (plural):", opts: ["Me gusta","Me gustan"], a: 1 },
+    listening: "Me gusta más este que ese. Es un regalo para mi hermano.",
+    reading: "Este restaurante es mejor que ese. Me encanta la comida. Es para mi cumpleaños." },
+  22: { title: "Future Tense", subtitle: "Will do", level: "B1",
+    grammar: { content: "Future: infinitive + é, ás, á, emos, án. Irregulars: tendré, podré, haré, diré, saldré, vendré, querré, sabré.", examples: ["Hablaré mañana","Tendré tiempo","Haré la tarea"], tip: "Same endings for ALL verbs!" },
+    vocabulary: ["hablaré","comeré","viviré","tendré","podré","haré","diré","saldré","vendré"],
+    exercise: { q: "I will eat:", opts: ["comeré","comerá","comerás"], a: 0 },
+    listening: "Mañana iré al médico. Después trabajaré desde casa.",
+    reading: "El próximo verano viajaré a España. Visitaré Madrid. Será increíble." },
+  23: { title: "Conditional Tense", subtitle: "Would do", level: "B1",
+    grammar: { content: "Conditional: infinitive + ía, ías, ía, íamos, ían. Same irregular stems as future. Polite requests, hypotheticals.", examples: ["Hablaría","Tendría","Me gustaría"], tip: "Perfect for polite requests: ¿Podría...? Me gustaría..." },
+    vocabulary: ["hablaría","comería","viviría","tendría","podría","haría","me gustaría"],
+    exercise: { q: "I would like:", opts: ["me gustaría","me gustará","me gustaba"], a: 0 },
+    listening: "Me gustaría un café, por favor. ¿Podría ayudarme?",
+    reading: "Si tuviera dinero, viajaría por el mundo. Visitaría muchos países." },
+  24: { title: "Subjunctive Introduction", subtitle: "A new mood", level: "B1",
+    grammar: { content: "Subjunctive for wishes, doubts, emotions. Opposite vowels: -AR→e, -ER/-IR→a. Irregulars: sea, esté, vaya, tenga, haga.", examples: ["Quiero que vengas","Espero que estés bien"], tip: "Triggered by 'que' + wish/doubt/emotion" },
+    vocabulary: ["quiero que","espero que","dudo que","es importante que","ojalá"],
+    exercise: { q: "Quiero que tú ___ (hablar):", opts: ["hablas","hables","hablar"], a: 1 },
+    listening: "Quiero que vengas a mi fiesta. Espero que puedas.",
+    reading: "Espero que mi familia esté bien. Quiero que mis hijos tengan éxito." },
+  25: { title: "Subjunctive: Wishes & Desires", subtitle: "Expressing wants", level: "B1",
+    grammar: { content: "Wish triggers: querer que, desear que, preferir que, necesitar que, pedir que. Main clause indicative, subordinate subjunctive.", examples: ["Quiero que estudies","Necesito que me ayudes"], tip: "Two subjects needed for subjunctive!" },
+    vocabulary: ["querer que","desear que","preferir que","necesitar que","pedir que","recomendar que"],
+    exercise: { q: "Prefiero que tú ___ (quedarse):", opts: ["quedas","quedes","quedarse"], a: 1 },
+    listening: "Necesito que llegues temprano. Quiero que traigas el libro.",
+    reading: "Mis padres quieren que estudie medicina. Prefieren que viva cerca." },
+  26: { title: "Subjunctive: Doubt & Emotion", subtitle: "Uncertainty & feelings", level: "B1",
+    grammar: { content: "Doubt: dudo que, no creo que, es posible que. Emotion: me alegra que, me sorprende que, es triste que.", examples: ["Dudo que venga","Me alegra que estés aquí"], tip: "NO creo que + subjunctive, but Creo que + indicative" },
+    vocabulary: ["dudo que","no creo que","es posible que","me alegra que","me sorprende que","es triste que"],
+    exercise: { q: "Dudo que él ___ (venir):", opts: ["viene","venga","vendrá"], a: 1 },
+    listening: "No creo que llueva hoy. Me alegra que estés aquí.",
+    reading: "Me alegra que mi hermano esté mejor. No creo que necesite más tratamiento." },
+  27: { title: "Commands (Imperative)", subtitle: "Giving orders", level: "B1",
+    grammar: { content: "Tú positive: él form (habla, come, escribe). Tú negative: subjunctive (no hables). Irregulars: ven, di, haz, pon, sal, ten, ve, sé.", examples: ["¡Habla!","¡No hables!","¡Ven aquí!"], tip: "Positive tú = él form, Negative tú = subjunctive" },
+    vocabulary: ["ven","di","haz","pon","sal","ten","ve","sé","habla","come","escribe"],
+    exercise: { q: "Come! (tú positive):", opts: ["Vienes","Ven","Vengas"], a: 1 },
+    listening: "Ven aquí y siéntate. Dime qué pasó.",
+    reading: "Primero, pon agua en la olla. Espera hasta que hierva. Añade la pasta." },
+  28: { title: "Week 4 Review", subtitle: "Advanced grammar", level: "B1",
+    grammar: { content: "Review: Future (hablaré), Conditional (hablaría), Subjunctive triggers (quiero que, dudo que), Commands (ven, no vengas).", examples: ["Mañana hablaré","Me gustaría ir","Quiero que vengas","¡Ven!"], tip: "You now have all major tenses and moods!" },
+    vocabulary: ["hablaré","hablaría","hable","habla","no hables"],
+    exercise: { q: "I will go:", opts: ["voy","iré","iría"], a: 1 },
+    listening: "Mañana iré al cine. Me gustaría que vinieras conmigo.",
+    reading: "El próximo año estudiaré en España. Me gustaría vivir en Barcelona." },
+  29: { title: "Advanced Conversation", subtitle: "Expressing opinions", level: "B1",
+    grammar: { content: "Opinions: creo que, me parece que, pienso que. Agreeing/disagreeing: estoy de acuerdo, no estoy de acuerdo. Connectors: además, sin embargo, por lo tanto.", examples: ["Creo que es importante","Estoy de acuerdo","Sin embargo..."], tip: "Use connectors to sound more natural!" },
+    vocabulary: ["creo que","me parece que","pienso que","estoy de acuerdo","sin embargo","además","por lo tanto","en mi opinión"],
+    exercise: { q: "'I agree':", opts: ["Tengo acuerdo","Estoy de acuerdo","Soy de acuerdo"], a: 1 },
+    listening: "Creo que es una buena idea. ¿Estás de acuerdo?",
+    reading: "En mi opinión, es importante estudiar idiomas. Además, es divertido." },
+  30: { title: "Final Assessment", subtitle: "¡Felicidades!", level: "B1",
+    grammar: { content: "You've completed 30 days! Review: Present, Past (preterite/imperfect), Future, Conditional, Subjunctive, Commands, Pronouns, All structures.", examples: ["Has aprendido mucho","Puedes comunicarte en español"], tip: "Keep practicing! Immersion is the next step." },
+    vocabulary: ["felicidades","lo lograste","sigue adelante","buena suerte","éxito"],
+    exercise: { q: "'I was eating when he arrived':", opts: ["Comí cuando llegó","Comía cuando llegó"], a: 1 },
+    listening: "Felicidades, has completado el curso. ¡Sigue practicando!",
+    reading: "Has trabajado mucho. Ahora puedes hablar español. ¡Buena suerte!" }
 };
 
-const allFlashcards = [
-  { id: 1, front: "hola", back: "hello", day: 1 },
-  { id: 2, front: "gracias", back: "thank you", day: 1 },
-  { id: 3, front: "por favor", back: "please", day: 1 },
-  { id: 4, front: "yo soy", back: "I am (ser)", day: 2 },
-  { id: 5, front: "me llamo", back: "my name is", day: 2 },
-  { id: 6, front: "estoy", back: "I am (estar)", day: 3 },
-  { id: 7, front: "cansado", back: "tired", day: 3 },
-  { id: 8, front: "hablo", back: "I speak", day: 4 },
-  { id: 9, front: "voy", back: "I go", day: 5 },
-  { id: 10, front: "tengo", back: "I have", day: 5 },
-  { id: 11, front: "tengo hambre", back: "I'm hungry", day: 5 },
-  { id: 12, front: "¿dónde?", back: "where?", day: 6 },
-  { id: 13, front: "me gusta", back: "I like", day: 6 },
-  { id: 14, front: "hablé", back: "I spoke", day: 8 },
-  { id: 15, front: "ayer", back: "yesterday", day: 8 },
-  { id: 16, front: "fui", back: "I went/was", day: 9 },
-  { id: 17, front: "hablaba", back: "I used to speak", day: 10 },
-  { id: 18, front: "era", back: "I was (imperfect)", day: 10 },
-  { id: 19, front: "mientras", back: "while", day: 11 },
-  { id: 20, front: "de repente", back: "suddenly", day: 11 },
-];
-
+// ============================================
+// ASSESSMENTS
+// ============================================
 const assessments = {
-  week1: {
-    title: "Week 1 Assessment",
-    passingScore: 70,
-    questions: [
-      { question: "'I am' with SER:", options: ["estoy", "soy", "tengo"], correctAnswer: 1, explanation: "Yo soy" },
-      { question: "Ella ___ profesora", options: ["soy", "es", "son"], correctAnswer: 1, explanation: "Ella es" },
-      { question: "Location uses:", options: ["SER", "ESTAR"], correctAnswer: 1, explanation: "ESTAR for location" },
-      { question: "'I go':", options: ["voy", "tengo", "soy"], correctAnswer: 0, explanation: "Yo voy" },
-      { question: "'I am hungry':", options: ["Estoy hambre", "Tengo hambre"], correctAnswer: 1, explanation: "Tengo hambre" },
-    ]
-  },
-  final: {
-    title: "Foundation Assessment",
-    passingScore: 70,
-    questions: [
-      { question: "'Yo hablé' is:", options: ["Present", "Preterite", "Imperfect"], correctAnswer: 1, explanation: "Preterite" },
-      { question: "'Yo hablaba' is:", options: ["Present", "Preterite", "Imperfect"], correctAnswer: 2, explanation: "Imperfect" },
-      { question: "Preterite is for:", options: ["Habitual", "Completed"], correctAnswer: 1, explanation: "Completed actions" },
-      { question: "Imperfect is for:", options: ["Single events", "Habitual/ongoing"], correctAnswer: 1, explanation: "Habitual/ongoing" },
-      { question: "'De repente' triggers:", options: ["Imperfect", "Preterite"], correctAnswer: 1, explanation: "Preterite" },
-    ]
-  }
+  week1: { title: "Week 1", available: 7, questions: [
+    { q: "Yo ___ de México. (origin)", opts: ["estoy","soy","tengo"], a: 1 },
+    { q: "Ella ___ cansada. (condition)", opts: ["es","está","tiene"], a: 1 },
+    { q: "'I am hungry':", opts: ["Estoy hambre","Tengo hambre","Soy hambre"], a: 1 },
+    { q: "Nosotros ___ al cine. (going)", opts: ["vamos","voy","van"], a: 0 }
+  ]},
+  week2: { title: "Week 2", available: 15, questions: [
+    { q: "Ayer yo ___ al parque. (completed)", opts: ["iba","fui","voy"], a: 1 },
+    { q: "Cuando era niño, ___ mucho. (habitual)", opts: ["jugué","jugaba","juego"], a: 1 },
+    { q: "El libro. ___ leo.", opts: ["Le","Lo","La"], a: 1 },
+    { q: "'I wake up':", opts: ["Despierto","Me despierto","Se despierto"], a: 1 }
+  ]},
+  week3: { title: "Week 3", available: 21, questions: [
+    { q: "Me ___ las películas. (plural)", opts: ["gusta","gustan","gusto"], a: 1 },
+    { q: "Juan es más alto ___ Pedro.", opts: ["de","que","como"], a: 1 },
+    { q: "Gracias ___ tu ayuda.", opts: ["para","por"], a: 1 },
+    { q: "This book (el libro):", opts: ["Este libro","Esta libro","Ese libro"], a: 0 }
+  ]},
+  week4: { title: "Week 4", available: 28, questions: [
+    { q: "Mañana yo ___ a Madrid. (future)", opts: ["voy","iré","iría"], a: 1 },
+    { q: "'I would like':", opts: ["Me gusta","Me gustaría","Me gustará"], a: 1 },
+    { q: "Quiero que tú ___ (venir):", opts: ["vienes","vengas","vendrás"], a: 1 },
+    { q: "¡___ aquí! (Come! tú)", opts: ["Vienes","Ven","Vengas"], a: 1 }
+  ]},
+  final: { title: "Final", available: 30, questions: [
+    { q: "Yo ___ estudiante. (identity)", opts: ["estoy","soy","tengo"], a: 1 },
+    { q: "Ayer ___ al cine.", opts: ["iba","fui","iré"], a: 1 },
+    { q: "Mientras ___, llegó.", opts: ["comí","comía"], a: 1 },
+    { q: "Me gustaría ___ a España.", opts: ["viajar","viajo","viajé"], a: 0 },
+    { q: "Espero que ___ bien.", opts: ["estás","estés","estar"], a: 1 }
+  ]}
 };
 
-const styles = {
-  container: { maxWidth: 480, margin: '0 auto', minHeight: '100vh', backgroundColor: '#FAF9F6', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' },
-  header: { backgroundColor: '#2D5A27', color: 'white', padding: 20, textAlign: 'center' },
+// VERB CONJUGATIONS
+const VERBS = {
+  present: { hablar:{yo:"hablo",tú:"hablas",él:"habla",nosotros:"hablamos",ellos:"hablan"}, comer:{yo:"como",tú:"comes",él:"come",nosotros:"comemos",ellos:"comen"}, vivir:{yo:"vivo",tú:"vives",él:"vive",nosotros:"vivimos",ellos:"viven"}, ser:{yo:"soy",tú:"eres",él:"es",nosotros:"somos",ellos:"son"}, estar:{yo:"estoy",tú:"estás",él:"está",nosotros:"estamos",ellos:"están"}, ir:{yo:"voy",tú:"vas",él:"va",nosotros:"vamos",ellos:"van"}, tener:{yo:"tengo",tú:"tienes",él:"tiene",nosotros:"tenemos",ellos:"tienen"}, hacer:{yo:"hago",tú:"haces",él:"hace",nosotros:"hacemos",ellos:"hacen"} },
+  preterite: { hablar:{yo:"hablé",tú:"hablaste",él:"habló",nosotros:"hablamos",ellos:"hablaron"}, comer:{yo:"comí",tú:"comiste",él:"comió",nosotros:"comimos",ellos:"comieron"}, ser:{yo:"fui",tú:"fuiste",él:"fue",nosotros:"fuimos",ellos:"fueron"}, ir:{yo:"fui",tú:"fuiste",él:"fue",nosotros:"fuimos",ellos:"fueron"}, estar:{yo:"estuve",tú:"estuviste",él:"estuvo",nosotros:"estuvimos",ellos:"estuvieron"}, tener:{yo:"tuve",tú:"tuviste",él:"tuvo",nosotros:"tuvimos",ellos:"tuvieron"}, hacer:{yo:"hice",tú:"hiciste",él:"hizo",nosotros:"hicimos",ellos:"hicieron"} },
+  imperfect: { hablar:{yo:"hablaba",tú:"hablabas",él:"hablaba",nosotros:"hablábamos",ellos:"hablaban"}, comer:{yo:"comía",tú:"comías",él:"comía",nosotros:"comíamos",ellos:"comían"}, ser:{yo:"era",tú:"eras",él:"era",nosotros:"éramos",ellos:"eran"}, ir:{yo:"iba",tú:"ibas",él:"iba",nosotros:"íbamos",ellos:"iban"} },
+  future: { hablar:{yo:"hablaré",tú:"hablarás",él:"hablará",nosotros:"hablaremos",ellos:"hablarán"}, tener:{yo:"tendré",tú:"tendrás",él:"tendrá",nosotros:"tendremos",ellos:"tendrán"}, hacer:{yo:"haré",tú:"harás",él:"hará",nosotros:"haremos",ellos:"harán"} },
+  subjunctive: { hablar:{yo:"hable",tú:"hables",él:"hable",nosotros:"hablemos",ellos:"hablen"}, comer:{yo:"coma",tú:"comas",él:"coma",nosotros:"comamos",ellos:"coman"}, ser:{yo:"sea",tú:"seas",él:"sea",nosotros:"seamos",ellos:"sean"}, estar:{yo:"esté",tú:"estés",él:"esté",nosotros:"estemos",ellos:"estén"}, ir:{yo:"vaya",tú:"vayas",él:"vaya",nosotros:"vayamos",ellos:"vayan"} }
+};
+
+// STYLES
+const s = {
+  container: { maxWidth: 480, margin: '0 auto', minHeight: '100vh', background: theme.bg, fontFamily: 'system-ui' },
+  header: { background: theme.primary, color: '#fff', padding: '16px 20px', textAlign: 'center' },
   content: { padding: 20 },
-  card: { backgroundColor: 'white', borderRadius: 12, padding: 20, marginBottom: 16, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' },
-  button: { backgroundColor: '#2D5A27', color: 'white', border: 'none', padding: '14px 28px', borderRadius: 8, fontSize: 16, fontWeight: 600, cursor: 'pointer', width: '100%', marginTop: 12 },
-  buttonSecondary: { backgroundColor: 'transparent', color: '#2D5A27', border: '2px solid #2D5A27', padding: '12px 24px', borderRadius: 8, fontSize: 16, cursor: 'pointer', width: '100%', marginTop: 8 },
-  progressBar: { height: 8, backgroundColor: '#E0E0E0', borderRadius: 4, overflow: 'hidden', marginBottom: 8 },
-  progressFill: { height: '100%', backgroundColor: '#228B22', transition: 'width 0.3s ease' },
-  optionButton: { display: 'block', width: '100%', padding: 16, marginBottom: 8, border: '2px solid #E0E0E0', borderRadius: 8, backgroundColor: 'white', cursor: 'pointer', textAlign: 'left', fontSize: 16 },
-  heading: { fontSize: 24, fontWeight: 700, marginBottom: 8, color: '#2C2C2C' },
-  tip: { backgroundColor: '#FFF9E6', padding: 12, borderRadius: 8, marginTop: 12, borderLeft: '4px solid #DAA520' },
-  flashcard: { backgroundColor: '#2D5A27', color: 'white', padding: 40, borderRadius: 16, textAlign: 'center', cursor: 'pointer', minHeight: 200, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28, fontWeight: 600 },
+  card: { background: theme.surface, borderRadius: 16, padding: 20, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.08)', border: `1px solid ${theme.border}` },
+  btn: { background: theme.primary, color: '#fff', border: 'none', padding: 16, borderRadius: 12, fontSize: 16, fontWeight: 600, cursor: 'pointer', width: '100%', marginTop: 12 },
+  btnSec: { background: 'transparent', color: theme.primary, border: `2px solid ${theme.primary}`, padding: 14, borderRadius: 12, fontSize: 16, cursor: 'pointer', width: '100%', marginTop: 8 },
+  progress: { height: 6, background: theme.border, borderRadius: 3, overflow: 'hidden' },
+  progressFill: { height: '100%', background: theme.success, transition: 'width 0.3s' },
+  opt: { display: 'block', width: '100%', padding: 14, marginBottom: 10, border: `2px solid ${theme.border}`, borderRadius: 12, background: '#fff', cursor: 'pointer', textAlign: 'left', fontSize: 15, transition: 'all 0.2s' },
+  flash: { background: theme.primary, color: '#fff', padding: 40, borderRadius: 20, textAlign: 'center', cursor: 'pointer', minHeight: 160, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24, fontWeight: 600 },
+  tab: { flex: 1, padding: '12px 8px', textAlign: 'center', cursor: 'pointer', fontSize: 14, fontWeight: 500, borderBottom: '2px solid transparent' },
+  tabActive: { borderBottomColor: theme.primary, color: theme.primary },
+  grid: { display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 12 },
+  deckCard: { background: '#fff', borderRadius: 16, padding: 16, textAlign: 'center', cursor: 'pointer', border: `1px solid ${theme.border}` },
+  tip: { background: '#FFF9E6', padding: 12, borderRadius: 12, marginTop: 12, borderLeft: `4px solid ${theme.warning}`, fontSize: 14 },
+  input: { width: '100%', padding: 14, fontSize: 16, borderRadius: 12, border: `2px solid ${theme.border}`, boxSizing: 'border-box' }
 };
 
+// ============================================
+// MAIN APP COMPONENT
+// ============================================
 function App() {
   const [screen, setScreen] = useState('splash');
+  const [mainTab, setMainTab] = useState('learn');
   const [currentDay, setCurrentDay] = useState(1);
   const [progress, setProgress] = useState({});
   const [moduleProgress, setModuleProgress] = useState({});
   const [currentModule, setCurrentModule] = useState(null);
-  const [screenIndex, setScreenIndex] = useState(0);
+  const [moduleStep, setModuleStep] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
-  const [flashcardFlipped, setFlashcardFlipped] = useState(false);
-  const [flashcardIndex, setFlashcardIndex] = useState(0);
-  const [assessmentAnswers, setAssessmentAnswers] = useState({});
+  
+  // Practice state
+  const [practiceTab, setPracticeTab] = useState('vocab');
+  const [currentDeck, setCurrentDeck] = useState(null);
+  const [cardIdx, setCardIdx] = useState(0);
+  const [flipped, setFlipped] = useState(false);
+  const [masteredCards, setMasteredCards] = useState({});
+  
+  // Verb drill state
+  const [verbTense, setVerbTense] = useState('present');
+  const [verbName, setVerbName] = useState('hablar');
+  const [pronoun, setPronoun] = useState('yo');
+  const [verbInput, setVerbInput] = useState('');
+  const [verbResult, setVerbResult] = useState(null);
+  
+  // Assessment state
+  const [currentAssessment, setCurrentAssessment] = useState(null);
+  const [assessmentIdx, setAssessmentIdx] = useState(0);
+  const [assessmentAnswers, setAssessmentAnswers] = useState([]);
   const [assessmentComplete, setAssessmentComplete] = useState(false);
-  const [currentAssessment, setCurrentAssessment] = useState('week1');
 
+  // Load saved data
   useEffect(() => {
-    const saved = localStorage.getItem('fluidez_11day');
+    const saved = localStorage.getItem('fluidez_30day_v2');
     if (saved) {
-      const d = JSON.parse(saved);
-      setProgress(d.progress || {});
-      setModuleProgress(d.moduleProgress || {});
-      setCurrentDay(d.currentDay || 1);
+      const data = JSON.parse(saved);
+      setProgress(data.progress || {});
+      setModuleProgress(data.moduleProgress || {});
+      setCurrentDay(data.currentDay || 1);
+      setMasteredCards(data.masteredCards || {});
     }
   }, []);
 
+  // Save data
   useEffect(() => {
-    localStorage.setItem('fluidez_11day', JSON.stringify({ progress, moduleProgress, currentDay }));
-  }, [progress, moduleProgress, currentDay]);
+    localStorage.setItem('fluidez_30day_v2', JSON.stringify({ progress, moduleProgress, currentDay, masteredCards }));
+  }, [progress, moduleProgress, currentDay, masteredCards]);
 
+  // Splash timer
   useEffect(() => {
-    if (screen === 'splash') {
-      const t = setTimeout(() => setScreen('home'), 2000);
-      return () => clearTimeout(t);
-    }
+    if (screen === 'splash') setTimeout(() => setScreen('home'), 1500);
   }, [screen]);
 
-  const speak = (text) => {
+  // Text-to-speech
+  const speak = useCallback((text) => {
     if ('speechSynthesis' in window) {
+      speechSynthesis.cancel();
       const u = new SpeechSynthesisUtterance(text);
       u.lang = 'es-ES';
       u.rate = 0.85;
       speechSynthesis.speak(u);
     }
-  };
+  }, []);
 
-  const getDayFlashcards = (d) => allFlashcards.filter(f => f.day <= d);
+  // Stats
   const getCompletedDays = () => Object.keys(progress).filter(d => progress[d]?.completed).length;
+  const getTotalVocab = () => Object.values(VOCAB).reduce((sum, cat) => sum + cat.words.length, 0);
+  const getMastered = () => Object.keys(masteredCards).filter(k => masteredCards[k] >= 3).length;
 
-  const handleModuleComplete = (module) => {
-    const newMP = { ...moduleProgress, [currentDay + '-' + module]: true };
-    setModuleProgress(newMP);
+  // Complete module
+  const completeModule = (mod) => {
+    const mp = { ...moduleProgress, [`${currentDay}-${mod}`]: true };
+    setModuleProgress(mp);
     const mods = ['grammar', 'vocabulary', 'listening', 'reading'];
-    if (mods.filter(m => newMP[currentDay + '-' + m]).length === 4) {
+    if (mods.filter(m => mp[`${currentDay}-${m}`]).length === 4) {
       setProgress(p => ({ ...p, [currentDay]: { completed: true } }));
       if (currentDay < TOTAL_DAYS) setCurrentDay(d => d + 1);
     }
     setScreen('day');
     setCurrentModule(null);
-    setScreenIndex(0);
+    setModuleStep(0);
     setSelectedAnswer(null);
     setShowResult(false);
   };
 
-  const renderExercise = (ex) => {
-    const { exerciseType, instruction, options, correctAnswer, explanation } = ex;
-    if (exerciseType === 'multiple_choice') {
+  // Mark flashcard
+  const markCard = (deckId, idx, correct) => {
+    const key = `${deckId}-${idx}`;
+    setMasteredCards(prev => ({ ...prev, [key]: Math.max(0, (prev[key] || 0) + (correct ? 1 : -1)) }));
+  };
+
+  // ============================================
+  // RENDER SCREENS
+  // ============================================
+
+  // SPLASH
+  if (screen === 'splash') {
+    return (
+      <div style={{ ...s.container, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: theme.primary }}>
+        <div style={{ fontSize: 56 }}>🇪🇸</div>
+        <h1 style={{ color: '#fff', fontSize: 32, margin: '8px 0' }}>Fluidez</h1>
+        <p style={{ color: 'rgba(255,255,255,0.8)' }}>30-Day Spanish Course</p>
+      </div>
+    );
+  }
+
+  // HOME
+  if (screen === 'home') {
+    const completed = getCompletedDays();
+    return (
+      <div style={s.container}>
+        <div style={s.header}>
+          <h1 style={{ margin: 0, fontSize: 22 }}>🇪🇸 Fluidez</h1>
+          <p style={{ margin: '4px 0 0', opacity: 0.9, fontSize: 13 }}>30-Day Spanish Course</p>
+        </div>
+        
+        {/* Main Tabs */}
+        <div style={{ display: 'flex', borderBottom: `1px solid ${theme.border}` }}>
+          <div style={{ ...s.tab, ...(mainTab === 'learn' ? s.tabActive : {}) }} onClick={() => setMainTab('learn')}>📚 Learn</div>
+          <div style={{ ...s.tab, ...(mainTab === 'practice' ? s.tabActive : {}) }} onClick={() => setMainTab('practice')}>🎯 Practice</div>
+        </div>
+
+        <div style={s.content}>
+          {/* LEARN TAB */}
+          {mainTab === 'learn' && (
+            <>
+              {/* Progress Card */}
+              <div style={s.card}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
+                  <span style={{ fontWeight: 600 }}>Your Progress</span>
+                  <span style={{ color: theme.primary, fontWeight: 600 }}>{completed}/{TOTAL_DAYS} days</span>
+                </div>
+                <div style={s.progress}>
+                  <div style={{ ...s.progressFill, width: `${(completed / TOTAL_DAYS) * 100}%` }} />
+                </div>
+                <p style={{ fontSize: 12, color: theme.textLight, marginTop: 8 }}>
+                  {completed === 0 ? 'Start your journey!' : completed === TOTAL_DAYS ? '🎉 Course complete!' : `${TOTAL_DAYS - completed} days remaining`}
+                </p>
+              </div>
+
+              {/* Daily Lessons */}
+              <h3 style={{ marginBottom: 12 }}>Daily Lessons</h3>
+              {Array.from({ length: TOTAL_DAYS }, (_, i) => i + 1).map(day => {
+                const dayData = curriculum[day];
+                const done = progress[day]?.completed;
+                const locked = day > currentDay && !done;
+                const isCurrent = day === currentDay;
+                return (
+                  <div
+                    key={day}
+                    onClick={() => !locked && (setCurrentDay(day), setScreen('day'))}
+                    style={{
+                      ...s.card,
+                      opacity: locked ? 0.5 : 1,
+                      cursor: locked ? 'not-allowed' : 'pointer',
+                      borderLeft: `4px solid ${done ? theme.success : isCurrent ? theme.primary : theme.border}`,
+                      marginBottom: 10,
+                      padding: 14
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <div>
+                        <div style={{ fontWeight: 600, fontSize: 15 }}>Day {day}: {dayData.title}</div>
+                        <div style={{ fontSize: 12, color: theme.textLight, marginTop: 2 }}>{dayData.subtitle}</div>
+                      </div>
+                      <span style={{ fontSize: 18 }}>{done ? '✓' : locked ? '🔒' : '→'}</span>
+                    </div>
+                  </div>
+                );
+              })}
+
+              {/* Assessments */}
+              <h3 style={{ marginTop: 24, marginBottom: 12 }}>Assessments</h3>
+              {Object.entries(assessments).map(([key, assess]) => {
+                const available = completed >= assess.available;
+                return (
+                  <div
+                    key={key}
+                    onClick={() => available && (setCurrentAssessment(key), setAssessmentIdx(0), setAssessmentAnswers([]), setAssessmentComplete(false), setScreen('assessment'))}
+                    style={{
+                      ...s.card,
+                      opacity: available ? 1 : 0.5,
+                      cursor: available ? 'pointer' : 'not-allowed',
+                      marginBottom: 10,
+                      padding: 14
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <div>
+                        <div style={{ fontWeight: 600 }}>📝 {assess.title} Assessment</div>
+                        <div style={{ fontSize: 12, color: theme.textLight }}>Available after Day {assess.available}</div>
+                      </div>
+                      <span>{available ? '→' : '🔒'}</span>
+                    </div>
+                  </div>
+                );
+              })}
+            </>
+          )}
+
+          {/* PRACTICE TAB */}
+          {mainTab === 'practice' && (
+            <>
+              {/* Stats */}
+              <div style={s.card}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
+                  <span style={{ fontWeight: 600 }}>Vocabulary Mastery</span>
+                  <span style={{ color: theme.primary, fontWeight: 600 }}>{getMastered()}/{getTotalVocab()}</span>
+                </div>
+                <div style={s.progress}>
+                  <div style={{ ...s.progressFill, width: `${(getMastered() / getTotalVocab()) * 100}%` }} />
+                </div>
+                <p style={{ fontSize: 12, color: theme.textLight, marginTop: 8 }}>Review cards 3+ times to master</p>
+              </div>
+
+              {/* Practice Sub-tabs */}
+              <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
+                <button onClick={() => setPracticeTab('vocab')} style={{ ...s.btnSec, flex: 1, marginTop: 0, ...(practiceTab === 'vocab' ? { background: theme.primary, color: '#fff' } : {}) }}>📚 Vocab</button>
+                <button onClick={() => setPracticeTab('verbs')} style={{ ...s.btnSec, flex: 1, marginTop: 0, ...(practiceTab === 'verbs' ? { background: theme.primary, color: '#fff' } : {}) }}>📖 Verbs</button>
+              </div>
+
+              {/* Vocabulary Decks */}
+              {practiceTab === 'vocab' && (
+                <div style={s.grid}>
+                  {Object.entries(VOCAB).map(([id, cat]) => {
+                    const mastered = cat.words.filter((_, i) => (masteredCards[`${id}-${i}`] || 0) >= 3).length;
+                    return (
+                      <div
+                        key={id}
+                        style={s.deckCard}
+                        onClick={() => { setCurrentDeck(id); setCardIdx(0); setFlipped(false); setScreen('flashcards'); }}
+                      >
+                        <div style={{ fontSize: 28, marginBottom: 6 }}>{cat.icon}</div>
+                        <div style={{ fontWeight: 600, fontSize: 13 }}>{cat.title}</div>
+                        <div style={{ fontSize: 11, color: theme.textLight }}>{mastered}/{cat.words.length}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
+              {/* Verb Drills */}
+              {practiceTab === 'verbs' && (
+                <div style={s.grid}>
+                  {Object.entries(VERBS).map(([tense, verbs]) => (
+                    <div
+                      key={tense}
+                      style={s.deckCard}
+                      onClick={() => { setVerbTense(tense); setVerbName(Object.keys(verbs)[0]); setScreen('verbs'); }}
+                    >
+                      <div style={{ fontSize: 28, marginBottom: 6 }}>📖</div>
+                      <div style={{ fontWeight: 600, fontSize: 13, textTransform: 'capitalize' }}>{tense}</div>
+                      <div style={{ fontSize: 11, color: theme.textLight }}>{Object.keys(verbs).length} verbs</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // DAY DETAIL
+  if (screen === 'day') {
+    const day = curriculum[currentDay];
+    const mods = ['grammar', 'vocabulary', 'listening', 'reading'];
+    const icons = { grammar: '📖', vocabulary: '📚', listening: '🎧', reading: '📰' };
+    return (
+      <div style={s.container}>
+        <div style={s.header}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <button onClick={() => setScreen('home')} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 20, cursor: 'pointer' }}>←</button>
+            <div style={{ textAlign: 'center' }}>
+              <h2 style={{ margin: 0, fontSize: 18 }}>Day {currentDay}</h2>
+              <p style={{ margin: 0, fontSize: 13, opacity: 0.9 }}>{day.title}</p>
+            </div>
+            <div style={{ width: 28 }} />
+          </div>
+        </div>
+        <div style={s.content}>
+          <div style={{ ...s.card, background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primaryLight} 100%)`, color: '#fff' }}>
+            <div style={{ fontSize: 12, opacity: 0.9, marginBottom: 4 }}>Level {day.level}</div>
+            <h3 style={{ margin: 0, fontSize: 20 }}>{day.title}</h3>
+            <p style={{ margin: '8px 0 0', opacity: 0.9 }}>{day.subtitle}</p>
+          </div>
+
+          <h3 style={{ marginBottom: 12 }}>Today's Modules</h3>
+          {mods.map(mod => {
+            const done = moduleProgress[`${currentDay}-${mod}`];
+            return (
+              <div
+                key={mod}
+                onClick={() => { setCurrentModule(mod); setModuleStep(0); setSelectedAnswer(null); setShowResult(false); setScreen('module'); }}
+                style={{ ...s.card, cursor: 'pointer', marginBottom: 10, padding: 14 }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <span style={{ textTransform: 'capitalize', fontWeight: 500 }}>{icons[mod]} {mod}</span>
+                  <span style={{ color: done ? theme.success : theme.textLight }}>{done ? '✓ Done' : 'Start →'}</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  // MODULE
+  if (screen === 'module' && currentModule) {
+    const day = curriculum[currentDay];
+    return (
+      <div style={s.container}>
+        <div style={s.header}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <button onClick={() => setScreen('day')} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 20, cursor: 'pointer' }}>←</button>
+            <span style={{ fontWeight: 600, textTransform: 'capitalize' }}>{currentModule}</span>
+            <div style={{ width: 28 }} />
+          </div>
+        </div>
+        <div style={s.content}>
+          {currentModule === 'grammar' && (
+            <>
+              <div style={s.card}>
+                <h3 style={{ marginBottom: 12 }}>{day.title}</h3>
+                <p style={{ lineHeight: 1.6, color: theme.text }}>{day.grammar.content}</p>
+                <div style={{ marginTop: 16 }}>
+                  <strong>Examples:</strong>
+                  {day.grammar.examples.map((ex, i) => (
+                    <div key={i} onClick={() => speak(ex.split('(')[0])} style={{ padding: '8px 0', borderBottom: i < day.grammar.examples.length - 1 ? `1px solid ${theme.border}` : 'none', cursor: 'pointer' }}>
+                      🔊 {ex}
+                    </div>
+                  ))}
+                </div>
+                <div style={s.tip}>💡 {day.grammar.tip}</div>
+              </div>
+              <div style={s.card}>
+                <h4>Quick Check</h4>
+                <p style={{ marginBottom: 12 }}>{day.exercise.q}</p>
+                {day.exercise.opts.map((opt, i) => (
+                  <button
+                    key={i}
+                    onClick={() => { setSelectedAnswer(i); setShowResult(true); }}
+                    disabled={showResult}
+                    style={{
+                      ...s.opt,
+                      background: showResult ? (i === day.exercise.a ? '#E8F5E9' : i === selectedAnswer ? '#FFEBEE' : '#fff') : '#fff',
+                      borderColor: showResult ? (i === day.exercise.a ? theme.success : i === selectedAnswer ? theme.error : theme.border) : theme.border
+                    }}
+                  >
+                    {opt}
+                  </button>
+                ))}
+                {showResult && (
+                  <div style={{ ...s.tip, background: selectedAnswer === day.exercise.a ? '#E8F5E9' : '#FFEBEE' }}>
+                    {selectedAnswer === day.exercise.a ? '✓ Correct!' : `✗ The answer is: ${day.exercise.opts[day.exercise.a]}`}
+                  </div>
+                )}
+              </div>
+              <button onClick={() => completeModule('grammar')} style={s.btn}>Complete Grammar ✓</button>
+            </>
+          )}
+          
+          {currentModule === 'vocabulary' && (
+            <>
+              <div style={s.card}>
+                <h3 style={{ marginBottom: 12 }}>Today's Vocabulary</h3>
+                {day.vocabulary.map((word, i) => (
+                  <div key={i} onClick={() => speak(word)} style={{ padding: '10px 0', borderBottom: i < day.vocabulary.length - 1 ? `1px solid ${theme.border}` : 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <span>🔊</span>
+                    <span style={{ fontWeight: 500 }}>{word}</span>
+                  </div>
+                ))}
+              </div>
+              <button onClick={() => completeModule('vocabulary')} style={s.btn}>Complete Vocabulary ✓</button>
+            </>
+          )}
+          
+          {currentModule === 'listening' && (
+            <>
+              <div style={s.card}>
+                <h3 style={{ marginBottom: 12 }}>🎧 Listening Practice</h3>
+                <p style={{ color: theme.textLight, marginBottom: 16 }}>Listen and understand:</p>
+                <div
+                  onClick={() => speak(day.listening)}
+                  style={{ ...s.flash, minHeight: 120, fontSize: 18, cursor: 'pointer' }}
+                >
+                  🔊 Tap to Listen
+                </div>
+                <p style={{ marginTop: 16, fontSize: 14, color: theme.textLight, fontStyle: 'italic' }}>"{day.listening}"</p>
+              </div>
+              <button onClick={() => completeModule('listening')} style={s.btn}>Complete Listening ✓</button>
+            </>
+          )}
+          
+          {currentModule === 'reading' && (
+            <>
+              <div style={s.card}>
+                <h3 style={{ marginBottom: 12 }}>📰 Reading Practice</h3>
+                <div style={{ background: '#F5F5F5', padding: 16, borderRadius: 12, marginBottom: 16 }}>
+                  <p style={{ fontSize: 16, lineHeight: 1.8 }}>{day.reading}</p>
+                </div>
+                <button onClick={() => speak(day.reading)} style={s.btnSec}>🔊 Listen to Text</button>
+              </div>
+              <button onClick={() => completeModule('reading')} style={s.btn}>Complete Reading ✓</button>
+            </>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // FLASHCARDS
+  if (screen === 'flashcards' && currentDeck) {
+    const deck = VOCAB[currentDeck];
+    const [spanish, english] = deck.words[cardIdx];
+    return (
+      <div style={s.container}>
+        <div style={s.header}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <button onClick={() => { setScreen('home'); setCurrentDeck(null); }} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 20, cursor: 'pointer' }}>←</button>
+            <span style={{ fontWeight: 600 }}>{deck.title}</span>
+            <span style={{ fontSize: 13 }}>{cardIdx + 1}/{deck.words.length}</span>
+          </div>
+        </div>
+        <div style={s.content}>
+          <div style={s.progress}><div style={{ ...s.progressFill, width: `${((cardIdx + 1) / deck.words.length) * 100}%` }} /></div>
+          <div
+            style={{ ...s.flash, marginTop: 20, background: flipped ? theme.primaryLight : theme.primary }}
+            onClick={() => { speak(spanish); setFlipped(!flipped); }}
+          >
+            <div>
+              <div style={{ fontSize: flipped ? 18 : 26 }}>{flipped ? english : spanish}</div>
+              {flipped && <div style={{ fontSize: 14, marginTop: 8, opacity: 0.8 }}>{spanish}</div>}
+            </div>
+          </div>
+          <p style={{ textAlign: 'center', color: theme.textLight, margin: '12px 0', fontSize: 13 }}>Tap to flip • 🔊 plays audio</p>
+          <div style={{ display: 'flex', gap: 12, marginTop: 16 }}>
+            <button onClick={() => { markCard(currentDeck, cardIdx, false); setFlipped(false); setCardIdx(i => Math.min(i + 1, deck.words.length - 1)); }} style={{ ...s.btnSec, background: '#FFEBEE', color: theme.error, borderColor: theme.error }}>✗ Learning</button>
+            <button onClick={() => { markCard(currentDeck, cardIdx, true); setFlipped(false); setCardIdx(i => Math.min(i + 1, deck.words.length - 1)); }} style={{ ...s.btn, background: theme.success }}>✓ Got It</button>
+          </div>
+          <div style={{ display: 'flex', gap: 12, marginTop: 12 }}>
+            <button onClick={() => { setCardIdx(i => Math.max(0, i - 1)); setFlipped(false); }} disabled={cardIdx === 0} style={{ ...s.btnSec, opacity: cardIdx === 0 ? 0.5 : 1 }}>← Prev</button>
+            <button onClick={() => { if (cardIdx === deck.words.length - 1) { setScreen('home'); setCurrentDeck(null); } else { setCardIdx(i => i + 1); setFlipped(false); } }} style={s.btn}>{cardIdx === deck.words.length - 1 ? 'Done ✓' : 'Next →'}</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // VERB DRILLS
+  if (screen === 'verbs') {
+    const verbs = VERBS[verbTense];
+    const verbList = Object.keys(verbs);
+    const forms = verbs[verbName];
+    const pronouns = ['yo', 'tú', 'él', 'nosotros', 'ellos'];
+    return (
+      <div style={s.container}>
+        <div style={s.header}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <button onClick={() => setScreen('home')} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 20, cursor: 'pointer' }}>←</button>
+            <span style={{ fontWeight: 600, textTransform: 'capitalize' }}>{verbTense} Tense</span>
+            <div style={{ width: 28 }} />
+          </div>
+        </div>
+        <div style={s.content}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 16 }}>
+            {verbList.map(v => (
+              <button key={v} onClick={() => { setVerbName(v); setVerbInput(''); setVerbResult(null); }} style={{ padding: '8px 14px', borderRadius: 20, border: verbName === v ? `2px solid ${theme.primary}` : `1px solid ${theme.border}`, background: verbName === v ? '#E8F5E9' : '#fff', cursor: 'pointer', fontWeight: verbName === v ? 600 : 400, fontSize: 14 }}>{v}</button>
+            ))}
+          </div>
+          <div style={s.card}>
+            <h2 style={{ textAlign: 'center', marginBottom: 4 }}>{verbName}</h2>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: 8, margin: '16px 0' }}>
+              {pronouns.map(p => (
+                <button key={p} onClick={() => { setPronoun(p); setVerbInput(''); setVerbResult(null); }} style={{ padding: '8px 12px', borderRadius: 8, border: pronoun === p ? `2px solid ${theme.primary}` : `1px solid ${theme.border}`, background: pronoun === p ? '#E8F5E9' : '#fff', cursor: 'pointer', fontWeight: pronoun === p ? 600 : 400 }}>{p}</button>
+              ))}
+            </div>
+            <p style={{ textAlign: 'center', fontWeight: 600, marginBottom: 12 }}>Conjugate for "{pronoun}"</p>
+            <input type="text" value={verbInput} onChange={e => setVerbInput(e.target.value)} placeholder="Type conjugation..." style={s.input} onKeyPress={e => { if (e.key === 'Enter') setVerbResult(verbInput.toLowerCase().trim() === forms[pronoun].toLowerCase() ? 'correct' : 'wrong'); }} />
+            <button onClick={() => setVerbResult(verbInput.toLowerCase().trim() === forms[pronoun].toLowerCase() ? 'correct' : 'wrong')} style={s.btn}>Check</button>
+            {verbResult && (
+              <div style={{ marginTop: 12, padding: 12, borderRadius: 12, background: verbResult === 'correct' ? '#E8F5E9' : '#FFEBEE', textAlign: 'center' }}>
+                <strong>{verbResult === 'correct' ? '✓ Correct!' : '✗ Incorrect'}</strong>
+                <p style={{ margin: '4px 0 0' }}>Answer: <strong>{forms[pronoun]}</strong></p>
+              </div>
+            )}
+          </div>
+          <div style={{ ...s.card, marginTop: 16 }}>
+            <h4 style={{ marginBottom: 12 }}>Full Conjugation</h4>
+            {pronouns.map(p => (
+              <div key={p} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: `1px solid ${theme.border}` }}>
+                <span style={{ color: theme.textLight }}>{p}</span>
+                <span style={{ fontWeight: 600 }}>{forms[p]}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ASSESSMENT
+  if (screen === 'assessment' && currentAssessment) {
+    const assess = assessments[currentAssessment];
+    const q = assess.questions[assessmentIdx];
+    
+    if (assessmentComplete) {
+      const score = assessmentAnswers.filter((a, i) => a === assess.questions[i].a).length;
+      const percent = Math.round((score / assess.questions.length) * 100);
+      const passed = percent >= 70;
       return (
-        <div>
-          <p style={{ fontSize: 18, marginBottom: 20 }}>{instruction}</p>
-          {options.map((o, i) => (
-            <button key={i} onClick={() => { setSelectedAnswer(i); setShowResult(true); }} disabled={showResult}
-              style={{ ...styles.optionButton, backgroundColor: showResult ? (i === correctAnswer ? '#E8F5E9' : (i === selectedAnswer ? '#FFEBEE' : 'white')) : 'white' }}>
-              {o}
-            </button>
-          ))}
-          {showResult && <div style={{ ...styles.tip, backgroundColor: selectedAnswer === correctAnswer ? '#E8F5E9' : '#FFEBEE' }}><strong>{selectedAnswer === correctAnswer ? '✓ Correct!' : '✗ Incorrect'}</strong><p>{explanation}</p></div>}
+        <div style={s.container}>
+          <div style={s.header}>
+            <h2 style={{ margin: 0 }}>{assess.title} Results</h2>
+          </div>
+          <div style={s.content}>
+            <div style={{ ...s.card, textAlign: 'center' }}>
+              <div style={{ fontSize: 64, marginBottom: 16 }}>{passed ? '🎉' : '📚'}</div>
+              <h2 style={{ marginBottom: 8 }}>{passed ? 'Passed!' : 'Keep Practicing'}</h2>
+              <p style={{ fontSize: 32, fontWeight: 700, color: passed ? theme.success : theme.warning }}>{percent}%</p>
+              <p style={{ color: theme.textLight }}>{score}/{assess.questions.length} correct</p>
+            </div>
+            <button onClick={() => setScreen('home')} style={s.btn}>Back to Home</button>
+          </div>
         </div>
       );
     }
-    return null;
-  };
-
-  const renderScreen = () => {
-    switch (screen) {
-      case 'splash':
-        return <div style={{ ...styles.container, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: '#2D5A27' }}><h1 style={{ color: 'white', fontSize: 48 }}>🇪🇸 Fluidez</h1><p style={{ color: 'rgba(255,255,255,0.8)' }}>11-Day Spanish Foundation</p></div>;
-
-      case 'home':
-        const done = getCompletedDays();
-        return (
-          <div style={styles.container}>
-            <div style={styles.header}><h1 style={{ margin: 0 }}>🇪🇸 Fluidez</h1><p style={{ margin: '8px 0 0', opacity: 0.9 }}>11-Day Spanish Foundation</p></div>
-            <div style={styles.content}>
-              <div style={styles.card}><div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}><span>Progress</span><span style={{ color: '#2D5A27' }}>{done}/{TOTAL_DAYS}</span></div><div style={styles.progressBar}><div style={{ ...styles.progressFill, width: (done/TOTAL_DAYS*100)+'%' }}/></div></div>
-              <h2 style={styles.heading}>📚 Daily Lessons</h2>
-              {Array.from({length: TOTAL_DAYS}, (_, i) => i + 1).map(day => {
-                const d = curriculum[day], comp = progress[day]?.completed, locked = day > currentDay && !comp;
-                return <div key={day} onClick={() => !locked && (setCurrentDay(day), setScreen('day'))} style={{ ...styles.card, opacity: locked ? 0.5 : 1, cursor: locked ? 'not-allowed' : 'pointer', borderLeft: '4px solid ' + (comp ? '#228B22' : (day === currentDay ? '#2D5A27' : '#E0E0E0')) }}><div style={{ display: 'flex', justifyContent: 'space-between' }}><div><h3 style={{ margin: 0, fontSize: 16 }}>Day {day}: {d.title}</h3><p style={{ margin: '4px 0 0', fontSize: 14, color: '#666' }}>{d.subtitle}</p></div><span style={{ fontSize: 24 }}>{comp ? '✅' : (locked ? '🔒' : '→')}</span></div></div>;
-              })}
-              <h2 style={{ ...styles.heading, marginTop: 24 }}>🎯 Practice</h2>
-              <div style={styles.card} onClick={() => setScreen('flashcards')}><h3 style={{ margin: 0 }}>📚 Flashcards ({getDayFlashcards(currentDay).length})</h3></div>
-              {currentDay >= 7 && <div style={styles.card} onClick={() => { setCurrentAssessment('week1'); setScreen('assessment'); }}><h3 style={{ margin: 0 }}>📝 Week 1 Assessment</h3></div>}
-              {currentDay >= 11 && <div style={styles.card} onClick={() => { setCurrentAssessment('final'); setScreen('assessment'); }}><h3 style={{ margin: 0 }}>🏆 Final Assessment</h3></div>}
-            </div>
+    
+    return (
+      <div style={s.container}>
+        <div style={s.header}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <button onClick={() => setScreen('home')} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 20, cursor: 'pointer' }}>←</button>
+            <span style={{ fontWeight: 600 }}>{assess.title} Assessment</span>
+            <span style={{ fontSize: 13 }}>{assessmentIdx + 1}/{assess.questions.length}</span>
           </div>
-        );
-
-      case 'day':
-        const day = curriculum[currentDay], mods = ['grammar', 'vocabulary', 'listening', 'reading'], icons = { grammar: '📖', vocabulary: '📝', listening: '🎧', reading: '📚' };
-        return (
-          <div style={styles.container}>
-            <div style={styles.header}><button onClick={() => setScreen('home')} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer' }}>← Back</button><h1 style={{ margin: 0 }}>Day {currentDay}</h1><p style={{ margin: '4px 0 0', opacity: 0.9 }}>{day.title}</p></div>
-            <div style={styles.content}>
-              {mods.map(m => {
-                const done = moduleProgress[currentDay + '-' + m];
-                return <div key={m} onClick={() => { setCurrentModule(m); setScreenIndex(0); setSelectedAnswer(null); setShowResult(false); setScreen('module'); }} style={{ ...styles.card, cursor: 'pointer', borderLeft: '4px solid ' + (done ? '#228B22' : '#E0E0E0') }}><div style={{ display: 'flex', justifyContent: 'space-between' }}><div><h3 style={{ margin: 0, textTransform: 'capitalize' }}>{icons[m]} {m}</h3><p style={{ margin: '4px 0 0', color: '#666' }}>{day[m].title}</p></div><span>{done ? '✅' : '→'}</span></div></div>;
-              })}
-            </div>
+        </div>
+        <div style={s.content}>
+          <div style={s.progress}><div style={{ ...s.progressFill, width: `${((assessmentIdx + 1) / assess.questions.length) * 100}%` }} /></div>
+          <div style={s.card}>
+            <h3 style={{ marginBottom: 16 }}>{q.q}</h3>
+            {q.opts.map((opt, i) => (
+              <button
+                key={i}
+                onClick={() => {
+                  const newAnswers = [...assessmentAnswers, i];
+                  setAssessmentAnswers(newAnswers);
+                  if (assessmentIdx < assess.questions.length - 1) {
+                    setAssessmentIdx(assessmentIdx + 1);
+                  } else {
+                    setAssessmentComplete(true);
+                  }
+                }}
+                style={s.opt}
+              >
+                {opt}
+              </button>
+            ))}
           </div>
-        );
+        </div>
+      </div>
+    );
+  }
 
-      case 'module':
-        const mod = curriculum[currentDay][currentModule], cur = mod.screens[screenIndex], last = screenIndex === mod.screens.length - 1;
-        const next = () => { if (last) handleModuleComplete(currentModule); else { setScreenIndex(i => i + 1); setSelectedAnswer(null); setShowResult(false); } };
-        return (
-          <div style={styles.container}>
-            <div style={styles.header}><div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}><button onClick={() => { setScreen('day'); setCurrentModule(null); setScreenIndex(0); }} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer' }}>← Exit</button><span>{screenIndex + 1}/{mod.screens.length}</span></div><div style={styles.progressBar}><div style={{ ...styles.progressFill, width: ((screenIndex + 1)/mod.screens.length*100)+'%' }}/></div></div>
-            <div style={styles.content}>
-              {cur.type === 'lesson' && <div><h2 style={styles.heading}>{cur.heading}</h2><p style={{ fontSize: 16, lineHeight: 1.6, marginBottom: 16 }}>{cur.content}</p>{cur.examples && cur.examples.map((e, i) => <div key={i} style={{ ...styles.card, padding: 16, cursor: 'pointer' }} onClick={() => speak(e.word || e.spanish)}><div style={{ fontWeight: 600, color: '#2D5A27' }}>{e.spanish}</div><div style={{ fontSize: 14, color: '#666' }}>{e.pronunciation}</div>{e.word && <div style={{ marginTop: 8 }}>{e.word}</div>}<div style={{ fontSize: 14, color: '#666' }}>{e.meaning}</div></div>)}{cur.tip && <div style={styles.tip}>💡 {cur.tip}</div>}</div>}
-              {cur.type === 'vocab' && <div><h2 style={styles.heading}>{cur.category}</h2>{cur.words.map((w, i) => <div key={i} style={{ ...styles.card, padding: 16, cursor: 'pointer' }} onClick={() => speak(w.spanish)}><div style={{ display: 'flex', justifyContent: 'space-between' }}><span style={{ fontWeight: 600 }}>{w.spanish}</span><span style={{ color: '#666' }}>{w.english}</span></div><div style={{ fontSize: 14, color: '#666', marginTop: 4, fontStyle: 'italic' }}>{w.example}</div></div>)}</div>}
-              {cur.type === 'exercise' && renderExercise(cur)}
-              {cur.type === 'listening' && <div><p style={{ fontSize: 18, marginBottom: 20 }}>{cur.instruction}</p><button onClick={() => speak(cur.transcript)} style={{ ...styles.button, backgroundColor: '#4A7C43', marginBottom: 20 }}>🔊 Play</button>{cur.options.map((o, i) => <button key={i} onClick={() => { setSelectedAnswer(i); setShowResult(true); }} disabled={showResult} style={{ ...styles.optionButton, backgroundColor: showResult ? (i === cur.correctAnswer ? '#E8F5E9' : (i === selectedAnswer ? '#FFEBEE' : 'white')) : 'white' }}>{o}</button>)}{showResult && <div style={{ ...styles.tip, backgroundColor: selectedAnswer === cur.correctAnswer ? '#E8F5E9' : '#FFEBEE' }}><strong>{selectedAnswer === cur.correctAnswer ? '✓ Correct!' : '✗ Listen again!'}</strong><p>Audio: "{cur.transcript}"</p></div>}</div>}
-              {cur.type === 'reading' && <div><h2 style={styles.heading}>{cur.title}</h2><div style={{ ...styles.card, backgroundColor: '#F5F5F5' }}><p style={{ whiteSpace: 'pre-line', lineHeight: 1.8 }}>{cur.passage}</p><button onClick={() => speak(cur.passage.replace(/[—\n]/g, ' '))} style={{ ...styles.buttonSecondary, marginTop: 16 }}>🔊 Listen</button></div><details style={{ marginTop: 16 }}><summary style={{ cursor: 'pointer', color: '#2D5A27', fontWeight: 600 }}>Translation</summary><p style={{ marginTop: 8, color: '#666', whiteSpace: 'pre-line' }}>{cur.translation}</p></details></div>}
-              <button style={{ ...styles.button, marginTop: 24 }} onClick={next} disabled={(cur.type === 'exercise' || cur.type === 'listening') && !showResult}>{last ? 'Complete ✓' : 'Continue →'}</button>
-            </div>
-          </div>
-        );
-
-      case 'flashcards':
-        const cards = getDayFlashcards(currentDay), card = cards[flashcardIndex];
-        return (
-          <div style={styles.container}>
-            <div style={styles.header}><button onClick={() => { setScreen('home'); setFlashcardIndex(0); setFlashcardFlipped(false); }} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer' }}>← Back</button><h2 style={{ margin: '8px 0 0' }}>Flashcards</h2><p style={{ opacity: 0.8 }}>{flashcardIndex + 1}/{cards.length}</p></div>
-            <div style={styles.content}>
-              <div onClick={() => { setFlashcardFlipped(!flashcardFlipped); if (!flashcardFlipped) speak(card.front); }} style={{ ...styles.flashcard, backgroundColor: flashcardFlipped ? '#228B22' : '#2D5A27' }}>{flashcardFlipped ? card.back : card.front}</div>
-              <p style={{ textAlign: 'center', color: '#666', marginTop: 12 }}>Tap to flip</p>
-              <div style={{ display: 'flex', gap: 12, marginTop: 20 }}><button onClick={() => { setFlashcardIndex(Math.max(0, flashcardIndex - 1)); setFlashcardFlipped(false); }} style={{ ...styles.buttonSecondary, flex: 1 }} disabled={flashcardIndex === 0}>← Prev</button><button onClick={() => { setFlashcardIndex(Math.min(cards.length - 1, flashcardIndex + 1)); setFlashcardFlipped(false); }} style={{ ...styles.button, flex: 1, marginTop: 0 }} disabled={flashcardIndex === cards.length - 1}>Next →</button></div>
-            </div>
-          </div>
-        );
-
-      case 'assessment':
-        const asmt = assessments[currentAssessment], qs = asmt.questions;
-        if (assessmentComplete) {
-          const score = Object.keys(assessmentAnswers).filter(q => assessmentAnswers[q] === qs[parseInt(q)].correctAnswer).length, pct = (score/qs.length)*100, pass = pct >= asmt.passingScore;
-          return <div style={styles.container}><div style={{ ...styles.header, backgroundColor: pass ? '#228B22' : '#DAA520' }}><h1>{pass ? '🎉 Passed!' : '📚 Keep Practicing'}</h1></div><div style={styles.content}><div style={{ ...styles.card, textAlign: 'center' }}><h2 style={{ fontSize: 48, margin: 0 }}>{score}/{qs.length}</h2><p style={{ fontSize: 24, color: '#666' }}>{pct.toFixed(0)}%</p></div><button style={styles.button} onClick={() => { setScreen('home'); setAssessmentComplete(false); setAssessmentAnswers({}); }}>Home</button></div></div>;
-        }
-        const ans = Object.keys(assessmentAnswers).length, q = qs[ans] || qs[qs.length-1], idx = ans < qs.length ? ans : qs.length-1;
-        return (
-          <div style={styles.container}>
-            <div style={styles.header}><button onClick={() => { setScreen('home'); setAssessmentAnswers({}); }} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer' }}>← Exit</button><h2>{asmt.title}</h2><div style={styles.progressBar}><div style={{ ...styles.progressFill, width: (ans/qs.length*100)+'%' }}/></div></div>
-            <div style={styles.content}>
-              <h3 style={styles.heading}>Q{idx + 1}</h3><p style={{ fontSize: 18, marginBottom: 20 }}>{q.question}</p>
-              {q.options.map((o, i) => <button key={i} onClick={() => { const na = { ...assessmentAnswers, [idx]: i }; setAssessmentAnswers(na); if (Object.keys(na).length === qs.length) setTimeout(() => setAssessmentComplete(true), 800); }} disabled={assessmentAnswers[idx] !== undefined} style={{ ...styles.optionButton, backgroundColor: assessmentAnswers[idx] !== undefined ? (i === q.correctAnswer ? '#E8F5E9' : (i === assessmentAnswers[idx] ? '#FFEBEE' : 'white')) : 'white' }}>{o}</button>)}
-              {assessmentAnswers[idx] !== undefined && <div style={{ ...styles.tip, backgroundColor: assessmentAnswers[idx] === q.correctAnswer ? '#E8F5E9' : '#FFEBEE' }}>{q.explanation}</div>}
-            </div>
-          </div>
-        );
-
-      default: return <div style={styles.container}><div style={styles.content}>Unknown screen</div></div>;
-    }
-  };
-
-  return renderScreen();
+  return null;
 }
 
 export default App;
