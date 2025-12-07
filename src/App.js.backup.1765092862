@@ -1,19 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import AIPractice from './AIPractice';
 import VoicePractice from './VoicePractice';
-import PracticeHub from './PracticeHub';
-import PracticeTab from './PracticeTab';
-import Onboarding from './Onboarding';
-import RoleplayMode from './RoleplayMode';
-import GrammarDrills from './GrammarDrills';
-import PronunciationPractice from './PronunciationPractice';
-import ContentVault from './ContentVault';
-import QuickReview from './QuickReview';
-import Achievements from './Achievements';
-import StreakCalendar from './StreakCalendar';
-import DailyChallenge from './DailyChallenge';
-import StoriesMode from './StoriesMode';
-import Settings from './Settings';
 
 const theme = {
   primary: '#2D5A27', primaryLight: '#4A7C43', success: '#228B22',
@@ -339,18 +326,12 @@ function App() {
   const [progress, setProgress] = useState({});
   const [moduleProgress, setModuleProgress] = useState({});
   const [currentModule, setCurrentModule] = useState(null);
-  const [, setModuleStep] = useState(0);
+  const [moduleStep, setModuleStep] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
   
   // Practice state
   const [practiceTab, setPracticeTab] = useState('vocab');
-  const [practiceMode, setPracticeMode] = useState(null);
-  const [showAchievements, setShowAchievements] = useState(false);
-  const [showCalendar, setShowCalendar] = useState(false);
-  const [showDailyChallenge, setShowDailyChallenge] = useState(false);
-  const [showStories, setShowStories] = useState(false);
-  const [showSettings, setShowSettings] = useState(false);
   const [currentDeck, setCurrentDeck] = useState(null);
   const [cardIdx, setCardIdx] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -368,9 +349,6 @@ function App() {
   const [showAIPractice, setShowAIPractice] = useState(false);
   const [aiPracticeDay, setAiPracticeDay] = useState(null);
   const [showVoicePractice, setShowVoicePractice] = useState(false);
-  const [showPracticeTab, setShowPracticeTab] = useState(false);
-  const [showPracticeHub, setShowPracticeHub] = useState(false);
-  const [showOnboarding, setShowOnboarding] = useState(() => !localStorage.getItem('fluidez_onboarded'));
   const [assessmentIdx, setAssessmentIdx] = useState(0);
   const [assessmentAnswers, setAssessmentAnswers] = useState([]);
   const [assessmentComplete, setAssessmentComplete] = useState(false);
@@ -441,39 +419,7 @@ function App() {
 
   // SPLASH
   if (screen === 'splash') {
-    
-  // PHASE 5 SCREENS
-  if (showStories) return <StoriesMode onBack={() => setShowStories(false)} />;
-  if (showSettings) return <Settings onBack={() => setShowSettings(false)} />;
-
-  // PHASE 4 SCREENS
-  if (showAchievements) return <Achievements onBack={() => setShowAchievements(false)} />;
-  if (showCalendar) return <StreakCalendar onBack={() => setShowCalendar(false)} />;
-  if (showDailyChallenge) return <DailyChallenge onBack={() => setShowDailyChallenge(false)} />;
-
-  // PRACTICE MODES RENDER
-  if (practiceMode === 'roleplay') return <RoleplayMode onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'grammar') return <GrammarDrills onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'pronunciation') return <PronunciationPractice onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'vault') return <ContentVault onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'review') return <QuickReview onBack={() => setPracticeMode(null)} />;
-
-  // ============ FEATURE SCREENS ============
-  if (showSettings) return <Settings onBack={() => setShowSettings(false)} />;
-  if (showStories) return <StoriesMode onBack={() => setShowStories(false)} />;
-  if (showAchievements) return <Achievements onBack={() => setShowAchievements(false)} />;
-  if (showCalendar) return <StreakCalendar onBack={() => setShowCalendar(false)} />;
-  if (showDailyChallenge) return <DailyChallenge onBack={() => setShowDailyChallenge(false)} />;
-  if (practiceMode === 'roleplay') return <RoleplayMode onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'grammar') return <GrammarDrills onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'pronunciation') return <PronunciationPractice onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'vault') return <ContentVault onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'review') return <QuickReview onBack={() => setPracticeMode(null)} />;
-  // ============ END FEATURE SCREENS ============
-
-
-
-return (
+    return (
       <div style={{ ...s.container, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: theme.primary }}>
         <div style={{ fontSize: 56 }}>🇪🇸</div>
         <h1 style={{ color: '#fff', fontSize: 32, margin: '8px 0' }}>Fluidez</h1>
@@ -488,13 +434,13 @@ return (
     return (
       <div style={s.container}>
         <div style={s.header}>
-          <h1 style={{ margin: 0, fontSize: 22 }}>🇪🇸 Fluidez</h1><button onClick={() => setShowSettings(true)} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 20, cursor: 'pointer', marginLeft: 'auto' }}>⚙️</button>
+          <h1 style={{ margin: 0, fontSize: 22 }}>🇪🇸 Fluidez</h1>
           <p style={{ margin: '4px 0 0', opacity: 0.9, fontSize: 13 }}>30-Day Spanish Course</p>
         </div>
         
         {/* Main Tabs */}
         <div style={{ display: 'flex', borderBottom: `1px solid ${theme.border}` }}>
-          <div style={{ ...s.tab, ...(mainTab === 'learn' ? s.tabActive : {}) }} onClick={() => setShowPracticeTab(true)}>📚 Learn</div>
+          <div style={{ ...s.tab, ...(mainTab === 'learn' ? s.tabActive : {}) }} onClick={() => setMainTab('learn')}>📚 Learn</div>
           <div style={{ ...s.tab, ...(mainTab === 'practice' ? s.tabActive : {}) }} onClick={() => setMainTab('practice')}>🎯 Practice</div>
         </div>
 
@@ -514,22 +460,6 @@ return (
                 <p style={{ fontSize: 12, color: theme.textLight, marginTop: 8 }}>
                   {completed === 0 ? 'Start your journey!' : completed === TOTAL_DAYS ? '🎉 Course complete!' : `${TOTAL_DAYS - completed} days remaining`}
                 </p>
-              </div>
-
-              {/* Quick Actions */}
-              <div style={{ display: 'flex', gap: 10, marginBottom: 16 }}>
-                <button onClick={() => setShowDailyChallenge(true)} style={{ ...s.card, flex: 1, padding: 12, textAlign: 'center', cursor: 'pointer', border: '2px solid #FFD700', background: '#FFFBEB' }}>
-                  <span style={{ fontSize: 20 }}>⚡</span>
-                  <div style={{ fontSize: 12, fontWeight: 600, marginTop: 4 }}>Daily Challenge</div>
-                </button>
-                <button onClick={() => setShowCalendar(true)} style={{ ...s.card, flex: 1, padding: 12, textAlign: 'center', cursor: 'pointer' }}>
-                  <span style={{ fontSize: 20 }}>📅</span>
-                  <div style={{ fontSize: 12, fontWeight: 600, marginTop: 4 }}>Calendar</div>
-                </button>
-                <button onClick={() => setShowAchievements(true)} style={{ ...s.card, flex: 1, padding: 12, textAlign: 'center', cursor: 'pointer' }}>
-                  <span style={{ fontSize: 20 }}>🏆</span>
-                  <div style={{ fontSize: 12, fontWeight: 600, marginTop: 4 }}>Achievements</div>
-                </button>
               </div>
 
               {/* Daily Lessons */}
@@ -607,48 +537,6 @@ return (
                 <p style={{ fontSize: 12, color: theme.textLight, marginTop: 8 }}>Review cards 3+ times to master</p>
               </div>
 
-              {/* Practice Modes */}
-              <div style={{ marginBottom: 16 }}>
-                <h3 style={{ fontSize: 16, fontWeight: 600, marginBottom: 12, paddingLeft: 4 }}>🎯 Practice Modes</h3>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 10 }}>
-                  <button onClick={() => setPracticeMode("roleplay")} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
-                    <span style={{ fontSize: 24 }}>🎭</span>
-                    <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Roleplay</div>
-                    <div style={{ fontSize: 11, color: theme.textLight }}>Scenarios</div>
-                  </button>
-                  <button onClick={() => setPracticeMode("grammar")} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
-                    <span style={{ fontSize: 24 }}>📝</span>
-                    <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Grammar</div>
-                    <div style={{ fontSize: 11, color: theme.textLight }}>Drills</div>
-                  </button>
-                  <button onClick={() => setPracticeMode("pronunciation")} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
-                    <span style={{ fontSize: 24 }}>🎤</span>
-                    <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Speak</div>
-                    <div style={{ fontSize: 11, color: theme.textLight }}>Practice</div>
-                  </button>
-                  <button onClick={() => setPracticeMode("review")} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
-                    <span style={{ fontSize: 24 }}>🔄</span>
-                    <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Review</div>
-                    <div style={{ fontSize: 11, color: theme.textLight }}>Flashcards</div>
-                  </button>
-                  <button onClick={() => setPracticeMode("vault")} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
-                    <span style={{ fontSize: 24 }}>📚</span>
-                    <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Vault</div>
-                    <div style={{ fontSize: 11, color: theme.textLight }}>My Content</div>
-                  </button>
-                  <button onClick={() => setShowStories(true)} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
-                    <span style={{ fontSize: 24 }}>📖</span>
-                    <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Stories</div>
-                    <div style={{ fontSize: 11, color: theme.textLight }}>Reading</div>
-                  </button>
-                  <button onClick={() => setShowVoicePractice(true)} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
-                    <span style={{ fontSize: 24 }}>🎙️</span>
-                    <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Voice</div>
-                    <div style={{ fontSize: 11, color: theme.textLight }}>Chat</div>
-                  </button>
-                </div>
-              </div>
-
               {/* Practice Sub-tabs */}
               <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
                 <button onClick={() => setPracticeTab('vocab')} style={{ ...s.btnSec, flex: 1, marginTop: 0, ...(practiceTab === 'vocab' ? { background: theme.primary, color: '#fff' } : {}) }}>📚 Vocab</button>
@@ -694,30 +582,6 @@ return (
             </>
           )}
         </div>
-      </div>
-    );
-  }
-
-  // ONBOARDING
-  if (showOnboarding) {
-    return <Onboarding onComplete={() => setShowOnboarding(false)} />;
-  }
-
-  // PRACTICE HUB
-  if (showPracticeHub) {
-    return <PracticeHub onBack={() => setShowPracticeHub(false)} onVoiceChat={() => { setShowPracticeHub(false); setShowVoicePractice(true); }} />;
-  }
-
-  // PRACTICE TAB FULL
-  if (showPracticeTab) {
-    return (
-      <div style={{ maxWidth: 500, margin: '0 auto', minHeight: '100vh', background: '#FAFAFA' }}>
-        <div style={{ background: 'linear-gradient(135deg, #2D5A27 0%, #4A7C43 100%)', color: '#fff', padding: '20px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <button onClick={() => setShowPracticeTab(false)} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 24, cursor: 'pointer' }}>←</button>
-          <h2 style={{ margin: 0, fontSize: 18 }}>Practice</h2>
-          <div style={{ width: 40 }} />
-        </div>
-        <PracticeTab onVoiceChat={() => { setShowPracticeTab(false); setShowVoicePractice(true); }} />
       </div>
     );
   }

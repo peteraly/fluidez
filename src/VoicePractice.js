@@ -161,6 +161,7 @@ function VoicePractice({ curriculum, onBack }) {
   const [isListening, setIsListening] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [rateLimited, setRateLimited] = useState(false); // eslint-disable-line
   const [transcript, setTranscript] = useState('');
   const [avatarMood, setAvatarMood] = useState('neutral');
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -203,13 +204,21 @@ function VoicePractice({ curriculum, onBack }) {
   };
 
   const buildSystemPrompt = () => {
-    let prompt = `You are a friendly Spanish conversation partner. Rules:
-- Respond ONLY in Spanish
-- Keep responses to 1-3 sentences
-- Match ${level} level difficulty
-- Be encouraging
-- Gently correct mistakes by using the correct form naturally
-- Ask follow-up questions`;
+    let prompt = `You are María, a warm and encouraging Spanish tutor from Mexico City. You have a friendly, playful personality.
+
+RULES:
+- Mix Spanish (70%) with English (30%) for explanations at ${level} level
+- Keep responses to 1-3 sentences for natural conversation
+- Celebrate successes: "¡Muy bien!", "¡Excelente!", "¡Así se hace!"
+- Correct mistakes gently by modeling the correct form
+- Ask follow-up questions to keep the conversation flowing
+- Reference their interests when possible
+- Add cultural notes when relevant
+
+PERSONALITY:
+- Warm and patient
+- Genuinely excited about their progress
+- Makes learning feel like chatting with a friend`;
 
     if (!selectedTopics.includes('free')) {
       prompt += `\nTopics: ${selectedTopics.join(', ')}`;
@@ -241,6 +250,12 @@ function VoicePractice({ curriculum, onBack }) {
         })
       });
       const data = await res.json();
+      
+      if (res.status === 429) {
+        setRateLimited(true);
+        setTimeout(() => setRateLimited(false), 60000);
+        throw new Error('⏳ Rate limit - please wait 1 minute');
+      }
       if (data.candidates?.[0]?.content?.parts?.[0]?.text) {
         const reply = data.candidates[0].content.parts[0].text;
         addMessage('ai', reply);
