@@ -14,6 +14,7 @@ import StreakCalendar from './StreakCalendar';
 import DailyChallenge from './DailyChallenge';
 import StoriesMode from './StoriesMode';
 import Settings from './Settings';
+import FocusMode from './FocusMode';
 
 const theme = {
   primary: '#2D5A27', primaryLight: '#4A7C43', success: '#228B22',
@@ -351,6 +352,7 @@ function App() {
   const [showDailyChallenge, setShowDailyChallenge] = useState(false);
   const [showStories, setShowStories] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
+  const [showFocusMode, setShowFocusMode] = useState(false);
   const [currentDeck, setCurrentDeck] = useState(null);
   const [cardIdx, setCardIdx] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -454,6 +456,12 @@ function App() {
   if (screen === 'home') {
     const completed = getCompletedDays();
   // ============ FEATURE SCREENS ============
+  if (showFocusMode) return <FocusMode onBack={() => setShowFocusMode(false)} onSelectFeature={(f) => {
+    setShowFocusMode(false);
+    if (f === 'voice') setShowVoicePractice(true);
+    else if (f === 'roleplay') setPracticeMode('roleplay');
+    else if (f === 'grammar') setPracticeMode('grammar');
+  }} />;
   if (showSettings) return <Settings onBack={() => setShowSettings(false)} />;
   if (showStories) return <StoriesMode onBack={() => setShowStories(false)} />;
   if (showAchievements) return <Achievements onBack={() => setShowAchievements(false)} />;

@@ -1,464 +1,462 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const theme = {
-  primary: '#2D5A27', primaryLight: '#4A7C43', success: '#228B22',
-  error: '#CD5C5C', bg: '#FAFAFA', surface: '#FFF',
-  text: '#1A1A1A', textLight: '#666', border: '#E0E0E0'
-};
+const theme = { primary: '#2D5A27', primaryLight: '#4A7C43', success: '#228B22', error: '#CD5C5C', bg: '#FAFAFA', surface: '#FFF', text: '#1A1A1A', textLight: '#666', border: '#E0E0E0' };
 
-const Avatar = ({ speaking, listening, mood }) => {
-  const [frame, setFrame] = useState(0);
-  const mouthFrames = speaking ? ['😊', '😃', '😄', '😀'] : ['🙂'];
-  
-  useEffect(() => {
-    if (speaking) {
-      const interval = setInterval(() => setFrame(f => (f + 1) % 4), 150);
-      return () => clearInterval(interval);
-    }
-  }, [speaking]);
-
-  return (
-    <div style={{ width: 120, height: 120, borderRadius: '50%', background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primaryLight} 100%)`, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto', position: 'relative', boxShadow: speaking ? `0 0 30px ${theme.primaryLight}` : '0 4px 20px rgba(0,0,0,0.1)' }}>
-      {listening && (
-        <>
-          <div style={{ position: 'absolute', width: '100%', height: '100%', borderRadius: '50%', border: `3px solid ${theme.primary}`, animation: 'pulse 1.5s ease-out infinite', opacity: 0.6 }} />
-          <div style={{ position: 'absolute', width: '100%', height: '100%', borderRadius: '50%', border: `3px solid ${theme.primary}`, animation: 'pulse 1.5s ease-out infinite 0.5s', opacity: 0.4 }} />
-        </>
-      )}
-      <div style={{ fontSize: 60 }}>{mood === 'thinking' ? '🤔' : mouthFrames[frame]}</div>
-      <style>{`@keyframes pulse { 0% { transform: scale(1); opacity: 0.6; } 100% { transform: scale(1.5); opacity: 0; } }`}</style>
-    </div>
-  );
-};
-
-const Waveform = ({ active, color = theme.primary }) => (
-  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 3, height: 30 }}>
-    {[0,1,2,3,4].map(i => (
-      <div key={i} style={{ width: 4, height: active ? '100%' : 8, background: color, borderRadius: 2, animation: active ? `wave 0.5s ease-in-out infinite ${i * 0.1}s` : 'none' }} />
-    ))}
-    <style>{`@keyframes wave { 0%, 100% { height: 8px; } 50% { height: 24px; } }`}</style>
-  </div>
-);
-
-const TopicSidebar = ({ isOpen, onClose, selectedDays, setSelectedDays, selectedTopics, setSelectedTopics, level, setLevel, curriculum }) => {
-  if (!isOpen) return null;
-  const days = Object.keys(curriculum).map(d => ({ num: parseInt(d), ...curriculum[d] }));
-  const quickTopics = [
-    { id: 'free', label: '💬 Free Conversation' },
-    { id: 'restaurant', label: '🍽️ Restaurant' },
-    { id: 'directions', label: '🗺️ Directions' },
-    { id: 'shopping', label: '🛍️ Shopping' },
-    { id: 'travel', label: '✈️ Travel' },
-    { id: 'family', label: '👨‍👩‍👧 Family' }
-  ];
-
-  return (
-    <div style={{ position: 'fixed', top: 0, right: 0, bottom: 0, width: 300, background: theme.surface, boxShadow: '-4px 0 20px rgba(0,0,0,0.15)', zIndex: 1000, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-      <div style={{ padding: '16px 20px', borderBottom: `1px solid ${theme.border}`, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h3 style={{ margin: 0, fontSize: 16 }}>Conversation Focus</h3>
-        <button onClick={onClose} style={{ background: 'none', border: 'none', fontSize: 24, cursor: 'pointer' }}>×</button>
-      </div>
-      <div style={{ flex: 1, overflow: 'auto', padding: 16 }}>
-        <h4 style={{ margin: '0 0 12px', fontSize: 14, color: theme.textLight }}>📊 Level</h4>
-        {['A1', 'A2', 'B1'].map(l => (
-          <label key={l} style={{ display: 'flex', alignItems: 'center', padding: '10px 12px', marginBottom: 6, borderRadius: 8, background: level === l ? '#E8F5E9' : theme.bg, border: `1px solid ${level === l ? theme.primary : theme.border}`, cursor: 'pointer' }}>
-            <input type="radio" checked={level === l} onChange={() => setLevel(l)} style={{ marginRight: 10 }} />
-            {l}
-          </label>
-        ))}
-        <h4 style={{ margin: '20px 0 12px', fontSize: 14, color: theme.textLight }}>💬 Topics</h4>
-        {quickTopics.map(t => (
-          <label key={t.id} style={{ display: 'flex', alignItems: 'center', padding: '10px 12px', marginBottom: 6, borderRadius: 8, background: selectedTopics.includes(t.id) ? '#E8F5E9' : theme.bg, cursor: 'pointer' }}>
-            <input type="checkbox" checked={selectedTopics.includes(t.id)} onChange={() => setSelectedTopics(prev => prev.includes(t.id) ? prev.filter(x => x !== t.id) : [...prev.filter(x => x !== 'free'), t.id])} style={{ marginRight: 10 }} />
-            {t.label}
-          </label>
-        ))}
-        <h4 style={{ margin: '20px 0 12px', fontSize: 14, color: theme.textLight }}>📅 Daily Lessons</h4>
-        <div style={{ maxHeight: 200, overflow: 'auto' }}>
-          {days.map(d => (
-            <label key={d.num} style={{ display: 'flex', alignItems: 'center', padding: '8px 12px', marginBottom: 4, borderRadius: 8, background: selectedDays.includes(d.num) ? '#E8F5E9' : 'transparent', cursor: 'pointer', fontSize: 13 }}>
-              <input type="checkbox" checked={selectedDays.includes(d.num)} onChange={() => setSelectedDays(prev => prev.includes(d.num) ? prev.filter(x => x !== d.num) : [...prev, d.num])} style={{ marginRight: 10 }} />
-              Day {d.num}: {d.title}
-            </label>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const ContextUpload = ({ context, setContext, isOpen, onClose }) => {
-  const [textInput, setTextInput] = useState('');
-  if (!isOpen) return null;
-  
-  return (
-    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1001, padding: 20 }}>
-      <div style={{ background: theme.surface, borderRadius: 16, width: '100%', maxWidth: 500, maxHeight: '80vh', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-        <div style={{ padding: '16px 20px', borderBottom: `1px solid ${theme.border}`, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <h3 style={{ margin: 0 }}>📎 Add Context</h3>
-          <button onClick={onClose} style={{ background: 'none', border: 'none', fontSize: 24, cursor: 'pointer' }}>×</button>
-        </div>
-        <div style={{ padding: 20, flex: 1, overflow: 'auto' }}>
-          <p style={{ color: theme.textLight, marginTop: 0, fontSize: 14 }}>Add text or topics to discuss in Spanish.</p>
-          <textarea value={textInput} onChange={e => setTextInput(e.target.value)} placeholder="Paste text here..." style={{ width: '100%', height: 100, padding: 12, borderRadius: 8, border: `1px solid ${theme.border}`, resize: 'none', fontSize: 14, boxSizing: 'border-box' }} />
-          <button onClick={() => { if (textInput.trim()) { setContext(prev => [...prev, { type: 'text', content: textInput.substring(0, 3000), timestamp: Date.now() }]); setTextInput(''); } }} disabled={!textInput.trim()} style={{ marginTop: 8, padding: '10px 16px', borderRadius: 8, border: 'none', background: textInput.trim() ? theme.primary : theme.border, color: '#fff', cursor: textInput.trim() ? 'pointer' : 'default' }}>Add</button>
-          {context.length > 0 && (
-            <div style={{ marginTop: 16 }}>
-              <h4 style={{ margin: '0 0 8px', fontSize: 14 }}>Added:</h4>
-              {context.map(c => (
-                <div key={c.timestamp} style={{ display: 'flex', justifyContent: 'space-between', padding: 10, marginBottom: 8, borderRadius: 8, background: theme.bg }}>
-                  <span style={{ fontSize: 13 }}>{c.content.substring(0, 40)}...</span>
-                  <button onClick={() => setContext(prev => prev.filter(x => x.timestamp !== c.timestamp))} style={{ background: 'none', border: 'none', color: theme.error, cursor: 'pointer' }}>×</button>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-        <div style={{ padding: 16, borderTop: `1px solid ${theme.border}` }}>
-          <button onClick={onClose} style={{ width: '100%', padding: 14, borderRadius: 12, border: 'none', background: theme.primary, color: '#fff', fontSize: 16, fontWeight: 600, cursor: 'pointer' }}>Done</button>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const SessionSummary = ({ messages, duration, onClose }) => {
-  const userMsgs = messages.filter(m => m.role === 'user');
-  const words = userMsgs.reduce((acc, m) => acc + m.text.split(' ').length, 0);
-  
-  return (
-    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1001, padding: 20 }}>
-      <div style={{ background: theme.surface, borderRadius: 16, width: '100%', maxWidth: 400, padding: 24, textAlign: 'center' }}>
-        <div style={{ fontSize: 64, marginBottom: 16 }}>🎉</div>
-        <h2 style={{ margin: '0 0 8px' }}>Great Practice!</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, margin: '24px 0' }}>
-          <div style={{ padding: 16, background: theme.bg, borderRadius: 12 }}>
-            <div style={{ fontSize: 28, fontWeight: 700, color: theme.primary }}>{Math.floor(duration / 60)}:{(duration % 60).toString().padStart(2, '0')}</div>
-            <div style={{ fontSize: 12, color: theme.textLight }}>Duration</div>
-          </div>
-          <div style={{ padding: 16, background: theme.bg, borderRadius: 12 }}>
-            <div style={{ fontSize: 28, fontWeight: 700, color: theme.primary }}>{userMsgs.length}</div>
-            <div style={{ fontSize: 12, color: theme.textLight }}>Exchanges</div>
-          </div>
-          <div style={{ padding: 16, background: theme.bg, borderRadius: 12 }}>
-            <div style={{ fontSize: 28, fontWeight: 700, color: theme.primary }}>{words}</div>
-            <div style={{ fontSize: 12, color: theme.textLight }}>Words</div>
-          </div>
-          <div style={{ padding: 16, background: theme.bg, borderRadius: 12 }}>
-            <div style={{ fontSize: 28, fontWeight: 700, color: theme.success }}>+{Math.floor(words / 2)}</div>
-            <div style={{ fontSize: 12, color: theme.textLight }}>XP</div>
-          </div>
-        </div>
-        <button onClick={onClose} style={{ width: '100%', padding: 14, borderRadius: 12, border: 'none', background: theme.primary, color: '#fff', fontSize: 16, fontWeight: 600, cursor: 'pointer' }}>Continue</button>
-      </div>
-    </div>
-  );
-};
-
-function VoicePractice({ curriculum, onBack }) {
-  const [apiKey, setApiKey] = useState('');
+export default function VoicePractice({ onBack }) {
   const [messages, setMessages] = useState([]);
+  const [input, setInput] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const [isListening, setIsListening] = useState(false);
-  const [isSpeaking, setIsSpeaking] = useState(false);
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [rateLimited, setRateLimited] = useState(false); // eslint-disable-line
-  const [transcript, setTranscript] = useState('');
-  const [avatarMood, setAvatarMood] = useState('neutral');
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [contextOpen, setContextOpen] = useState(false);
-  const [showSummary, setShowSummary] = useState(false);
-  const [useKeyboard, setUseKeyboard] = useState(false);
-  const [keyboardInput, setKeyboardInput] = useState('');
-  const [selectedDays, setSelectedDays] = useState([]);
-  const [selectedTopics, setSelectedTopics] = useState(['free']);
-  const [level, setLevel] = useState('A1');
-  const [context, setContext] = useState([]);
-  const [sessionStart, setSessionStart] = useState(null);
-  const [recognitionActive, setRecognitionActive] = useState(false);
-  
-  const recognitionRef = useRef(null);
-  const synthRef = useRef(window.speechSynthesis);
+  const [phase, setPhase] = useState('warmup'); // warmup, main, celebration
+  const [metrics, setMetrics] = useState({
+    speakingAttempts: 0,
+    hesitationEvents: 0,
+    sessionStart: Date.now(),
+    messagesFromUser: 0
+  });
+  const [showHint, setShowHint] = useState(false);
+  const [lastActivity, setLastActivity] = useState(Date.now());
+  const [sessionTime, setSessionTime] = useState(0);
   const messagesEndRef = useRef(null);
+  const recognitionRef = useRef(null);
 
+  // Warm-up prompts
+  const warmupPrompts = [
+    { ai: "¡Hola! Let's warm up. Just say: 'Hola, ¿cómo estás?'", expected: "hola" },
+    { ai: "¡Perfecto! Now say: 'Muy bien, gracias'", expected: "bien" },
+    { ai: "¡Excelente! You're warmed up. Let's have a real conversation! 🎉", expected: null }
+  ];
+  const [warmupStep, setWarmupStep] = useState(0);
+
+  // Session timer
   useEffect(() => {
-    const key = localStorage.getItem('gemini_api_key');
-    if (key) setApiKey(key);
-  }, []);
+    const timer = setInterval(() => {
+      setSessionTime(Math.floor((Date.now() - metrics.sessionStart) / 1000));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [metrics.sessionStart]);
 
+  // Hesitation detection
+  useEffect(() => {
+    if (phase !== 'main') return;
+    
+    const hesitationTimer = setInterval(() => {
+      const timeSinceActivity = Date.now() - lastActivity;
+      if (timeSinceActivity > 8000 && !isListening && !isLoading && messages.length > 0) {
+        setShowHint(true);
+        setMetrics(m => ({ ...m, hesitationEvents: m.hesitationEvents + 1 }));
+      }
+    }, 1000);
+    return () => clearInterval(hesitationTimer);
+  }, [lastActivity, isListening, isLoading, phase, messages.length]); // eslint-disable-line
+
+  // Auto-scroll
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  const speak = (text) => {
-    synthRef.current.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'es-ES';
-    utterance.rate = level === 'A1' ? 0.8 : level === 'A2' ? 0.9 : 1.0;
-    utterance.onstart = () => { setIsSpeaking(true); setAvatarMood('speaking'); };
-    utterance.onend = () => { setIsSpeaking(false); setAvatarMood('neutral'); };
-    synthRef.current.speak(utterance);
-  };
-
-  const addMessage = (role, text) => {
-    setMessages(prev => [...prev, { role, text, timestamp: Date.now() }]);
-  };
-
-  const buildSystemPrompt = () => {
-    let prompt = `You are María, a warm and encouraging Spanish tutor from Mexico City. You have a friendly, playful personality.
-
-RULES:
-- Mix Spanish (70%) with English (30%) for explanations at ${level} level
-- Keep responses to 1-3 sentences for natural conversation
-- Celebrate successes: "¡Muy bien!", "¡Excelente!", "¡Así se hace!"
-- Correct mistakes gently by modeling the correct form
-- Ask follow-up questions to keep the conversation flowing
-- Reference their interests when possible
-- Add cultural notes when relevant
-
-PERSONALITY:
-- Warm and patient
-- Genuinely excited about their progress
-- Makes learning feel like chatting with a friend`;
-
-    if (!selectedTopics.includes('free')) {
-      prompt += `\nTopics: ${selectedTopics.join(', ')}`;
-    }
-    if (selectedDays.length > 0) {
-      const dayInfo = selectedDays.map(d => `Day ${d}: ${curriculum[d]?.title}`).join(', ');
-      prompt += `\nLesson focus: ${dayInfo}`;
-    }
-    if (context.length > 0) {
-      prompt += `\nContext to discuss: ${context.map(c => c.content).join(' ').substring(0, 1000)}`;
-    }
-    return prompt;
-  };
-
-  const handleUserMessage = async (text) => {
-    if (!text.trim() || !apiKey) return;
-    addMessage('user', text);
-    setIsProcessing(true);
-    setAvatarMood('thinking');
-
-    try {
-      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          systemInstruction: { parts: [{ text: buildSystemPrompt() }] },
-          contents: [...messages.map(m => ({ role: m.role === 'ai' ? 'model' : 'user', parts: [{ text: m.text }] })), { role: 'user', parts: [{ text }] }],
-          generationConfig: { temperature: 0.8, maxOutputTokens: 200 }
-        })
-      });
-      const data = await res.json();
-      
-      if (res.status === 429) {
-        setRateLimited(true);
-        setTimeout(() => setRateLimited(false), 60000);
-        throw new Error('⏳ Rate limit - please wait 1 minute');
-      }
-      if (data.candidates?.[0]?.content?.parts?.[0]?.text) {
-        const reply = data.candidates[0].content.parts[0].text;
-        addMessage('ai', reply);
-        speak(reply);
-      }
-    } catch (err) {
-      console.error('API Error:', err);
-      const errMsg = "Perdón, hubo un error. ¿Puedes repetir?";
-      addMessage('ai', errMsg);
-      speak(errMsg);
-    } finally {
-      setIsProcessing(false);
-      setAvatarMood('neutral');
-    }
-  };
-
   // Initialize speech recognition
   useEffect(() => {
-    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
-      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-      const recognition = new SpeechRecognition();
-      recognition.continuous = false;
-      recognition.interimResults = true;
-      recognition.lang = 'es-ES';
-
-      recognition.onstart = () => {
-        setRecognitionActive(true);
-        setIsListening(true);
-      };
-
-      recognition.onresult = (event) => {
-        const current = event.results[event.results.length - 1];
-        const text = current[0].transcript;
-        setTranscript(text);
-        if (current.isFinal) {
-          handleUserMessage(text);
-          setTranscript('');
-        }
-      };
-
-      recognition.onend = () => {
-        setRecognitionActive(false);
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+      recognitionRef.current = new SpeechRecognition();
+      recognitionRef.current.continuous = false;
+      recognitionRef.current.interimResults = false;
+      recognitionRef.current.lang = 'es-MX';
+      
+      recognitionRef.current.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        setInput(transcript);
         setIsListening(false);
+        setLastActivity(Date.now());
+        setShowHint(false);
+        // Auto-submit after voice input
+        setTimeout(() => handleSend(transcript), 300);
       };
-
-      recognition.onerror = (event) => {
-        console.error('Speech error:', event.error);
-        setRecognitionActive(false);
-        setIsListening(false);
-      };
-
-      recognitionRef.current = recognition;
+      
+      recognitionRef.current.onerror = () => setIsListening(false);
+      recognitionRef.current.onend = () => setIsListening(false);
     }
-
-    const synth = synthRef.current;
-    return () => {
-      if (recognitionRef.current) {
-        try { recognitionRef.current.abort(); } catch (e) { /* ignore */ }
-      }
-      synth.cancel();
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Send greeting on mount
+  // Start warm-up on mount
   useEffect(() => {
-    if (apiKey && messages.length === 0) {
-      setSessionStart(Date.now());
-      const greeting = "¡Hola! ¿Cómo estás? Estoy aquí para practicar español contigo.";
-      addMessage('ai', greeting);
-      speak(greeting);
+    if (phase === 'warmup' && messages.length === 0) {
+      setMessages([{ role: 'ai', text: warmupPrompts[0].ai }]);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [apiKey]);
+  }, []);
 
-  const toggleListening = () => {
-    if (!recognitionRef.current) {
-      alert('Speech recognition not supported. Try Chrome or Edge.');
+  const startListening = () => {
+    if (recognitionRef.current && !isListening) {
+      setIsListening(true);
+      setLastActivity(Date.now());
+      setShowHint(false);
+      recognitionRef.current.start();
+    }
+  };
+
+  const stopListening = () => {
+    if (recognitionRef.current && isListening) {
+      recognitionRef.current.stop();
+      setIsListening(false);
+    }
+  };
+
+  const speak = (text) => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'es-MX';
+    utterance.rate = 0.85;
+    speechSynthesis.speak(utterance);
+  };
+
+  const handleSend = async (text = input) => {
+    if (!text.trim()) return;
+    
+    setLastActivity(Date.now());
+    setShowHint(false);
+    setMetrics(m => ({ 
+      ...m, 
+      speakingAttempts: m.speakingAttempts + 1,
+      messagesFromUser: m.messagesFromUser + 1
+    }));
+
+    const userMessage = { role: 'user', text: text.trim() };
+    setMessages(prev => [...prev, userMessage]);
+    setInput('');
+
+    // Handle warm-up phase
+    if (phase === 'warmup') {
+      const currentPrompt = warmupPrompts[warmupStep];
+      if (currentPrompt.expected && text.toLowerCase().includes(currentPrompt.expected)) {
+        // Correct warm-up response
+        setTimeout(() => {
+          if (warmupStep < warmupPrompts.length - 1) {
+            setWarmupStep(warmupStep + 1);
+            const nextPrompt = warmupPrompts[warmupStep + 1];
+            setMessages(prev => [...prev, { role: 'ai', text: nextPrompt.ai }]);
+            if (nextPrompt.expected === null) {
+              // Warm-up complete, start main conversation
+              setTimeout(() => {
+                setPhase('main');
+                startMainConversation();
+              }, 1500);
+            }
+          }
+        }, 500);
+      } else {
+        // Encourage retry
+        setMessages(prev => [...prev, { role: 'ai', text: "¡Casi! Try again: " + warmupPrompts[warmupStep].ai.split(': ')[1] }]);
+      }
       return;
     }
 
-    synthRef.current.cancel();
-    setIsSpeaking(false);
-
-    if (recognitionActive) {
-      try { recognitionRef.current.stop(); } catch (e) { /* ignore */ }
-    } else {
-      try { 
-        recognitionRef.current.start(); 
-      } catch (e) {
-        try {
-          recognitionRef.current.stop();
-          setTimeout(() => {
-            try { recognitionRef.current.start(); } catch (e2) { /* ignore */ }
-          }, 100);
-        } catch (e2) { /* ignore */ }
+    // Main conversation with AI
+    setIsLoading(true);
+    try {
+      const apiKey = localStorage.getItem('gemini_api_key');
+      if (!apiKey) {
+        setMessages(prev => [...prev, { role: 'ai', text: '⚙️ Please add your Gemini API key in Settings first!' }]);
+        setIsLoading(false);
+        return;
       }
+
+      const conversationHistory = messages.slice(-6).map(m => 
+        `${m.role === 'user' ? 'Student' : 'María'}: ${m.text}`
+      ).join('\n');
+
+      const systemPrompt = `You are María, a warm and encouraging Spanish tutor.
+
+BEHAVIOR RULES:
+1. Speak 80% Spanish, 20% English for support
+2. Keep responses SHORT (1-2 sentences max)
+3. ALWAYS celebrate attempts: "¡Muy bien!" even if imperfect
+4. Ask ONE simple question to continue conversation
+5. If user seems stuck, offer help: "Try saying: [simpler version]"
+6. Use natural fillers: "Hmm...", "A ver...", "Bueno..."
+7. Never criticize - reframe errors as learning
+
+CURRENT CONVERSATION:
+${conversationHistory}
+
+Student's new message: ${text}
+
+Respond as María (1-2 sentences, encouraging, ask a follow-up question):`;
+
+      const response = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: systemPrompt }] }],
+            generationConfig: { temperature: 0.8, maxOutputTokens: 150 }
+          })
+        }
+      );
+
+      if (response.status === 429) {
+        setMessages(prev => [...prev, { role: 'ai', text: '⏳ Too many requests - wait 1 minute and try again!' }]);
+      } else {
+        const data = await response.json();
+        const aiText = data.candidates?.[0]?.content?.parts?.[0]?.text || '¿Puedes repetir?';
+        setMessages(prev => [...prev, { role: 'ai', text: aiText }]);
+        speak(aiText);
+      }
+    } catch (err) {
+      setMessages(prev => [...prev, { role: 'ai', text: 'Connection error. Try again!' }]);
     }
+    setIsLoading(false);
   };
 
-  const handleKeyboardSubmit = () => {
-    if (keyboardInput.trim()) {
-      handleUserMessage(keyboardInput);
-      setKeyboardInput('');
+  const startMainConversation = async () => {
+    setIsLoading(true);
+    const apiKey = localStorage.getItem('gemini_api_key');
+    if (!apiKey) {
+      setMessages(prev => [...prev, { role: 'ai', text: 'Add API key in Settings to continue!' }]);
+      setIsLoading(false);
+      return;
     }
+
+    try {
+      const response = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: `You are María, a friendly Spanish tutor. Start a simple conversation. Ask ONE easy question in Spanish (with English hint). Keep it warm and encouraging. Example: "¿Cómo te llamas? (What's your name?)"` }] }],
+            generationConfig: { temperature: 0.9, maxOutputTokens: 100 }
+          })
+        }
+      );
+      const data = await response.json();
+      const aiText = data.candidates?.[0]?.content?.parts?.[0]?.text || '¿Cómo te llamas? (What\'s your name?)';
+      setMessages(prev => [...prev, { role: 'ai', text: aiText }]);
+      speak(aiText);
+    } catch (err) {
+      setMessages(prev => [...prev, { role: 'ai', text: '¿Cómo te llamas? (What\'s your name?)' }]);
+    }
+    setIsLoading(false);
   };
 
   const endSession = () => {
-    synthRef.current.cancel();
-    setShowSummary(true);
+    // Calculate bravery score
+    const total = metrics.speakingAttempts + metrics.hesitationEvents;
+    const braveryScore = total > 0 ? Math.round((metrics.speakingAttempts / total) * 100) : 100;
+    
+    // Save to history
+    const history = JSON.parse(localStorage.getItem('fluidez_voice_history') || '[]');
+    history.push({
+      ...metrics,
+      braveryScore,
+      sessionDuration: sessionTime,
+      date: new Date().toISOString()
+    });
+    localStorage.setItem('fluidez_voice_history', JSON.stringify(history));
+    
+    // Mark practice day
+    const practiceHistory = JSON.parse(localStorage.getItem('fluidez_practice_history') || '[]');
+    const today = new Date().toDateString();
+    if (!practiceHistory.includes(today)) {
+      practiceHistory.push(today);
+      localStorage.setItem('fluidez_practice_history', JSON.stringify(practiceHistory));
+    }
+    
+    setPhase('celebration');
   };
 
-  const getDuration = () => sessionStart ? Math.floor((Date.now() - sessionStart) / 1000) : 0;
+  const getHint = () => {
+    const hints = [
+      "Try: 'No entiendo' (I don't understand)",
+      "Try: 'Más despacio, por favor' (Slower please)",
+      "Try: 'Sí' or 'No' to answer simply",
+      "Try: '¿Cómo?' (What?/Pardon?)",
+      "Try repeating María's last words"
+    ];
+    return hints[Math.floor(Math.random() * hints.length)];
+  };
 
-  if (!apiKey) {
+  // Celebration screen
+  if (phase === 'celebration') {
+    const braveryScore = metrics.speakingAttempts + metrics.hesitationEvents > 0 
+      ? Math.round((metrics.speakingAttempts / (metrics.speakingAttempts + metrics.hesitationEvents)) * 100)
+      : 100;
+    const minutes = Math.floor(sessionTime / 60);
+    const seconds = sessionTime % 60;
+    
     return (
-      <div style={{ maxWidth: 500, margin: '0 auto', minHeight: '100vh', background: theme.bg, fontFamily: '-apple-system, sans-serif' }}>
-        <div style={{ background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primaryLight} 100%)`, color: '#fff', padding: '20px 24px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <button onClick={onBack} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 20, cursor: 'pointer' }}>←</button>
-            <h2 style={{ margin: 0, fontSize: 18 }}>Voice Practice</h2>
-          </div>
+      <div style={styles.container}>
+        <div style={styles.header}>
+          <button onClick={onBack} style={styles.backBtn}>←</button>
+          <h2 style={styles.title}>Session Complete! 🎉</h2>
+          <div style={{ width: 40 }} />
         </div>
-        <div style={{ padding: 20, textAlign: 'center' }}>
-          <div style={{ fontSize: 64, marginBottom: 16 }}>🔑</div>
-          <h3>API Key Required</h3>
-          <p style={{ color: theme.textLight }}>Set up your Gemini API key in AI Practice first.</p>
-          <button onClick={onBack} style={{ marginTop: 16, padding: '14px 24px', borderRadius: 12, border: 'none', background: theme.primary, color: '#fff', fontSize: 16, cursor: 'pointer' }}>Go Back</button>
+        <div style={{ ...styles.content, textAlign: 'center', paddingTop: 40 }}>
+          <div style={{ fontSize: 64 }}>🌟</div>
+          <h2 style={{ margin: '16px 0 8px' }}>¡Fantástico!</h2>
+          
+          <div style={styles.statsGrid}>
+            <div style={styles.statBox}>
+              <span style={styles.statNum}>{metrics.speakingAttempts}</span>
+              <span style={styles.statLabel}>Times you spoke</span>
+            </div>
+            <div style={styles.statBox}>
+              <span style={styles.statNum}>{braveryScore}%</span>
+              <span style={styles.statLabel}>Bravery score</span>
+            </div>
+            <div style={styles.statBox}>
+              <span style={styles.statNum}>{minutes}:{seconds.toString().padStart(2, '0')}</span>
+              <span style={styles.statLabel}>Session time</span>
+            </div>
+          </div>
+
+          <div style={styles.encouragement}>
+            {braveryScore >= 80 ? "🔥 Incredible confidence! Keep it up!" :
+             braveryScore >= 60 ? "💪 Great effort! You're building fluency!" :
+             "🌱 Every attempt counts! You're learning!"}
+          </div>
+
+          <div style={styles.missionCard}>
+            <h4 style={{ margin: '0 0 8px' }}>🎯 Today's Mission</h4>
+            <p style={{ margin: 0, color: theme.textLight }}>
+              Say "Hola, ¿cómo estás?" to someone in real life today!
+            </p>
+          </div>
+
+          <button onClick={onBack} style={styles.primaryBtn}>Done</button>
         </div>
       </div>
     );
   }
 
   return (
-    <div style={{ maxWidth: 500, margin: '0 auto', minHeight: '100vh', background: theme.bg, fontFamily: '-apple-system, sans-serif', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primaryLight} 100%)`, color: '#fff', padding: '16px 20px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <button onClick={onBack} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 20, cursor: 'pointer' }}>←</button>
-          <h2 style={{ margin: 0, fontSize: 18 }}>Voice Practice</h2>
-          <div style={{ display: 'flex', gap: 8 }}>
-            <button onClick={() => setContextOpen(true)} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 18, cursor: 'pointer' }}>📎</button>
-            <button onClick={() => setSidebarOpen(true)} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 18, cursor: 'pointer' }}>☰</button>
-          </div>
-        </div>
-        {(selectedDays.length > 0 || !selectedTopics.includes('free') || context.length > 0) && (
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 12 }}>
-            {selectedDays.map(d => <span key={d} style={{ fontSize: 11, background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: 12 }}>Day {d}</span>)}
-            {!selectedTopics.includes('free') && selectedTopics.map(t => <span key={t} style={{ fontSize: 11, background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: 12 }}>{t}</span>)}
-            {context.length > 0 && <span style={{ fontSize: 11, background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: 12 }}>📎 {context.length}</span>}
-          </div>
-        )}
+    <div style={styles.container}>
+      <div style={styles.header}>
+        <button onClick={onBack} style={styles.backBtn}>←</button>
+        <h2 style={styles.title}>
+          {phase === 'warmup' ? '🔥 Warm Up' : '🎙️ Voice Chat'}
+        </h2>
+        <span style={styles.timer}>
+          {Math.floor(sessionTime / 60)}:{(sessionTime % 60).toString().padStart(2, '0')}
+        </span>
       </div>
 
-      <div style={{ padding: '24px 20px', textAlign: 'center' }}>
-        <Avatar speaking={isSpeaking} listening={isListening} mood={avatarMood} />
-        <div style={{ marginTop: 12 }}>
-          {isListening ? <Waveform active color={theme.error} /> : isSpeaking ? <Waveform active color={theme.primary} /> : isProcessing ? <span style={{ color: theme.textLight, fontSize: 14 }}>Pensando...</span> : <span style={{ color: theme.textLight, fontSize: 14 }}>Tap mic to speak</span>}
+      {/* Progress indicator for warm-up */}
+      {phase === 'warmup' && (
+        <div style={styles.warmupProgress}>
+          <div style={{ ...styles.warmupDot, background: warmupStep >= 0 ? theme.primary : theme.border }} />
+          <div style={{ ...styles.warmupDot, background: warmupStep >= 1 ? theme.primary : theme.border }} />
+          <div style={{ ...styles.warmupDot, background: warmupStep >= 2 ? theme.primary : theme.border }} />
         </div>
-      </div>
+      )}
 
-      <div style={{ flex: 1, overflow: 'auto', padding: '0 20px 20px', display: 'flex', flexDirection: 'column', gap: 12 }}>
+      {/* Messages */}
+      <div style={styles.messages}>
         {messages.map((msg, i) => (
-          <div key={i} style={{ display: 'flex', justifyContent: msg.role === 'user' ? 'flex-end' : 'flex-start' }}>
-            <div style={{ maxWidth: '80%', padding: '12px 16px', borderRadius: 16, background: msg.role === 'user' ? theme.primary : theme.surface, color: msg.role === 'user' ? '#fff' : theme.text, border: msg.role === 'user' ? 'none' : `1px solid ${theme.border}` }}>
-              <p style={{ margin: 0, lineHeight: 1.5 }}>{msg.text}</p>
-              {msg.role === 'ai' && <button onClick={() => speak(msg.text)} style={{ background: 'none', border: 'none', color: theme.textLight, cursor: 'pointer', fontSize: 14, marginTop: 4, padding: 0 }}>🔊</button>}
-            </div>
+          <div key={i} style={{
+            ...styles.message,
+            alignSelf: msg.role === 'user' ? 'flex-end' : 'flex-start',
+            background: msg.role === 'user' ? theme.primary : theme.surface,
+            color: msg.role === 'user' ? '#fff' : theme.text
+          }}>
+            {msg.text}
+            {msg.role === 'ai' && (
+              <button onClick={() => speak(msg.text)} style={styles.speakBtn}>🔊</button>
+            )}
           </div>
         ))}
-        {transcript && (
-          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-            <div style={{ maxWidth: '80%', padding: '12px 16px', borderRadius: 16, background: theme.primaryLight, color: '#fff', opacity: 0.7 }}>{transcript}...</div>
+        {isLoading && (
+          <div style={{ ...styles.message, background: theme.surface }}>
+            <span style={styles.thinking}>María is thinking...</span>
           </div>
         )}
         <div ref={messagesEndRef} />
       </div>
 
-      <div style={{ padding: 16, background: theme.surface, borderTop: `1px solid ${theme.border}` }}>
-        {useKeyboard ? (
-          <div style={{ display: 'flex', gap: 8 }}>
-            <input type="text" value={keyboardInput} onChange={e => setKeyboardInput(e.target.value)} placeholder="Escribe en español..." style={{ flex: 1, padding: 14, borderRadius: 12, border: `1px solid ${theme.border}`, fontSize: 16 }} onKeyPress={e => e.key === 'Enter' && handleKeyboardSubmit()} />
-            <button onClick={handleKeyboardSubmit} disabled={!keyboardInput.trim()} style={{ padding: '14px 20px', borderRadius: 12, border: 'none', background: keyboardInput.trim() ? theme.primary : theme.border, color: '#fff', cursor: keyboardInput.trim() ? 'pointer' : 'default' }}>➤</button>
-          </div>
-        ) : (
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <button onClick={toggleListening} disabled={isProcessing || isSpeaking} style={{ width: 72, height: 72, borderRadius: '50%', border: 'none', background: isListening ? theme.error : isProcessing || isSpeaking ? theme.border : theme.primary, color: '#fff', fontSize: 28, cursor: isProcessing || isSpeaking ? 'default' : 'pointer', boxShadow: isListening ? `0 0 20px ${theme.error}` : '0 4px 12px rgba(0,0,0,0.15)' }}>
-              {isListening ? '⏹' : '🎙️'}
-            </button>
-          </div>
-        )}
-        <div style={{ display: 'flex', justifyContent: 'center', gap: 16, marginTop: 16 }}>
-          <button onClick={() => setUseKeyboard(!useKeyboard)} style={{ background: 'none', border: 'none', color: theme.textLight, cursor: 'pointer', fontSize: 13 }}>{useKeyboard ? '🎙️ Voice' : '⌨️ Keyboard'}</button>
-          <button onClick={() => { const hint = "Puedes preguntar: '¿Cómo se dice...?'"; addMessage('ai', hint); speak(hint); }} style={{ background: 'none', border: 'none', color: theme.textLight, cursor: 'pointer', fontSize: 13 }}>💡 Hint</button>
-          <button onClick={endSession} style={{ background: 'none', border: 'none', color: theme.error, cursor: 'pointer', fontSize: 13 }}>⏹️ End</button>
+      {/* Hint card */}
+      {showHint && phase === 'main' && (
+        <div style={styles.hintCard}>
+          <span style={{ fontSize: 16 }}>💡</span>
+          <span>{getHint()}</span>
+          <button onClick={() => setShowHint(false)} style={styles.dismissHint}>✕</button>
         </div>
+      )}
+
+      {/* Input area */}
+      <div style={styles.inputArea}>
+        <input
+          value={input}
+          onChange={(e) => { setInput(e.target.value); setLastActivity(Date.now()); setShowHint(false); }}
+          onKeyPress={(e) => e.key === 'Enter' && handleSend()}
+          placeholder="Type or tap mic to speak..."
+          style={styles.input}
+        />
+        <button onClick={() => handleSend()} style={styles.sendBtn}>➤</button>
       </div>
 
-      <TopicSidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} selectedDays={selectedDays} setSelectedDays={setSelectedDays} selectedTopics={selectedTopics} setSelectedTopics={setSelectedTopics} level={level} setLevel={setLevel} curriculum={curriculum} />
-      <ContextUpload context={context} setContext={setContext} isOpen={contextOpen} onClose={() => setContextOpen(false)} />
-      {showSummary && <SessionSummary messages={messages} duration={getDuration()} onClose={() => { setShowSummary(false); onBack(); }} />}
-      {sidebarOpen && <div onClick={() => setSidebarOpen(false)} style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.3)', zIndex: 999 }} />}
+      {/* Action buttons */}
+      <div style={styles.actions}>
+        <button 
+          onClick={isListening ? stopListening : startListening} 
+          style={{
+            ...styles.actionBtn,
+            background: isListening ? theme.error : theme.primary
+          }}
+        >
+          {isListening ? '⏹️ Stop' : '🎤 Speak'}
+        </button>
+        {phase === 'main' && (
+          <button onClick={endSession} style={{ ...styles.actionBtn, background: theme.textLight }}>
+            ⏹️ End Session
+          </button>
+        )}
+      </div>
+
+      {/* Confidence meter */}
+      {phase === 'main' && metrics.speakingAttempts > 0 && (
+        <div style={styles.confidenceMeter}>
+          <span>Bravery: </span>
+          <div style={styles.meterBar}>
+            <div style={{
+              ...styles.meterFill,
+              width: `${Math.min(100, (metrics.speakingAttempts / (metrics.speakingAttempts + metrics.hesitationEvents + 1)) * 100)}%`
+            }} />
+          </div>
+          <span>{metrics.speakingAttempts} attempts</span>
+        </div>
+      )}
     </div>
   );
 }
 
-export default VoicePractice;
+const styles = {
+  container: { maxWidth: 500, margin: '0 auto', minHeight: '100vh', background: theme.bg, display: 'flex', flexDirection: 'column', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' },
+  header: { background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primaryLight} 100%)`, color: '#fff', padding: '16px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
+  title: { margin: 0, fontSize: 18 },
+  backBtn: { background: 'none', border: 'none', color: '#fff', fontSize: 22, cursor: 'pointer' },
+  timer: { background: 'rgba(255,255,255,0.2)', padding: '4px 12px', borderRadius: 12, fontSize: 14 },
+  warmupProgress: { display: 'flex', justifyContent: 'center', gap: 8, padding: 12, background: theme.surface },
+  warmupDot: { width: 10, height: 10, borderRadius: '50%', transition: 'background 0.3s' },
+  messages: { flex: 1, overflow: 'auto', padding: 16, display: 'flex', flexDirection: 'column', gap: 12 },
+  message: { maxWidth: '80%', padding: '12px 16px', borderRadius: 16, position: 'relative', lineHeight: 1.4 },
+  speakBtn: { background: 'none', border: 'none', cursor: 'pointer', marginLeft: 8, opacity: 0.7 },
+  thinking: { fontStyle: 'italic', color: theme.textLight },
+  hintCard: { display: 'flex', alignItems: 'center', gap: 10, margin: '0 16px', padding: 12, background: '#FEF3C7', borderRadius: 12, border: '1px solid #F59E0B' },
+  dismissHint: { marginLeft: 'auto', background: 'none', border: 'none', cursor: 'pointer', opacity: 0.6 },
+  inputArea: { display: 'flex', gap: 8, padding: '12px 16px', background: theme.surface, borderTop: `1px solid ${theme.border}` },
+  input: { flex: 1, padding: 12, fontSize: 16, border: `1px solid ${theme.border}`, borderRadius: 24, outline: 'none' },
+  sendBtn: { width: 48, height: 48, borderRadius: '50%', background: theme.primary, color: '#fff', border: 'none', fontSize: 18, cursor: 'pointer' },
+  actions: { display: 'flex', gap: 12, padding: '12px 16px' },
+  actionBtn: { flex: 1, padding: 14, border: 'none', borderRadius: 12, color: '#fff', fontSize: 16, fontWeight: 600, cursor: 'pointer' },
+  confidenceMeter: { display: 'flex', alignItems: 'center', gap: 8, padding: '8px 16px', fontSize: 12, color: theme.textLight },
+  meterBar: { flex: 1, height: 6, background: theme.border, borderRadius: 3, overflow: 'hidden' },
+  meterFill: { height: '100%', background: theme.success, transition: 'width 0.3s' },
+  content: { padding: 20 },
+  statsGrid: { display: 'flex', gap: 12, justifyContent: 'center', margin: '24px 0' },
+  statBox: { background: theme.surface, padding: 16, borderRadius: 12, border: `1px solid ${theme.border}`, minWidth: 80, textAlign: 'center' },
+  statNum: { display: 'block', fontSize: 24, fontWeight: 700, color: theme.primary },
+  statLabel: { fontSize: 11, color: theme.textLight },
+  encouragement: { fontSize: 16, fontWeight: 500, margin: '16px 0', color: theme.text },
+  missionCard: { background: '#FEF3C7', padding: 16, borderRadius: 12, margin: '24px 0', textAlign: 'left' },
+  primaryBtn: { background: theme.primary, color: '#fff', border: 'none', padding: '16px 32px', borderRadius: 12, fontSize: 16, fontWeight: 600, cursor: 'pointer', width: '100%' }
+};
