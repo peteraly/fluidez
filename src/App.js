@@ -441,23 +441,18 @@ function App() {
 
   // SPLASH
   if (screen === 'splash') {
-    
-  // PHASE 5 SCREENS
-  if (showStories) return <StoriesMode onBack={() => setShowStories(false)} />;
-  if (showSettings) return <Settings onBack={() => setShowSettings(false)} />;
+    return (
+      <div style={{ ...s.container, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: theme.primary }}>
+        <div style={{ fontSize: 56 }}>🇪🇸</div>
+        <h1 style={{ color: '#fff', fontSize: 32, margin: '8px 0' }}>Fluidez</h1>
+        <p style={{ color: 'rgba(255,255,255,0.8)' }}>30-Day Spanish Course</p>
+      </div>
+    );
+  }
 
-  // PHASE 4 SCREENS
-  if (showAchievements) return <Achievements onBack={() => setShowAchievements(false)} />;
-  if (showCalendar) return <StreakCalendar onBack={() => setShowCalendar(false)} />;
-  if (showDailyChallenge) return <DailyChallenge onBack={() => setShowDailyChallenge(false)} />;
-
-  // PRACTICE MODES RENDER
-  if (practiceMode === 'roleplay') return <RoleplayMode onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'grammar') return <GrammarDrills onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'pronunciation') return <PronunciationPractice onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'vault') return <ContentVault onBack={() => setPracticeMode(null)} />;
-  if (practiceMode === 'review') return <QuickReview onBack={() => setPracticeMode(null)} />;
-
+  // HOME
+  if (screen === 'home') {
+    const completed = getCompletedDays();
   // ============ FEATURE SCREENS ============
   if (showSettings) return <Settings onBack={() => setShowSettings(false)} />;
   if (showStories) return <StoriesMode onBack={() => setShowStories(false)} />;
@@ -472,19 +467,6 @@ function App() {
   // ============ END FEATURE SCREENS ============
 
 
-
-return (
-      <div style={{ ...s.container, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: theme.primary }}>
-        <div style={{ fontSize: 56 }}>🇪🇸</div>
-        <h1 style={{ color: '#fff', fontSize: 32, margin: '8px 0' }}>Fluidez</h1>
-        <p style={{ color: 'rgba(255,255,255,0.8)' }}>30-Day Spanish Course</p>
-      </div>
-    );
-  }
-
-  // HOME
-  if (screen === 'home') {
-    const completed = getCompletedDays();
     return (
       <div style={s.container}>
         <div style={s.header}>
