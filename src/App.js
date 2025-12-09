@@ -16,6 +16,10 @@ import StoriesMode from './StoriesMode';
 import Settings from './Settings';
 import FocusMode from './FocusMode';
 
+import MultimodalVoiceChat from './MultimodalVoiceChat';
+import ImmersiveRoleplay from './ImmersiveRoleplay';
+import InteractiveCurriculum from './InteractiveCurriculum';
+
 const theme = {
   primary: '#2D5A27', primaryLight: '#4A7C43', success: '#228B22',
   warning: '#DAA520', error: '#CD5C5C', bg: '#FAFAFA', surface: '#FFF',
@@ -370,6 +374,9 @@ function App() {
   const [showAIPractice, setShowAIPractice] = useState(false);
   const [aiPracticeDay, setAiPracticeDay] = useState(null);
   const [showVoicePractice, setShowVoicePractice] = useState(false);
+  const [showMultimodalVoice, setShowMultimodalVoice] = useState(false);
+  const [showImmersiveRoleplay, setShowImmersiveRoleplay] = useState(false);
+  const [showCurriculumDay, setShowCurriculumDay] = useState(null);
   const [showPracticeTab, setShowPracticeTab] = useState(false);
   const [showPracticeHub, setShowPracticeHub] = useState(false);
   const [showOnboarding, setShowOnboarding] = useState(() => !localStorage.getItem('fluidez_onboarded'));
@@ -458,7 +465,7 @@ function App() {
   // ============ FEATURE SCREENS ============
   if (showFocusMode) return <FocusMode onBack={() => setShowFocusMode(false)} onSelectFeature={(f) => {
     setShowFocusMode(false);
-    if (f === 'voice') setShowVoicePractice(true);
+    if (f === 'voice') setShowMultimodalVoice(true);
     else if (f === 'roleplay') setPracticeMode('roleplay');
     else if (f === 'grammar') setPracticeMode('grammar');
   }} />;
@@ -631,7 +638,7 @@ function App() {
                     <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Stories</div>
                     <div style={{ fontSize: 11, color: theme.textLight }}>Reading</div>
                   </button>
-                  <button onClick={() => setShowVoicePractice(true)} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
+                  <button onClick={() => setShowMultimodalVoice(true)} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
                     <span style={{ fontSize: 24 }}>🎙️</span>
                     <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Voice</div>
                     <div style={{ fontSize: 11, color: theme.textLight }}>Chat</div>
@@ -695,7 +702,7 @@ function App() {
 
   // PRACTICE HUB
   if (showPracticeHub) {
-    return <PracticeHub onBack={() => setShowPracticeHub(false)} onVoiceChat={() => { setShowPracticeHub(false); setShowVoicePractice(true); }} />;
+    return <PracticeHub onBack={() => setShowPracticeHub(false)} onVoiceChat={() => { setShowPracticeHub(false); setShowMultimodalVoice(true); }} />;
   }
 
   // PRACTICE TAB FULL
@@ -707,12 +714,13 @@ function App() {
           <h2 style={{ margin: 0, fontSize: 18 }}>Practice</h2>
           <div style={{ width: 40 }} />
         </div>
-        <PracticeTab onVoiceChat={() => { setShowPracticeTab(false); setShowVoicePractice(true); }} />
+        <PracticeTab onVoiceChat={() => { setShowPracticeTab(false); setShowMultimodalVoice(true); }} />
       </div>
     );
   }
 
   // VOICE PRACTICE
+  if (showMultimodalVoice) return <MultimodalVoiceChat onBack={() => setShowMultimodalVoice(false)} />;
   if (showVoicePractice) {
     return <VoicePractice curriculum={curriculum} onBack={() => setShowVoicePractice(false)} />;
   }
@@ -783,7 +791,7 @@ function App() {
 
           {/* Voice Practice */}
           <div
-            onClick={() => setShowVoicePractice(true)}
+            onClick={() => setShowMultimodalVoice(true)}
             style={{ ...s.card, cursor: 'pointer', marginBottom: 10, padding: 14, background: 'linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%)', color: '#fff' }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
