@@ -104,7 +104,7 @@ export default function ImmersiveRoleplay({ onBack }) {
     speak(scenario.opener);
   };
   
-  const useItem = (item) => {
+  const handleItem = (item) => {
     if (usedItems.includes(item)) return;
     setUsedItems([...usedItems, item]);
     SoundEffects.tap();
@@ -294,7 +294,7 @@ export default function ImmersiveRoleplay({ onBack }) {
         {scenario.interactiveItems.map(item => (
           <button
             key={item}
-            onClick={() => useItem(item)}
+            onClick={() => handleItem(item)}
             style={{
               ...styles.itemBtn,
               opacity: usedItems.includes(item) ? 0.5 : 1

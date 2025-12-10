@@ -19,6 +19,64 @@ import FocusMode from './FocusMode';
 import MultimodalVoiceChat from './MultimodalVoiceChat';
 import ImmersiveRoleplay from './ImmersiveRoleplay';
 import InteractiveCurriculum from './InteractiveCurriculum';
+import VoiceChatMode from './modes/VoiceChatMode';
+
+// API Key Banner Component
+function ApiKeyBanner() {
+  const [apiKey, setApiKey] = useState(localStorage.getItem('gemini_api_key') || '');
+  const [editing, setEditing] = useState(!localStorage.getItem('gemini_api_key'));
+  const [tempKey, setTempKey] = useState(apiKey);
+  
+  const saveKey = () => {
+    localStorage.setItem('gemini_api_key', tempKey);
+    setApiKey(tempKey);
+    setEditing(false);
+  };
+  
+  if (!editing && apiKey) {
+    return (
+      <div style={{ background: '#E8F5E9', padding: '8px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: 13 }}>
+        <span>✅ Gemini API Key saved</span>
+        <button onClick={() => setEditing(true)} style={{ background: 'none', border: 'none', color: '#2D5A27', cursor: 'pointer', fontWeight: 600 }}>Edit</button>
+      </div>
+    );
+  }
+  
+  return (
+    <div style={{ background: '#FEF3C7', padding: '12px 16px' }}>
+      <div style={{ fontSize: 13, marginBottom: 8, fontWeight: 500 }}>🔑 Add Gemini API Key for AI features</div>
+      <div style={{ display: 'flex', gap: 8 }}>
+        <input
+          type="password"
+          value={tempKey}
+          onChange={(e) => setTempKey(e.target.value)}
+          placeholder="Paste your API key here..."
+          style={{ flex: 1, padding: '10px 12px', border: '1px solid #DDD', borderRadius: 8, fontSize: 14 }}
+        />
+        <button 
+          onClick={saveKey}
+          disabled={!tempKey.trim()}
+          style={{ 
+            background: tempKey.trim() ? '#2D5A27' : '#CCC', 
+            color: '#fff', 
+            border: 'none', 
+            padding: '10px 16px', 
+            borderRadius: 8, 
+            cursor: tempKey.trim() ? 'pointer' : 'default',
+            fontWeight: 600
+          }}
+        >
+          Save
+        </button>
+      </div>
+      <div style={{ fontSize: 11, color: '#666', marginTop: 6 }}>
+        Get free key at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer" style={{ color: '#2D5A27' }}>aistudio.google.com/apikey</a>
+      </div>
+    </div>
+  );
+}
+
+
 
 const theme = {
   primary: '#2D5A27', primaryLight: '#4A7C43', success: '#228B22',
@@ -374,6 +432,7 @@ function App() {
   const [showAIPractice, setShowAIPractice] = useState(false);
   const [aiPracticeDay, setAiPracticeDay] = useState(null);
   const [showVoicePractice, setShowVoicePractice] = useState(false);
+  const [showVoiceChatMode, setShowVoiceChatMode] = useState(false);
   const [showMultimodalVoice, setShowMultimodalVoice] = useState(false);
   const [showImmersiveRoleplay, setShowImmersiveRoleplay] = useState(false);
   const [showCurriculumDay, setShowCurriculumDay] = useState(null);
@@ -465,7 +524,7 @@ function App() {
   // ============ FEATURE SCREENS ============
   if (showFocusMode) return <FocusMode onBack={() => setShowFocusMode(false)} onSelectFeature={(f) => {
     setShowFocusMode(false);
-    if (f === 'voice') setShowMultimodalVoice(true);
+    if (f === 'voice') setShowVoiceChatMode(true);
     else if (f === 'roleplay') setPracticeMode('roleplay');
     else if (f === 'grammar') setPracticeMode('grammar');
   }} />;
@@ -480,7 +539,7 @@ function App() {
   if (practiceMode === 'vault') return <ContentVault onBack={() => setPracticeMode(null)} />;
   if (practiceMode === 'review') return <QuickReview onBack={() => setPracticeMode(null)} />;
   // ============ END FEATURE SCREENS ============
-
+  if (showVoiceChatMode) return <VoiceChatMode onBack={() => setShowVoiceChatMode(false)} />;
 
     return (
       <div style={s.container}>
@@ -488,6 +547,7 @@ function App() {
           <h1 style={{ margin: 0, fontSize: 22 }}>🇪🇸 Fluidez</h1><button onClick={() => setShowSettings(true)} style={{ background: 'none', border: 'none', color: '#fff', fontSize: 20, cursor: 'pointer', marginLeft: 'auto' }}>⚙️</button>
           <p style={{ margin: '4px 0 0', opacity: 0.9, fontSize: 13 }}>30-Day Spanish Course</p>
         </div>
+        <ApiKeyBanner />
         
         {/* Main Tabs */}
         <div style={{ display: 'flex', borderBottom: `1px solid ${theme.border}` }}>
@@ -638,7 +698,7 @@ function App() {
                     <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Stories</div>
                     <div style={{ fontSize: 11, color: theme.textLight }}>Reading</div>
                   </button>
-                  <button onClick={() => setShowMultimodalVoice(true)} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
+                  <button onClick={() => { console.log("Voice clicked"); setShowVoiceChatMode(true); }} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
                     <span style={{ fontSize: 24 }}>🎙️</span>
                     <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Voice</div>
                     <div style={{ fontSize: 11, color: theme.textLight }}>Chat</div>
@@ -700,9 +760,14 @@ function App() {
     return <Onboarding onComplete={() => setShowOnboarding(false)} />;
   }
 
+  // VOICE CHAT MODE
+  if (showVoiceChatMode) {
+    return <VoiceChatMode onBack={() => setShowVoiceChatMode(false)} />;
+  }
+
   // PRACTICE HUB
   if (showPracticeHub) {
-    return <PracticeHub onBack={() => setShowPracticeHub(false)} onVoiceChat={() => { setShowPracticeHub(false); setShowMultimodalVoice(true); }} />;
+    return <PracticeHub onBack={() => setShowPracticeHub(false)} onVoiceChat={() => { setShowPracticeHub(false); setShowVoiceChatMode(true); }} />;
   }
 
   // PRACTICE TAB FULL
@@ -714,14 +779,13 @@ function App() {
           <h2 style={{ margin: 0, fontSize: 18 }}>Practice</h2>
           <div style={{ width: 40 }} />
         </div>
-        <PracticeTab onVoiceChat={() => { setShowPracticeTab(false); setShowMultimodalVoice(true); }} />
+        <PracticeTab onVoiceChat={() => { setShowPracticeTab(false); setShowVoiceChatMode(true); }} />
       </div>
     );
   }
 
   // VOICE PRACTICE
-  if (showMultimodalVoice) return <MultimodalVoiceChat onBack={() => setShowMultimodalVoice(false)} />;
-  if (showVoicePractice) {
+    if (showVoicePractice) {
     return <VoicePractice curriculum={curriculum} onBack={() => setShowVoicePractice(false)} />;
   }
 
@@ -791,7 +855,7 @@ function App() {
 
           {/* Voice Practice */}
           <div
-            onClick={() => setShowMultimodalVoice(true)}
+            onClick={() => { console.log("Voice clicked"); setShowVoiceChatMode(true); }}
             style={{ ...s.card, cursor: 'pointer', marginBottom: 10, padding: 14, background: 'linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%)', color: '#fff' }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
