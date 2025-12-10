@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Sounds, { getAmbientForScenario } from '../engines/SoundSystem';
 import { SCENE_CONFIGS, extractVisualsFromText, detectSceneFromConversation, getWordVisual } from '../engines/VisualContext';
 import { MARIA_EMOTIONS, detectMariaEmotion, getMariaPhrase, buildMariaPrompt, getContextualHint } from '../engines/MariaPersona';
+import { getOfflineResponse, checkAIAvailable, getPracticeHint } from '../engines/OfflineConversation';
 import { getCircadianPhase, inferEmotionalState, logSession } from '../engines/PhenomenaEngine';
 
 const theme = { 
@@ -139,7 +140,7 @@ export default function VoiceChatMode({ onBack }) {
         setMetrics(m => ({ ...m, hesitations: m.hesitations + 1 }));
         
         if (diffSettings.hints) {
-          const hint = getContextualHint({ topic: scenario?.id, difficulty });
+          const hint = getPracticeHint(scenario?.id || 'daily');
           triggerHint(hint);
           setMariaEmotion('supportive');
         }
@@ -294,13 +295,23 @@ export default function VoiceChatMode({ onBack }) {
     }
     
     const apiKey = localStorage.getItem('gemini_api_key');
-    if (!apiKey) {
+    const useAI = apiKey && navigator.onLine;
+    
+    if (!useAI) {
+      // OFFLINE MODE - Use pre-scripted responses
+      const response = getOfflineResponse(text, scenario?.id || 'daily');
+      
+      setMariaEmotion(response.emotion);
+      Sounds.message();
+      
       setMessages(prev => [...prev, { 
         role: 'ai', 
-        text: '⚙️ Please add your Gemini API key in Settings to chat!', 
-        emotion: 'supportive' 
+        text: response.text, 
+        emotion: response.emotion 
       }]);
+      speak(response.text);
       setIsLoading(false);
+      checkMilestones();
       return;
     }
     
@@ -340,11 +351,15 @@ export default function VoiceChatMode({ onBack }) {
       );
       
       if (response.status === 429) {
+        // Rate limited - fall back to offline mode
+        const fallbackResponse = getOfflineResponse(text, scenario?.id || 'daily');
+        setMariaEmotion(fallbackResponse.emotion);
         setMessages(prev => [...prev, { 
           role: 'ai', 
-          text: '⏳ Un momento... Too many requests! Wait a minute.', 
-          emotion: 'supportive' 
+          text: fallbackResponse.text + " (AI is resting, using practice mode)", 
+          emotion: fallbackResponse.emotion 
         }]);
+        speak(fallbackResponse.text);
       } else {
         const data = await response.json();
         const aiText = data.candidates?.[0]?.content?.parts?.[0]?.text || '¿Puedes repetir, por favor?';
