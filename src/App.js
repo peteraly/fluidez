@@ -551,7 +551,7 @@ function App() {
         
         {/* Main Tabs */}
         <div style={{ display: 'flex', borderBottom: `1px solid ${theme.border}` }}>
-          <div style={{ ...s.tab, ...(mainTab === 'learn' ? s.tabActive : {}) }} onClick={() => setShowPracticeTab(true)}>📚 Learn</div>
+          <div style={{ ...s.tab, ...(mainTab === 'learn' ? s.tabActive : {}) }} onClick={() => setMainTab('learn')}>📚 Learn</div>
           <div style={{ ...s.tab, ...(mainTab === 'practice' ? s.tabActive : {}) }} onClick={() => setMainTab('practice')}>🎯 Practice</div>
         </div>
 
