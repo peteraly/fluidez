@@ -1,0 +1,493 @@
+{
+  "day": 4,
+  "title": "Daily Actions",
+  "subtitle": "Regular -AR verbs",
+  "objectives": [
+    "Conjugate regular -AR verbs in present tense",
+    "Describe daily routines",
+    "Use time expressions",
+    "Talk about what you do regularly"
+  ],
+  "grammar": {
+    "title": "Regular -AR Verbs",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Present Tense -AR Verbs",
+        "content": "Most Spanish verbs end in -AR, -ER, or -IR. Today we learn -AR verbs! To conjugate, remove -AR and add the endings.",
+        "tip": "About 90% of new verbs you learn will follow these regular patterns!"
+      },
+      {
+        "type": "lesson",
+        "heading": "-AR Verb Endings",
+        "content": "Here are the endings for -AR verbs using HABLAR (to speak):",
+        "examples": [
+          {
+            "spanish": "yo hablo",
+            "english": "I speak"
+          },
+          {
+            "spanish": "tú hablas",
+            "english": "you speak"
+          },
+          {
+            "spanish": "él/ella habla",
+            "english": "he/she speaks"
+          },
+          {
+            "spanish": "nosotros hablamos",
+            "english": "we speak"
+          },
+          {
+            "spanish": "ellos/ustedes hablan",
+            "english": "they/you all speak"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Complete: Yo ___ español. (hablar)",
+        "hint": "Use the yo form of hablar",
+        "correctAnswers": [
+          "hablo"
+        ],
+        "explanation": "Remove -ar, add -o for yo: habl + o = hablo"
+      },
+      {
+        "type": "lesson",
+        "heading": "Common -AR Verbs",
+        "content": "Learn these essential -AR verbs:",
+        "examples": [
+          {
+            "spanish": "trabajar",
+            "english": "to work",
+            "word": "Trabajo en una oficina."
+          },
+          {
+            "spanish": "estudiar",
+            "english": "to study",
+            "word": "Estudio español."
+          },
+          {
+            "spanish": "comprar",
+            "english": "to buy",
+            "word": "Compro comida."
+          },
+          {
+            "spanish": "cocinar",
+            "english": "to cook",
+            "word": "Cocino todos los días."
+          },
+          {
+            "spanish": "caminar",
+            "english": "to walk",
+            "word": "Camino al trabajo."
+          },
+          {
+            "spanish": "escuchar",
+            "english": "to listen",
+            "word": "Escucho música."
+          },
+          {
+            "spanish": "mirar",
+            "english": "to watch/look",
+            "word": "Miro la televisión."
+          },
+          {
+            "spanish": "llegar",
+            "english": "to arrive",
+            "word": "Llego a las nueve."
+          },
+          {
+            "spanish": "tomar",
+            "english": "to take/drink",
+            "word": "Tomo café."
+          },
+          {
+            "spanish": "descansar",
+            "english": "to rest",
+            "word": "Descanso los domingos."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Ella ___ en el hospital. (trabajar)",
+        "options": [
+          "trabajo",
+          "trabajas",
+          "trabaja",
+          "trabajan"
+        ],
+        "correctAnswer": 2,
+        "explanation": "For ella, remove -ar and add -a: trabaja"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Nosotros ___ español. (estudiar)",
+        "options": [
+          "estudio",
+          "estudias",
+          "estudia",
+          "estudiamos"
+        ],
+        "correctAnswer": 3,
+        "explanation": "For nosotros, remove -ar and add -amos: estudiamos"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "translation",
+        "instruction": "Translate: 'They work in Mexico'",
+        "correctAnswers": [
+          "trabajan en méxico",
+          "ellos trabajan en méxico",
+          "ellas trabajan en mexico"
+        ],
+        "explanation": "For ellos/ellas, the ending is -an: trabajan"
+      },
+      {
+        "type": "lesson",
+        "heading": "Time Expressions",
+        "content": "Use these expressions to talk about when you do things:",
+        "examples": [
+          {
+            "spanish": "por la mañana",
+            "english": "in the morning"
+          },
+          {
+            "spanish": "por la tarde",
+            "english": "in the afternoon"
+          },
+          {
+            "spanish": "por la noche",
+            "english": "at night"
+          },
+          {
+            "spanish": "todos los días",
+            "english": "every day"
+          },
+          {
+            "spanish": "siempre",
+            "english": "always"
+          },
+          {
+            "spanish": "nunca",
+            "english": "never"
+          },
+          {
+            "spanish": "a veces",
+            "english": "sometimes"
+          },
+          {
+            "spanish": "primero",
+            "english": "first"
+          },
+          {
+            "spanish": "después",
+            "english": "after/then"
+          },
+          {
+            "spanish": "luego",
+            "english": "later/then"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "ordering",
+        "instruction": "Put in order: 'I always study in the morning'",
+        "items": [
+          "estudio",
+          "la mañana",
+          "siempre",
+          "por"
+        ],
+        "correctOrder": [
+          "siempre",
+          "estudio",
+          "por",
+          "la mañana"
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Daily Routine Vocabulary",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Morning Routine",
+        "words": [
+          {
+            "spanish": "despertarse",
+            "english": "to wake up",
+            "example": "Me despierto a las siete."
+          },
+          {
+            "spanish": "levantarse",
+            "english": "to get up",
+            "example": "Me levanto temprano."
+          },
+          {
+            "spanish": "ducharse",
+            "english": "to shower",
+            "example": "Me ducho por la mañana."
+          },
+          {
+            "spanish": "desayunar",
+            "english": "to have breakfast",
+            "example": "Desayuno café y tostadas."
+          },
+          {
+            "spanish": "vestirse",
+            "english": "to get dressed",
+            "example": "Me visto rápido."
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Daily Activities",
+        "words": [
+          {
+            "spanish": "almorzar",
+            "english": "to have lunch",
+            "example": "Almuerzo a la una."
+          },
+          {
+            "spanish": "cenar",
+            "english": "to have dinner",
+            "example": "Cenamos a las ocho."
+          },
+          {
+            "spanish": "limpiar",
+            "english": "to clean",
+            "example": "Limpio la casa los sábados."
+          },
+          {
+            "spanish": "lavar",
+            "english": "to wash",
+            "example": "Lavo la ropa."
+          },
+          {
+            "spanish": "cocinar",
+            "english": "to cook",
+            "example": "Cocino la cena."
+          },
+          {
+            "spanish": "llamar",
+            "english": "to call",
+            "example": "Llamo a mi madre."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match the activities:",
+        "pairs": [
+          {
+            "left": "desayunar",
+            "right": "breakfast"
+          },
+          {
+            "left": "almorzar",
+            "right": "lunch"
+          },
+          {
+            "left": "cenar",
+            "right": "dinner"
+          },
+          {
+            "left": "ducharse",
+            "right": "shower"
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Time Words",
+        "words": [
+          {
+            "spanish": "temprano",
+            "english": "early",
+            "example": "Llego temprano al trabajo."
+          },
+          {
+            "spanish": "tarde",
+            "english": "late",
+            "example": "Nunca llego tarde."
+          },
+          {
+            "spanish": "ahora",
+            "english": "now",
+            "example": "Trabajo ahora."
+          },
+          {
+            "spanish": "hoy",
+            "english": "today",
+            "example": "Hoy estudio mucho."
+          },
+          {
+            "spanish": "mañana",
+            "english": "tomorrow",
+            "example": "Mañana no trabajo."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Trabajo todos los días",
+        "options": [
+          "Trabajo todos los días",
+          "Estudio todos los días",
+          "Camino todos los días",
+          "Descanso todos los días"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Estudiamos por la noche",
+        "options": [
+          "Estudiamos por la mañana",
+          "Estudiamos por la tarde",
+          "Estudiamos por la noche",
+          "Estudian por la noche"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Ella cocina muy bien",
+        "options": [
+          "Ella cocina muy bien",
+          "Él cocina muy bien",
+          "Ella trabaja muy bien",
+          "Ella camina muy bien"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Un día normal",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Un día normal",
+        "passage": "Todos los días me despierto a las siete de la mañana. Primero, desayuno café y tostadas. Después, camino al trabajo. Trabajo en una oficina en el centro. Llego a las nueve. Trabajo ocho horas. A las dos, almuerzo con mis compañeros. Comemos en un restaurante cerca de la oficina. Por la tarde, trabajo más. A las seis, termino el trabajo. Camino a casa. Por la noche, ceno con mi familia. Miramos la televisión. Me acuesto a las once.",
+        "translation": "Every day I wake up at seven in the morning. First, I have coffee and toast for breakfast. Then, I walk to work. I work in an office downtown. I arrive at nine. I work eight hours. At two, I have lunch with my coworkers. We eat at a restaurant near the office. In the afternoon, I work more. At six, I finish work. I walk home. In the evening, I have dinner with my family. We watch television. I go to bed at eleven.",
+        "wordCount": 98
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿A qué hora se despierta?",
+        "options": [
+          "A las seis",
+          "A las siete",
+          "A las ocho",
+          "A las nueve"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The text says 'me despierto a las siete.'"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cómo va al trabajo?",
+        "options": [
+          "En coche",
+          "En autobús",
+          "Camina",
+          "En metro"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The text says 'camino al trabajo.'"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Con quién cena?",
+        "options": [
+          "Solo",
+          "Con amigos",
+          "Con compañeros",
+          "Con su familia"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The text says 'ceno con mi familia.'"
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 4. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "sensible",
+        "means": "sensitive",
+        "notMean": "sensible (= sensato)"
+      },
+      {
+        "spanish": "éxito",
+        "means": "success",
+        "notMean": "exit (= salida)"
+      },
+      {
+        "spanish": "librería",
+        "means": "bookstore",
+        "notMean": "library (= biblioteca)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

@@ -36,3 +36,359 @@
     transform: rotate(360deg);
   }
 }
+
+/* Enhanced Curriculum Styles */
+.grammar-full, .vocabulary-full, .listening-full, .reading-full {
+  padding: 15px;
+}
+
+.grammar-lesson {
+  background: #f8f9fa;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.grammar-lesson h4 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.grammar-exercise {
+  background: #fff3cd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border-left: 4px solid #ffc107;
+}
+
+.example-row {
+  padding: 8px;
+  margin: 5px 0;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.example-row:hover {
+  background: #e3f2fd;
+}
+
+.spanish {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.english {
+  color: #666;
+}
+
+.context, .example {
+  font-style: italic;
+  color: #888;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.tip {
+  background: #e8f5e9;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  color: #2e7d32;
+}
+
+.vocab-category {
+  margin: 20px 0;
+}
+
+.vocab-category h4 {
+  color: #9c27b0;
+  border-bottom: 2px solid #9c27b0;
+  padding-bottom: 5px;
+}
+
+.vocab-item {
+  padding: 10px;
+  margin: 5px 0;
+  background: #fafafa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.vocab-item:hover {
+  background: #f3e5f5;
+}
+
+.speaker {
+  margin-right: 8px;
+}
+
+.vocab-count {
+  text-align: center;
+  font-weight: bold;
+  color: #9c27b0;
+  margin-top: 20px;
+}
+
+.special-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+.special-section h4 {
+  margin-bottom: 15px;
+}
+
+.special-section ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.special-section li {
+  padding: 3px 0;
+}
+
+.cultural-section, .false-friends-section, .multimedia-section,
+.idioms-section, .fillers-section, .diminutives-section,
+.regional-section, .prepositions-section, .scenarios-section {
+  background: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.false-friend {
+  padding: 10px;
+  margin: 8px 0;
+  background: #ffebee;
+  border-radius: 4px;
+}
+
+.false-friend .not {
+  color: #c62828;
+}
+
+.idiom-item, .filler-item, .phrase-item {
+  padding: 12px;
+  margin: 8px 0;
+  background: #f5f5f5;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.idiom-item:hover, .filler-item:hover, .phrase-item:hover {
+  background: #e0e0e0;
+}
+
+.literal {
+  font-style: italic;
+  color: #666;
+  font-size: 0.85em;
+}
+
+.ending-item {
+  padding: 10px;
+  margin: 8px 0;
+  background: #e8f5e9;
+  border-radius: 4px;
+}
+
+.country-item {
+  padding: 15px;
+  margin: 10px 0;
+  background: #e3f2fd;
+  border-radius: 8px;
+}
+
+.country-item h4 {
+  color: #1565c0;
+  margin-bottom: 10px;
+}
+
+.prep-use {
+  padding: 8px;
+  margin: 5px 0;
+  background: #fff8e1;
+  border-radius: 4px;
+}
+
+.error-item {
+  padding: 10px;
+  margin: 8px 0;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.error-item .note {
+  color: #666;
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+.section-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.section-btn {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  cursor: pointer;
+  text-align: left;
+}
+
+.section-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.back-btn, .back-section-btn {
+  background: #f5f5f5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.back-btn:hover, .back-section-btn:hover {
+  background: #e0e0e0;
+}
+
+.objectives {
+  background: #e8f5e9;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.objectives ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.day-view {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.day-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.day-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.day-number {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.day-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.day-level {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.transcript {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.passage {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 1.8;
+}
+
+.listen-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.translation {
+  margin-top: 15px;
+}
+
+.translation summary {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.option-btn {
+  padding: 10px 15px;
+  background: #e3f2fd;
+  border: 2px solid #2196f3;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background: #2196f3;
+  color: white;
+}
+
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 10px 0 0;
+  opacity: 0.9;
+}

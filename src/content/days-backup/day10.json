@@ -1,0 +1,173 @@
+{
+  "day": 10,
+  "title": "Days, Months & Dates",
+  "subtitle": "Calendar vocabulary and numbers 31-100",
+  "level": "A1",
+  "objectives": [
+    "Learn days of the week",
+    "Learn months of the year",
+    "Express dates correctly",
+    "Count from 31 to 100"
+  ],
+  "grammar": {
+    "title": "Expressing Dates",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Days of the Week",
+        "content": "Days are masculine and not capitalized in Spanish:",
+        "examples": [
+          {"spanish": "lunes", "english": "Monday"},
+          {"spanish": "martes", "english": "Tuesday"},
+          {"spanish": "miércoles", "english": "Wednesday"},
+          {"spanish": "jueves", "english": "Thursday"},
+          {"spanish": "viernes", "english": "Friday"},
+          {"spanish": "sábado", "english": "Saturday"},
+          {"spanish": "domingo", "english": "Sunday"}
+        ],
+        "tip": "Use 'el' for specific days: 'el lunes' = on Monday. Use 'los' for recurring: 'los lunes' = on Mondays"
+      },
+      {
+        "type": "lesson",
+        "heading": "Months of the Year",
+        "content": "Months are also not capitalized:",
+        "examples": [
+          {"spanish": "enero", "english": "January"},
+          {"spanish": "febrero", "english": "February"},
+          {"spanish": "marzo", "english": "March"},
+          {"spanish": "abril", "english": "April"},
+          {"spanish": "mayo", "english": "May"},
+          {"spanish": "junio", "english": "June"},
+          {"spanish": "julio", "english": "July"},
+          {"spanish": "agosto", "english": "August"},
+          {"spanish": "septiembre", "english": "September"},
+          {"spanish": "octubre", "english": "October"},
+          {"spanish": "noviembre", "english": "November"},
+          {"spanish": "diciembre", "english": "December"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Date Format",
+        "content": "Spanish uses day + de + month + de + year:",
+        "examples": [
+          {"spanish": "¿Qué fecha es hoy?", "english": "What's today's date?"},
+          {"spanish": "Hoy es el 15 de marzo", "english": "Today is March 15th"},
+          {"spanish": "Mi cumpleaños es el 3 de julio", "english": "My birthday is July 3rd"},
+          {"spanish": "El primero de enero", "english": "January 1st (use 'primero' for 1st)"}
+        ],
+        "tip": "Only 'primero' (1st) is ordinal. All other dates use cardinal numbers: el dos, el tres, el quince..."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "December 25th = ",
+        "options": [
+          "El veinticinco diciembre",
+          "El veinticinco de diciembre",
+          "Diciembre veinticinco",
+          "25 de el diciembre"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Numbers 31-100 & Calendar",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Numbers 31-100",
+        "words": [
+          {"spanish": "treinta y uno", "english": "31", "example": "Enero tiene treinta y un días."},
+          {"spanish": "treinta y dos", "english": "32", "example": "Treinta y dos estudiantes."},
+          {"spanish": "cuarenta", "english": "40", "example": "Tengo cuarenta años."},
+          {"spanish": "cincuenta", "english": "50", "example": "Cincuenta por ciento."},
+          {"spanish": "sesenta", "english": "60", "example": "Sesenta minutos en una hora."},
+          {"spanish": "setenta", "english": "70", "example": "Mi abuelo tiene setenta años."},
+          {"spanish": "ochenta", "english": "80", "example": "Ochenta kilómetros por hora."},
+          {"spanish": "noventa", "english": "90", "example": "Noventa y nueve problemas."},
+          {"spanish": "cien", "english": "100", "example": "Cien años de soledad."}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Number Pattern 31-99",
+        "content": "All numbers 31-99 follow the pattern: [tens] y [ones]",
+        "examples": [
+          {"spanish": "treinta y tres", "english": "33"},
+          {"spanish": "cuarenta y cinco", "english": "45"},
+          {"spanish": "cincuenta y siete", "english": "57"},
+          {"spanish": "sesenta y ocho", "english": "68"},
+          {"spanish": "setenta y nueve", "english": "79"},
+          {"spanish": "ochenta y cuatro", "english": "84"},
+          {"spanish": "noventa y dos", "english": "92"}
+        ],
+        "tip": "Unlike 21-29 (veintiuno, veintidós...), numbers 31+ are always written as separate words with 'y'"
+      },
+      {
+        "type": "vocab",
+        "category": "Useful Date Expressions",
+        "words": [
+          {"spanish": "hoy", "english": "today", "example": "Hoy es lunes."},
+          {"spanish": "mañana", "english": "tomorrow", "example": "Mañana es martes."},
+          {"spanish": "ayer", "english": "yesterday", "example": "Ayer fue domingo."},
+          {"spanish": "la semana", "english": "week", "example": "Esta semana estoy ocupado."},
+          {"spanish": "el mes", "english": "month", "example": "Este mes es marzo."},
+          {"spanish": "el año", "english": "year", "example": "Este año voy a España."},
+          {"spanish": "el fin de semana", "english": "weekend", "example": "El fin de semana descanso."},
+          {"spanish": "el cumpleaños", "english": "birthday", "example": "Mi cumpleaños es en mayo."}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "47 = cuarenta y ___",
+        "correctAnswers": ["siete"],
+        "explanation": "cuarenta y siete = 47"
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Dates",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 When is her birthday?",
+        "transcript": "Mi cumpleaños es el veintitrés de abril. Voy a cumplir treinta años.",
+        "options": ["April 13, turning 30", "April 23, turning 30", "April 23, turning 13", "April 30, turning 23"],
+        "correctAnswer": 1
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 What date is the meeting?",
+        "transcript": "La reunión es el martes, quince de octubre.",
+        "options": ["Monday, Oct 15", "Tuesday, Oct 15", "Tuesday, Oct 5", "Thursday, Oct 15"],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Important Dates",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Fechas importantes",
+        "passage": "En mi familia hay muchas fechas importantes. El cumpleaños de mi madre es el doce de marzo. Ella va a cumplir sesenta años. Mi padre cumple años el primero de julio. Mi hermana nació el veinticinco de diciembre, ¡en Navidad! Yo nací el tres de septiembre. Mis padres se casaron el quince de junio de mil novecientos noventa. Este año celebran treinta y cuatro años de matrimonio.",
+        "translation": "In my family there are many important dates. My mother's birthday is March 12th. She's going to turn 60 years old. My father's birthday is July 1st. My sister was born on December 25th, on Christmas! I was born on September 3rd. My parents got married on June 15, 1990. This year they celebrate 34 years of marriage.",
+        "wordCount": 72
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuándo es el cumpleaños de la madre?",
+        "options": ["12 de marzo", "1 de julio", "25 de diciembre", "3 de septiembre"],
+        "correctAnswer": 0
+      }
+    ]
+  }
+}

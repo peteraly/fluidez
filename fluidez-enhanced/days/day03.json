@@ -1,0 +1,581 @@
+{
+  "day": 3,
+  "title": "Being & Describing",
+  "subtitle": "SER vs ESTAR & Adjectives",
+  "objectives": [
+    "Master the crucial SER vs ESTAR distinction",
+    "Conjugate ESTAR in present tense",
+    "Use adjectives with correct agreement",
+    "Describe people, places, and emotions"
+  ],
+  "grammar": {
+    "title": "SER vs ESTAR",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Two Verbs for 'To Be'",
+        "content": "Spanish has TWO verbs meaning 'to be': SER and ESTAR. This is one of the most important distinctions in Spanish. Mastering this will make you sound natural!",
+        "tip": "Think of SER for 'essence' (who you ARE) and ESTAR for 'state' (how you're DOING)."
+      },
+      {
+        "type": "lesson",
+        "heading": "ESTAR Conjugation",
+        "content": "Here's how to conjugate ESTAR:",
+        "examples": [
+          {
+            "spanish": "yo estoy",
+            "english": "I am"
+          },
+          {
+            "spanish": "tú estás",
+            "english": "you are (informal)"
+          },
+          {
+            "spanish": "él/ella/usted está",
+            "english": "he/she is, you are (formal)"
+          },
+          {
+            "spanish": "nosotros estamos",
+            "english": "we are"
+          },
+          {
+            "spanish": "ellos/ustedes están",
+            "english": "they are, you all are"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Complete: Yo ___ en casa. (I am at home)",
+        "hint": "Location uses ESTAR",
+        "correctAnswers": [
+          "estoy"
+        ],
+        "explanation": "ESTAR is used for location. 'Estoy' is the yo form."
+      },
+      {
+        "type": "lesson",
+        "heading": "When to Use ESTAR",
+        "content": "Use ESTAR for: Location (where something is), Temporary states & conditions, Emotions & feelings, Progressive tense (estar + -ando/-iendo).",
+        "examples": [
+          {
+            "spanish": "Estoy en Madrid",
+            "english": "I am in Madrid (location)"
+          },
+          {
+            "spanish": "Ella está cansada",
+            "english": "She is tired (temporary)"
+          },
+          {
+            "spanish": "Estamos contentos",
+            "english": "We are happy (emotion)"
+          },
+          {
+            "spanish": "Estoy trabajando",
+            "english": "I am working (progressive)"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "SER vs ESTAR: The Key Difference",
+        "content": "SER = permanent, essential, defining characteristics. ESTAR = temporary states, location, emotions.",
+        "examples": [
+          {
+            "spanish": "Ella es alta",
+            "english": "She is tall (permanent trait - SER)"
+          },
+          {
+            "spanish": "Ella está cansada",
+            "english": "She is tired (temporary - ESTAR)"
+          },
+          {
+            "spanish": "Él es inteligente",
+            "english": "He is intelligent (personality - SER)"
+          },
+          {
+            "spanish": "Él está nervioso",
+            "english": "He is nervous (emotion - ESTAR)"
+          },
+          {
+            "spanish": "La manzana es roja",
+            "english": "The apple is red (inherent - SER)"
+          },
+          {
+            "spanish": "La manzana está madura",
+            "english": "The apple is ripe (state - ESTAR)"
+          }
+        ],
+        "tip": "Some adjectives change meaning! 'Es aburrido' = he's boring (personality). 'Está aburrido' = he's bored (feeling)."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Mi hermana ___ en la oficina. (My sister is at the office)",
+        "options": [
+          "es",
+          "está",
+          "son",
+          "están"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Location always uses ESTAR. 'Está' is the ella form."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Ellos ___ muy cansados hoy.",
+        "options": [
+          "son",
+          "están",
+          "es",
+          "está"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Temporary conditions use ESTAR. 'Están' is the ellos form."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "María ___ profesora. (María is a teacher)",
+        "options": [
+          "es",
+          "está",
+          "son",
+          "están"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Profession is identity/essence, so use SER."
+      },
+      {
+        "type": "lesson",
+        "heading": "Adjective Agreement",
+        "content": "Spanish adjectives must agree with the noun in GENDER (masculine/feminine) and NUMBER (singular/plural). Most adjectives ending in -o change to -a for feminine.",
+        "examples": [
+          {
+            "spanish": "el chico alto",
+            "english": "the tall boy"
+          },
+          {
+            "spanish": "la chica alta",
+            "english": "the tall girl"
+          },
+          {
+            "spanish": "los chicos altos",
+            "english": "the tall boys"
+          },
+          {
+            "spanish": "las chicas altas",
+            "english": "the tall girls"
+          }
+        ],
+        "tip": "Adjectives ending in -e or consonants often don't change for gender: 'inteligente' works for both."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Las casas son muy ___. (The houses are very big - grande)",
+        "hint": "Make the adjective plural",
+        "correctAnswers": [
+          "grandes"
+        ],
+        "explanation": "'Grande' ends in -e, so it doesn't change for gender, but adds -s for plural."
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Descriptions & Emotions",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Physical Descriptions",
+        "words": [
+          {
+            "spanish": "alto/a",
+            "english": "tall",
+            "example": "Mi padre es muy alto."
+          },
+          {
+            "spanish": "bajo/a",
+            "english": "short",
+            "example": "El niño es bajo."
+          },
+          {
+            "spanish": "grande",
+            "english": "big/large",
+            "example": "La casa es grande."
+          },
+          {
+            "spanish": "pequeño/a",
+            "english": "small",
+            "example": "Tengo un perro pequeño."
+          },
+          {
+            "spanish": "gordo/a",
+            "english": "fat",
+            "example": "El gato está gordo."
+          },
+          {
+            "spanish": "delgado/a",
+            "english": "thin/slim",
+            "example": "Ella es muy delgada."
+          },
+          {
+            "spanish": "guapo/a",
+            "english": "handsome/pretty",
+            "example": "Es un chico guapo."
+          },
+          {
+            "spanish": "joven",
+            "english": "young",
+            "example": "Es una mujer joven."
+          },
+          {
+            "spanish": "viejo/a",
+            "english": "old",
+            "example": "La casa es muy vieja."
+          },
+          {
+            "spanish": "rubio/a",
+            "english": "blonde",
+            "example": "Tiene pelo rubio."
+          },
+          {
+            "spanish": "moreno/a",
+            "english": "dark-haired/brunette",
+            "example": "Es morena."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match the opposites:",
+        "pairs": [
+          {
+            "left": "alto",
+            "right": "bajo"
+          },
+          {
+            "left": "grande",
+            "right": "pequeño"
+          },
+          {
+            "left": "gordo",
+            "right": "delgado"
+          },
+          {
+            "left": "joven",
+            "right": "viejo"
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Personality Traits",
+        "words": [
+          {
+            "spanish": "simpático/a",
+            "english": "nice/friendly",
+            "example": "María es muy simpática."
+          },
+          {
+            "spanish": "antipático/a",
+            "english": "unpleasant/mean",
+            "example": "No seas antipático."
+          },
+          {
+            "spanish": "inteligente",
+            "english": "intelligent",
+            "example": "Mi hijo es muy inteligente."
+          },
+          {
+            "spanish": "trabajador/a",
+            "english": "hardworking",
+            "example": "Es una persona trabajadora."
+          },
+          {
+            "spanish": "perezoso/a",
+            "english": "lazy",
+            "example": "El gato es perezoso."
+          },
+          {
+            "spanish": "amable",
+            "english": "kind",
+            "example": "La profesora es amable."
+          },
+          {
+            "spanish": "serio/a",
+            "english": "serious",
+            "example": "Mi jefe es muy serio."
+          },
+          {
+            "spanish": "gracioso/a",
+            "english": "funny",
+            "example": "Tu hermano es gracioso."
+          },
+          {
+            "spanish": "tímido/a",
+            "english": "shy",
+            "example": "Soy un poco tímido."
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Emotions & States (use with ESTAR)",
+        "words": [
+          {
+            "spanish": "contento/a",
+            "english": "happy/content",
+            "example": "Estoy muy contento hoy."
+          },
+          {
+            "spanish": "triste",
+            "english": "sad",
+            "example": "¿Por qué estás triste?"
+          },
+          {
+            "spanish": "feliz",
+            "english": "happy",
+            "example": "Estamos muy felices."
+          },
+          {
+            "spanish": "cansado/a",
+            "english": "tired",
+            "example": "Estoy cansada del trabajo."
+          },
+          {
+            "spanish": "enfermo/a",
+            "english": "sick",
+            "example": "Mi madre está enferma."
+          },
+          {
+            "spanish": "nervioso/a",
+            "english": "nervous",
+            "example": "Estoy nervioso por el examen."
+          },
+          {
+            "spanish": "emocionado/a",
+            "english": "excited",
+            "example": "Estamos emocionados."
+          },
+          {
+            "spanish": "enojado/a",
+            "english": "angry",
+            "example": "¿Por qué estás enojado?"
+          },
+          {
+            "spanish": "preocupado/a",
+            "english": "worried",
+            "example": "Estoy preocupado por ti."
+          },
+          {
+            "spanish": "aburrido/a",
+            "english": "bored",
+            "example": "Los niños están aburridos."
+          },
+          {
+            "spanish": "sorprendido/a",
+            "english": "surprised",
+            "example": "Estoy sorprendida."
+          },
+          {
+            "spanish": "asustado/a",
+            "english": "scared",
+            "example": "El perro está asustado."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Estoy muy ___ porque mañana es mi cumpleaños.",
+        "options": [
+          "inteligente",
+          "alto",
+          "emocionado",
+          "trabajador"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Emocionado' (excited) makes sense here - temporary emotion about birthday."
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Estoy muy cansado",
+        "options": [
+          "Estoy muy cansado",
+          "Soy muy cansado",
+          "Estás muy cansado",
+          "Está muy cansado"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Mi hermana es alta y delgada",
+        "options": [
+          "Mi hermana está alta",
+          "Mi hermana es alta y delgada",
+          "Mi hermano es alto",
+          "Mi hermana es baja"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "¿Dónde está el libro?",
+        "options": [
+          "¿Dónde es el libro?",
+          "¿Cómo está el libro?",
+          "¿Dónde está el libro?",
+          "¿Qué es el libro?"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Ella es muy simpática",
+        "options": [
+          "Ella está muy simpática",
+          "Ella es muy antipática",
+          "Ella es muy simpática",
+          "Él es muy simpático"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Mi amigo Carlos",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Mi amigo Carlos",
+        "passage": "Mi amigo Carlos es muy alto y delgado. Tiene el pelo negro y corto. Sus ojos son marrones. Carlos es muy simpático e inteligente. Él es de Colombia pero ahora está en España. Hoy Carlos está contento porque es su cumpleaños. Tiene veinticinco años. Esta noche hay una fiesta en su casa. Carlos está emocionado. Todos sus amigos van a la fiesta.",
+        "translation": "My friend Carlos is very tall and thin. He has short black hair. His eyes are brown. Carlos is very nice and intelligent. He is from Colombia but now he is in Spain. Today Carlos is happy because it is his birthday. He is twenty-five years old. Tonight there is a party at his house. Carlos is excited. All his friends are going to the party.",
+        "wordCount": 85
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cómo es Carlos físicamente?",
+        "options": [
+          "Es bajo y gordo",
+          "Es alto y delgado",
+          "Es pequeño y rubio",
+          "Es viejo y serio"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The text says 'Carlos es muy alto y delgado.'"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿De dónde es Carlos?",
+        "options": [
+          "Es de España",
+          "Es de México",
+          "Es de Colombia",
+          "Es de Argentina"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The text says 'Él es de Colombia.'"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Por qué está contento Carlos?",
+        "options": [
+          "Porque está en España",
+          "Porque es su cumpleaños",
+          "Porque tiene amigos",
+          "Porque es inteligente"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The text says 'está contento porque es su cumpleaños.'"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Dónde está Carlos ahora?",
+        "options": [
+          "Está en Colombia",
+          "Está en México",
+          "Está en España",
+          "Está en su casa"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The text says 'ahora está en España.'"
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 3. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "realizar",
+        "means": "to accomplish",
+        "notMean": "to realize (= darse cuenta)"
+      },
+      {
+        "spanish": "sensible",
+        "means": "sensitive",
+        "notMean": "sensible (= sensato)"
+      },
+      {
+        "spanish": "éxito",
+        "means": "success",
+        "notMean": "exit (= salida)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

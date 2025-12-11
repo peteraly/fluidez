@@ -1,0 +1,182 @@
+{
+  "day": 23,
+  "title": "Expressing Opinions",
+  "subtitle": "Sharing your thoughts",
+  "objectives": [
+    "Express opinions politely",
+    "Agree and disagree",
+    "Give reasons",
+    "Discuss preferences"
+  ],
+  "grammar": {
+    "title": "Opinion Expressions",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Expressing Opinions",
+        "content": "Useful phrases:",
+        "examples": [
+          {
+            "spanish": "Creo que...",
+            "english": "I think that..."
+          },
+          {
+            "spanish": "Pienso que...",
+            "english": "I think that..."
+          },
+          {
+            "spanish": "Me parece que...",
+            "english": "It seems to me that..."
+          },
+          {
+            "spanish": "En mi opinión...",
+            "english": "In my opinion..."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Agreeing & Disagreeing",
+        "content": "How to respond:",
+        "examples": [
+          {
+            "spanish": "Estoy de acuerdo",
+            "english": "I agree"
+          },
+          {
+            "spanish": "No estoy de acuerdo",
+            "english": "I disagree"
+          },
+          {
+            "spanish": "Tienes razón",
+            "english": "You're right"
+          },
+          {
+            "spanish": "Depende",
+            "english": "It depends"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "'I agree' = ___",
+        "options": [
+          "No estoy de acuerdo",
+          "Estoy de acuerdo",
+          "Depende",
+          "Creo que no"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "lesson",
+        "heading": "C1 Advanced: Advanced Discourse Markers",
+        "content": "Connectors for sophisticated speech:",
+        "examples": [
+          {
+            "spanish": "sin embargo",
+            "english": "however"
+          },
+          {
+            "spanish": "no obstante",
+            "english": "nevertheless"
+          },
+          {
+            "spanish": "por lo tanto",
+            "english": "therefore"
+          },
+          {
+            "spanish": "en cambio",
+            "english": "on the other hand"
+          },
+          {
+            "spanish": "de hecho",
+            "english": "in fact"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Discussion Words",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Opinions",
+        "words": [
+          {
+            "spanish": "porque",
+            "english": "because",
+            "example": "Creo que sí, porque..."
+          },
+          {
+            "spanish": "por eso",
+            "english": "that's why",
+            "example": "Por eso estudio español."
+          },
+          {
+            "spanish": "sin embargo",
+            "english": "however",
+            "example": "Sin embargo, no es fácil."
+          },
+          {
+            "spanish": "además",
+            "english": "besides/also",
+            "example": "Además, es interesante."
+          },
+          {
+            "spanish": "por ejemplo",
+            "english": "for example",
+            "example": "Por ejemplo, el español."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Creo que el español es un idioma muy importante. Estoy de acuerdo contigo.",
+        "options": [
+          "Disagrees about Spanish",
+          "Agrees Spanish is important",
+          "Thinks Spanish is difficult",
+          "Doesn't have an opinion"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Una discusión",
+        "passage": "Ana: Creo que viajar es la mejor manera de aprender un idioma.\nCarlos: Estoy de acuerdo. Además, es muy divertido.\nAna: Sin embargo, es caro.\nCarlos: Tienes razón, pero hay opciones económicas.\nAna: ¿Como cuáles?\nCarlos: Por ejemplo, puedes hacer intercambio de casas.\nAna: Buena idea. En mi opinión, también es importante practicar todos los días.\nCarlos: Totalmente de acuerdo.",
+        "translation": "Ana: I think traveling is the best way to learn a language.\nCarlos: I agree. Besides, it's very fun.\nAna: However, it's expensive.\nCarlos: You're right, but there are economic options.\nAna: Like what?\nCarlos: For example, you can do house exchanges.\nAna: Good idea. In my opinion, it's also important to practice every day.\nCarlos: Totally agree.",
+        "wordCount": 70
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué piensa Ana sobre viajar?",
+        "options": [
+          "Es aburrido",
+          "Es la mejor manera de aprender",
+          "Es muy fácil",
+          "No es importante"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

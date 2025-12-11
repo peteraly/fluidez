@@ -1,0 +1,233 @@
+{
+  "day": 5,
+  "title": "Having & Needing",
+  "subtitle": "TENER & its expressions",
+  "objectives": [
+    "Conjugate TENER in present tense",
+    "Use TENER expressions (hunger, thirst, age, etc.)",
+    "Express obligation with TENER QUE",
+    "Learn numbers 21-100"
+  ],
+  "grammar": {
+    "title": "The Verb TENER",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "TENER (To Have)",
+        "content": "TENER is one of the most important verbs in Spanish. It means 'to have' but is also used in many expressions where English uses 'to be'!",
+        "tip": "TENER is irregular - memorize these forms!"
+      },
+      {
+        "type": "lesson",
+        "heading": "TENER Conjugation",
+        "content": "Learn these essential forms:",
+        "examples": [
+          { "spanish": "yo tengo", "english": "I have" },
+          { "spanish": "tú tienes", "english": "you have" },
+          { "spanish": "él/ella tiene", "english": "he/she has" },
+          { "spanish": "nosotros tenemos", "english": "we have" },
+          { "spanish": "ellos/ustedes tienen", "english": "they/you all have" }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Complete: Yo ___ dos hermanos.",
+        "hint": "Use the yo form of TENER",
+        "correctAnswers": ["tengo"],
+        "explanation": "'Tengo' is the yo form of TENER."
+      },
+      {
+        "type": "lesson",
+        "heading": "TENER Expressions",
+        "content": "Spanish uses TENER where English uses 'to be' for physical states and feelings:",
+        "examples": [
+          { "spanish": "tener hambre", "english": "to be hungry (to have hunger)" },
+          { "spanish": "tener sed", "english": "to be thirsty (to have thirst)" },
+          { "spanish": "tener frío", "english": "to be cold (to have cold)" },
+          { "spanish": "tener calor", "english": "to be hot (to have heat)" },
+          { "spanish": "tener sueño", "english": "to be sleepy (to have sleep)" },
+          { "spanish": "tener miedo", "english": "to be afraid (to have fear)" },
+          { "spanish": "tener prisa", "english": "to be in a hurry (to have hurry)" },
+          { "spanish": "tener razón", "english": "to be right (to have reason)" },
+          { "spanish": "tener ... años", "english": "to be ... years old" }
+        ],
+        "tip": "Never say 'soy hambre' or 'estoy hambre' - always 'tengo hambre'!"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "How do you say 'I am hungry' in Spanish?",
+        "options": ["Soy hambre", "Estoy hambre", "Tengo hambre", "Hago hambre"],
+        "correctAnswer": 2,
+        "explanation": "Use 'tengo hambre' - literally 'I have hunger'."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "María ___ veinte años.",
+        "options": ["es", "está", "tiene", "hace"],
+        "correctAnswer": 2,
+        "explanation": "Age uses TENER: 'tiene veinte años' = she is 20 years old."
+      },
+      {
+        "type": "lesson",
+        "heading": "TENER QUE + Infinitive",
+        "content": "To express obligation ('have to'), use TENER QUE + infinitive verb:",
+        "examples": [
+          { "spanish": "Tengo que trabajar", "english": "I have to work" },
+          { "spanish": "Tienes que estudiar", "english": "You have to study" },
+          { "spanish": "Tenemos que ir", "english": "We have to go" }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "translation",
+        "instruction": "Translate: 'She has to study'",
+        "correctAnswers": ["tiene que estudiar", "ella tiene que estudiar"],
+        "explanation": "TENER QUE + infinitive: tiene que estudiar"
+      },
+      {
+        "type": "lesson",
+        "heading": "Numbers 21-100",
+        "content": "Learn these number patterns:",
+        "examples": [
+          { "spanish": "veintiuno", "english": "21" },
+          { "spanish": "veintidós", "english": "22" },
+          { "spanish": "treinta", "english": "30" },
+          { "spanish": "treinta y uno", "english": "31" },
+          { "spanish": "cuarenta", "english": "40" },
+          { "spanish": "cincuenta", "english": "50" },
+          { "spanish": "sesenta", "english": "60" },
+          { "spanish": "setenta", "english": "70" },
+          { "spanish": "ochenta", "english": "80" },
+          { "spanish": "noventa", "english": "90" },
+          { "spanish": "cien", "english": "100" }
+        ],
+        "tip": "21-29 are one word (veintiuno), but 31+ use 'y': treinta y uno, cuarenta y dos..."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "How do you say '45' in Spanish?",
+        "options": ["cuatro cinco", "cuarenta y cinco", "cuarenticinco", "cuarenta cinco"],
+        "correctAnswer": 1,
+        "explanation": "Numbers above 30 use 'y': cuarenta y cinco."
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "TENER Expressions & Numbers",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "TENER Expressions",
+        "words": [
+          { "spanish": "tener hambre", "english": "to be hungry", "example": "Tengo mucha hambre." },
+          { "spanish": "tener sed", "english": "to be thirsty", "example": "¿Tienes sed?" },
+          { "spanish": "tener frío", "english": "to be cold", "example": "Tenemos frío." },
+          { "spanish": "tener calor", "english": "to be hot", "example": "Tienen calor." },
+          { "spanish": "tener sueño", "english": "to be sleepy", "example": "Tengo mucho sueño." },
+          { "spanish": "tener miedo", "english": "to be afraid", "example": "El niño tiene miedo." },
+          { "spanish": "tener prisa", "english": "to be in a hurry", "example": "Tengo prisa." },
+          { "spanish": "tener razón", "english": "to be right", "example": "Tienes razón." },
+          { "spanish": "tener suerte", "english": "to be lucky", "example": "¡Tenemos suerte!" },
+          { "spanish": "tener cuidado", "english": "to be careful", "example": "Ten cuidado." }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match the expression:",
+        "pairs": [
+          { "left": "tener hambre", "right": "hungry" },
+          { "left": "tener sed", "right": "thirsty" },
+          { "left": "tener sueño", "right": "sleepy" },
+          { "left": "tener miedo", "right": "afraid" }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Numbers 21-100",
+        "words": [
+          { "spanish": "veintiuno", "english": "21", "example": "Tengo veintiún años." },
+          { "spanish": "veinticinco", "english": "25", "example": "Cuesta veinticinco dólares." },
+          { "spanish": "treinta", "english": "30", "example": "Hay treinta estudiantes." },
+          { "spanish": "cuarenta", "english": "40", "example": "Tiene cuarenta años." },
+          { "spanish": "cincuenta", "english": "50", "example": "Cincuenta por ciento." },
+          { "spanish": "sesenta", "english": "60", "example": "Sesenta minutos." },
+          { "spanish": "setenta", "english": "70", "example": "Setenta personas." },
+          { "spanish": "ochenta", "english": "80", "example": "Mi abuela tiene ochenta años." },
+          { "spanish": "noventa", "english": "90", "example": "Noventa y nueve." },
+          { "spanish": "cien", "english": "100", "example": "Cien por ciento." }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Tengo mucha hambre",
+        "options": ["Tengo mucha hambre", "Tengo mucha sed", "Tengo mucho sueño", "Tengo mucho frío"],
+        "correctAnswer": 0
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Ella tiene treinta años",
+        "options": ["Ella tiene veinte años", "Ella tiene treinta años", "Ella tiene cuarenta años", "Ella tiene trece años"],
+        "correctAnswer": 1
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Tenemos que estudiar",
+        "options": ["Tenemos que trabajar", "Tenemos que estudiar", "Tenemos que comer", "Tenemos que ir"],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Las necesidades",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Un día con mucho que hacer",
+        "passage": "Hoy tengo mucho que hacer. Primero, tengo que ir al supermercado porque no tenemos comida. Tengo hambre pero no tengo tiempo para desayunar. Mi hermana tiene veinticinco años y ella tiene que trabajar hoy. Mis padres tienen sesenta años y ellos tienen una casa grande. Mi abuela tiene ochenta y cinco años. Ella siempre tiene razón. Ahora tengo prisa porque tengo clase a las nueve.",
+        "translation": "Today I have a lot to do. First, I have to go to the supermarket because we don't have food. I am hungry but I don't have time for breakfast. My sister is twenty-five years old and she has to work today. My parents are sixty years old and they have a big house. My grandmother is eighty-five years old. She is always right. Now I am in a hurry because I have class at nine.",
+        "wordCount": 82
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Por qué tiene que ir al supermercado?",
+        "options": ["Porque tiene hambre", "Porque no tienen comida", "Porque tiene prisa", "Porque tiene clase"],
+        "correctAnswer": 1,
+        "explanation": "The text says 'porque no tenemos comida.'"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuántos años tiene la hermana?",
+        "options": ["Veinte", "Veinticinco", "Treinta", "Sesenta"],
+        "correctAnswer": 1,
+        "explanation": "The text says 'tiene veinticinco años.'"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuántos años tiene la abuela?",
+        "options": ["Sesenta", "Setenta y cinco", "Ochenta", "Ochenta y cinco"],
+        "correctAnswer": 3,
+        "explanation": "The text says 'tiene ochenta y cinco años.'"
+      }
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "day": 27,
+  "title": "Hypotheticals & Wishes",
+  "subtitle": "If I could...",
+  "objectives": [
+    "Express wishes",
+    "Discuss hypotheticals",
+    "Use conditional phrases",
+    "Dream about possibilities"
+  ],
+  "grammar": {
+    "title": "Conditional & Wishes",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Conditional Phrases",
+        "content": "Expressing 'would':",
+        "examples": [
+          {
+            "spanish": "Me gustaría...",
+            "english": "I would like..."
+          },
+          {
+            "spanish": "Quisiera...",
+            "english": "I would like..."
+          },
+          {
+            "spanish": "Podría...",
+            "english": "I could..."
+          },
+          {
+            "spanish": "Sería...",
+            "english": "It would be..."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Wishes",
+        "content": "Expressing hopes:",
+        "examples": [
+          {
+            "spanish": "Ojalá...",
+            "english": "I wish.../Hopefully..."
+          },
+          {
+            "spanish": "Espero que...",
+            "english": "I hope that..."
+          },
+          {
+            "spanish": "Si pudiera...",
+            "english": "If I could..."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "'I would like' = ___",
+        "options": [
+          "Me gusta",
+          "Me gustaría",
+          "Quiero",
+          "Necesito"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "lesson",
+        "heading": "C1 Advanced: Register & Formality",
+        "content": "Adjusting your Spanish for context:",
+        "examples": [
+          {
+            "spanish": "Informal: ¿Qué onda?",
+            "english": "What's up? (Mexico)"
+          },
+          {
+            "spanish": "Formal: ¿Cómo se encuentra usted?",
+            "english": "How are you? (formal)"
+          },
+          {
+            "spanish": "Academic: Cabe destacar que...",
+            "english": "It should be noted that..."
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Wishes & Dreams",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Hypothetical Words",
+        "words": [
+          {
+            "spanish": "si",
+            "english": "if",
+            "example": "Si tuviera tiempo..."
+          },
+          {
+            "spanish": "quizás/tal vez",
+            "english": "maybe/perhaps",
+            "example": "Quizás mañana."
+          },
+          {
+            "spanish": "probablemente",
+            "english": "probably",
+            "example": "Probablemente sí."
+          },
+          {
+            "spanish": "posiblemente",
+            "english": "possibly",
+            "example": "Posiblemente venga."
+          },
+          {
+            "spanish": "sueño",
+            "english": "dream",
+            "example": "Mi sueño es viajar."
+          },
+          {
+            "spanish": "meta",
+            "english": "goal",
+            "example": "Mi meta es aprender."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Si pudiera, viajaría por todo el mundo. Me gustaría conocer muchos países.",
+        "options": [
+          "Doesn't want to travel",
+          "Would travel if could",
+          "Is traveling now",
+          "Traveled last year"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Mis sueños",
+        "passage": "Si pudiera elegir, viviría en la playa. Me gustaría despertar cada mañana con el sonido del mar. Tendría un pequeño café y cocinaría para los turistas. Ojalá algún día pueda hacerlo realidad. Por ahora, trabajo en una oficina, pero sigo soñando. ¿Cuál es tu sueño? ¿Qué harías si pudieras hacer cualquier cosa?",
+        "translation": "If I could choose, I would live on the beach. I would like to wake up every morning to the sound of the sea. I would have a small café and cook for tourists. Hopefully someday I can make it a reality. For now, I work in an office, but I keep dreaming. What's your dream? What would you do if you could do anything?",
+        "wordCount": 70
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Dónde le gustaría vivir?",
+        "options": [
+          "En la ciudad",
+          "En la montaña",
+          "En la playa",
+          "En el campo"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

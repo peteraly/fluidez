@@ -1,0 +1,230 @@
+{
+  "day": 13,
+  "title": "Direct Object Pronouns",
+  "subtitle": "Lo, la, los, las",
+  "objectives": [
+    "Understand direct objects",
+    "Use lo, la, los, las correctly",
+    "Place pronouns in correct position",
+    "Avoid repetition in speech"
+  ],
+  "grammar": {
+    "title": "Direct Object Pronouns",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "What is a Direct Object?",
+        "content": "The direct object receives the action of the verb directly. 'I eat THE APPLE' → 'the apple' is the direct object. In Spanish, we can replace it with a pronoun to avoid repetition."
+      },
+      {
+        "type": "lesson",
+        "heading": "Direct Object Pronouns",
+        "content": "These replace nouns that receive the action:\n                              → nos = us",
+        "examples": [
+          {
+            "spanish": "me",
+            "english": "me"
+          },
+          {
+            "spanish": "te",
+            "english": "you (informal)"
+          },
+          {
+            "spanish": "lo",
+            "english": "him/it (masculine)/you (formal m)"
+          },
+          {
+            "spanish": "la",
+            "english": "her/it (feminine)/you (formal f)"
+          },
+          {
+            "spanish": "nos",
+            "english": "us"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Using LO, LA, LOS, LAS",
+        "content": "These are the most common. Match gender and number:\n                        \n   ✏️ Exercise: Compro el coche. → ___ compro.",
+        "examples": [
+          {
+            "spanish": "Veo el libro → Lo veo",
+            "english": "I see the book → I see it"
+          },
+          {
+            "spanish": "Compro la manzana → La compro",
+            "english": "I buy the apple → I buy it"
+          },
+          {
+            "spanish": "Leo los libros → Los leo",
+            "english": "I read the books → I read them"
+          },
+          {
+            "spanish": "Quiero las flores → Las quiero",
+            "english": "I want the flowers → I want them"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Pronoun Placement",
+        "content": "The pronoun goes BEFORE the conjugated verb:\n                        → No la quiero = I don't want it",
+        "examples": [
+          {
+            "spanish": "Lo como",
+            "english": "I eat it"
+          },
+          {
+            "spanish": "La veo",
+            "english": "I see her/it"
+          },
+          {
+            "spanish": "Los tengo",
+            "english": "I have them"
+          },
+          {
+            "spanish": "No la quiero",
+            "english": "I don't want it"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "With Infinitives",
+        "content": "Two options - both correct:\n                  \n   ✏️ Exercise: Translate: 'I want to buy it (el carro)'",
+        "examples": [
+          {
+            "spanish": "Quiero comerlo",
+            "english": "Lo quiero comer"
+          },
+          {
+            "spanish": "Voy a verla",
+            "english": "La voy a ver"
+          },
+          {
+            "spanish": "Necesito comprarlos",
+            "english": "Los necesito comprar"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Common Verbs with Objects",
+    "screens": [
+      {
+        "category": "Transitive Verbs",
+        "words": [
+          {
+            "spanish": "ver",
+            "english": "to see"
+          },
+          {
+            "spanish": "comprar",
+            "english": "to buy"
+          },
+          {
+            "spanish": "leer",
+            "english": "to read"
+          },
+          {
+            "spanish": "escribir",
+            "english": "to write"
+          },
+          {
+            "spanish": "conocer",
+            "english": "to know",
+            "example": "people"
+          },
+          {
+            "spanish": "llamar",
+            "english": "to call"
+          },
+          {
+            "spanish": "buscar",
+            "english": "to look for"
+          },
+          {
+            "spanish": "encontrar",
+            "english": "to find"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "me te Veo el libro → Lo veo"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Direct Object Pronouns",
+        "passage": "Esta es una lectura de práctica para el día 13. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 13. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "largo",
+        "means": "long",
+        "notMean": "large (= grande)"
+      },
+      {
+        "spanish": "recordar",
+        "means": "to remember",
+        "notMean": "to record (= grabar)"
+      },
+      {
+        "spanish": "ropa",
+        "means": "clothes",
+        "notMean": "rope (= cuerda)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A2"
+}

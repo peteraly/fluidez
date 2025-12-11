@@ -1,0 +1,701 @@
+{
+  "day": 2,
+  "title": "Introducing Yourself",
+  "subtitle": "Subject pronouns & SER",
+  "objectives": [
+    "Master Spanish subject pronouns",
+    "Conjugate SER in present tense",
+    "Introduce yourself completely",
+    "State name, origin, age, and profession"
+  ],
+  "grammar": {
+    "title": "Subject Pronouns & SER",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Subject Pronouns",
+        "content": "Subject pronouns tell us WHO is doing the action. Unlike English, Spanish often drops the pronoun because verb endings indicate the subject. However, you need to know them.",
+        "tip": "Spanish often omits pronouns because verb endings already show who's speaking!"
+      },
+      {
+        "type": "lesson",
+        "heading": "The Pronoun Chart",
+        "content": "Learn these essential pronouns:",
+        "examples": [
+          {
+            "spanish": "yo",
+            "english": "I",
+            "pronunciation": "yoh"
+          },
+          {
+            "spanish": "tú",
+            "english": "you (informal)",
+            "pronunciation": "too"
+          },
+          {
+            "spanish": "él",
+            "english": "he",
+            "pronunciation": "el"
+          },
+          {
+            "spanish": "ella",
+            "english": "she",
+            "pronunciation": "eh-yah"
+          },
+          {
+            "spanish": "usted (Ud.)",
+            "english": "you (formal)",
+            "pronunciation": "oo-STED"
+          },
+          {
+            "spanish": "nosotros/as",
+            "english": "we",
+            "pronunciation": "no-SO-tros"
+          },
+          {
+            "spanish": "ellos/ellas",
+            "english": "they",
+            "pronunciation": "EH-yos"
+          },
+          {
+            "spanish": "ustedes (Uds.)",
+            "english": "you all",
+            "pronunciation": "oo-STED-es"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Which pronoun means 'we'?",
+        "options": [
+          "yo",
+          "tú",
+          "nosotros",
+          "ellos"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Nosotros' means 'we'. 'Nosotras' is used for all-female groups."
+      },
+      {
+        "type": "lesson",
+        "heading": "Tú vs Usted",
+        "content": "'Tú' is informal — use with friends, family, peers, and children. 'Usted' is formal — use with strangers, elders, and professionals. When in doubt, use 'usted' to show respect.",
+        "tip": "In Latin America, 'ustedes' is used for ALL plural 'you' (formal and informal). In Spain, 'vosotros' is informal plural."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "You're meeting your friend's grandmother for the first time. Which pronoun should you use?",
+        "options": [
+          "tú",
+          "usted",
+          "vosotros",
+          "ella"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Use 'usted' with elders and people you've just met to show respect."
+      },
+      {
+        "type": "lesson",
+        "heading": "The Verb SER (To Be)",
+        "content": "SER is one of two Spanish verbs meaning 'to be.' Use SER for permanent, essential, or defining characteristics.",
+        "examples": [
+          {
+            "spanish": "yo soy",
+            "english": "I am"
+          },
+          {
+            "spanish": "tú eres",
+            "english": "you are (informal)"
+          },
+          {
+            "spanish": "él/ella/usted es",
+            "english": "he/she is, you are (formal)"
+          },
+          {
+            "spanish": "nosotros somos",
+            "english": "we are"
+          },
+          {
+            "spanish": "ellos/ustedes son",
+            "english": "they are, you all are"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Complete: Yo ___ estudiante. (I am a student)",
+        "hint": "Use the 'yo' form of SER",
+        "correctAnswers": [
+          "soy"
+        ],
+        "explanation": "'Soy' is the yo form of SER. Note: No article needed before professions in Spanish!"
+      },
+      {
+        "type": "lesson",
+        "heading": "When to Use SER",
+        "content": "Use SER for: Identity (who someone is), Origin (where from), Profession, Nationality, Physical traits, Personality, Time & dates.",
+        "examples": [
+          {
+            "spanish": "Soy María",
+            "english": "I am María (identity)"
+          },
+          {
+            "spanish": "Soy de México",
+            "english": "I am from Mexico (origin)"
+          },
+          {
+            "spanish": "Soy profesor",
+            "english": "I am a teacher (profession)"
+          },
+          {
+            "spanish": "Soy estadounidense",
+            "english": "I am American (nationality)"
+          },
+          {
+            "spanish": "Ella es alta",
+            "english": "She is tall (physical trait)"
+          },
+          {
+            "spanish": "Son las tres",
+            "english": "It's three o'clock (time)"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Complete: Ellos ___ de España.",
+        "options": [
+          "soy",
+          "eres",
+          "es",
+          "son"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Son' is the ellos/ellas/ustedes form of SER."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "translation",
+        "instruction": "Translate: 'We are students'",
+        "correctAnswers": [
+          "somos estudiantes",
+          "nosotros somos estudiantes"
+        ],
+        "explanation": "'Somos' is the nosotros form. No article before 'estudiantes'."
+      },
+      {
+        "type": "lesson",
+        "heading": "Introducing Yourself",
+        "content": "Now let's put it together! Here are the essential phrases for self-introduction:",
+        "examples": [
+          {
+            "spanish": "Me llamo [nombre]",
+            "english": "My name is [name]"
+          },
+          {
+            "spanish": "Soy de [lugar]",
+            "english": "I am from [place]"
+          },
+          {
+            "spanish": "Tengo [número] años",
+            "english": "I am [number] years old"
+          },
+          {
+            "spanish": "Soy [profesión]",
+            "english": "I am a [profession]"
+          }
+        ],
+        "tip": "Spanish says 'I have years' (tengo años), not 'I am years old'!"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "ordering",
+        "instruction": "Put these words in order to say 'I am from Mexico':",
+        "items": [
+          "México",
+          "de",
+          "soy"
+        ],
+        "correctOrder": [
+          "soy",
+          "de",
+          "México"
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Complete: Ella ___ profesora. (She is a teacher)",
+        "hint": "Use the él/ella form of SER",
+        "correctAnswers": [
+          "es"
+        ],
+        "explanation": "'Es' is used for él, ella, and usted."
+      }
+    ],
+    "vosotros_reference": {
+      "present": {
+        "-AR": "-áis (hablar → habláis)",
+        "-ER": "-éis (comer → coméis)",
+        "-IR": "-ís (vivir → vivís)",
+        "ser": "sois",
+        "estar": "estáis",
+        "ir": "vais",
+        "tener": "tenéis",
+        "hacer": "hacéis"
+      },
+      "preterite": {
+        "-AR": "-asteis (hablar → hablasteis)",
+        "-ER/-IR": "-isteis (comer → comisteis)",
+        "ser/ir": "fuisteis",
+        "tener": "tuvisteis"
+      },
+      "imperfect": {
+        "-AR": "-abais (hablar → hablabais)",
+        "-ER/-IR": "-íais (comer → comíais)",
+        "ser": "erais",
+        "ir": "ibais"
+      },
+      "future": "infinitive + -éis (hablaréis, comeréis)",
+      "conditional": "infinitive + -íais (hablaríais, comeríais)",
+      "present_subjunctive": "-éis (habléis, comáis, viváis)",
+      "commands": {
+        "affirmative": "infinitive → -d (hablar → hablad)",
+        "negative": "no + present subjunctive (no habléis)"
+      }
+    },
+    "vos_reference": {
+      "present": {
+        "-AR": "-ás (hablar → hablás)",
+        "-ER": "-és (comer → comés)",
+        "-IR": "-ís (vivir → vivís)",
+        "ser": "sos",
+        "estar": "estás",
+        "ir": "vas",
+        "tener": "tenés",
+        "hacer": "hacés"
+      },
+      "commands": {
+        "affirmative": "infinitive without -r, stress final syllable (hablá, comé, viví)",
+        "negative": "no + present subjunctive (no hables)"
+      },
+      "note": "Vos uses tú forms for: preterite, imperfect, future, conditional, subjunctive"
+    }
+  },
+  "vocabulary": {
+    "title": "Personal Information & Professions",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Personal Information",
+        "words": [
+          {
+            "spanish": "el nombre",
+            "english": "name",
+            "example": "¿Cuál es tu nombre?"
+          },
+          {
+            "spanish": "el apellido",
+            "english": "last name",
+            "example": "Mi apellido es García."
+          },
+          {
+            "spanish": "la edad",
+            "english": "age",
+            "example": "¿Cuál es tu edad?"
+          },
+          {
+            "spanish": "el cumpleaños",
+            "english": "birthday",
+            "example": "Mi cumpleaños es en mayo."
+          },
+          {
+            "spanish": "casado/a",
+            "english": "married",
+            "example": "Estoy casado."
+          },
+          {
+            "spanish": "soltero/a",
+            "english": "single",
+            "example": "Soy soltero."
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Professions",
+        "words": [
+          {
+            "spanish": "el/la profesor/a",
+            "english": "teacher",
+            "example": "Soy profesor de inglés."
+          },
+          {
+            "spanish": "el/la estudiante",
+            "english": "student",
+            "example": "Es estudiante universitario."
+          },
+          {
+            "spanish": "el/la médico/a",
+            "english": "doctor",
+            "example": "Mi madre es médica."
+          },
+          {
+            "spanish": "el/la abogado/a",
+            "english": "lawyer",
+            "example": "Necesito un abogado."
+          },
+          {
+            "spanish": "el/la ingeniero/a",
+            "english": "engineer",
+            "example": "Trabajo como ingeniero."
+          },
+          {
+            "spanish": "el/la enfermero/a",
+            "english": "nurse",
+            "example": "Las enfermeras son importantes."
+          },
+          {
+            "spanish": "el/la programador/a",
+            "english": "programmer",
+            "example": "Los programadores crean software."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match the profession to its meaning:",
+        "pairs": [
+          {
+            "left": "médico",
+            "right": "doctor"
+          },
+          {
+            "left": "abogado",
+            "right": "lawyer"
+          },
+          {
+            "left": "enfermero",
+            "right": "nurse"
+          },
+          {
+            "left": "ingeniero",
+            "right": "engineer"
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Nationalities",
+        "words": [
+          {
+            "spanish": "estadounidense",
+            "english": "American (US)",
+            "example": "Soy estadounidense."
+          },
+          {
+            "spanish": "mexicano/a",
+            "english": "Mexican",
+            "example": "Comida mexicana."
+          },
+          {
+            "spanish": "español/a",
+            "english": "Spanish",
+            "example": "Música española."
+          },
+          {
+            "spanish": "inglés/inglesa",
+            "english": "English/British",
+            "example": "Él es inglés."
+          },
+          {
+            "spanish": "francés/francesa",
+            "english": "French",
+            "example": "Vino francés."
+          },
+          {
+            "spanish": "japonés/japonesa",
+            "english": "Japanese",
+            "example": "Cultura japonesa."
+          },
+          {
+            "spanish": "colombiano/a",
+            "english": "Colombian",
+            "example": "Café colombiano."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "How do you say 'I am American' in Spanish?",
+        "options": [
+          "Soy americano",
+          "Soy estadounidense",
+          "Estoy americano",
+          "Tengo americano"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Estadounidense' is the proper term for someone from the United States."
+      },
+      {
+        "type": "vocab",
+        "category": "Family Members",
+        "words": [
+          {
+            "spanish": "la familia",
+            "english": "family",
+            "example": "Mi familia es grande."
+          },
+          {
+            "spanish": "el padre / el papá",
+            "english": "father / dad",
+            "example": "Mi padre trabaja mucho."
+          },
+          {
+            "spanish": "la madre / la mamá",
+            "english": "mother / mom",
+            "example": "Mi mamá cocina bien."
+          },
+          {
+            "spanish": "el hermano",
+            "english": "brother",
+            "example": "Tengo un hermano mayor."
+          },
+          {
+            "spanish": "la hermana",
+            "english": "sister",
+            "example": "Mi hermana es doctora."
+          },
+          {
+            "spanish": "el hijo / la hija",
+            "english": "son / daughter",
+            "example": "Mi hijo tiene cinco años."
+          },
+          {
+            "spanish": "el abuelo / la abuela",
+            "english": "grandfather / grandmother",
+            "example": "Mi abuela hace galletas."
+          },
+          {
+            "spanish": "el tío / la tía",
+            "english": "uncle / aunt",
+            "example": "Mi tío vive en España."
+          },
+          {
+            "spanish": "el primo / la prima",
+            "english": "cousin",
+            "example": "Mi primo y yo jugamos."
+          },
+          {
+            "spanish": "el esposo / la esposa",
+            "english": "husband / wife",
+            "example": "Mi esposo trabaja en un banco."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Mi ___ es María. (My sister is María.)",
+        "hint": "What's the word for 'sister'?",
+        "correctAnswers": [
+          "hermana"
+        ],
+        "explanation": "'Hermana' means sister. 'Hermano' is brother."
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Me llamo Carlos",
+        "options": [
+          "Me llamo Carlos",
+          "Te llamas Carlos",
+          "Se llama Carlos",
+          "Nos llamamos Carlos"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Soy de México",
+        "options": [
+          "Eres de México",
+          "Soy de México",
+          "Es de México",
+          "Somos de México"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Soy estudiante",
+        "options": [
+          "Soy profesor",
+          "Soy estudiante",
+          "Soy médico",
+          "Soy ingeniero"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Tengo veinte años",
+        "options": [
+          "Tengo diez años",
+          "Tengo treinta años",
+          "Tengo veinte años",
+          "Tengo quince años"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Mi hermano es médico",
+        "options": [
+          "Mi hermano es profesor",
+          "Mi hermana es médica",
+          "Mi hermano es médico",
+          "Mi padre es médico"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Mi familia",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Mi familia",
+        "passage": "Me llamo Pedro García. Soy de México. Tengo veintiocho años. Soy ingeniero. Mi familia es grande. Mi padre se llama Juan y mi madre se llama Rosa. Tengo dos hermanos: Luis y Ana. Luis es médico y Ana es profesora. También tengo una abuela. Ella se llama Carmen. Tiene ochenta años. Somos una familia muy unida.",
+        "translation": "My name is Pedro García. I am from Mexico. I am twenty-eight years old. I am an engineer. My family is big. My father's name is Juan and my mother's name is Rosa. I have two siblings: Luis and Ana. Luis is a doctor and Ana is a teacher. I also have a grandmother. Her name is Carmen. She is eighty years old. We are a very close family.",
+        "wordCount": 78
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿De dónde es Pedro?",
+        "options": [
+          "Es de España",
+          "Es de México",
+          "Es de Colombia",
+          "Es de Argentina"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The text says 'Soy de México' - I am from Mexico."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuál es la profesión de Pedro?",
+        "options": [
+          "Es médico",
+          "Es profesor",
+          "Es ingeniero",
+          "Es abogado"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The text says 'Soy ingeniero' - I am an engineer."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuántos hermanos tiene Pedro?",
+        "options": [
+          "Tiene un hermano",
+          "Tiene dos hermanos",
+          "Tiene tres hermanos",
+          "No tiene hermanos"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The text says 'Tengo dos hermanos: Luis y Ana.'"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuál es la profesión de Ana?",
+        "options": [
+          "Es médica",
+          "Es profesora",
+          "Es ingeniera",
+          "Es estudiante"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The text says 'Ana es profesora.'"
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 2. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "actualmente",
+        "means": "currently",
+        "notMean": "actually (= en realidad)"
+      },
+      {
+        "spanish": "realizar",
+        "means": "to accomplish",
+        "notMean": "to realize (= darse cuenta)"
+      },
+      {
+        "spanish": "sensible",
+        "means": "sensitive",
+        "notMean": "sensible (= sensato)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

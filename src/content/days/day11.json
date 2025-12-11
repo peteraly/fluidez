@@ -1,0 +1,179 @@
+{
+  "day": 11,
+  "title": "Preterite vs Imperfect",
+  "subtitle": "Using both past tenses together",
+  "objectives": [
+    "Understand when to use each tense",
+    "Combine preterite and imperfect in narratives",
+    "Use story connectors",
+    "Tell stories about the past"
+  ],
+  "grammar": {
+    "title": "Combining Past Tenses",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "The Key Distinction",
+        "content": "PRETERITE: Completed actions, specific times, sequence of events. IMPERFECT: Background, descriptions, ongoing/habitual actions."
+      },
+      {
+        "type": "lesson",
+        "heading": "Classic Examples",
+        "content": "See how they work together:\n                  \n   ✏️ Exercise: Mientras yo ___ (dormir), mi hermano llegó.",
+        "examples": [
+          {
+            "spanish": "Llovía cuando salí",
+            "english": "It was raining (ongoing) when I left (completed)"
+          },
+          {
+            "spanish": "Mientras estudiaba, sonó el teléfono",
+            "english": "While I was studying (ongoing), the phone rang (completed)"
+          },
+          {
+            "spanish": "Era las ocho cuando llegué",
+            "english": "It was 8:00 (background) when I arrived (completed)"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Story Connectors",
+        "content": "Use these to connect ideas:\n                              \n   ✏️ Exercise: Hacía sol cuando ___ a llover.\n\n   ✏️ Exercise: Translate: 'I was eating when she called'",
+        "examples": [
+          {
+            "spanish": "mientras",
+            "english": "while"
+          },
+          {
+            "spanish": "cuando",
+            "english": "when"
+          },
+          {
+            "spanish": "de repente",
+            "english": "suddenly"
+          },
+          {
+            "spanish": "entonces",
+            "english": "then"
+          },
+          {
+            "spanish": "después",
+            "english": "after"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Story Connectors",
+    "screens": [
+      {
+        "category": "Narrative Words",
+        "words": [
+          {
+            "spanish": "mientras",
+            "english": "while"
+          },
+          {
+            "spanish": "cuando",
+            "english": "when"
+          },
+          {
+            "spanish": "de repente",
+            "english": "suddenly"
+          },
+          {
+            "spanish": "entonces",
+            "english": "then"
+          },
+          {
+            "spanish": "primero",
+            "english": "first"
+          },
+          {
+            "spanish": "luego",
+            "english": "then/later"
+          },
+          {
+            "spanish": "por fin",
+            "english": "finally"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "Llovía cuando salí Mientras estudiaba, sonó el teléfono mientras"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Preterite vs Imperfect",
+        "passage": "Esta es una lectura de práctica para el día 11. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 11. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "pretender",
+        "means": "to try/attempt",
+        "notMean": "to pretend (= fingir)"
+      },
+      {
+        "spanish": "introducir",
+        "means": "to insert",
+        "notMean": "to introduce (= presentar)"
+      },
+      {
+        "spanish": "largo",
+        "means": "long",
+        "notMean": "large (= grande)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A2"
+}

@@ -1,0 +1,713 @@
+{
+  "day": 29,
+  "title": "Native-Level Expression",
+  "subtitle": "Idioms, fillers, and cultural fluency",
+  "level": "C1",
+  "objectives": [
+    "Use common Spanish idioms naturally",
+    "Master conversation fillers",
+    "Understand regional variations",
+    "Sound like a native speaker"
+  ],
+  "grammar": {
+    "title": "Native-Level Spanish",
+    "estimatedMinutes": 20,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Conversation Fillers (Muletillas)",
+        "content": "Native speakers use these constantly:",
+        "examples": [
+          {
+            "spanish": "Pues...",
+            "english": "Well... (thinking)"
+          },
+          {
+            "spanish": "Es que...",
+            "english": "The thing is..."
+          },
+          {
+            "spanish": "O sea...",
+            "english": "I mean... / That is..."
+          },
+          {
+            "spanish": "Bueno...",
+            "english": "Well... / OK..."
+          },
+          {
+            "spanish": "A ver...",
+            "english": "Let's see..."
+          },
+          {
+            "spanish": "¿Sabes?",
+            "english": "You know?"
+          },
+          {
+            "spanish": "¿Me explico?",
+            "english": "Am I making sense?"
+          },
+          {
+            "spanish": "Digamos...",
+            "english": "Let's say..."
+          }
+        ],
+        "tip": "Using these makes you sound SO much more natural!"
+      },
+      {
+        "type": "lesson",
+        "heading": "Common Idioms (Modismos)",
+        "content": "Expressions that don't translate literally:",
+        "examples": [
+          {
+            "spanish": "estar en las nubes",
+            "english": "to have one's head in the clouds"
+          },
+          {
+            "spanish": "meter la pata",
+            "english": "to put your foot in it"
+          },
+          {
+            "spanish": "costar un ojo de la cara",
+            "english": "to cost an arm and a leg"
+          },
+          {
+            "spanish": "no tener pelos en la lengua",
+            "english": "to not mince words"
+          },
+          {
+            "spanish": "quedarse en blanco",
+            "english": "to go blank"
+          },
+          {
+            "spanish": "ser pan comido",
+            "english": "to be a piece of cake"
+          },
+          {
+            "spanish": "dar en el clavo",
+            "english": "to hit the nail on the head"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match the idioms:",
+        "pairs": [
+          {
+            "left": "costar un ojo de la cara",
+            "right": "to be very expensive"
+          },
+          {
+            "left": "ser pan comido",
+            "right": "to be very easy"
+          },
+          {
+            "left": "meter la pata",
+            "right": "to make a mistake"
+          },
+          {
+            "left": "quedarse en blanco",
+            "right": "to forget everything"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "More Useful Idioms",
+        "content": "For everyday situations:",
+        "examples": [
+          {
+            "spanish": "tomar el pelo (a alguien)",
+            "english": "to pull someone's leg"
+          },
+          {
+            "spanish": "estar hasta las narices",
+            "english": "to be fed up"
+          },
+          {
+            "spanish": "no tener ni idea",
+            "english": "to have no clue"
+          },
+          {
+            "spanish": "caer bien/mal",
+            "english": "to like/dislike someone"
+          },
+          {
+            "spanish": "echar de menos",
+            "english": "to miss someone/something"
+          },
+          {
+            "spanish": "pasarlo bien/mal",
+            "english": "to have a good/bad time"
+          },
+          {
+            "spanish": "dar igual",
+            "english": "to not matter"
+          },
+          {
+            "spanish": "valer la pena",
+            "english": "to be worth it"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Ese viaje ___ la pena. (worth it)",
+        "correctAnswers": [
+          "vale",
+          "valió"
+        ],
+        "explanation": "Valer la pena = to be worth it"
+      },
+      {
+        "type": "lesson",
+        "heading": "Regional Variations",
+        "content": "Key differences across countries:",
+        "examples": [
+          {
+            "spanish": "Spain: vale, tío, mola",
+            "english": "OK, dude, cool"
+          },
+          {
+            "spanish": "Mexico: órale, güey, padre",
+            "english": "OK/wow, dude, cool"
+          },
+          {
+            "spanish": "Argentina: che, boludo, bárbaro",
+            "english": "hey, dude, great"
+          },
+          {
+            "spanish": "Colombia: bacano, parcero",
+            "english": "cool, buddy"
+          },
+          {
+            "spanish": "⚠️ Spain: coger = to take",
+            "english": "Latin America: coger = vulgar! Use 'tomar'"
+          }
+        ],
+        "tip": "Be aware of regional differences to avoid misunderstandings!"
+      },
+      {
+        "type": "lesson",
+        "heading": "Nuanced Word Choices",
+        "content": "Subtle distinctions natives make:",
+        "examples": [
+          {
+            "spanish": "saber vs conocer",
+            "english": "to know facts vs to be familiar with"
+          },
+          {
+            "spanish": "pedir vs preguntar",
+            "english": "to ask for vs to ask a question"
+          },
+          {
+            "spanish": "llevar vs traer",
+            "english": "to take (away) vs to bring (here)"
+          },
+          {
+            "spanish": "sino vs pero",
+            "english": "'but rather' (after negative) vs 'but'"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "No quiero café ___ té.",
+        "options": [
+          "pero",
+          "sino"
+        ],
+        "correctAnswer": 1,
+        "explanation": "After negation + 'but rather' = sino"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Colloquial Expressions",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Everyday Colloquial",
+        "words": [
+          {
+            "spanish": "mola / está padre / qué chévere",
+            "english": "cool!",
+            "example": "¡Mola mucho! (Spain)"
+          },
+          {
+            "spanish": "flipar / alucinar",
+            "english": "to be amazed",
+            "example": "Estoy flipando."
+          },
+          {
+            "spanish": "currar / chambear",
+            "english": "to work (slang)",
+            "example": "Tengo que currar. (Spain)"
+          },
+          {
+            "spanish": "pasta / plata / lana",
+            "english": "money (slang)",
+            "example": "No tengo pasta. (Spain)"
+          },
+          {
+            "spanish": "tío/a / güey / che",
+            "english": "dude",
+            "example": "Oye, tío. (Spain)"
+          },
+          {
+            "spanish": "quedamos",
+            "english": "let's meet up",
+            "example": "¿Quedamos mañana?"
+          },
+          {
+            "spanish": "ir de marcha / salir de fiesta",
+            "english": "to go out partying",
+            "example": "Vamos de marcha."
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Bonus Vocabulary",
+        "words": [
+          {
+            "spanish": "el médico/la médica",
+            "english": "doctor",
+            "example": "Necesito ver a un médico."
+          },
+          {
+            "spanish": "el/la enfermero/a",
+            "english": "nurse",
+            "example": "La enfermera me tomó la temperatura."
+          },
+          {
+            "spanish": "el hospital",
+            "english": "hospital",
+            "example": "El hospital está cerca."
+          },
+          {
+            "spanish": "la farmacia",
+            "english": "pharmacy",
+            "example": "Compro medicina en la farmacia."
+          },
+          {
+            "spanish": "la receta",
+            "english": "prescription",
+            "example": "Necesitas una receta."
+          },
+          {
+            "spanish": "la pastilla",
+            "english": "pill",
+            "example": "Toma dos pastillas al día."
+          },
+          {
+            "spanish": "el dolor",
+            "english": "pain",
+            "example": "Tengo dolor de cabeza."
+          },
+          {
+            "spanish": "la fiebre",
+            "english": "fever",
+            "example": "Tiene mucha fiebre."
+          },
+          {
+            "spanish": "el resfriado",
+            "english": "cold",
+            "example": "Tengo un resfriado."
+          },
+          {
+            "spanish": "la alergia",
+            "english": "allergy",
+            "example": "Tengo alergia al polen."
+          },
+          {
+            "spanish": "el refrigerador/la nevera",
+            "english": "refrigerator",
+            "example": "La leche está en la nevera."
+          },
+          {
+            "spanish": "la estufa/cocina",
+            "english": "stove",
+            "example": "Cocino en la estufa."
+          },
+          {
+            "spanish": "el horno",
+            "english": "oven",
+            "example": "El pastel está en el horno."
+          },
+          {
+            "spanish": "el microondas",
+            "english": "microwave",
+            "example": "Calienta en el microondas."
+          },
+          {
+            "spanish": "la lavadora",
+            "english": "washing machine",
+            "example": "La ropa está en la lavadora."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Natural Conversation",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen to this casual conversation:",
+        "transcript": "—Pues mira, es que ayer metí la pata con mi jefe. O sea, le dije que el proyecto estaba listo cuando no lo estaba. ¿Sabes?\n—Ay, tío, ¿y qué pasó?\n—Bueno, se quedó en blanco cuando le mostré lo que teníamos.",
+        "options": [
+          "Made a mistake with boss about project",
+          "Got promoted at work",
+          "Finished project early",
+          "Quit the job"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Blog Post",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Mi vida en España",
+        "passage": "Pues mira, llevo ya tres años viviendo en Madrid y todavía me cuesta pillar algunas expresiones. Al principio flipaba cuando la gente decía 'mola' o 'qué guay'. ¿Sabes lo que me costó un ojo de la cara? Aprender a usar 'vale' correctamente. O sea, los españoles lo dicen para TODO.\n\nLo que más me mola es el rollo de ir de cañas con los colegas después del curro. Es que aquí la vida social es muy importante. A veces echo de menos mi país, pero bueno, ya me he acostumbrado.",
+        "translation": "Well look, I've been living in Madrid for three years now and I still struggle to catch some expressions. At first I was amazed when people said 'mola' (cool) or 'qué guay' (how cool). You know what cost me an arm and a leg? Learning to use 'vale' (OK) correctly. I mean, Spaniards say it for EVERYTHING.\n\nWhat I like most is the thing of going for beers with colleagues after work. The thing is, social life is very important here. Sometimes I miss my country, but well, I've gotten used to it.",
+        "wordCount": 115
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué le costó un ojo de la cara?",
+        "options": [
+          "Vivir en Madrid",
+          "Ir de cañas",
+          "Aprender a usar 'vale'",
+          "El trabajo"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 29. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "recordar",
+        "means": "to remember",
+        "notMean": "to record (= grabar)"
+      },
+      {
+        "spanish": "ropa",
+        "means": "clothes",
+        "notMean": "rope (= cuerda)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "diminutives": {
+    "common_endings": [
+      {
+        "ending": "-ito/-ita",
+        "use": "most common, affection/small",
+        "examples": "perrito, casita, momentito"
+      },
+      {
+        "ending": "-cito/-cita",
+        "use": "after -n, -r, -e",
+        "examples": "corazoncito, amorcito, pobrecito"
+      },
+      {
+        "ending": "-illo/-illa",
+        "use": "common in Spain",
+        "examples": "chiquillo, cigarrillo"
+      },
+      {
+        "ending": "-ico/-ica",
+        "use": "Colombia, Costa Rica, Cuba",
+        "examples": "momentico, ratico"
+      }
+    ],
+    "augmentatives": [
+      {
+        "ending": "-ón/-ona",
+        "use": "big/emphasize",
+        "examples": "casón (big house), solterón (confirmed bachelor)"
+      },
+      {
+        "ending": "-ote/-ota",
+        "use": "big (sometimes pejorative)",
+        "examples": "grandote, palabrota (swear word)"
+      },
+      {
+        "ending": "-azo/-aza",
+        "use": "blow/big/impressive",
+        "examples": "golpazo (big hit), cochazo (great car)"
+      }
+    ],
+    "tip": "Diminutives express affection, not just size! 'Ahorita' = right now (not small now)"
+  },
+  "regional_variations": {
+    "spain": {
+      "phrases": [
+        "vale (ok)",
+        "tío/tía (dude)",
+        "mola (cool)",
+        "guay (cool)",
+        "quedar (to meet up)",
+        "flipar (to freak out)"
+      ],
+      "pronunciation": "Z and C (before e/i) = 'th' sound; vosotros used"
+    },
+    "mexico": {
+      "phrases": [
+        "órale (ok/wow)",
+        "güey (dude)",
+        "padre (cool)",
+        "chido (cool)",
+        "ahorita (in a moment)",
+        "mande (what?)"
+      ],
+      "pronunciation": "No 'th' sound; ustedes instead of vosotros"
+    },
+    "argentina": {
+      "phrases": [
+        "che (hey)",
+        "boludo (dude)",
+        "bárbaro (great)",
+        "re (very)",
+        "morfar (to eat)",
+        "laburo (work)"
+      ],
+      "pronunciation": "LL/Y = 'sh' sound; vos instead of tú"
+    },
+    "colombia": {
+      "phrases": [
+        "bacano (cool)",
+        "parcero (buddy)",
+        "chévere (cool)",
+        "qué pena (I'm sorry)",
+        "de una (let's do it)"
+      ],
+      "pronunciation": "Clear consonants; very neutral accent"
+    }
+  },
+  "idioms_extended": [
+    {
+      "spanish": "costar un ojo de la cara",
+      "english": "to cost an arm and a leg",
+      "literal": "to cost an eye from the face"
+    },
+    {
+      "spanish": "meter la pata",
+      "english": "to put your foot in your mouth",
+      "literal": "to put in the leg"
+    },
+    {
+      "spanish": "estar en las nubes",
+      "english": "to have your head in the clouds",
+      "literal": "to be in the clouds"
+    },
+    {
+      "spanish": "no tener pelos en la lengua",
+      "english": "to speak one's mind",
+      "literal": "to not have hairs on the tongue"
+    },
+    {
+      "spanish": "quedarse de piedra",
+      "english": "to be speechless",
+      "literal": "to stay like stone"
+    },
+    {
+      "spanish": "ser pan comido",
+      "english": "to be a piece of cake",
+      "literal": "to be eaten bread"
+    },
+    {
+      "spanish": "tener mala leche",
+      "english": "to be in a bad mood / mean",
+      "literal": "to have bad milk"
+    },
+    {
+      "spanish": "estar como una cabra",
+      "english": "to be crazy",
+      "literal": "to be like a goat"
+    },
+    {
+      "spanish": "no tener ni pies ni cabeza",
+      "english": "to make no sense",
+      "literal": "to have neither feet nor head"
+    },
+    {
+      "spanish": "ponerse las pilas",
+      "english": "to get one's act together",
+      "literal": "to put in the batteries"
+    },
+    {
+      "spanish": "tirar la toalla",
+      "english": "to throw in the towel",
+      "literal": "same"
+    },
+    {
+      "spanish": "dar en el clavo",
+      "english": "to hit the nail on the head",
+      "literal": "same"
+    },
+    {
+      "spanish": "estar hasta las narices",
+      "english": "to be fed up",
+      "literal": "to be up to the noses"
+    },
+    {
+      "spanish": "tomar el pelo",
+      "english": "to pull someone's leg",
+      "literal": "to take the hair"
+    },
+    {
+      "spanish": "ser uña y carne",
+      "english": "to be best friends",
+      "literal": "to be nail and flesh"
+    },
+    {
+      "spanish": "llover a cántaros",
+      "english": "to rain cats and dogs",
+      "literal": "to rain pitchers"
+    },
+    {
+      "spanish": "buscar tres pies al gato",
+      "english": "to complicate things",
+      "literal": "to look for three feet on a cat"
+    },
+    {
+      "spanish": "hablar por los codos",
+      "english": "to talk too much",
+      "literal": "to talk through the elbows"
+    },
+    {
+      "spanish": "tener cara dura",
+      "english": "to be shameless",
+      "literal": "to have a hard face"
+    },
+    {
+      "spanish": "quedarse en blanco",
+      "english": "to draw a blank",
+      "literal": "to stay blank"
+    }
+  ],
+  "conversation_fillers": [
+    {
+      "spanish": "pues",
+      "english": "well, so",
+      "example": "Pues, no sé qué decir."
+    },
+    {
+      "spanish": "es que",
+      "english": "the thing is, it's that",
+      "example": "Es que no tengo tiempo."
+    },
+    {
+      "spanish": "o sea",
+      "english": "I mean, that is",
+      "example": "O sea, no me importa."
+    },
+    {
+      "spanish": "a ver",
+      "english": "let's see",
+      "example": "A ver, déjame pensar."
+    },
+    {
+      "spanish": "¿sabes?",
+      "english": "you know?",
+      "example": "Es difícil, ¿sabes?"
+    },
+    {
+      "spanish": "bueno",
+      "english": "well, okay",
+      "example": "Bueno, está bien."
+    },
+    {
+      "spanish": "entonces",
+      "english": "so, then",
+      "example": "Entonces, ¿qué hacemos?"
+    },
+    {
+      "spanish": "vale (Spain)",
+      "english": "okay",
+      "example": "Vale, nos vemos luego."
+    },
+    {
+      "spanish": "oye / oiga",
+      "english": "hey / listen",
+      "example": "Oye, tengo una pregunta."
+    },
+    {
+      "spanish": "mira",
+      "english": "look",
+      "example": "Mira, te voy a explicar."
+    },
+    {
+      "spanish": "fíjate",
+      "english": "imagine / notice",
+      "example": "Fíjate que no lo sabía."
+    },
+    {
+      "spanish": "la verdad es que",
+      "english": "the truth is that",
+      "example": "La verdad es que no me gusta."
+    },
+    {
+      "spanish": "en fin",
+      "english": "anyway, in short",
+      "example": "En fin, eso es todo."
+    },
+    {
+      "spanish": "por cierto",
+      "english": "by the way",
+      "example": "Por cierto, ¿viste a Juan?"
+    },
+    {
+      "spanish": "de hecho",
+      "english": "in fact, actually",
+      "example": "De hecho, sí lo vi."
+    }
+  ]
+}

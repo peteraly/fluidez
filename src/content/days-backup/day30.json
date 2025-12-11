@@ -1,0 +1,204 @@
+{
+  "day": 30,
+  "title": "¡Felicidades Maestro!",
+  "subtitle": "You've achieved C2 Spanish!",
+  "objectives": [
+    "Celebrate your achievement",
+    "Reflect on your journey",
+    "Plan next steps",
+    "Continue your Spanish adventure"
+  ],
+  "grammar": {
+    "title": "Your Achievement",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "¡Lo Lograste!",
+        "content": "Congratulations! You've completed 30 days of Spanish learning!",
+        "tip": "You now have a solid foundation in Spanish!"
+      },
+      {
+        "type": "lesson",
+        "heading": "What You've Learned",
+        "content": "In 30 days, you've mastered:",
+        "examples": [
+          {
+            "spanish": "Pronunciation",
+            "english": "Spanish sounds & alphabet"
+          },
+          {
+            "spanish": "Grammar",
+            "english": "Present, past, future tenses"
+          },
+          {
+            "spanish": "Vocabulary",
+            "english": "500+ essential words"
+          },
+          {
+            "spanish": "Communication",
+            "english": "Real-world conversations"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Next Steps",
+        "content": "Keep learning:",
+        "examples": [
+          {
+            "spanish": "Practice daily",
+            "english": "Even 10 minutes helps"
+          },
+          {
+            "spanish": "Watch Spanish media",
+            "english": "Movies, shows, music"
+          },
+          {
+            "spanish": "Find conversation partners",
+            "english": "Practice speaking"
+          },
+          {
+            "spanish": "Travel",
+            "english": "Immerse yourself"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Your Journey: A1 → C2",
+        "content": "Congratulations! You've covered:",
+        "examples": [
+          {
+            "spanish": "A1-A2: Foundations",
+            "english": "Sounds, numbers, SER/ESTAR, present tense, pronouns, past tenses"
+          },
+          {
+            "spanish": "B1: Intermediate",
+            "english": "Subjunctive, conditional, complex sentences"
+          },
+          {
+            "spanish": "B2: Upper-Intermediate",
+            "english": "All tenses, passive, reported speech, nuance"
+          },
+          {
+            "spanish": "C1: Advanced",
+            "english": "Discourse, register, idioms, style"
+          },
+          {
+            "spanish": "C2: Mastery",
+            "english": "Native-level expression, cultural fluency"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Continue Your Journey",
+        "content": "To maintain and improve your C2 level:",
+        "examples": [
+          {
+            "spanish": "Read: El País, El Mundo, literature",
+            "english": "Daily reading in Spanish"
+          },
+          {
+            "spanish": "Watch: Spanish films without subtitles",
+            "english": "Passive immersion"
+          },
+          {
+            "spanish": "Listen: Podcasts, radio, conversations",
+            "english": "Train your ear"
+          },
+          {
+            "spanish": "Speak: Find conversation partners",
+            "english": "Active practice"
+          },
+          {
+            "spanish": "Write: Journal, essays, stories",
+            "english": "Express yourself"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Celebration Words",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Celebration",
+        "words": [
+          {
+            "spanish": "¡Felicidades!",
+            "english": "Congratulations!",
+            "example": "¡Felicidades por completar el curso!"
+          },
+          {
+            "spanish": "¡Buen trabajo!",
+            "english": "Good job!",
+            "example": "¡Buen trabajo! Lo hiciste muy bien."
+          },
+          {
+            "spanish": "Estoy orgulloso/a",
+            "english": "I'm proud",
+            "example": "Estoy muy orgulloso de ti."
+          },
+          {
+            "spanish": "¡Lo lograste!",
+            "english": "You did it!",
+            "example": "¡Lo lograste! ¡Increíble!"
+          },
+          {
+            "spanish": "¡Sigue adelante!",
+            "english": "Keep going!",
+            "example": "¡Sigue adelante con tu español!"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Final Listening",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen to this final message:",
+        "transcript": "Felicidades por completar los treinta días. Has aprendido mucho. Tu español es mucho mejor ahora. Sigue practicando y pronto serás fluido. ¡Buena suerte!",
+        "options": [
+          "Congratulations, keep practicing",
+          "Sorry you couldn't finish",
+          "Start over from day 1",
+          "Spanish is too hard"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "reading": {
+    "title": "Final Reading",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Tu futuro con el español",
+        "passage": "¡Felicidades! Hoy es un día especial. Has completado treinta días de español. Ahora puedes presentarte, hablar de tu familia, pedir comida, dar direcciones, contar historias y mucho más. Pero esto es solo el comienzo. El español tiene más de 500 millones de hablantes en el mundo. Hay tantos países, culturas y personas que puedes conocer. Sigue practicando cada día. Ve películas en español. Escucha música. Busca amigos hispanohablantes. Y lo más importante: no tengas miedo de cometer errores. Cada error es una oportunidad de aprender. ¡Tu aventura con el español acaba de empezar!",
+        "translation": "Congratulations! Today is a special day. You've completed thirty days of Spanish. Now you can introduce yourself, talk about your family, order food, give directions, tell stories, and much more. But this is just the beginning. Spanish has more than 500 million speakers in the world. There are so many countries, cultures, and people you can meet. Keep practicing every day. Watch movies in Spanish. Listen to music. Find Spanish-speaking friends. And most importantly: don't be afraid to make mistakes. Every mistake is an opportunity to learn. Your adventure with Spanish has just begun!",
+        "wordCount": 120
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuál es el mensaje principal?",
+        "options": [
+          "El español es muy difícil",
+          "Debes dejar de estudiar",
+          "Sigue practicando y aprendiendo",
+          "No cometas errores"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "level": "C2"
+}

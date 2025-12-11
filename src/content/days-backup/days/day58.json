@@ -1,0 +1,36 @@
+{
+  "day": 58,
+  "title": "Formal vs Informal Register",
+  "subtitle": "B2 Level Content",
+  "level": "B2",
+  "objectives": ["Master Formal vs Informal Register", "Apply in context", "Practice fluency"],
+  "grammar": {
+    "title": "Formal vs Informal Register",
+    "estimatedMinutes": 18,
+    "screens": [
+      {"type": "lesson", "heading": "Introduction to Formal vs Informal Register", "content": "Detailed content for Formal vs Informal Register will be provided here."},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Practice exercise", "options": ["A", "B", "C", "D"], "correctAnswer": 0}
+    ]
+  },
+  "vocabulary": {
+    "title": "Vocabulary: Formal vs Informal Register",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "Key Terms", "words": [{"spanish": "ejemplo", "english": "example", "example": "Un buen ejemplo."}]}
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {"type": "listening", "instruction": "Listen carefully:", "transcript": "Audio transcript for day 58.", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": 0}
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {"type": "reading", "title": "Lectura 58", "passage": "Reading passage for Formal vs Informal Register. This text will help you practice the concepts learned today.", "translation": "Translation of the reading passage.", "wordCount": 50}
+    ]
+  }
+}

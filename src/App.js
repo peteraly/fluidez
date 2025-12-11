@@ -1,3 +1,4 @@
+import { getDayData, getDayJson, getDayVocabulary, getAllCurriculum } from './curriculumLoader';
 import React, { useState, useEffect, useCallback } from 'react';
 import AIPractice from './AIPractice';
 import VoicePractice from './VoicePractice';
@@ -22,6 +23,14 @@ import InteractiveCurriculum from './InteractiveCurriculum';
 import VoiceChatMode from './modes/VoiceChatMode';
 
 // API Key Banner Component
+import RealWorldMissions from "./components/RealWorldMissions";
+import StoryJourney from "./modes/StoryJourney";
+import GentleStreaks, { recordPractice, StreakNotification, getStreakData } from "./components/GentleStreaks";
+import DailyLessons from "./components/DailyLessons";
+import CulturalDeepDives from "./components/CulturalDeepDives";
+import ProgressDashboard from "./components/ProgressDashboard";
+import PatternDiscovery from "./modes/PatternDiscovery";
+import CommunicationAchievements from "./components/CommunicationAchievements";
 function ApiKeyBanner() {
   const [apiKey, setApiKey] = useState(localStorage.getItem('gemini_api_key') || '');
   const [editing, setEditing] = useState(!localStorage.getItem('gemini_api_key'));
@@ -143,188 +152,35 @@ const VOCAB = {
 // ============================================
 // 30-DAY CURRICULUM
 // ============================================
-const curriculum = {
-  1: { title: "Spanish Sounds & Alphabet", subtitle: "Foundation of pronunciation", level: "A1",
-    grammar: { content: "Spanish has 5 pure vowel sounds: A (ah), E (eh), I (ee), O (oh), U (oo). H is always silent. Ñ = 'ny'. RR is trilled.", examples: ["casa (KAH-sah)", "hola (OH-lah)", "año (AH-nyo)"], tip: "Spanish is phonetic - learn sounds, read anything!" },
-    vocabulary: ["hola","adiós","gracias","por favor","sí","no","buenos días","buenas noches"],
-    exercise: { q: "How is 'H' pronounced?", opts: ["Like English H","Silent","Like CH"], a: 1 },
-    listening: "Buenos días, ¿cómo estás?",
-    reading: "Hola. Me llamo María. Soy de España. Mucho gusto." },
-  2: { title: "Introducing Yourself", subtitle: "Subject pronouns & SER", level: "A1",
-    grammar: { content: "Subject pronouns: yo, tú, él/ella, nosotros, ellos. SER (to be permanent): soy, eres, es, somos, son.", examples: ["Yo soy estudiante","Ella es doctora","Nosotros somos amigos"], tip: "SER = DOCTOR: Description, Origin, Characteristics, Time, Occupation, Relationship" },
-    vocabulary: ["yo","tú","él","ella","nosotros","ellos","soy","eres","es","somos","son"],
-    exercise: { q: "Yo ___ estudiante.", opts: ["soy","estoy","tengo"], a: 0 },
-    listening: "Me llamo Carlos. Soy de México. Soy ingeniero.",
-    reading: "Hola, me llamo Ana. Soy profesora. Soy de Colombia pero vivo en Madrid." },
-  3: { title: "Being & Describing", subtitle: "SER vs ESTAR", level: "A1",
-    grammar: { content: "ESTAR (temporary/location): estoy, estás, está, estamos, están. SER = permanent, ESTAR = temporary/location.", examples: ["Soy alto (permanent)","Estoy cansado (temporary)","Madrid está en España (location)"], tip: "ESTAR = PLACE: Position, Location, Action, Condition, Emotion" },
-    vocabulary: ["estoy","estás","está","cansado","feliz","triste","enfermo","bien","mal","aquí","allí"],
-    exercise: { q: "Ella ___ en casa.", opts: ["es","está"], a: 1 },
-    listening: "¿Cómo estás? Estoy muy bien, gracias.",
-    reading: "Mi hermano es alto. Hoy está cansado porque trabaja mucho. Está en su casa." },
-  4: { title: "Present Tense Regular Verbs", subtitle: "-AR, -ER, -IR conjugations", level: "A1",
-    grammar: { content: "-AR: hablo, hablas, habla, hablamos, hablan. -ER: como, comes, come, comemos, comen. -IR: vivo, vives, vive, vivimos, viven.", examples: ["Yo hablo español","Ella come pizza","Nosotros vivimos en Madrid"], tip: "Remove ending, add new ending based on subject!" },
-    vocabulary: ["hablar","comer","vivir","trabajar","estudiar","escribir","leer","beber","comprar","vender"],
-    exercise: { q: "Nosotros ___ español.", opts: ["hablo","hablas","hablamos"], a: 2 },
-    listening: "Trabajo en una oficina. Como a las dos. Vivo cerca del centro.",
-    reading: "María habla español e inglés. Trabaja en un banco. Come en casa con su familia." },
-  5: { title: "Essential Irregular Verbs", subtitle: "IR, TENER, HACER", level: "A1",
-    grammar: { content: "IR: voy, vas, va, vamos, van. TENER: tengo, tienes, tiene, tenemos, tienen. HACER: hago, haces, hace, hacemos, hacen.", examples: ["Voy al trabajo","Tengo dos hermanos","Hago la tarea"], tip: "TENER expressions: tengo hambre/sed/frío/calor/sueño/miedo" },
-    vocabulary: ["ir","voy","vas","va","tener","tengo","hacer","hago","hambre","sed","frío","calor","sueño"],
-    exercise: { q: "'I am hungry':", opts: ["Estoy hambre","Soy hambre","Tengo hambre"], a: 2 },
-    listening: "Voy al supermercado. Tengo que comprar leche y pan.",
-    reading: "Tengo mucha hambre. Voy a la cocina y hago un sándwich. Tengo sed también." },
-  6: { title: "Questions & Negation", subtitle: "Asking and saying no", level: "A1",
-    grammar: { content: "Question words: ¿Qué? ¿Quién? ¿Dónde? ¿Cuándo? ¿Por qué? ¿Cómo? ¿Cuánto? Negation: NO before verb.", examples: ["¿Dónde vives?","¿Cuántos años tienes?","No hablo francés"], tip: "All question words have accents!" },
-    vocabulary: ["qué","quién","dónde","cuándo","por qué","cómo","cuánto","cuál","no"],
-    exercise: { q: "'Where' in Spanish:", opts: ["Qué","Dónde","Cuándo"], a: 1 },
-    listening: "¿De dónde eres? Soy de Argentina. ¿Dónde vives? Vivo en Buenos Aires.",
-    reading: "¿Cómo te llamas? Me llamo Pedro. ¿Dónde trabajas? No trabajo, soy estudiante." },
-  7: { title: "Week 1 Review", subtitle: "Consolidating your foundation", level: "A1",
-    grammar: { content: "Review: SER (permanent) vs ESTAR (temporary/location). Regular -AR/-ER/-IR verbs. IR/TENER/HACER. TENER expressions.", examples: ["Soy de España pero estoy en México","Tengo hambre, voy a comer"], tip: "Practice switching between SER and ESTAR!" },
-    vocabulary: ["ser","estar","ir","tener","hacer","hablar","comer","vivir"],
-    exercise: { q: "Origin uses:", opts: ["ESTAR","SER"], a: 1 },
-    listening: "Soy Carlos. Soy de Colombia. Estoy en Nueva York. Tengo 25 años.",
-    reading: "Me llamo Ana. Soy profesora. Soy de Madrid pero ahora estoy en Barcelona." },
-  8: { title: "Preterite: -AR Verbs", subtitle: "Completed past actions", level: "A2",
-    grammar: { content: "Preterite -AR: hablé, hablaste, habló, hablamos, hablaron. For completed actions at specific times.", examples: ["Ayer hablé con mi madre","Ella trabajó mucho","Compramos una casa"], tip: "Triggers: ayer, anoche, la semana pasada, una vez" },
-    vocabulary: ["ayer","anoche","la semana pasada","hablé","trabajé","compré","llegué","viajé","cené"],
-    exercise: { q: "Yo ___ ayer.", opts: ["hablo","hablé","hablaba"], a: 1 },
-    listening: "Ayer trabajé todo el día. Llegué a casa muy tarde.",
-    reading: "El sábado pasado viajé a Barcelona. Visité la Sagrada Familia. Caminé por las Ramblas." },
-  9: { title: "Preterite: -ER/-IR & Irregulars", subtitle: "More past tense", level: "A2",
-    grammar: { content: "-ER/-IR preterite: comí, comiste, comió, comimos, comieron. Irregulars: IR/SER→fui, ESTAR→estuve, TENER→tuve, HACER→hice.", examples: ["Fui al cine","Estuve en París","Hice la tarea"], tip: "IR and SER share the same preterite!" },
-    vocabulary: ["fui","estuve","tuve","hice","dije","vine","pude","vi","di"],
-    exercise: { q: "Yo ___ al cine ayer.", opts: ["voy","fui","iba"], a: 1 },
-    listening: "Ayer fui al restaurante. Comí paella. Estuve tres horas.",
-    reading: "El verano pasado fui a España. Estuve dos semanas. Hice muchos amigos." },
-  10: { title: "The Imperfect Tense", subtitle: "Habitual past actions", level: "A2",
-    grammar: { content: "-AR imperfect: hablaba, hablabas, hablaba, hablábamos, hablaban. -ER/-IR: comía. Only 3 irregulars: ser→era, ir→iba, ver→veía.", examples: ["Cuando era niño, jugaba mucho","Siempre comía a las dos"], tip: "Imperfect = 'used to' or 'was doing'" },
-    vocabulary: ["cuando era niño","siempre","todos los días","mientras","hablaba","comía","vivía","era","iba"],
-    exercise: { q: "Cuando era niño, ___ al parque.", opts: ["fui","iba","voy"], a: 1 },
-    listening: "Cuando era niño, vivía en un pueblo. Jugaba con mis amigos todos los días.",
-    reading: "Mi abuela era muy cariñosa. Siempre cocinaba platos deliciosos." },
-  11: { title: "Preterite vs Imperfect", subtitle: "Using both tenses", level: "A2",
-    grammar: { content: "Preterite: completed, specific. Imperfect: ongoing, background. Together: imperfect sets scene, preterite advances action.", examples: ["Mientras dormía, sonó el teléfono","Era de noche cuando llegué"], tip: "Imperfect = movie background, Preterite = main events" },
-    vocabulary: ["mientras","cuando","de repente","entonces","ya","todavía"],
-    exercise: { q: "Mientras ___ (comer), llegó.", opts: ["comí","comía"], a: 1 },
-    listening: "Estaba en casa cuando llamó mi hermano.",
-    reading: "Era una noche fría. Caminaba por la calle cuando de repente vi a un amigo." },
-  12: { title: "Direct Object Pronouns", subtitle: "Lo, la, los, las", level: "A2",
-    grammar: { content: "Direct object pronouns: me, te, lo/la, nos, los/las. Go BEFORE conjugated verbs.", examples: ["El libro → Lo leo","La pizza → La como"], tip: "LO=him/it(m), LA=her/it(f), LOS/LAS=them" },
-    vocabulary: ["me","te","lo","la","nos","los","las"],
-    exercise: { q: "El libro. ___ leo.", opts: ["Le","Lo","La"], a: 1 },
-    listening: "¿Tienes el libro? Sí, lo tengo aquí.",
-    reading: "Compré una camisa. La compré en el centro. Vi zapatos pero no los compré." },
-  13: { title: "Indirect Object Pronouns", subtitle: "Me, te, le, nos, les", level: "A2",
-    grammar: { content: "Indirect objects (to whom?): me, te, le, nos, les. Double pronouns: indirect first (me lo, te la, se lo).", examples: ["Me da el libro","Le escribo una carta","Te lo digo"], tip: "LE/LES → SE before lo/la/los/las" },
-    vocabulary: ["dar","decir","escribir","enviar","mostrar","preguntar","contestar"],
-    exercise: { q: "María ___ da un regalo.", opts: ["me","lo","la"], a: 0 },
-    listening: "Mi madre me llama todos los días. Le cuento todo.",
-    reading: "Ayer le escribí una carta a mi abuela. Ella me escribió una respuesta." },
-  14: { title: "Reflexive Verbs", subtitle: "Actions to oneself", level: "A2",
-    grammar: { content: "Reflexive pronouns: me, te, se, nos, se. Daily routines: levantarse, ducharse, vestirse, acostarse.", examples: ["Me levanto a las 7","Se ducha por la mañana"], tip: "Many daily routine verbs are reflexive in Spanish!" },
-    vocabulary: ["levantarse","ducharse","vestirse","peinarse","acostarse","despertarse","sentarse","llamarse"],
-    exercise: { q: "'I wake up':", opts: ["Despierto","Me despierto","Se despierta"], a: 1 },
-    listening: "Me despierto a las seis. Me levanto, me ducho y me visto.",
-    reading: "Todos los días me levanto temprano. Me ducho, me visto y desayuno." },
-  15: { title: "Week 2 Review", subtitle: "Past tenses & pronouns", level: "A2",
-    grammar: { content: "Review: Preterite (completed), Imperfect (ongoing/habitual). Direct objects (lo/la), Indirect (le/les), Reflexives (me/te/se).", examples: ["Ayer me levanté tarde","Se lo di a María"], tip: "Practice telling stories with both past tenses!" },
-    vocabulary: ["ayer","cuando era niño","mientras","me","te","lo","la","le","se"],
-    exercise: { q: "Completed action uses:", opts: ["Imperfect","Preterite"], a: 1 },
-    listening: "Ayer me desperté temprano. Fui al gimnasio.",
-    reading: "Cuando era niño, mi padre me llevaba al parque. Un día me caí." },
-  16: { title: "Gustar & Similar Verbs", subtitle: "Expressing likes", level: "A2",
-    grammar: { content: "GUSTAR is backwards: Me gusta (singular), Me gustan (plural). Similar: encantar, interesar, molestar, faltar.", examples: ["Me gusta el café","Me gustan los libros","Nos encanta la música"], tip: "The thing liked is the subject!" },
-    vocabulary: ["gustar","encantar","interesar","molestar","faltar","importar","parecer"],
-    exercise: { q: "Me ___ los libros.", opts: ["gusta","gustan","gusto"], a: 1 },
-    listening: "Me gusta mucho la comida mexicana. Me encantan los tacos.",
-    reading: "A mi hermana le encanta bailar. A mí me gusta más la música." },
-  17: { title: "Comparatives & Superlatives", subtitle: "More, less, the most", level: "A2",
-    grammar: { content: "más...que, menos...que, tan...como. Superlatives: el/la más + adj. Irregulars: mejor, peor, mayor, menor.", examples: ["Soy más alto que tú","Es el más inteligente"], tip: "Mejor/peor don't use 'más'" },
-    vocabulary: ["más","menos","que","tan","como","mejor","peor","mayor","menor"],
-    exercise: { q: "Juan es más alto ___ Pedro.", opts: ["de","que","como"], a: 1 },
-    listening: "Mi hermano es más alto que yo. Mi hermana es la más inteligente.",
-    reading: "Este restaurante es mejor que el otro. La comida es más barata." },
-  18: { title: "Por vs Para", subtitle: "Two 'for's", level: "B1",
-    grammar: { content: "POR: cause, exchange, duration, through, per. PARA: purpose, destination, deadline, recipient, opinion.", examples: ["Gracias por todo","Es para ti","Trabajo por la mañana"], tip: "PARA = destination/purpose, POR = cause/exchange" },
-    vocabulary: ["por","para","por favor","por qué","para qué","por eso","para siempre"],
-    exercise: { q: "Gracias ___ tu ayuda.", opts: ["para","por"], a: 1 },
-    listening: "Este regalo es para ti. Gracias por venir.",
-    reading: "Salgo para México mañana. Voy por dos semanas. Gracias por tu ayuda." },
-  19: { title: "Demonstratives", subtitle: "This, that, those", level: "B1",
-    grammar: { content: "Este/esta/estos/estas (this/these near). Ese/esa/esos/esas (that/those). Aquel/aquella (that over there).", examples: ["Este libro","Esa casa","Aquellos árboles"], tip: "Three levels of distance!" },
-    vocabulary: ["este","esta","estos","estas","ese","esa","esos","esas","aquel","aquella"],
-    exercise: { q: "This house (la casa):", opts: ["Este casa","Esta casa","Esa casa"], a: 1 },
-    listening: "Quiero este libro, no ese.",
-    reading: "—¿Cuánto cuesta este vestido? —Este cuesta cincuenta. Ese cuesta treinta." },
-  20: { title: "Possessives", subtitle: "My, your, his/her", level: "B1",
-    grammar: { content: "Short: mi/tu/su/nuestro + noun. Long: mío/tuyo/suyo after noun or alone. Agreement with possessed item.", examples: ["mi casa","la casa mía","Es mío"], tip: "Short forms before, long forms after or standalone" },
-    vocabulary: ["mi","tu","su","nuestro","mío","tuyo","suyo","nuestro"],
-    exercise: { q: "My house:", opts: ["mío casa","mi casa","casa mía"], a: 1 },
-    listening: "Esta es mi casa. El coche es mío también.",
-    reading: "Mi hermana y yo vivimos con nuestros padres. Mi habitación es pequeña." },
-  21: { title: "Week 3 Review", subtitle: "Structures consolidated", level: "B1",
-    grammar: { content: "Review: Gustar construction, comparatives (más/menos...que), por vs para, demonstratives (este/ese/aquel), possessives.", examples: ["Me gustan más estos que esos","Es para mi hermano"], tip: "Practice combining these structures!" },
-    vocabulary: ["me gusta","más que","por","para","este","ese","mi","tu"],
-    exercise: { q: "I like movies (plural):", opts: ["Me gusta","Me gustan"], a: 1 },
-    listening: "Me gusta más este que ese. Es un regalo para mi hermano.",
-    reading: "Este restaurante es mejor que ese. Me encanta la comida. Es para mi cumpleaños." },
-  22: { title: "Future Tense", subtitle: "Will do", level: "B1",
-    grammar: { content: "Future: infinitive + é, ás, á, emos, án. Irregulars: tendré, podré, haré, diré, saldré, vendré, querré, sabré.", examples: ["Hablaré mañana","Tendré tiempo","Haré la tarea"], tip: "Same endings for ALL verbs!" },
-    vocabulary: ["hablaré","comeré","viviré","tendré","podré","haré","diré","saldré","vendré"],
-    exercise: { q: "I will eat:", opts: ["comeré","comerá","comerás"], a: 0 },
-    listening: "Mañana iré al médico. Después trabajaré desde casa.",
-    reading: "El próximo verano viajaré a España. Visitaré Madrid. Será increíble." },
-  23: { title: "Conditional Tense", subtitle: "Would do", level: "B1",
-    grammar: { content: "Conditional: infinitive + ía, ías, ía, íamos, ían. Same irregular stems as future. Polite requests, hypotheticals.", examples: ["Hablaría","Tendría","Me gustaría"], tip: "Perfect for polite requests: ¿Podría...? Me gustaría..." },
-    vocabulary: ["hablaría","comería","viviría","tendría","podría","haría","me gustaría"],
-    exercise: { q: "I would like:", opts: ["me gustaría","me gustará","me gustaba"], a: 0 },
-    listening: "Me gustaría un café, por favor. ¿Podría ayudarme?",
-    reading: "Si tuviera dinero, viajaría por el mundo. Visitaría muchos países." },
-  24: { title: "Subjunctive Introduction", subtitle: "A new mood", level: "B1",
-    grammar: { content: "Subjunctive for wishes, doubts, emotions. Opposite vowels: -AR→e, -ER/-IR→a. Irregulars: sea, esté, vaya, tenga, haga.", examples: ["Quiero que vengas","Espero que estés bien"], tip: "Triggered by 'que' + wish/doubt/emotion" },
-    vocabulary: ["quiero que","espero que","dudo que","es importante que","ojalá"],
-    exercise: { q: "Quiero que tú ___ (hablar):", opts: ["hablas","hables","hablar"], a: 1 },
-    listening: "Quiero que vengas a mi fiesta. Espero que puedas.",
-    reading: "Espero que mi familia esté bien. Quiero que mis hijos tengan éxito." },
-  25: { title: "Subjunctive: Wishes & Desires", subtitle: "Expressing wants", level: "B1",
-    grammar: { content: "Wish triggers: querer que, desear que, preferir que, necesitar que, pedir que. Main clause indicative, subordinate subjunctive.", examples: ["Quiero que estudies","Necesito que me ayudes"], tip: "Two subjects needed for subjunctive!" },
-    vocabulary: ["querer que","desear que","preferir que","necesitar que","pedir que","recomendar que"],
-    exercise: { q: "Prefiero que tú ___ (quedarse):", opts: ["quedas","quedes","quedarse"], a: 1 },
-    listening: "Necesito que llegues temprano. Quiero que traigas el libro.",
-    reading: "Mis padres quieren que estudie medicina. Prefieren que viva cerca." },
-  26: { title: "Subjunctive: Doubt & Emotion", subtitle: "Uncertainty & feelings", level: "B1",
-    grammar: { content: "Doubt: dudo que, no creo que, es posible que. Emotion: me alegra que, me sorprende que, es triste que.", examples: ["Dudo que venga","Me alegra que estés aquí"], tip: "NO creo que + subjunctive, but Creo que + indicative" },
-    vocabulary: ["dudo que","no creo que","es posible que","me alegra que","me sorprende que","es triste que"],
-    exercise: { q: "Dudo que él ___ (venir):", opts: ["viene","venga","vendrá"], a: 1 },
-    listening: "No creo que llueva hoy. Me alegra que estés aquí.",
-    reading: "Me alegra que mi hermano esté mejor. No creo que necesite más tratamiento." },
-  27: { title: "Commands (Imperative)", subtitle: "Giving orders", level: "B1",
-    grammar: { content: "Tú positive: él form (habla, come, escribe). Tú negative: subjunctive (no hables). Irregulars: ven, di, haz, pon, sal, ten, ve, sé.", examples: ["¡Habla!","¡No hables!","¡Ven aquí!"], tip: "Positive tú = él form, Negative tú = subjunctive" },
-    vocabulary: ["ven","di","haz","pon","sal","ten","ve","sé","habla","come","escribe"],
-    exercise: { q: "Come! (tú positive):", opts: ["Vienes","Ven","Vengas"], a: 1 },
-    listening: "Ven aquí y siéntate. Dime qué pasó.",
-    reading: "Primero, pon agua en la olla. Espera hasta que hierva. Añade la pasta." },
-  28: { title: "Week 4 Review", subtitle: "Advanced grammar", level: "B1",
-    grammar: { content: "Review: Future (hablaré), Conditional (hablaría), Subjunctive triggers (quiero que, dudo que), Commands (ven, no vengas).", examples: ["Mañana hablaré","Me gustaría ir","Quiero que vengas","¡Ven!"], tip: "You now have all major tenses and moods!" },
-    vocabulary: ["hablaré","hablaría","hable","habla","no hables"],
-    exercise: { q: "I will go:", opts: ["voy","iré","iría"], a: 1 },
-    listening: "Mañana iré al cine. Me gustaría que vinieras conmigo.",
-    reading: "El próximo año estudiaré en España. Me gustaría vivir en Barcelona." },
-  29: { title: "Advanced Conversation", subtitle: "Expressing opinions", level: "B1",
-    grammar: { content: "Opinions: creo que, me parece que, pienso que. Agreeing/disagreeing: estoy de acuerdo, no estoy de acuerdo. Connectors: además, sin embargo, por lo tanto.", examples: ["Creo que es importante","Estoy de acuerdo","Sin embargo..."], tip: "Use connectors to sound more natural!" },
-    vocabulary: ["creo que","me parece que","pienso que","estoy de acuerdo","sin embargo","además","por lo tanto","en mi opinión"],
-    exercise: { q: "'I agree':", opts: ["Tengo acuerdo","Estoy de acuerdo","Soy de acuerdo"], a: 1 },
-    listening: "Creo que es una buena idea. ¿Estás de acuerdo?",
-    reading: "En mi opinión, es importante estudiar idiomas. Además, es divertido." },
-  30: { title: "Final Assessment", subtitle: "¡Felicidades!", level: "B1",
-    grammar: { content: "You've completed 30 days! Review: Present, Past (preterite/imperfect), Future, Conditional, Subjunctive, Commands, Pronouns, All structures.", examples: ["Has aprendido mucho","Puedes comunicarte en español"], tip: "Keep practicing! Immersion is the next step." },
-    vocabulary: ["felicidades","lo lograste","sigue adelante","buena suerte","éxito"],
-    exercise: { q: "'I was eating when he arrived':", opts: ["Comí cuando llegó","Comía cuando llegó"], a: 1 },
-    listening: "Felicidades, has completado el curso. ¡Sigue practicando!",
-    reading: "Has trabajado mucho. Ahora puedes hablar español. ¡Buena suerte!" }
-};
+// Dynamic curriculum loader - loads from JSON files
+const curriculum = {};
+const dayFiles = require.context('./content/days', false, /day\d+\.json$/);
+dayFiles.keys().forEach(key => {
+  const dayNum = parseInt(key.match(/day(\d+)/)[1]);
+  const dayData = dayFiles(key);
+  const vocabWords = [];
+  if (dayData.vocabulary?.screens) {
+    dayData.vocabulary.screens.forEach(screen => {
+      if (screen.words) screen.words.forEach(w => vocabWords.push(w.spanish));
+    });
+  }
+  const grammarScreen = dayData.grammar?.screens?.[0] || {};
+  let exercise = { q: "Practice", opts: ["A","B","C"], a: 0 };
+  dayData.grammar?.screens?.forEach(s => {
+    if (s.exerciseType === 'multiple_choice') exercise = { q: s.instruction, opts: s.options, a: s.correctAnswer };
+  });
+  curriculum[dayNum] = {
+    title: dayData.title || `Day ${dayNum}`,
+    subtitle: dayData.subtitle || '',
+    level: dayData.level || 'A1',
+    grammar: { content: grammarScreen.content || '', examples: (grammarScreen.examples || []).map(e => e.spanish || e), tip: grammarScreen.tip || '' },
+    vocabulary: vocabWords.length ? vocabWords : ['palabra'],
+    exercise,
+    listening: dayData.listening?.screens?.[0]?.transcript || '',
+    reading: dayData.reading?.screens?.[0]?.passage || '',
+    _raw: dayData
+  };
+});
 
 // ============================================
 // ASSESSMENTS
@@ -437,6 +293,15 @@ function App() {
   const [showImmersiveRoleplay, setShowImmersiveRoleplay] = useState(false);
   const [showCurriculumDay, setShowCurriculumDay] = useState(null);
   const [showPracticeTab, setShowPracticeTab] = useState(false);
+  const [showMissions, setShowMissions] = useState(false);
+  const [showStoryJourney, setShowStoryJourney] = useState(false);
+  const [showStreaks, setShowStreaks] = useState(false);
+  const [showCulture, setShowCulture] = useState(false);
+  const [showProgress, setShowProgress] = useState(false);
+  const [showPatternDiscovery, setShowPatternDiscovery] = useState(false);
+  const [showCommunicationAchievements, setShowCommunicationAchievements] = useState(false);
+  const [showDailyLessons, setShowDailyLessons] = useState(false);
+  const [streakNotification, setStreakNotification] = useState(null);
   const [showPracticeHub, setShowPracticeHub] = useState(false);
   const [showOnboarding, setShowOnboarding] = useState(() => !localStorage.getItem('fluidez_onboarded'));
   const [assessmentIdx, setAssessmentIdx] = useState(0);
@@ -541,6 +406,14 @@ function App() {
   // ============ END FEATURE SCREENS ============
   if (showVoiceChatMode) return <VoiceChatMode onBack={() => setShowVoiceChatMode(false)} />;
 
+  if (showMissions) return <RealWorldMissions onBack={() => setShowMissions(false)} onStartConversation={() => { setShowMissions(false); setShowVoiceChatMode(true); }} />;
+  if (showStoryJourney) return <StoryJourney onBack={() => setShowStoryJourney(false)} />;
+  if (showStreaks) return <GentleStreaks onClose={() => setShowStreaks(false)} />;
+  if (showCulture) return <CulturalDeepDives onBack={() => setShowCulture(false)} />;
+  if (showProgress) return <ProgressDashboard onBack={() => setShowProgress(false)} />;
+  if (showPatternDiscovery) return <PatternDiscovery onBack={() => setShowPatternDiscovery(false)} onPracticeInConversation={() => { setShowPatternDiscovery(false); setShowVoiceChatMode(true); }} />;
+  if (showDailyLessons) return <DailyLessons onBack={() => setShowDailyLessons(false)} currentDay={currentDay} onStartDay={(day) => { setCurrentDay(day); setShowDailyLessons(false); }} />;
+  if (showCommunicationAchievements) return <CommunicationAchievements onBack={() => setShowCommunicationAchievements(false)} />;
     return (
       <div style={s.container}>
         <div style={s.header}>
@@ -594,7 +467,7 @@ function App() {
               {Array.from({ length: TOTAL_DAYS }, (_, i) => i + 1).map(day => {
                 const dayData = curriculum[day];
                 const done = progress[day]?.completed;
-                const locked = day > currentDay && !done;
+                const locked = false; // UNLOCKED ALL DAYS
                 const isCurrent = day === currentDay;
                 return (
                   <div
@@ -693,7 +566,7 @@ function App() {
                     <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Vault</div>
                     <div style={{ fontSize: 11, color: theme.textLight }}>My Content</div>
                   </button>
-                  <button onClick={() => setShowStories(true)} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
+                  <button onClick={() => setShowStoryJourney(true)} style={{ ...s.card, padding: 12, textAlign: "center", cursor: "pointer" }}>
                     <span style={{ fontSize: 24 }}>📖</span>
                     <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4 }}>Stories</div>
                     <div style={{ fontSize: 11, color: theme.textLight }}>Reading</div>
@@ -803,6 +676,30 @@ function App() {
 
 
   // DAY DETAIL
+  // NEW: Use InteractiveCurriculum for day lessons (replaces old day/module screens)
+  if (screen === 'day' || screen === 'module') {
+    return (
+      <InteractiveCurriculum 
+        day={currentDay} 
+        onBack={() => setScreen('home')}
+        onComplete={() => {
+          // Mark all modules complete for this day
+          const newProgress = { ...progress };
+          if (!newProgress[currentDay]) newProgress[currentDay] = {};
+          newProgress[currentDay].grammar = true;
+          newProgress[currentDay].vocabulary = true;
+          newProgress[currentDay].listening = true;
+          newProgress[currentDay].reading = true;
+          newProgress[currentDay].completed = true;
+          setProgress(newProgress);
+          localStorage.setItem('fluidez_progress', JSON.stringify(newProgress));
+          setScreen('home');
+        }}
+      />
+    );
+  }
+
+  // OLD DAY HANDLER (now bypassed by above):
   if (screen === 'day') {
     const day = curriculum[currentDay];
     const mods = ['grammar', 'vocabulary', 'listening', 'reading'];

@@ -1,0 +1,196 @@
+{
+  "day": 33,
+  "title": "Subjunctive with Doubt & Denial",
+  "subtitle": "When certainty fades",
+  "level": "B1",
+  "objectives": [
+    "Use subjunctive to express doubt",
+    "Use subjunctive for denial",
+    "Distinguish certainty (indicative) from uncertainty (subjunctive)",
+    "Master key doubt expressions"
+  ],
+  "grammar": {
+    "title": "Doubt, Denial & Uncertainty",
+    "estimatedMinutes": 18,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Doubt Triggers Subjunctive",
+        "content": "When you express doubt about something, use subjunctive. When you express certainty, use indicative.",
+        "examples": [
+          {"spanish": "Dudo que venga", "english": "I doubt (that) he'll come (subjunctive)"},
+          {"spanish": "No creo que sea verdad", "english": "I don't think it's true (subjunctive)"},
+          {"spanish": "Creo que viene", "english": "I think he's coming (indicative - certainty)"},
+          {"spanish": "Estoy seguro de que es verdad", "english": "I'm sure it's true (indicative)"}
+        ],
+        "tip": "Negative belief = doubt = subjunctive. Positive belief = certainty = indicative."
+      },
+      {
+        "type": "lesson",
+        "heading": "Doubt Expressions → Subjunctive",
+        "content": "These expressions trigger subjunctive:",
+        "examples": [
+          {"spanish": "dudar que", "english": "to doubt that"},
+          {"spanish": "no creer que", "english": "to not believe that"},
+          {"spanish": "no pensar que", "english": "to not think that"},
+          {"spanish": "no estar seguro de que", "english": "to not be sure that"},
+          {"spanish": "no parecer que", "english": "to not seem that"},
+          {"spanish": "es dudoso que", "english": "it's doubtful that"},
+          {"spanish": "es improbable que", "english": "it's unlikely that"},
+          {"spanish": "no es cierto que", "english": "it's not certain that"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Dudo que él ___ la verdad. (saber)",
+        "correctAnswers": ["sepa"],
+        "explanation": "Dudo que triggers subjunctive: sepa"
+      },
+      {
+        "type": "lesson",
+        "heading": "Certainty Expressions → Indicative",
+        "content": "These express certainty, so use indicative:",
+        "examples": [
+          {"spanish": "creer que", "english": "to believe that"},
+          {"spanish": "pensar que", "english": "to think that"},
+          {"spanish": "estar seguro de que", "english": "to be sure that"},
+          {"spanish": "es cierto que", "english": "it's certain that"},
+          {"spanish": "es verdad que", "english": "it's true that"},
+          {"spanish": "es obvio que", "english": "it's obvious that"},
+          {"spanish": "es evidente que", "english": "it's evident that"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Creo que ella ___ muy inteligente. (ser)",
+        "options": ["sea", "es", "fuera", "siendo"],
+        "correctAnswer": 1,
+        "explanation": "Creo que (certainty) uses indicative: es"
+      },
+      {
+        "type": "lesson",
+        "heading": "Denial → Subjunctive",
+        "content": "Denying something also triggers subjunctive:",
+        "examples": [
+          {"spanish": "Niego que sea verdad", "english": "I deny that it's true"},
+          {"spanish": "No es verdad que él trabaje aquí", "english": "It's not true that he works here"},
+          {"spanish": "No es cierto que ella haya dicho eso", "english": "It's not certain that she said that"}
+        ],
+        "tip": "Denial = 'I'm saying this ISN'T reality' = subjunctive"
+      },
+      {
+        "type": "lesson",
+        "heading": "Maybe & Perhaps",
+        "content": "Quizá(s) / Tal vez / Acaso can use either mood depending on degree of doubt:",
+        "examples": [
+          {"spanish": "Quizás venga (subjunctive)", "english": "Maybe he'll come (more doubt)"},
+          {"spanish": "Quizás viene (indicative)", "english": "Maybe he's coming (less doubt)"},
+          {"spanish": "Tal vez sea verdad", "english": "Perhaps it's true"},
+          {"spanish": "A lo mejor viene", "english": "Maybe he'll come (always indicative)"}
+        ],
+        "tip": "'A lo mejor' is always followed by indicative."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "No creo que ___ posible. (ser)",
+        "options": ["es", "sea", "será", "fue"],
+        "correctAnswer": 1,
+        "explanation": "No creo que (doubt) triggers subjunctive: sea"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Certainty vs Doubt Vocabulary",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Expressing Doubt",
+        "words": [
+          {"spanish": "dudar", "english": "to doubt", "example": "Dudo que tenga razón."},
+          {"spanish": "no creer", "english": "to not believe", "example": "No creo que sea cierto."},
+          {"spanish": "es dudoso", "english": "it's doubtful", "example": "Es dudoso que venga."},
+          {"spanish": "es poco probable", "english": "it's unlikely", "example": "Es poco probable que gane."},
+          {"spanish": "no estar convencido", "english": "to not be convinced", "example": "No estoy convencido de que funcione."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Expressing Certainty",
+        "words": [
+          {"spanish": "creer", "english": "to believe", "example": "Creo que tiene razón."},
+          {"spanish": "estar seguro/a", "english": "to be sure", "example": "Estoy seguro de que viene."},
+          {"spanish": "es cierto", "english": "it's certain", "example": "Es cierto que trabaja mucho."},
+          {"spanish": "es evidente", "english": "it's evident", "example": "Es evidente que está cansado."},
+          {"spanish": "no hay duda de que", "english": "there's no doubt that", "example": "No hay duda de que es el mejor."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Maybe/Perhaps",
+        "words": [
+          {"spanish": "quizá(s)", "english": "maybe/perhaps", "example": "Quizás llueva mañana."},
+          {"spanish": "tal vez", "english": "maybe/perhaps", "example": "Tal vez venga más tarde."},
+          {"spanish": "a lo mejor", "english": "maybe (+ indicative)", "example": "A lo mejor viene hoy."},
+          {"spanish": "posiblemente", "english": "possibly", "example": "Posiblemente tenga razón."},
+          {"spanish": "probablemente", "english": "probably", "example": "Probablemente sea verdad."}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Which expression always uses INDICATIVE?",
+        "options": ["Dudo que", "Quizás", "A lo mejor", "No creo que"],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Certainty and Doubt",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Is the speaker certain or doubtful?",
+        "transcript": "No creo que Juan venga a la fiesta. Dudo que tenga tiempo porque trabaja mucho.",
+        "options": ["Certain Juan will come", "Doubtful Juan will come", "Knows Juan is coming", "Doesn't care if Juan comes"],
+        "correctAnswer": 1
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 What is the speaker sure about?",
+        "transcript": "Estoy seguro de que el equipo va a ganar. Es evidente que son los mejores jugadores.",
+        "options": ["Team will lose", "Team will win", "Game will be canceled", "Team needs practice"],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Opinion Column",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "¿Vida en otros planetas?",
+        "passage": "Muchos científicos creen que hay vida en otros planetas. Es cierto que el universo es enorme y que hay miles de millones de planetas. Sin embargo, dudo que encontremos vida inteligente pronto. No creo que tengamos la tecnología necesaria todavía.\n\nAlgunos expertos piensan que es probable que haya vida microbiana en Marte. Otros dudan que exista. Es evidente que necesitamos más investigación.\n\nQuizás algún día descubramos que no estamos solos. Tal vez sea el descubrimiento más importante de la historia humana.",
+        "translation": "Many scientists believe there is life on other planets. It's certain that the universe is huge and there are billions of planets. However, I doubt we'll find intelligent life soon. I don't think we have the necessary technology yet.\n\nSome experts think it's likely there's microbial life on Mars. Others doubt it exists. It's evident we need more research.\n\nMaybe someday we'll discover we're not alone. Perhaps it will be the most important discovery in human history.",
+        "wordCount": 98
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué duda el autor?",
+        "options": [
+          "Que el universo sea grande",
+          "Que encontremos vida inteligente pronto",
+          "Que haya científicos",
+          "Que Marte exista"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

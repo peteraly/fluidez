@@ -1,0 +1,36 @@
+{
+  "day": 115,
+  "title": "Philosophy & Abstract Thought",
+  "subtitle": "C2 Mastery Level",
+  "level": "C2",
+  "objectives": ["Achieve mastery in Philosophy & Abstract Thought", "Native-equivalent proficiency", "Cultural fluency"],
+  "grammar": {
+    "title": "Philosophy & Abstract Thought",
+    "estimatedMinutes": 20,
+    "screens": [
+      {"type": "lesson", "heading": "Philosophy & Abstract Thought", "content": "Mastery-level content exploring the nuances of Philosophy & Abstract Thought. At this level, you should be able to understand and produce language at a native-equivalent level."},
+      {"type": "exercise", "exerciseType": "translation", "instruction": "Translate this complex sentence", "correctAnswers": ["respuesta"], "explanation": "Analysis of translation choices."}
+    ]
+  },
+  "vocabulary": {
+    "title": "C2 Vocabulary: Philosophy & Abstract Thought",
+    "estimatedMinutes": 12,
+    "screens": [
+      {"type": "vocab", "category": "Mastery Terms", "words": [{"spanish": "matiz", "english": "nuance", "example": "Los matices del idioma son fascinantes."}]}
+    ]
+  },
+  "listening": {
+    "title": "Native-Speed Listening",
+    "estimatedMinutes": 12,
+    "screens": [
+      {"type": "listening", "instruction": "Listen to this native-speed content:", "transcript": "Complex native-level audio discussing Philosophy & Abstract Thought with natural speech patterns, colloquialisms, and cultural references.", "options": ["A", "B", "C", "D"], "correctAnswer": 0}
+    ]
+  },
+  "reading": {
+    "title": "Authentic Text Analysis",
+    "estimatedMinutes": 12,
+    "screens": [
+      {"type": "reading", "title": "Texto Auténtico", "passage": "This authentic C2 text requires deep understanding of cultural context, implicit meanings, and sophisticated language use. It represents the kind of material educated native speakers engage with regularly.", "translation": "Translation provided as reference only - at C2, direct comprehension is expected.", "wordCount": 150}
+    ]
+  }
+}

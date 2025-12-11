@@ -1,0 +1,192 @@
+{
+  "day": 24,
+  "title": "Comparisons",
+  "subtitle": "More, less, the most",
+  "objectives": [
+    "Make comparisons",
+    "Use superlatives",
+    "Compare people and things",
+    "Express preferences"
+  ],
+  "grammar": {
+    "title": "Comparatives & Superlatives",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Comparatives",
+        "content": "More/less than:",
+        "examples": [
+          {
+            "spanish": "más + adj + que",
+            "english": "more... than",
+            "word": "María es más alta que Juan"
+          },
+          {
+            "spanish": "menos + adj + que",
+            "english": "less... than",
+            "word": "Es menos caro que eso"
+          },
+          {
+            "spanish": "tan + adj + como",
+            "english": "as... as",
+            "word": "Es tan importante como"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Superlatives",
+        "content": "The most/least:",
+        "examples": [
+          {
+            "spanish": "el/la más + adj",
+            "english": "the most",
+            "word": "Es el más alto"
+          },
+          {
+            "spanish": "el/la menos + adj",
+            "english": "the least",
+            "word": "Es la menos cara"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Forms",
+        "content": "Special forms:",
+        "examples": [
+          {
+            "spanish": "mejor",
+            "english": "better/best"
+          },
+          {
+            "spanish": "peor",
+            "english": "worse/worst"
+          },
+          {
+            "spanish": "mayor",
+            "english": "older/bigger"
+          },
+          {
+            "spanish": "menor",
+            "english": "younger/smaller"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "María es ___ alta que Juan. (more)",
+        "correctAnswers": [
+          "más"
+        ],
+        "explanation": "más + adjective + que"
+      },
+      {
+        "type": "lesson",
+        "heading": "C1 Advanced: Relative Clauses & Pronouns",
+        "content": "Complex sentence structures:",
+        "examples": [
+          {
+            "spanish": "el que / la que / lo que",
+            "english": "the one who / that which"
+          },
+          {
+            "spanish": "cuyo/a",
+            "english": "whose"
+          },
+          {
+            "spanish": "lo cual",
+            "english": "which (referring to a clause)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Comparison Words",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Comparing",
+        "words": [
+          {
+            "spanish": "más",
+            "english": "more",
+            "example": "Quiero más."
+          },
+          {
+            "spanish": "menos",
+            "english": "less",
+            "example": "Cuesta menos."
+          },
+          {
+            "spanish": "mejor",
+            "english": "better",
+            "example": "Este es mejor."
+          },
+          {
+            "spanish": "peor",
+            "english": "worse",
+            "example": "Este es peor."
+          },
+          {
+            "spanish": "igual",
+            "english": "same/equal",
+            "example": "Son iguales."
+          },
+          {
+            "spanish": "diferente",
+            "english": "different",
+            "example": "Son diferentes."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Este restaurante es mejor que el otro, pero es más caro",
+        "options": [
+          "This restaurant worse and cheaper",
+          "This restaurant better but more expensive",
+          "Other restaurant better and cheaper",
+          "This restaurant same price"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Comparando ciudades",
+        "passage": "Madrid es más grande que Barcelona, pero Barcelona es más turística. Madrid tiene el museo más famoso de España: el Prado. Barcelona tiene la playa más bonita. En mi opinión, Madrid es mejor para trabajar y Barcelona es mejor para vacaciones. Las dos ciudades son igual de interesantes. ¿Cuál prefieres tú?",
+        "translation": "Madrid is bigger than Barcelona, but Barcelona is more touristic. Madrid has the most famous museum in Spain: the Prado. Barcelona has the prettiest beach. In my opinion, Madrid is better for working and Barcelona is better for vacations. Both cities are equally interesting. Which do you prefer?",
+        "wordCount": 60
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Según el texto, ¿cuál ciudad es más grande?",
+        "options": [
+          "Barcelona",
+          "Madrid",
+          "Son iguales",
+          "No dice"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

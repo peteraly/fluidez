@@ -1,0 +1,310 @@
+{
+  "day": 16,
+  "title": "Simple Future Tense",
+  "subtitle": "Will + verb (-ré, -rás, -rá)",
+  "objectives": [
+    "Conjugate regular verbs in simple future",
+    "Learn irregular future stems",
+    "Express predictions and plans",
+    "Use future for probability"
+  ],
+  "grammar": {
+    "title": "Simple Future Tense",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Future Tense Formation",
+        "content": "Add endings to the FULL infinitive (don't remove -ar/-er/-ir!):",
+        "examples": [
+          {
+            "spanish": "-é",
+            "english": "yo"
+          },
+          {
+            "spanish": "-ás",
+            "english": "tú"
+          },
+          {
+            "spanish": "-á",
+            "english": "él/ella/Ud."
+          },
+          {
+            "spanish": "-emos",
+            "english": "nosotros"
+          },
+          {
+            "spanish": "-án",
+            "english": "ellos/Uds."
+          }
+        ],
+        "tip": "Same endings for ALL verbs (-ar, -er, -ir)!"
+      },
+      {
+        "type": "lesson",
+        "heading": "Examples: HABLAR",
+        "content": "Full infinitive + endings:",
+        "examples": [
+          {
+            "spanish": "hablaré",
+            "english": "I will speak"
+          },
+          {
+            "spanish": "hablarás",
+            "english": "you will speak"
+          },
+          {
+            "spanish": "hablará",
+            "english": "he/she will speak"
+          },
+          {
+            "spanish": "hablaremos",
+            "english": "we will speak"
+          },
+          {
+            "spanish": "hablarán",
+            "english": "they will speak"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Mañana yo ___ español. (hablar)",
+        "hint": "Future yo form",
+        "correctAnswers": [
+          "hablaré"
+        ],
+        "explanation": "hablar + é = hablaré"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Ellos ___ a las ocho. (llegar)",
+        "options": [
+          "llego",
+          "llegaron",
+          "llegarán",
+          "llegaban"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Future ellos: llegar + án = llegarán"
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Future Stems",
+        "content": "12 verbs have irregular stems (but same endings):",
+        "examples": [
+          {
+            "spanish": "tener → tendr-",
+            "english": "tendré, tendrás..."
+          },
+          {
+            "spanish": "venir → vendr-",
+            "english": "vendré, vendrás..."
+          },
+          {
+            "spanish": "poner → pondr-",
+            "english": "pondré, pondrás..."
+          },
+          {
+            "spanish": "salir → saldr-",
+            "english": "saldré, saldrás..."
+          },
+          {
+            "spanish": "poder → podr-",
+            "english": "podré, podrás..."
+          },
+          {
+            "spanish": "saber → sabr-",
+            "english": "sabré, sabrás..."
+          },
+          {
+            "spanish": "querer → querr-",
+            "english": "querré, querrás..."
+          },
+          {
+            "spanish": "hacer → har-",
+            "english": "haré, harás..."
+          },
+          {
+            "spanish": "decir → dir-",
+            "english": "diré, dirás..."
+          },
+          {
+            "spanish": "haber → habr-",
+            "english": "habrá (there will be)"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Mañana ___ buen tiempo. (hacer)",
+        "options": [
+          "hace",
+          "hacerá",
+          "hará",
+          "hacía"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Hacer → har- + á = hará"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "translation",
+        "instruction": "Translate: 'I will be able to come' (poder, venir)",
+        "correctAnswers": [
+          "podré venir"
+        ],
+        "explanation": "Poder future = podré"
+      },
+      {
+        "type": "lesson",
+        "heading": "Future for Probability",
+        "content": "Future can express 'probably' or 'I wonder':",
+        "examples": [
+          {
+            "spanish": "¿Qué hora será?",
+            "english": "I wonder what time it is / What time could it be?"
+          },
+          {
+            "spanish": "Estará en casa",
+            "english": "He's probably at home"
+          },
+          {
+            "spanish": "Tendrá unos 30 años",
+            "english": "She's probably about 30"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Future Expressions",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Time Markers",
+        "words": [
+          {
+            "spanish": "mañana",
+            "english": "tomorrow",
+            "example": "Mañana trabajaré."
+          },
+          {
+            "spanish": "la semana que viene",
+            "english": "next week",
+            "example": "La semana que viene viajaré."
+          },
+          {
+            "spanish": "el año que viene",
+            "english": "next year",
+            "example": "El año que viene me casaré."
+          },
+          {
+            "spanish": "dentro de",
+            "english": "in (time)",
+            "example": "Dentro de dos horas llegaré."
+          },
+          {
+            "spanish": "algún día",
+            "english": "someday",
+            "example": "Algún día seré famoso."
+          },
+          {
+            "spanish": "pronto",
+            "english": "soon",
+            "example": "Pronto terminaré."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Mañana tendré una reunión",
+        "options": [
+          "Mañana tendré una reunión",
+          "Mañana tengo una reunión",
+          "Mañana tuve una reunión",
+          "Mañana tenía una reunión"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: El futuro",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Predicciones",
+        "passage": "¿Cómo será el mundo en 50 años? Los científicos predicen muchos cambios. Habrá coches que volarán. No necesitaremos conducir porque los coches serán automáticos. Viviremos más años gracias a la medicina. Podremos viajar a Marte. Los robots harán muchos trabajos. Pero algunas cosas no cambiarán: la gente seguirá necesitando amor y amistad. ¿Qué piensas tú? ¿Cómo será tu vida en el futuro?",
+        "translation": "What will the world be like in 50 years? Scientists predict many changes. There will be cars that fly. We won't need to drive because cars will be automatic. We will live more years thanks to medicine. We will be able to travel to Mars. Robots will do many jobs. But some things won't change: people will continue needing love and friendship. What do you think? What will your life be like in the future?",
+        "wordCount": 85
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 16. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "embarazada",
+        "means": "pregnant",
+        "notMean": "embarrassed (= avergonzado/a)"
+      },
+      {
+        "spanish": "actualmente",
+        "means": "currently",
+        "notMean": "actually (= en realidad)"
+      },
+      {
+        "spanish": "realizar",
+        "means": "to accomplish",
+        "notMean": "to realize (= darse cuenta)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

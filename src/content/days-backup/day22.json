@@ -1,0 +1,149 @@
+{
+  "day": 22,
+  "title": "Future Tense",
+  "subtitle": "Talking about the future",
+  "objectives": [
+    "Use IR + a + infinitive",
+    "Express future plans",
+    "Make predictions",
+    "Discuss upcoming events"
+  ],
+  "grammar": {
+    "title": "Future Expressions",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "IR + A + Infinitive",
+        "content": "The most common way to express future:",
+        "examples": [
+          {
+            "spanish": "Voy a estudiar",
+            "english": "I'm going to study"
+          },
+          {
+            "spanish": "Vas a comer",
+            "english": "You're going to eat"
+          },
+          {
+            "spanish": "Va a llover",
+            "english": "It's going to rain"
+          },
+          {
+            "spanish": "Vamos a viajar",
+            "english": "We're going to travel"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Mañana yo ___ a trabajar. (ir)",
+        "correctAnswers": [
+          "voy"
+        ],
+        "explanation": "Voy a + infinitive"
+      },
+      {
+        "type": "lesson",
+        "heading": "C1 Advanced: Conditional Perfect & Past Subjunctive",
+        "content": "For hypotheticals about the past:",
+        "examples": [
+          {
+            "spanish": "Si hubiera sabido, habría venido",
+            "english": "If I had known, I would have come"
+          },
+          {
+            "spanish": "Me habría gustado ir",
+            "english": "I would have liked to go"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Future Words",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Time Expressions",
+        "words": [
+          {
+            "spanish": "mañana",
+            "english": "tomorrow",
+            "example": "Mañana voy a estudiar."
+          },
+          {
+            "spanish": "la próxima semana",
+            "english": "next week",
+            "example": "La próxima semana viajo."
+          },
+          {
+            "spanish": "el próximo mes",
+            "english": "next month",
+            "example": "El próximo mes empiezo."
+          },
+          {
+            "spanish": "el próximo año",
+            "english": "next year",
+            "example": "El próximo año voy a España."
+          },
+          {
+            "spanish": "pronto",
+            "english": "soon",
+            "example": "Pronto voy a terminar."
+          },
+          {
+            "spanish": "más tarde",
+            "english": "later",
+            "example": "Más tarde voy a llamar."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "El próximo mes voy a viajar a México con mi familia",
+        "options": [
+          "Going to Spain next week",
+          "Going to Mexico next month",
+          "Going to Mexico next week",
+          "Went to Mexico last month"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Mis planes",
+        "passage": "Tengo muchos planes para el futuro. El próximo mes voy a empezar un curso de francés. En verano, mi familia y yo vamos a viajar a la playa. Vamos a pasar dos semanas allí. Mi hermana va a casarse en octubre. Va a ser una fiesta grande. El próximo año, quiero buscar un nuevo trabajo. ¿Qué vas a hacer tú?",
+        "translation": "I have many plans for the future. Next month I'm going to start a French course. In summer, my family and I are going to travel to the beach. We're going to spend two weeks there. My sister is going to get married in October. It's going to be a big party. Next year, I want to look for a new job. What are you going to do?",
+        "wordCount": 70
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuándo va a casarse la hermana?",
+        "options": [
+          "En verano",
+          "El próximo mes",
+          "En octubre",
+          "El próximo año"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

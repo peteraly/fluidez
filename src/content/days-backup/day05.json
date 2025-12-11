@@ -1,0 +1,277 @@
+{
+  "day": 5,
+  "title": "Essential Irregular Verbs",
+  "subtitle": "IR, TENER, HACER, QUERER, PODER",
+  "level": "A1",
+  "objectives": [
+    "Conjugate IR (to go)",
+    "Conjugate TENER (to have)",
+    "Conjugate HACER (to do/make)",
+    "Conjugate QUERER (to want)",
+    "Conjugate PODER (to be able to/can)",
+    "Use these verbs in context"
+  ],
+  "grammar": {
+    "title": "Five Essential Irregular Verbs",
+    "estimatedMinutes": 18,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Why These Five?",
+        "content": "These five verbs are among the most used in Spanish. Mastering them unlocks hundreds of expressions.",
+        "tip": "Irregular verbs don't follow normal patterns, but they're used so often you'll memorize them quickly!"
+      },
+      {
+        "type": "lesson",
+        "heading": "IR (to go)",
+        "content": "Completely irregular. Memorize it!",
+        "examples": [
+          {"spanish": "yo voy", "english": "I go"},
+          {"spanish": "tú vas", "english": "you go"},
+          {"spanish": "él/ella/usted va", "english": "he/she goes, you go"},
+          {"spanish": "nosotros vamos", "english": "we go"},
+          {"spanish": "ellos/ustedes van", "english": "they/you all go"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "IR + a + infinitive = Future",
+        "content": "This structure expresses future plans:",
+        "examples": [
+          {"spanish": "Voy a comer", "english": "I'm going to eat"},
+          {"spanish": "Vas a estudiar", "english": "You're going to study"},
+          {"spanish": "Vamos a viajar", "english": "We're going to travel"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Nosotros ___ al cine. (ir)",
+        "correctAnswers": ["vamos"],
+        "explanation": "Nosotros vamos = We go"
+      },
+      {
+        "type": "lesson",
+        "heading": "TENER (to have)",
+        "content": "Stem changes e→ie in some forms:",
+        "examples": [
+          {"spanish": "yo tengo", "english": "I have"},
+          {"spanish": "tú tienes", "english": "you have"},
+          {"spanish": "él/ella/usted tiene", "english": "he/she has"},
+          {"spanish": "nosotros tenemos", "english": "we have"},
+          {"spanish": "ellos/ustedes tienen", "english": "they have"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "TENER Expressions",
+        "content": "TENER is used for many expressions that use 'to be' in English:",
+        "examples": [
+          {"spanish": "tener hambre", "english": "to be hungry"},
+          {"spanish": "tener sed", "english": "to be thirsty"},
+          {"spanish": "tener frío/calor", "english": "to be cold/hot"},
+          {"spanish": "tener sueño", "english": "to be sleepy"},
+          {"spanish": "tener miedo", "english": "to be afraid"},
+          {"spanish": "tener razón", "english": "to be right"},
+          {"spanish": "tener prisa", "english": "to be in a hurry"},
+          {"spanish": "tener suerte", "english": "to be lucky"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Yo ___ veinte años. (tener)",
+        "options": ["tengo", "tienes", "tiene", "tienen"],
+        "correctAnswer": 0
+      },
+      {
+        "type": "lesson",
+        "heading": "HACER (to do/make)",
+        "content": "Irregular in yo form:",
+        "examples": [
+          {"spanish": "yo hago", "english": "I do/make"},
+          {"spanish": "tú haces", "english": "you do/make"},
+          {"spanish": "él/ella/usted hace", "english": "he/she does/makes"},
+          {"spanish": "nosotros hacemos", "english": "we do/make"},
+          {"spanish": "ellos/ustedes hacen", "english": "they do/make"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "¿Qué ___ tú los fines de semana? (hacer)",
+        "correctAnswers": ["haces"],
+        "explanation": "¿Qué haces? = What do you do?"
+      },
+      {
+        "type": "lesson",
+        "heading": "QUERER (to want)",
+        "content": "Stem changes e→ie. Essential for expressing desires:",
+        "examples": [
+          {"spanish": "yo quiero", "english": "I want"},
+          {"spanish": "tú quieres", "english": "you want"},
+          {"spanish": "él/ella/usted quiere", "english": "he/she wants"},
+          {"spanish": "nosotros queremos", "english": "we want"},
+          {"spanish": "ellos/ustedes quieren", "english": "they want"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "QUERER + infinitive",
+        "content": "Use to express what you want to do:",
+        "examples": [
+          {"spanish": "Quiero comer", "english": "I want to eat"},
+          {"spanish": "¿Quieres ir?", "english": "Do you want to go?"},
+          {"spanish": "Queremos aprender", "english": "We want to learn"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Ella ___ ir al cine. (querer)",
+        "options": ["quiero", "quieres", "quiere", "queremos"],
+        "correctAnswer": 2
+      },
+      {
+        "type": "lesson",
+        "heading": "PODER (to be able to/can)",
+        "content": "Stem changes o→ue. Use for ability and permission:",
+        "examples": [
+          {"spanish": "yo puedo", "english": "I can"},
+          {"spanish": "tú puedes", "english": "you can"},
+          {"spanish": "él/ella/usted puede", "english": "he/she can"},
+          {"spanish": "nosotros podemos", "english": "we can"},
+          {"spanish": "ellos/ustedes pueden", "english": "they can"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "PODER + infinitive",
+        "content": "Always followed by an infinitive:",
+        "examples": [
+          {"spanish": "Puedo ayudar", "english": "I can help"},
+          {"spanish": "¿Puedes repetir?", "english": "Can you repeat?"},
+          {"spanish": "No podemos ir", "english": "We can't go"},
+          {"spanish": "¿Puede ayudarme?", "english": "Can you help me? (formal)"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "¿___ ayudarme, por favor? (poder, usted)",
+        "correctAnswers": ["Puede"],
+        "explanation": "¿Puede ayudarme? = Can you help me? (formal)"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match the yo forms:",
+        "pairs": [
+          {"left": "ir", "right": "voy"},
+          {"left": "tener", "right": "tengo"},
+          {"left": "hacer", "right": "hago"},
+          {"left": "querer", "right": "quiero"},
+          {"left": "poder", "right": "puedo"}
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Using Irregular Verbs",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Common Phrases with IR",
+        "words": [
+          {"spanish": "ir de compras", "english": "to go shopping", "example": "Voy de compras los sábados."},
+          {"spanish": "ir de vacaciones", "english": "to go on vacation", "example": "Vamos de vacaciones en agosto."},
+          {"spanish": "ir al trabajo", "english": "to go to work", "example": "Voy al trabajo en metro."},
+          {"spanish": "ir a casa", "english": "to go home", "example": "Quiero ir a casa."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Common Phrases with TENER",
+        "words": [
+          {"spanish": "tener que + infinitivo", "english": "to have to", "example": "Tengo que estudiar."},
+          {"spanish": "tener ganas de", "english": "to feel like", "example": "Tengo ganas de bailar."},
+          {"spanish": "tener tiempo", "english": "to have time", "example": "No tengo tiempo ahora."},
+          {"spanish": "tener cuidado", "english": "to be careful", "example": "Ten cuidado con el perro."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Common Phrases with HACER",
+        "words": [
+          {"spanish": "hacer ejercicio", "english": "to exercise", "example": "Hago ejercicio todos los días."},
+          {"spanish": "hacer la cama", "english": "to make the bed", "example": "Hago la cama por la mañana."},
+          {"spanish": "hacer una pregunta", "english": "to ask a question", "example": "¿Puedo hacer una pregunta?"},
+          {"spanish": "hacer un favor", "english": "to do a favor", "example": "¿Me haces un favor?"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "I have to study = Tengo ___ estudiar",
+        "options": ["de", "a", "que", "para"],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Mañana voy a ir al supermercado. Tengo que comprar frutas. ¿Quieres venir conmigo?",
+        "options": [
+          "Going to restaurant, needs to buy meat, asking to come",
+          "Going to supermarket, needs to buy fruits, asking to come",
+          "Going to mall, needs to buy clothes, asking to help",
+          "Going to park, wants to exercise, asking to join"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 What can't she do?",
+        "transcript": "Lo siento, no puedo ir a la fiesta. Tengo que trabajar este fin de semana.",
+        "options": [
+          "Can't go to dinner, has to study",
+          "Can't go to party, has to work",
+          "Can't go to movies, has to rest",
+          "Can't go to gym, has to cook"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Weekend Plans",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Los planes del fin de semana",
+        "passage": "Este fin de semana tengo muchos planes. El sábado voy a ir al gimnasio por la mañana porque quiero hacer ejercicio. Después, tengo que ir al supermercado. Por la tarde, mis amigos y yo vamos a ir al cine. Queremos ver una película nueva. El domingo no puedo salir porque tengo que estudiar para un examen. ¡Tengo una semana muy ocupada!",
+        "translation": "This weekend I have many plans. On Saturday I'm going to go to the gym in the morning because I want to exercise. Afterwards, I have to go to the supermarket. In the afternoon, my friends and I are going to go to the movies. We want to see a new movie. On Sunday I can't go out because I have to study for an exam. I have a very busy week!",
+        "wordCount": 72
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Por qué no puede salir el domingo?",
+        "options": [
+          "Tiene que trabajar",
+          "Tiene que estudiar",
+          "Tiene que limpiar",
+          "Tiene que cocinar"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

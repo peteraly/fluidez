@@ -1,0 +1,36 @@
+{
+  "day": 44,
+  "title": "Perfect Tenses Review",
+  "subtitle": "B2 Level Content",
+  "level": "B2",
+  "objectives": ["Master Perfect Tenses Review", "Apply in context", "Practice fluency"],
+  "grammar": {
+    "title": "Perfect Tenses Review",
+    "estimatedMinutes": 18,
+    "screens": [
+      {"type": "lesson", "heading": "Introduction to Perfect Tenses Review", "content": "Detailed content for Perfect Tenses Review will be provided here."},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Practice exercise", "options": ["A", "B", "C", "D"], "correctAnswer": 0}
+    ]
+  },
+  "vocabulary": {
+    "title": "Vocabulary: Perfect Tenses Review",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "Key Terms", "words": [{"spanish": "ejemplo", "english": "example", "example": "Un buen ejemplo."}]}
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {"type": "listening", "instruction": "Listen carefully:", "transcript": "Audio transcript for day 44.", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": 0}
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {"type": "reading", "title": "Lectura 44", "passage": "Reading passage for Perfect Tenses Review. This text will help you practice the concepts learned today.", "translation": "Translation of the reading passage.", "wordCount": 50}
+    ]
+  }
+}

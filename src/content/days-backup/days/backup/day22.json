@@ -1,0 +1,26 @@
+{
+  "day": 22,
+  "title": "Real Conversations",
+  "subtitle": "Practical dialogues",
+  "objectives": ["Master conversational Spanish", "Build practical vocabulary", "Practice real-world scenarios", "Increase fluency confidence"],
+  "grammar": {
+    "title": "Real Conversations",
+    "estimatedMinutes": 15,
+    "screens": [
+      {"type": "lesson", "heading": "Day 22: Real Conversations", "content": "Today we focus on conversational Spanish. This is an essential skill for conversational Spanish that you'll use every day.", "tip": "Practice these patterns until they become automatic!"},
+      {"type": "lesson", "heading": "Key Concepts", "content": "Let's explore the main ideas for conversational Spanish.", "examples": [{"spanish": "Example phrase in Spanish", "english": "English translation"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Practice question for conversational Spanish:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": 0, "explanation": "This tests your understanding of conversational Spanish."},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "Complete this sentence about conversational Spanish:", "hint": "Think about the rules", "correctAnswers": ["respuesta"], "explanation": "This is how conversational Spanish works."}
+    ]
+  },
+  "vocabulary": {
+    "title": "Day 22 Vocabulary",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "Real Conversations Words", "words": [{"spanish": "palabra", "english": "word", "example": "Una frase de ejemplo."}]},
+      {"type": "exercise", "exerciseType": "matching", "instruction": "Match the pairs:", "pairs": [{"left": "Spanish", "right": "English"}]}
+    ]
+  },
+  "listening": {"title": "Listening Practice", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen and select:", "transcript": "Audio transcript", "options": ["Option 1", "Option 2", "Option 3", "Option 4"], "correctAnswer": 0}]},
+  "reading": {"title": "Reading Practice", "estimatedMinutes": 10, "screens": [{"type": "reading", "title": "Day 22 Reading", "passage": "Este es un texto de práctica para el día 22. El tema es conversational Spanish. Practica leyendo este texto en voz alta para mejorar tu pronunciación.", "translation": "This is a practice text for day 22. The topic is conversational Spanish. Practice reading this text aloud to improve your pronunciation.", "wordCount": 30}]}
+}

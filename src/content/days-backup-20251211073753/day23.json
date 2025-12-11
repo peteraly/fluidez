@@ -1,0 +1,452 @@
+{
+  "day": 23,
+  "title": "Subjunctive: Emotions & Doubt",
+  "subtitle": "Expressing feelings and uncertainty",
+  "level": "B2",
+  "objectives": [
+    "Use subjunctive with emotion triggers",
+    "Express doubt and uncertainty",
+    "Distinguish subjunctive vs indicative",
+    "Master stem-changing subjunctives"
+  ],
+  "grammar": {
+    "title": "Emotions & Doubt Triggers",
+    "estimatedMinutes": 20,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Subjunctive with Emotions",
+        "content": "Express how you feel about someone else's actions:",
+        "examples": [
+          {
+            "spanish": "Me alegro de que estés aquí.",
+            "english": "I'm glad you're here."
+          },
+          {
+            "spanish": "Siento que no puedas venir.",
+            "english": "I'm sorry you can't come."
+          },
+          {
+            "spanish": "Me sorprende que hables español.",
+            "english": "It surprises me that you speak Spanish."
+          },
+          {
+            "spanish": "Tengo miedo de que llueva.",
+            "english": "I'm afraid it will rain."
+          },
+          {
+            "spanish": "Es triste que se vaya.",
+            "english": "It's sad that he's leaving."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Common Emotion Triggers",
+        "content": "These expressions require subjunctive:",
+        "examples": [
+          {
+            "spanish": "alegrarse de que",
+            "english": "to be glad that"
+          },
+          {
+            "spanish": "sentir que",
+            "english": "to be sorry that"
+          },
+          {
+            "spanish": "tener miedo de que",
+            "english": "to be afraid that"
+          },
+          {
+            "spanish": "sorprenderse de que",
+            "english": "to be surprised that"
+          },
+          {
+            "spanish": "molestar que",
+            "english": "to bother that"
+          },
+          {
+            "spanish": "encantar que",
+            "english": "to be delighted that"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Me alegro de que tú ___ aquí. (estar)",
+        "correctAnswers": [
+          "estés"
+        ],
+        "explanation": "Emotion trigger 'alegrarse de que' requires subjunctive"
+      },
+      {
+        "type": "lesson",
+        "heading": "Subjunctive with Doubt",
+        "content": "Uncertainty triggers subjunctive:",
+        "examples": [
+          {
+            "spanish": "Dudo que venga.",
+            "english": "I doubt he'll come."
+          },
+          {
+            "spanish": "No creo que sea verdad.",
+            "english": "I don't think it's true."
+          },
+          {
+            "spanish": "No es seguro que llegue.",
+            "english": "It's not certain he'll arrive."
+          },
+          {
+            "spanish": "Es imposible que lo sepa.",
+            "english": "It's impossible that he knows."
+          },
+          {
+            "spanish": "Tal vez llueva mañana.",
+            "english": "Maybe it will rain tomorrow."
+          }
+        ],
+        "tip": "CREER QUE uses indicative (certainty). NO CREER QUE uses subjunctive (doubt)."
+      },
+      {
+        "type": "lesson",
+        "heading": "Indicative vs Subjunctive",
+        "content": "Compare certainty (indicative) vs doubt (subjunctive):",
+        "examples": [
+          {
+            "spanish": "Creo que viene. (indicative)",
+            "english": "I think he's coming."
+          },
+          {
+            "spanish": "No creo que venga. (subjunctive)",
+            "english": "I don't think he's coming."
+          },
+          {
+            "spanish": "Es verdad que está aquí. (indicative)",
+            "english": "It's true he's here."
+          },
+          {
+            "spanish": "No es verdad que esté aquí. (subjunctive)",
+            "english": "It's not true he's here."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Dudo que él ___ la respuesta. (saber)",
+        "options": [
+          "sabe",
+          "sepa",
+          "sabrá",
+          "sabía"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Dudar que triggers subjunctive: sepa"
+      },
+      {
+        "type": "lesson",
+        "heading": "Stem-Changing Subjunctives",
+        "content": "Stem changes carry over from indicative:",
+        "examples": [
+          {
+            "spanish": "pensar (e→ie): piense, pienses, piense, pensemos, piensen",
+            "english": "to think"
+          },
+          {
+            "spanish": "poder (o→ue): pueda, puedas, pueda, podamos, puedan",
+            "english": "to be able"
+          },
+          {
+            "spanish": "sentir (e→ie, e→i): sienta, sientas, sienta, sintamos, sientan",
+            "english": "to feel"
+          },
+          {
+            "spanish": "dormir (o→ue, o→u): duerma, duermas, duerma, durmamos, duerman",
+            "english": "to sleep"
+          }
+        ],
+        "tip": "In nosotros/ellos forms, -ir verbs have additional stem changes."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Es importante que tú ___ bien. (dormir)",
+        "correctAnswers": [
+          "duermas"
+        ],
+        "explanation": "dormir → duerma/duermas (o→ue stem change)"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Emotion & Doubt Words",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Emotion Expressions",
+        "words": [
+          {
+            "spanish": "alegrarse de que",
+            "english": "to be happy that",
+            "example": "Me alegro de que estés bien."
+          },
+          {
+            "spanish": "sentir que",
+            "english": "to regret that",
+            "example": "Siento que no puedas venir."
+          },
+          {
+            "spanish": "tener miedo de que",
+            "english": "to be afraid that",
+            "example": "Tengo miedo de que llueva."
+          },
+          {
+            "spanish": "sorprenderse de que",
+            "english": "to be surprised that",
+            "example": "Me sorprende que lo sepas."
+          },
+          {
+            "spanish": "es una lástima que",
+            "english": "it's a pity that",
+            "example": "Es una lástima que se vaya."
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Doubt Expressions",
+        "words": [
+          {
+            "spanish": "dudar que",
+            "english": "to doubt that",
+            "example": "Dudo que venga."
+          },
+          {
+            "spanish": "no creer que",
+            "english": "to not think that",
+            "example": "No creo que sea verdad."
+          },
+          {
+            "spanish": "no estar seguro de que",
+            "english": "to not be sure that",
+            "example": "No estoy seguro de que llegue."
+          },
+          {
+            "spanish": "es posible que",
+            "english": "it's possible that",
+            "example": "Es posible que llueva."
+          },
+          {
+            "spanish": "quizás/tal vez",
+            "english": "maybe/perhaps",
+            "example": "Quizás venga mañana."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "'I doubt that' = ___",
+        "options": [
+          "Creo que",
+          "Dudo que",
+          "Sé que",
+          "Es verdad que"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "vocab",
+        "category": "Bonus Vocabulary",
+        "words": [
+          {
+            "spanish": "el médico/la médica",
+            "english": "doctor",
+            "example": "Necesito ver a un médico."
+          },
+          {
+            "spanish": "el/la enfermero/a",
+            "english": "nurse",
+            "example": "La enfermera me tomó la temperatura."
+          },
+          {
+            "spanish": "el hospital",
+            "english": "hospital",
+            "example": "El hospital está cerca."
+          },
+          {
+            "spanish": "la farmacia",
+            "english": "pharmacy",
+            "example": "Compro medicina en la farmacia."
+          },
+          {
+            "spanish": "la receta",
+            "english": "prescription",
+            "example": "Necesitas una receta."
+          },
+          {
+            "spanish": "la pastilla",
+            "english": "pill",
+            "example": "Toma dos pastillas al día."
+          },
+          {
+            "spanish": "el dolor",
+            "english": "pain",
+            "example": "Tengo dolor de cabeza."
+          },
+          {
+            "spanish": "la fiebre",
+            "english": "fever",
+            "example": "Tiene mucha fiebre."
+          },
+          {
+            "spanish": "el resfriado",
+            "english": "cold",
+            "example": "Tengo un resfriado."
+          },
+          {
+            "spanish": "la alergia",
+            "english": "allergy",
+            "example": "Tengo alergia al polen."
+          },
+          {
+            "spanish": "el refrigerador/la nevera",
+            "english": "refrigerator",
+            "example": "La leche está en la nevera."
+          },
+          {
+            "spanish": "la estufa/cocina",
+            "english": "stove",
+            "example": "Cocino en la estufa."
+          },
+          {
+            "spanish": "el horno",
+            "english": "oven",
+            "example": "El pastel está en el horno."
+          },
+          {
+            "spanish": "el microondas",
+            "english": "microwave",
+            "example": "Calienta en el microondas."
+          },
+          {
+            "spanish": "la lavadora",
+            "english": "washing machine",
+            "example": "La ropa está en la lavadora."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Emotions",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 How does she feel?",
+        "transcript": "Me alegro mucho de que hayas conseguido el trabajo. Pero siento que tengas que mudarte a otra ciudad. Espero que todo te vaya bien.",
+        "options": [
+          "Happy about job, sad about moving",
+          "Sad about everything",
+          "Doesn't care",
+          "Angry about the job"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 What does he doubt?",
+        "transcript": "No creo que el equipo gane el partido. Dudo que el entrenador sepa lo que hace. Pero quizás me equivoque.",
+        "options": [
+          "Team will win",
+          "Weather will be good",
+          "He'll go to the game",
+          "Food will be good"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Letter to a Friend",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Querida amiga",
+        "passage": "Me alegro de que estés bien. Siento mucho que no pudieras venir a la fiesta. Todos preguntaron por ti. Es una lástima que vivas tan lejos ahora.\n\nDudo que pueda visitarte este mes porque tengo mucho trabajo. No estoy segura de que tenga vacaciones pronto. Pero espero que podamos vernos en verano.\n\nTengo miedo de que pienses que me he olvidado de ti. ¡Para nada! Te echo mucho de menos.",
+        "translation": "I'm glad you're well. I'm very sorry you couldn't come to the party. Everyone asked about you. It's a shame you live so far away now.\n\nI doubt I can visit you this month because I have a lot of work. I'm not sure I'll have vacation soon. But I hope we can see each other in summer.\n\nI'm afraid you think I've forgotten you. Not at all! I miss you a lot.",
+        "wordCount": 95
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Por qué duda que pueda visitar?",
+        "options": [
+          "No tiene dinero",
+          "Tiene mucho trabajo",
+          "Está enferma",
+          "No quiere ir"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 23. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "soportar",
+        "means": "to tolerate",
+        "notMean": "to support (= apoyar)"
+      },
+      {
+        "spanish": "constipado",
+        "means": "having a cold",
+        "notMean": "constipated (= estreñido)"
+      },
+      {
+        "spanish": "asistir",
+        "means": "to attend",
+        "notMean": "to assist (= ayudar)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

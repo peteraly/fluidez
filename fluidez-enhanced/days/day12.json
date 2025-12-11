@@ -1,0 +1,416 @@
+{
+  "day": 12,
+  "title": "Reflexive Verbs",
+  "subtitle": "Actions you do to yourself",
+  "objectives": [
+    "Understand reflexive verb concept",
+    "Conjugate reflexive verbs",
+    "Describe daily routines fluently",
+    "Use reflexive pronouns correctly"
+  ],
+  "grammar": {
+    "title": "Reflexive Verbs",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "What Are Reflexive Verbs?",
+        "content": "Reflexive verbs describe actions you do TO YOURSELF. The action reflects back on the subject. In Spanish, they're marked with 'se' at the end of the infinitive.",
+        "tip": "English: 'I wake up' / Spanish: 'Me despierto' (I wake myself up)"
+      },
+      {
+        "type": "lesson",
+        "heading": "Reflexive Pronouns",
+        "content": "These pronouns show WHO the action reflects back on:",
+        "examples": [
+          {
+            "spanish": "me",
+            "english": "myself (yo)"
+          },
+          {
+            "spanish": "te",
+            "english": "yourself (tú)"
+          },
+          {
+            "spanish": "se",
+            "english": "himself/herself/yourself formal"
+          },
+          {
+            "spanish": "nos",
+            "english": "ourselves (nosotros)"
+          },
+          {
+            "spanish": "se",
+            "english": "themselves/yourselves (ellos/ustedes)"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "LEVANTARSE (to get up)",
+        "content": "The pronoun goes BEFORE the conjugated verb:",
+        "examples": [
+          {
+            "spanish": "yo me levanto",
+            "english": "I get up"
+          },
+          {
+            "spanish": "tú te levantas",
+            "english": "you get up"
+          },
+          {
+            "spanish": "él/ella se levanta",
+            "english": "he/she gets up"
+          },
+          {
+            "spanish": "nosotros nos levantamos",
+            "english": "we get up"
+          },
+          {
+            "spanish": "ellos se levantan",
+            "english": "they get up"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Yo ___ levanto a las siete.",
+        "hint": "Which reflexive pronoun for 'yo'?",
+        "correctAnswers": [
+          "me"
+        ],
+        "explanation": "'Me' is the reflexive pronoun for yo."
+      },
+      {
+        "type": "lesson",
+        "heading": "Common Reflexive Verbs",
+        "content": "Essential daily routine verbs:",
+        "examples": [
+          {
+            "spanish": "despertarse",
+            "english": "to wake up"
+          },
+          {
+            "spanish": "levantarse",
+            "english": "to get up"
+          },
+          {
+            "spanish": "ducharse",
+            "english": "to shower"
+          },
+          {
+            "spanish": "bañarse",
+            "english": "to bathe"
+          },
+          {
+            "spanish": "vestirse",
+            "english": "to get dressed"
+          },
+          {
+            "spanish": "peinarse",
+            "english": "to comb one's hair"
+          },
+          {
+            "spanish": "cepillarse",
+            "english": "to brush (teeth/hair)"
+          },
+          {
+            "spanish": "maquillarse",
+            "english": "to put on makeup"
+          },
+          {
+            "spanish": "afeitarse",
+            "english": "to shave"
+          },
+          {
+            "spanish": "acostarse",
+            "english": "to go to bed"
+          },
+          {
+            "spanish": "dormirse",
+            "english": "to fall asleep"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Ella ___ ducha por la mañana.",
+        "options": [
+          "me",
+          "te",
+          "se",
+          "nos"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Se' is used for él/ella/usted."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "translation",
+        "instruction": "Translate: 'We get up early'",
+        "correctAnswers": [
+          "nos levantamos temprano",
+          "nosotros nos levantamos temprano"
+        ],
+        "explanation": "Nosotros uses 'nos': nos levantamos"
+      },
+      {
+        "type": "lesson",
+        "heading": "Reflexive vs Non-Reflexive",
+        "content": "Some verbs change meaning when reflexive:",
+        "examples": [
+          {
+            "spanish": "dormir = to sleep",
+            "english": "dormirse = to fall asleep"
+          },
+          {
+            "spanish": "ir = to go",
+            "english": "irse = to leave/go away"
+          },
+          {
+            "spanish": "poner = to put",
+            "english": "ponerse = to put on (clothes)"
+          },
+          {
+            "spanish": "llamar = to call",
+            "english": "llamarse = to be called/named"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "'Me llamo Carlos' means:",
+        "options": [
+          "I call Carlos",
+          "Carlos calls me",
+          "My name is Carlos",
+          "I am Carlos"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Llamarse = to be called/named. Me llamo = my name is."
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Daily Routine",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Morning Routine",
+        "words": [
+          {
+            "spanish": "despertarse",
+            "english": "to wake up",
+            "example": "Me despierto a las seis."
+          },
+          {
+            "spanish": "levantarse",
+            "english": "to get up",
+            "example": "Me levanto inmediatamente."
+          },
+          {
+            "spanish": "ducharse",
+            "english": "to shower",
+            "example": "Me ducho con agua caliente."
+          },
+          {
+            "spanish": "secarse",
+            "english": "to dry oneself",
+            "example": "Me seco con una toalla."
+          },
+          {
+            "spanish": "vestirse",
+            "english": "to get dressed",
+            "example": "Me visto rápido."
+          },
+          {
+            "spanish": "peinarse",
+            "english": "to comb hair",
+            "example": "Me peino frente al espejo."
+          },
+          {
+            "spanish": "cepillarse los dientes",
+            "english": "to brush teeth",
+            "example": "Me cepillo los dientes dos veces al día."
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Evening Routine",
+        "words": [
+          {
+            "spanish": "quitarse",
+            "english": "to take off",
+            "example": "Me quito los zapatos."
+          },
+          {
+            "spanish": "ponerse",
+            "english": "to put on",
+            "example": "Me pongo el pijama."
+          },
+          {
+            "spanish": "acostarse",
+            "english": "to go to bed",
+            "example": "Me acuesto a las once."
+          },
+          {
+            "spanish": "dormirse",
+            "english": "to fall asleep",
+            "example": "Me duermo rápido."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match the verbs:",
+        "pairs": [
+          {
+            "left": "despertarse",
+            "right": "to wake up"
+          },
+          {
+            "left": "ducharse",
+            "right": "to shower"
+          },
+          {
+            "left": "vestirse",
+            "right": "to get dressed"
+          },
+          {
+            "left": "acostarse",
+            "right": "to go to bed"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Me levanto a las siete",
+        "options": [
+          "Me levanto a las siete",
+          "Te levantas a las siete",
+          "Se levanta a las siete",
+          "Nos levantamos a las siete"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Ella se ducha por la mañana",
+        "options": [
+          "Ella me ducha",
+          "Ella te duchas",
+          "Ella se ducha por la mañana",
+          "Ella nos duchamos"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Mi rutina",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Un día típico",
+        "passage": "Todos los días me despierto a las seis y media. Primero, me levanto y me ducho. El agua caliente me despierta bien. Después, me seco y me visto. Me pongo ropa cómoda para trabajar. Luego, me cepillo los dientes y me peino. Antes de salir, desayuno café y tostadas. Por la noche, llego a casa cansado. Me quito la ropa de trabajo y me pongo ropa cómoda. Ceno con mi familia. Después de cenar, me relajo un poco. A las once, me acuesto y me duermo rápidamente.",
+        "translation": "Every day I wake up at six thirty. First, I get up and shower. The hot water wakes me up well. Then, I dry off and get dressed. I put on comfortable clothes for work. Next, I brush my teeth and comb my hair. Before leaving, I have coffee and toast for breakfast. In the evening, I arrive home tired. I take off my work clothes and put on comfortable clothes. I have dinner with my family. After dinner, I relax a bit. At eleven, I go to bed and fall asleep quickly.",
+        "wordCount": 110
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿A qué hora se despierta?",
+        "options": [
+          "A las seis",
+          "A las seis y media",
+          "A las siete",
+          "A las once"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Me despierto a las seis y media.'"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué hace primero después de levantarse?",
+        "options": [
+          "Desayuna",
+          "Se viste",
+          "Se ducha",
+          "Se peina"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Primero, me levanto y me ducho.'"
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 12. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "introducir",
+        "means": "to insert",
+        "notMean": "to introduce (= presentar)"
+      },
+      {
+        "spanish": "largo",
+        "means": "long",
+        "notMean": "large (= grande)"
+      },
+      {
+        "spanish": "recordar",
+        "means": "to remember",
+        "notMean": "to record (= grabar)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

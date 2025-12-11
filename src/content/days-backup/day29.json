@@ -1,0 +1,214 @@
+{
+  "day": 29,
+  "title": "Real World Practice",
+  "subtitle": "Putting it all together",
+  "objectives": [
+    "Apply all skills",
+    "Handle various scenarios",
+    "Build confidence",
+    "Prepare for final day"
+  ],
+  "grammar": {
+    "title": "Comprehensive Review",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "You've Learned So Much!",
+        "content": "Let's review all major concepts:",
+        "tip": "You can now communicate in most everyday situations!"
+      },
+      {
+        "type": "lesson",
+        "heading": "Present Tense",
+        "content": "Regular and irregular verbs:",
+        "examples": [
+          {
+            "spanish": "Hablo, como, vivo",
+            "english": "Regular"
+          },
+          {
+            "spanish": "Soy, estoy, tengo, voy",
+            "english": "Irregular"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Past Tense",
+        "content": "Completed actions:",
+        "examples": [
+          {
+            "spanish": "Hablé, comí, fui, hice",
+            "english": "Preterite"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Future",
+        "content": "Plans and predictions:",
+        "examples": [
+          {
+            "spanish": "Voy a + infinitive",
+            "english": "I'm going to..."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Complete: Ayer ___ al cine. (ir)",
+        "options": [
+          "voy",
+          "fui",
+          "iré",
+          "iba"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "lesson",
+        "heading": "C2 Mastery: Native-Level Nuance",
+        "content": "At C2, you understand subtle distinctions that even advanced learners miss:",
+        "examples": [
+          {
+            "spanish": "ya vs todavía vs aún",
+            "english": "Subtle time distinctions"
+          },
+          {
+            "spanish": "sino vs pero vs aunque",
+            "english": "Contrast nuances"
+          },
+          {
+            "spanish": "por qué vs porque vs porqué vs por que",
+            "english": "The four 'becauses'"
+          },
+          {
+            "spanish": "quedar vs quedarse vs quedar en",
+            "english": "Different meanings of 'quedar'"
+          }
+        ],
+        "tip": "Native speakers intuitively choose the right word - with practice, you will too."
+      },
+      {
+        "type": "lesson",
+        "heading": "Conversation Lubricants (Fillers)",
+        "content": "Sound natural with these native-speaker fillers:",
+        "examples": [
+          {
+            "spanish": "Pues...",
+            "english": "Well... (thinking)"
+          },
+          {
+            "spanish": "Es que...",
+            "english": "The thing is..."
+          },
+          {
+            "spanish": "O sea...",
+            "english": "I mean..."
+          },
+          {
+            "spanish": "Bueno...",
+            "english": "Well..."
+          },
+          {
+            "spanish": "A ver...",
+            "english": "Let's see..."
+          },
+          {
+            "spanish": "¿Sabes?",
+            "english": "You know?"
+          },
+          {
+            "spanish": "¿Me explico?",
+            "english": "Am I making sense?"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Essential Phrases",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Survival Spanish",
+        "words": [
+          {
+            "spanish": "¿Puede ayudarme?",
+            "english": "Can you help me?"
+          },
+          {
+            "spanish": "No entiendo",
+            "english": "I don't understand"
+          },
+          {
+            "spanish": "¿Puede repetir?",
+            "english": "Can you repeat?"
+          },
+          {
+            "spanish": "Más despacio, por favor",
+            "english": "Slower, please"
+          },
+          {
+            "spanish": "¿Cómo se dice...?",
+            "english": "How do you say...?"
+          },
+          {
+            "spanish": "Lo siento",
+            "english": "I'm sorry"
+          },
+          {
+            "spanish": "Con permiso",
+            "english": "Excuse me"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen to this conversation:",
+        "transcript": "Perdón, ¿puede ayudarme? Busco el museo. Está a dos cuadras, a la derecha.",
+        "options": [
+          "Looking for restaurant, turn left",
+          "Looking for museum, two blocks right",
+          "Looking for hotel, straight ahead",
+          "Looking for station, turn left"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Conversación completa",
+        "passage": "Turista: ¡Hola! ¿Habla inglés?\nLocal: Un poco. ¿En qué puedo ayudarle?\nTurista: Busco un buen restaurante. ¿Qué me recomienda?\nLocal: Hay uno muy bueno cerca de aquí. Se llama 'Casa María'. La comida es deliciosa.\nTurista: ¿Cómo llego?\nLocal: Siga recto dos cuadras y gire a la derecha.\nTurista: ¿Está lejos?\nLocal: No, está a cinco minutos.\nTurista: Muchas gracias.\nLocal: De nada. ¡Buen provecho!",
+        "translation": "Tourist: Hi! Do you speak English?\nLocal: A little. How can I help you?\nTourist: I'm looking for a good restaurant. What do you recommend?\nLocal: There's a very good one near here. It's called 'Casa María'. The food is delicious.\nTourist: How do I get there?\nLocal: Go straight two blocks and turn right.\nTourist: Is it far?\nLocal: No, it's five minutes away.\nTourist: Thank you very much.\nLocal: You're welcome. Enjoy your meal!",
+        "wordCount": 80
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cómo se llama el restaurante?",
+        "options": [
+          "Casa Carlos",
+          "Casa María",
+          "El Buen Comer",
+          "La Cocina"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

@@ -4,6 +4,8 @@ import { SCENE_CONFIGS, extractVisualsFromText, detectSceneFromConversation, get
 import { MARIA_EMOTIONS, detectMariaEmotion, getMariaPhrase, buildMariaPrompt, getContextualHint } from '../engines/MariaPersona';
 import { getOfflineResponse, checkAIAvailable, getPracticeHint } from '../engines/OfflineConversation';
 import { getCircadianPhase, inferEmotionalState, logSession } from '../engines/PhenomenaEngine';
+import ConversationStarters from '../components/ConversationStarters';
+import { trackAchievementEvent, AchievementPopup } from '../components/CommunicationAchievements';
 
 const theme = { 
   primary: '#2D5A27', primaryLight: '#4A7C43', 
@@ -64,6 +66,8 @@ export default function VoiceChatMode({ onBack }) {
   const [hintText, setHintText] = useState('');
   const [timeLeft, setTimeLeft] = useState(null);
   const [milestone, setMilestone] = useState(null);
+  const [newAchievement, setNewAchievement] = useState(null);
+  const [startersUsed, setStartersUsed] = useState(0);
   
   // Metrics
   const [metrics, setMetrics] = useState({
@@ -282,6 +286,11 @@ export default function VoiceChatMode({ onBack }) {
       responseTimes: [...m.responseTimes, responseStart - lastActivity]
     }));
     
+    // Track if user asked a question in Spanish
+    if (text.includes('?') && /[áéíóúñ¿]/.test(text)) {
+      trackAchievementEvent('asked_question');
+    }
+    
     const userMsg = { role: 'user', text: text.trim() };
     setMessages(prev => [...prev, userMsg]);
     setInput('');
@@ -459,6 +468,22 @@ export default function VoiceChatMode({ onBack }) {
     if (!practiceHistory.includes(today)) {
       practiceHistory.push(today);
       localStorage.setItem('fluidez_practice_history', JSON.stringify(practiceHistory));
+    }
+    
+    // Track achievements
+    const earned = trackAchievementEvent('conversation_complete');
+    trackAchievementEvent('unique_topic', scenario?.id || 'general');
+    if (messages.length >= 20) {
+      trackAchievementEvent('long_conversation', messages.length);
+    }
+    if (startersUsed === 0 && metrics.speakingAttempts >= 5) {
+      trackAchievementEvent('no_hints');
+    }
+    if (difficulty === 'challenge' || difficulty === 'immersion') {
+      trackAchievementEvent('hard_difficulty');
+    }
+    if (earned && earned.length > 0) {
+      setNewAchievement(earned[0]);
     }
     
     Sounds.celebration();
@@ -698,6 +723,16 @@ export default function VoiceChatMode({ onBack }) {
         </div>
       )}
       
+      {/* Conversation Starters */}
+      <ConversationStarters
+        topic={scenario?.id || 'general'}
+        onSelectStarter={(starter) => {
+          setInput(starter.spanish);
+          setStartersUsed(prev => prev + 1);
+        }}
+        compact={true}
+      />
+      
       {/* Input area */}
       <div style={styles.inputArea}>
         <input
@@ -749,6 +784,13 @@ export default function VoiceChatMode({ onBack }) {
         </div>
         <span style={{ fontSize: 12 }}>{metrics.speakingAttempts} 🗣️</span>
       </div>
+    {/* Achievement Popup */}
+      {newAchievement && (
+        <AchievementPopup
+          achievement={newAchievement}
+          onDismiss={() => setNewAchievement(null)}
+        />
+      )}
     </div>
   );
 }

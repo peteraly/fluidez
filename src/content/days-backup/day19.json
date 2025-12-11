@@ -1,0 +1,178 @@
+{
+  "day": 19,
+  "title": "Transportation",
+  "subtitle": "Getting around",
+  "objectives": [
+    "Learn transportation vocabulary",
+    "Buy tickets",
+    "Ask about schedules",
+    "Use public transportation"
+  ],
+  "grammar": {
+    "title": "Transportation Phrases",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Key Phrases",
+        "content": "Essential for travel:",
+        "examples": [
+          {
+            "spanish": "¿A qué hora sale?",
+            "english": "What time does it leave?"
+          },
+          {
+            "spanish": "¿A qué hora llega?",
+            "english": "What time does it arrive?"
+          },
+          {
+            "spanish": "Un boleto a...",
+            "english": "A ticket to..."
+          },
+          {
+            "spanish": "¿De ida o ida y vuelta?",
+            "english": "One-way or round-trip?"
+          },
+          {
+            "spanish": "¿Cuánto cuesta el boleto?",
+            "english": "How much is the ticket?"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Round-trip = ___",
+        "options": [
+          "de ida",
+          "ida y vuelta",
+          "solo ida",
+          "vuelta"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "lesson",
+        "heading": "B1 Enrichment: Subjunctive with travel (hopes)",
+        "content": "As you advance, notice how the subjunctive appears in this context:",
+        "examples": [
+          {
+            "spanish": "Espero que el vuelo no se retrase.",
+            "english": "(You'll master this soon!)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Transportation",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Vehicles",
+        "words": [
+          {
+            "spanish": "el autobús",
+            "english": "bus",
+            "example": "Tomo el autobús."
+          },
+          {
+            "spanish": "el metro",
+            "english": "subway",
+            "example": "El metro es rápido."
+          },
+          {
+            "spanish": "el tren",
+            "english": "train",
+            "example": "El tren sale a las tres."
+          },
+          {
+            "spanish": "el taxi",
+            "english": "taxi",
+            "example": "Necesito un taxi."
+          },
+          {
+            "spanish": "el avión",
+            "english": "airplane",
+            "example": "El avión llega tarde."
+          },
+          {
+            "spanish": "el coche/carro",
+            "english": "car",
+            "example": "Tengo un coche."
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Places",
+        "words": [
+          {
+            "spanish": "la estación",
+            "english": "station",
+            "example": "¿Dónde está la estación?"
+          },
+          {
+            "spanish": "la parada",
+            "english": "stop",
+            "example": "La parada está aquí."
+          },
+          {
+            "spanish": "el aeropuerto",
+            "english": "airport",
+            "example": "Voy al aeropuerto."
+          },
+          {
+            "spanish": "el boleto",
+            "english": "ticket",
+            "example": "Un boleto, por favor."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "El tren a Madrid sale a las diez y llega a las dos",
+        "options": [
+          "Train leaves 10, arrives 12",
+          "Train leaves 10, arrives 2",
+          "Train leaves 2, arrives 10",
+          "Bus leaves 10, arrives 2"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "En la estación",
+        "passage": "Estoy en la estación de trenes. Quiero ir a Barcelona. Le pregunto al empleado: '¿A qué hora sale el próximo tren a Barcelona?' 'Sale a las once.' '¿Cuánto cuesta?' 'El boleto de ida cuesta 45 euros. Ida y vuelta, 80 euros.' 'Un boleto de ida y vuelta, por favor.' 'Aquí tiene. El tren sale del andén número 5.'",
+        "translation": "I'm at the train station. I want to go to Barcelona. I ask the employee: 'What time does the next train to Barcelona leave?' 'It leaves at eleven.' 'How much is it?' 'A one-way ticket costs 45 euros. Round-trip, 80 euros.' 'A round-trip ticket, please.' 'Here you go. The train leaves from platform 5.'",
+        "wordCount": 70
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuánto cuesta ida y vuelta?",
+        "options": [
+          "45 euros",
+          "80 euros",
+          "125 euros",
+          "90 euros"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

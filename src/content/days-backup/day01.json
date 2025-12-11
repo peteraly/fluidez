@@ -1,0 +1,140 @@
+{
+  "day": 1,
+  "title": "Spanish Sounds & Alphabet",
+  "subtitle": "Pronunciation foundations",
+  "grammar": {
+    "title": "Spanish Sounds",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Welcome to Spanish!",
+        "content": "¡Bienvenidos! Today you'll master the sounds of Spanish. The great news? Spanish is phonetic — once you learn the sounds, you can pronounce any word correctly just by reading it.",
+        "tip": "Spanish has only 5 vowel sounds (English has 14+). Master these first!"
+      },
+      {
+        "type": "lesson",
+        "heading": "The 5 Vowels",
+        "content": "Each vowel has ONE sound that never changes:",
+        "examples": [
+          { "spanish": "A", "pronunciation": "ah (like 'father')", "word": "casa", "meaning": "house" },
+          { "spanish": "E", "pronunciation": "eh (like 'pet')", "word": "mesa", "meaning": "table" },
+          { "spanish": "I", "pronunciation": "ee (like 'feet')", "word": "sí", "meaning": "yes" },
+          { "spanish": "O", "pronunciation": "oh (like 'hope')", "word": "hola", "meaning": "hello" },
+          { "spanish": "U", "pronunciation": "oo (like 'food')", "word": "uno", "meaning": "one" }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Which vowel makes the 'ee' sound?",
+        "options": ["A", "E", "I", "U"],
+        "correctAnswer": 2,
+        "explanation": "Spanish 'I' always sounds like 'ee' in 'feet'."
+      },
+      {
+        "type": "lesson",
+        "heading": "Consonants That Differ",
+        "content": "Most consonants are like English, but these are different:",
+        "examples": [
+          { "spanish": "H", "pronunciation": "always silent", "word": "hola", "meaning": "sounds like 'oh-la'" },
+          { "spanish": "J", "pronunciation": "like English 'h'", "word": "Juan", "meaning": "sounds like 'hwan'" },
+          { "spanish": "LL", "pronunciation": "like 'y' in yes", "word": "llamar", "meaning": "to call" },
+          { "spanish": "Ñ", "pronunciation": "like 'ny' in canyon", "word": "año", "meaning": "year" },
+          { "spanish": "RR", "pronunciation": "rolled/trilled", "word": "perro", "meaning": "dog" }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "How is 'H' pronounced in Spanish?",
+        "options": ["Like English H", "Like J", "It's silent", "Like CH"],
+        "correctAnswer": 2,
+        "explanation": "Spanish 'H' is always silent. 'Hola' = 'oh-la'."
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Greetings & Numbers",
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Essential Greetings",
+        "words": [
+          { "spanish": "hola", "english": "hello", "example": "¡Hola! ¿Cómo estás?" },
+          { "spanish": "buenos días", "english": "good morning", "example": "Buenos días, señora." },
+          { "spanish": "buenas tardes", "english": "good afternoon", "example": "Buenas tardes, ¿cómo está?" },
+          { "spanish": "buenas noches", "english": "good evening/night", "example": "Buenas noches, hasta mañana." },
+          { "spanish": "adiós", "english": "goodbye", "example": "Adiós, que te vaya bien." },
+          { "spanish": "hasta luego", "english": "see you later", "example": "Hasta luego, amigo." },
+          { "spanish": "por favor", "english": "please", "example": "Un café, por favor." },
+          { "spanish": "gracias", "english": "thank you", "example": "Muchas gracias." },
+          { "spanish": "de nada", "english": "you're welcome", "example": "—Gracias. —De nada." }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "How do you say 'good morning'?",
+        "options": ["Buenas noches", "Buenos días", "Buenas tardes", "Hasta luego"],
+        "correctAnswer": 1,
+        "explanation": "'Buenos días' = good morning."
+      },
+      {
+        "type": "vocab",
+        "category": "Numbers 0-10",
+        "words": [
+          { "spanish": "cero", "english": "zero", "example": "Cero grados." },
+          { "spanish": "uno", "english": "one", "example": "Uno, dos, tres..." },
+          { "spanish": "dos", "english": "two", "example": "Dos cafés, por favor." },
+          { "spanish": "tres", "english": "three", "example": "Son las tres." },
+          { "spanish": "cuatro", "english": "four", "example": "Cuatro personas." },
+          { "spanish": "cinco", "english": "five", "example": "Cinco minutos." },
+          { "spanish": "seis", "english": "six", "example": "A las seis." },
+          { "spanish": "siete", "english": "seven", "example": "Siete días." },
+          { "spanish": "ocho", "english": "eight", "example": "Ocho horas." },
+          { "spanish": "nueve", "english": "nine", "example": "Nueve euros." },
+          { "spanish": "diez", "english": "ten", "example": "Diez estudiantes." }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Buenos días",
+        "options": ["Buenos días", "Buenas noches", "Buenas tardes", "Hasta luego"],
+        "correctAnswer": 0
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select what you hear:",
+        "transcript": "Muchas gracias",
+        "options": ["De nada", "Por favor", "Muchas gracias", "Hasta mañana"],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "reading": {
+    "title": "First Reading",
+    "screens": [
+      {
+        "type": "reading",
+        "title": "En la clase",
+        "passage": "¡Hola! Buenos días. Me llamo María. Soy estudiante. Hoy es lunes. La clase es a las nueve. El profesor se llama Carlos. Él es muy simpático. En la clase hay diez estudiantes: cinco chicos y cinco chicas. La clase es de español. Es muy interesante.",
+        "translation": "Hello! Good morning. My name is María. I am a student. Today is Monday. The class is at nine. The teacher's name is Carlos. He is very nice. In the class there are ten students: five boys and five girls. The class is Spanish. It is very interesting.",
+        "wordCount": 55
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "What is the teacher's name?",
+        "options": ["María", "Carlos", "Pedro", "Juan"],
+        "correctAnswer": 1,
+        "explanation": "'El profesor se llama Carlos' = The teacher's name is Carlos."
+      }
+    ]
+  }
+}

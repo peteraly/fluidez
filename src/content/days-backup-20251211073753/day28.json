@@ -1,0 +1,410 @@
+{
+  "day": 28,
+  "title": "Advanced Grammar Mastery",
+  "subtitle": "Passive voice, por vs para, relative pronouns",
+  "level": "B2-C1",
+  "objectives": [
+    "Use passive voice and se constructions",
+    "Master relative pronouns",
+    "Distinguish por and para perfectly",
+    "Sound more sophisticated in Spanish"
+  ],
+  "grammar": {
+    "title": "B2-C1 Grammar",
+    "estimatedMinutes": 25,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Passive Voice: SER + Past Participle",
+        "content": "True passive (less common in Spanish):",
+        "examples": [
+          {
+            "spanish": "El libro fue escrito por Cervantes.",
+            "english": "The book was written by Cervantes."
+          },
+          {
+            "spanish": "La casa será vendida mañana.",
+            "english": "The house will be sold tomorrow."
+          },
+          {
+            "spanish": "Las cartas fueron enviadas ayer.",
+            "english": "The letters were sent yesterday."
+          }
+        ],
+        "tip": "Participle agrees with subject: escrito/escrita/escritos/escritas"
+      },
+      {
+        "type": "lesson",
+        "heading": "Se Pasiva (More Common)",
+        "content": "SE + verb (3rd person) - agent unknown:",
+        "examples": [
+          {
+            "spanish": "Se habla español aquí.",
+            "english": "Spanish is spoken here."
+          },
+          {
+            "spanish": "Se venden casas.",
+            "english": "Houses are sold. (Houses for sale)"
+          },
+          {
+            "spanish": "Se necesitan empleados.",
+            "english": "Employees are needed."
+          },
+          {
+            "spanish": "¿Cómo se dice 'hello'?",
+            "english": "How do you say 'hello'?"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Se Impersonal",
+        "content": "SE + verb (3rd singular) for 'one/you/people':",
+        "examples": [
+          {
+            "spanish": "Se come bien aquí.",
+            "english": "One eats well here."
+          },
+          {
+            "spanish": "No se puede fumar.",
+            "english": "One cannot smoke."
+          },
+          {
+            "spanish": "Se dice que va a llover.",
+            "english": "They say it's going to rain."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cómo ___ 'goodbye' en español?",
+        "options": [
+          "se dice",
+          "dice",
+          "es dicho",
+          "se dicen"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "type": "lesson",
+        "heading": "Relative Pronouns",
+        "content": "Connecting clauses:",
+        "examples": [
+          {
+            "spanish": "que",
+            "english": "that/which/who (most common)"
+          },
+          {
+            "spanish": "quien/quienes",
+            "english": "who (for people, after preposition)"
+          },
+          {
+            "spanish": "el que/la que/los que/las que",
+            "english": "the one who/which"
+          },
+          {
+            "spanish": "lo que",
+            "english": "what/that which (abstract)"
+          },
+          {
+            "spanish": "cuyo/cuya",
+            "english": "whose"
+          },
+          {
+            "spanish": "donde",
+            "english": "where"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Relative Pronoun Examples",
+        "content": "In context:",
+        "examples": [
+          {
+            "spanish": "El hombre que vi era alto.",
+            "english": "The man (that) I saw was tall."
+          },
+          {
+            "spanish": "La mujer con quien hablé...",
+            "english": "The woman with whom I spoke..."
+          },
+          {
+            "spanish": "Lo que dices es verdad.",
+            "english": "What you say is true."
+          },
+          {
+            "spanish": "La ciudad donde nací...",
+            "english": "The city where I was born..."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "___ me dijiste es interesante.",
+        "correctAnswers": [
+          "Lo que"
+        ],
+        "explanation": "Lo que = What (that which)"
+      },
+      {
+        "type": "lesson",
+        "heading": "POR - Uses",
+        "content": "Through, because of, exchange, duration, per:",
+        "examples": [
+          {
+            "spanish": "Cause: Por la lluvia, no salí.",
+            "english": "Because of the rain, I didn't go out."
+          },
+          {
+            "spanish": "Exchange: Pagué $10 por el libro.",
+            "english": "I paid $10 for the book."
+          },
+          {
+            "spanish": "Duration: Estudié por tres horas.",
+            "english": "I studied for three hours."
+          },
+          {
+            "spanish": "Through: Caminé por el parque.",
+            "english": "I walked through the park."
+          },
+          {
+            "spanish": "Per: Tres veces por semana.",
+            "english": "Three times per week."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "PARA - Uses",
+        "content": "Purpose, destination, deadline, recipient, opinion:",
+        "examples": [
+          {
+            "spanish": "Purpose: Estudio para aprender.",
+            "english": "I study (in order) to learn."
+          },
+          {
+            "spanish": "Destination: Voy para Madrid.",
+            "english": "I'm heading for Madrid."
+          },
+          {
+            "spanish": "Deadline: Es para mañana.",
+            "english": "It's for (due) tomorrow."
+          },
+          {
+            "spanish": "Recipient: Este regalo es para ti.",
+            "english": "This gift is for you."
+          },
+          {
+            "spanish": "Opinion: Para mí, es fácil.",
+            "english": "For me, it's easy."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Este libro es ___ mi madre. (recipient)",
+        "options": [
+          "por",
+          "para"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Gracias ___ ayudarme. (cause/reason)",
+        "options": [
+          "por",
+          "para"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Advanced Connectors",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Sophisticated Connectors",
+        "words": [
+          {
+            "spanish": "sin embargo",
+            "english": "however",
+            "example": "Es difícil. Sin embargo, es posible."
+          },
+          {
+            "spanish": "no obstante",
+            "english": "nevertheless",
+            "example": "No obstante, continuamos."
+          },
+          {
+            "spanish": "por lo tanto",
+            "english": "therefore",
+            "example": "Por lo tanto, debemos actuar."
+          },
+          {
+            "spanish": "en cambio",
+            "english": "on the other hand",
+            "example": "Él es alto. Ella, en cambio, es baja."
+          },
+          {
+            "spanish": "de hecho",
+            "english": "in fact",
+            "example": "De hecho, tienes razón."
+          },
+          {
+            "spanish": "es decir",
+            "english": "that is to say",
+            "example": "Es decir, no estás de acuerdo."
+          },
+          {
+            "spanish": "a pesar de (que)",
+            "english": "despite/in spite of",
+            "example": "A pesar de todo, sonrío."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Formal Speech",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen to this announcement:",
+        "transcript": "Se comunica a todos los empleados que la reunión de mañana ha sido cancelada. Por lo tanto, se solicita que envíen sus informes por correo electrónico. No obstante, la reunión del viernes se mantiene.",
+        "options": [
+          "Meeting tomorrow confirmed",
+          "Meeting tomorrow canceled, Friday still on",
+          "Both meetings canceled",
+          "Only Friday meeting canceled"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Opinion Piece",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Artículo de opinión",
+        "passage": "Se dice que los jóvenes de hoy no leen. Sin embargo, esto no es del todo cierto. Lo que ha cambiado es el formato: se lee más en pantallas que en papel.\n\nPara mí, lo importante no es el medio por el cual leemos, sino el contenido que consumimos. De hecho, nunca antes se ha tenido acceso a tanta información.\n\nEn cuanto al futuro del libro físico, creo que coexistirá con lo digital. A pesar de los pronósticos negativos, las librerías siguen existiendo.",
+        "translation": "They say young people today don't read. However, this isn't entirely true. What has changed is the format: more is read on screens than on paper.\n\nFor me, what's important is not the medium through which we read, but the content we consume. In fact, never before has there been access to so much information.\n\nAs for the future of the physical book, I believe it will coexist with digital. Despite negative predictions, bookstores continue to exist.",
+        "wordCount": 100
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué opina el autor sobre el libro físico?",
+        "options": [
+          "Desaparecerá pronto",
+          "Coexistirá con lo digital",
+          "Es mejor que digital",
+          "No tiene opinión"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 28. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "largo",
+        "means": "long",
+        "notMean": "large (= grande)"
+      },
+      {
+        "spanish": "recordar",
+        "means": "to remember",
+        "notMean": "to record (= grabar)"
+      },
+      {
+        "spanish": "ropa",
+        "means": "clothes",
+        "notMean": "rope (= cuerda)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "future_subjunctive": {
+    "title": "Future Subjunctive (Subjuntivo Futuro)",
+    "note": "Rarely used in modern Spanish, but appears in legal documents, proverbs, and very formal writing.",
+    "formation": "Based on preterite stem + -re, -res, -re, -remos, -reis, -ren",
+    "examples": [
+      {
+        "spanish": "hablar → hablare, hablares, hablare...",
+        "english": ""
+      },
+      {
+        "spanish": "tener → tuviere, tuvieres, tuviere...",
+        "english": ""
+      },
+      {
+        "spanish": "ser/ir → fuere, fueres, fuere...",
+        "english": ""
+      }
+    ],
+    "where_found": [
+      {
+        "context": "Legal documents",
+        "example": "Si el acusado cometiere el delito...",
+        "english": "If the accused commits the crime..."
+      },
+      {
+        "context": "Proverbs",
+        "example": "Donde fueres, haz lo que vieres.",
+        "english": "When in Rome, do as the Romans do."
+      },
+      {
+        "context": "Bible/religious",
+        "example": "Adondequiera que fueres...",
+        "english": "Wherever you may go..."
+      }
+    ],
+    "modern_replacement": "In modern Spanish, use present subjunctive or present indicative instead."
+  }
+}

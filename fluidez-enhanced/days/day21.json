@@ -1,0 +1,262 @@
+{
+  "day": 21,
+  "title": "Week 3 Review",
+  "subtitle": "Advanced structures",
+  "objectives": [
+    "Master future, conditional, commands",
+    "Build practical vocabulary",
+    "Practice real-world scenarios",
+    "Increase fluency confidence"
+  ],
+  "grammar": {
+    "title": "Week 3 Review",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Day 21: Week 3 Review",
+        "content": "Today we focus on future, conditional, commands. This is an essential skill for conversational Spanish that you'll use every day.",
+        "tip": "Practice these patterns until they become automatic!"
+      },
+      {
+        "type": "lesson",
+        "heading": "Key Concepts",
+        "content": "Let's explore the main ideas for future, conditional, commands.",
+        "examples": [
+          {
+            "spanish": "Example phrase in Spanish",
+            "english": "English translation"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Practice question for future, conditional, commands:",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correctAnswer": 0,
+        "explanation": "This tests your understanding of future, conditional, commands."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Complete this sentence about future, conditional, commands:",
+        "hint": "Think about the rules",
+        "correctAnswers": [
+          "respuesta"
+        ],
+        "explanation": "This is how future, conditional, commands works."
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Day 21 Vocabulary",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Week 3 Review Words",
+        "words": [
+          {
+            "spanish": "palabra",
+            "english": "word",
+            "example": "Una frase de ejemplo."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match the pairs:",
+        "pairs": [
+          {
+            "left": "Spanish",
+            "right": "English"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select:",
+        "transcript": "Audio transcript",
+        "options": [
+          "Option 1",
+          "Option 2",
+          "Option 3",
+          "Option 4"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Day 21 Reading",
+        "passage": "Este es un texto de práctica para el día 21. El tema es future, conditional, commands. Practica leyendo este texto en voz alta para mejorar tu pronunciación.",
+        "translation": "This is a practice text for day 21. The topic is future, conditional, commands. Practice reading this text aloud to improve your pronunciation.",
+        "wordCount": 30
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 21. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "librería",
+        "means": "bookstore",
+        "notMean": "library (= biblioteca)"
+      },
+      {
+        "spanish": "carpeta",
+        "means": "folder",
+        "notMean": "carpet (= alfombra)"
+      },
+      {
+        "spanish": "soportar",
+        "means": "to tolerate",
+        "notMean": "to support (= apoyar)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "practical_scenarios": {
+    "job_interview": {
+      "title": "Job Interview Phrases",
+      "phrases": [
+        {
+          "spanish": "Mucho gusto en conocerle",
+          "english": "Pleased to meet you (formal)"
+        },
+        {
+          "spanish": "¿Me puede hablar de su experiencia?",
+          "english": "Can you tell me about your experience?"
+        },
+        {
+          "spanish": "Trabajé en [empresa] durante [años]",
+          "english": "I worked at [company] for [years]"
+        },
+        {
+          "spanish": "Mis fortalezas son...",
+          "english": "My strengths are..."
+        },
+        {
+          "spanish": "¿Cuáles son sus expectativas salariales?",
+          "english": "What are your salary expectations?"
+        },
+        {
+          "spanish": "¿Cuándo podría comenzar?",
+          "english": "When could you start?"
+        },
+        {
+          "spanish": "Estoy dispuesto/a a aprender",
+          "english": "I'm willing to learn"
+        },
+        {
+          "spanish": "Tengo experiencia en...",
+          "english": "I have experience in..."
+        },
+        {
+          "spanish": "Me apasiona este campo",
+          "english": "I'm passionate about this field"
+        },
+        {
+          "spanish": "¿Tienen oportunidades de crecimiento?",
+          "english": "Do you have growth opportunities?"
+        }
+      ]
+    },
+    "complaints": {
+      "title": "Making Complaints",
+      "phrases": [
+        {
+          "spanish": "Disculpe, tengo una queja",
+          "english": "Excuse me, I have a complaint"
+        },
+        {
+          "spanish": "Esto no es lo que pedí",
+          "english": "This isn't what I ordered"
+        },
+        {
+          "spanish": "Hay un error en la cuenta",
+          "english": "There's an error in the bill"
+        },
+        {
+          "spanish": "Quiero hablar con el gerente",
+          "english": "I want to speak to the manager"
+        },
+        {
+          "spanish": "Exijo una explicación",
+          "english": "I demand an explanation"
+        },
+        {
+          "spanish": "Quiero un reembolso",
+          "english": "I want a refund"
+        },
+        {
+          "spanish": "El servicio fue muy malo",
+          "english": "The service was very bad"
+        },
+        {
+          "spanish": "No estoy satisfecho/a",
+          "english": "I'm not satisfied"
+        },
+        {
+          "spanish": "¿Cómo van a solucionar esto?",
+          "english": "How are you going to solve this?"
+        },
+        {
+          "spanish": "Voy a poner una queja formal",
+          "english": "I'm going to file a formal complaint"
+        }
+      ]
+    }
+  }
+}

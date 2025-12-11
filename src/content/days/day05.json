@@ -1,0 +1,290 @@
+{
+  "day": 5,
+  "title": "Having & Needing",
+  "subtitle": "TENER & its expressions",
+  "objectives": [
+    "Conjugate TENER in present tense",
+    "Use TENER expressions (hunger, thirst, age, etc.)",
+    "Express obligation with TENER QUE",
+    "Learn numbers 21-100"
+  ],
+  "grammar": {
+    "title": "The Verb TENER",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "TENER (To Have)",
+        "content": "TENER is one of the most important verbs in Spanish. It means 'to have' but is also used in many expressions where English uses 'to be'!"
+      },
+      {
+        "type": "lesson",
+        "heading": "TENER Conjugation",
+        "content": "Learn these essential forms:\n                              \n   ✏️ Exercise: Complete: Yo ___ dos hermanos.",
+        "examples": [
+          {
+            "spanish": "yo tengo",
+            "english": "I have"
+          },
+          {
+            "spanish": "tú tienes",
+            "english": "you have"
+          },
+          {
+            "spanish": "él/ella tiene",
+            "english": "he/she has"
+          },
+          {
+            "spanish": "nosotros tenemos",
+            "english": "we have"
+          },
+          {
+            "spanish": "ellos/ustedes tienen",
+            "english": "they/you all have"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "TENER Expressions",
+        "content": "Spanish uses TENER where English uses 'to be' for physical states and feelings:\n                              → tener sueño = to be sleepy (to have sleep)",
+        "examples": [
+          {
+            "spanish": "tener hambre",
+            "english": "to be hungry (to have hunger)"
+          },
+          {
+            "spanish": "tener sed",
+            "english": "to be thirsty (to have thirst)"
+          },
+          {
+            "spanish": "tener frío",
+            "english": "to be cold (to have cold)"
+          },
+          {
+            "spanish": "tener calor",
+            "english": "to be hot (to have heat)"
+          },
+          {
+            "spanish": "tener sueño",
+            "english": "to be sleepy (to have sleep)"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "TENER QUE + Infinitive",
+        "content": "To express obligation ('have to'), use TENER QUE + infinitive verb:\n                  \n   ✏️ Exercise: Translate: 'She has to study'",
+        "examples": [
+          {
+            "spanish": "Tengo que trabajar",
+            "english": "I have to work"
+          },
+          {
+            "spanish": "Tienes que estudiar",
+            "english": "You have to study"
+          },
+          {
+            "spanish": "Tenemos que ir",
+            "english": "We have to go"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Numbers 21-100",
+        "content": "Learn these number patterns:\n                              → cuarenta = 40",
+        "examples": [
+          {
+            "spanish": "veintiuno",
+            "english": "21"
+          },
+          {
+            "spanish": "veintidós",
+            "english": "22"
+          },
+          {
+            "spanish": "treinta",
+            "english": "30"
+          },
+          {
+            "spanish": "treinta y uno",
+            "english": "31"
+          },
+          {
+            "spanish": "cuarenta",
+            "english": "40"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "TENER Expressions & Numbers",
+    "screens": [
+      {
+        "category": "TENER Expressions",
+        "words": [
+          {
+            "spanish": "tener hambre",
+            "english": "to be hungry"
+          },
+          {
+            "spanish": "tener sed",
+            "english": "to be thirsty"
+          },
+          {
+            "spanish": "tener frío",
+            "english": "to be cold"
+          },
+          {
+            "spanish": "tener calor",
+            "english": "to be hot"
+          },
+          {
+            "spanish": "tener sueño",
+            "english": "to be sleepy"
+          },
+          {
+            "spanish": "tener miedo",
+            "english": "to be afraid"
+          },
+          {
+            "spanish": "tener prisa",
+            "english": "to be in a hurry"
+          },
+          {
+            "spanish": "tener razón",
+            "english": "to be right"
+          },
+          {
+            "spanish": "tener suerte",
+            "english": "to be lucky"
+          },
+          {
+            "spanish": "tener cuidado",
+            "english": "to be careful"
+          }
+        ]
+      },
+      {
+        "category": "Numbers 21-100",
+        "words": [
+          {
+            "spanish": "veintiuno",
+            "english": "21"
+          },
+          {
+            "spanish": "veinticinco",
+            "english": "25"
+          },
+          {
+            "spanish": "treinta",
+            "english": "30"
+          },
+          {
+            "spanish": "cuarenta",
+            "english": "40"
+          },
+          {
+            "spanish": "cincuenta",
+            "english": "50"
+          },
+          {
+            "spanish": "sesenta",
+            "english": "60"
+          },
+          {
+            "spanish": "setenta",
+            "english": "70"
+          },
+          {
+            "spanish": "ochenta",
+            "english": "80"
+          },
+          {
+            "spanish": "noventa",
+            "english": "90"
+          },
+          {
+            "spanish": "cien",
+            "english": "100"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "yo tengo tú tienes tener hambre"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Having & Needing",
+        "passage": "Tengo mucha hambre. Tengo que ir al supermercado. Tengo treinta años. Tengo dos hermanos. Tengo frío porque está nevando.",
+        "wordCount": 19
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 5. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "éxito",
+        "means": "success",
+        "notMean": "exit (= salida)"
+      },
+      {
+        "spanish": "librería",
+        "means": "bookstore",
+        "notMean": "library (= biblioteca)"
+      },
+      {
+        "spanish": "carpeta",
+        "means": "folder",
+        "notMean": "carpet (= alfombra)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A1"
+}

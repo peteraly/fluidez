@@ -1,0 +1,207 @@
+{
+  "day": 15,
+  "title": "Past Tense Intro",
+  "subtitle": "Preterite regular verbs",
+  "objectives": [
+    "Understand the preterite tense",
+    "Conjugate regular -AR verbs in past",
+    "Conjugate regular -ER/-IR verbs in past",
+    "Talk about completed actions"
+  ],
+  "grammar": {
+    "title": "Preterite Tense",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "What is Preterite?",
+        "content": "The preterite tense describes completed actions in the past.",
+        "tip": "Think of it as 'snapshot' past - actions that are done and finished."
+      },
+      {
+        "type": "lesson",
+        "heading": "-AR Verbs in Past",
+        "content": "hablar → hablé:",
+        "examples": [
+          {
+            "spanish": "yo hablé",
+            "english": "I spoke"
+          },
+          {
+            "spanish": "tú hablaste",
+            "english": "you spoke"
+          },
+          {
+            "spanish": "él/ella habló",
+            "english": "he/she spoke"
+          },
+          {
+            "spanish": "nosotros hablamos",
+            "english": "we spoke"
+          },
+          {
+            "spanish": "ellos hablaron",
+            "english": "they spoke"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Ayer yo ___ con mi madre. (hablar)",
+        "correctAnswers": [
+          "hablé"
+        ],
+        "explanation": "Yo hablé = I spoke"
+      },
+      {
+        "type": "lesson",
+        "heading": "-ER/-IR Verbs in Past",
+        "content": "comer → comí:",
+        "examples": [
+          {
+            "spanish": "yo comí",
+            "english": "I ate"
+          },
+          {
+            "spanish": "tú comiste",
+            "english": "you ate"
+          },
+          {
+            "spanish": "él/ella comió",
+            "english": "he/she ate"
+          },
+          {
+            "spanish": "nosotros comimos",
+            "english": "we ate"
+          },
+          {
+            "spanish": "ellos comieron",
+            "english": "they ate"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Ella ___ pizza ayer. (comer)",
+        "options": [
+          "comí",
+          "comiste",
+          "comió",
+          "comimos"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Ella comió = She ate"
+      },
+      {
+        "type": "lesson",
+        "heading": "B1 Enrichment: Preterite + Subjunctive in time clauses",
+        "content": "As you advance, notice how the subjunctive appears in this context:",
+        "examples": [
+          {
+            "spanish": "Cuando llegué, quería que me esperaras.",
+            "english": "(You'll master this soon!)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Time Expressions for Past",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Past Time Words",
+        "words": [
+          {
+            "spanish": "ayer",
+            "english": "yesterday",
+            "example": "Ayer trabajé mucho."
+          },
+          {
+            "spanish": "anoche",
+            "english": "last night",
+            "example": "Anoche cené tarde."
+          },
+          {
+            "spanish": "la semana pasada",
+            "english": "last week",
+            "example": "La semana pasada viajé."
+          },
+          {
+            "spanish": "el mes pasado",
+            "english": "last month",
+            "example": "El mes pasado empecé."
+          },
+          {
+            "spanish": "el año pasado",
+            "english": "last year",
+            "example": "El año pasado estudié."
+          },
+          {
+            "spanish": "hace dos días",
+            "english": "two days ago",
+            "example": "Hace dos días llegué."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "'Ayer' means:",
+        "options": [
+          "today",
+          "tomorrow",
+          "yesterday",
+          "last week"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Ayer trabajé todo el día y llegué a casa muy tarde",
+        "options": [
+          "Worked today, arrived early",
+          "Worked yesterday, arrived late",
+          "Worked last week, arrived late",
+          "Worked yesterday, arrived early"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: What I Did Yesterday",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Mi día ayer",
+        "passage": "Ayer fue un día muy ocupado. Me levanté a las seis y desayuné rápido. Llegué al trabajo a las ocho. Trabajé toda la mañana y almorcé a la una. Por la tarde, hablé con muchos clientes. Terminé a las seis. Cené con mi familia y después miré una película. Me acosté a las once.",
+        "translation": "Yesterday was a very busy day. I got up at six and had a quick breakfast. I arrived at work at eight. I worked all morning and had lunch at one. In the afternoon, I talked with many clients. I finished at six. I had dinner with my family and then watched a movie. I went to bed at eleven.",
+        "wordCount": 65
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿A qué hora llegó al trabajo?",
+        "options": [
+          "A las seis",
+          "A las siete",
+          "A las ocho",
+          "A las nueve"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

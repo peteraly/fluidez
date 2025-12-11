@@ -1,0 +1,164 @@
+{
+  "day": 26,
+  "title": "Telling Stories",
+  "subtitle": "Narrative connectors",
+  "objectives": [
+    "Tell coherent stories",
+    "Use time connectors",
+    "Describe sequences",
+    "Narrate past events"
+  ],
+  "grammar": {
+    "title": "Story Connectors",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Sequencing Events",
+        "content": "Connect your ideas:",
+        "examples": [
+          {
+            "spanish": "primero",
+            "english": "first"
+          },
+          {
+            "spanish": "luego/después",
+            "english": "then/after"
+          },
+          {
+            "spanish": "mientras",
+            "english": "while"
+          },
+          {
+            "spanish": "de repente",
+            "english": "suddenly"
+          },
+          {
+            "spanish": "por fin/finalmente",
+            "english": "finally"
+          },
+          {
+            "spanish": "al final",
+            "english": "in the end"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "'Suddenly' = ___",
+        "options": [
+          "primero",
+          "luego",
+          "de repente",
+          "al final"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "type": "lesson",
+        "heading": "C1 Advanced: Advanced Narrative Techniques",
+        "content": "Storytelling at C1 level:",
+        "examples": [
+          {
+            "spanish": "Resulta que...",
+            "english": "It turns out that..."
+          },
+          {
+            "spanish": "Al final resultó que...",
+            "english": "In the end it turned out that..."
+          },
+          {
+            "spanish": "Lo curioso es que...",
+            "english": "The curious thing is that..."
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Storytelling Words",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Connectors",
+        "words": [
+          {
+            "spanish": "entonces",
+            "english": "so/then",
+            "example": "Entonces, decidí..."
+          },
+          {
+            "spanish": "sin embargo",
+            "english": "however",
+            "example": "Sin embargo, no fue fácil."
+          },
+          {
+            "spanish": "por eso",
+            "english": "that's why",
+            "example": "Por eso llegué tarde."
+          },
+          {
+            "spanish": "aunque",
+            "english": "although",
+            "example": "Aunque llovía, salimos."
+          },
+          {
+            "spanish": "cuando",
+            "english": "when",
+            "example": "Cuando llegué..."
+          },
+          {
+            "spanish": "porque",
+            "english": "because",
+            "example": "Porque tenía hambre."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Primero fui al supermercado, luego cociné, y finalmente comí",
+        "options": [
+          "Ate, cooked, then shopping",
+          "Shopping, cooking, then eating",
+          "Cooked, shopping, then eating",
+          "Shopping, eating, then cooking"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Una aventura",
+        "passage": "El sábado pasado tuve una aventura increíble. Primero, fui a la montaña con mis amigos. Mientras caminábamos, empezó a llover. De repente, vimos un refugio pequeño. Corrimos hacia allí. Esperamos una hora. Luego, el sol salió y continuamos. Finalmente, llegamos a la cima. La vista era espectacular. Al final, fue un día perfecto, aunque empezó mal.",
+        "translation": "Last Saturday I had an incredible adventure. First, I went to the mountain with my friends. While we were walking, it started to rain. Suddenly, we saw a small shelter. We ran there. We waited an hour. Then, the sun came out and we continued. Finally, we reached the top. The view was spectacular. In the end, it was a perfect day, although it started badly.",
+        "wordCount": 70
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué pasó de repente?",
+        "options": [
+          "Llegaron a la cima",
+          "Vieron un refugio",
+          "Salió el sol",
+          "Empezó a llover"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "day": 8,
+  "title": "Talking About the Past",
+  "subtitle": "Preterite tense introduction",
+  "objectives": ["Understand when to use preterite", "Conjugate -AR verbs in preterite", "Use past time expressions", "Narrate completed past actions"],
+  "grammar": {
+    "title": "Preterite Tense",
+    "estimatedMinutes": 15,
+    "screens": [
+      {"type": "lesson", "heading": "Introduction to the Past", "content": "Spanish has two main past tenses: PRETERITE and IMPERFECT. Today we learn the preterite, used for completed actions in the past.", "tip": "Preterite = something that started AND ended at a specific time."},
+      {"type": "lesson", "heading": "Preterite -AR Endings", "content": "Using HABLAR as the model:", "examples": [{"spanish": "yo hablé", "english": "I spoke"}, {"spanish": "tú hablaste", "english": "you spoke"}, {"spanish": "él/ella habló", "english": "he/she spoke"}, {"spanish": "nosotros hablamos", "english": "we spoke"}, {"spanish": "ellos hablaron", "english": "they spoke"}], "tip": "Notice: nosotros form is SAME as present tense! Context tells you which."},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "Ayer yo ___ con mi madre. (hablar)", "hint": "Past tense, yo form", "correctAnswers": ["hablé"], "explanation": "Preterite yo form for -AR verbs ends in -é"},
+      {"type": "lesson", "heading": "Preterite -ER/-IR Endings", "content": "-ER and -IR verbs share the same preterite endings:", "examples": [{"spanish": "yo comí/viví", "english": "I ate/lived"}, {"spanish": "tú comiste/viviste", "english": "you ate/lived"}, {"spanish": "él comió/vivió", "english": "he ate/lived"}, {"spanish": "nosotros comimos/vivimos", "english": "we ate/lived"}, {"spanish": "ellos comieron/vivieron", "english": "they ate/lived"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Ella ___ una pizza ayer. (comer)", "options": ["come", "comí", "comió", "comieron"], "correctAnswer": 2, "explanation": "Preterite él/ella form for -ER verbs: comió"},
+      {"type": "lesson", "heading": "Past Time Expressions", "content": "These words signal preterite:", "examples": [{"spanish": "ayer", "english": "yesterday"}, {"spanish": "anoche", "english": "last night"}, {"spanish": "la semana pasada", "english": "last week"}, {"spanish": "el mes pasado", "english": "last month"}, {"spanish": "el año pasado", "english": "last year"}, {"spanish": "hace dos días", "english": "two days ago"}]},
+      {"type": "exercise", "exerciseType": "translation", "instruction": "Translate: 'Yesterday I worked'", "correctAnswers": ["ayer trabajé", "ayer yo trabajé"], "explanation": "Ayer + preterite: trabajé"}
+    ]
+  },
+  "vocabulary": {"title": "Past Time Words", "estimatedMinutes": 10, "screens": [{"type": "vocab", "category": "Time Expressions", "words": [{"spanish": "ayer", "english": "yesterday", "example": "Ayer trabajé mucho."}, {"spanish": "anoche", "english": "last night", "example": "Anoche cené tarde."}, {"spanish": "anteayer", "english": "day before yesterday", "example": "Anteayer fui al cine."}, {"spanish": "la semana pasada", "english": "last week", "example": "La semana pasada viajé."}, {"spanish": "hace dos días", "english": "two days ago", "example": "Hace dos días llegué."}]}]},
+  "listening": {"title": "Listening Practice", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen:", "transcript": "Ayer trabajé ocho horas", "options": ["Ayer trabajé ocho horas", "Ayer trabajo ocho horas", "Ayer trabajó ocho horas", "Hoy trabajé ocho horas"], "correctAnswer": 0}]},
+  "reading": {"title": "Reading: Mi día ayer", "estimatedMinutes": 10, "screens": [{"type": "reading", "title": "Un día ocupado", "passage": "Ayer fue un día muy ocupado. Me desperté temprano y desayuné a las siete. Después, caminé al trabajo porque hacía buen tiempo. Trabajé ocho horas y almorcé con mis compañeros. Por la tarde, compré comida en el supermercado y llegué a casa a las seis. Cociné la cena, miré la televisión un rato, y me acosté a las once.", "translation": "Yesterday was a very busy day. I woke up early and had breakfast at seven. Then, I walked to work because the weather was nice. I worked eight hours and had lunch with my coworkers. In the afternoon, I bought food at the supermarket and arrived home at six. I cooked dinner, watched television for a while, and went to bed at eleven.", "wordCount": 78}]}
+}

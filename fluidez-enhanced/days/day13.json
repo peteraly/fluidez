@@ -1,0 +1,355 @@
+{
+  "day": 13,
+  "title": "Direct Object Pronouns",
+  "subtitle": "Lo, la, los, las",
+  "objectives": [
+    "Understand direct objects",
+    "Use lo, la, los, las correctly",
+    "Place pronouns in correct position",
+    "Avoid repetition in speech"
+  ],
+  "grammar": {
+    "title": "Direct Object Pronouns",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "What is a Direct Object?",
+        "content": "The direct object receives the action of the verb directly. 'I eat THE APPLE' → 'the apple' is the direct object. In Spanish, we can replace it with a pronoun to avoid repetition.",
+        "tip": "Ask 'What?' after the verb to find the direct object: I eat WHAT? → the apple."
+      },
+      {
+        "type": "lesson",
+        "heading": "Direct Object Pronouns",
+        "content": "These replace nouns that receive the action:",
+        "examples": [
+          {
+            "spanish": "me",
+            "english": "me"
+          },
+          {
+            "spanish": "te",
+            "english": "you (informal)"
+          },
+          {
+            "spanish": "lo",
+            "english": "him/it (masculine)/you (formal m)"
+          },
+          {
+            "spanish": "la",
+            "english": "her/it (feminine)/you (formal f)"
+          },
+          {
+            "spanish": "nos",
+            "english": "us"
+          },
+          {
+            "spanish": "los",
+            "english": "them (m)/you all (m)"
+          },
+          {
+            "spanish": "las",
+            "english": "them (f)/you all (f)"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Using LO, LA, LOS, LAS",
+        "content": "These are the most common. Match gender and number:",
+        "examples": [
+          {
+            "spanish": "Veo el libro → Lo veo",
+            "english": "I see the book → I see it"
+          },
+          {
+            "spanish": "Compro la manzana → La compro",
+            "english": "I buy the apple → I buy it"
+          },
+          {
+            "spanish": "Leo los libros → Los leo",
+            "english": "I read the books → I read them"
+          },
+          {
+            "spanish": "Quiero las flores → Las quiero",
+            "english": "I want the flowers → I want them"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Compro el coche. → ___ compro.",
+        "options": [
+          "Lo",
+          "La",
+          "Los",
+          "Las"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'El coche' is masculine singular, so use 'lo'."
+      },
+      {
+        "type": "lesson",
+        "heading": "Pronoun Placement",
+        "content": "The pronoun goes BEFORE the conjugated verb:",
+        "examples": [
+          {
+            "spanish": "Lo como",
+            "english": "I eat it"
+          },
+          {
+            "spanish": "La veo",
+            "english": "I see her/it"
+          },
+          {
+            "spanish": "Los tengo",
+            "english": "I have them"
+          },
+          {
+            "spanish": "No la quiero",
+            "english": "I don't want it"
+          }
+        ],
+        "tip": "With infinitives, you can attach it to the end: 'Quiero verlo' OR 'Lo quiero ver'"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Tengo las llaves. → ___ tengo.",
+        "hint": "Feminine plural",
+        "correctAnswers": [
+          "Las"
+        ],
+        "explanation": "'Las llaves' is feminine plural → las"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Conoces a María? → Sí, ___ conozco.",
+        "options": [
+          "lo",
+          "la",
+          "los",
+          "las"
+        ],
+        "correctAnswer": 1,
+        "explanation": "María is feminine singular → la"
+      },
+      {
+        "type": "lesson",
+        "heading": "With Infinitives",
+        "content": "Two options - both correct:",
+        "examples": [
+          {
+            "spanish": "Quiero comerlo = Lo quiero comer",
+            "english": "I want to eat it"
+          },
+          {
+            "spanish": "Voy a verla = La voy a ver",
+            "english": "I'm going to see her"
+          },
+          {
+            "spanish": "Necesito comprarlos = Los necesito comprar",
+            "english": "I need to buy them"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "translation",
+        "instruction": "Translate: 'I want to buy it (el carro)'",
+        "correctAnswers": [
+          "quiero comprarlo",
+          "lo quiero comprar"
+        ],
+        "explanation": "Both placements are correct!"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Common Verbs with Objects",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Transitive Verbs",
+        "words": [
+          {
+            "spanish": "ver",
+            "english": "to see",
+            "example": "Veo la película. → La veo."
+          },
+          {
+            "spanish": "comprar",
+            "english": "to buy",
+            "example": "Compro el pan. → Lo compro."
+          },
+          {
+            "spanish": "leer",
+            "english": "to read",
+            "example": "Leo los libros. → Los leo."
+          },
+          {
+            "spanish": "escribir",
+            "english": "to write",
+            "example": "Escribo la carta. → La escribo."
+          },
+          {
+            "spanish": "conocer",
+            "english": "to know (people)",
+            "example": "Conozco a Juan. → Lo conozco."
+          },
+          {
+            "spanish": "llamar",
+            "english": "to call",
+            "example": "Llamo a María. → La llamo."
+          },
+          {
+            "spanish": "buscar",
+            "english": "to look for",
+            "example": "Busco las llaves. → Las busco."
+          },
+          {
+            "spanish": "encontrar",
+            "english": "to find",
+            "example": "Encuentro el dinero. → Lo encuentro."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match pronoun to noun:",
+        "pairs": [
+          {
+            "left": "el libro",
+            "right": "lo"
+          },
+          {
+            "left": "la casa",
+            "right": "la"
+          },
+          {
+            "left": "los amigos",
+            "right": "los"
+          },
+          {
+            "left": "las mesas",
+            "right": "las"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Lo compro mañana",
+        "options": [
+          "Lo compro mañana",
+          "La compro mañana",
+          "Los compro mañana",
+          "Las compro mañana"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "¿Las tienes?",
+        "options": [
+          "¿Lo tienes?",
+          "¿La tienes?",
+          "¿Los tienes?",
+          "¿Las tienes?"
+        ],
+        "correctAnswer": 3
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "En el supermercado",
+        "passage": "Voy al supermercado porque necesito comprar algunas cosas. Primero, busco el pan. Lo encuentro en la primera sección. Luego, necesito leche. La busco en los refrigeradores. También quiero frutas. Las veo cerca de la entrada. Hay manzanas rojas muy bonitas. Las compro. Finalmente, busco el queso. No lo encuentro fácilmente, pero un empleado me ayuda. Lo pago todo y vuelvo a casa.",
+        "translation": "I go to the supermarket because I need to buy some things. First, I look for the bread. I find it in the first section. Then, I need milk. I look for it in the refrigerators. I also want fruits. I see them near the entrance. There are very pretty red apples. I buy them. Finally, I look for the cheese. I don't find it easily, but an employee helps me. I pay for everything and return home.",
+        "wordCount": 85
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "'Lo encuentro' refers to:",
+        "options": [
+          "la leche",
+          "el pan",
+          "las frutas",
+          "el queso"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Lo' (masculine) refers to 'el pan'."
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 13. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "largo",
+        "means": "long",
+        "notMean": "large (= grande)"
+      },
+      {
+        "spanish": "recordar",
+        "means": "to remember",
+        "notMean": "to record (= grabar)"
+      },
+      {
+        "spanish": "ropa",
+        "means": "clothes",
+        "notMean": "rope (= cuerda)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

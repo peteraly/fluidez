@@ -1,0 +1,179 @@
+{
+  "day": 24,
+  "title": "Subjunctive: Conjunctions",
+  "subtitle": "Purpose, time, and condition clauses",
+  "level": "B2",
+  "objectives": [
+    "Use subjunctive with purpose conjunctions",
+    "Master time clauses with subjunctive",
+    "Understand condition and concession clauses",
+    "Know when conjunctions DON'T need subjunctive"
+  ],
+  "grammar": {
+    "title": "Conjunctions & Subjunctive",
+    "estimatedMinutes": 20,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Purpose Conjunctions (Always Subjunctive)",
+        "content": "These ALWAYS trigger subjunctive:",
+        "examples": [
+          {"spanish": "para que", "english": "so that, in order that"},
+          {"spanish": "a fin de que", "english": "so that"},
+          {"spanish": "con tal de que", "english": "provided that"},
+          {"spanish": "a menos que", "english": "unless"},
+          {"spanish": "sin que", "english": "without"},
+          {"spanish": "en caso de que", "english": "in case"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Purpose Clause Examples",
+        "content": "Purpose = non-fact = subjunctive:",
+        "examples": [
+          {"spanish": "Te lo digo para que sepas.", "english": "I'm telling you so you know."},
+          {"spanish": "Voy a llamar a menos que vengas.", "english": "I'll call unless you come."},
+          {"spanish": "Salió sin que lo viéramos.", "english": "He left without us seeing him."},
+          {"spanish": "Te ayudo con tal de que estudies.", "english": "I'll help you provided you study."}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Te lo explico para que lo ___. (entender)",
+        "correctAnswers": ["entiendas"],
+        "explanation": "Para que always triggers subjunctive"
+      },
+      {
+        "type": "lesson",
+        "heading": "Time Conjunctions (Sometimes Subjunctive)",
+        "content": "Future/hypothetical = subjunctive. Past/habitual = indicative.",
+        "examples": [
+          {"spanish": "cuando", "english": "when"},
+          {"spanish": "hasta que", "english": "until"},
+          {"spanish": "después de que", "english": "after"},
+          {"spanish": "antes de que", "english": "before (ALWAYS subjunctive)"},
+          {"spanish": "tan pronto como", "english": "as soon as"},
+          {"spanish": "en cuanto", "english": "as soon as"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Time Clause Examples",
+        "content": "Compare future (subjunctive) vs past (indicative):",
+        "examples": [
+          {"spanish": "Cuando llegue, te llamo. (future)", "english": "When I arrive, I'll call you."},
+          {"spanish": "Cuando llegué, te llamé. (past)", "english": "When I arrived, I called you."},
+          {"spanish": "Esperaré hasta que vengas. (future)", "english": "I'll wait until you come."},
+          {"spanish": "Esperé hasta que viniste. (past)", "english": "I waited until you came."}
+        ],
+        "tip": "ANTES DE QUE is special - it ALWAYS uses subjunctive because 'before' is always uncertain."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Te llamaré cuando ___ a casa. (llegar)",
+        "options": ["llego", "llegue", "llegué", "llegaré"],
+        "correctAnswer": 1,
+        "explanation": "Future time clause = subjunctive: llegue"
+      },
+      {
+        "type": "lesson",
+        "heading": "Antes de que (Always Subjunctive)",
+        "content": "Before = action hasn't happened yet = always subjunctive:",
+        "examples": [
+          {"spanish": "Ven antes de que llueva.", "english": "Come before it rains."},
+          {"spanish": "Terminé antes de que llegaras.", "english": "I finished before you arrived."},
+          {"spanish": "Antes de que digas algo...", "english": "Before you say anything..."}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Concession Clauses",
+        "content": "'Even though' expressions:",
+        "examples": [
+          {"spanish": "aunque + indicative = fact", "english": "although (it IS true)"},
+          {"spanish": "aunque + subjunctive = hypothetical", "english": "even if (it might be)"},
+          {"spanish": "Aunque está lloviendo, voy.", "english": "Although it's raining, I'm going."},
+          {"spanish": "Aunque llueva, iré.", "english": "Even if it rains, I'll go."}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Aunque ___ mucho dinero, no lo compraría. (tener, hypothetical)",
+        "options": ["tengo", "tenga", "tuve", "tendré"],
+        "correctAnswer": 1,
+        "explanation": "Hypothetical 'even if' = subjunctive"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Conjunction Vocabulary",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Always Subjunctive",
+        "words": [
+          {"spanish": "para que", "english": "so that", "example": "Te ayudo para que aprendas."},
+          {"spanish": "a menos que", "english": "unless", "example": "Voy a menos que llueva."},
+          {"spanish": "sin que", "english": "without", "example": "Salió sin que lo viéramos."},
+          {"spanish": "antes de que", "english": "before", "example": "Ven antes de que sea tarde."},
+          {"spanish": "en caso de que", "english": "in case", "example": "Llámame en caso de que necesites algo."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Sometimes Subjunctive",
+        "words": [
+          {"spanish": "cuando", "english": "when", "example": "Cuando llegue, te aviso."},
+          {"spanish": "hasta que", "english": "until", "example": "Espera hasta que termine."},
+          {"spanish": "después de que", "english": "after", "example": "Después de que comas, hablamos."},
+          {"spanish": "aunque", "english": "although/even if", "example": "Aunque llueva, voy."},
+          {"spanish": "tan pronto como", "english": "as soon as", "example": "Tan pronto como pueda, llamo."}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Which conjunction ALWAYS uses subjunctive?",
+        "options": ["cuando", "aunque", "antes de que", "después de que"],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Plans",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 What are the conditions?",
+        "transcript": "Te presto mi coche con tal de que lo cuides bien. Pero devuélvelo antes de que llegue mi esposa. A menos que quieras problemas.",
+        "options": ["Take care of car, return before wife arrives", "Pay for gas, return tomorrow", "Clean the car, pay for repairs", "Buy insurance, return next week"],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Instructions",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Instrucciones para el viaje",
+        "passage": "Antes de que salgas, asegúrate de tener tu pasaporte. Cuando llegues al aeropuerto, ve directamente a la puerta de embarque. Espera allí hasta que llamen a tu vuelo.\n\nEn caso de que pierdas tu equipaje, ve a la oficina de reclamaciones. A menos que tengas problemas, no necesitarás ayuda.\n\nTe llamaré tan pronto como aterrice el avión, para que sepas que llegué bien.",
+        "translation": "Before you leave, make sure you have your passport. When you arrive at the airport, go directly to the boarding gate. Wait there until they call your flight.\n\nIn case you lose your luggage, go to the claims office. Unless you have problems, you won't need help.\n\nI'll call you as soon as the plane lands, so you know I arrived safely.",
+        "wordCount": 85
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuándo va a llamar?",
+        "options": ["Antes de salir", "Cuando llegue al aeropuerto", "Tan pronto como aterrice", "Después de recoger el equipaje"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}
