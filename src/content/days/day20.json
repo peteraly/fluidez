@@ -116,5 +116,128 @@
       }
     ]
   },
-  "level": "B1"
+  "level": "B1",
+  "processabilityTheory": {
+    "stage": 5,
+    "stageName": "Subordinate Clause",
+    "description": "Stage 5: Subordinate Clause"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "tense",
+    "colorCodes": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 The imperfect is used for past descriptions and habits"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: -AR: -aba, -abas, -aba, -ábamos, -abais, -aban"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: Preterite = completed actions, Imperfect = ongoing/habitual"
+      }
+    ],
+    "inputFlooding": [
+      "Cuando era niño...",
+      "Vivía en un pueblo pequeño",
+      "Jugaba con mis amigos",
+      "Siempre comíamos juntos",
+      "Mi abuela cocinaba muy bien"
+    ],
+    "morphemeDisplay": {
+      "verb": "hablar (imperfect)",
+      "stem": "habl-",
+      "endings": [
+        "aba",
+        "abas",
+        "aba",
+        "ábamos",
+        "abais",
+        "aban"
+      ]
+    }
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_16_20",
+    "config": {
+      "maxWords": 10,
+      "speed": 1.0,
+      "primaryFocus": "stress"
+    },
+    "phrases": [
+      {
+        "spanish": "Cuando era niño, vivía en México",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Todos los veranos visitaba a mis abuelos",
+        "focus": "stress"
+      },
+      {
+        "spanish": "Mi madre siempre cocinaba arroz con pollo",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Dónde vivías cuando eras pequeño?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Antes había menos tráfico",
+        "focus": "stress"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the stress of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.307385",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
 }

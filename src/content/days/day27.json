@@ -303,5 +303,116 @@
         "description": "Chat with natives"
       }
     ]
+  },
+  "processabilityTheory": {
+    "stage": 6,
+    "stageName": "Complex Structures",
+    "description": "Stage 6: Complex Structures"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "tense",
+    "colorCodes": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 Subjunctive is used when wanting someone ELSE to do something"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: Quiero que + subjunctive (I want that you...)"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'Quiero comer' (I want to eat) vs 'Quiero que comas' (I want you to eat)"
+      }
+    ],
+    "inputFlooding": [
+      "Quiero que vengas",
+      "Espero que te mejores",
+      "Necesito que me ayudes",
+      "Prefiero que hablemos mañana",
+      "Te pido que tengas paciencia"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_26_30",
+    "config": {
+      "maxWords": 15,
+      "speed": 1.1,
+      "primaryFocus": "naturalness"
+    },
+    "phrases": [
+      {
+        "spanish": "Quiero que vengas a mi fiesta",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Espero que puedas venir",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿Qué quieres que traiga?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Prefiero que nos veamos el sábado",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Necesito que me confirmes la hora",
+        "focus": "stress"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the naturalness of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.309650",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
   }
 }

@@ -351,5 +351,128 @@
     ],
     "tip": "Spanish almost always uses INFINITIVE where English uses -ing after prepositions!"
   },
-  "level": "B1"
+  "level": "B1",
+  "processabilityTheory": {
+    "stage": 5,
+    "stageName": "Subordinate Clause",
+    "description": "Stage 5: Subordinate Clause"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "tense",
+    "colorCodes": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 Look at these past tense endings for -AR verbs"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: -é, -aste, -ó, -amos, -asteis, -aron"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: Present 'hablo' vs Past 'hablé' - accent marks matter!"
+      }
+    ],
+    "inputFlooding": [
+      "Ayer hablé con María",
+      "¿Hablaste con tu jefe?",
+      "Ella habló muy bien",
+      "Hablamos por teléfono",
+      "Ellos hablaron en español"
+    ],
+    "morphemeDisplay": {
+      "verb": "hablar (preterite)",
+      "stem": "habl-",
+      "endings": [
+        "é",
+        "aste",
+        "ó",
+        "amos",
+        "asteis",
+        "aron"
+      ]
+    }
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_16_20",
+    "config": {
+      "maxWords": 10,
+      "speed": 1.0,
+      "primaryFocus": "stress"
+    },
+    "phrases": [
+      {
+        "spanish": "Ayer comí en un restaurante nuevo",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿Qué hiciste el fin de semana?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Visité a mis padres",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "La semana pasada trabajé mucho",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿Ya terminaste el proyecto?",
+        "focus": "intonation"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the stress of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.306792",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
 }

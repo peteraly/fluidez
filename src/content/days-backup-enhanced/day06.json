@@ -1,0 +1,227 @@
+{
+  "day": 6,
+  "title": "Questions & Negation",
+  "subtitle": "Asking questions & saying no",
+  "objectives": [
+    "Form questions with question words",
+    "Use all interrogative words",
+    "Make negative sentences",
+    "Use double negatives correctly"
+  ],
+  "grammar": {
+    "title": "Questions & Negation",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Forming Questions",
+        "content": "There are three ways to form questions in Spanish: 1) Raise your intonation at the end, 2) Invert subject and verb, 3) Use question words."
+      },
+      {
+        "type": "lesson",
+        "heading": "Question Words",
+        "content": "Essential interrogatives:\n                              \n   ✏️ Exercise: How do you ask 'Where is the book?'\n\n   ✏️ Exercise: ¿___ te llamas? (What is your name?)",
+        "examples": [
+          {
+            "spanish": "¿Qué?",
+            "english": "What?"
+          },
+          {
+            "spanish": "¿Quién?",
+            "english": "Who?"
+          },
+          {
+            "spanish": "¿Cuándo?",
+            "english": "When?"
+          },
+          {
+            "spanish": "¿Dónde?",
+            "english": "Where?"
+          },
+          {
+            "spanish": "¿Por qué?",
+            "english": "Why?"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Negation",
+        "content": "To make a sentence negative, put 'no' before the verb:\n            → Tengo hambre → No tengo hambre = I'm hungry → I'm not hungry",
+        "examples": [
+          {
+            "spanish": "Hablo español → No hablo español",
+            "english": "I speak Spanish → I don't speak Spanish"
+          },
+          {
+            "spanish": "Tengo hambre → No tengo hambre",
+            "english": "I'm hungry → I'm not hungry"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Double Negatives",
+        "content": "Unlike English, Spanish REQUIRES double negatives:\n                  → No voy nunca = I never go",
+        "examples": [
+          {
+            "spanish": "No tengo nada",
+            "english": "I don't have anything"
+          },
+          {
+            "spanish": "No hay nadie",
+            "english": "There isn't anyone"
+          },
+          {
+            "spanish": "No voy nunca",
+            "english": "I never go"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Question & Negative Words",
+    "screens": [
+      {
+        "category": "Question Words",
+        "words": [
+          {
+            "spanish": "qué",
+            "english": "what"
+          },
+          {
+            "spanish": "quién",
+            "english": "who"
+          },
+          {
+            "spanish": "cuándo",
+            "english": "when"
+          },
+          {
+            "spanish": "dónde",
+            "english": "where"
+          },
+          {
+            "spanish": "por qué",
+            "english": "why"
+          },
+          {
+            "spanish": "cómo",
+            "english": "how"
+          },
+          {
+            "spanish": "cuánto",
+            "english": "how much"
+          },
+          {
+            "spanish": "cuál",
+            "english": "which"
+          }
+        ]
+      },
+      {
+        "category": "Negative Words",
+        "words": [
+          {
+            "spanish": "no",
+            "english": "no/not"
+          },
+          {
+            "spanish": "nada",
+            "english": "nothing"
+          },
+          {
+            "spanish": "nadie",
+            "english": "nobody"
+          },
+          {
+            "spanish": "nunca",
+            "english": "never"
+          },
+          {
+            "spanish": "ninguno/a",
+            "english": "none"
+          },
+          {
+            "spanish": "tampoco",
+            "english": "neither"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "¿Qué? ¿Quién? Hablo español → No hablo español"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Questions & Negation",
+        "passage": "Esta es una lectura de práctica para el día 6. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 6. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "librería",
+        "means": "bookstore",
+        "notMean": "library (= biblioteca)"
+      },
+      {
+        "spanish": "carpeta",
+        "means": "folder",
+        "notMean": "carpet (= alfombra)"
+      },
+      {
+        "spanish": "soportar",
+        "means": "to tolerate",
+        "notMean": "to support (= apoyar)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A1"
+}

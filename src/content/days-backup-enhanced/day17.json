@@ -1,0 +1,228 @@
+{
+  "day": 17,
+  "title": "Conditional Mood",
+  "subtitle": "Would + verb (-ría, -rías, -ría)",
+  "objectives": [
+    "Conjugate verbs in conditional",
+    "Express hypothetical situations",
+    "Make polite requests",
+    "Talk about what you would do"
+  ],
+  "grammar": {
+    "title": "Conditional Mood",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "The Conditional",
+        "content": "The conditional expresses what WOULD happen. Like future, add endings to the infinitive:\n                              → -ían = ellos/Uds.",
+        "examples": [
+          {
+            "spanish": "-ía",
+            "english": "yo"
+          },
+          {
+            "spanish": "-ías",
+            "english": "tú"
+          },
+          {
+            "spanish": "-ía",
+            "english": "él/ella/Ud."
+          },
+          {
+            "spanish": "-íamos",
+            "english": "nosotros"
+          },
+          {
+            "spanish": "-ían",
+            "english": "ellos/Uds."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Examples: HABLAR",
+        "content": "Infinitive + conditional endings:\n                              \n   ✏️ Exercise: Yo ___ más si tuviera tiempo. (estudiar)",
+        "examples": [
+          {
+            "spanish": "hablaría",
+            "english": "I would speak"
+          },
+          {
+            "spanish": "hablarías",
+            "english": "you would speak"
+          },
+          {
+            "spanish": "hablaría",
+            "english": "he/she would speak"
+          },
+          {
+            "spanish": "hablaríamos",
+            "english": "we would speak"
+          },
+          {
+            "spanish": "hablarían",
+            "english": "they would speak"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Conditionals",
+        "content": "Same irregular stems as future:\n                              \n   ✏️ Exercise: ¿Qué ___ tú en mi situación? (hacer)",
+        "examples": [
+          {
+            "spanish": "tener → tendría",
+            "english": "would have"
+          },
+          {
+            "spanish": "poder → podría",
+            "english": "would be able"
+          },
+          {
+            "spanish": "hacer → haría",
+            "english": "would do/make"
+          },
+          {
+            "spanish": "decir → diría",
+            "english": "would say"
+          },
+          {
+            "spanish": "querer → querría",
+            "english": "would want"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Uses of Conditional",
+        "content": "Common uses:\n                        \n   ✏️ Exercise: Translate: 'I would like to travel to Spain'\n\n   ✏️ Exercise: Polite: 'Could you repeat, please?'",
+        "examples": [
+          {
+            "spanish": "Me gustaría un café",
+            "english": "I would like a coffee (polite)"
+          },
+          {
+            "spanish": "¿Podrías ayudarme?",
+            "english": "Could you help me? (polite)"
+          },
+          {
+            "spanish": "Yo compraría esa casa",
+            "english": "I would buy that house (hypothetical)"
+          },
+          {
+            "spanish": "Dijo que vendría",
+            "english": "He said he would come (reported speech)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Hypothetical Expressions",
+    "screens": [
+      {
+        "category": "Conditional Phrases",
+        "words": [
+          {
+            "spanish": "me gustaría",
+            "english": "I would like"
+          },
+          {
+            "spanish": "podría",
+            "english": "could/would be able"
+          },
+          {
+            "spanish": "debería",
+            "english": "should"
+          },
+          {
+            "spanish": "sería",
+            "english": "would be"
+          },
+          {
+            "spanish": "tendría",
+            "english": "would have"
+          },
+          {
+            "spanish": "habría",
+            "english": "there would be"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "-ía -ías hablaría"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Conditional Mood",
+        "passage": "Esta es una lectura de práctica para el día 17. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 17. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "actualmente",
+        "means": "currently",
+        "notMean": "actually (= en realidad)"
+      },
+      {
+        "spanish": "realizar",
+        "means": "to accomplish",
+        "notMean": "to realize (= darse cuenta)"
+      },
+      {
+        "spanish": "sensible",
+        "means": "sensitive",
+        "notMean": "sensible (= sensato)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "B1"
+}

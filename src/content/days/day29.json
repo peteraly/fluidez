@@ -600,5 +600,115 @@
       "english": "in fact, actually",
       "example": "De hecho, sí lo vi."
     }
-  ]
+  ],
+  "processabilityTheory": {
+    "stage": 6,
+    "stageName": "Complex Structures",
+    "description": "Stage 6: Complex Structures"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "tense",
+    "colorCodes": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 Stories use BOTH preterite and imperfect together"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: Imperfect = background/description, Preterite = action/event"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'Era de noche' (background) + 'cuando llegó' (event)"
+      }
+    ],
+    "inputFlooding": [
+      "Era una noche oscura cuando llegó",
+      "Estaba lloviendo y de repente vi",
+      "Mientras caminaba, encontré",
+      "Hacía frío y decidí entrar"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_26_30",
+    "config": {
+      "maxWords": 15,
+      "speed": 1.1,
+      "primaryFocus": "naturalness"
+    },
+    "phrases": [
+      {
+        "spanish": "Era una noche oscura y tormentosa",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "De repente, escuché un ruido extraño",
+        "focus": "stress"
+      },
+      {
+        "spanish": "Mientras caminaba, vi algo en el suelo",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Primero fui a la tienda, después al banco",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿Y qué pasó después?",
+        "focus": "intonation"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the naturalness of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.310284",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
 }

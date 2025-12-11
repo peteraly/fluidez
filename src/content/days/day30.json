@@ -345,5 +345,114 @@
         "description": "Chat with natives"
       }
     ]
+  },
+  "processabilityTheory": {
+    "stage": 6,
+    "stageName": "Complex Structures",
+    "description": "Stage 6: Complex Structures"
+  },
+  "noticingEnhancements": {
+    "colorScheme": null,
+    "colorCodes": null,
+    "callouts": [
+      {
+        "type": "memory",
+        "text": "🧠 Remember: You've learned 6 tenses and many structures!"
+      },
+      {
+        "type": "rule",
+        "text": "📐 Key patterns: verb conjugations, gender agreement, gustar-type verbs, ser vs estar"
+      }
+    ],
+    "inputFlooding": [
+      "Mucho gusto en conocerte",
+      "Ha sido un placer",
+      "Espero que nos veamos pronto",
+      "Que te vaya bien",
+      "Cuídate mucho",
+      "Hasta la próxima"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_26_30",
+    "config": {
+      "maxWords": 15,
+      "speed": 1.1,
+      "primaryFocus": "naturalness"
+    },
+    "phrases": [
+      {
+        "spanish": "Ha sido un placer conocerte",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Espero que podamos vernos pronto",
+        "focus": "stress"
+      },
+      {
+        "spanish": "Me ha encantado hablar contigo",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Tienes planes para el fin de semana?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Que tengas un buen día",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¡Mucha suerte con tu español!",
+        "focus": "stress"
+      },
+      {
+        "spanish": "Sigue practicando, lo estás haciendo muy bien",
+        "focus": "rhythm"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the naturalness of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.310712",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
   }
 }

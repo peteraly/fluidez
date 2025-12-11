@@ -286,5 +286,78 @@
       }
     ]
   },
-  "level": "A1"
+  "level": "A1",
+  "processabilityTheory": {
+    "stage": 2,
+    "stageName": "Lexical Morphology",
+    "description": "Stage 2: Lexical Morphology"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "gender",
+    "colorCodes": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "rule",
+        "text": "📐 The pattern: mi/tu/su don't change, but nuestro/vuestro do!"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'mi casa' stays the same, but 'nuestro coche' / 'nuestra casa'"
+      }
+    ],
+    "inputFlooding": [
+      "mi casa",
+      "tu habitación",
+      "su cocina",
+      "nuestro baño",
+      "nuestra sala",
+      "sus dormitorios"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": false,
+    "unlockDay": 7,
+    "reason": "Shadowing mode unlocks on Day 7 after basic vocabulary is established"
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.303265",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
 }

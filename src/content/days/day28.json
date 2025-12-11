@@ -326,5 +326,116 @@
       }
     ],
     "modern_replacement": "In modern Spanish, use present subjunctive or present indicative instead."
+  },
+  "processabilityTheory": {
+    "stage": 6,
+    "stageName": "Complex Structures",
+    "description": "Stage 6: Complex Structures"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "tense",
+    "colorCodes": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 'Si' clauses follow specific patterns"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: Si + present, present/future (real possibility)"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'Si llueve, me quedo en casa' - both verbs present for real conditions"
+      }
+    ],
+    "inputFlooding": [
+      "Si tengo tiempo, voy",
+      "Si llueve, nos quedamos",
+      "Si quieres, te ayudo",
+      "Si vienes, cenamos juntos",
+      "Si no funciona, lo devuelvo"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_26_30",
+    "config": {
+      "maxWords": 15,
+      "speed": 1.1,
+      "primaryFocus": "naturalness"
+    },
+    "phrases": [
+      {
+        "spanish": "Si tengo tiempo, te llamo esta noche",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Qué harías si ganaras la lotería?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Si pudiera, viajaría por todo el mundo",
+        "focus": "stress"
+      },
+      {
+        "spanish": "Si no llueve, vamos a la playa",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Y si mejor vamos mañana?",
+        "focus": "intonation"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the naturalness of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.309962",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
   }
 }

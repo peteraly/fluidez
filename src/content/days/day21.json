@@ -208,5 +208,116 @@
       ]
     }
   },
-  "level": "B1"
+  "level": "B1",
+  "processabilityTheory": {
+    "stage": 5,
+    "stageName": "Subordinate Clause",
+    "description": "Stage 5: Subordinate Clause"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "tense",
+    "colorCodes": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 'Ir a + infinitive' is the easy way to express future"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: Voy a viajar = I'm going to travel"
+      },
+      {
+        "type": "memory",
+        "text": "🧠 Remember: This is just like English 'going to'!"
+      }
+    ],
+    "inputFlooding": [
+      "Voy a viajar a España",
+      "Vas a visitar museos",
+      "Va a quedarse una semana",
+      "Vamos a reservar un hotel",
+      "Van a alquilar un coche"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_21_25",
+    "config": {
+      "maxWords": 12,
+      "speed": 1.0,
+      "primaryFocus": "fluency"
+    },
+    "phrases": [
+      {
+        "spanish": "El próximo mes voy a viajar a España",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Tienes algún plan para las vacaciones?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Quiero visitar Barcelona y Madrid",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿Cuánto cuesta un vuelo directo?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Necesito renovar mi pasaporte",
+        "focus": "rhythm"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the fluency of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.307575",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
 }

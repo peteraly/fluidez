@@ -188,5 +188,131 @@
       }
     ]
   },
-  "level": "A2"
+  "level": "A2",
+  "processabilityTheory": {
+    "stage": 3,
+    "stageName": "Phrasal Agreement",
+    "description": "Stage 3: Phrasal Agreement"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "verb_endings",
+    "colorCodes": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 Compare -AR and -ER endings. What's different?"
+      },
+      {
+        "type": "post_pattern",
+        "text": "💡 Did you notice? -ER uses 'e' where -AR uses 'a': comes vs. hablas"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: com|o, com|es, com|e, com|emos, com|éis, com|en"
+      }
+    ],
+    "inputFlooding": [
+      "yo como",
+      "tú comes",
+      "él come",
+      "nosotros comemos",
+      "ellos comen",
+      "yo bebo",
+      "tú bebes",
+      "ella bebe"
+    ],
+    "morphemeDisplay": {
+      "verb": "comer",
+      "stem": "com-",
+      "endings": [
+        "o",
+        "es",
+        "e",
+        "emos",
+        "éis",
+        "en"
+      ]
+    }
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_7_10",
+    "config": {
+      "maxWords": 5,
+      "speed": 0.8,
+      "primaryFocus": "rhythm"
+    },
+    "phrases": [
+      {
+        "spanish": "¿Qué hora es?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Son las tres y media",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Tengo una cita a las cinco",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿A qué hora abre?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Llego en quince minutos",
+        "focus": "rhythm"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the rhythm of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.304346",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
 }

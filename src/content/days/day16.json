@@ -221,5 +221,117 @@
       }
     ]
   },
-  "level": "B1"
+  "level": "B1",
+  "processabilityTheory": {
+    "stage": 5,
+    "stageName": "Subordinate Clause",
+    "description": "Stage 5: Subordinate Clause"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "verb_endings",
+    "colorCodes": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 Where do lo/la/los/las go in the sentence?"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: Object pronouns go BEFORE the conjugated verb"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'Lo veo' (I see it/him) - pronoun before verb!"
+      }
+    ],
+    "inputFlooding": [
+      "Lo veo",
+      "La llamo",
+      "Los conozco",
+      "Las necesito",
+      "Lo quiero comprar",
+      "Quiero comprarlo"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_16_20",
+    "config": {
+      "maxWords": 10,
+      "speed": 1.0,
+      "primaryFocus": "stress"
+    },
+    "phrases": [
+      {
+        "spanish": "¿En qué trabaja usted?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Soy ingeniero de software",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Trabajo desde casa los viernes",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿A qué hora termina su jornada?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Tengo una reunión a las tres",
+        "focus": "rhythm"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the stress of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.306228",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
 }

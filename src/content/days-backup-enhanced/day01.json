@@ -1,0 +1,259 @@
+{
+  "day": 1,
+  "title": "Spanish Sounds & Alphabet",
+  "subtitle": "Pronunciation foundations",
+  "objectives": [
+    "Master the 5 Spanish vowel sounds",
+    "Learn key consonant differences",
+    "Understand stress rules",
+    "Greet people in Spanish"
+  ],
+  "grammar": {
+    "title": "Spanish Sounds",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Welcome to Spanish!",
+        "content": "¡Bienvenidos! Today you'll master the sounds of Spanish. The great news? Spanish is phonetic — once you learn the sounds, you can pronounce any word correctly just by reading it."
+      },
+      {
+        "type": "lesson",
+        "heading": "The 5 Vowels",
+        "content": "Each vowel has ONE sound that never changes:\n                              \n   ✏️ Exercise: Which vowel makes the 'ee' sound?",
+        "examples": [
+          {
+            "spanish": "A =",
+            "english": ""
+          },
+          {
+            "spanish": "E =",
+            "english": ""
+          },
+          {
+            "spanish": "I =",
+            "english": ""
+          },
+          {
+            "spanish": "O =",
+            "english": ""
+          },
+          {
+            "spanish": "U =",
+            "english": ""
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Consonants That Differ",
+        "content": "Most consonants are like English, but these are different:\n                              \n   ✏️ Exercise: How is 'H' pronounced in Spanish?\n\n   ✏️ Exercise: The letter ___ sounds like 'ny' in canyon.",
+        "examples": [
+          {
+            "spanish": "H =",
+            "english": ""
+          },
+          {
+            "spanish": "J =",
+            "english": ""
+          },
+          {
+            "spanish": "LL =",
+            "english": ""
+          },
+          {
+            "spanish": "Ñ =",
+            "english": ""
+          },
+          {
+            "spanish": "RR =",
+            "english": ""
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Stress Rules",
+        "content": "Spanish has clear rules for which syllable gets stressed:\n                  → Written accent marks = override the rules: te-LÉ-fo-no, ca-FÉ",
+        "examples": [
+          {
+            "spanish": "Words ending in vowel, N, or S",
+            "english": "stress second-to-last syllable: ha-BLO, ca-SA"
+          },
+          {
+            "spanish": "Words ending in other consonants",
+            "english": "stress last syllable: ha-BLAR, es-pa-ÑOL"
+          },
+          {
+            "spanish": "Written accent marks",
+            "english": "override the rules: te-LÉ-fo-no, ca-FÉ"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Greetings & Numbers",
+    "screens": [
+      {
+        "category": "Essential Greetings",
+        "words": [
+          {
+            "spanish": "hola",
+            "english": "hello"
+          },
+          {
+            "spanish": "buenos días",
+            "english": "good morning"
+          },
+          {
+            "spanish": "buenas tardes",
+            "english": "good afternoon"
+          },
+          {
+            "spanish": "buenas noches",
+            "english": "good evening/night"
+          },
+          {
+            "spanish": "adiós",
+            "english": "goodbye"
+          },
+          {
+            "spanish": "hasta luego",
+            "english": "see you later"
+          },
+          {
+            "spanish": "gracias",
+            "english": "thank you"
+          },
+          {
+            "spanish": "de nada",
+            "english": "you're welcome"
+          },
+          {
+            "spanish": "por favor",
+            "english": "please"
+          }
+        ]
+      },
+      {
+        "category": "Numbers 1-10",
+        "words": [
+          {
+            "spanish": "uno",
+            "english": "one"
+          },
+          {
+            "spanish": "dos",
+            "english": "two"
+          },
+          {
+            "spanish": "tres",
+            "english": "three"
+          },
+          {
+            "spanish": "cuatro",
+            "english": "four"
+          },
+          {
+            "spanish": "cinco",
+            "english": "five"
+          },
+          {
+            "spanish": "seis",
+            "english": "six"
+          },
+          {
+            "spanish": "siete",
+            "english": "seven"
+          },
+          {
+            "spanish": "ocho",
+            "english": "eight"
+          },
+          {
+            "spanish": "nueve",
+            "english": "nine"
+          },
+          {
+            "spanish": "diez",
+            "english": "ten"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "A = E = H ="
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Spanish Sounds & Alphabet",
+        "passage": "¡Hola! Me llamo María. Soy de España. Mucho gusto. ¿Cómo te llamas? Buenos días. Gracias por tu ayuda. De nada. Hasta luego.",
+        "wordCount": 22
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 1. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "embarazada",
+        "means": "pregnant",
+        "notMean": "embarrassed (= avergonzado/a)"
+      },
+      {
+        "spanish": "actualmente",
+        "means": "currently",
+        "notMean": "actually (= en realidad)"
+      },
+      {
+        "spanish": "realizar",
+        "means": "to accomplish",
+        "notMean": "to realize (= darse cuenta)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A1"
+}

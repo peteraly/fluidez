@@ -1,0 +1,192 @@
+{
+  "day": 9,
+  "title": "Irregular Preterite",
+  "subtitle": "Key irregular past tense verbs",
+  "objectives": [
+    "Learn SER/IR preterite (same forms!)",
+    "Master HACER, TENER, ESTAR preterite",
+    "Use irregular verbs in past narratives"
+  ],
+  "grammar": {
+    "title": "Irregular Preterite Verbs",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "SER and IR (Same Forms!)",
+        "content": "SER and IR have identical preterite forms! Context tells you which:\n                              \n   ✏️ Exercise: Ayer ___ al cine. (ir)",
+        "examples": [
+          {
+            "spanish": "yo fui",
+            "english": "I was / I went"
+          },
+          {
+            "spanish": "tú fuiste",
+            "english": "you were / you went"
+          },
+          {
+            "spanish": "él/ella fue",
+            "english": "he was/went"
+          },
+          {
+            "spanish": "nosotros fuimos",
+            "english": "we were / we went"
+          },
+          {
+            "spanish": "ellos fueron",
+            "english": "they were / they went"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "HACER Preterite",
+        "content": "HACER (to do/make) is irregular:\n                              → ellos hicieron = they did",
+        "examples": [
+          {
+            "spanish": "yo hice",
+            "english": "I did/made"
+          },
+          {
+            "spanish": "tú hiciste",
+            "english": "you did"
+          },
+          {
+            "spanish": "él/ella hizo",
+            "english": "he/she did"
+          },
+          {
+            "spanish": "nosotros hicimos",
+            "english": "we did"
+          },
+          {
+            "spanish": "ellos hicieron",
+            "english": "they did"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "TENER & ESTAR Preterite",
+        "content": "More essential irregular verbs:\n            \n   ✏️ Exercise: ___ un problema ayer. (tener, yo)",
+        "examples": [
+          {
+            "spanish": "tuve/tuviste/tuvo/tuvimos/tuvieron",
+            "english": "had (TENER)"
+          },
+          {
+            "spanish": "estuve/estuviste/estuvo/estuvimos/estuvieron",
+            "english": "was (ESTAR)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Irregular Verb Review",
+    "screens": [
+      {
+        "category": "Irregular Preterite Forms",
+        "words": [
+          {
+            "spanish": "fui",
+            "english": "I went/was"
+          },
+          {
+            "spanish": "fue",
+            "english": "he/she went/was"
+          },
+          {
+            "spanish": "hice",
+            "english": "I did/made"
+          },
+          {
+            "spanish": "hizo",
+            "english": "he/she did"
+          },
+          {
+            "spanish": "tuve",
+            "english": "I had"
+          },
+          {
+            "spanish": "estuve",
+            "english": "I was"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "yo fui tú fuiste yo hice"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Irregular Preterite",
+        "passage": "Esta es una lectura de práctica para el día 9. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 9. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "constipado",
+        "means": "having a cold",
+        "notMean": "constipated (= estreñido)"
+      },
+      {
+        "spanish": "asistir",
+        "means": "to attend",
+        "notMean": "to assist (= ayudar)"
+      },
+      {
+        "spanish": "pretender",
+        "means": "to try/attempt",
+        "notMean": "to pretend (= fingir)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A2"
+}
