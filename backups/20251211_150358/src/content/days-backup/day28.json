@@ -1,0 +1,180 @@
+{
+  "day": 28,
+  "title": "Week 4 Review",
+  "subtitle": "Advanced skills consolidated",
+  "objectives": [
+    "Review future expressions",
+    "Practice opinions and comparisons",
+    "Review emotions and storytelling",
+    "Prepare for final days"
+  ],
+  "grammar": {
+    "title": "Week 4 Summary",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Future Review",
+        "content": "Express future with IR + a + infinitive:",
+        "examples": [
+          {
+            "spanish": "Voy a estudiar",
+            "english": "I'm going to study"
+          },
+          {
+            "spanish": "Va a llover",
+            "english": "It's going to rain"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Opinions & Comparisons",
+        "content": "Key structures:",
+        "examples": [
+          {
+            "spanish": "Creo que...",
+            "english": "I think that..."
+          },
+          {
+            "spanish": "más... que",
+            "english": "more... than"
+          },
+          {
+            "spanish": "el/la más...",
+            "english": "the most..."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Connectors",
+        "content": "For storytelling:",
+        "examples": [
+          {
+            "spanish": "primero, luego, finalmente",
+            "english": "first, then, finally"
+          },
+          {
+            "spanish": "de repente",
+            "english": "suddenly"
+          },
+          {
+            "spanish": "por eso",
+            "english": "that's why"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "'The best' = ___",
+        "options": [
+          "más bueno",
+          "el mejor",
+          "muy bueno",
+          "más mejor"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "lesson",
+        "heading": "C1 Advanced: Idiomatic Mastery",
+        "content": "Native-like expressions:",
+        "examples": [
+          {
+            "spanish": "estar en las nubes",
+            "english": "to have one's head in the clouds"
+          },
+          {
+            "spanish": "meter la pata",
+            "english": "to put one's foot in it"
+          },
+          {
+            "spanish": "no tener pelos en la lengua",
+            "english": "to not mince words"
+          },
+          {
+            "spanish": "costar un ojo de la cara",
+            "english": "to cost an arm and a leg"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Week 4 Review",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Key Phrases",
+        "words": [
+          {
+            "spanish": "Voy a...",
+            "english": "I'm going to..."
+          },
+          {
+            "spanish": "Creo que...",
+            "english": "I think that..."
+          },
+          {
+            "spanish": "Me gustaría...",
+            "english": "I would like..."
+          },
+          {
+            "spanish": "Estoy de acuerdo",
+            "english": "I agree"
+          },
+          {
+            "spanish": "Primero... luego...",
+            "english": "First... then..."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Review",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Creo que voy a viajar el próximo año. Me gustaría ir a España porque es el país más interesante para mí.",
+        "options": [
+          "Going to Spain this year",
+          "Wants to go to Spain next year",
+          "Went to Spain last year",
+          "Doesn't want to travel"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Review",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Planes y opiniones",
+        "passage": "Creo que el español es uno de los idiomas más importantes del mundo. Primero, porque hay más de 500 millones de hablantes. Luego, porque es útil para viajar y trabajar. Me gustaría visitar todos los países hispanohablantes. El próximo año voy a ir a México. Estoy muy emocionado porque va a ser mi primera vez. Ojalá pueda practicar mucho.",
+        "translation": "I think Spanish is one of the most important languages in the world. First, because there are more than 500 million speakers. Then, because it's useful for traveling and working. I would like to visit all Spanish-speaking countries. Next year I'm going to go to Mexico. I'm very excited because it's going to be my first time. Hopefully I can practice a lot.",
+        "wordCount": 70
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Adónde va el próximo año?",
+        "options": [
+          "España",
+          "Colombia",
+          "México",
+          "Argentina"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

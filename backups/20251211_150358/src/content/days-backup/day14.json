@@ -1,0 +1,245 @@
+{
+  "day": 14,
+  "title": "Week 2 Review",
+  "subtitle": "Daily life consolidated",
+  "objectives": [
+    "Review Week 2 concepts",
+    "Practice family and food vocabulary",
+    "Strengthen time and date expressions",
+    "Build conversation confidence"
+  ],
+  "grammar": {
+    "title": "Week 2 Summary",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Week 2 Achievements",
+        "content": "You've learned so much! Let's review:",
+        "tip": "You can now talk about daily life!"
+      },
+      {
+        "type": "lesson",
+        "heading": "Possessives",
+        "content": "Remember:",
+        "examples": [
+          {
+            "spanish": "mi/mis",
+            "english": "my"
+          },
+          {
+            "spanish": "tu/tus",
+            "english": "your"
+          },
+          {
+            "spanish": "su/sus",
+            "english": "his/her/their"
+          },
+          {
+            "spanish": "nuestro/a",
+            "english": "our"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "___ familia es grande. (My)",
+        "correctAnswers": [
+          "Mi"
+        ],
+        "explanation": "Mi familia = My family"
+      },
+      {
+        "type": "lesson",
+        "heading": "Time Expressions",
+        "content": "Recap:",
+        "examples": [
+          {
+            "spanish": "Es la una",
+            "english": "It's 1:00"
+          },
+          {
+            "spanish": "Son las dos y media",
+            "english": "It's 2:30"
+          },
+          {
+            "spanish": "A las tres",
+            "english": "At 3:00"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "GUSTAR",
+        "content": "Remember the structure:",
+        "examples": [
+          {
+            "spanish": "Me gusta + singular",
+            "english": "Me gusta el café"
+          },
+          {
+            "spanish": "Me gustan + plural",
+            "english": "Me gustan las frutas"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Me ___ los tacos.",
+        "options": [
+          "gusta",
+          "gustan"
+        ],
+        "correctAnswer": 1,
+        "explanation": "GUSTAN for plural"
+      },
+      {
+        "type": "lesson",
+        "heading": "Weather with HACER",
+        "content": "Review:",
+        "examples": [
+          {
+            "spanish": "Hace sol",
+            "english": "It's sunny"
+          },
+          {
+            "spanish": "Hace frío",
+            "english": "It's cold"
+          },
+          {
+            "spanish": "Hace calor",
+            "english": "It's hot"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Coming Up: The Subjunctive Mood",
+        "content": "In Week 3, you'll learn the subjunctive - essential for expressing wishes, doubts, and emotions. Preview:",
+        "examples": [
+          {
+            "spanish": "Quiero que vengas",
+            "english": "I want you to come"
+          },
+          {
+            "spanish": "Espero que estés bien",
+            "english": "I hope you're well"
+          },
+          {
+            "spanish": "Dudo que sea verdad",
+            "english": "I doubt it's true"
+          }
+        ],
+        "tip": "The subjunctive is used after expressions of desire, emotion, doubt, and impersonal expressions."
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Week 2 Review",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Key Words",
+        "words": [
+          {
+            "spanish": "la familia",
+            "english": "family"
+          },
+          {
+            "spanish": "el hermano/la hermana",
+            "english": "brother/sister"
+          },
+          {
+            "spanish": "la comida",
+            "english": "food"
+          },
+          {
+            "spanish": "el tiempo",
+            "english": "weather/time"
+          },
+          {
+            "spanish": "el restaurante",
+            "english": "restaurant"
+          },
+          {
+            "spanish": "la cuenta",
+            "english": "bill"
+          },
+          {
+            "spanish": "quisiera",
+            "english": "I would like"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match:",
+        "pairs": [
+          {
+            "left": "hermano",
+            "right": "brother"
+          },
+          {
+            "left": "cuenta",
+            "right": "bill"
+          },
+          {
+            "left": "tiempo",
+            "right": "weather"
+          },
+          {
+            "left": "comida",
+            "right": "food"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Review",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Mi familia tiene cuatro personas. Mis padres, mi hermana y yo. Hoy hace sol y vamos al restaurante.",
+        "options": [
+          "Family of 3, cloudy, staying home",
+          "Family of 4, sunny, going to restaurant",
+          "Family of 4, rainy, going to park",
+          "Family of 5, sunny, going to restaurant"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Comprehensive",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Un día perfecto",
+        "passage": "Hoy es sábado y hace buen tiempo. Son las diez de la mañana. Mi familia y yo vamos al mercado. A mi madre le gusta comprar frutas frescas. A mi padre le gustan las verduras. Mi hermana y yo queremos pan y queso. Por la tarde, vamos a un restaurante. Quisiera pasta con pollo. Mi hermana quiere pescado. ¡La comida está deliciosa! Después, regresamos a casa a las siete.",
+        "translation": "Today is Saturday and the weather is nice. It's ten in the morning. My family and I are going to the market. My mother likes to buy fresh fruits. My father likes vegetables. My sister and I want bread and cheese. In the afternoon, we go to a restaurant. I would like pasta with chicken. My sister wants fish. The food is delicious! Then, we return home at seven.",
+        "wordCount": 80
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué quiere el narrador en el restaurante?",
+        "options": [
+          "Pescado",
+          "Pasta con pollo",
+          "Frutas",
+          "Verduras"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

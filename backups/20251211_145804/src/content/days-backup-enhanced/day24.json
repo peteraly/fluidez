@@ -1,0 +1,332 @@
+{
+  "day": 24,
+  "title": "Subjunctive: Conjunctions",
+  "subtitle": "Purpose, time, and condition clauses",
+  "level": "B2",
+  "objectives": [
+    "Use subjunctive with purpose conjunctions",
+    "Master time clauses with subjunctive",
+    "Understand condition and concession clauses",
+    "Know when conjunctions DON'T need subjunctive"
+  ],
+  "grammar": {
+    "title": "Conjunctions & Subjunctive",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Purpose Conjunctions (Always Subjunctive)",
+        "content": "These ALWAYS trigger subjunctive:\n                              → sin que = without",
+        "examples": [
+          {
+            "spanish": "para que",
+            "english": "so that, in order that"
+          },
+          {
+            "spanish": "a fin de que",
+            "english": "so that"
+          },
+          {
+            "spanish": "con tal de que",
+            "english": "provided that"
+          },
+          {
+            "spanish": "a menos que",
+            "english": "unless"
+          },
+          {
+            "spanish": "sin que",
+            "english": "without"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Purpose Clause Examples",
+        "content": "Purpose = non-fact = subjunctive:\n                        \n   ✏️ Exercise: Te lo explico para que lo ___. (entender)",
+        "examples": [
+          {
+            "spanish": "Te lo digo para que sepas.",
+            "english": "I'm telling you so you know."
+          },
+          {
+            "spanish": "Voy a llamar a menos que vengas.",
+            "english": "I'll call unless you come."
+          },
+          {
+            "spanish": "Salió sin que lo viéramos.",
+            "english": "He left without us seeing him."
+          },
+          {
+            "spanish": "Te ayudo con tal de que estudies.",
+            "english": "I'll help you provided you study."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Time Conjunctions (Sometimes Subjunctive)",
+        "content": "Future/hypothetical = subjunctive. Past/habitual = indicative.\n                              → tan pronto como = as soon as",
+        "examples": [
+          {
+            "spanish": "cuando",
+            "english": "when"
+          },
+          {
+            "spanish": "hasta que",
+            "english": "until"
+          },
+          {
+            "spanish": "después de que",
+            "english": "after"
+          },
+          {
+            "spanish": "antes de que",
+            "english": "before (ALWAYS subjunctive)"
+          },
+          {
+            "spanish": "tan pronto como",
+            "english": "as soon as"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Time Clause Examples",
+        "content": "Compare future (subjunctive) vs past (indicative):\n                        → Esperé hasta que viniste. (past) = I waited until you came.",
+        "examples": [
+          {
+            "spanish": "Cuando llegue, te llamo. (future)",
+            "english": "When I arrive, I'll call you."
+          },
+          {
+            "spanish": "Cuando llegué, te llamé. (past)",
+            "english": "When I arrived, I called you."
+          },
+          {
+            "spanish": "Esperaré hasta que vengas. (future)",
+            "english": "I'll wait until you come."
+          },
+          {
+            "spanish": "Esperé hasta que viniste. (past)",
+            "english": "I waited until you came."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Antes de que (Always Subjunctive)",
+        "content": "Before = action hasn't happened yet = always subjunctive:\n                  → Antes de que digas algo... = Before you say anything...",
+        "examples": [
+          {
+            "spanish": "Ven antes de que llueva.",
+            "english": "Come before it rains."
+          },
+          {
+            "spanish": "Terminé antes de que llegaras.",
+            "english": "I finished before you arrived."
+          },
+          {
+            "spanish": "Antes de que digas algo...",
+            "english": "Before you say anything..."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Concession Clauses",
+        "content": "'Even though' expressions:\n                        \n   ✏️ Exercise: Aunque ___ mucho dinero, no lo compraría. (tener, hypothetical)",
+        "examples": [
+          {
+            "spanish": "aunque + indicative",
+            "english": "fact"
+          },
+          {
+            "spanish": "aunque + subjunctive",
+            "english": "hypothetical"
+          },
+          {
+            "spanish": "Aunque está lloviendo, voy.",
+            "english": "Although it's raining, I'm going."
+          },
+          {
+            "spanish": "Aunque llueva, iré.",
+            "english": "Even if it rains, I'll go."
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Conjunction Vocabulary",
+    "screens": [
+      {
+        "category": "Always Subjunctive",
+        "words": [
+          {
+            "spanish": "para que",
+            "english": "so that"
+          },
+          {
+            "spanish": "a menos que",
+            "english": "unless"
+          },
+          {
+            "spanish": "sin que",
+            "english": "without"
+          },
+          {
+            "spanish": "antes de que",
+            "english": "before"
+          },
+          {
+            "spanish": "en caso de que",
+            "english": "in case"
+          }
+        ]
+      },
+      {
+        "category": "Sometimes Subjunctive",
+        "words": [
+          {
+            "spanish": "cuando",
+            "english": "when"
+          },
+          {
+            "spanish": "hasta que",
+            "english": "until"
+          },
+          {
+            "spanish": "después de que",
+            "english": "after"
+          },
+          {
+            "spanish": "aunque",
+            "english": "although/even if"
+          },
+          {
+            "spanish": "tan pronto como",
+            "english": "as soon as"
+          }
+        ]
+      },
+      {
+        "category": "Bonus Vocabulary",
+        "words": [
+          {
+            "spanish": "el médico/la médica",
+            "english": "doctor"
+          },
+          {
+            "spanish": "el/la enfermero/a",
+            "english": "nurse"
+          },
+          {
+            "spanish": "el hospital",
+            "english": "hospital"
+          },
+          {
+            "spanish": "la farmacia",
+            "english": "pharmacy"
+          },
+          {
+            "spanish": "la receta",
+            "english": "prescription"
+          },
+          {
+            "spanish": "la pastilla",
+            "english": "pill"
+          },
+          {
+            "spanish": "el dolor",
+            "english": "pain"
+          },
+          {
+            "spanish": "la fiebre",
+            "english": "fever"
+          },
+          {
+            "spanish": "el resfriado",
+            "english": "cold"
+          },
+          {
+            "spanish": "la alergia",
+            "english": "allergy"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "para que a fin de que Te lo digo para que sepas."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Subjunctive: Conjunctions",
+        "passage": "Esta es una lectura de práctica para el día 24. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 24. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "constipado",
+        "means": "having a cold",
+        "notMean": "constipated (= estreñido)"
+      },
+      {
+        "spanish": "asistir",
+        "means": "to attend",
+        "notMean": "to assist (= ayudar)"
+      },
+      {
+        "spanish": "pretender",
+        "means": "to try/attempt",
+        "notMean": "to pretend (= fingir)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

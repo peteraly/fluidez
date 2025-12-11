@@ -1,0 +1,422 @@
+{
+  "day": 25,
+  "title": "The Conditional Tense",
+  "subtitle": "Would, could, should",
+  "level": "B2",
+  "objectives": [
+    "Form the conditional tense",
+    "Express hypothetical situations",
+    "Make polite requests",
+    "Give advice with conditional"
+  ],
+  "grammar": {
+    "title": "Conditional Tense",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "What is the Conditional?",
+        "content": "The conditional expresses what WOULD happen. Used for hypotheticals, polite requests, and advice.\n                  → Yo no haría eso = I wouldn't do that",
+        "examples": [
+          {
+            "spanish": "Me gustaría un café",
+            "english": "I would like a coffee"
+          },
+          {
+            "spanish": "¿Podrías ayudarme?",
+            "english": "Could you help me?"
+          },
+          {
+            "spanish": "Yo no haría eso",
+            "english": "I wouldn't do that"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Forming the Conditional",
+        "content": "Add these endings to the INFINITIVE (same for all verbs):\n                              → ellos: -ían = hablarían, comerían, vivirían",
+        "examples": [
+          {
+            "spanish": "yo: -ía",
+            "english": "hablaría, comería, viviría"
+          },
+          {
+            "spanish": "tú: -ías",
+            "english": "hablarías, comerías, vivirías"
+          },
+          {
+            "spanish": "él/ella: -ía",
+            "english": "hablaría, comería, viviría"
+          },
+          {
+            "spanish": "nosotros: -íamos",
+            "english": "hablaríamos, comeríamos, viviríamos"
+          },
+          {
+            "spanish": "ellos: -ían",
+            "english": "hablarían, comerían, vivirían"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Regular Examples",
+        "content": "Simply add endings to infinitive:\n                  \n   ✏️ Exercise: Yo ___ en España. (vivir, conditional)",
+        "examples": [
+          {
+            "spanish": "hablar → hablaría, hablarías, hablaría...",
+            "english": "would speak"
+          },
+          {
+            "spanish": "comer → comería, comerías, comería...",
+            "english": "would eat"
+          },
+          {
+            "spanish": "vivir → viviría, vivirías, viviría...",
+            "english": "would live"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Stems",
+        "content": "Same irregular stems as future tense:\n                              \n   ✏️ Exercise: Match conditional forms:",
+        "examples": [
+          {
+            "spanish": "decir → dir-: diría",
+            "english": "would say"
+          },
+          {
+            "spanish": "hacer → har-: haría",
+            "english": "would do/make"
+          },
+          {
+            "spanish": "poder → podr-: podría",
+            "english": "could"
+          },
+          {
+            "spanish": "poner → pondr-: pondría",
+            "english": "would put"
+          },
+          {
+            "spanish": "querer → querr-: querría",
+            "english": "would want"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Uses of Conditional",
+        "content": "Four main uses:\n                        \n   ✏️ Exercise: ¿___ ayudarme, por favor? (poder, polite)",
+        "examples": [
+          {
+            "spanish": "Hypothetical: Yo compraría un coche nuevo",
+            "english": "I would buy a new car"
+          },
+          {
+            "spanish": "Polite requests: ¿Podría repetir?",
+            "english": "Could you repeat?"
+          },
+          {
+            "spanish": "Advice: Yo que tú, estudiaría más",
+            "english": "If I were you, I'd study more"
+          },
+          {
+            "spanish": "Probability in past: Serían las diez",
+            "english": "It was probably ten o'clock"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Conditional Expressions",
+    "screens": [
+      {
+        "category": "Polite Requests",
+        "words": [
+          {
+            "spanish": "¿Podría...?",
+            "english": "Could you...?"
+          },
+          {
+            "spanish": "¿Sería posible...?",
+            "english": "Would it be possible...?"
+          },
+          {
+            "spanish": "Me gustaría...",
+            "english": "I would like..."
+          },
+          {
+            "spanish": "Querría...",
+            "english": "I would want..."
+          },
+          {
+            "spanish": "¿Le importaría...?",
+            "english": "Would you mind...?"
+          }
+        ]
+      },
+      {
+        "category": "Giving Advice",
+        "words": [
+          {
+            "spanish": "Yo que tú...",
+            "english": "If I were you..."
+          },
+          {
+            "spanish": "Yo en tu lugar...",
+            "english": "In your place, I..."
+          },
+          {
+            "spanish": "Deberías...",
+            "english": "You should..."
+          },
+          {
+            "spanish": "Sería mejor...",
+            "english": "It would be better..."
+          },
+          {
+            "spanish": "¿No crees que deberías...?",
+            "english": "Don't you think you should...?"
+          }
+        ]
+      },
+      {
+        "category": "Bonus Vocabulary",
+        "words": [
+          {
+            "spanish": "el médico/la médica",
+            "english": "doctor"
+          },
+          {
+            "spanish": "el/la enfermero/a",
+            "english": "nurse"
+          },
+          {
+            "spanish": "el hospital",
+            "english": "hospital"
+          },
+          {
+            "spanish": "la farmacia",
+            "english": "pharmacy"
+          },
+          {
+            "spanish": "la receta",
+            "english": "prescription"
+          },
+          {
+            "spanish": "la pastilla",
+            "english": "pill"
+          },
+          {
+            "spanish": "el dolor",
+            "english": "pain"
+          },
+          {
+            "spanish": "la fiebre",
+            "english": "fever"
+          },
+          {
+            "spanish": "el resfriado",
+            "english": "cold"
+          },
+          {
+            "spanish": "la alergia",
+            "english": "allergy"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "Me gustaría un café ¿Podrías ayudarme? yo: -ía"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: The Conditional Tense",
+        "passage": "Esta es una lectura de práctica para el día 25. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 25. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "asistir",
+        "means": "to attend",
+        "notMean": "to assist (= ayudar)"
+      },
+      {
+        "spanish": "pretender",
+        "means": "to try/attempt",
+        "notMean": "to pretend (= fingir)"
+      },
+      {
+        "spanish": "introducir",
+        "means": "to insert",
+        "notMean": "to introduce (= presentar)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "processabilityTheory": {
+    "stage": 6,
+    "stageName": "Complex Structures",
+    "description": "Stage 6: Complex Structures"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "tense",
+    "colorCodes": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 Present perfect: haber + past participle"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: he/has/ha/hemos/habéis/han + -ado/-ido"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'He comido' = I have eaten, 'Ha llegado' = He/She has arrived"
+      }
+    ],
+    "inputFlooding": [
+      "He terminado el trabajo",
+      "¿Has visto la película?",
+      "Ha llegado el paquete",
+      "Hemos visitado Madrid",
+      "Han comprado un coche nuevo"
+    ],
+    "morphemeDisplay": {
+      "participles": {
+        "-ar": "-ado (hablado)",
+        "-er/-ir": "-ido (comido, vivido)"
+      }
+    }
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_21_25",
+    "config": {
+      "maxWords": 12,
+      "speed": 1.0,
+      "primaryFocus": "fluency"
+    },
+    "phrases": [
+      {
+        "spanish": "¿Has probado la nueva aplicación?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Todavía no he actualizado el sistema",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Se ha caído la conexión otra vez",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿Has guardado el archivo?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Ya he enviado el correo electrónico",
+        "focus": "rhythm"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the fluency of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.309011",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

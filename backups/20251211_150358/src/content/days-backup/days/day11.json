@@ -1,0 +1,21 @@
+{
+  "day": 11,
+  "title": "Preterite vs Imperfect",
+  "subtitle": "Using both past tenses together",
+  "objectives": ["Understand when to use each tense", "Combine preterite and imperfect in narratives", "Use story connectors", "Tell stories about the past"],
+  "grammar": {
+    "title": "Combining Past Tenses",
+    "estimatedMinutes": 15,
+    "screens": [
+      {"type": "lesson", "heading": "The Key Distinction", "content": "PRETERITE: Completed actions, specific times, sequence of events. IMPERFECT: Background, descriptions, ongoing/habitual actions.", "tip": "Imperfect sets the scene, preterite advances the action!"},
+      {"type": "lesson", "heading": "Classic Examples", "content": "See how they work together:", "examples": [{"spanish": "Llovía cuando salí", "english": "It was raining (ongoing) when I left (completed)"}, {"spanish": "Mientras estudiaba, sonó el teléfono", "english": "While I was studying (ongoing), the phone rang (completed)"}, {"spanish": "Era las ocho cuando llegué", "english": "It was 8:00 (background) when I arrived (completed)"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Mientras yo ___ (dormir), mi hermano llegó.", "options": ["dormí", "dormía", "duermo", "dormido"], "correctAnswer": 1, "explanation": "Ongoing action (mientras) = imperfect: dormía"},
+      {"type": "lesson", "heading": "Story Connectors", "content": "Use these to connect ideas:", "examples": [{"spanish": "mientras", "english": "while"}, {"spanish": "cuando", "english": "when"}, {"spanish": "de repente", "english": "suddenly"}, {"spanish": "entonces", "english": "then"}, {"spanish": "después", "english": "after"}, {"spanish": "primero...luego", "english": "first...then"}, {"spanish": "por fin", "english": "finally"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Hacía sol cuando ___ a llover.", "options": ["empezó", "empezaba", "empieza", "empezar"], "correctAnswer": 0, "explanation": "Sudden change (interruption) = preterite: empezó"},
+      {"type": "exercise", "exerciseType": "translation", "instruction": "Translate: 'I was eating when she called'", "correctAnswers": ["comía cuando ella llamó", "yo comía cuando ella llamó", "estaba comiendo cuando ella llamó"], "explanation": "Ongoing (comía) interrupted by completed (llamó)"}
+    ]
+  },
+  "vocabulary": {"title": "Story Connectors", "estimatedMinutes": 10, "screens": [{"type": "vocab", "category": "Narrative Words", "words": [{"spanish": "mientras", "english": "while", "example": "Mientras comía, leía."}, {"spanish": "cuando", "english": "when", "example": "Cuando llegué, llovía."}, {"spanish": "de repente", "english": "suddenly", "example": "De repente, sonó el teléfono."}, {"spanish": "entonces", "english": "then", "example": "Entonces decidí salir."}, {"spanish": "primero", "english": "first", "example": "Primero desayuné."}, {"spanish": "luego", "english": "then/later", "example": "Luego fui al trabajo."}, {"spanish": "por fin", "english": "finally", "example": "Por fin llegué a casa."}]}]},
+  "listening": {"title": "Listening Practice", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen:", "transcript": "Mientras dormía, sonó el teléfono", "options": ["Mientras dormía, sonó el teléfono", "Mientras dormí, sonaba el teléfono", "Mientras duermo, suena el teléfono", "Mientras dormía, sonaba el teléfono"], "correctAnswer": 0}]},
+  "reading": {"title": "Reading: Una historia", "estimatedMinutes": 10, "screens": [{"type": "reading", "title": "Un día inesperado", "passage": "Era un día normal. Hacía sol y yo caminaba al trabajo como siempre. De repente, vi a un amigo de la universidad. No lo veía desde hace cinco años. Él estaba muy sorprendido también. Decidimos tomar un café juntos. Mientras hablábamos, descubrimos que ahora trabajamos en el mismo edificio. Fue una coincidencia increíble.", "translation": "It was a normal day. It was sunny and I was walking to work as always. Suddenly, I saw a friend from university. I hadn't seen him for five years. He was very surprised too. We decided to have coffee together. While we were talking, we discovered that we now work in the same building. It was an incredible coincidence.", "wordCount": 68}]}
+}

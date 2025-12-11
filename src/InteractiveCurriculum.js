@@ -1,4 +1,10 @@
 import React, { useState } from 'react';
+import { StreakDisplay } from './components/engagement';
+import { ReviewSystem, QuizMode, ShadowingMode, PTStageDisplay } from './components/learning';
+import { SuccessAnimation } from './components/feedback';
+import { completeDay } from './utils/streakManager';
+import RandomDelight from "./components/RandomDelight";
+import SessionTeaser from "./components/SessionTeaser";
 
 const theme = { primary: '#2D5A27', primaryLight: '#4A7C43', bg: '#FAFAFA', surface: '#FFF', text: '#1A1A1A', textLight: '#666', border: '#E0E0E0' };
 
@@ -169,6 +175,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Hola, me llamo María.",
+        "Buenos días, ¿cómo estás?",
+        "Muy bien, gracias.",
+        "Mucho gusto.",
+        "¿Cómo te llamas?",
+        "Adiós, hasta luego."
+      ]
+    },
     "reading": {
       "title": "Practice Reading",
       "passage": "¡Hola! Me llamo María. Soy de España. Mucho gusto. ¿Cómo te llamas? Buenos días. Gracias por tu ayuda. De nada. Hasta luego."
@@ -472,6 +488,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Yo soy estudiante.",
+        "Tú eres de España.",
+        "Él es profesor.",
+        "Nosotros somos amigos.",
+        "¿De dónde eres?",
+        "Soy de México."
+      ]
+    },
     "reading": {
       "title": "Being & Describing",
       "passage": "Hoy estoy muy cansado. Estoy en mi casa. Mi casa es grande y bonita. La cocina está limpia. Mi hermana está feliz porque es su cumpleaños."
@@ -922,6 +948,16 @@ const CURRICULUM = {
         "description": "Put Spanish sticky notes on items in your house"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Mi familia es grande.",
+        "Tengo dos hermanos.",
+        "Mi madre se llama Ana.",
+        "Mi padre es alto.",
+        "¿Tienes hermanos?",
+        "Somos cuatro."
+      ]
+    },
     "reading": {
       "title": "House & Descriptions",
       "passage": "Mi apartamento es pequeño pero bonito. Tiene una cocina moderna, un baño limpio y un dormitorio cómodo. Las paredes son blancas y el sofá es nuevo. Mi vecino es simpático y trabajador."
@@ -1143,6 +1179,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "El coche es rojo.",
+        "Me gusta el azul.",
+        "La casa es blanca.",
+        "Las flores son amarillas.",
+        "¿De qué color es?",
+        "Es verde."
+      ]
+    },
     "reading": {
       "title": "Family & Possessions",
       "passage": "Mi familia es grande. Tengo dos hermanos y una hermana. Mi madre tiene ojos verdes y mi padre tiene pelo negro. Nuestros abuelos viven en México. Su casa es muy bonita."
@@ -1378,6 +1424,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Mi casa tiene tres dormitorios.",
+        "La cocina es grande.",
+        "El baño está arriba.",
+        "Hay un jardín.",
+        "¿Dónde está el salón?",
+        "Está a la derecha."
+      ]
+    },
     "reading": {
       "title": "Daily Routines",
       "passage": "Me despierto a las siete de la mañana. Primero me ducho y después desayuno. Salgo de casa a las ocho. Trabajo hasta las cinco. Por la noche ceno con mi familia y me acuesto a las once."
@@ -1566,6 +1622,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Me levanto a las siete.",
+        "Desayuno café con tostadas.",
+        "Voy al trabajo en metro.",
+        "Almuerzo a las dos.",
+        "Ceno a las nueve.",
+        "Me acuesto tarde."
+      ]
+    },
     "reading": {
       "title": "Going Places",
       "passage": "Hoy voy al supermercado porque necesito comprar comida. Después voy a la biblioteca para estudiar. Mi amigo viene a mi casa a las seis. Vamos juntos al cine esta noche."
@@ -1731,6 +1797,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "¿Qué desea pedir?",
+        "Quiero una paella.",
+        "¿Para beber?",
+        "Agua, por favor.",
+        "La cuenta, por favor.",
+        "¿Aceptan tarjeta?"
+      ]
+    },
     "reading": {
       "title": "Week in Review",
       "passage": "Esta semana estudié mucho español. Practiqué los verbos todos los días. Hablé con mi profesor y escuché música en español. Aprendí palabras nuevas sobre la casa y la familia."
@@ -1898,6 +1974,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "¿Qué hora es?",
+        "Son las tres.",
+        "Es la una y media.",
+        "Son las cinco menos cuarto.",
+        "¿A qué hora empieza?",
+        "A las nueve."
+      ]
+    },
     "reading": {
       "title": "Completed Actions",
       "passage": "Ayer fui al parque con mis amigos. Caminamos por dos horas y después comimos en un restaurante. La comida estuvo deliciosa. Llegué a casa a las diez de la noche."
@@ -2050,6 +2136,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "¿Qué tiempo hace?",
+        "Hace sol.",
+        "Está lloviendo.",
+        "Hace mucho frío.",
+        "Va a nevar mañana.",
+        "Me gusta el verano."
+      ]
+    },
     "reading": {
       "title": "Yesterday's Events",
       "passage": "El fin de semana pasado viajé a Barcelona. Visité la Sagrada Familia y caminé por Las Ramblas. Comí paella cerca del mar. Fue un viaje increíble. Saqué muchas fotos."
@@ -2209,6 +2305,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "¿Cómo te llamas?",
+        "Me llamo Juan.",
+        "¿De dónde eres?",
+        "Soy de Colombia.",
+        "¿Cuántos años tienes?",
+        "Tengo veinticinco."
+      ]
+    },
     "reading": {
       "title": "Background Story",
       "passage": "Cuando era niño, vivía en un pueblo pequeño. Mi casa tenía un jardín grande donde jugaba todos los días. Mi abuela cocinaba platos deliciosos. Era una época muy feliz."
@@ -2349,6 +2455,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 11.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Combining Past Tenses",
       "passage": "Era una noche oscura cuando llegué a la estación. Llovía mucho y hacía frío. De repente, vi a una mujer que corría. Llevaba un vestido rojo. Me miró y sonrió."
@@ -2568,6 +2684,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 12.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Object Pronouns",
       "passage": "¿El libro? Te lo di ayer. ¿Las llaves? Se las dejé a María. ¿La carta? No me la enviaron todavía. Los documentos los puse en tu escritorio esta mañana."
@@ -2758,6 +2884,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 13.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Giving Commands",
       "passage": "¡Escucha! Ven aquí y siéntate. Dime qué pasó. No te preocupes, todo va a estar bien. Hazme un favor: llama a tu madre y dile que llegas tarde."
@@ -2889,6 +3025,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 14.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Review Week 2",
       "passage": "La semana pasada practiqué mucho. Usé los pronombres de objeto directo e indirecto. También aprendí a dar órdenes informales. El español cada vez me parece más fácil."
@@ -3061,6 +3207,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 15.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Making Comparisons",
       "passage": "Mi hermano es más alto que yo, pero yo soy más rápido que él. Nuestra hermana es la más inteligente de los tres. Sin embargo, yo cocino mejor que ellos."
@@ -3245,6 +3401,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 16.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Future Plans",
       "passage": "El próximo año viajaré a España. Visitaré Madrid y Barcelona. Comeré tapas y beberé sangría. Practicaré español con los locales. Será una experiencia increíble."
@@ -3433,6 +3599,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 17.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Hypothetical Situations",
       "passage": "Si tuviera más dinero, compraría una casa en la playa. Viajaría por todo el mundo y conocería muchas culturas. Pero por ahora, trabajo duro y ahorro cada mes."
@@ -3514,6 +3690,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 18.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Informal Commands",
       "passage": "¡Oye! Ven a la fiesta esta noche. Trae algo de beber. No llegues tarde como siempre. Dile a Pedro que venga también. ¡Va a ser divertido!"
@@ -3595,6 +3781,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 19.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Formal Commands",
       "passage": "Señor García, por favor tome asiento. Espere un momento, el doctor lo atenderá pronto. No se preocupe, el examen será rápido. Complete este formulario mientras espera."
@@ -3676,6 +3872,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 20.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Wishes & Desires",
       "passage": "Quiero que vengas a mi fiesta. Espero que puedas quedarte todo el fin de semana. Deseo que nos divirtamos mucho. Ojalá que no llueva ese día."
@@ -3757,6 +3963,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 21.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Impersonal Expressions",
       "passage": "Es importante que estudies cada día. Es necesario que practiques la pronunciación. Es mejor que hables con nativos. Es posible que cometas errores, pero es normal."
@@ -3983,6 +4199,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 22.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Future Tense Practice",
       "passage": "Mañana saldré temprano porque tendré una reunión importante. Después iré al gimnasio y haré ejercicio. Por la noche, comeré con mis amigos. Será un día ocupado pero productivo."
@@ -4252,6 +4478,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 23.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Subjunctive Letter",
       "passage": "Querida mamá, me alegro de que estés mejor de salud. Siento mucho que no pueda visitarte este fin de semana, pero tengo mucho trabajo. Es una lástima que vivamos tan lejos. Dudo que pueda tomar vacaciones antes de diciembre. Te quiero mucho y espero verte pronto. Un abrazo fuerte, tu hijo Carlos."
@@ -4536,6 +4772,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 24.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Expressing Doubt",
       "passage": "No creo que Juan venga a la reunión. Dudo que haya terminado el proyecto. Es improbable que nos den más tiempo. Quizás podamos pedir una extensión, pero no estoy seguro."
@@ -4793,6 +5039,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 25.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Conditional Wishes",
       "passage": "Si pudiera viajar en el tiempo, iría a la España del siglo XV. Me gustaría ver cómo era la vida entonces. Si hubiera nacido en esa época, habría sido explorador."
@@ -5046,6 +5302,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 26.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Reported Speech",
       "passage": "María dijo que vendría a las ocho. Me contó que había tenido problemas con el tráfico. Me preguntó si podíamos empezar sin ella. Le respondí que la esperaríamos."
@@ -5305,6 +5571,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 27.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Passive Voice",
       "passage": "Este libro fue escrito por Cervantes. La casa fue construida en 1950. Las cartas fueron enviadas ayer. El problema ya ha sido resuelto por el equipo técnico."
@@ -5558,6 +5834,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 28.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Advanced Subjunctive",
       "passage": "Busco un apartamento que tenga balcón. Necesito alguien que hable tres idiomas. No hay nadie que pueda ayudarme hoy. Haré lo que sea necesario para conseguirlo."
@@ -5808,6 +6094,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 29.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Complex Sentences",
       "passage": "Aunque llueva mañana, iremos a la playa. Mientras esperábamos, leímos el periódico. Antes de que llegues, habré terminado la cena. Después de que salgas, cerraré la puerta."
@@ -6108,6 +6404,16 @@ const CURRICULUM = {
         "description": "Scottish teacher"
       }
     ],
+    "listening": {
+      "phrases": [
+        "Práctica del día 30.",
+        "Escucha con atención.",
+        "Repite después.",
+        "Muy bien.",
+        "Continúa así.",
+        "¡Excelente!"
+      ]
+    },
     "reading": {
       "title": "Course Completion",
       "passage": "Hace treinta días empecé este curso. He aprendido mucho sobre gramática, vocabulario y cultura. Ahora puedo hablar, leer y escribir en español con más confianza. El viaje continúa, pero estoy orgulloso de mi progreso. ¡Adelante con el español!"
@@ -6119,6 +6425,11 @@ export default function InteractiveCurriculum({ day = 1, onBack, onComplete }) {
   const [activeTab, setActiveTab] = useState('grammar');
   const [grammarIndex, setGrammarIndex] = useState(0);
   const [vocabIndex, setVocabIndex] = useState(0);
+  const [showTeaser, setShowTeaser] = useState(false);
+  const [showReview, setShowReview] = useState(false);
+  const [showQuiz, setShowQuiz] = useState(false);
+  const [showShadowing, setShowShadowing] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
   
   const dayData = CURRICULUM[day] || CURRICULUM[1];
   
@@ -6129,6 +6440,28 @@ export default function InteractiveCurriculum({ day = 1, onBack, onComplete }) {
     utterance.lang = 'es-ES';
     utterance.rate = 0.85;
     speechSynthesis.speak(utterance);
+  };
+
+  const getAllVocab = () => {
+    if (!dayData?.vocabulary) return [];
+    const words = [];
+    Object.values(dayData.vocabulary).forEach(cat => {
+      if (Array.isArray(cat)) cat.forEach(item => {
+        if (item.spanish && item.english) words.push(item);
+      });
+    });
+    return words;
+  };
+  const getPTStage = () => { if (day <= 6) return 1; if (day <= 12) return 2; if (day <= 18) return 3; if (day <= 24) return 4; if (day <= 28) return 5; return 6; };
+  const getShadowPhrases = () => {
+    const phrases = [];
+    if (dayData?.listening?.phrases) {
+      dayData.listening.phrases.slice(0, 8).forEach(p => {
+        if (typeof p === 'string') phrases.push({ spanish: p, english: '' });
+        else if (p?.spanish) phrases.push(p);
+      });
+    }
+    return phrases;
   };
 
   const tabs = [
@@ -6146,6 +6479,10 @@ export default function InteractiveCurriculum({ day = 1, onBack, onComplete }) {
       {/* Header */}
       <div style={{background: theme.primary, color: '#fff', padding: 16, display: 'flex', alignItems: 'center', gap: 16}}>
         <button onClick={onBack} style={{background: 'rgba(255,255,255,0.2)', border: 'none', color: '#fff', padding: '8px 12px', borderRadius: 8, cursor: 'pointer'}}>← Back</button>
+        <div style={{marginLeft: 'auto', display: 'flex', gap: 8}}>
+          <StreakDisplay compact />
+          <PTStageDisplay stage={getPTStage()} compact />
+        </div>
         <div>
           <div style={{fontWeight: 600, fontSize: 18}}>Day {day}: {dayData.title}</div>
           <div style={{fontSize: 13, opacity: 0.9}}>{dayData.subtitle} • {dayData.level}</div>
@@ -6246,6 +6583,10 @@ export default function InteractiveCurriculum({ day = 1, onBack, onComplete }) {
         {/* VOCABULARY TAB */}
         {activeTab === 'vocabulary' && (
           <div>
+            <div style={{display: 'flex', gap: 12, marginBottom: 16}}>
+              <button onClick={() => setShowReview(true)} style={{flex: 1, padding: 14, background: 'linear-gradient(135deg, #667eea, #764ba2)', color: 'white', border: 'none', borderRadius: 12, fontWeight: 'bold', cursor: 'pointer'}}>📚 Review</button>
+              <button onClick={() => setShowQuiz(true)} style={{flex: 1, padding: 14, background: 'linear-gradient(135deg, #f093fb, #f5576c)', color: 'white', border: 'none', borderRadius: 12, fontWeight: 'bold', cursor: 'pointer'}}>📝 Quiz</button>
+            </div>
             <h2 style={{fontSize: 20, fontWeight: 600, marginBottom: 16}}>📚 Vocabulary</h2>
             
             {dayData.vocabulary && dayData.vocabulary.length > 0 && (
@@ -6302,6 +6643,9 @@ export default function InteractiveCurriculum({ day = 1, onBack, onComplete }) {
         {activeTab === 'listening' && (
           <div>
             <h2 style={{fontSize: 20, fontWeight: 600, marginBottom: 16}}>🎧 Listening Practice</h2>
+            {day >= 7 && (
+              <button onClick={() => setShowShadowing(true)} style={{width: '100%', padding: 14, marginBottom: 16, background: 'linear-gradient(135deg, #11998e, #38ef7d)', color: 'white', border: 'none', borderRadius: 12, fontWeight: 'bold', cursor: 'pointer'}}>🎧 Shadowing Mode</button>
+            )}
             <p style={{color: theme.textLight, marginBottom: 16}}>Tap each phrase to hear it, then repeat aloud:</p>
             
             <div style={{background: '#fff', borderRadius: 12, padding: 16}}>
@@ -6422,12 +6766,31 @@ export default function InteractiveCurriculum({ day = 1, onBack, onComplete }) {
       {/* Complete Button */}
       <div style={{position: 'fixed', bottom: 0, left: 0, right: 0, padding: 16, background: '#fff', borderTop: '1px solid #e0e0e0'}}>
         <button 
-          onClick={onComplete}
+          onClick={() => setShowTeaser(true)}
           style={{width: '100%', padding: 16, background: theme.primary, color: '#fff', border: 'none', borderRadius: 12, fontSize: 16, fontWeight: 600, cursor: 'pointer'}}
         >
           Complete Day {day} ✓
         </button>
       </div>
+      {/* === FLUIDEZ MODALS === */}
+      {showReview && (
+        <div style={{ position: 'fixed', inset: 0, background: '#f5f5f5', zIndex: 100, overflow: 'auto' }}>
+          <ReviewSystem vocabulary={getAllVocab()} onClose={() => setShowReview(false)} />
+        </div>
+      )}
+      {showQuiz && (
+        <div style={{ position: 'fixed', inset: 0, background: '#f5f5f5', zIndex: 100, overflow: 'auto' }}>
+          <QuizMode vocabulary={getAllVocab()} onClose={() => setShowQuiz(false)} />
+        </div>
+      )}
+      {showShadowing && (
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)', zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ background: 'white', borderRadius: '20px', width: '90%', maxWidth: '500px', maxHeight: '90vh', overflow: 'auto' }}>
+            <ShadowingMode dayNumber={day} phrases={getShadowPhrases()} onClose={() => setShowShadowing(false)} />
+          </div>
+        </div>
+      )}
+      <SuccessAnimation show={showSuccess} onComplete={() => setShowSuccess(false)} message={"Day " + day + " Complete!"} />
     </div>
   );
 }

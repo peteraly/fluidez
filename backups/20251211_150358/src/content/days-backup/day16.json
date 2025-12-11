@@ -1,0 +1,238 @@
+{
+  "day": 16,
+  "title": "Past Tense Irregulars",
+  "subtitle": "IR, SER, HACER, TENER",
+  "objectives": [
+    "Learn irregular preterite forms",
+    "Use IR and SER in past (same forms!)",
+    "Use HACER and TENER in past",
+    "Tell stories about the past"
+  ],
+  "grammar": {
+    "title": "Irregular Preterite",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "IR & SER (Same!)",
+        "content": "IR and SER have identical past forms:",
+        "examples": [
+          {
+            "spanish": "yo fui",
+            "english": "I went / I was"
+          },
+          {
+            "spanish": "tú fuiste",
+            "english": "you went / you were"
+          },
+          {
+            "spanish": "él/ella fue",
+            "english": "he/she went / was"
+          },
+          {
+            "spanish": "nosotros fuimos",
+            "english": "we went / were"
+          },
+          {
+            "spanish": "ellos fueron",
+            "english": "they went / were"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Ayer yo ___ al cine. (ir)",
+        "options": [
+          "voy",
+          "fui",
+          "iba",
+          "fue"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "lesson",
+        "heading": "HACER",
+        "content": "To do/make in past:",
+        "examples": [
+          {
+            "spanish": "yo hice",
+            "english": "I did/made"
+          },
+          {
+            "spanish": "tú hiciste",
+            "english": "you did/made"
+          },
+          {
+            "spanish": "él/ella hizo",
+            "english": "he/she did/made"
+          },
+          {
+            "spanish": "nosotros hicimos",
+            "english": "we did/made"
+          },
+          {
+            "spanish": "ellos hicieron",
+            "english": "they did/made"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "TENER",
+        "content": "To have in past:",
+        "examples": [
+          {
+            "spanish": "yo tuve",
+            "english": "I had"
+          },
+          {
+            "spanish": "tú tuviste",
+            "english": "you had"
+          },
+          {
+            "spanish": "él/ella tuvo",
+            "english": "he/she had"
+          },
+          {
+            "spanish": "nosotros tuvimos",
+            "english": "we had"
+          },
+          {
+            "spanish": "ellos tuvieron",
+            "english": "they had"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "¿Qué ___ tú ayer? (hacer)",
+        "correctAnswers": [
+          "hiciste"
+        ],
+        "explanation": "Tú hiciste = You did"
+      },
+      {
+        "type": "lesson",
+        "heading": "B1 Enrichment: Subjunctive with impersonal expressions",
+        "content": "As you advance, notice how the subjunctive appears in this context:",
+        "examples": [
+          {
+            "spanish": "Es importante que estudies.",
+            "english": "(You'll master this soon!)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Common Irregular Verbs",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "More Irregulars",
+        "words": [
+          {
+            "spanish": "estuve (estar)",
+            "english": "I was (location/condition)",
+            "example": "Estuve en casa."
+          },
+          {
+            "spanish": "pude (poder)",
+            "english": "I could/was able",
+            "example": "No pude ir."
+          },
+          {
+            "spanish": "puse (poner)",
+            "english": "I put",
+            "example": "Puse el libro aquí."
+          },
+          {
+            "spanish": "vine (venir)",
+            "english": "I came",
+            "example": "Vine temprano."
+          },
+          {
+            "spanish": "dije (decir)",
+            "english": "I said",
+            "example": "Dije la verdad."
+          },
+          {
+            "spanish": "vi (ver)",
+            "english": "I saw",
+            "example": "Vi una película."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match past tense forms:",
+        "pairs": [
+          {
+            "left": "fui",
+            "right": "I went/was"
+          },
+          {
+            "left": "hice",
+            "right": "I did"
+          },
+          {
+            "left": "tuve",
+            "right": "I had"
+          },
+          {
+            "left": "vi",
+            "right": "I saw"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Ayer fui al cine y vi una película muy buena",
+        "options": [
+          "Went to restaurant, ate good food",
+          "Went to movies, saw good movie",
+          "Went to park, had good time",
+          "Went to store, bought something good"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: A Trip",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "El viaje",
+        "passage": "El año pasado fui a España. Fue un viaje increíble. Estuve dos semanas en Madrid y Barcelona. Vi muchos monumentos famosos. Hice muchos amigos nuevos. Tuve la oportunidad de practicar español todos los días. Un día fui a un partido de fútbol. Fue una experiencia inolvidable. Quiero volver pronto.",
+        "translation": "Last year I went to Spain. It was an incredible trip. I was in Madrid and Barcelona for two weeks. I saw many famous monuments. I made many new friends. I had the opportunity to practice Spanish every day. One day I went to a soccer game. It was an unforgettable experience. I want to go back soon.",
+        "wordCount": 65
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuánto tiempo estuvo en España?",
+        "options": [
+          "Una semana",
+          "Dos semanas",
+          "Un mes",
+          "Dos meses"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

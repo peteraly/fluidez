@@ -1,0 +1,36 @@
+{
+  "day": 51,
+  "title": "Advanced Prepositions",
+  "subtitle": "B2 Level Content",
+  "level": "B2",
+  "objectives": ["Master Advanced Prepositions", "Apply in context", "Practice fluency"],
+  "grammar": {
+    "title": "Advanced Prepositions",
+    "estimatedMinutes": 18,
+    "screens": [
+      {"type": "lesson", "heading": "Introduction to Advanced Prepositions", "content": "Detailed content for Advanced Prepositions will be provided here."},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Practice exercise", "options": ["A", "B", "C", "D"], "correctAnswer": 0}
+    ]
+  },
+  "vocabulary": {
+    "title": "Vocabulary: Advanced Prepositions",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "Key Terms", "words": [{"spanish": "ejemplo", "english": "example", "example": "Un buen ejemplo."}]}
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {"type": "listening", "instruction": "Listen carefully:", "transcript": "Audio transcript for day 51.", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": 0}
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {"type": "reading", "title": "Lectura 51", "passage": "Reading passage for Advanced Prepositions. This text will help you practice the concepts learned today.", "translation": "Translation of the reading passage.", "wordCount": 50}
+    ]
+  }
+}

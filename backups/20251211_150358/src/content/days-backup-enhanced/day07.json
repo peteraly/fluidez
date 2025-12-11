@@ -1,0 +1,250 @@
+{
+  "day": 7,
+  "title": "Week 1 Review",
+  "subtitle": "-ER/-IR verbs & review",
+  "objectives": [
+    "Conjugate -ER and -IR verbs",
+    "Review all Week 1 content",
+    "Practice integrated skills",
+    "Prepare for Week 1 Assessment"
+  ],
+  "grammar": {
+    "title": "-ER and -IR Verbs",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "-ER Verb Conjugation",
+        "content": "Now let's learn -ER verbs! Use COMER (to eat) as your model:\n                              \n   ✏️ Exercise: Yo ___ en un restaurante. (comer)",
+        "examples": [
+          {
+            "spanish": "yo como",
+            "english": "I eat"
+          },
+          {
+            "spanish": "tú comes",
+            "english": "you eat"
+          },
+          {
+            "spanish": "él/ella come",
+            "english": "he/she eats"
+          },
+          {
+            "spanish": "nosotros comemos",
+            "english": "we eat"
+          },
+          {
+            "spanish": "ellos comen",
+            "english": "they eat"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "-IR Verb Conjugation",
+        "content": "-IR verbs are almost identical to -ER! Use VIVIR (to live):\n                              → ellos viven = they live",
+        "examples": [
+          {
+            "spanish": "yo vivo",
+            "english": "I live"
+          },
+          {
+            "spanish": "tú vives",
+            "english": "you live"
+          },
+          {
+            "spanish": "él/ella vive",
+            "english": "he/she lives"
+          },
+          {
+            "spanish": "nosotros vivimos",
+            "english": "we live"
+          },
+          {
+            "spanish": "ellos viven",
+            "english": "they live"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Common -ER/-IR Verbs",
+        "content": "Essential verbs to know:\n                              \n   ✏️ Exercise: Translate: 'They read books'",
+        "examples": [
+          {
+            "spanish": "comer",
+            "english": "to eat"
+          },
+          {
+            "spanish": "beber",
+            "english": "to drink"
+          },
+          {
+            "spanish": "leer",
+            "english": "to read"
+          },
+          {
+            "spanish": "aprender",
+            "english": "to learn"
+          },
+          {
+            "spanish": "comprender",
+            "english": "to understand"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Week 1 Review Vocab",
+    "screens": [
+      {
+        "category": "ER/-IR Verbs",
+        "words": [
+          {
+            "spanish": "comer",
+            "english": "to eat"
+          },
+          {
+            "spanish": "beber",
+            "english": "to drink"
+          },
+          {
+            "spanish": "leer",
+            "english": "to read"
+          },
+          {
+            "spanish": "aprender",
+            "english": "to learn"
+          },
+          {
+            "spanish": "vivir",
+            "english": "to live"
+          },
+          {
+            "spanish": "escribir",
+            "english": "to write"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "yo como tú comes yo vivo"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Week 1 Review",
+        "passage": "Esta es una lectura de práctica para el día 7. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 7. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "carpeta",
+        "means": "folder",
+        "notMean": "carpet (= alfombra)"
+      },
+      {
+        "spanish": "soportar",
+        "means": "to tolerate",
+        "notMean": "to support (= apoyar)"
+      },
+      {
+        "spanish": "constipado",
+        "means": "having a cold",
+        "notMean": "constipated (= estreñido)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "practical_scenarios": {
+    "title": "Phone Conversations",
+    "phrases": [
+      {
+        "spanish": "¿Aló? / ¿Diga? / ¿Bueno?",
+        "english": "Hello? (answering phone - varies by country)"
+      },
+      {
+        "spanish": "¿Quién habla?",
+        "english": "Who's speaking?"
+      },
+      {
+        "spanish": "Soy [nombre]",
+        "english": "This is [name]"
+      },
+      {
+        "spanish": "¿Está [nombre]?",
+        "english": "Is [name] there?"
+      },
+      {
+        "spanish": "Un momento, por favor",
+        "english": "One moment, please"
+      },
+      {
+        "spanish": "No está en este momento",
+        "english": "He/she isn't here right now"
+      },
+      {
+        "spanish": "¿Quiere dejar un mensaje?",
+        "english": "Would you like to leave a message?"
+      },
+      {
+        "spanish": "Le devolveré la llamada",
+        "english": "I'll call you back"
+      },
+      {
+        "spanish": "Se cortó la llamada",
+        "english": "The call got cut off"
+      },
+      {
+        "spanish": "No tengo señal",
+        "english": "I don't have signal"
+      }
+    ]
+  },
+  "level": "A1"
+}

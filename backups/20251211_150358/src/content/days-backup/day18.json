@@ -1,0 +1,216 @@
+{
+  "day": 18,
+  "title": "Directions & Places",
+  "subtitle": "Getting around",
+  "objectives": [
+    "Ask for directions",
+    "Give directions",
+    "Learn location prepositions",
+    "Navigate a city"
+  ],
+  "grammar": {
+    "title": "Giving Directions",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Direction Commands",
+        "content": "Use usted form for strangers:",
+        "examples": [
+          {
+            "spanish": "Siga recto",
+            "english": "Go straight"
+          },
+          {
+            "spanish": "Gire/Doble a la derecha",
+            "english": "Turn right"
+          },
+          {
+            "spanish": "Gire/Doble a la izquierda",
+            "english": "Turn left"
+          },
+          {
+            "spanish": "Cruce la calle",
+            "english": "Cross the street"
+          },
+          {
+            "spanish": "Está en la esquina",
+            "english": "It's on the corner"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Location Prepositions",
+        "content": "Where things are:",
+        "examples": [
+          {
+            "spanish": "al lado de",
+            "english": "next to"
+          },
+          {
+            "spanish": "enfrente de",
+            "english": "in front of"
+          },
+          {
+            "spanish": "detrás de",
+            "english": "behind"
+          },
+          {
+            "spanish": "cerca de",
+            "english": "near"
+          },
+          {
+            "spanish": "lejos de",
+            "english": "far from"
+          },
+          {
+            "spanish": "entre",
+            "english": "between"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "El banco está ___ el restaurante. (next to)",
+        "options": [
+          "detrás de",
+          "al lado de",
+          "lejos de",
+          "enfrente de"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "lesson",
+        "heading": "B1 Enrichment: Subjunctive with directions (uncertainty)",
+        "content": "As you advance, notice how the subjunctive appears in this context:",
+        "examples": [
+          {
+            "spanish": "Busco un lugar que tenga wifi.",
+            "english": "(You'll master this soon!)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Places in Town",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Places",
+        "words": [
+          {
+            "spanish": "la calle",
+            "english": "street",
+            "example": "Camina por esta calle."
+          },
+          {
+            "spanish": "la esquina",
+            "english": "corner",
+            "example": "Está en la esquina."
+          },
+          {
+            "spanish": "la cuadra/manzana",
+            "english": "block",
+            "example": "A dos cuadras."
+          },
+          {
+            "spanish": "el semáforo",
+            "english": "traffic light",
+            "example": "En el semáforo, gire."
+          },
+          {
+            "spanish": "el banco",
+            "english": "bank",
+            "example": "¿Dónde está el banco?"
+          },
+          {
+            "spanish": "la farmacia",
+            "english": "pharmacy",
+            "example": "Busco una farmacia."
+          },
+          {
+            "spanish": "el hospital",
+            "english": "hospital",
+            "example": "El hospital está cerca."
+          },
+          {
+            "spanish": "la estación",
+            "english": "station",
+            "example": "La estación de metro."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match:",
+        "pairs": [
+          {
+            "left": "derecha",
+            "right": "right"
+          },
+          {
+            "left": "izquierda",
+            "right": "left"
+          },
+          {
+            "left": "recto",
+            "right": "straight"
+          },
+          {
+            "left": "esquina",
+            "right": "corner"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Siga recto dos cuadras y gire a la derecha. El banco está al lado del restaurante.",
+        "options": [
+          "2 blocks, turn left, bank next to pharmacy",
+          "2 blocks, turn right, bank next to restaurant",
+          "3 blocks, turn right, bank in front of restaurant",
+          "2 blocks, turn right, bank behind restaurant"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Asking Directions",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "¿Cómo llego?",
+        "passage": "Turista: Perdone, ¿cómo llego al museo?\nLocal: Claro. Siga recto por esta calle dos cuadras. En el semáforo, gire a la izquierda. El museo está enfrente del parque, al lado de la biblioteca.\nTurista: ¿Está lejos?\nLocal: No, está a cinco minutos caminando.\nTurista: Muchas gracias.\nLocal: De nada. ¡Que lo disfrute!",
+        "translation": "Tourist: Excuse me, how do I get to the museum?\nLocal: Sure. Go straight on this street two blocks. At the traffic light, turn left. The museum is in front of the park, next to the library.\nTourist: Is it far?\nLocal: No, it's five minutes walking.\nTourist: Thank you very much.\nLocal: You're welcome. Enjoy it!",
+        "wordCount": 60
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Dónde está el museo?",
+        "options": [
+          "Al lado del parque",
+          "Detrás de la biblioteca",
+          "Enfrente del parque",
+          "Lejos del centro"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "day": 25,
+  "title": "The Conditional Tense",
+  "subtitle": "Would, could, should",
+  "level": "B2",
+  "objectives": [
+    "Form the conditional tense",
+    "Express hypothetical situations",
+    "Make polite requests",
+    "Give advice with conditional"
+  ],
+  "grammar": {
+    "title": "Conditional Tense",
+    "estimatedMinutes": 20,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "What is the Conditional?",
+        "content": "The conditional expresses what WOULD happen. Used for hypotheticals, polite requests, and advice.",
+        "examples": [
+          {
+            "spanish": "Me gustaría un café",
+            "english": "I would like a coffee"
+          },
+          {
+            "spanish": "¿Podrías ayudarme?",
+            "english": "Could you help me?"
+          },
+          {
+            "spanish": "Yo no haría eso",
+            "english": "I wouldn't do that"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Forming the Conditional",
+        "content": "Add these endings to the INFINITIVE (same for all verbs):",
+        "examples": [
+          {
+            "spanish": "yo: -ía",
+            "english": "hablaría, comería, viviría"
+          },
+          {
+            "spanish": "tú: -ías",
+            "english": "hablarías, comerías, vivirías"
+          },
+          {
+            "spanish": "él/ella: -ía",
+            "english": "hablaría, comería, viviría"
+          },
+          {
+            "spanish": "nosotros: -íamos",
+            "english": "hablaríamos, comeríamos, viviríamos"
+          },
+          {
+            "spanish": "ellos: -ían",
+            "english": "hablarían, comerían, vivirían"
+          }
+        ],
+        "tip": "Same endings for -AR, -ER, -IR verbs! Add to full infinitive."
+      },
+      {
+        "type": "lesson",
+        "heading": "Regular Examples",
+        "content": "Simply add endings to infinitive:",
+        "examples": [
+          {
+            "spanish": "hablar → hablaría, hablarías, hablaría...",
+            "english": "would speak"
+          },
+          {
+            "spanish": "comer → comería, comerías, comería...",
+            "english": "would eat"
+          },
+          {
+            "spanish": "vivir → viviría, vivirías, viviría...",
+            "english": "would live"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Yo ___ en España. (vivir, conditional)",
+        "correctAnswers": [
+          "viviría"
+        ],
+        "explanation": "vivir + ía = viviría (I would live)"
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Stems",
+        "content": "Same irregular stems as future tense:",
+        "examples": [
+          {
+            "spanish": "decir → dir-: diría",
+            "english": "would say"
+          },
+          {
+            "spanish": "hacer → har-: haría",
+            "english": "would do/make"
+          },
+          {
+            "spanish": "poder → podr-: podría",
+            "english": "could"
+          },
+          {
+            "spanish": "poner → pondr-: pondría",
+            "english": "would put"
+          },
+          {
+            "spanish": "querer → querr-: querría",
+            "english": "would want"
+          },
+          {
+            "spanish": "saber → sabr-: sabría",
+            "english": "would know"
+          },
+          {
+            "spanish": "salir → saldr-: saldría",
+            "english": "would leave"
+          },
+          {
+            "spanish": "tener → tendr-: tendría",
+            "english": "would have"
+          },
+          {
+            "spanish": "venir → vendr-: vendría",
+            "english": "would come"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match conditional forms:",
+        "pairs": [
+          {
+            "left": "haría",
+            "right": "would do"
+          },
+          {
+            "left": "tendría",
+            "right": "would have"
+          },
+          {
+            "left": "podría",
+            "right": "could"
+          },
+          {
+            "left": "querría",
+            "right": "would want"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Uses of Conditional",
+        "content": "Four main uses:",
+        "examples": [
+          {
+            "spanish": "Hypothetical: Yo compraría un coche nuevo",
+            "english": "I would buy a new car"
+          },
+          {
+            "spanish": "Polite requests: ¿Podría repetir?",
+            "english": "Could you repeat?"
+          },
+          {
+            "spanish": "Advice: Yo que tú, estudiaría más",
+            "english": "If I were you, I'd study more"
+          },
+          {
+            "spanish": "Probability in past: Serían las diez",
+            "english": "It was probably ten o'clock"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿___ ayudarme, por favor? (poder, polite)",
+        "options": [
+          "Puedes",
+          "Podías",
+          "Podrías",
+          "Pudiste"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Podrías = Could you (polite conditional)"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Conditional Expressions",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Polite Requests",
+        "words": [
+          {
+            "spanish": "¿Podría...?",
+            "english": "Could you...?",
+            "example": "¿Podría hablar más lento?"
+          },
+          {
+            "spanish": "¿Sería posible...?",
+            "english": "Would it be possible...?",
+            "example": "¿Sería posible cambiar la fecha?"
+          },
+          {
+            "spanish": "Me gustaría...",
+            "english": "I would like...",
+            "example": "Me gustaría reservar una mesa."
+          },
+          {
+            "spanish": "Querría...",
+            "english": "I would want...",
+            "example": "Querría más información."
+          },
+          {
+            "spanish": "¿Le importaría...?",
+            "english": "Would you mind...?",
+            "example": "¿Le importaría esperar?"
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Giving Advice",
+        "words": [
+          {
+            "spanish": "Yo que tú...",
+            "english": "If I were you...",
+            "example": "Yo que tú, iría al médico."
+          },
+          {
+            "spanish": "Yo en tu lugar...",
+            "english": "In your place, I...",
+            "example": "Yo en tu lugar, aceptaría."
+          },
+          {
+            "spanish": "Deberías...",
+            "english": "You should...",
+            "example": "Deberías descansar más."
+          },
+          {
+            "spanish": "Sería mejor...",
+            "english": "It would be better...",
+            "example": "Sería mejor esperar."
+          },
+          {
+            "spanish": "¿No crees que deberías...?",
+            "english": "Don't you think you should...?",
+            "example": "¿No crees que deberías llamarla?"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Most polite way to say 'Can you help me?'",
+        "options": [
+          "¿Puedes ayudarme?",
+          "¿Podrías ayudarme?",
+          "¡Ayúdame!",
+          "¿Me ayudas?"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "vocab",
+        "category": "Bonus Vocabulary",
+        "words": [
+          {
+            "spanish": "el médico/la médica",
+            "english": "doctor",
+            "example": "Necesito ver a un médico."
+          },
+          {
+            "spanish": "el/la enfermero/a",
+            "english": "nurse",
+            "example": "La enfermera me tomó la temperatura."
+          },
+          {
+            "spanish": "el hospital",
+            "english": "hospital",
+            "example": "El hospital está cerca."
+          },
+          {
+            "spanish": "la farmacia",
+            "english": "pharmacy",
+            "example": "Compro medicina en la farmacia."
+          },
+          {
+            "spanish": "la receta",
+            "english": "prescription",
+            "example": "Necesitas una receta."
+          },
+          {
+            "spanish": "la pastilla",
+            "english": "pill",
+            "example": "Toma dos pastillas al día."
+          },
+          {
+            "spanish": "el dolor",
+            "english": "pain",
+            "example": "Tengo dolor de cabeza."
+          },
+          {
+            "spanish": "la fiebre",
+            "english": "fever",
+            "example": "Tiene mucha fiebre."
+          },
+          {
+            "spanish": "el resfriado",
+            "english": "cold",
+            "example": "Tengo un resfriado."
+          },
+          {
+            "spanish": "la alergia",
+            "english": "allergy",
+            "example": "Tengo alergia al polen."
+          },
+          {
+            "spanish": "el refrigerador/la nevera",
+            "english": "refrigerator",
+            "example": "La leche está en la nevera."
+          },
+          {
+            "spanish": "la estufa/cocina",
+            "english": "stove",
+            "example": "Cocino en la estufa."
+          },
+          {
+            "spanish": "el horno",
+            "english": "oven",
+            "example": "El pastel está en el horno."
+          },
+          {
+            "spanish": "el microondas",
+            "english": "microwave",
+            "example": "Calienta en el microondas."
+          },
+          {
+            "spanish": "la lavadora",
+            "english": "washing machine",
+            "example": "La ropa está en la lavadora."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Hypotheticals",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 What would he do with more money?",
+        "transcript": "Si tuviera más dinero, viajaría por todo el mundo. Visitaría Japón, Australia y Brasil. También compraría una casa en la playa.",
+        "options": [
+          "Buy a car",
+          "Travel the world and buy beach house",
+          "Start a business",
+          "Save it all"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Dream Life",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Mi vida ideal",
+        "passage": "Si pudiera vivir mi vida ideal, viviría en una ciudad cerca del mar. Trabajaría solo tres días por semana y tendría mucho tiempo libre. Me levantaría tarde, desayunaría con calma y daría un paseo por la playa.\n\nNo tendría que preocuparme por el dinero. Viajaría constantemente y conocería nuevas culturas. ¿Qué harías tú con tu vida ideal?",
+        "translation": "If I could live my ideal life, I would live in a city near the sea. I would work only three days a week and have a lot of free time. I would get up late, have a calm breakfast, and take a walk on the beach.\n\nI wouldn't have to worry about money. I would travel constantly and get to know new cultures. What would you do with your ideal life?",
+        "wordCount": 85
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuántos días trabajaría?",
+        "options": [
+          "Todos los días",
+          "Cinco días",
+          "Tres días",
+          "Ningún día"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 25. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "asistir",
+        "means": "to attend",
+        "notMean": "to assist (= ayudar)"
+      },
+      {
+        "spanish": "pretender",
+        "means": "to try/attempt",
+        "notMean": "to pretend (= fingir)"
+      },
+      {
+        "spanish": "introducir",
+        "means": "to insert",
+        "notMean": "to introduce (= presentar)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

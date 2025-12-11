@@ -1,4 +1,5 @@
 import { getDayData, getDayJson, getDayVocabulary, getAllCurriculum } from './curriculumLoader';
+import MariaGreeting from "./components/MariaGreeting";
 import React, { useState, useEffect, useCallback } from 'react';
 import AIPractice from './AIPractice';
 import VoicePractice from './VoicePractice';
@@ -19,7 +20,7 @@ import FocusMode from './FocusMode';
 
 import MultimodalVoiceChat from './MultimodalVoiceChat';
 import ImmersiveRoleplay from './ImmersiveRoleplay';
-import InteractiveCurriculum from './InteractiveCurriculum';
+import InteractiveCurriculum from "./InteractiveCurriculum"; // import OldInteractiveCurriculum from './InteractiveCurriculum';
 import VoiceChatMode from './modes/VoiceChatMode';
 
 // API Key Banner Component

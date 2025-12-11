@@ -1,0 +1,338 @@
+{
+  "day": 4,
+  "title": "Daily Actions",
+  "subtitle": "Regular -AR verbs",
+  "objectives": [
+    "Conjugate regular -AR verbs in present tense",
+    "Describe daily routines",
+    "Use time expressions",
+    "Talk about what you do regularly"
+  ],
+  "grammar": {
+    "title": "Regular -AR Verbs",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Present Tense -AR Verbs",
+        "content": "Most Spanish verbs end in -AR, -ER, or -IR. Today we learn -AR verbs! To conjugate, remove -AR and add the endings."
+      },
+      {
+        "type": "lesson",
+        "heading": "-AR Verb Endings",
+        "content": "Here are the endings for -AR verbs using HABLAR (to speak):\n                              \n   ✏️ Exercise: Complete: Yo ___ español. (hablar)",
+        "examples": [
+          {
+            "spanish": "yo hablo",
+            "english": "I speak"
+          },
+          {
+            "spanish": "tú hablas",
+            "english": "you speak"
+          },
+          {
+            "spanish": "él/ella habla",
+            "english": "he/she speaks"
+          },
+          {
+            "spanish": "nosotros hablamos",
+            "english": "we speak"
+          },
+          {
+            "spanish": "ellos/ustedes hablan",
+            "english": "they/you all speak"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Common -AR Verbs",
+        "content": "Learn these essential -AR verbs:\n                              \n   ✏️ Exercise: Ella ___ en el hospital. (trabajar)\n\n   ✏️ Exercise: Nosotros ___ español. (estudiar)\n\n   ✏️ Exercise: Translate: 'They work in Mexico'",
+        "examples": [
+          {
+            "spanish": "trabajar",
+            "english": "to work"
+          },
+          {
+            "spanish": "estudiar",
+            "english": "to study"
+          },
+          {
+            "spanish": "comprar",
+            "english": "to buy"
+          },
+          {
+            "spanish": "cocinar",
+            "english": "to cook"
+          },
+          {
+            "spanish": "caminar",
+            "english": "to walk"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Time Expressions",
+        "content": "Use these expressions to talk about when you do things:\n                              \n   ✏️ Exercise: Put in order: 'I always study in the morning'",
+        "examples": [
+          {
+            "spanish": "por la mañana",
+            "english": "in the morning"
+          },
+          {
+            "spanish": "por la tarde",
+            "english": "in the afternoon"
+          },
+          {
+            "spanish": "por la noche",
+            "english": "at night"
+          },
+          {
+            "spanish": "todos los días",
+            "english": "every day"
+          },
+          {
+            "spanish": "siempre",
+            "english": "always"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Daily Routine Vocabulary",
+    "screens": [
+      {
+        "category": "Morning Routine",
+        "words": [
+          {
+            "spanish": "despertarse",
+            "english": "to wake up"
+          },
+          {
+            "spanish": "levantarse",
+            "english": "to get up"
+          },
+          {
+            "spanish": "ducharse",
+            "english": "to shower"
+          },
+          {
+            "spanish": "desayunar",
+            "english": "to have breakfast"
+          },
+          {
+            "spanish": "vestirse",
+            "english": "to get dressed"
+          }
+        ]
+      },
+      {
+        "category": "Daily Activities",
+        "words": [
+          {
+            "spanish": "almorzar",
+            "english": "to have lunch"
+          },
+          {
+            "spanish": "cenar",
+            "english": "to have dinner"
+          },
+          {
+            "spanish": "limpiar",
+            "english": "to clean"
+          },
+          {
+            "spanish": "lavar",
+            "english": "to wash"
+          },
+          {
+            "spanish": "cocinar",
+            "english": "to cook"
+          },
+          {
+            "spanish": "llamar",
+            "english": "to call"
+          }
+        ]
+      },
+      {
+        "category": "Time Words",
+        "words": [
+          {
+            "spanish": "temprano",
+            "english": "early"
+          },
+          {
+            "spanish": "tarde",
+            "english": "late"
+          },
+          {
+            "spanish": "ahora",
+            "english": "now"
+          },
+          {
+            "spanish": "hoy",
+            "english": "today"
+          },
+          {
+            "spanish": "mañana",
+            "english": "tomorrow"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "yo hablo tú hablas trabajar"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Daily Actions",
+        "passage": "Por la mañana desayuno café. Trabajo en una oficina. Almuerzo a las dos. Por la noche ceno con mi familia. Siempre estudio español.",
+        "wordCount": 23
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 4. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "sensible",
+        "means": "sensitive",
+        "notMean": "sensible (= sensato)"
+      },
+      {
+        "spanish": "éxito",
+        "means": "success",
+        "notMean": "exit (= salida)"
+      },
+      {
+        "spanish": "librería",
+        "means": "bookstore",
+        "notMean": "library (= biblioteca)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A1",
+  "processabilityTheory": {
+    "stage": 2,
+    "stageName": "Lexical Morphology",
+    "description": "Stage 2: Lexical Morphology"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "gender",
+    "colorCodes": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 What do you notice about these color words?"
+      },
+      {
+        "type": "post_pattern",
+        "text": "💡 Did you notice? Some colors change (-o/-a), some don't (verde, azul)"
+      },
+      {
+        "type": "exception",
+        "text": "⚠️ Watch out: 'azul', 'verde', 'naranja' don't change for gender!"
+      }
+    ],
+    "inputFlooding": [
+      "rojo / roja",
+      "blanco / blanca",
+      "negro / negra",
+      "amarillo / amarilla",
+      "verde",
+      "azul",
+      "naranja"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": false,
+    "unlockDay": 7,
+    "reason": "Shadowing mode unlocks on Day 7 after basic vocabulary is established"
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.302975",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "day": 25,
+  "title": "Emotions & Feelings",
+  "subtitle": "Expressing how you feel",
+  "objectives": [
+    "Express emotions",
+    "React to news",
+    "Show empathy",
+    "Discuss feelings"
+  ],
+  "grammar": {
+    "title": "Emotion Expressions",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Expressing Emotions",
+        "content": "Use ESTAR for temporary feelings:",
+        "examples": [
+          {
+            "spanish": "Estoy feliz",
+            "english": "I'm happy"
+          },
+          {
+            "spanish": "Estoy triste",
+            "english": "I'm sad"
+          },
+          {
+            "spanish": "Estoy emocionado/a",
+            "english": "I'm excited"
+          },
+          {
+            "spanish": "Estoy preocupado/a",
+            "english": "I'm worried"
+          },
+          {
+            "spanish": "Me siento...",
+            "english": "I feel..."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Reactions",
+        "content": "How to react:",
+        "examples": [
+          {
+            "spanish": "¡Qué bien!",
+            "english": "How great!"
+          },
+          {
+            "spanish": "¡Qué pena!",
+            "english": "What a shame!"
+          },
+          {
+            "spanish": "¡No me digas!",
+            "english": "No way!"
+          },
+          {
+            "spanish": "Lo siento mucho",
+            "english": "I'm very sorry"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "'What a shame!' = ___",
+        "options": [
+          "¡Qué bien!",
+          "¡Qué pena!",
+          "¡Qué bueno!",
+          "¡No me digas!"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "lesson",
+        "heading": "C1 Advanced: Passive Voice & Se Constructions",
+        "content": "Formal and impersonal expressions:",
+        "examples": [
+          {
+            "spanish": "Se habla español",
+            "english": "Spanish is spoken"
+          },
+          {
+            "spanish": "Fue construido en 1900",
+            "english": "It was built in 1900"
+          },
+          {
+            "spanish": "Se dice que...",
+            "english": "It is said that..."
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Emotions",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Feelings",
+        "words": [
+          {
+            "spanish": "feliz",
+            "english": "happy",
+            "example": "Estoy muy feliz."
+          },
+          {
+            "spanish": "triste",
+            "english": "sad",
+            "example": "Estoy triste hoy."
+          },
+          {
+            "spanish": "enojado/a",
+            "english": "angry",
+            "example": "Está enojada."
+          },
+          {
+            "spanish": "nervioso/a",
+            "english": "nervous",
+            "example": "Estoy nervioso."
+          },
+          {
+            "spanish": "emocionado/a",
+            "english": "excited",
+            "example": "Estoy emocionada."
+          },
+          {
+            "spanish": "sorprendido/a",
+            "english": "surprised",
+            "example": "Estoy sorprendido."
+          },
+          {
+            "spanish": "aburrido/a",
+            "english": "bored",
+            "example": "Estoy aburrido."
+          },
+          {
+            "spanish": "orgulloso/a",
+            "english": "proud",
+            "example": "Estoy orgulloso de ti."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Estoy muy emocionada porque mañana es mi cumpleaños",
+        "options": [
+          "Sad because birthday passed",
+          "Excited because birthday tomorrow",
+          "Nervous about work tomorrow",
+          "Happy because it's her birthday today"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Noticias",
+        "passage": "Ana: ¡Hola! ¿Cómo estás?\nMaría: Estoy muy emocionada. ¡Conseguí el trabajo!\nAna: ¡Qué bien! ¡Felicidades!\nMaría: Gracias. Pero también estoy un poco nerviosa.\nAna: Es normal. ¿Cuándo empiezas?\nMaría: La próxima semana. Estoy preocupada porque es mucha responsabilidad.\nAna: No te preocupes. Vas a hacerlo muy bien.\nMaría: Gracias, amiga. Me siento mejor ahora.",
+        "translation": "Ana: Hi! How are you?\nMaría: I'm very excited. I got the job!\nAna: How great! Congratulations!\nMaría: Thanks. But I'm also a little nervous.\nAna: That's normal. When do you start?\nMaría: Next week. I'm worried because it's a lot of responsibility.\nAna: Don't worry. You're going to do very well.\nMaría: Thanks, friend. I feel better now.",
+        "wordCount": 70
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Por qué está emocionada María?",
+        "options": [
+          "Porque es su cumpleaños",
+          "Porque consiguió trabajo",
+          "Porque va a viajar",
+          "Porque se va a casar"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

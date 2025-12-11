@@ -1,0 +1,419 @@
+{
+  "day": 2,
+  "title": "Introducing Yourself",
+  "subtitle": "Subject pronouns & SER",
+  "objectives": [
+    "Master Spanish subject pronouns",
+    "Conjugate SER in present tense",
+    "Introduce yourself completely",
+    "State name, origin, age, and profession"
+  ],
+  "grammar": {
+    "title": "Subject Pronouns & SER",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Subject Pronouns",
+        "content": "Subject pronouns tell us WHO is doing the action. Unlike English, Spanish often drops the pronoun because verb endings indicate the subject. However, you need to know them."
+      },
+      {
+        "type": "lesson",
+        "heading": "The Pronoun Chart",
+        "content": "Learn these essential pronouns:\n                              \n   ✏️ Exercise: Which pronoun means 'we'?",
+        "examples": [
+          {
+            "spanish": "yo",
+            "english": "I"
+          },
+          {
+            "spanish": "tú",
+            "english": "you (informal)"
+          },
+          {
+            "spanish": "él",
+            "english": "he"
+          },
+          {
+            "spanish": "ella",
+            "english": "she"
+          },
+          {
+            "spanish": "usted (Ud.)",
+            "english": "you (formal)"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Tú vs Usted",
+        "content": "'Tú' is informal — use with friends, family, peers, and children. 'Usted' is formal — use with strangers, elders, and professionals. When in doubt, use 'usted' to show respect."
+      },
+      {
+        "type": "lesson",
+        "heading": "The Verb SER (To Be)",
+        "content": "SER is one of two Spanish verbs meaning 'to be.' Use SER for permanent, essential, or defining characteristics.\n                              \n   ✏️ Exercise: Complete: Yo ___ estudiante. (I am a student)",
+        "examples": [
+          {
+            "spanish": "yo soy",
+            "english": "I am"
+          },
+          {
+            "spanish": "tú eres",
+            "english": "you are (informal)"
+          },
+          {
+            "spanish": "él/ella/usted es",
+            "english": "he/she is, you are (formal)"
+          },
+          {
+            "spanish": "nosotros somos",
+            "english": "we are"
+          },
+          {
+            "spanish": "ellos/ustedes son",
+            "english": "they are, you all are"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "When to Use SER",
+        "content": "Use SER for: Identity (who someone is), Origin (where from), Profession, Nationality, Physical traits, Personality, Time & dates.\n                              \n   ✏️ Exercise: Complete: Ellos ___ de España.\n\n   ✏️ Exercise: Translate: 'We are students'",
+        "examples": [
+          {
+            "spanish": "Soy María",
+            "english": "I am María (identity)"
+          },
+          {
+            "spanish": "Soy de México",
+            "english": "I am from Mexico (origin)"
+          },
+          {
+            "spanish": "Soy profesor",
+            "english": "I am a teacher (profession)"
+          },
+          {
+            "spanish": "Soy estadounidense",
+            "english": "I am American (nationality)"
+          },
+          {
+            "spanish": "Ella es alta",
+            "english": "She is tall (physical trait)"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Introducing Yourself",
+        "content": "Now let's put it together! Here are the essential phrases for self-introduction:\n                        → Soy [profesión] = I am a [profession]",
+        "examples": [
+          {
+            "spanish": "Me llamo [nombre]",
+            "english": "My name is [name]"
+          },
+          {
+            "spanish": "Soy de [lugar]",
+            "english": "I am from [place]"
+          },
+          {
+            "spanish": "Tengo [número] años",
+            "english": "I am [number] years old"
+          },
+          {
+            "spanish": "Soy [profesión]",
+            "english": "I am a [profession]"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Personal Information & Professions",
+    "screens": [
+      {
+        "category": "Personal Information",
+        "words": [
+          {
+            "spanish": "el nombre",
+            "english": "name"
+          },
+          {
+            "spanish": "el apellido",
+            "english": "last name"
+          },
+          {
+            "spanish": "la edad",
+            "english": "age"
+          },
+          {
+            "spanish": "el cumpleaños",
+            "english": "birthday"
+          },
+          {
+            "spanish": "casado/a",
+            "english": "married"
+          },
+          {
+            "spanish": "soltero/a",
+            "english": "single"
+          }
+        ]
+      },
+      {
+        "category": "Professions",
+        "words": [
+          {
+            "spanish": "el/la profesor/a",
+            "english": "teacher"
+          },
+          {
+            "spanish": "el/la estudiante",
+            "english": "student"
+          },
+          {
+            "spanish": "el/la médico/a",
+            "english": "doctor"
+          },
+          {
+            "spanish": "el/la abogado/a",
+            "english": "lawyer"
+          },
+          {
+            "spanish": "el/la ingeniero/a",
+            "english": "engineer"
+          },
+          {
+            "spanish": "el/la enfermero/a",
+            "english": "nurse"
+          },
+          {
+            "spanish": "el/la programador/a",
+            "english": "programmer"
+          }
+        ]
+      },
+      {
+        "category": "Nationalities",
+        "words": [
+          {
+            "spanish": "estadounidense",
+            "english": "American",
+            "example": "US"
+          },
+          {
+            "spanish": "mexicano/a",
+            "english": "Mexican"
+          },
+          {
+            "spanish": "español/a",
+            "english": "Spanish"
+          },
+          {
+            "spanish": "inglés/inglesa",
+            "english": "English/British"
+          },
+          {
+            "spanish": "francés/francesa",
+            "english": "French"
+          },
+          {
+            "spanish": "japonés/japonesa",
+            "english": "Japanese"
+          },
+          {
+            "spanish": "colombiano/a",
+            "english": "Colombian"
+          }
+        ]
+      },
+      {
+        "category": "Family Members",
+        "words": [
+          {
+            "spanish": "la familia",
+            "english": "family"
+          },
+          {
+            "spanish": "el padre / el papá",
+            "english": "father / dad"
+          },
+          {
+            "spanish": "la madre / la mamá",
+            "english": "mother / mom"
+          },
+          {
+            "spanish": "el hermano",
+            "english": "brother"
+          },
+          {
+            "spanish": "la hermana",
+            "english": "sister"
+          },
+          {
+            "spanish": "el hijo / la hija",
+            "english": "son / daughter"
+          },
+          {
+            "spanish": "el abuelo / la abuela",
+            "english": "grandfather / grandmother"
+          },
+          {
+            "spanish": "el tío / la tía",
+            "english": "uncle / aunt"
+          },
+          {
+            "spanish": "el primo / la prima",
+            "english": "cousin"
+          },
+          {
+            "spanish": "el esposo / la esposa",
+            "english": "husband / wife"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "yo tú yo soy"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Introducing Yourself",
+        "passage": "Me llamo Carlos. Soy de México. Soy estudiante. Tengo veinticinco años. Soy alto y simpático. Mi familia es grande.",
+        "wordCount": 19
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 2. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "actualmente",
+        "means": "currently",
+        "notMean": "actually (= en realidad)"
+      },
+      {
+        "spanish": "realizar",
+        "means": "to accomplish",
+        "notMean": "to realize (= darse cuenta)"
+      },
+      {
+        "spanish": "sensible",
+        "means": "sensitive",
+        "notMean": "sensible (= sensato)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A1",
+  "processabilityTheory": {
+    "stage": 1,
+    "stageName": "Words/Formulas",
+    "description": "Stage 1: Words/Formulas"
+  },
+  "noticingEnhancements": {
+    "colorScheme": null,
+    "colorCodes": null,
+    "callouts": [
+      {
+        "type": "rule",
+        "text": "📐 The pattern: 'Tengo X años' - Spanish uses 'have' for age, not 'am'"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: English says 'I am 25' but Spanish says 'I have 25 years'"
+      }
+    ],
+    "inputFlooding": [
+      "Tengo veinte años",
+      "Tengo veinticinco años",
+      "Tengo treinta años",
+      "¿Cuántos años tienes?",
+      "Él tiene diez años"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": false,
+    "unlockDay": 7,
+    "reason": "Shadowing mode unlocks on Day 7 after basic vocabulary is established"
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.302255",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

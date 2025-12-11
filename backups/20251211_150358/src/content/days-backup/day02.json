@@ -1,0 +1,190 @@
+{
+  "day": 2,
+  "title": "Introducing Yourself",
+  "subtitle": "Subject pronouns, SER & Numbers 11-30",
+  "level": "A1",
+  "objectives": [
+    "Use subject pronouns correctly",
+    "Conjugate SER in present tense",
+    "Introduce yourself and others",
+    "Count from 11 to 30"
+  ],
+  "grammar": {
+    "title": "Subject Pronouns & SER",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Subject Pronouns",
+        "content": "Spanish has more pronoun options than English because verbs change based on who's speaking:",
+        "examples": [
+          {"spanish": "yo", "english": "I"},
+          {"spanish": "tú", "english": "you (informal)"},
+          {"spanish": "él/ella", "english": "he/she"},
+          {"spanish": "usted", "english": "you (formal)"},
+          {"spanish": "nosotros/nosotras", "english": "we"},
+          {"spanish": "ellos/ellas", "english": "they"},
+          {"spanish": "ustedes", "english": "you all"}
+        ],
+        "tip": "In Latin America, 'ustedes' is used for all plural 'you'. In Spain, 'vosotros' is informal plural."
+      },
+      {
+        "type": "lesson",
+        "heading": "The Verb SER (to be)",
+        "content": "SER is used for permanent characteristics: identity, origin, profession, and inherent traits.",
+        "examples": [
+          {"spanish": "yo soy", "english": "I am"},
+          {"spanish": "tú eres", "english": "you are"},
+          {"spanish": "él/ella/usted es", "english": "he/she is, you (formal) are"},
+          {"spanish": "nosotros somos", "english": "we are"},
+          {"spanish": "ellos/ustedes son", "english": "they/you all are"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Yo ___ estudiante. (I am a student)",
+        "correctAnswers": ["soy"],
+        "hint": "First person singular of SER",
+        "explanation": "Yo soy = I am"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Ellos ___ de México.",
+        "options": ["soy", "eres", "es", "son"],
+        "correctAnswer": 3,
+        "explanation": "Ellos son = They are"
+      },
+      {
+        "type": "lesson",
+        "heading": "Introducing Yourself",
+        "content": "Key phrases for introductions:",
+        "examples": [
+          {"spanish": "Me llamo...", "english": "My name is... (I call myself)"},
+          {"spanish": "Soy de...", "english": "I'm from..."},
+          {"spanish": "Soy [profesión]", "english": "I'm a [profession]"},
+          {"spanish": "Tengo [número] años", "english": "I'm [number] years old"},
+          {"spanish": "Mucho gusto", "english": "Nice to meet you"},
+          {"spanish": "Encantado/a", "english": "Pleased to meet you"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "ordering",
+        "instruction": "Put in order: 'My name is María'",
+        "items": ["llamo", "Me", "María"],
+        "correctOrder": ["Me", "llamo", "María"]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Numbers 11-30 & Introductions",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Numbers 11-20",
+        "words": [
+          {"spanish": "once", "english": "11", "example": "Once más cuatro son quince."},
+          {"spanish": "doce", "english": "12", "example": "Hay doce meses en un año."},
+          {"spanish": "trece", "english": "13", "example": "El trece es mi número de suerte."},
+          {"spanish": "catorce", "english": "14", "example": "Febrero tiene catorce de San Valentín."},
+          {"spanish": "quince", "english": "15", "example": "La quinceañera tiene quince años."},
+          {"spanish": "dieciséis", "english": "16", "example": "Dieciséis es un número par."},
+          {"spanish": "diecisiete", "english": "17", "example": "Tengo diecisiete primos."},
+          {"spanish": "dieciocho", "english": "18", "example": "A los dieciocho eres adulto."},
+          {"spanish": "diecinueve", "english": "19", "example": "Son las diecinueve horas."},
+          {"spanish": "veinte", "english": "20", "example": "Veinte estudiantes en la clase."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Numbers 21-30",
+        "words": [
+          {"spanish": "veintiuno", "english": "21", "example": "Tengo veintiún años."},
+          {"spanish": "veintidós", "english": "22", "example": "Veintidós de diciembre."},
+          {"spanish": "veintitrés", "english": "23", "example": "Son las veintitrés horas."},
+          {"spanish": "veinticuatro", "english": "24", "example": "Hay veinticuatro horas en un día."},
+          {"spanish": "veinticinco", "english": "25", "example": "Veinticinco de diciembre es Navidad."},
+          {"spanish": "veintiséis", "english": "26", "example": "Veintiséis letras en el alfabeto."},
+          {"spanish": "veintisiete", "english": "27", "example": "Mi cumpleaños es el veintisiete."},
+          {"spanish": "veintiocho", "english": "28", "example": "Febrero tiene veintiocho días."},
+          {"spanish": "veintinueve", "english": "29", "example": "Veintinueve es un número primo."},
+          {"spanish": "treinta", "english": "30", "example": "Treinta días tiene septiembre."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Introduction Words",
+        "words": [
+          {"spanish": "el nombre", "english": "name", "example": "¿Cuál es tu nombre?"},
+          {"spanish": "el apellido", "english": "last name", "example": "Mi apellido es García."},
+          {"spanish": "la edad", "english": "age", "example": "¿Cuál es tu edad?"},
+          {"spanish": "el país", "english": "country", "example": "¿De qué país eres?"},
+          {"spanish": "la ciudad", "english": "city", "example": "Vivo en la ciudad de Madrid."},
+          {"spanish": "la profesión", "english": "profession", "example": "¿Cuál es tu profesión?"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cómo se dice '25'?",
+        "options": ["veintidós", "veintitrés", "veinticinco", "veintisiete"],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Introductions",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen to the introduction:",
+        "transcript": "Hola, me llamo Carlos. Soy de Argentina. Tengo veinticinco años y soy ingeniero.",
+        "options": [
+          "Carlos, Mexico, 24, teacher",
+          "Carlos, Argentina, 25, engineer",
+          "Carlos, Spain, 25, doctor",
+          "Carlos, Argentina, 22, engineer"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 What is María's age?",
+        "transcript": "Me llamo María. Soy estudiante. Tengo diecinueve años.",
+        "options": ["17", "18", "19", "20"],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: New Student",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "El nuevo estudiante",
+        "passage": "Hola a todos. Me llamo Roberto Sánchez. Soy de Colombia, de la ciudad de Bogotá. Tengo veintidós años. Soy estudiante de medicina. Estoy muy contento de estar aquí. Mucho gusto en conocerlos.",
+        "translation": "Hello everyone. My name is Roberto Sánchez. I'm from Colombia, from the city of Bogotá. I'm 22 years old. I'm a medical student. I'm very happy to be here. Nice to meet you all.",
+        "wordCount": 42
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuántos años tiene Roberto?",
+        "options": ["20", "21", "22", "23"],
+        "correctAnswer": 2
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿De dónde es Roberto?",
+        "options": ["México", "España", "Colombia", "Argentina"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

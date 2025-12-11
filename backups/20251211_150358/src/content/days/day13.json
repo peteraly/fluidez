@@ -1,0 +1,342 @@
+{
+  "day": 13,
+  "title": "Direct Object Pronouns",
+  "subtitle": "Lo, la, los, las",
+  "objectives": [
+    "Understand direct objects",
+    "Use lo, la, los, las correctly",
+    "Place pronouns in correct position",
+    "Avoid repetition in speech"
+  ],
+  "grammar": {
+    "title": "Direct Object Pronouns",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "What is a Direct Object?",
+        "content": "The direct object receives the action of the verb directly. 'I eat THE APPLE' → 'the apple' is the direct object. In Spanish, we can replace it with a pronoun to avoid repetition."
+      },
+      {
+        "type": "lesson",
+        "heading": "Direct Object Pronouns",
+        "content": "These replace nouns that receive the action:\n                              → nos = us",
+        "examples": [
+          {
+            "spanish": "me",
+            "english": "me"
+          },
+          {
+            "spanish": "te",
+            "english": "you (informal)"
+          },
+          {
+            "spanish": "lo",
+            "english": "him/it (masculine)/you (formal m)"
+          },
+          {
+            "spanish": "la",
+            "english": "her/it (feminine)/you (formal f)"
+          },
+          {
+            "spanish": "nos",
+            "english": "us"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Using LO, LA, LOS, LAS",
+        "content": "These are the most common. Match gender and number:\n                        \n   ✏️ Exercise: Compro el coche. → ___ compro.",
+        "examples": [
+          {
+            "spanish": "Veo el libro → Lo veo",
+            "english": "I see the book → I see it"
+          },
+          {
+            "spanish": "Compro la manzana → La compro",
+            "english": "I buy the apple → I buy it"
+          },
+          {
+            "spanish": "Leo los libros → Los leo",
+            "english": "I read the books → I read them"
+          },
+          {
+            "spanish": "Quiero las flores → Las quiero",
+            "english": "I want the flowers → I want them"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Pronoun Placement",
+        "content": "The pronoun goes BEFORE the conjugated verb:\n                        → No la quiero = I don't want it",
+        "examples": [
+          {
+            "spanish": "Lo como",
+            "english": "I eat it"
+          },
+          {
+            "spanish": "La veo",
+            "english": "I see her/it"
+          },
+          {
+            "spanish": "Los tengo",
+            "english": "I have them"
+          },
+          {
+            "spanish": "No la quiero",
+            "english": "I don't want it"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "With Infinitives",
+        "content": "Two options - both correct:\n                  \n   ✏️ Exercise: Translate: 'I want to buy it (el carro)'",
+        "examples": [
+          {
+            "spanish": "Quiero comerlo",
+            "english": "Lo quiero comer"
+          },
+          {
+            "spanish": "Voy a verla",
+            "english": "La voy a ver"
+          },
+          {
+            "spanish": "Necesito comprarlos",
+            "english": "Los necesito comprar"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Common Verbs with Objects",
+    "screens": [
+      {
+        "category": "Transitive Verbs",
+        "words": [
+          {
+            "spanish": "ver",
+            "english": "to see"
+          },
+          {
+            "spanish": "comprar",
+            "english": "to buy"
+          },
+          {
+            "spanish": "leer",
+            "english": "to read"
+          },
+          {
+            "spanish": "escribir",
+            "english": "to write"
+          },
+          {
+            "spanish": "conocer",
+            "english": "to know",
+            "example": "people"
+          },
+          {
+            "spanish": "llamar",
+            "english": "to call"
+          },
+          {
+            "spanish": "buscar",
+            "english": "to look for"
+          },
+          {
+            "spanish": "encontrar",
+            "english": "to find"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "me te Veo el libro → Lo veo"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Direct Object Pronouns",
+        "passage": "Esta es una lectura de práctica para el día 13. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 13. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "largo",
+        "means": "long",
+        "notMean": "large (= grande)"
+      },
+      {
+        "spanish": "recordar",
+        "means": "to remember",
+        "notMean": "to record (= grabar)"
+      },
+      {
+        "spanish": "ropa",
+        "means": "clothes",
+        "notMean": "rope (= cuerda)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A2",
+  "processabilityTheory": {
+    "stage": 4,
+    "stageName": "Sentence Procedure",
+    "description": "Stage 4: Sentence Procedure"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "verb_endings",
+    "colorCodes": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 When do we use 'estar' vs 'ser'?"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: ESTAR = Location & temporary states. SER = Identity & permanent traits"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'Está en la esquina' (location) vs 'Es un banco' (identity)"
+      }
+    ],
+    "inputFlooding": [
+      "Está a la derecha",
+      "Está a la izquierda",
+      "Está al lado de",
+      "Está enfrente de",
+      "Está cerca de",
+      "Está lejos de"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_11_15",
+    "config": {
+      "maxWords": 7,
+      "speed": 0.9,
+      "primaryFocus": "intonation"
+    },
+    "phrases": [
+      {
+        "spanish": "¿Dónde está el metro?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Siga todo recto",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Gire a la derecha en la esquina",
+        "focus": "stress"
+      },
+      {
+        "spanish": "Está a dos cuadras de aquí",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Puede repetir, por favor?",
+        "focus": "intonation"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the intonation of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.305475",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

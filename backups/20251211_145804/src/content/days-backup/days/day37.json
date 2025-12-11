@@ -1,0 +1,11 @@
+{
+  "day": 37,
+  "title": "B2 Content Day 37",
+  "subtitle": "Advanced grammar and vocabulary",
+  "level": "B1-B2",
+  "objectives": ["Continue subjunctive mastery", "Expand vocabulary", "Improve fluency"],
+  "grammar": {"title": "Grammar Day 37", "estimatedMinutes": 15, "screens": [{"type": "lesson", "heading": "Placeholder", "content": "Content for day 37"}]},
+  "vocabulary": {"title": "Vocabulary Day 37", "estimatedMinutes": 10, "screens": [{"type": "vocab", "category": "General", "words": [{"spanish": "palabra", "english": "word", "example": "Una palabra nueva."}]}]},
+  "listening": {"title": "Listening Day 37", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "Listen:", "transcript": "Texto de ejemplo.", "options": ["A", "B", "C", "D"], "correctAnswer": 0}]},
+  "reading": {"title": "Reading Day 37", "estimatedMinutes": 8, "screens": [{"type": "reading", "title": "Lectura", "passage": "Texto de lectura para el día 37.", "translation": "Reading text for day 37.", "wordCount": 10}]}
+}

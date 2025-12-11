@@ -1,0 +1,120 @@
+{
+  "day": 19,
+  "title": "Commands (Usted)",
+  "subtitle": "Formal commands",
+  "objectives": [
+    "Master formal commands",
+    "Build practical vocabulary",
+    "Practice real-world scenarios",
+    "Increase fluency confidence"
+  ],
+  "grammar": {
+    "title": "Commands (Usted)",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Day 19: Commands (Usted)",
+        "content": "Today we focus on formal commands. This is an essential skill for conversational Spanish that you'll use every day."
+      },
+      {
+        "type": "lesson",
+        "heading": "Key Concepts",
+        "content": "Let's explore the main ideas for formal commands.\n      \n   ✏️ Exercise: Practice question for formal commands:\n\n   ✏️ Exercise: Complete this sentence about formal commands:",
+        "examples": [
+          {
+            "spanish": "Example phrase in Spanish",
+            "english": "English translation"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Day 19 Vocabulary",
+    "screens": [
+      {
+        "category": "Commands (Usted) Words",
+        "words": [
+          {
+            "spanish": "palabra",
+            "english": "word"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "Example phrase in Spanish"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Commands (Usted)",
+        "passage": "Esta es una lectura de práctica para el día 19. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 19. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "sensible",
+        "means": "sensitive",
+        "notMean": "sensible (= sensato)"
+      },
+      {
+        "spanish": "éxito",
+        "means": "success",
+        "notMean": "exit (= salida)"
+      },
+      {
+        "spanish": "librería",
+        "means": "bookstore",
+        "notMean": "library (= biblioteca)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "B1"
+}

@@ -1,0 +1,321 @@
+{
+  "day": 7,
+  "title": "Week 1 Review",
+  "subtitle": "-ER/-IR verbs & review",
+  "objectives": [
+    "Conjugate -ER and -IR verbs",
+    "Review all Week 1 content",
+    "Practice integrated skills",
+    "Prepare for Week 1 Assessment"
+  ],
+  "grammar": {
+    "title": "-ER and -IR Verbs",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "-ER Verb Conjugation",
+        "content": "Now let's learn -ER verbs! Use COMER (to eat) as your model:",
+        "examples": [
+          {
+            "spanish": "yo como",
+            "english": "I eat"
+          },
+          {
+            "spanish": "tú comes",
+            "english": "you eat"
+          },
+          {
+            "spanish": "él/ella come",
+            "english": "he/she eats"
+          },
+          {
+            "spanish": "nosotros comemos",
+            "english": "we eat"
+          },
+          {
+            "spanish": "ellos comen",
+            "english": "they eat"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Yo ___ en un restaurante. (comer)",
+        "hint": "Use the yo form",
+        "correctAnswers": [
+          "como"
+        ],
+        "explanation": "For -ER verbs, yo form ends in -o: como"
+      },
+      {
+        "type": "lesson",
+        "heading": "-IR Verb Conjugation",
+        "content": "-IR verbs are almost identical to -ER! Use VIVIR (to live):",
+        "examples": [
+          {
+            "spanish": "yo vivo",
+            "english": "I live"
+          },
+          {
+            "spanish": "tú vives",
+            "english": "you live"
+          },
+          {
+            "spanish": "él/ella vive",
+            "english": "he/she lives"
+          },
+          {
+            "spanish": "nosotros vivimos",
+            "english": "we live"
+          },
+          {
+            "spanish": "ellos viven",
+            "english": "they live"
+          }
+        ],
+        "tip": "Only difference: nosotros form is -imos not -emos!"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Nosotros ___ en Madrid. (vivir)",
+        "options": [
+          "vivo",
+          "vives",
+          "vivemos",
+          "vivimos"
+        ],
+        "correctAnswer": 3,
+        "explanation": "-IR verbs use -imos for nosotros: vivimos"
+      },
+      {
+        "type": "lesson",
+        "heading": "Common -ER/-IR Verbs",
+        "content": "Essential verbs to know:",
+        "examples": [
+          {
+            "spanish": "comer",
+            "english": "to eat"
+          },
+          {
+            "spanish": "beber",
+            "english": "to drink"
+          },
+          {
+            "spanish": "leer",
+            "english": "to read"
+          },
+          {
+            "spanish": "aprender",
+            "english": "to learn"
+          },
+          {
+            "spanish": "comprender",
+            "english": "to understand"
+          },
+          {
+            "spanish": "vivir",
+            "english": "to live"
+          },
+          {
+            "spanish": "escribir",
+            "english": "to write"
+          },
+          {
+            "spanish": "abrir",
+            "english": "to open"
+          },
+          {
+            "spanish": "recibir",
+            "english": "to receive"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "translation",
+        "instruction": "Translate: 'They read books'",
+        "correctAnswers": [
+          "leen libros",
+          "ellos leen libros",
+          "ellas leen libros"
+        ],
+        "explanation": "Leer → leen for ellos/ellas"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Week 1 Review Vocab",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "-ER/-IR Verbs",
+        "words": [
+          {
+            "spanish": "comer",
+            "english": "to eat",
+            "example": "Como a las dos."
+          },
+          {
+            "spanish": "beber",
+            "english": "to drink",
+            "example": "Bebo agua."
+          },
+          {
+            "spanish": "leer",
+            "english": "to read",
+            "example": "Leo un libro."
+          },
+          {
+            "spanish": "aprender",
+            "english": "to learn",
+            "example": "Aprendo español."
+          },
+          {
+            "spanish": "vivir",
+            "english": "to live",
+            "example": "Vivo en México."
+          },
+          {
+            "spanish": "escribir",
+            "english": "to write",
+            "example": "Escribo correos."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Vivimos en una casa grande",
+        "options": [
+          "Vivimos en una casa grande",
+          "Viven en una casa grande",
+          "Vivimos en un apartamento",
+          "Vivo en una casa grande"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "reading": {
+    "title": "Week 1 Review Reading",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Mi vida diaria",
+        "passage": "Me llamo Ana y soy de Colombia. Tengo veintiocho años y soy profesora. Vivo en Bogotá con mi familia. Tengo dos hermanos: un hermano mayor y una hermana menor. Todos los días trabajo en una escuela y por las tardes estudio inglés porque quiero mejorar. Los fines de semana voy al parque con mis amigos. ¿Y tú? ¿Cómo te llamas? ¿De dónde eres? ¿Qué haces?",
+        "translation": "My name is Ana and I'm from Colombia. I'm 28 years old and I'm a teacher. I live in Bogotá with my family. I have two siblings: an older brother and a younger sister. Every day I work at a school and in the afternoons I study English because I want to improve. On weekends I go to the park with my friends. And you? What's your name? Where are you from? What do you do?",
+        "wordCount": 95
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 7. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "carpeta",
+        "means": "folder",
+        "notMean": "carpet (= alfombra)"
+      },
+      {
+        "spanish": "soportar",
+        "means": "to tolerate",
+        "notMean": "to support (= apoyar)"
+      },
+      {
+        "spanish": "constipado",
+        "means": "having a cold",
+        "notMean": "constipated (= estreñido)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "practical_scenarios": {
+    "title": "Phone Conversations",
+    "phrases": [
+      {
+        "spanish": "¿Aló? / ¿Diga? / ¿Bueno?",
+        "english": "Hello? (answering phone - varies by country)"
+      },
+      {
+        "spanish": "¿Quién habla?",
+        "english": "Who's speaking?"
+      },
+      {
+        "spanish": "Soy [nombre]",
+        "english": "This is [name]"
+      },
+      {
+        "spanish": "¿Está [nombre]?",
+        "english": "Is [name] there?"
+      },
+      {
+        "spanish": "Un momento, por favor",
+        "english": "One moment, please"
+      },
+      {
+        "spanish": "No está en este momento",
+        "english": "He/she isn't here right now"
+      },
+      {
+        "spanish": "¿Quiere dejar un mensaje?",
+        "english": "Would you like to leave a message?"
+      },
+      {
+        "spanish": "Le devolveré la llamada",
+        "english": "I'll call you back"
+      },
+      {
+        "spanish": "Se cortó la llamada",
+        "english": "The call got cut off"
+      },
+      {
+        "spanish": "No tengo señal",
+        "english": "I don't have signal"
+      }
+    ]
+  }
+}

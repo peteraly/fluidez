@@ -1,0 +1,422 @@
+{
+  "day": 30,
+  "title": "¡Felicidades Maestro!",
+  "subtitle": "C2 Mastery Complete",
+  "level": "C2",
+  "objectives": [
+    "Review your complete journey from A1 to C2",
+    "Understand what you've achieved",
+    "Know how to continue improving",
+    "Celebrate your accomplishment!"
+  ],
+  "grammar": {
+    "title": "Your Complete Spanish Journey",
+    "estimatedMinutes": 20,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "¡Lo Lograste!",
+        "content": "In 30 intensive days, you've covered what typically takes years. Take a moment to appreciate your achievement.",
+        "tip": "🎉 You now have the foundation to communicate at an advanced level!"
+      },
+      {
+        "type": "lesson",
+        "heading": "A1 Foundation (Days 1-7)",
+        "content": "What you mastered:",
+        "examples": [
+          {
+            "spanish": "Pronunciation & alphabet",
+            "english": "Spanish sounds, vowels, consonants"
+          },
+          {
+            "spanish": "Numbers 1-100",
+            "english": "Counting and dates"
+          },
+          {
+            "spanish": "SER vs ESTAR",
+            "english": "The two 'to be' verbs"
+          },
+          {
+            "spanish": "Present tense",
+            "english": "Regular and irregular verbs"
+          },
+          {
+            "spanish": "Basic questions",
+            "english": "¿Qué? ¿Dónde? ¿Cuándo?"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "A2 Building (Days 8-14)",
+        "content": "What you mastered:",
+        "examples": [
+          {
+            "spanish": "Past tenses",
+            "english": "Preterite and Imperfect"
+          },
+          {
+            "spanish": "Object pronouns",
+            "english": "Lo, la, le, me, te, se lo"
+          },
+          {
+            "spanish": "Reflexive verbs",
+            "english": "Levantarse, ducharse"
+          },
+          {
+            "spanish": "GUSTAR structure",
+            "english": "Me gusta, me gustan"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "B1 Intermediate (Days 15-21)",
+        "content": "What you mastered:",
+        "examples": [
+          {
+            "spanish": "Future tense",
+            "english": "IR + a + infinitive and simple future"
+          },
+          {
+            "spanish": "Opinions & comparisons",
+            "english": "Creo que, más que, el mejor"
+          },
+          {
+            "spanish": "Storytelling",
+            "english": "Connecting past tenses"
+          },
+          {
+            "spanish": "Daily life scenarios",
+            "english": "Shopping, travel, health"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "B2 Advanced (Days 22-27)",
+        "content": "What you mastered:",
+        "examples": [
+          {
+            "spanish": "Subjunctive mood",
+            "english": "Present and imperfect subjunctive"
+          },
+          {
+            "spanish": "Si clauses",
+            "english": "All types of conditionals"
+          },
+          {
+            "spanish": "Perfect tenses",
+            "english": "All formations with HABER"
+          },
+          {
+            "spanish": "Conditional tense",
+            "english": "Would, could, should"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "C1-C2 Mastery (Days 28-30)",
+        "content": "What you mastered:",
+        "examples": [
+          {
+            "spanish": "Passive voice & SE",
+            "english": "Se habla, fue escrito"
+          },
+          {
+            "spanish": "Por vs para",
+            "english": "All uses distinguished"
+          },
+          {
+            "spanish": "Native-level idioms",
+            "english": "Costar un ojo de la cara, etc."
+          },
+          {
+            "spanish": "Conversation fillers",
+            "english": "Pues, o sea, es que, ¿sabes?"
+          },
+          {
+            "spanish": "Regional variations",
+            "english": "Spain, Mexico, Argentina..."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "What's Next?",
+        "content": "To maintain and improve your C2 level:",
+        "examples": [
+          {
+            "spanish": "Read daily",
+            "english": "El País, novels, blogs"
+          },
+          {
+            "spanish": "Watch content",
+            "english": "Movies, series - NO subtitles"
+          },
+          {
+            "spanish": "Listen actively",
+            "english": "Podcasts, music, radio"
+          },
+          {
+            "spanish": "Speak often",
+            "english": "Language exchange, tutors, travel"
+          },
+          {
+            "spanish": "Write regularly",
+            "english": "Journal, messages, essays"
+          }
+        ],
+        "tip": "The key is DAILY exposure. Even 15 minutes a day maintains fluency."
+      },
+      {
+        "type": "lesson",
+        "heading": "Final Message",
+        "content": "Remember: Every native speaker was once a beginner. You've proven you can learn Spanish. Now the world of 500+ million Spanish speakers is open to you. ¡Buena suerte y sigue adelante!",
+        "examples": [
+          {
+            "spanish": "¡Lo hiciste!",
+            "english": "You did it!"
+          },
+          {
+            "spanish": "Estoy orgulloso/a de ti.",
+            "english": "I'm proud of you."
+          },
+          {
+            "spanish": "Tu español es excelente.",
+            "english": "Your Spanish is excellent."
+          },
+          {
+            "spanish": "¡Sigue practicando!",
+            "english": "Keep practicing!"
+          },
+          {
+            "spanish": "¡Hasta siempre!",
+            "english": "Until always! (Farewell)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Celebration Vocabulary",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Achievements",
+        "words": [
+          {
+            "spanish": "lograr",
+            "english": "to achieve",
+            "example": "¡Lo lograste!"
+          },
+          {
+            "spanish": "conseguir",
+            "english": "to accomplish",
+            "example": "Conseguiste tu meta."
+          },
+          {
+            "spanish": "el éxito",
+            "english": "success",
+            "example": "Tu éxito es merecido."
+          },
+          {
+            "spanish": "felicidades",
+            "english": "congratulations",
+            "example": "¡Muchas felicidades!"
+          },
+          {
+            "spanish": "estar orgulloso/a",
+            "english": "to be proud",
+            "example": "Debes estar orgulloso."
+          },
+          {
+            "spanish": "el logro",
+            "english": "achievement",
+            "example": "Es un gran logro."
+          },
+          {
+            "spanish": "superar",
+            "english": "to overcome",
+            "example": "Superaste muchos obstáculos."
+          },
+          {
+            "spanish": "dominar",
+            "english": "to master",
+            "example": "Ahora dominas el español."
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Bonus Vocabulary",
+        "words": [
+          {
+            "spanish": "el médico/la médica",
+            "english": "doctor",
+            "example": "Necesito ver a un médico."
+          },
+          {
+            "spanish": "el/la enfermero/a",
+            "english": "nurse",
+            "example": "La enfermera me tomó la temperatura."
+          },
+          {
+            "spanish": "el hospital",
+            "english": "hospital",
+            "example": "El hospital está cerca."
+          },
+          {
+            "spanish": "la farmacia",
+            "english": "pharmacy",
+            "example": "Compro medicina en la farmacia."
+          },
+          {
+            "spanish": "la receta",
+            "english": "prescription",
+            "example": "Necesitas una receta."
+          },
+          {
+            "spanish": "la pastilla",
+            "english": "pill",
+            "example": "Toma dos pastillas al día."
+          },
+          {
+            "spanish": "el dolor",
+            "english": "pain",
+            "example": "Tengo dolor de cabeza."
+          },
+          {
+            "spanish": "la fiebre",
+            "english": "fever",
+            "example": "Tiene mucha fiebre."
+          },
+          {
+            "spanish": "el resfriado",
+            "english": "cold",
+            "example": "Tengo un resfriado."
+          },
+          {
+            "spanish": "la alergia",
+            "english": "allergy",
+            "example": "Tengo alergia al polen."
+          },
+          {
+            "spanish": "el refrigerador/la nevera",
+            "english": "refrigerator",
+            "example": "La leche está en la nevera."
+          },
+          {
+            "spanish": "la estufa/cocina",
+            "english": "stove",
+            "example": "Cocino en la estufa."
+          },
+          {
+            "spanish": "el horno",
+            "english": "oven",
+            "example": "El pastel está en el horno."
+          },
+          {
+            "spanish": "el microondas",
+            "english": "microwave",
+            "example": "Calienta en el microondas."
+          },
+          {
+            "spanish": "la lavadora",
+            "english": "washing machine",
+            "example": "La ropa está en la lavadora."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Final Listening",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen to this final congratulatory message:",
+        "transcript": "Querido estudiante: Hoy es un día especial. Has completado un viaje increíble desde los sonidos básicos del español hasta expresiones que solo los hablantes nativos conocen. Deberías estar muy orgulloso de ti mismo. Recuerda que aprender un idioma no es un destino, sino un camino. Sigue practicando, sigue explorando. ¡Felicidades y hasta siempre!",
+        "options": [
+          "You failed the course",
+          "You should start over",
+          "Congratulations on completing the journey",
+          "You need more practice"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "reading": {
+    "title": "Your Future with Spanish",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Tu futuro con el español",
+        "passage": "Hace treinta días, empezaste este viaje sin saber mucho español. Hoy, puedes leer este texto, entender conversaciones nativas, y expresarte con matices que antes parecían imposibles.\n\nPiensa en todo lo que has aprendido: desde 'hola' hasta el subjuntivo, desde los números hasta las expresiones idiomáticas. Has pasado del nivel A1 al C2 en tiempo récord.\n\nPero esto no es un final, sino un comienzo. Ahora tienes las herramientas para seguir aprendiendo por tu cuenta. El español te abre puertas a 21 países, a culturas riquísimas, y a más de 500 millones de personas.\n\n¡Aprovéchalo! El mundo hispanohablante te espera.\n\n¡Felicidades, maestro del español! 🎓🇪🇸",
+        "translation": "Thirty days ago, you started this journey knowing very little Spanish. Today, you can read this text, understand native conversations, and express yourself with nuances that once seemed impossible.\n\nThink about everything you've learned: from 'hola' to the subjunctive, from numbers to idiomatic expressions. You've gone from A1 to C2 level in record time.\n\nBut this is not an end, but a beginning. Now you have the tools to continue learning on your own. Spanish opens doors to 21 countries, to very rich cultures, and to more than 500 million people.\n\nTake advantage of it! The Spanish-speaking world awaits you.\n\nCongratulations, master of Spanish! 🎓🇪🇸",
+        "wordCount": 130
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuál es el mensaje principal del texto?",
+        "options": [
+          "El español es muy difícil",
+          "Debes dejar de estudiar",
+          "Esto es solo el comienzo",
+          "No aprendiste nada"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 30. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "ropa",
+        "means": "clothes",
+        "notMean": "rope (= cuerda)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

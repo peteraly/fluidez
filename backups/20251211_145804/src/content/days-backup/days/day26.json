@@ -1,0 +1,159 @@
+{
+  "day": 26,
+  "title": "Imperfect Subjunctive & Si Clauses",
+  "subtitle": "Hypotheticals and past wishes",
+  "level": "B2",
+  "objectives": [
+    "Form the imperfect subjunctive",
+    "Use si clauses for hypotheticals",
+    "Express past wishes and regrets",
+    "Understand contrary-to-fact conditions"
+  ],
+  "grammar": {
+    "title": "Imperfect Subjunctive",
+    "estimatedMinutes": 22,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Forming Imperfect Subjunctive",
+        "content": "Take the ellos form of preterite, remove -ron, add these endings:",
+        "examples": [
+          {"spanish": "-ra, -ras, -ra, -ramos, -ran", "english": "Common form"},
+          {"spanish": "hablaron → habla- → hablara, hablaras, hablara...", "english": "to speak"},
+          {"spanish": "comieron → comie- → comiera, comieras, comiera...", "english": "to eat"},
+          {"spanish": "vivieron → vivie- → viviera, vivieras, viviera...", "english": "to live"}
+        ],
+        "tip": "The -ra endings are most common. -se endings (hablase) exist but are less frequent."
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Imperfect Subjunctives",
+        "content": "Use the irregular preterite stem:",
+        "examples": [
+          {"spanish": "ser/ir → fueron → fuera, fueras, fuera...", "english": "were/went"},
+          {"spanish": "tener → tuvieron → tuviera, tuvieras...", "english": "had"},
+          {"spanish": "hacer → hicieron → hiciera, hicieras...", "english": "did/made"},
+          {"spanish": "poder → pudieron → pudiera, pudieras...", "english": "could"},
+          {"spanish": "estar → estuvieron → estuviera, estuvieras...", "english": "were"},
+          {"spanish": "saber → supieron → supiera, supieras...", "english": "knew"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Quería que tú ___ conmigo. (venir)",
+        "correctAnswers": ["vinieras"],
+        "explanation": "venir → vinieron → viniera/vinieras"
+      },
+      {
+        "type": "lesson",
+        "heading": "Si Clauses (If Clauses)",
+        "content": "Three types of conditions:",
+        "examples": [
+          {"spanish": "Type 1 (Real): Si tengo tiempo, voy.", "english": "If I have time, I go. (present + present)"},
+          {"spanish": "Type 2 (Hypothetical): Si tuviera tiempo, iría.", "english": "If I had time, I would go. (imp subj + conditional)"},
+          {"spanish": "Type 3 (Past Unreal): Si hubiera tenido tiempo, habría ido.", "english": "If I had had time, I would have gone."}
+        ],
+        "tip": "Type 2 is most important: Si + imperfect subjunctive + conditional"
+      },
+      {
+        "type": "lesson",
+        "heading": "Type 2 Si Clause Examples",
+        "content": "Hypothetical situations:",
+        "examples": [
+          {"spanish": "Si fuera rico, viajaría por el mundo.", "english": "If I were rich, I would travel the world."},
+          {"spanish": "Si tuviera más tiempo, estudiaría más.", "english": "If I had more time, I would study more."},
+          {"spanish": "Si pudiera, te ayudaría.", "english": "If I could, I would help you."},
+          {"spanish": "Si estuviera en tu lugar, no lo haría.", "english": "If I were in your place, I wouldn't do it."}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Si ___ más dinero, compraría una casa. (tener)",
+        "options": ["tengo", "tenga", "tuviera", "tendría"],
+        "correctAnswer": 2,
+        "explanation": "Hypothetical si clause uses imperfect subjunctive: tuviera"
+      },
+      {
+        "type": "lesson",
+        "heading": "Ojalá with Imperfect Subjunctive",
+        "content": "Use for unlikely/impossible wishes:",
+        "examples": [
+          {"spanish": "Ojalá pudiera ir.", "english": "I wish I could go. (but probably can't)"},
+          {"spanish": "Ojalá tuviera más tiempo.", "english": "I wish I had more time. (but I don't)"},
+          {"spanish": "Ojalá estuvieras aquí.", "english": "I wish you were here. (but you're not)"}
+        ],
+        "tip": "Ojalá + present subjunctive = possible. Ojalá + imperfect subjunctive = unlikely."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Ojalá ___ más joven. (ser, unlikely wish)",
+        "correctAnswers": ["fuera"],
+        "explanation": "Unlikely wish uses imperfect subjunctive: fuera"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Hypothetical Expressions",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Si Clause Vocabulary",
+        "words": [
+          {"spanish": "si pudiera", "english": "if I could", "example": "Si pudiera volar, iría a la luna."},
+          {"spanish": "si tuviera", "english": "if I had", "example": "Si tuviera tiempo, te visitaría."},
+          {"spanish": "si fuera", "english": "if I were", "example": "Si fuera tú, no lo haría."},
+          {"spanish": "si supiera", "english": "if I knew", "example": "Si supiera la respuesta, te la diría."},
+          {"spanish": "como si", "english": "as if", "example": "Habla como si supiera todo."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Result Clause Phrases",
+        "words": [
+          {"spanish": "iría", "english": "I would go", "example": "Si pudiera, iría contigo."},
+          {"spanish": "haría", "english": "I would do", "example": "¿Qué harías tú?"},
+          {"spanish": "diría", "english": "I would say", "example": "Yo no diría eso."},
+          {"spanish": "sería", "english": "it would be", "example": "Sería increíble."},
+          {"spanish": "tendría", "english": "I would have", "example": "Tendría más oportunidades."}
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Hypotheticals",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 What would she do if she won the lottery?",
+        "transcript": "Si ganara la lotería, primero pagaría todas mis deudas. Después compraría una casa grande. También viajaría por todo el mundo y donaría dinero a caridad.",
+        "options": ["Pay debts, buy car, travel", "Pay debts, buy house, travel, donate", "Buy house, quit job, invest", "Travel, buy car, save money"],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Dreams & Reality",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Sueños y realidad",
+        "passage": "A veces me pregunto cómo sería mi vida si hubiera tomado decisiones diferentes. Si hubiera estudiado medicina, ahora sería médico. Si me hubiera quedado en mi país, tendría una vida más tranquila.\n\nPero no me arrepiento. Si pudiera volver atrás, probablemente haría lo mismo. Cada decisión me ha traído adonde estoy hoy.\n\nComo dice el refrán: 'Si mi abuela tuviera ruedas, sería bicicleta.' No tiene sentido vivir pensando en los 'si'.",
+        "translation": "Sometimes I wonder what my life would be like if I had made different decisions. If I had studied medicine, I would now be a doctor. If I had stayed in my country, I would have a calmer life.\n\nBut I don't regret it. If I could go back, I would probably do the same. Each decision has brought me to where I am today.\n\nAs the saying goes: 'If my grandmother had wheels, she would be a bicycle.' It doesn't make sense to live thinking about 'ifs'.",
+        "wordCount": 100
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué haría si pudiera volver atrás?",
+        "options": ["Estudiar medicina", "Quedarse en su país", "Probablemente lo mismo", "Tomar decisiones diferentes"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

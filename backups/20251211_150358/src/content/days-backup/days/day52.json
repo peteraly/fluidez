@@ -1,0 +1,36 @@
+{
+  "day": 52,
+  "title": "Reported Speech",
+  "subtitle": "B2 Level Content",
+  "level": "B2",
+  "objectives": ["Master Reported Speech", "Apply in context", "Practice fluency"],
+  "grammar": {
+    "title": "Reported Speech",
+    "estimatedMinutes": 18,
+    "screens": [
+      {"type": "lesson", "heading": "Introduction to Reported Speech", "content": "Detailed content for Reported Speech will be provided here."},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Practice exercise", "options": ["A", "B", "C", "D"], "correctAnswer": 0}
+    ]
+  },
+  "vocabulary": {
+    "title": "Vocabulary: Reported Speech",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "Key Terms", "words": [{"spanish": "ejemplo", "english": "example", "example": "Un buen ejemplo."}]}
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {"type": "listening", "instruction": "Listen carefully:", "transcript": "Audio transcript for day 52.", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": 0}
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {"type": "reading", "title": "Lectura 52", "passage": "Reading passage for Reported Speech. This text will help you practice the concepts learned today.", "translation": "Translation of the reading passage.", "wordCount": 50}
+    ]
+  }
+}

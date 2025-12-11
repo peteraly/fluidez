@@ -1,0 +1,284 @@
+{
+  "day": 14,
+  "title": "Week 2 Review",
+  "subtitle": "Past tenses & pronouns mastery",
+  "objectives": [
+    "Review preterite vs imperfect",
+    "Practice reflexive verbs",
+    "Master direct object pronouns",
+    "Prepare for Week 2 Assessment"
+  ],
+  "grammar": {
+    "title": "Week 2 Comprehensive Review",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Preterite vs Imperfect Summary",
+        "content": "PRETERITE: Completed actions, specific times, sequences. IMPERFECT: Background, descriptions, habits, ongoing actions.\n                  \n   ✏️ Exercise: Mientras yo ___ (estudiar), mi hermano llegó.\n\n   ✏️ Exercise: Ayer ___ (ir) al cine.",
+        "examples": [
+          {
+            "spanish": "Ayer comí pizza (completed)",
+            "english": "Yesterday I ate pizza"
+          },
+          {
+            "spanish": "Cuando era niño, comía pizza (habit)",
+            "english": "When I was a child, I used to eat pizza"
+          },
+          {
+            "spanish": "Llovía cuando salí",
+            "english": "It was raining when I left"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Reflexive Verbs Review",
+        "content": "Remember: pronoun matches the subject and goes BEFORE the verb.\n            \n   ✏️ Exercise: Ella ___ ducha a las siete.",
+        "examples": [
+          {
+            "spanish": "me levanto, te levantas, se levanta",
+            "english": "I get up, you get up, he/she gets up"
+          },
+          {
+            "spanish": "nos levantamos, se levantan",
+            "english": "we get up, they get up"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Direct Object Pronouns Review",
+        "content": "lo (him/it-m), la (her/it-f), los (them-m), las (them-f)\n                  \n   ✏️ Exercise: Compro las flores. \n   ✏️ Exercise: Translate: 'When I was young, I used to live in Mexico'",
+        "examples": [
+          {
+            "spanish": "Veo el libro → Lo veo",
+            "english": "I see it (m)"
+          },
+          {
+            "spanish": "Compro la fruta → La compro",
+            "english": "I buy it (f)"
+          },
+          {
+            "spanish": "Tengo los libros → Los tengo",
+            "english": "I have them (m)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Week 2 Vocabulary Review",
+    "screens": [
+      {
+        "category": "Key Week 2 Words",
+        "words": [
+          {
+            "spanish": "ayer",
+            "english": "yesterday"
+          },
+          {
+            "spanish": "mientras",
+            "english": "while"
+          },
+          {
+            "spanish": "de repente",
+            "english": "suddenly"
+          },
+          {
+            "spanish": "levantarse",
+            "english": "to get up"
+          },
+          {
+            "spanish": "ducharse",
+            "english": "to shower"
+          },
+          {
+            "spanish": "acostarse",
+            "english": "to go to bed"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "Ayer comí pizza (completed) Cuando era niño, comía pizza (habit) me levanto, te levantas, se levanta"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Week 2 Review",
+        "passage": "Esta es una lectura de práctica para el día 14. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 14. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "recordar",
+        "means": "to remember",
+        "notMean": "to record (= grabar)"
+      },
+      {
+        "spanish": "ropa",
+        "means": "clothes",
+        "notMean": "rope (= cuerda)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A2",
+  "processabilityTheory": {
+    "stage": 4,
+    "stageName": "Sentence Procedure",
+    "description": "Stage 4: Sentence Procedure"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "verb_endings",
+    "colorCodes": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 Look at 'ir' - it's completely irregular!"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: voy, vas, va, vamos, vais, van"
+      },
+      {
+        "type": "memory",
+        "text": "🧠 Remember: 'Ir a + infinitive' = going to do something (future)"
+      }
+    ],
+    "inputFlooding": [
+      "Voy al trabajo",
+      "Vas a la escuela",
+      "Va al mercado",
+      "Vamos a comer",
+      "Van a viajar",
+      "Voy a estudiar"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_11_15",
+    "config": {
+      "maxWords": 7,
+      "speed": 0.9,
+      "primaryFocus": "intonation"
+    },
+    "phrases": [
+      {
+        "spanish": "¿A qué hora sale el próximo tren?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Un boleto de ida y vuelta",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿En qué andén llega?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Voy a tomar un taxi",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿Cuánto tarda en llegar?",
+        "focus": "rhythm"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the intonation of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.305749",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

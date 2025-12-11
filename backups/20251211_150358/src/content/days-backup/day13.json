@@ -1,0 +1,26 @@
+{
+  "day": 13,
+  "title": "At the Restaurant",
+  "subtitle": "Ordering food politely",
+  "objectives": ["Order food at a restaurant", "Use polite expressions", "Ask for the check", "Handle restaurant situations"],
+  "grammar": {
+    "title": "Restaurant Phrases",
+    "estimatedMinutes": 12,
+    "screens": [
+      {"type": "lesson", "heading": "Polite Ordering", "content": "Use these polite forms:", "examples": [{"spanish": "Quisiera...", "english": "I would like..."}, {"spanish": "¿Me trae...?", "english": "Could you bring me...?"}, {"spanish": "Para mí...", "english": "For me..."}, {"spanish": "¿Qué me recomienda?", "english": "What do you recommend?"}]},
+      {"type": "lesson", "heading": "Useful Questions", "content": "Ask about the food:", "examples": [{"spanish": "¿Cuál es el plato del día?", "english": "What's the dish of the day?"}, {"spanish": "¿Qué ingredientes tiene?", "english": "What ingredients does it have?"}, {"spanish": "¿Es picante?", "english": "Is it spicy?"}, {"spanish": "¿Tiene opciones vegetarianas?", "english": "Do you have vegetarian options?"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Most polite way to order:", "options": ["Quiero el pollo", "Dame el pollo", "Quisiera el pollo", "Necesito el pollo"], "correctAnswer": 2, "explanation": "Quisiera is most polite"}
+    ]
+  },
+  "vocabulary": {
+    "title": "Restaurant Words",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "Restaurant Basics", "words": [{"spanish": "el menú / la carta", "english": "menu", "example": "El menú, por favor."}, {"spanish": "el mesero / camarero", "english": "waiter", "example": "¡Mesero, por favor!"}, {"spanish": "la cuenta", "english": "the bill/check", "example": "La cuenta, por favor."}, {"spanish": "la propina", "english": "tip", "example": "La propina es el 15%."}, {"spanish": "el plato", "english": "dish/plate", "example": "Este plato es delicioso."}, {"spanish": "el postre", "english": "dessert", "example": "¿Qué hay de postre?"}, {"spanish": "la bebida", "english": "drink", "example": "¿Qué bebida quiere?"}]},
+      {"type": "vocab", "category": "Ordering Phrases", "words": [{"spanish": "para llevar", "english": "to go", "example": "Para llevar, por favor."}, {"spanish": "para comer aquí", "english": "to eat here", "example": "Para comer aquí."}, {"spanish": "sin", "english": "without", "example": "Sin cebolla, por favor."}, {"spanish": "con", "english": "with", "example": "Con extra queso."}, {"spanish": "poco hecho", "english": "rare (meat)", "example": "Poco hecho, por favor."}, {"spanish": "bien hecho", "english": "well done", "example": "Bien hecho, por favor."}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "'La cuenta' means:", "options": ["the menu", "the waiter", "the bill", "the food"], "correctAnswer": 2}
+    ]
+  },
+  "listening": {"title": "Listening Practice", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen:", "transcript": "Quisiera el pollo con arroz y una cerveza, por favor", "options": ["Chicken with rice and water", "Fish with rice and beer", "Chicken with rice and beer", "Chicken with salad and wine"], "correctAnswer": 2}]},
+  "reading": {"title": "Reading: Restaurant Dialogue", "estimatedMinutes": 8, "screens": [{"type": "reading", "title": "En el restaurante", "passage": "Mesero: Buenas noches. ¿Mesa para cuántos?\nCliente: Para dos, por favor.\nMesero: Por aquí. Aquí tiene el menú.\nCliente: Gracias. ¿Qué me recomienda?\nMesero: El pescado del día está muy bueno.\nCliente: Perfecto. Quisiera el pescado y una ensalada.\nMesero: ¿Y para beber?\nCliente: Un vino blanco, por favor.\nMesero: Muy bien. ¿Algo más?\nCliente: No, gracias. Ah, y la cuenta después, por favor.\nMesero: Por supuesto.", "translation": "Waiter: Good evening. Table for how many?\nCustomer: For two, please.\nWaiter: This way. Here's the menu.\nCustomer: Thanks. What do you recommend?\nWaiter: The fish of the day is very good.\nCustomer: Perfect. I'd like the fish and a salad.\nWaiter: And to drink?\nCustomer: A white wine, please.\nWaiter: Very well. Anything else?\nCustomer: No, thanks. Oh, and the check later, please.\nWaiter: Of course.", "wordCount": 90}, {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "¿Qué recomienda el mesero?", "options": ["La ensalada", "El pollo", "El pescado", "La carne"], "correctAnswer": 2}]}
+}

@@ -1,0 +1,458 @@
+{
+  "day": 30,
+  "title": "¡Felicidades Maestro!",
+  "subtitle": "C2 Mastery Complete",
+  "level": "C2",
+  "objectives": [
+    "Review your complete journey from A1 to C2",
+    "Understand what you've achieved",
+    "Know how to continue improving",
+    "Celebrate your accomplishment!"
+  ],
+  "grammar": {
+    "title": "Your Complete Spanish Journey",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "¡Lo Lograste!",
+        "content": "In 30 intensive days, you've covered what typically takes years. Take a moment to appreciate your achievement."
+      },
+      {
+        "type": "lesson",
+        "heading": "A1 Foundation (Days 1-7)",
+        "content": "What you mastered:\n                              → Basic questions = ¿Qué? ¿Dónde? ¿Cuándo?",
+        "examples": [
+          {
+            "spanish": "Pronunciation & alphabet",
+            "english": "Spanish sounds, vowels, consonants"
+          },
+          {
+            "spanish": "Numbers 1-100",
+            "english": "Counting and dates"
+          },
+          {
+            "spanish": "SER vs ESTAR",
+            "english": "The two 'to be' verbs"
+          },
+          {
+            "spanish": "Present tense",
+            "english": "Regular and irregular verbs"
+          },
+          {
+            "spanish": "Basic questions",
+            "english": "¿Qué? ¿Dónde? ¿Cuándo?"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "A2 Building (Days 8-14)",
+        "content": "What you mastered:\n                        → GUSTAR structure = Me gusta, me gustan",
+        "examples": [
+          {
+            "spanish": "Past tenses",
+            "english": "Preterite and Imperfect"
+          },
+          {
+            "spanish": "Object pronouns",
+            "english": "Lo, la, le, me, te, se lo"
+          },
+          {
+            "spanish": "Reflexive verbs",
+            "english": "Levantarse, ducharse"
+          },
+          {
+            "spanish": "GUSTAR structure",
+            "english": "Me gusta, me gustan"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "B1 Intermediate (Days 15-21)",
+        "content": "What you mastered:\n                        → Daily life scenarios = Shopping, travel, health",
+        "examples": [
+          {
+            "spanish": "Future tense",
+            "english": "IR + a + infinitive and simple future"
+          },
+          {
+            "spanish": "Opinions & comparisons",
+            "english": "Creo que, más que, el mejor"
+          },
+          {
+            "spanish": "Storytelling",
+            "english": "Connecting past tenses"
+          },
+          {
+            "spanish": "Daily life scenarios",
+            "english": "Shopping, travel, health"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "B2 Advanced (Days 22-27)",
+        "content": "What you mastered:\n                        → Conditional tense = Would, could, should",
+        "examples": [
+          {
+            "spanish": "Subjunctive mood",
+            "english": "Present and imperfect subjunctive"
+          },
+          {
+            "spanish": "Si clauses",
+            "english": "All types of conditionals"
+          },
+          {
+            "spanish": "Perfect tenses",
+            "english": "All formations with HABER"
+          },
+          {
+            "spanish": "Conditional tense",
+            "english": "Would, could, should"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "C1-C2 Mastery (Days 28-30)",
+        "content": "What you mastered:\n                              → Regional variations = Spain, Mexico, Argentina...",
+        "examples": [
+          {
+            "spanish": "Passive voice & SE",
+            "english": "Se habla, fue escrito"
+          },
+          {
+            "spanish": "Por vs para",
+            "english": "All uses distinguished"
+          },
+          {
+            "spanish": "Native-level idioms",
+            "english": "Costar un ojo de la cara, etc."
+          },
+          {
+            "spanish": "Conversation fillers",
+            "english": "Pues, o sea, es que, ¿sabes?"
+          },
+          {
+            "spanish": "Regional variations",
+            "english": "Spain, Mexico, Argentina..."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "What's Next?",
+        "content": "To maintain and improve your C2 level:\n                              → Write regularly = Journal, messages, essays",
+        "examples": [
+          {
+            "spanish": "Read daily",
+            "english": "El País, novels, blogs"
+          },
+          {
+            "spanish": "Watch content",
+            "english": "Movies, series - NO subtitles"
+          },
+          {
+            "spanish": "Listen actively",
+            "english": "Podcasts, music, radio"
+          },
+          {
+            "spanish": "Speak often",
+            "english": "Language exchange, tutors, travel"
+          },
+          {
+            "spanish": "Write regularly",
+            "english": "Journal, messages, essays"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Final Message",
+        "content": "Remember: Every native speaker was once a beginner. You've proven you can learn Spanish. Now the world of 500+ million Spanish speakers is open to you. ¡Buena suerte y sigue adelante!\n                              → ¡Hasta siempre! = Until always! (Farewell)",
+        "examples": [
+          {
+            "spanish": "¡Lo hiciste!",
+            "english": "You did it!"
+          },
+          {
+            "spanish": "Estoy orgulloso/a de ti.",
+            "english": "I'm proud of you."
+          },
+          {
+            "spanish": "Tu español es excelente.",
+            "english": "Your Spanish is excellent."
+          },
+          {
+            "spanish": "¡Sigue practicando!",
+            "english": "Keep practicing!"
+          },
+          {
+            "spanish": "¡Hasta siempre!",
+            "english": "Until always! (Farewell)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Celebration Vocabulary",
+    "screens": [
+      {
+        "category": "Achievements",
+        "words": [
+          {
+            "spanish": "lograr",
+            "english": "to achieve"
+          },
+          {
+            "spanish": "conseguir",
+            "english": "to accomplish"
+          },
+          {
+            "spanish": "el éxito",
+            "english": "success"
+          },
+          {
+            "spanish": "felicidades",
+            "english": "congratulations"
+          },
+          {
+            "spanish": "estar orgulloso/a",
+            "english": "to be proud"
+          },
+          {
+            "spanish": "el logro",
+            "english": "achievement"
+          },
+          {
+            "spanish": "superar",
+            "english": "to overcome"
+          },
+          {
+            "spanish": "dominar",
+            "english": "to master"
+          }
+        ]
+      },
+      {
+        "category": "Bonus Vocabulary",
+        "words": [
+          {
+            "spanish": "el médico/la médica",
+            "english": "doctor"
+          },
+          {
+            "spanish": "el/la enfermero/a",
+            "english": "nurse"
+          },
+          {
+            "spanish": "el hospital",
+            "english": "hospital"
+          },
+          {
+            "spanish": "la farmacia",
+            "english": "pharmacy"
+          },
+          {
+            "spanish": "la receta",
+            "english": "prescription"
+          },
+          {
+            "spanish": "la pastilla",
+            "english": "pill"
+          },
+          {
+            "spanish": "el dolor",
+            "english": "pain"
+          },
+          {
+            "spanish": "la fiebre",
+            "english": "fever"
+          },
+          {
+            "spanish": "el resfriado",
+            "english": "cold"
+          },
+          {
+            "spanish": "la alergia",
+            "english": "allergy"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "Pronunciation & alphabet Numbers 1-100 Past tenses"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: ¡Felicidades Maestro!",
+        "passage": "Esta es una lectura de práctica para el día 30. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 30. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "ropa",
+        "means": "clothes",
+        "notMean": "rope (= cuerda)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "processabilityTheory": {
+    "stage": 6,
+    "stageName": "Complex Structures",
+    "description": "Stage 6: Complex Structures"
+  },
+  "noticingEnhancements": {
+    "colorScheme": null,
+    "colorCodes": null,
+    "callouts": [
+      {
+        "type": "memory",
+        "text": "🧠 Remember: You've learned 6 tenses and many structures!"
+      },
+      {
+        "type": "rule",
+        "text": "📐 Key patterns: verb conjugations, gender agreement, gustar-type verbs, ser vs estar"
+      }
+    ],
+    "inputFlooding": [
+      "Mucho gusto en conocerte",
+      "Ha sido un placer",
+      "Espero que nos veamos pronto",
+      "Que te vaya bien",
+      "Cuídate mucho",
+      "Hasta la próxima"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_26_30",
+    "config": {
+      "maxWords": 15,
+      "speed": 1.1,
+      "primaryFocus": "naturalness"
+    },
+    "phrases": [
+      {
+        "spanish": "Ha sido un placer conocerte",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Espero que podamos vernos pronto",
+        "focus": "stress"
+      },
+      {
+        "spanish": "Me ha encantado hablar contigo",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Tienes planes para el fin de semana?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Que tengas un buen día",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¡Mucha suerte con tu español!",
+        "focus": "stress"
+      },
+      {
+        "spanish": "Sigue practicando, lo estás haciendo muy bien",
+        "focus": "rhythm"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the naturalness of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.310712",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

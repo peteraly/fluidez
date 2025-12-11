@@ -1,0 +1,36 @@
+{
+  "day": 60,
+  "title": "B2 Comprehensive Review II",
+  "subtitle": "B2 Level Content",
+  "level": "B2",
+  "objectives": ["Master B2 Comprehensive Review II", "Apply in context", "Practice fluency"],
+  "grammar": {
+    "title": "B2 Comprehensive Review II",
+    "estimatedMinutes": 18,
+    "screens": [
+      {"type": "lesson", "heading": "Introduction to B2 Comprehensive Review II", "content": "Detailed content for B2 Comprehensive Review II will be provided here."},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Practice exercise", "options": ["A", "B", "C", "D"], "correctAnswer": 0}
+    ]
+  },
+  "vocabulary": {
+    "title": "Vocabulary: B2 Comprehensive Review II",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "Key Terms", "words": [{"spanish": "ejemplo", "english": "example", "example": "Un buen ejemplo."}]}
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {"type": "listening", "instruction": "Listen carefully:", "transcript": "Audio transcript for day 60.", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": 0}
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {"type": "reading", "title": "Lectura 60", "passage": "Reading passage for B2 Comprehensive Review II. This text will help you practice the concepts learned today.", "translation": "Translation of the reading passage.", "wordCount": 50}
+    ]
+  }
+}

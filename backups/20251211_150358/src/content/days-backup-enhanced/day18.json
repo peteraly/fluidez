@@ -1,0 +1,355 @@
+{
+  "day": 18,
+  "title": "Commands (Tú)",
+  "subtitle": "Informal commands",
+  "objectives": [
+    "Master informal commands",
+    "Build practical vocabulary",
+    "Practice real-world scenarios",
+    "Increase fluency confidence"
+  ],
+  "grammar": {
+    "title": "Commands (Tú)",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Day 18: Commands (Tú)",
+        "content": "Today we focus on informal commands. This is an essential skill for conversational Spanish that you'll use every day."
+      },
+      {
+        "type": "lesson",
+        "heading": "Key Concepts",
+        "content": "Let's explore the main ideas for informal commands.\n      \n   ✏️ Exercise: Practice question for informal commands:\n\n   ✏️ Exercise: Complete this sentence about informal commands:\n\n📘 PREPOSITIONS GUIDE:\n----------------------------------------\n\n   PARA uses:\n      • Destination/recipient: Este regalo es para ti.\n      • Deadline: Necesito esto para el lunes.\n      • Purpose/goal: Estudio para aprender.\n      • Opinion: Para mí, es fácil.\n      • Comparison: Para un niño, habla bien.\n\n   POR uses:\n      • Cause/reason: Lo hice por ti.\n      • Duration: Estudié por tres horas.\n      • Exchange: Pagué $20 por el libro.\n      • Through/along: Caminé por el parque.\n      • By means of: Te llamo por teléfono.\n\n📘 GERUNDS VS INFINITIVES:\n----------------------------------------\n   Gerunds vs Infinitives - When to Use Each\n\n   Common Errors to Avoid:\n      ❌ Antes de comiendo          Note: After prepositions = infinitive\n      ❌ Me gusta nadando          Note: After gustar = infinitive\n      ❌ Gracias por ayudando          Note: After por = infinitive",
+        "examples": [
+          {
+            "spanish": "Example phrase in Spanish",
+            "english": "English translation"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Day 18 Vocabulary",
+    "screens": [
+      {
+        "category": "Commands (Tú) Words",
+        "words": [
+          {
+            "spanish": "palabra",
+            "english": "word"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "Example phrase in Spanish"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Commands (Tú)",
+        "passage": "Esta es una lectura de práctica para el día 18. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 18. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "realizar",
+        "means": "to accomplish",
+        "notMean": "to realize (= darse cuenta)"
+      },
+      {
+        "spanish": "sensible",
+        "means": "sensitive",
+        "notMean": "sensible (= sensato)"
+      },
+      {
+        "spanish": "éxito",
+        "means": "success",
+        "notMean": "exit (= salida)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "prepositions_guide": {
+    "por_vs_para": {
+      "title": "Por vs Para - Complete Guide",
+      "para_uses": [
+        {
+          "use": "Destination/recipient",
+          "example": "Este regalo es para ti.",
+          "english": "This gift is for you."
+        },
+        {
+          "use": "Deadline",
+          "example": "Necesito esto para el lunes.",
+          "english": "I need this by Monday."
+        },
+        {
+          "use": "Purpose/goal",
+          "example": "Estudio para aprender.",
+          "english": "I study to learn."
+        },
+        {
+          "use": "Opinion",
+          "example": "Para mí, es fácil.",
+          "english": "For me, it's easy."
+        },
+        {
+          "use": "Comparison",
+          "example": "Para un niño, habla bien.",
+          "english": "For a child, he speaks well."
+        },
+        {
+          "use": "Employment",
+          "example": "Trabajo para Google.",
+          "english": "I work for Google."
+        }
+      ],
+      "por_uses": [
+        {
+          "use": "Cause/reason",
+          "example": "Lo hice por ti.",
+          "english": "I did it because of you."
+        },
+        {
+          "use": "Duration",
+          "example": "Estudié por tres horas.",
+          "english": "I studied for three hours."
+        },
+        {
+          "use": "Exchange",
+          "example": "Pagué $20 por el libro.",
+          "english": "I paid $20 for the book."
+        },
+        {
+          "use": "Through/along",
+          "example": "Caminé por el parque.",
+          "english": "I walked through the park."
+        },
+        {
+          "use": "By means of",
+          "example": "Te llamo por teléfono.",
+          "english": "I'll call you by phone."
+        },
+        {
+          "use": "Per",
+          "example": "Gano $50 por hora.",
+          "english": "I earn $50 per hour."
+        },
+        {
+          "use": "On behalf of",
+          "example": "Firmé por mi jefe.",
+          "english": "I signed on behalf of my boss."
+        },
+        {
+          "use": "Passive agent",
+          "example": "Fue escrito por Cervantes.",
+          "english": "It was written by Cervantes."
+        }
+      ],
+      "common_expressions_por": [
+        "por favor (please)",
+        "por supuesto (of course)",
+        "por eso (that's why)",
+        "por fin (finally)",
+        "por lo menos (at least)",
+        "por lo general (generally)",
+        "por cierto (by the way)",
+        "por ejemplo (for example)"
+      ],
+      "common_expressions_para": [
+        "para siempre (forever)",
+        "para nada (not at all)",
+        "para colmo (to top it off)",
+        "¿para qué? (what for?)",
+        "para entonces (by then)"
+      ]
+    },
+    "a_en_de": {
+      "title": "A, En, De - Common Confusions",
+      "a_uses": [
+        {
+          "use": "Movement to",
+          "example": "Voy a España.",
+          "english": "I'm going to Spain."
+        },
+        {
+          "use": "Personal 'a'",
+          "example": "Veo a María.",
+          "english": "I see María."
+        },
+        {
+          "use": "Time",
+          "example": "A las tres.",
+          "english": "At three o'clock."
+        },
+        {
+          "use": "Distance",
+          "example": "A 5 km de aquí.",
+          "english": "5 km from here."
+        },
+        {
+          "use": "Manner",
+          "example": "A mano.",
+          "english": "By hand."
+        }
+      ],
+      "en_uses": [
+        {
+          "use": "Location",
+          "example": "Estoy en casa.",
+          "english": "I'm at home."
+        },
+        {
+          "use": "Time period",
+          "example": "En verano.",
+          "english": "In summer."
+        },
+        {
+          "use": "Transportation",
+          "example": "Voy en coche.",
+          "english": "I go by car."
+        },
+        {
+          "use": "Language",
+          "example": "En español.",
+          "english": "In Spanish."
+        }
+      ],
+      "de_uses": [
+        {
+          "use": "Origin",
+          "example": "Soy de México.",
+          "english": "I'm from Mexico."
+        },
+        {
+          "use": "Possession",
+          "example": "El coche de Juan.",
+          "english": "Juan's car."
+        },
+        {
+          "use": "Material",
+          "example": "Mesa de madera.",
+          "english": "Wooden table."
+        },
+        {
+          "use": "Time (from)",
+          "example": "De 9 a 5.",
+          "english": "From 9 to 5."
+        },
+        {
+          "use": "Topic",
+          "example": "Hablamos de política.",
+          "english": "We talk about politics."
+        }
+      ]
+    }
+  },
+  "gerunds_infinitives": {
+    "title": "Gerunds vs Infinitives - When to Use Each",
+    "infinitive_after": [
+      {
+        "trigger": "Prepositions",
+        "example": "antes de comer, después de trabajar, sin hablar",
+        "english": "before eating, after working, without speaking"
+      },
+      {
+        "trigger": "Modal verbs",
+        "example": "puedo hablar, debo ir, quiero comer",
+        "english": "I can speak, I must go, I want to eat"
+      },
+      {
+        "trigger": "As subject",
+        "example": "Viajar es divertido.",
+        "english": "Traveling is fun."
+      },
+      {
+        "trigger": "After 'al'",
+        "example": "Al llegar, llamé.",
+        "english": "Upon arriving, I called."
+      }
+    ],
+    "gerund_uses": [
+      {
+        "use": "Progressive (with estar)",
+        "example": "Estoy comiendo.",
+        "english": "I'm eating."
+      },
+      {
+        "use": "Manner (how)",
+        "example": "Salió corriendo.",
+        "english": "He left running."
+      },
+      {
+        "use": "Simultaneous action",
+        "example": "Estudio escuchando música.",
+        "english": "I study while listening to music."
+      }
+    ],
+    "common_errors": [
+      {
+        "wrong": "Antes de comiendo",
+        "correct": "Antes de comer",
+        "note": "After prepositions = infinitive"
+      },
+      {
+        "wrong": "Me gusta nadando",
+        "correct": "Me gusta nadar",
+        "note": "After gustar = infinitive"
+      },
+      {
+        "wrong": "Gracias por ayudando",
+        "correct": "Gracias por ayudar",
+        "note": "After por = infinitive"
+      }
+    ],
+    "tip": "Spanish almost always uses INFINITIVE where English uses -ing after prepositions!"
+  },
+  "level": "B1"
+}

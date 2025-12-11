@@ -1,0 +1,165 @@
+{
+  "day": 29,
+  "title": "Native-Level Expression",
+  "subtitle": "Idioms, fillers, and cultural fluency",
+  "level": "C1",
+  "objectives": [
+    "Use common Spanish idioms naturally",
+    "Master conversation fillers",
+    "Understand regional variations",
+    "Sound like a native speaker"
+  ],
+  "grammar": {
+    "title": "Native-Level Spanish",
+    "estimatedMinutes": 20,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Conversation Fillers (Muletillas)",
+        "content": "Native speakers use these constantly:",
+        "examples": [
+          {"spanish": "Pues...", "english": "Well... (thinking)"},
+          {"spanish": "Es que...", "english": "The thing is..."},
+          {"spanish": "O sea...", "english": "I mean... / That is..."},
+          {"spanish": "Bueno...", "english": "Well... / OK..."},
+          {"spanish": "A ver...", "english": "Let's see..."},
+          {"spanish": "¿Sabes?", "english": "You know?"},
+          {"spanish": "¿Me explico?", "english": "Am I making sense?"},
+          {"spanish": "Digamos...", "english": "Let's say..."}
+        ],
+        "tip": "Using these makes you sound SO much more natural!"
+      },
+      {
+        "type": "lesson",
+        "heading": "Common Idioms (Modismos)",
+        "content": "Expressions that don't translate literally:",
+        "examples": [
+          {"spanish": "estar en las nubes", "english": "to have one's head in the clouds"},
+          {"spanish": "meter la pata", "english": "to put your foot in it"},
+          {"spanish": "costar un ojo de la cara", "english": "to cost an arm and a leg"},
+          {"spanish": "no tener pelos en la lengua", "english": "to not mince words"},
+          {"spanish": "quedarse en blanco", "english": "to go blank"},
+          {"spanish": "ser pan comido", "english": "to be a piece of cake"},
+          {"spanish": "dar en el clavo", "english": "to hit the nail on the head"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match the idioms:",
+        "pairs": [
+          {"left": "costar un ojo de la cara", "right": "to be very expensive"},
+          {"left": "ser pan comido", "right": "to be very easy"},
+          {"left": "meter la pata", "right": "to make a mistake"},
+          {"left": "quedarse en blanco", "right": "to forget everything"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "More Useful Idioms",
+        "content": "For everyday situations:",
+        "examples": [
+          {"spanish": "tomar el pelo (a alguien)", "english": "to pull someone's leg"},
+          {"spanish": "estar hasta las narices", "english": "to be fed up"},
+          {"spanish": "no tener ni idea", "english": "to have no clue"},
+          {"spanish": "caer bien/mal", "english": "to like/dislike someone"},
+          {"spanish": "echar de menos", "english": "to miss someone/something"},
+          {"spanish": "pasarlo bien/mal", "english": "to have a good/bad time"},
+          {"spanish": "dar igual", "english": "to not matter"},
+          {"spanish": "valer la pena", "english": "to be worth it"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Ese viaje ___ la pena. (worth it)",
+        "correctAnswers": ["vale", "valió"],
+        "explanation": "Valer la pena = to be worth it"
+      },
+      {
+        "type": "lesson",
+        "heading": "Regional Variations",
+        "content": "Key differences across countries:",
+        "examples": [
+          {"spanish": "Spain: vale, tío, mola", "english": "OK, dude, cool"},
+          {"spanish": "Mexico: órale, güey, padre", "english": "OK/wow, dude, cool"},
+          {"spanish": "Argentina: che, boludo, bárbaro", "english": "hey, dude, great"},
+          {"spanish": "Colombia: bacano, parcero", "english": "cool, buddy"},
+          {"spanish": "⚠️ Spain: coger = to take", "english": "Latin America: coger = vulgar! Use 'tomar'"}
+        ],
+        "tip": "Be aware of regional differences to avoid misunderstandings!"
+      },
+      {
+        "type": "lesson",
+        "heading": "Nuanced Word Choices",
+        "content": "Subtle distinctions natives make:",
+        "examples": [
+          {"spanish": "saber vs conocer", "english": "to know facts vs to be familiar with"},
+          {"spanish": "pedir vs preguntar", "english": "to ask for vs to ask a question"},
+          {"spanish": "llevar vs traer", "english": "to take (away) vs to bring (here)"},
+          {"spanish": "sino vs pero", "english": "'but rather' (after negative) vs 'but'"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "No quiero café ___ té.",
+        "options": ["pero", "sino"],
+        "correctAnswer": 1,
+        "explanation": "After negation + 'but rather' = sino"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Colloquial Expressions",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Everyday Colloquial",
+        "words": [
+          {"spanish": "mola / está padre / qué chévere", "english": "cool!", "example": "¡Mola mucho! (Spain)"},
+          {"spanish": "flipar / alucinar", "english": "to be amazed", "example": "Estoy flipando."},
+          {"spanish": "currar / chambear", "english": "to work (slang)", "example": "Tengo que currar. (Spain)"},
+          {"spanish": "pasta / plata / lana", "english": "money (slang)", "example": "No tengo pasta. (Spain)"},
+          {"spanish": "tío/a / güey / che", "english": "dude", "example": "Oye, tío. (Spain)"},
+          {"spanish": "quedamos", "english": "let's meet up", "example": "¿Quedamos mañana?"},
+          {"spanish": "ir de marcha / salir de fiesta", "english": "to go out partying", "example": "Vamos de marcha."}
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Natural Conversation",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen to this casual conversation:",
+        "transcript": "—Pues mira, es que ayer metí la pata con mi jefe. O sea, le dije que el proyecto estaba listo cuando no lo estaba. ¿Sabes?\n—Ay, tío, ¿y qué pasó?\n—Bueno, se quedó en blanco cuando le mostré lo que teníamos.",
+        "options": ["Made a mistake with boss about project", "Got promoted at work", "Finished project early", "Quit the job"],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Blog Post",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Mi vida en España",
+        "passage": "Pues mira, llevo ya tres años viviendo en Madrid y todavía me cuesta pillar algunas expresiones. Al principio flipaba cuando la gente decía 'mola' o 'qué guay'. ¿Sabes lo que me costó un ojo de la cara? Aprender a usar 'vale' correctamente. O sea, los españoles lo dicen para TODO.\n\nLo que más me mola es el rollo de ir de cañas con los colegas después del curro. Es que aquí la vida social es muy importante. A veces echo de menos mi país, pero bueno, ya me he acostumbrado.",
+        "translation": "Well look, I've been living in Madrid for three years now and I still struggle to catch some expressions. At first I was amazed when people said 'mola' (cool) or 'qué guay' (how cool). You know what cost me an arm and a leg? Learning to use 'vale' (OK) correctly. I mean, Spaniards say it for EVERYTHING.\n\nWhat I like most is the thing of going for beers with colleagues after work. The thing is, social life is very important here. Sometimes I miss my country, but well, I've gotten used to it.",
+        "wordCount": 115
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué le costó un ojo de la cara?",
+        "options": ["Vivir en Madrid", "Ir de cañas", "Aprender a usar 'vale'", "El trabajo"],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

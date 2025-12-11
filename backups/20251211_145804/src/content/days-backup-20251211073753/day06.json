@@ -1,0 +1,336 @@
+{
+  "day": 6,
+  "title": "Questions & Negation",
+  "subtitle": "Asking questions & saying no",
+  "objectives": [
+    "Form questions with question words",
+    "Use all interrogative words",
+    "Make negative sentences",
+    "Use double negatives correctly"
+  ],
+  "grammar": {
+    "title": "Questions & Negation",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Forming Questions",
+        "content": "There are three ways to form questions in Spanish: 1) Raise your intonation at the end, 2) Invert subject and verb, 3) Use question words.",
+        "tip": "Spanish uses ¿ at the start AND ? at the end of questions!"
+      },
+      {
+        "type": "lesson",
+        "heading": "Question Words",
+        "content": "Essential interrogatives:",
+        "examples": [
+          {
+            "spanish": "¿Qué?",
+            "english": "What?"
+          },
+          {
+            "spanish": "¿Quién?",
+            "english": "Who?"
+          },
+          {
+            "spanish": "¿Cuándo?",
+            "english": "When?"
+          },
+          {
+            "spanish": "¿Dónde?",
+            "english": "Where?"
+          },
+          {
+            "spanish": "¿Por qué?",
+            "english": "Why?"
+          },
+          {
+            "spanish": "¿Cómo?",
+            "english": "How?"
+          },
+          {
+            "spanish": "¿Cuánto/a?",
+            "english": "How much?"
+          },
+          {
+            "spanish": "¿Cuántos/as?",
+            "english": "How many?"
+          },
+          {
+            "spanish": "¿Cuál?",
+            "english": "Which?"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "How do you ask 'Where is the book?'",
+        "options": [
+          "¿Qué es el libro?",
+          "¿Dónde está el libro?",
+          "¿Cuándo es el libro?",
+          "¿Por qué es el libro?"
+        ],
+        "correctAnswer": 1,
+        "explanation": "¿Dónde? means 'where' and ESTAR is used for location."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "¿___ te llamas? (What is your name?)",
+        "hint": "What word means 'how'?",
+        "correctAnswers": [
+          "cómo",
+          "Cómo"
+        ],
+        "explanation": "'¿Cómo te llamas?' literally means 'How do you call yourself?'"
+      },
+      {
+        "type": "lesson",
+        "heading": "Negation",
+        "content": "To make a sentence negative, put 'no' before the verb:",
+        "examples": [
+          {
+            "spanish": "Hablo español → No hablo español",
+            "english": "I speak Spanish → I don't speak Spanish"
+          },
+          {
+            "spanish": "Tengo hambre → No tengo hambre",
+            "english": "I'm hungry → I'm not hungry"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Double Negatives",
+        "content": "Unlike English, Spanish REQUIRES double negatives:",
+        "examples": [
+          {
+            "spanish": "No tengo nada",
+            "english": "I don't have anything"
+          },
+          {
+            "spanish": "No hay nadie",
+            "english": "There isn't anyone"
+          },
+          {
+            "spanish": "No voy nunca",
+            "english": "I never go"
+          }
+        ],
+        "tip": "Negative words: nada (nothing), nadie (nobody), nunca (never), ninguno (none)"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "How do you say 'I don't want anything'?",
+        "options": [
+          "No quiero algo",
+          "No quiero nada",
+          "Quiero nada",
+          "No quiero"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Double negative required: No + verb + nada."
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Question & Negative Words",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Question Words",
+        "words": [
+          {
+            "spanish": "qué",
+            "english": "what",
+            "example": "¿Qué quieres?"
+          },
+          {
+            "spanish": "quién",
+            "english": "who",
+            "example": "¿Quién es?"
+          },
+          {
+            "spanish": "cuándo",
+            "english": "when",
+            "example": "¿Cuándo llegas?"
+          },
+          {
+            "spanish": "dónde",
+            "english": "where",
+            "example": "¿Dónde vives?"
+          },
+          {
+            "spanish": "por qué",
+            "english": "why",
+            "example": "¿Por qué estudias?"
+          },
+          {
+            "spanish": "cómo",
+            "english": "how",
+            "example": "¿Cómo estás?"
+          },
+          {
+            "spanish": "cuánto",
+            "english": "how much",
+            "example": "¿Cuánto cuesta?"
+          },
+          {
+            "spanish": "cuál",
+            "english": "which",
+            "example": "¿Cuál prefieres?"
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Negative Words",
+        "words": [
+          {
+            "spanish": "no",
+            "english": "no/not",
+            "example": "No hablo francés."
+          },
+          {
+            "spanish": "nada",
+            "english": "nothing",
+            "example": "No tengo nada."
+          },
+          {
+            "spanish": "nadie",
+            "english": "nobody",
+            "example": "No hay nadie."
+          },
+          {
+            "spanish": "nunca",
+            "english": "never",
+            "example": "No voy nunca."
+          },
+          {
+            "spanish": "ninguno/a",
+            "english": "none",
+            "example": "No tengo ninguno."
+          },
+          {
+            "spanish": "tampoco",
+            "english": "neither",
+            "example": "Yo tampoco."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select:",
+        "transcript": "¿Dónde está el baño?",
+        "options": [
+          "¿Dónde está el baño?",
+          "¿Cómo está el baño?",
+          "¿Qué es el baño?",
+          "¿Cuándo está el baño?"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select:",
+        "transcript": "No tengo nada",
+        "options": [
+          "No tengo nada",
+          "No tengo nadie",
+          "Tengo nada",
+          "No tengo nunca"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Muchas preguntas",
+        "passage": "¿Cómo te llamas? Me llamo Ana. ¿De dónde eres? Soy de España. ¿Cuántos años tienes? Tengo veintitrés años. ¿Dónde trabajas? No trabajo, soy estudiante. ¿Tienes hermanos? No, no tengo ningún hermano. ¿Por qué estudias español? Porque quiero viajar a Latinoamérica.",
+        "translation": "What's your name? My name is Ana. Where are you from? I'm from Spain. How old are you? I'm 23. Where do you work? I don't work, I'm a student. Do you have siblings? No, I don't have any siblings. Why do you study Spanish? Because I want to travel to Latin America.",
+        "wordCount": 65
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Tiene Ana hermanos?",
+        "options": [
+          "Sí, tiene uno",
+          "Sí, tiene dos",
+          "No, no tiene ninguno",
+          "No sabe"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The text says 'no tengo ningún hermano.'"
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 6. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "librería",
+        "means": "bookstore",
+        "notMean": "library (= biblioteca)"
+      },
+      {
+        "spanish": "carpeta",
+        "means": "folder",
+        "notMean": "carpet (= alfombra)"
+      },
+      {
+        "spanish": "soportar",
+        "means": "to tolerate",
+        "notMean": "to support (= apoyar)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

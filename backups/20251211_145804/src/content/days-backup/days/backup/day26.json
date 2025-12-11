@@ -1,0 +1,26 @@
+{
+  "day": 26,
+  "title": "Directions",
+  "subtitle": "Getting around",
+  "objectives": ["Master directions and locations", "Build practical vocabulary", "Practice real-world scenarios", "Increase fluency confidence"],
+  "grammar": {
+    "title": "Directions",
+    "estimatedMinutes": 15,
+    "screens": [
+      {"type": "lesson", "heading": "Day 26: Directions", "content": "Today we focus on directions and locations. This is an essential skill for conversational Spanish that you'll use every day.", "tip": "Practice these patterns until they become automatic!"},
+      {"type": "lesson", "heading": "Key Concepts", "content": "Let's explore the main ideas for directions and locations.", "examples": [{"spanish": "Example phrase in Spanish", "english": "English translation"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Practice question for directions and locations:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": 0, "explanation": "This tests your understanding of directions and locations."},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "Complete this sentence about directions and locations:", "hint": "Think about the rules", "correctAnswers": ["respuesta"], "explanation": "This is how directions and locations works."}
+    ]
+  },
+  "vocabulary": {
+    "title": "Day 26 Vocabulary",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "Directions Words", "words": [{"spanish": "palabra", "english": "word", "example": "Una frase de ejemplo."}]},
+      {"type": "exercise", "exerciseType": "matching", "instruction": "Match the pairs:", "pairs": [{"left": "Spanish", "right": "English"}]}
+    ]
+  },
+  "listening": {"title": "Listening Practice", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen and select:", "transcript": "Audio transcript", "options": ["Option 1", "Option 2", "Option 3", "Option 4"], "correctAnswer": 0}]},
+  "reading": {"title": "Reading Practice", "estimatedMinutes": 10, "screens": [{"type": "reading", "title": "Day 26 Reading", "passage": "Este es un texto de práctica para el día 26. El tema es directions and locations. Practica leyendo este texto en voz alta para mejorar tu pronunciación.", "translation": "This is a practice text for day 26. The topic is directions and locations. Practice reading this text aloud to improve your pronunciation.", "wordCount": 30}]}
+}

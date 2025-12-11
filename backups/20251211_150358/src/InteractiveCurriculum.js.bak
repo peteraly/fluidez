@@ -1,0 +1,860 @@
+import React, { useState, useEffect, useRef } from 'react';
+import { SoundEffects } from './components/multimodal/SoundEffects';
+import { getWordVisual } from './components/multimodal/VisualAssets';
+import { WordMatchGame, FillBlankGame } from './components/multimodal/MiniGame';
+
+const theme = { primary: '#2D5A27', primaryLight: '#4A7C43', bg: '#FAFAFA', surface: '#FFF', text: '#1A1A1A', textLight: '#666', border: '#E0E0E0' };
+
+// ============================================
+// LOAD ENHANCED CURRICULUM FROM JSON FILES
+// ============================================
+const loadEnhancedCurriculum = () => {
+  const curriculum = {};
+  try {
+    const context = require.context('./content/days', false, /day\d+\.json$/);
+    context.keys().forEach(key => {
+      const dayNum = parseInt(key.match(/day(\d+)/)[1]);
+      curriculum[dayNum] = context(key);
+    });
+    console.log('✅ Loaded enhanced curriculum for days:', Object.keys(curriculum).join(', '));
+  } catch (e) {
+    console.log('Enhanced curriculum not found, using fallback:', e.message);
+  }
+  return curriculum;
+};
+
+const ENHANCED_DATA = loadEnhancedCurriculum();
+
+// Convert enhanced JSON to section format for the interactive UI
+const convertToSections = (dayData) => {
+  if (!dayData) return [];
+  
+  const sections = [];
+  
+  // 1. INTRO
+  sections.push({
+    type: 'intro',
+    title: dayData.title,
+    content: dayData.objectives ? 
+      `Today you'll learn: ${dayData.objectives.slice(0, 3).join(', ')}` :
+      `Welcome to Day ${dayData.day}: ${dayData.title}`
+  });
+  
+  // 2. VOSOTROS/VOS (if present) - Special section for regional conjugations
+  if (dayData.grammar?.vosotros_reference || dayData.grammar?.vos_reference) {
+    sections.push({
+      type: 'regional',
+      title: 'Regional Conjugations',
+      vosotros: dayData.grammar.vosotros_reference,
+      vos: dayData.grammar.vos_reference
+    });
+  }
+  
+  // 3. GRAMMAR LESSONS - All screens
+  if (dayData.grammar?.screens) {
+    const lessons = dayData.grammar.screens.filter(s => s.type === 'lesson');
+    const exercises = dayData.grammar.screens.filter(s => s.type === 'exercise');
+    
+    // Add grammar lessons
+    lessons.forEach((lesson, i) => {
+      sections.push({
+        type: 'grammar',
+        title: lesson.heading || `Grammar ${i + 1}`,
+        explanation: lesson.content,
+        examples: lesson.examples?.map(ex => ({
+          es: ex.spanish || ex,
+          en: ex.english || ''
+        })) || [],
+        tip: lesson.tip
+      });
+    });
+    
+    // Add exercises as fill-blank games
+    if (exercises.length > 0) {
+      sections.push({
+        type: 'game',
+        gameType: 'fillblank',
+        sentences: exercises.slice(0, 5).map(ex => ({
+          before: ex.instruction?.split('___')[0] || '',
+          after: ex.instruction?.split('___')[1] || '',
+          answer: ex.correctAnswer || '',
+          hint: ex.options?.[0] || 'Think about the grammar rule'
+        }))
+      });
+    }
+  }
+  
+  // 4. PREPOSITIONS GUIDE (Day 18)
+
+  // 4b. GERUNDS VS INFINITIVES
+  if (dayData.gerunds_infinitives) {
+    sections.push({
+      type: "gerunds",
+      title: dayData.gerunds_infinitives.title || "Gerunds vs Infinitives",
+      rule: dayData.gerunds_infinitives.rule,
+      errors: dayData.gerunds_infinitives.common_errors
+    });
+  }
+  if (dayData.prepositions_guide) {
+    sections.push({
+      type: 'prepositions',
+      title: 'Por vs Para',
+      guide: dayData.prepositions_guide
+    });
+  }
+  
+  // 5. VOCABULARY - All categories
+  if (dayData.vocabulary?.screens) {
+    dayData.vocabulary.screens.forEach((screen, i) => {
+      if (screen.words && screen.words.length > 0) {
+        sections.push({
+          type: 'vocabulary',
+          title: screen.category || `Vocabulary ${i + 1}`,
+          words: screen.words.map(w => ({
+            es: w.spanish,
+            en: w.english,
+            example: w.example
+          }))
+        });
+      }
+    });
+  }
+  
+  // 6. LISTENING
+  if (dayData.listening?.screens) {
+    const transcripts = dayData.listening.screens
+      .filter(s => s.transcript)
+      .map(s => s.transcript);
+    
+    if (transcripts.length > 0) {
+      sections.push({
+        type: 'listen',
+        title: 'Listen & Repeat',
+        phrases: transcripts
+      });
+    }
+  }
+  
+  // 7. READING
+  if (dayData.reading?.screens) {
+    const passages = dayData.reading.screens.filter(s => s.passage);
+    passages.forEach(p => {
+      sections.push({
+        type: 'reading',
+        title: p.title || 'Reading Practice',
+        passage: p.passage,
+        wordCount: p.wordCount
+      });
+    });
+  }
+  
+  // 8. IDIOMS (Day 29)
+  if (dayData.idioms_extended && dayData.idioms_extended.length > 0) {
+    sections.push({
+      type: 'idioms',
+      title: 'Spanish Idioms',
+      idioms: dayData.idioms_extended
+    });
+  }
+  
+  // 9. CONVERSATION FILLERS (Day 29)
+  if (dayData.conversation_fillers && dayData.conversation_fillers.length > 0) {
+    sections.push({
+      type: 'fillers',
+      title: 'Conversation Fillers',
+      fillers: dayData.conversation_fillers
+    });
+  }
+  
+  // 10. FALSE FRIENDS
+  if (dayData.falseFriends?.words) {
+    sections.push({
+      type: 'falsefriends',
+      title: 'False Friends (¡Cuidado!)',
+      words: dayData.falseFriends.words
+    });
+  }
+  
+  // 11. CULTURAL NOTES
+  if (dayData.cultural) {
+    sections.push({
+      type: 'cultural',
+      title: 'Cultural Note',
+      content: dayData.cultural.content || dayData.cultural.screens?.[0]?.content
+    });
+  }
+  
+  // 12. PRACTICAL SCENARIOS
+  if (dayData.practical_scenarios) {
+    Object.entries(dayData.practical_scenarios).forEach(([key, scenario]) => {
+      if (scenario.phrases && scenario.phrases.length > 0) {
+        sections.push({
+          type: 'scenarios',
+          title: scenario.title || key,
+          phrases: scenario.phrases
+        });
+      }
+    });
+  }
+  
+  // 13. VOCABULARY GAME
+  if (dayData.vocabulary?.screens?.[0]?.words) {
+    const words = dayData.vocabulary.screens[0].words.slice(0, 6);
+    sections.push({
+      type: 'game',
+      gameType: 'match',
+      pairs: words.map(w => ({ spanish: w.spanish, english: w.english }))
+    });
+  }
+  
+  // 14. SPEAKING PRACTICE
+  const speakPhrases = [];
+  if (dayData.vocabulary?.screens?.[0]?.words) {
+    dayData.vocabulary.screens[0].words.slice(0, 3).forEach(w => {
+      speakPhrases.push({
+        prompt: `Say: ${w.english}`,
+        expected: w.spanish.toLowerCase().split(' ')[0],
+        hint: w.spanish
+      });
+    });
+  }
+  if (speakPhrases.length > 0) {
+    sections.push({
+      type: 'speak',
+      title: 'Speaking Practice',
+      prompts: speakPhrases
+    });
+  }
+  
+  return sections;
+};
+
+// Fallback data for days without JSON
+const FALLBACK_DATA = {
+  1: {
+    title: 'Greetings & Introductions',
+    sections: [
+      { type: 'intro', content: '¡Hola! Today you\'ll learn to introduce yourself in Spanish.' },
+      { type: 'vocabulary', title: 'Key Words', words: [
+        { es: 'hola', en: 'hello' },
+        { es: 'buenos días', en: 'good morning' },
+        { es: 'me llamo', en: 'my name is' },
+        { es: 'mucho gusto', en: 'nice to meet you' }
+      ]},
+      { type: 'listen', title: 'Listen & Repeat', phrases: ['¡Hola! Me llamo María.', 'Buenos días. ¿Cómo estás?'] }
+    ]
+  }
+};
+
+export default function InteractiveCurriculum({ day = 1, onBack, onComplete }) {
+  const [currentSection, setCurrentSection] = useState(0);
+  const [sectionProgress, setSectionProgress] = useState({});
+  const [speakingIndex, setSpeakingIndex] = useState(0);
+  const [isListening, setIsListening] = useState(false);
+  const [spokenText, setSpokenText] = useState('');
+  const [speakResult, setSpeakResult] = useState(null);
+  
+  const recognitionRef = useRef(null);
+  
+  // Get data from enhanced JSON or fallback
+  const enhancedDay = ENHANCED_DATA[day];
+  const sections = enhancedDay ? convertToSections(enhancedDay) : (FALLBACK_DATA[day]?.sections || FALLBACK_DATA[1].sections);
+  const dayTitle = enhancedDay?.title || FALLBACK_DATA[day]?.title || `Day ${day}`;
+  
+  const section = sections[currentSection] || sections[0];
+  const progress = ((currentSection + 1) / sections.length) * 100;
+  
+  // Speech recognition setup
+  useEffect(() => {
+    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SR) {
+      recognitionRef.current = new SR();
+      recognitionRef.current.continuous = false;
+      recognitionRef.current.interimResults = false;
+      recognitionRef.current.lang = 'es-MX';
+      
+      recognitionRef.current.onresult = (e) => {
+        const transcript = e.results[0][0].transcript.toLowerCase();
+        setSpokenText(transcript);
+        setIsListening(false);
+        
+        const currentPrompt = section.prompts?.[speakingIndex];
+        if (currentPrompt && transcript.includes(currentPrompt.expected)) {
+          SoundEffects.correct();
+          setSpeakResult('correct');
+          setTimeout(() => {
+            setSpeakResult(null);
+            setSpokenText('');
+            if (speakingIndex + 1 < section.prompts.length) {
+              setSpeakingIndex(speakingIndex + 1);
+            } else {
+              handleSectionComplete();
+            }
+          }, 1500);
+        } else {
+          SoundEffects.incorrect();
+          setSpeakResult('incorrect');
+        }
+      };
+      
+      recognitionRef.current.onerror = () => setIsListening(false);
+      recognitionRef.current.onend = () => setIsListening(false);
+    }
+  }, [speakingIndex, section]);
+  
+  const speak = (text) => {
+    if (!text) return;
+    SoundEffects.tap();
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'es-ES';
+    utterance.rate = 0.8;
+    speechSynthesis.speak(utterance);
+  };
+  
+  const startListening = () => {
+    if (recognitionRef.current && !isListening) {
+      setIsListening(true);
+      setSpeakResult(null);
+      SoundEffects.recordStart();
+      recognitionRef.current.start();
+    }
+  };
+  
+  const handleSectionComplete = () => {
+    setSectionProgress({ ...sectionProgress, [currentSection]: true });
+    SoundEffects.encourage();
+    
+    if (currentSection + 1 < sections.length) {
+      setTimeout(() => {
+        setCurrentSection(currentSection + 1);
+        setSpeakingIndex(0);
+      }, 500);
+    } else {
+      SoundEffects.levelUp();
+      onComplete && onComplete();
+    }
+  };
+  
+  const nextSection = () => {
+    if (currentSection + 1 < sections.length) {
+      setSectionProgress({ ...sectionProgress, [currentSection]: true });
+      setCurrentSection(currentSection + 1);
+      setSpeakingIndex(0);
+      SoundEffects.tap();
+    } else {
+      handleSectionComplete();
+    }
+  };
+  
+  const prevSection = () => {
+    if (currentSection > 0) {
+      setCurrentSection(currentSection - 1);
+      setSpeakingIndex(0);
+    }
+  };
+  
+  // ============================================
+  // RENDER FUNCTIONS
+  // ============================================
+  
+  const renderSection = () => {
+    if (!section) return <div>Loading...</div>;
+    
+    switch (section.type) {
+      case 'intro':
+        return (
+          <div style={styles.sectionCard}>
+            <div style={{ fontSize: 48, marginBottom: 16 }}>👋</div>
+            <h2 style={{ marginBottom: 12 }}>{section.title || dayTitle}</h2>
+            <p style={{ fontSize: 18, lineHeight: 1.6 }}>{section.content}</p>
+            <button onClick={nextSection} style={styles.nextBtn}>Let's Go! →</button>
+          </div>
+        );
+      
+      // REGIONAL CONJUGATIONS (Vosotros/Vos)
+      case 'regional':
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>🌍 {section.title}</h3>
+            
+            {section.vosotros && (
+              <div style={styles.regionalBox}>
+                <h4 style={{ marginBottom: 12 }}>🇪🇸 VOSOTROS (Spain)</h4>
+                {Object.entries(section.vosotros).map(([tense, forms]) => (
+                  <div key={tense} style={styles.conjugationGroup}>
+                    <strong style={{ color: '#1565c0' }}>{tense}:</strong>
+                    {typeof forms === 'object' ? (
+                      <div style={{ marginLeft: 12 }}>
+                        {Object.entries(forms).map(([verb, conj]) => (
+                          <button key={verb} onClick={() => speak(conj)} style={styles.miniConjBtn}>
+                            {verb}: <strong>{conj}</strong> 🔊
+                          </button>
+                        ))}
+                      </div>
+                    ) : (
+                      <span style={{ marginLeft: 8 }}>{forms}</span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+            
+            {section.vos && (
+              <div style={{...styles.regionalBox, background: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)'}}>
+                <h4 style={{ marginBottom: 12 }}>🇦🇷 VOS (Argentina/Uruguay)</h4>
+                {Object.entries(section.vos).map(([tense, forms]) => (
+                  <div key={tense} style={styles.conjugationGroup}>
+                    <strong>{tense}:</strong>
+                    {typeof forms === 'object' ? (
+                      <div style={{ marginLeft: 12 }}>
+                        {Object.entries(forms).map(([verb, conj]) => (
+                          <button key={verb} onClick={() => speak(conj)} style={styles.miniConjBtn}>
+                            {verb}: <strong>{conj}</strong> 🔊
+                          </button>
+                        ))}
+                      </div>
+                    ) : (
+                      <span style={{ marginLeft: 8 }}>{forms}</span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+            
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+      
+      // VOCABULARY
+      case 'vocabulary':
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>📚 {section.title}</h3>
+            <p style={{ color: theme.textLight, marginBottom: 12 }}>
+              {section.words.length} words - Tap to hear pronunciation
+            </p>
+            <div style={styles.vocabGrid}>
+              {section.words.map((word, i) => {
+                const visual = getWordVisual(word.es?.split(' ')[0]);
+                return (
+                  <button key={i} onClick={() => speak(word.es)} style={styles.vocabCard}>
+                    {visual && <span style={styles.vocabEmoji}>{visual}</span>}
+                    <span style={styles.vocabEs}>{word.es}</span>
+                    <span style={styles.vocabEn}>{word.en}</span>
+                    {word.example && (
+                      <span style={styles.vocabExample}>"{word.example}"</span>
+                    )}
+                    <span style={styles.speakIcon}>🔊</span>
+                  </button>
+                );
+              })}
+            </div>
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+      
+      // GRAMMAR
+      case 'grammar':
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>📝 {section.title}</h3>
+            <p style={{ marginBottom: 16, lineHeight: 1.6 }}>{section.explanation}</p>
+            
+            {section.conjugation && (
+              <div style={styles.conjugationBox}>
+                {Object.entries(section.conjugation).map(([pronoun, verb]) => (
+                  <button key={pronoun} onClick={() => speak(`${pronoun} ${verb}`)} style={styles.conjugationRow}>
+                    <span style={styles.pronoun}>{pronoun}</span>
+                    <span style={styles.verb}>{verb}</span>
+                    <span>🔊</span>
+                  </button>
+                ))}
+              </div>
+            )}
+            
+            {section.examples && section.examples.length > 0 && (
+              <>
+                <h4 style={{ marginTop: 20, marginBottom: 12 }}>Examples:</h4>
+                {section.examples.map((ex, i) => (
+                  <button key={i} onClick={() => speak(ex.es)} style={styles.exampleRow}>
+                    <div>
+                      <div style={{ fontWeight: 600, color: '#d32f2f' }}>{ex.es}</div>
+                      {ex.en && <div style={{ fontSize: 13, color: theme.textLight }}>{ex.en}</div>}
+                    </div>
+                    <span>🔊</span>
+                  </button>
+                ))}
+              </>
+            )}
+            
+            {section.tip && (
+              <div style={styles.tipBox}>
+                💡 {section.tip}
+              </div>
+            )}
+            
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+      
+      // PREPOSITIONS GUIDE
+      case 'prepositions':
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>📘 {section.title}</h3>
+            
+            {section.guide?.por_vs_para?.para_uses && (
+              <div style={styles.prepSection}>
+                <h4 style={{ color: '#2e7d32' }}>PARA uses:</h4>
+                {section.guide.por_vs_para.para_uses.map((use, i) => (
+                  <button key={i} onClick={() => speak(use.example)} style={styles.prepRow}>
+                    <strong>{use.use}:</strong> {use.example} 🔊
+                  </button>
+                ))}
+              </div>
+            )}
+            
+            {section.guide?.por_vs_para?.por_uses && (
+              <div style={styles.prepSection}>
+                <h4 style={{ color: '#c62828', marginTop: 16 }}>POR uses:</h4>
+                {section.guide.por_vs_para.por_uses.map((use, i) => (
+                  <button key={i} onClick={() => speak(use.example)} style={styles.prepRow}>
+                    <strong>{use.use}:</strong> {use.example} 🔊
+                  </button>
+                ))}
+              </div>
+            )}
+            
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+      
+      // LISTEN & REPEAT
+      case 'listen':
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>👂 {section.title}</h3>
+            <p style={{ color: theme.textLight, marginBottom: 16 }}>Tap each phrase to hear it, then repeat aloud!</p>
+            {section.phrases.map((phrase, i) => (
+              <button key={i} onClick={() => speak(phrase)} style={styles.listenRow}>
+                <span style={{ flex: 1 }}>{phrase}</span>
+                <span>🔊</span>
+              </button>
+            ))}
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+      
+      // READING
+      case 'reading':
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>📖 {section.title}</h3>
+            {section.wordCount && (
+              <p style={{ color: theme.textLight, marginBottom: 12 }}>({section.wordCount} words)</p>
+            )}
+            <div style={styles.readingBox}>
+              <p style={{ lineHeight: 1.8, fontSize: 16 }}>{section.passage}</p>
+              <button onClick={() => speak(section.passage)} style={styles.listenBtn}>
+                🔊 Listen to Text
+              </button>
+            </div>
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+      
+      // IDIOMS
+      case 'idioms':
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>🗣️ {section.title}</h3>
+            <p style={{ color: theme.textLight, marginBottom: 12 }}>{section.idioms.length} expressions</p>
+            <div style={styles.idiomGrid}>
+              {section.idioms.map((idiom, i) => (
+                <button key={i} onClick={() => speak(idiom.spanish)} style={styles.idiomCard}>
+                  <div style={{ fontWeight: 600, color: '#7b1fa2' }}>{idiom.spanish}</div>
+                  <div style={{ color: theme.text }}>= {idiom.english}</div>
+                  {idiom.literal && (
+                    <div style={{ fontSize: 12, color: theme.textLight, fontStyle: 'italic' }}>
+                      (literal: {idiom.literal})
+                    </div>
+                  )}
+                  <span style={styles.speakIcon}>🔊</span>
+                </button>
+              ))}
+            </div>
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+      
+      // CONVERSATION FILLERS
+      case 'fillers':
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>💬 {section.title}</h3>
+            <p style={{ color: theme.textLight, marginBottom: 12 }}>Sound more natural with these!</p>
+            {section.fillers.map((filler, i) => (
+              <button key={i} onClick={() => speak(filler.spanish)} style={styles.fillerRow}>
+                <div>
+                  <strong style={{ color: '#1565c0' }}>{filler.spanish}</strong>
+                  <span style={{ color: theme.textLight }}> = {filler.english}</span>
+                  {filler.example && (
+                    <div style={{ fontSize: 13, fontStyle: 'italic', marginTop: 4 }}>"{filler.example}"</div>
+                  )}
+                </div>
+                <span>🔊</span>
+              </button>
+            ))}
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+      
+      // FALSE FRIENDS
+      case 'falsefriends':
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>⚠️ {section.title}</h3>
+            <p style={{ color: theme.textLight, marginBottom: 16 }}>Words that look like English but mean something different!</p>
+            {section.words.map((word, i) => (
+              <div key={i} style={styles.falseFriendCard}>
+                <div style={{ fontSize: 18, fontWeight: 600 }}>{word.spanish}</div>
+                <div style={{ color: '#2e7d32' }}>✓ Means: {word.means}</div>
+                <div style={{ color: '#c62828' }}>✗ NOT: {word.notMean}</div>
+              </div>
+            ))}
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+      
+      // CULTURAL NOTES
+      case 'cultural':
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>🌍 {section.title}</h3>
+            <p style={{ lineHeight: 1.8 }}>{section.content}</p>
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+      
+      // PRACTICAL SCENARIOS
+      case 'scenarios':
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>🎯 {section.title}</h3>
+            {section.phrases.map((phrase, i) => (
+              <button key={i} onClick={() => speak(phrase.spanish)} style={styles.scenarioRow}>
+                <div>
+                  <div style={{ fontWeight: 600, color: '#00838f' }}>{phrase.spanish}</div>
+                  <div style={{ fontSize: 13, color: theme.textLight }}>{phrase.english}</div>
+                </div>
+                <span>🔊</span>
+              </button>
+            ))}
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+      
+      // GAMES
+      case 'game':
+        if (section.gameType === 'match' && section.pairs) {
+          return (
+            <WordMatchGame pairs={section.pairs} onComplete={(score) => {
+              if (score >= 80) handleSectionComplete();
+              else nextSection();
+            }} />
+          );
+        } else if (section.gameType === 'fillblank' && section.sentences) {
+          return (
+            <FillBlankGame sentences={section.sentences} onComplete={(score) => {
+              if (score >= 60) handleSectionComplete();
+              else nextSection();
+            }} />
+          );
+        }
+        // Skip if game data is incomplete
+        nextSection();
+        return null;
+      
+      // SPEAKING PRACTICE
+      case 'speak':
+        const currentPrompt = section.prompts?.[speakingIndex];
+        if (!currentPrompt) {
+          nextSection();
+          return null;
+        }
+        return (
+          <div style={styles.sectionCard}>
+            <h3 style={styles.sectionTitle}>🎤 {section.title}</h3>
+            <p style={{ marginBottom: 8 }}>Progress: {speakingIndex + 1} / {section.prompts.length}</p>
+            
+            <div style={styles.speakPrompt}>
+              <p style={{ fontSize: 18, marginBottom: 8 }}>{currentPrompt.prompt}</p>
+              <p style={{ color: theme.textLight }}>Hint: {currentPrompt.hint}</p>
+            </div>
+            
+            <button 
+              onClick={isListening ? null : startListening}
+              style={{
+                ...styles.micBtn,
+                background: isListening ? '#ff5722' : theme.primary
+              }}
+            >
+              {isListening ? '🎤 Listening...' : '🎤 Tap to Speak'}
+            </button>
+            
+            {spokenText && (
+              <div style={styles.spokenText}>
+                You said: "{spokenText}"
+                {speakResult === 'correct' && <span style={{ color: '#2e7d32' }}> ✓ Correct!</span>}
+                {speakResult === 'incorrect' && <span style={{ color: '#c62828' }}> Try again!</span>}
+              </div>
+            )}
+            
+            <button onClick={nextSection} style={{...styles.nextBtn, background: '#999', marginTop: 16}}>
+              Skip →
+            </button>
+          </div>
+        );
+      
+      default:
+        return (
+          <div style={styles.sectionCard}>
+            <p>Unknown section type: {section.type}</p>
+            <button onClick={nextSection} style={styles.nextBtn}>Continue →</button>
+          </div>
+        );
+    }
+  };
+  
+  return (
+    <div style={styles.container}>
+      {/* Header */}
+      <div style={styles.header}>
+        <button onClick={onBack} style={styles.backBtn}>← Back</button>
+        <div style={styles.headerTitle}>Day {day}: {dayTitle}</div>
+        <div style={styles.headerProgress}>{currentSection + 1}/{sections.length}</div>
+      </div>
+      
+      {/* Progress Bar */}
+      <div style={styles.progressContainer}>
+        <div style={{...styles.progressBar, width: `${progress}%`}} />
+      </div>
+      
+      {/* Section Navigation */}
+      <div style={styles.sectionNav}>
+        <button 
+          onClick={prevSection} 
+          disabled={currentSection === 0}
+          style={{...styles.navBtn, opacity: currentSection === 0 ? 0.3 : 1}}
+        >
+          ← Prev
+        </button>
+        <span style={{ color: theme.textLight }}>{section?.type || 'loading'}</span>
+        <button 
+          onClick={nextSection}
+          disabled={currentSection >= sections.length - 1}
+          style={{...styles.navBtn, opacity: currentSection >= sections.length - 1 ? 0.3 : 1}}
+        >
+          Next →
+        </button>
+      </div>
+      
+      {/* Content */}
+      <div style={styles.content}>
+        {renderSection()}
+      </div>
+    </div>
+  );
+}
+
+// ============================================
+// STYLES
+// ============================================
+const styles = {
+  container: { minHeight: '100vh', background: theme.bg },
+  header: { 
+    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+    padding: '12px 16px', background: theme.primary, color: '#fff'
+  },
+  backBtn: { background: 'rgba(255,255,255,0.2)', border: 'none', color: '#fff', padding: '8px 12px', borderRadius: 8, cursor: 'pointer' },
+  headerTitle: { fontWeight: 600, fontSize: 16 },
+  headerProgress: { fontSize: 14, opacity: 0.9 },
+  progressContainer: { height: 4, background: '#E0E0E0' },
+  progressBar: { height: '100%', background: theme.primaryLight, transition: 'width 0.3s' },
+  sectionNav: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '8px 16px', background: '#f5f5f5' },
+  navBtn: { background: 'none', border: '1px solid #ddd', padding: '6px 12px', borderRadius: 6, cursor: 'pointer' },
+  content: { padding: 16 },
+  sectionCard: { background: theme.surface, borderRadius: 16, padding: 20, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' },
+  sectionTitle: { fontSize: 20, fontWeight: 600, marginBottom: 16, color: theme.text },
+  nextBtn: { 
+    width: '100%', padding: '14px', marginTop: 20, background: theme.primary, color: '#fff',
+    border: 'none', borderRadius: 12, fontSize: 16, fontWeight: 600, cursor: 'pointer'
+  },
+  vocabGrid: { display: 'grid', gap: 12 },
+  vocabCard: {
+    display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 4,
+    padding: 16, background: '#f8f9fa', border: '1px solid #e0e0e0', borderRadius: 12,
+    textAlign: 'left', cursor: 'pointer', position: 'relative', width: '100%'
+  },
+  vocabEmoji: { fontSize: 24, marginBottom: 4 },
+  vocabEs: { fontSize: 18, fontWeight: 600, color: '#d32f2f' },
+  vocabEn: { fontSize: 14, color: theme.textLight },
+  vocabExample: { fontSize: 12, color: '#888', fontStyle: 'italic', marginTop: 4 },
+  speakIcon: { position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', fontSize: 20 },
+  conjugationBox: { background: '#f0f7ff', borderRadius: 12, padding: 16, marginBottom: 16 },
+  conjugationRow: { 
+    display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%',
+    padding: '10px 12px', margin: '4px 0', background: '#fff', border: 'none', borderRadius: 8, cursor: 'pointer'
+  },
+  pronoun: { color: theme.textLight, minWidth: 80 },
+  verb: { fontWeight: 600, color: '#d32f2f', flex: 1, textAlign: 'center' },
+  exampleRow: {
+    display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%',
+    padding: 12, margin: '6px 0', background: '#f8f9fa', border: 'none', borderRadius: 8, cursor: 'pointer', textAlign: 'left'
+  },
+  listenRow: {
+    display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%',
+    padding: 16, margin: '8px 0', background: '#f8f9fa', border: 'none', borderRadius: 12, cursor: 'pointer', fontSize: 16
+  },
+  tipBox: { background: '#e8f5e9', padding: 12, borderRadius: 8, marginTop: 16, color: '#2e7d32' },
+  regionalBox: {
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    color: '#fff', padding: 20, borderRadius: 12, marginBottom: 16
+  },
+  conjugationGroup: { margin: '8px 0' },
+  miniConjBtn: { 
+    background: 'rgba(255,255,255,0.2)', border: 'none', color: '#fff', padding: '6px 12px',
+    borderRadius: 6, margin: '4px', cursor: 'pointer', fontSize: 14
+  },
+  prepSection: { marginBottom: 16 },
+  prepRow: {
+    display: 'block', width: '100%', padding: 12, margin: '6px 0', background: '#fff8e1',
+    border: 'none', borderRadius: 8, cursor: 'pointer', textAlign: 'left'
+  },
+  readingBox: { background: '#fafafa', padding: 20, borderRadius: 12, marginBottom: 16 },
+  listenBtn: { 
+    marginTop: 12, padding: '10px 20px', background: '#4caf50', color: '#fff',
+    border: 'none', borderRadius: 8, cursor: 'pointer'
+  },
+  idiomGrid: { display: 'grid', gap: 12 },
+  idiomCard: {
+    padding: 16, background: '#f3e5f5', border: 'none', borderRadius: 12,
+    textAlign: 'left', cursor: 'pointer', position: 'relative'
+  },
+  fillerRow: {
+    display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%',
+    padding: 14, margin: '6px 0', background: '#e8f5e9', border: 'none', borderRadius: 10, cursor: 'pointer', textAlign: 'left'
+  },
+  falseFriendCard: { padding: 16, margin: '8px 0', background: '#ffebee', borderRadius: 12 },
+  scenarioRow: {
+    display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%',
+    padding: 14, margin: '6px 0', background: '#e0f7fa', border: 'none', borderRadius: 10, cursor: 'pointer', textAlign: 'left'
+  },
+  speakPrompt: { background: '#f0f7ff', padding: 20, borderRadius: 12, marginBottom: 16, textAlign: 'center' },
+  micBtn: {
+    width: '100%', padding: 16, border: 'none', borderRadius: 12, color: '#fff',
+    fontSize: 18, fontWeight: 600, cursor: 'pointer'
+  },
+  spokenText: { marginTop: 16, padding: 12, background: '#f5f5f5', borderRadius: 8, textAlign: 'center' }
+};

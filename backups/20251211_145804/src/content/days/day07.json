@@ -1,0 +1,358 @@
+{
+  "day": 7,
+  "title": "Week 1 Review",
+  "subtitle": "-ER/-IR verbs & review",
+  "objectives": [
+    "Conjugate -ER and -IR verbs",
+    "Review all Week 1 content",
+    "Practice integrated skills",
+    "Prepare for Week 1 Assessment"
+  ],
+  "grammar": {
+    "title": "-ER and -IR Verbs",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "-ER Verb Conjugation",
+        "content": "Now let's learn -ER verbs! Use COMER (to eat) as your model:\n                              \n   ✏️ Exercise: Yo ___ en un restaurante. (comer)",
+        "examples": [
+          {
+            "spanish": "yo como",
+            "english": "I eat"
+          },
+          {
+            "spanish": "tú comes",
+            "english": "you eat"
+          },
+          {
+            "spanish": "él/ella come",
+            "english": "he/she eats"
+          },
+          {
+            "spanish": "nosotros comemos",
+            "english": "we eat"
+          },
+          {
+            "spanish": "ellos comen",
+            "english": "they eat"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "-IR Verb Conjugation",
+        "content": "-IR verbs are almost identical to -ER! Use VIVIR (to live):\n                              → ellos viven = they live",
+        "examples": [
+          {
+            "spanish": "yo vivo",
+            "english": "I live"
+          },
+          {
+            "spanish": "tú vives",
+            "english": "you live"
+          },
+          {
+            "spanish": "él/ella vive",
+            "english": "he/she lives"
+          },
+          {
+            "spanish": "nosotros vivimos",
+            "english": "we live"
+          },
+          {
+            "spanish": "ellos viven",
+            "english": "they live"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Common -ER/-IR Verbs",
+        "content": "Essential verbs to know:\n                              \n   ✏️ Exercise: Translate: 'They read books'",
+        "examples": [
+          {
+            "spanish": "comer",
+            "english": "to eat"
+          },
+          {
+            "spanish": "beber",
+            "english": "to drink"
+          },
+          {
+            "spanish": "leer",
+            "english": "to read"
+          },
+          {
+            "spanish": "aprender",
+            "english": "to learn"
+          },
+          {
+            "spanish": "comprender",
+            "english": "to understand"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Week 1 Review Vocab",
+    "screens": [
+      {
+        "category": "ER/-IR Verbs",
+        "words": [
+          {
+            "spanish": "comer",
+            "english": "to eat"
+          },
+          {
+            "spanish": "beber",
+            "english": "to drink"
+          },
+          {
+            "spanish": "leer",
+            "english": "to read"
+          },
+          {
+            "spanish": "aprender",
+            "english": "to learn"
+          },
+          {
+            "spanish": "vivir",
+            "english": "to live"
+          },
+          {
+            "spanish": "escribir",
+            "english": "to write"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "yo como tú comes yo vivo"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Week 1 Review",
+        "passage": "Esta es una lectura de práctica para el día 7. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 7. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "carpeta",
+        "means": "folder",
+        "notMean": "carpet (= alfombra)"
+      },
+      {
+        "spanish": "soportar",
+        "means": "to tolerate",
+        "notMean": "to support (= apoyar)"
+      },
+      {
+        "spanish": "constipado",
+        "means": "having a cold",
+        "notMean": "constipated (= estreñido)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "practical_scenarios": {
+    "title": "Phone Conversations",
+    "phrases": [
+      {
+        "spanish": "¿Aló? / ¿Diga? / ¿Bueno?",
+        "english": "Hello? (answering phone - varies by country)"
+      },
+      {
+        "spanish": "¿Quién habla?",
+        "english": "Who's speaking?"
+      },
+      {
+        "spanish": "Soy [nombre]",
+        "english": "This is [name]"
+      },
+      {
+        "spanish": "¿Está [nombre]?",
+        "english": "Is [name] there?"
+      },
+      {
+        "spanish": "Un momento, por favor",
+        "english": "One moment, please"
+      },
+      {
+        "spanish": "No está en este momento",
+        "english": "He/she isn't here right now"
+      },
+      {
+        "spanish": "¿Quiere dejar un mensaje?",
+        "english": "Would you like to leave a message?"
+      },
+      {
+        "spanish": "Le devolveré la llamada",
+        "english": "I'll call you back"
+      },
+      {
+        "spanish": "Se cortó la llamada",
+        "english": "The call got cut off"
+      },
+      {
+        "spanish": "No tengo señal",
+        "english": "I don't have signal"
+      }
+    ]
+  },
+  "level": "A1",
+  "processabilityTheory": {
+    "stage": 2,
+    "stageName": "Lexical Morphology",
+    "description": "Stage 2: Lexical Morphology"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "gender",
+    "colorCodes": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 Watch the adjective endings. What pattern do you see?"
+      },
+      {
+        "type": "post_pattern",
+        "text": "💡 Did you notice? Adjectives match the noun in gender AND number!"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: café caliente, sopa caliente, tacos calientes"
+      }
+    ],
+    "inputFlooding": [
+      "el café caliente",
+      "la sopa caliente",
+      "los tacos calientes",
+      "una manzana roja",
+      "un plátano amarillo",
+      "las uvas verdes"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_7_10",
+    "config": {
+      "maxWords": 5,
+      "speed": 0.8,
+      "primaryFocus": "rhythm"
+    },
+    "phrases": [
+      {
+        "spanish": "Quiero un café, por favor",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Tiene agua fría?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "La cuenta, por favor",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Está muy rico",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿Qué me recomienda?",
+        "focus": "intonation"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the rhythm of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.303788",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

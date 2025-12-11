@@ -1,0 +1,312 @@
+{
+  "day": 3,
+  "title": "Being & Describing",
+  "subtitle": "SER vs ESTAR & Adjectives",
+  "level": "A1",
+  "objectives": [
+    "Master the crucial SER vs ESTAR distinction",
+    "Conjugate ESTAR in present tense",
+    "Use adjectives with correct agreement",
+    "Describe people, places, and emotions"
+  ],
+  "grammar": {
+    "title": "SER vs ESTAR",
+    "vosotros_reference": {
+      "present": {
+        "ser": "sois",
+        "estar": "estáis"
+      },
+      "usage_note": "Vosotros is used in Spain for informal plural 'you'"
+    },
+    "vos_reference": {
+      "present": {
+        "ser": "sos",
+        "estar": "estás"
+      },
+      "usage_note": "Vos is used in Argentina, Uruguay, and parts of Central America"
+    },
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Two Verbs for 'To Be'",
+        "content": "Spanish has TWO verbs meaning 'to be': SER and ESTAR. This is one of the most important distinctions in Spanish. Mastering this will make you sound natural!",
+        "tip": "Think of SER for 'essence' (who you ARE) and ESTAR for 'state' (how you're DOING)."
+      },
+      {
+        "type": "lesson",
+        "heading": "ESTAR Conjugation",
+        "content": "Here's how to conjugate ESTAR:",
+        "examples": [
+          {"spanish": "yo estoy", "english": "I am"},
+          {"spanish": "tú estás", "english": "you are (informal)"},
+          {"spanish": "vos estás", "english": "you are (Argentina)"},
+          {"spanish": "él/ella/usted está", "english": "he/she is, you are (formal)"},
+          {"spanish": "nosotros estamos", "english": "we are"},
+          {"spanish": "vosotros estáis", "english": "you all are (Spain)"},
+          {"spanish": "ellos/ustedes están", "english": "they are, you all are"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "instruction": "Complete: Yo ___ en casa. (I am at home)",
+        "options": ["soy", "estoy", "es"],
+        "correctAnswer": "estoy"
+      },
+      {
+        "type": "lesson",
+        "heading": "When to Use ESTAR",
+        "content": "Use ESTAR for: Location (where something is), Temporary states & conditions, Emotions & feelings, Progressive tense (estar + -ando/-iendo).",
+        "examples": [
+          {"spanish": "Estoy en Madrid", "english": "I am in Madrid (location)"},
+          {"spanish": "Ella está cansada", "english": "She is tired (temporary)"},
+          {"spanish": "Estamos contentos", "english": "We are happy (emotion)"},
+          {"spanish": "Estoy trabajando", "english": "I am working (progressive)"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "SER vs ESTAR: The Key Difference",
+        "content": "SER = permanent, essential, defining characteristics. ESTAR = temporary states, location, emotions.",
+        "examples": [
+          {"spanish": "Ella es alta", "english": "She is tall (permanent trait - SER)"},
+          {"spanish": "Ella está cansada", "english": "She is tired (temporary - ESTAR)"},
+          {"spanish": "Él es inteligente", "english": "He is intelligent (personality - SER)"},
+          {"spanish": "Él está nervioso", "english": "He is nervous (emotion - ESTAR)"},
+          {"spanish": "La manzana es roja", "english": "The apple is red (inherent - SER)"}
+        ],
+        "tip": "Some adjectives change meaning! 'Es aburrido' = he's boring (personality). 'Está aburrido' = he's bored (feeling)."
+      },
+      {
+        "type": "exercise",
+        "instruction": "Mi hermana ___ en la oficina. (My sister is at the office)",
+        "options": ["es", "está"],
+        "correctAnswer": "está"
+      },
+      {
+        "type": "lesson",
+        "heading": "Progressive Tense",
+        "content": "The progressive tense describes actions happening RIGHT NOW. Form: ESTAR + gerund (-ando/-iendo)",
+        "examples": [
+          {"spanish": "Estoy hablando", "english": "I am speaking"},
+          {"spanish": "Estás comiendo", "english": "You are eating"},
+          {"spanish": "Está escribiendo", "english": "He/She is writing"},
+          {"spanish": "Estamos estudiando", "english": "We are studying"}
+        ],
+        "tip": "Gerund formation: -AR verbs → -ando (hablar → hablando), -ER/-IR verbs → -iendo (comer → comiendo)"
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Gerunds",
+        "content": "Some verbs have irregular gerund forms:",
+        "examples": [
+          {"spanish": "leer → leyendo", "english": "reading"},
+          {"spanish": "dormir → durmiendo", "english": "sleeping"},
+          {"spanish": "pedir → pidiendo", "english": "asking"},
+          {"spanish": "decir → diciendo", "english": "saying"},
+          {"spanish": "ir → yendo", "english": "going"},
+          {"spanish": "poder → pudiendo", "english": "being able"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Adjectives That Change Meaning",
+        "content": "Some adjectives have different meanings with SER vs ESTAR:",
+        "examples": [
+          {"spanish": "Es bueno / Está bueno", "english": "He's good (character) / It tastes good"},
+          {"spanish": "Es malo / Está malo", "english": "He's bad (character) / He's sick"},
+          {"spanish": "Es listo / Está listo", "english": "He's clever / He's ready"},
+          {"spanish": "Es aburrido / Está aburrido", "english": "He's boring / He's bored"},
+          {"spanish": "Es verde / Está verde", "english": "It's green (color) / It's unripe"},
+          {"spanish": "Es rico / Está rico", "english": "He's rich / It's delicious"},
+          {"spanish": "Es vivo / Está vivo", "english": "He's sharp/clever / He's alive"},
+          {"spanish": "Es seguro / Está seguro", "english": "It's safe / He's sure"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Adjective Agreement",
+        "content": "Spanish adjectives must agree with the noun in GENDER (masculine/feminine) and NUMBER (singular/plural). Most adjectives ending in -o change to -a for feminine.",
+        "examples": [
+          {"spanish": "el chico alto", "english": "the tall boy"},
+          {"spanish": "la chica alta", "english": "the tall girl"},
+          {"spanish": "los chicos altos", "english": "the tall boys"},
+          {"spanish": "las chicas altas", "english": "the tall girls"}
+        ],
+        "tip": "Adjectives ending in -e or consonants often don't change for gender: 'inteligente' works for both."
+      },
+      {
+        "type": "exercise",
+        "instruction": "Las casas son muy ___. (The houses are very big)",
+        "options": ["grande", "grandes", "grandos"],
+        "correctAnswer": "grandes"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Descriptions & Emotions",
+    "screens": [
+      {
+        "category": "Rooms of the House",
+        "words": [
+          {"spanish": "la casa", "english": "house", "example": "Mi casa es grande."},
+          {"spanish": "el apartamento", "english": "apartment", "example": "Vivo en un apartamento."},
+          {"spanish": "el piso", "english": "apartment (Spain)", "example": "Tengo un piso en Madrid."},
+          {"spanish": "la habitación", "english": "room", "example": "La habitación es pequeña."},
+          {"spanish": "la cocina", "english": "kitchen", "example": "Cocino en la cocina."},
+          {"spanish": "el baño", "english": "bathroom", "example": "El baño está arriba."},
+          {"spanish": "la sala", "english": "living room", "example": "Vemos la tele en la sala."},
+          {"spanish": "el comedor", "english": "dining room", "example": "Comemos en el comedor."},
+          {"spanish": "el dormitorio", "english": "bedroom", "example": "Duermo en mi dormitorio."},
+          {"spanish": "el garaje", "english": "garage", "example": "El coche está en el garaje."},
+          {"spanish": "el jardín", "english": "garden", "example": "Tenemos un jardín bonito."},
+          {"spanish": "el balcón", "english": "balcony", "example": "Hay plantas en el balcón."},
+          {"spanish": "el sótano", "english": "basement", "example": "El sótano está oscuro."},
+          {"spanish": "la terraza", "english": "terrace", "example": "Cenamos en la terraza."},
+          {"spanish": "el pasillo", "english": "hallway", "example": "El pasillo es largo."}
+        ]
+      },
+      {
+        "category": "Furniture & Appliances",
+        "words": [
+          {"spanish": "la cama", "english": "bed", "example": "Mi cama es cómoda."},
+          {"spanish": "la mesa", "english": "table", "example": "La mesa está en la cocina."},
+          {"spanish": "la silla", "english": "chair", "example": "Siéntate en la silla."},
+          {"spanish": "el sofá", "english": "sofa", "example": "El sofá es nuevo."},
+          {"spanish": "el armario", "english": "closet/wardrobe", "example": "Mi ropa está en el armario."},
+          {"spanish": "el escritorio", "english": "desk", "example": "Trabajo en mi escritorio."},
+          {"spanish": "el refrigerador", "english": "refrigerator", "example": "La leche está en el refrigerador."},
+          {"spanish": "la nevera", "english": "fridge (Spain)", "example": "Pon la cerveza en la nevera."},
+          {"spanish": "la estufa", "english": "stove", "example": "Cocino en la estufa."},
+          {"spanish": "el horno", "english": "oven", "example": "El pastel está en el horno."},
+          {"spanish": "el microondas", "english": "microwave", "example": "Calienta la comida en el microondas."},
+          {"spanish": "la lavadora", "english": "washing machine", "example": "Lavo la ropa en la lavadora."},
+          {"spanish": "la televisión", "english": "television", "example": "Veo la televisión por la noche."},
+          {"spanish": "la lámpara", "english": "lamp", "example": "Enciende la lámpara."},
+          {"spanish": "la alfombra", "english": "rug/carpet", "example": "La alfombra es suave."},
+          {"spanish": "el espejo", "english": "mirror", "example": "Me miro en el espejo."}
+        ]
+      },
+      {
+        "category": "Physical Descriptions",
+        "words": [
+          {"spanish": "alto/a", "english": "tall", "example": "Mi padre es muy alto."},
+          {"spanish": "bajo/a", "english": "short", "example": "El niño es bajo."},
+          {"spanish": "grande", "english": "big/large", "example": "La casa es grande."},
+          {"spanish": "pequeño/a", "english": "small", "example": "Tengo un perro pequeño."},
+          {"spanish": "gordo/a", "english": "fat", "example": "El gato está gordo."},
+          {"spanish": "delgado/a", "english": "thin/slim", "example": "Ella es muy delgada."},
+          {"spanish": "guapo/a", "english": "handsome/pretty", "example": "Es un chico guapo."},
+          {"spanish": "feo/a", "english": "ugly", "example": "El edificio es feo."},
+          {"spanish": "joven", "english": "young", "example": "Es una mujer joven."},
+          {"spanish": "viejo/a", "english": "old", "example": "La casa es muy vieja."},
+          {"spanish": "rubio/a", "english": "blonde", "example": "Tiene pelo rubio."},
+          {"spanish": "moreno/a", "english": "dark-haired/brunette", "example": "Soy morena."},
+          {"spanish": "calvo/a", "english": "bald", "example": "Mi abuelo es calvo."}
+        ]
+      },
+      {
+        "category": "Personality Traits",
+        "words": [
+          {"spanish": "simpático/a", "english": "nice/friendly", "example": "María es muy simpática."},
+          {"spanish": "antipático/a", "english": "unpleasant/mean", "example": "No seas antipático."},
+          {"spanish": "inteligente", "english": "intelligent", "example": "Mi hijo es muy inteligente."},
+          {"spanish": "trabajador/a", "english": "hardworking", "example": "Es una persona trabajadora."},
+          {"spanish": "perezoso/a", "english": "lazy", "example": "El gato es perezoso."},
+          {"spanish": "amable", "english": "kind", "example": "La profesora es amable."},
+          {"spanish": "serio/a", "english": "serious", "example": "Mi jefe es muy serio."},
+          {"spanish": "gracioso/a", "english": "funny", "example": "Tu hermano es gracioso."},
+          {"spanish": "tímido/a", "english": "shy", "example": "Soy un poco tímido."},
+          {"spanish": "generoso/a", "english": "generous", "example": "Mi abuela es generosa."}
+        ]
+      },
+      {
+        "category": "Emotions & States (use with ESTAR)",
+        "words": [
+          {"spanish": "contento/a", "english": "happy/content", "example": "Estoy muy contento hoy."},
+          {"spanish": "triste", "english": "sad", "example": "¿Por qué estás triste?"},
+          {"spanish": "feliz", "english": "happy", "example": "Estamos muy felices."},
+          {"spanish": "cansado/a", "english": "tired", "example": "Estoy cansada del trabajo."},
+          {"spanish": "enfermo/a", "english": "sick", "example": "Mi madre está enferma."},
+          {"spanish": "nervioso/a", "english": "nervous", "example": "Estoy nervioso por el examen."},
+          {"spanish": "emocionado/a", "english": "excited", "example": "Estamos emocionados."},
+          {"spanish": "enojado/a", "english": "angry", "example": "¿Por qué estás enojado?"},
+          {"spanish": "preocupado/a", "english": "worried", "example": "Estoy preocupado por ti."},
+          {"spanish": "aburrido/a", "english": "bored", "example": "Los niños están aburridos."},
+          {"spanish": "sorprendido/a", "english": "surprised", "example": "Estoy sorprendida."},
+          {"spanish": "asustado/a", "english": "scared", "example": "El perro está asustado."},
+          {"spanish": "confundido/a", "english": "confused", "example": "Estoy confundido."},
+          {"spanish": "frustrado/a", "english": "frustrated", "example": "Está frustrado con el trabajo."},
+          {"spanish": "aliviado/a", "english": "relieved", "example": "Estoy aliviado."}
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Practice",
+    "screens": [
+      {
+        "instruction": "Listen to the conversation about feelings",
+        "transcript": "Estoy muy cansado hoy. Trabajé mucho. ¿Y tú, cómo estás?",
+        "options": ["Estoy bien", "Estoy cansado también", "Estoy feliz"]
+      },
+      {
+        "instruction": "Listen to the description",
+        "transcript": "Mi hermana es alta y delgada. Tiene el pelo rubio. Es muy simpática pero hoy está triste.",
+        "options": ["Physical and emotional description", "Location description", "Time expression"]
+      },
+      {
+        "instruction": "Listen to progressive actions",
+        "transcript": "¿Qué estás haciendo? Estoy estudiando español. Mi hermano está viendo la televisión.",
+        "options": ["Talking about current actions", "Talking about past", "Talking about future"]
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Mi nuevo apartamento",
+        "passage": "Hoy estoy muy emocionado porque estoy en mi nuevo apartamento. Es pequeño pero bonito. Tiene una sala, una cocina, un dormitorio y un baño. La sala es mi habitación favorita porque es muy luminosa. Hay un sofá grande y cómodo donde me gusta leer. La cocina es pequeña pero tiene todo lo necesario: una estufa, un refrigerador y un microondas. Mi dormitorio tiene una cama grande y un armario para mi ropa. Las paredes son blancas pero voy a poner algunos cuadros. Estoy cansado de mover cajas, pero estoy muy contento con mi nuevo hogar. Mi madre está preocupada porque vivo solo, pero yo estoy feliz. Esta noche voy a descansar en mi sofá nuevo.",
+        "wordCount": 120,
+        "comprehension": [
+          {"question": "¿Cómo se siente el narrador?", "answer": "Emocionado y contento"},
+          {"question": "¿Cuál es su habitación favorita?", "answer": "La sala"},
+          {"question": "¿Por qué está preocupada la madre?", "answer": "Porque él vive solo"}
+        ]
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Housing Culture",
+    "content": "Housing vocabulary varies across Spanish-speaking countries. In Spain, 'piso' means apartment while in Latin America 'apartamento' or 'departamento' is used. 'Refrigerador' is common in Latin America while Spain uses 'nevera' or 'frigorífico'. Living arrangements also differ - in many Hispanic cultures, it's common for adult children to live with parents until marriage, and multigenerational households are valued."
+  },
+  "falseFriends": {
+    "title": "False Friends",
+    "words": [
+      {"spanish": "embarazada", "means": "pregnant", "notMean": "embarrassed (= avergonzado/a)"},
+      {"spanish": "carpeta", "means": "folder", "notMean": "carpet (= alfombra)"},
+      {"spanish": "éxito", "means": "success", "notMean": "exit (= salida)"}
+    ]
+  },
+  "multimedia": {
+    "title": "Recommended Resources",
+    "items": [
+      {"name": "Dreaming Spanish", "description": "Comprehensible input videos", "icon": "📺"},
+      {"name": "SpanishPod101", "description": "Structured audio lessons", "icon": "🎧"},
+      {"name": "Coffee Break Spanish", "description": "Podcast with Scottish teacher", "icon": "☕"},
+      {"name": "Anki", "description": "Spaced repetition flashcards", "icon": "📱"}
+    ]
+  },
+  "practical_scenarios": {
+    "describing_your_home": {
+      "title": "Describing Your Home",
+      "phrases": [
+        {"spanish": "Vivo en un apartamento/una casa", "english": "I live in an apartment/house"},
+        {"spanish": "Tiene dos dormitorios", "english": "It has two bedrooms"},
+        {"spanish": "La cocina es pequeña pero cómoda", "english": "The kitchen is small but comfortable"},
+        {"spanish": "Mi habitación favorita es...", "english": "My favorite room is..."},
+        {"spanish": "Está cerca del centro", "english": "It's close to downtown"}
+      ]
+    }
+  }
+}

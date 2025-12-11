@@ -1,0 +1,258 @@
+{
+  "day": 12,
+  "title": "Reflexive Verbs",
+  "subtitle": "Actions you do to yourself",
+  "objectives": [
+    "Understand reflexive verb concept",
+    "Conjugate reflexive verbs",
+    "Describe daily routines fluently",
+    "Use reflexive pronouns correctly"
+  ],
+  "grammar": {
+    "title": "Reflexive Verbs",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "What Are Reflexive Verbs?",
+        "content": "Reflexive verbs describe actions you do TO YOURSELF. The action reflects back on the subject. In Spanish, they're marked with 'se' at the end of the infinitive."
+      },
+      {
+        "type": "lesson",
+        "heading": "Reflexive Pronouns",
+        "content": "These pronouns show WHO the action reflects back on:\n                              → se = themselves/yourselves (ellos/ustedes)",
+        "examples": [
+          {
+            "spanish": "me",
+            "english": "myself (yo)"
+          },
+          {
+            "spanish": "te",
+            "english": "yourself (tú)"
+          },
+          {
+            "spanish": "se",
+            "english": "himself/herself/yourself formal"
+          },
+          {
+            "spanish": "nos",
+            "english": "ourselves (nosotros)"
+          },
+          {
+            "spanish": "se",
+            "english": "themselves/yourselves (ellos/ustedes)"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "LEVANTARSE (to get up)",
+        "content": "The pronoun goes BEFORE the conjugated verb:\n                              \n   ✏️ Exercise: Yo ___ levanto a las siete.",
+        "examples": [
+          {
+            "spanish": "yo me levanto",
+            "english": "I get up"
+          },
+          {
+            "spanish": "tú te levantas",
+            "english": "you get up"
+          },
+          {
+            "spanish": "él/ella se levanta",
+            "english": "he/she gets up"
+          },
+          {
+            "spanish": "nosotros nos levantamos",
+            "english": "we get up"
+          },
+          {
+            "spanish": "ellos se levantan",
+            "english": "they get up"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Common Reflexive Verbs",
+        "content": "Essential daily routine verbs:\n                              \n   ✏️ Exercise: Ella ___ ducha por la mañana.\n\n   ✏️ Exercise: Translate: 'We get up early'",
+        "examples": [
+          {
+            "spanish": "despertarse",
+            "english": "to wake up"
+          },
+          {
+            "spanish": "levantarse",
+            "english": "to get up"
+          },
+          {
+            "spanish": "ducharse",
+            "english": "to shower"
+          },
+          {
+            "spanish": "bañarse",
+            "english": "to bathe"
+          },
+          {
+            "spanish": "vestirse",
+            "english": "to get dressed"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Reflexive vs Non-Reflexive",
+        "content": "Some verbs change meaning when reflexive:\n                        \n   ✏️ Exercise: 'Me llamo Carlos' means:",
+        "examples": [
+          {
+            "spanish": "dormir",
+            "english": "to sleep"
+          },
+          {
+            "spanish": "ir",
+            "english": "to go"
+          },
+          {
+            "spanish": "poner",
+            "english": "to put"
+          },
+          {
+            "spanish": "llamar",
+            "english": "to call"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Daily Routine",
+    "screens": [
+      {
+        "category": "Morning Routine",
+        "words": [
+          {
+            "spanish": "despertarse",
+            "english": "to wake up"
+          },
+          {
+            "spanish": "levantarse",
+            "english": "to get up"
+          },
+          {
+            "spanish": "ducharse",
+            "english": "to shower"
+          },
+          {
+            "spanish": "secarse",
+            "english": "to dry oneself"
+          },
+          {
+            "spanish": "vestirse",
+            "english": "to get dressed"
+          },
+          {
+            "spanish": "peinarse",
+            "english": "to comb hair"
+          },
+          {
+            "spanish": "cepillarse los dientes",
+            "english": "to brush teeth"
+          }
+        ]
+      },
+      {
+        "category": "Evening Routine",
+        "words": [
+          {
+            "spanish": "quitarse",
+            "english": "to take off"
+          },
+          {
+            "spanish": "ponerse",
+            "english": "to put on"
+          },
+          {
+            "spanish": "acostarse",
+            "english": "to go to bed"
+          },
+          {
+            "spanish": "dormirse",
+            "english": "to fall asleep"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "me te yo me levanto"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Reflexive Verbs",
+        "passage": "Esta es una lectura de práctica para el día 12. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 12. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "introducir",
+        "means": "to insert",
+        "notMean": "to introduce (= presentar)"
+      },
+      {
+        "spanish": "largo",
+        "means": "long",
+        "notMean": "large (= grande)"
+      },
+      {
+        "spanish": "recordar",
+        "means": "to remember",
+        "notMean": "to record (= grabar)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A2"
+}

@@ -1,0 +1,324 @@
+{
+  "day": 15,
+  "title": "The Near Future",
+  "subtitle": "IR + a + infinitive",
+  "objectives": [
+    "Express future plans with IR + a",
+    "Talk about what you're going to do",
+    "Make plans and appointments",
+    "Discuss upcoming events"
+  ],
+  "grammar": {
+    "title": "Near Future Tense",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "IR + A + Infinitive",
+        "content": "The easiest way to express future in Spanish! Use the verb IR (to go) + a + any infinitive verb."
+      },
+      {
+        "type": "lesson",
+        "heading": "Formation",
+        "content": "Conjugate IR, add 'a', then the infinitive:\n                              \n   ✏️ Exercise: Mañana yo ___ a estudiar español.\n\n   ✏️ Exercise: Nosotros ___ a viajar a México.",
+        "examples": [
+          {
+            "spanish": "voy a hablar",
+            "english": "I'm going to speak"
+          },
+          {
+            "spanish": "vas a comer",
+            "english": "you're going to eat"
+          },
+          {
+            "spanish": "va a vivir",
+            "english": "he/she is going to live"
+          },
+          {
+            "spanish": "vamos a estudiar",
+            "english": "we're going to study"
+          },
+          {
+            "spanish": "van a trabajar",
+            "english": "they're going to work"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Time Expressions for Future",
+        "content": "Common phrases to use with near future:\n                              \n   ✏️ Exercise: Translate: 'She is going to travel tomorrow'\n\n   ✏️ Exercise: Put in order: 'We are going to eat at eight'",
+        "examples": [
+          {
+            "spanish": "mañana",
+            "english": "tomorrow"
+          },
+          {
+            "spanish": "esta noche",
+            "english": "tonight"
+          },
+          {
+            "spanish": "la semana que viene",
+            "english": "next week"
+          },
+          {
+            "spanish": "el mes que viene",
+            "english": "next month"
+          },
+          {
+            "spanish": "el año que viene",
+            "english": "next year"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Questions in Near Future",
+        "content": "Form questions naturally:\n                  \n   ✏️ Exercise: ¿Qué ___ a hacer este fin de semana?",
+        "examples": [
+          {
+            "spanish": "¿Qué vas a hacer?",
+            "english": "What are you going to do?"
+          },
+          {
+            "spanish": "¿Cuándo van a llegar?",
+            "english": "When are they going to arrive?"
+          },
+          {
+            "spanish": "¿Dónde vamos a comer?",
+            "english": "Where are we going to eat?"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Future Plans Vocabulary",
+    "screens": [
+      {
+        "category": "Time Expressions",
+        "words": [
+          {
+            "spanish": "mañana",
+            "english": "tomorrow"
+          },
+          {
+            "spanish": "pasado mañana",
+            "english": "day after tomorrow"
+          },
+          {
+            "spanish": "esta noche",
+            "english": "tonight"
+          },
+          {
+            "spanish": "este fin de semana",
+            "english": "this weekend"
+          },
+          {
+            "spanish": "la semana que viene",
+            "english": "next week"
+          },
+          {
+            "spanish": "el próximo mes",
+            "english": "next month"
+          }
+        ]
+      },
+      {
+        "category": "Common Plans",
+        "words": [
+          {
+            "spanish": "viajar",
+            "english": "to travel"
+          },
+          {
+            "spanish": "visitar",
+            "english": "to visit"
+          },
+          {
+            "spanish": "celebrar",
+            "english": "to celebrate"
+          },
+          {
+            "spanish": "empezar",
+            "english": "to start"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "voy a hablar vas a comer mañana"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: The Near Future",
+        "passage": "Esta es una lectura de práctica para el día 15. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 15. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "ropa",
+        "means": "clothes",
+        "notMean": "rope (= cuerda)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "B1",
+  "processabilityTheory": {
+    "stage": 4,
+    "stageName": "Sentence Procedure",
+    "description": "Stage 4: Sentence Procedure"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "verb_endings",
+    "colorCodes": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 What's special about 'me levanto', 'te duchas', 'se viste'?"
+      },
+      {
+        "type": "post_pattern",
+        "text": "💡 Did you notice? The reflexive pronoun matches the subject!"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: me/te/se/nos/os/se + verb"
+      }
+    ],
+    "inputFlooding": [
+      "Me levanto temprano",
+      "Te duchas rápido",
+      "Se viste elegante",
+      "Nos acostamos tarde",
+      "Se despiertan a las siete"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_11_15",
+    "config": {
+      "maxWords": 7,
+      "speed": 0.9,
+      "primaryFocus": "intonation"
+    },
+    "phrases": [
+      {
+        "spanish": "Me levanto a las siete",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Primero me ducho y después desayuno",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿A qué hora te acuestas?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Los fines de semana me relajo",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Nos vemos mañana por la mañana",
+        "focus": "stress"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the intonation of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.305962",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

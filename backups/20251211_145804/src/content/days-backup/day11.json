@@ -1,0 +1,199 @@
+{
+  "day": 11,
+  "title": "Object Pronouns",
+  "subtitle": "Lo, la, le and more",
+  "level": "A1",
+  "objectives": [
+    "Understand direct object pronouns (lo, la, los, las)",
+    "Understand indirect object pronouns (me, te, le, nos, les)",
+    "Position pronouns correctly in sentences",
+    "Use pronouns to avoid repetition"
+  ],
+  "grammar": {
+    "title": "Direct & Indirect Object Pronouns",
+    "estimatedMinutes": 18,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Why Use Object Pronouns?",
+        "content": "Object pronouns replace nouns to avoid repetition. Instead of 'I see the book. I read the book,' we say 'I see it. I read it.'",
+        "tip": "In Spanish, pronouns go BEFORE the conjugated verb (unlike English where they come after)."
+      },
+      {
+        "type": "lesson",
+        "heading": "Direct Object Pronouns",
+        "content": "Replace the thing receiving the action directly:",
+        "examples": [
+          {"spanish": "me", "english": "me"},
+          {"spanish": "te", "english": "you (informal)"},
+          {"spanish": "lo", "english": "him/it (masc.)/you (formal masc.)"},
+          {"spanish": "la", "english": "her/it (fem.)/you (formal fem.)"},
+          {"spanish": "nos", "english": "us"},
+          {"spanish": "los", "english": "them (masc.)/you all (masc.)"},
+          {"spanish": "las", "english": "them (fem.)/you all (fem.)"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Direct Object Examples",
+        "content": "Notice the pronoun comes BEFORE the verb:",
+        "examples": [
+          {"spanish": "Veo el libro → Lo veo", "english": "I see the book → I see it"},
+          {"spanish": "Compro la camisa → La compro", "english": "I buy the shirt → I buy it"},
+          {"spanish": "Llamo a María → La llamo", "english": "I call María → I call her"},
+          {"spanish": "Conozco a Juan → Lo conozco", "english": "I know Juan → I know him"},
+          {"spanish": "Tengo los libros → Los tengo", "english": "I have the books → I have them"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Compro el café → ___ compro",
+        "options": ["La", "Lo", "Le", "Los"],
+        "correctAnswer": 1,
+        "explanation": "El café is masculine singular, so we use 'lo'"
+      },
+      {
+        "type": "lesson",
+        "heading": "Indirect Object Pronouns",
+        "content": "Replace the person who receives the action indirectly (to whom/for whom):",
+        "examples": [
+          {"spanish": "me", "english": "to/for me"},
+          {"spanish": "te", "english": "to/for you (informal)"},
+          {"spanish": "le", "english": "to/for him/her/you (formal)"},
+          {"spanish": "nos", "english": "to/for us"},
+          {"spanish": "les", "english": "to/for them/you all"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Indirect Object Examples",
+        "content": "Used with verbs like dar, decir, enviar, escribir, preguntar:",
+        "examples": [
+          {"spanish": "Doy el libro a Juan → Le doy el libro", "english": "I give the book to Juan → I give him the book"},
+          {"spanish": "Escribo a mis padres → Les escribo", "english": "I write to my parents → I write to them"},
+          {"spanish": "Dice la verdad a mí → Me dice la verdad", "english": "He tells the truth to me → He tells me the truth"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "___ doy el regalo a mi hermana. (to her)",
+        "correctAnswers": ["Le"],
+        "explanation": "Le = to her (indirect object)"
+      },
+      {
+        "type": "lesson",
+        "heading": "Double Object Pronouns",
+        "content": "When using both, indirect comes before direct. LE/LES becomes SE before LO/LA/LOS/LAS:",
+        "examples": [
+          {"spanish": "Me lo da", "english": "He gives it to me"},
+          {"spanish": "Te la compro", "english": "I buy it for you"},
+          {"spanish": "Se lo digo (not 'le lo')", "english": "I tell it to him/her"}
+        ],
+        "tip": "Order: Indirect + Direct + Verb (Se lo doy = I give it to him)"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "I give it (masc.) to her = ",
+        "options": ["Le lo doy", "Lo le doy", "Se lo doy", "La se doy"],
+        "correctAnswer": 2,
+        "explanation": "Le + lo = Se lo (le changes to se before lo/la)"
+      },
+      {
+        "type": "lesson",
+        "heading": "Position with Infinitives",
+        "content": "Pronouns can attach to infinitives:",
+        "examples": [
+          {"spanish": "Quiero verlo = Lo quiero ver", "english": "I want to see it"},
+          {"spanish": "Voy a comprarlo = Lo voy a comprar", "english": "I'm going to buy it"},
+          {"spanish": "Necesito decirte algo = Te necesito decir algo", "english": "I need to tell you something"}
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Verbs Commonly Used with Pronouns",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Direct Object Verbs",
+        "words": [
+          {"spanish": "ver", "english": "to see", "example": "La veo todos los días."},
+          {"spanish": "llamar", "english": "to call", "example": "Te llamo mañana."},
+          {"spanish": "conocer", "english": "to know (person)", "example": "¿Lo conoces?"},
+          {"spanish": "comprar", "english": "to buy", "example": "Lo compré ayer."},
+          {"spanish": "buscar", "english": "to look for", "example": "La estoy buscando."},
+          {"spanish": "encontrar", "english": "to find", "example": "No lo encuentro."},
+          {"spanish": "esperar", "english": "to wait for", "example": "Te espero aquí."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Indirect Object Verbs",
+        "words": [
+          {"spanish": "dar", "english": "to give", "example": "Le doy un regalo."},
+          {"spanish": "decir", "english": "to tell/say", "example": "Te digo la verdad."},
+          {"spanish": "enviar/mandar", "english": "to send", "example": "Les envío un mensaje."},
+          {"spanish": "escribir", "english": "to write", "example": "Le escribo una carta."},
+          {"spanish": "preguntar", "english": "to ask", "example": "Me pregunta algo."},
+          {"spanish": "explicar", "english": "to explain", "example": "Te lo explico."},
+          {"spanish": "mostrar", "english": "to show", "example": "Les muestro la foto."}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match:",
+        "pairs": [
+          {"left": "lo", "right": "it (masc.)/him"},
+          {"left": "la", "right": "it (fem.)/her"},
+          {"left": "le", "right": "to him/her"},
+          {"left": "les", "right": "to them"}
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Pronouns in Action",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 What does she give him?",
+        "transcript": "Es el cumpleaños de mi hermano. Le doy un libro. Le gusta mucho leer.",
+        "options": ["A book", "A cake", "Money", "Clothes"],
+        "correctAnswer": 0
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 What can't he find?",
+        "transcript": "¿Dónde están mis llaves? No las encuentro. Las necesito para ir al trabajo.",
+        "options": ["His phone", "His wallet", "His keys", "His glasses"],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: The Gift",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "El regalo perfecto",
+        "passage": "Mañana es el cumpleaños de mi madre. Quiero comprarle un regalo especial. La semana pasada vi un collar muy bonito en una tienda. Lo vi y pensé en ella inmediatamente. Hoy voy a comprarlo. Sé que le va a gustar mucho. Mi hermana quiere darle flores. Se las va a dar por la mañana. Mi padre le va a preparar su comida favorita. ¡Va a ser un día especial para ella!",
+        "translation": "Tomorrow is my mother's birthday. I want to buy her a special gift. Last week I saw a very pretty necklace in a store. I saw it and thought of her immediately. Today I'm going to buy it. I know she's going to like it a lot. My sister wants to give her flowers. She's going to give them to her in the morning. My father is going to prepare her favorite food for her. It's going to be a special day for her!",
+        "wordCount": 82
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué va a comprar para su madre?",
+        "options": ["Flores", "Un collar", "Un libro", "Ropa"],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "day": 24,
+  "title": "Restaurant & Food",
+  "subtitle": "Ordering & dining",
+  "objectives": ["Master food and restaurant vocabulary", "Build practical vocabulary", "Practice real-world scenarios", "Increase fluency confidence"],
+  "grammar": {
+    "title": "Restaurant & Food",
+    "estimatedMinutes": 15,
+    "screens": [
+      {"type": "lesson", "heading": "Day 24: Restaurant & Food", "content": "Today we focus on food and restaurant vocabulary. This is an essential skill for conversational Spanish that you'll use every day.", "tip": "Practice these patterns until they become automatic!"},
+      {"type": "lesson", "heading": "Key Concepts", "content": "Let's explore the main ideas for food and restaurant vocabulary.", "examples": [{"spanish": "Example phrase in Spanish", "english": "English translation"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Practice question for food and restaurant vocabulary:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": 0, "explanation": "This tests your understanding of food and restaurant vocabulary."},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "Complete this sentence about food and restaurant vocabulary:", "hint": "Think about the rules", "correctAnswers": ["respuesta"], "explanation": "This is how food and restaurant vocabulary works."}
+    ]
+  },
+  "vocabulary": {
+    "title": "Day 24 Vocabulary",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "Restaurant & Food Words", "words": [{"spanish": "palabra", "english": "word", "example": "Una frase de ejemplo."}]},
+      {"type": "exercise", "exerciseType": "matching", "instruction": "Match the pairs:", "pairs": [{"left": "Spanish", "right": "English"}]}
+    ]
+  },
+  "listening": {"title": "Listening Practice", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen and select:", "transcript": "Audio transcript", "options": ["Option 1", "Option 2", "Option 3", "Option 4"], "correctAnswer": 0}]},
+  "reading": {"title": "Reading Practice", "estimatedMinutes": 10, "screens": [{"type": "reading", "title": "Day 24 Reading", "passage": "Este es un texto de práctica para el día 24. El tema es food and restaurant vocabulary. Practica leyendo este texto en voz alta para mejorar tu pronunciación.", "translation": "This is a practice text for day 24. The topic is food and restaurant vocabulary. Practice reading this text aloud to improve your pronunciation.", "wordCount": 30}]}
+}

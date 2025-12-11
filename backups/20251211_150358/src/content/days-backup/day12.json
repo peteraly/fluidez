@@ -1,0 +1,28 @@
+{
+  "day": 12,
+  "title": "Food & Drinks",
+  "subtitle": "GUSTAR and food vocabulary",
+  "objectives": ["Learn food and drink vocabulary", "Use GUSTAR correctly", "Order food and drinks", "Express preferences"],
+  "grammar": {
+    "title": "GUSTAR - To Like",
+    "estimatedMinutes": 12,
+    "screens": [
+      {"type": "lesson", "heading": "GUSTAR Structure", "content": "GUSTAR works backwards! The thing liked is the subject:", "tip": "Think: 'Coffee pleases me' not 'I like coffee'"},
+      {"type": "lesson", "heading": "How GUSTAR Works", "content": "Use indirect object pronouns:", "examples": [{"spanish": "Me gusta el café", "english": "I like coffee (Coffee pleases me)"}, {"spanish": "Te gusta el café", "english": "You like coffee"}, {"spanish": "Le gusta el café", "english": "He/She likes coffee"}, {"spanish": "Nos gusta el café", "english": "We like coffee"}, {"spanish": "Les gusta el café", "english": "They like coffee"}]},
+      {"type": "lesson", "heading": "Singular vs Plural", "content": "GUSTA for singular, GUSTAN for plural:", "examples": [{"spanish": "Me gusta el chocolate", "english": "I like chocolate (one thing)"}, {"spanish": "Me gustan las frutas", "english": "I like fruits (multiple things)"}, {"spanish": "Me gusta comer", "english": "I like to eat (infinitive = singular)"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Me ___ las manzanas.", "options": ["gusta", "gustan", "gusto", "gustamos"], "correctAnswer": 1, "explanation": "GUSTAN for plural: las manzanas"},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "¿Te ___ el vino? (like)", "correctAnswers": ["gusta"], "explanation": "GUSTA for singular: el vino"}
+    ]
+  },
+  "vocabulary": {
+    "title": "Food & Drinks",
+    "estimatedMinutes": 12,
+    "screens": [
+      {"type": "vocab", "category": "Food", "words": [{"spanish": "el pan", "english": "bread", "example": "Me gusta el pan."}, {"spanish": "el arroz", "english": "rice", "example": "Como arroz con pollo."}, {"spanish": "la carne", "english": "meat", "example": "No como carne."}, {"spanish": "el pollo", "english": "chicken", "example": "El pollo está delicioso."}, {"spanish": "el pescado", "english": "fish", "example": "Me gusta el pescado."}, {"spanish": "las verduras", "english": "vegetables", "example": "Como muchas verduras."}, {"spanish": "la fruta", "english": "fruit", "example": "La fruta es saludable."}, {"spanish": "el huevo", "english": "egg", "example": "Dos huevos, por favor."}]},
+      {"type": "vocab", "category": "Drinks", "words": [{"spanish": "el agua", "english": "water", "example": "Un vaso de agua."}, {"spanish": "el café", "english": "coffee", "example": "Un café con leche."}, {"spanish": "el té", "english": "tea", "example": "Prefiero el té."}, {"spanish": "la leche", "english": "milk", "example": "Tomo leche."}, {"spanish": "el jugo/zumo", "english": "juice", "example": "Un jugo de naranja."}, {"spanish": "la cerveza", "english": "beer", "example": "Una cerveza, por favor."}, {"spanish": "el vino", "english": "wine", "example": "Una copa de vino."}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "'El pollo' means:", "options": ["pork", "chicken", "fish", "beef"], "correctAnswer": 1}
+    ]
+  },
+  "listening": {"title": "Listening Practice", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen:", "transcript": "Me gustan mucho las frutas pero no me gusta la carne", "options": ["I like meat but not fruit", "I like fruit but not meat", "I don't like fruit or meat", "I like fruit and meat"], "correctAnswer": 1}]},
+  "reading": {"title": "Reading: At the Market", "estimatedMinutes": 8, "screens": [{"type": "reading", "title": "En el mercado", "passage": "Hoy voy al mercado a comprar comida. Me gustan mucho las frutas frescas. Compro manzanas, naranjas y plátanos. También necesito verduras: tomates, lechuga y zanahorias. No como carne, así que compro pescado. Para beber, compro jugo de naranja y agua. ¿Qué te gusta comer a ti? A mi familia le gusta mucho el pollo con arroz.", "translation": "Today I go to the market to buy food. I really like fresh fruits. I buy apples, oranges, and bananas. I also need vegetables: tomatoes, lettuce, and carrots. I don't eat meat, so I buy fish. To drink, I buy orange juice and water. What do you like to eat? My family really likes chicken with rice.", "wordCount": 70}, {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "¿Por qué compra pescado?", "options": ["Porque le gusta", "Porque no come carne", "Porque es barato", "Porque su familia quiere"], "correctAnswer": 1}]}
+}

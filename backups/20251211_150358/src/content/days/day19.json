@@ -1,0 +1,243 @@
+{
+  "day": 19,
+  "title": "Commands (Usted)",
+  "subtitle": "Formal commands",
+  "objectives": [
+    "Master formal commands",
+    "Build practical vocabulary",
+    "Practice real-world scenarios",
+    "Increase fluency confidence"
+  ],
+  "grammar": {
+    "title": "Commands (Usted)",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Day 19: Commands (Usted)",
+        "content": "Today we focus on formal commands. This is an essential skill for conversational Spanish that you'll use every day."
+      },
+      {
+        "type": "lesson",
+        "heading": "Key Concepts",
+        "content": "Let's explore the main ideas for formal commands.\n      \n   ✏️ Exercise: Practice question for formal commands:\n\n   ✏️ Exercise: Complete this sentence about formal commands:",
+        "examples": [
+          {
+            "spanish": "Example phrase in Spanish",
+            "english": "English translation"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Day 19 Vocabulary",
+    "screens": [
+      {
+        "category": "Commands (Usted) Words",
+        "words": [
+          {
+            "spanish": "palabra",
+            "english": "word"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "Example phrase in Spanish"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Commands (Usted)",
+        "passage": "Esta es una lectura de práctica para el día 19. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 19. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "sensible",
+        "means": "sensitive",
+        "notMean": "sensible (= sensato)"
+      },
+      {
+        "spanish": "éxito",
+        "means": "success",
+        "notMean": "exit (= salida)"
+      },
+      {
+        "spanish": "librería",
+        "means": "bookstore",
+        "notMean": "library (= biblioteca)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "B1",
+  "processabilityTheory": {
+    "stage": 5,
+    "stageName": "Subordinate Clause",
+    "description": "Stage 5: Subordinate Clause"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "tense",
+    "colorCodes": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 Compare -AR preterite to -ER/-IR preterite"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: -ER/-IR share endings: -í, -iste, -ió, -imos, -isteis, -ieron"
+      },
+      {
+        "type": "post_pattern",
+        "text": "💡 Did you notice? -ER and -IR have IDENTICAL preterite endings!"
+      }
+    ],
+    "inputFlooding": [
+      "Comí pizza ayer",
+      "¿Comiste bien?",
+      "Ella comió tarde",
+      "Vivimos en Madrid",
+      "Escribieron una carta"
+    ],
+    "morphemeDisplay": {
+      "verb": "comer/vivir (preterite)",
+      "stem": "com-/viv-",
+      "endings": [
+        "í",
+        "iste",
+        "ió",
+        "imos",
+        "isteis",
+        "ieron"
+      ]
+    }
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_16_20",
+    "config": {
+      "maxWords": 10,
+      "speed": 1.0,
+      "primaryFocus": "stress"
+    },
+    "phrases": [
+      {
+        "spanish": "Anoche salí con mis amigos",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Primero fuimos al cine",
+        "focus": "stress"
+      },
+      {
+        "spanish": "Después cenamos en un bar",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿A qué hora volviste a casa?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Me acosté muy tarde",
+        "focus": "stress"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the stress of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.307087",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

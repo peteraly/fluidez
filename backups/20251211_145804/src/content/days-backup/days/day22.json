@@ -1,0 +1,184 @@
+{
+  "day": 22,
+  "title": "Introduction to Subjunctive",
+  "subtitle": "A new mood for Spanish",
+  "level": "B1-B2",
+  "objectives": [
+    "Understand what the subjunctive mood is",
+    "Learn when subjunctive is required",
+    "Conjugate regular verbs in present subjunctive",
+    "Use subjunctive with expressions of desire"
+  ],
+  "grammar": {
+    "title": "The Subjunctive Mood",
+    "estimatedMinutes": 20,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "What is the Subjunctive?",
+        "content": "The subjunctive is not a tense but a MOOD. It expresses subjectivity: wishes, doubts, emotions, possibilities, and hypotheticals. The indicative states facts; the subjunctive expresses non-facts.",
+        "tip": "Think of it this way: Indicative = Reality, Subjunctive = Non-reality (wishes, doubts, emotions)"
+      },
+      {
+        "type": "lesson",
+        "heading": "The WEIRDO Triggers",
+        "content": "Subjunctive is triggered by these categories in the main clause:",
+        "examples": [
+          {"spanish": "W - Wishes/Wants", "english": "querer que, desear que, preferir que"},
+          {"spanish": "E - Emotions", "english": "alegrarse de que, tener miedo de que"},
+          {"spanish": "I - Impersonal expressions", "english": "es importante que, es necesario que"},
+          {"spanish": "R - Recommendations", "english": "recomendar que, sugerir que"},
+          {"spanish": "D - Doubt/Denial", "english": "dudar que, no creer que"},
+          {"spanish": "O - Ojalá", "english": "ojalá (que) = I hope/wish that"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Forming Present Subjunctive",
+        "content": "Start with yo form of present indicative, drop -o, add opposite endings:",
+        "examples": [
+          {"spanish": "-AR verbs: -e, -es, -e, -emos, -en", "english": "hable, hables, hable, hablemos, hablen"},
+          {"spanish": "-ER/-IR verbs: -a, -as, -a, -amos, -an", "english": "coma, comas, coma, comamos, coman"}
+        ],
+        "tip": "-AR verbs get -ER endings, -ER/-IR verbs get -AR endings!"
+      },
+      {
+        "type": "lesson",
+        "heading": "HABLAR in Subjunctive",
+        "content": "From hablo → habl- + subjunctive endings:",
+        "examples": [
+          {"spanish": "yo hable", "english": "that I speak"},
+          {"spanish": "tú hables", "english": "that you speak"},
+          {"spanish": "él/ella hable", "english": "that he/she speak"},
+          {"spanish": "nosotros hablemos", "english": "that we speak"},
+          {"spanish": "ellos hablen", "english": "that they speak"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Quiero que tú ___ español. (hablar)",
+        "correctAnswers": ["hables"],
+        "explanation": "After 'quiero que', use subjunctive: hables"
+      },
+      {
+        "type": "lesson",
+        "heading": "Subjunctive with Wishes",
+        "content": "When the subjects are different, use subjunctive after que:",
+        "examples": [
+          {"spanish": "Quiero que vengas", "english": "I want you to come"},
+          {"spanish": "Deseo que seas feliz", "english": "I wish you to be happy"},
+          {"spanish": "Espero que llueva", "english": "I hope it rains"}
+        ],
+        "tip": "Same subject = infinitive: Quiero ir. Different subjects = que + subjunctive."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Espero que ella ___ bien. (estar)",
+        "options": ["está", "esté", "estar", "estará"],
+        "correctAnswer": 1,
+        "explanation": "Espero que triggers subjunctive: esté"
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Subjunctives",
+        "content": "Common irregular verbs:",
+        "examples": [
+          {"spanish": "ser: sea, seas, sea, seamos, sean", "english": "to be"},
+          {"spanish": "estar: esté, estés, esté, estemos, estén", "english": "to be"},
+          {"spanish": "ir: vaya, vayas, vaya, vayamos, vayan", "english": "to go"},
+          {"spanish": "haber: haya", "english": "there is (subjunctive)"},
+          {"spanish": "saber: sepa, sepas, sepa, sepamos, sepan", "english": "to know"},
+          {"spanish": "dar: dé, des, dé, demos, den", "english": "to give"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match subjunctive forms:",
+        "pairs": [
+          {"left": "ser (yo)", "right": "sea"},
+          {"left": "ir (tú)", "right": "vayas"},
+          {"left": "estar (él)", "right": "esté"},
+          {"left": "saber (nosotros)", "right": "sepamos"}
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Subjunctive Triggers",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Wishes & Desires",
+        "words": [
+          {"spanish": "querer que", "english": "to want (that)", "example": "Quiero que vengas."},
+          {"spanish": "desear que", "english": "to wish (that)", "example": "Deseo que tengas éxito."},
+          {"spanish": "esperar que", "english": "to hope (that)", "example": "Espero que todo salga bien."},
+          {"spanish": "preferir que", "english": "to prefer (that)", "example": "Prefiero que me llames."},
+          {"spanish": "necesitar que", "english": "to need (that)", "example": "Necesito que me ayudes."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Impersonal Expressions",
+        "words": [
+          {"spanish": "es importante que", "english": "it's important that", "example": "Es importante que estudies."},
+          {"spanish": "es necesario que", "english": "it's necessary that", "example": "Es necesario que llegues temprano."},
+          {"spanish": "es mejor que", "english": "it's better that", "example": "Es mejor que descanses."},
+          {"spanish": "es posible que", "english": "it's possible that", "example": "Es posible que llueva."},
+          {"spanish": "ojalá (que)", "english": "I hope that", "example": "Ojalá que venga."}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Which triggers subjunctive?",
+        "options": ["Creo que", "Sé que", "Es importante que", "Es verdad que"],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Subjunctive",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 What does the mother want?",
+        "transcript": "Mamá dice: 'Quiero que limpies tu habitación y que hagas la tarea antes de salir.'",
+        "options": ["Clean room, do homework", "Wash dishes, do homework", "Clean room, cook dinner", "Make bed, wash clothes"],
+        "correctAnswer": 0
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 What does the doctor recommend?",
+        "transcript": "El doctor recomienda que coma más verduras y que haga ejercicio tres veces por semana.",
+        "options": ["Eat more meat, exercise daily", "Eat more vegetables, exercise 3x/week", "Drink more water, sleep more", "Take vitamins, rest more"],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Advice Column",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Consejos para estudiantes",
+        "passage": "Queridos estudiantes: Es importante que organicen bien su tiempo. Recomiendo que hagan un horario de estudio. Es mejor que estudien un poco cada día en lugar de todo la noche antes del examen. Quiero que recuerden que es necesario que duerman bien. Espero que sigan estos consejos. Ojalá que todos aprendan mucho.",
+        "translation": "Dear students: It's important that you organize your time well. I recommend that you make a study schedule. It's better that you study a little each day instead of all night before the exam. I want you to remember that it's necessary that you sleep well. I hope you follow this advice. I hope everyone learns a lot.",
+        "wordCount": 70
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué recomienda el autor?",
+        "options": ["Estudiar toda la noche", "Hacer un horario de estudio", "No dormir mucho", "Estudiar solo antes del examen"],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

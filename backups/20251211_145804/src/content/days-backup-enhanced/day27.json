@@ -1,0 +1,307 @@
+{
+  "day": 27,
+  "title": "Perfect Tenses Complete",
+  "subtitle": "Present, past, future, and conditional perfect",
+  "level": "B2",
+  "objectives": [
+    "Master all perfect tense formations",
+    "Use present perfect vs preterite correctly",
+    "Express completed future actions",
+    "Understand perfect subjunctive"
+  ],
+  "grammar": {
+    "title": "All Perfect Tenses",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "HABER + Past Participle",
+        "content": "All perfect tenses use HABER + past participle (-ado/-ido):\n                  → -IR verbs: vivido, salido, dormido = lived, left, slept",
+        "examples": [
+          {
+            "spanish": "-AR verbs: hablado, trabajado, estudiado",
+            "english": "spoken, worked, studied"
+          },
+          {
+            "spanish": "-ER verbs: comido, bebido, leído",
+            "english": "eaten, drunk, read"
+          },
+          {
+            "spanish": "-IR verbs: vivido, salido, dormido",
+            "english": "lived, left, slept"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Past Participles",
+        "content": "Memorize these common irregulars:\n                              → morir → muerto = died",
+        "examples": [
+          {
+            "spanish": "abrir → abierto",
+            "english": "opened"
+          },
+          {
+            "spanish": "decir → dicho",
+            "english": "said"
+          },
+          {
+            "spanish": "escribir → escrito",
+            "english": "written"
+          },
+          {
+            "spanish": "hacer → hecho",
+            "english": "done/made"
+          },
+          {
+            "spanish": "morir → muerto",
+            "english": "died"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Present Perfect (Pretérito Perfecto)",
+        "content": "Present of HABER + past participle:\n                        → Nunca he estado en España. = I have never been to Spain.",
+        "examples": [
+          {
+            "spanish": "he hablado, has hablado, ha hablado",
+            "english": "I have spoken, you have spoken..."
+          },
+          {
+            "spanish": "hemos comido, han comido",
+            "english": "we have eaten, they have eaten"
+          },
+          {
+            "spanish": "¿Has visto la película?",
+            "english": "Have you seen the movie?"
+          },
+          {
+            "spanish": "Nunca he estado en España.",
+            "english": "I have never been to Spain."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Past Perfect (Pluscuamperfecto)",
+        "content": "Imperfect of HABER + past participle:\n                  \n   ✏️ Exercise: Cuando llegamos, la película ya ___ .",
+        "examples": [
+          {
+            "spanish": "había hablado, habías hablado, había hablado",
+            "english": "I had spoken..."
+          },
+          {
+            "spanish": "Cuando llegué, ya habían comido.",
+            "english": "When I arrived, they had already eaten."
+          },
+          {
+            "spanish": "Nunca había visto algo así.",
+            "english": "I had never seen anything like that."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Future & Conditional Perfect",
+        "content": "Future/Conditional of HABER + past participle:\n                        → Si hubiera sabido, habría venido. = If I had known, I would have come.",
+        "examples": [
+          {
+            "spanish": "habré terminado, habrás terminado...",
+            "english": "I will have finished..."
+          },
+          {
+            "spanish": "Para las 5, habré terminado.",
+            "english": "By 5, I will have finished."
+          },
+          {
+            "spanish": "habría terminado, habrías terminado...",
+            "english": "I would have finished..."
+          },
+          {
+            "spanish": "Si hubiera sabido, habría venido.",
+            "english": "If I had known, I would have come."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Perfect Subjunctive",
+        "content": "Subjunctive of HABER + past participle:\n                        \n   ✏️ Exercise: Si ___ ___ antes, te lo habría dicho. (saber, yo)",
+        "examples": [
+          {
+            "spanish": "Present: haya hablado, hayas hablado...",
+            "english": "that I have spoken..."
+          },
+          {
+            "spanish": "Espero que hayan llegado bien.",
+            "english": "I hope they have arrived safely."
+          },
+          {
+            "spanish": "Past: hubiera hablado, hubieras hablado...",
+            "english": "that I had spoken..."
+          },
+          {
+            "spanish": "Si hubieras estudiado, habrías aprobado.",
+            "english": "If you had studied, you would have passed."
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Time Expressions",
+    "screens": [
+      {
+        "category": "Perfect Tense Markers",
+        "words": [
+          {
+            "spanish": "ya",
+            "english": "already"
+          },
+          {
+            "spanish": "todavía no",
+            "english": "not yet"
+          },
+          {
+            "spanish": "nunca",
+            "english": "never"
+          },
+          {
+            "spanish": "alguna vez",
+            "english": "ever"
+          },
+          {
+            "spanish": "últimamente",
+            "english": "lately"
+          },
+          {
+            "spanish": "para entonces",
+            "english": "by then"
+          },
+          {
+            "spanish": "antes de que",
+            "english": "before"
+          }
+        ]
+      },
+      {
+        "category": "Bonus Vocabulary",
+        "words": [
+          {
+            "spanish": "el médico/la médica",
+            "english": "doctor"
+          },
+          {
+            "spanish": "el/la enfermero/a",
+            "english": "nurse"
+          },
+          {
+            "spanish": "el hospital",
+            "english": "hospital"
+          },
+          {
+            "spanish": "la farmacia",
+            "english": "pharmacy"
+          },
+          {
+            "spanish": "la receta",
+            "english": "prescription"
+          },
+          {
+            "spanish": "la pastilla",
+            "english": "pill"
+          },
+          {
+            "spanish": "el dolor",
+            "english": "pain"
+          },
+          {
+            "spanish": "la fiebre",
+            "english": "fever"
+          },
+          {
+            "spanish": "el resfriado",
+            "english": "cold"
+          },
+          {
+            "spanish": "la alergia",
+            "english": "allergy"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "-AR verbs: hablado, trabajado, estudiado -ER verbs: comido, bebido, leído abrir → abierto"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Perfect Tenses Complete",
+        "passage": "Esta es una lectura de práctica para el día 27. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 27. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "introducir",
+        "means": "to insert",
+        "notMean": "to introduce (= presentar)"
+      },
+      {
+        "spanish": "largo",
+        "means": "long",
+        "notMean": "large (= grande)"
+      },
+      {
+        "spanish": "recordar",
+        "means": "to remember",
+        "notMean": "to record (= grabar)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

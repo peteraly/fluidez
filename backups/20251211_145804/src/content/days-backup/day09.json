@@ -1,0 +1,195 @@
+{
+  "day": 9,
+  "title": "Time & Daily Routine",
+  "subtitle": "Telling time and reflexive verbs",
+  "level": "A1",
+  "objectives": [
+    "Tell time in Spanish",
+    "Understand reflexive verb structure",
+    "Describe your daily routine",
+    "Use time expressions"
+  ],
+  "grammar": {
+    "title": "Telling Time & Reflexive Verbs",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Telling Time",
+        "content": "Use SER to tell time. 'Es la una' for 1:00, 'Son las...' for all others:",
+        "examples": [
+          {"spanish": "¿Qué hora es?", "english": "What time is it?"},
+          {"spanish": "Es la una", "english": "It's 1:00"},
+          {"spanish": "Son las dos", "english": "It's 2:00"},
+          {"spanish": "Son las tres y media", "english": "It's 3:30"},
+          {"spanish": "Son las cuatro y cuarto", "english": "It's 4:15"},
+          {"spanish": "Son las cinco menos cuarto", "english": "It's 4:45"},
+          {"spanish": "Es mediodía", "english": "It's noon"},
+          {"spanish": "Es medianoche", "english": "It's midnight"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "3:30 = ",
+        "options": ["Son las tres y cuarto", "Son las tres y media", "Son las tres menos cuarto", "Es la tres y media"],
+        "correctAnswer": 1
+      },
+      {
+        "type": "lesson",
+        "heading": "Reflexive Verbs: The Concept",
+        "content": "Reflexive verbs describe actions you do to yourself. The action 'reflects' back. In Spanish, these verbs use reflexive pronouns (me, te, se, nos, se) that match the subject.",
+        "tip": "In the infinitive, reflexive verbs end in -se: levantarse, ducharse, vestirse"
+      },
+      {
+        "type": "lesson",
+        "heading": "Reflexive Pronouns",
+        "content": "The pronoun goes BEFORE the conjugated verb:",
+        "examples": [
+          {"spanish": "me", "english": "myself (yo)"},
+          {"spanish": "te", "english": "yourself (tú)"},
+          {"spanish": "se", "english": "himself/herself/yourself formal (él/ella/usted)"},
+          {"spanish": "nos", "english": "ourselves (nosotros)"},
+          {"spanish": "se", "english": "themselves/yourselves (ellos/ustedes)"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "LEVANTARSE (to get up)",
+        "content": "Full conjugation pattern:",
+        "examples": [
+          {"spanish": "yo me levanto", "english": "I get up"},
+          {"spanish": "tú te levantas", "english": "you get up"},
+          {"spanish": "él/ella se levanta", "english": "he/she gets up"},
+          {"spanish": "nosotros nos levantamos", "english": "we get up"},
+          {"spanish": "ellos se levantan", "english": "they get up"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Yo ___ ___ a las siete. (levantarse)",
+        "correctAnswers": ["me levanto"],
+        "explanation": "Me levanto = I get up"
+      },
+      {
+        "type": "lesson",
+        "heading": "Common Reflexive vs Non-Reflexive",
+        "content": "Notice the difference:",
+        "examples": [
+          {"spanish": "Me lavo (las manos)", "english": "I wash (my hands) - myself"},
+          {"spanish": "Lavo el coche", "english": "I wash the car - something else"},
+          {"spanish": "Me despierto", "english": "I wake up - myself"},
+          {"spanish": "Despierto a mi hijo", "english": "I wake up my son - someone else"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Ella ___ ducha por la mañana.",
+        "options": ["me", "te", "se", "nos"],
+        "correctAnswer": 2,
+        "explanation": "Ella se ducha = She showers (herself)"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Daily Routine Verbs",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Morning Routine (Reflexive)",
+        "words": [
+          {"spanish": "despertarse", "english": "to wake up", "example": "Me despierto a las seis."},
+          {"spanish": "levantarse", "english": "to get up", "example": "Me levanto inmediatamente."},
+          {"spanish": "ducharse", "english": "to shower", "example": "Me ducho con agua caliente."},
+          {"spanish": "lavarse", "english": "to wash oneself", "example": "Me lavo la cara."},
+          {"spanish": "cepillarse", "english": "to brush", "example": "Me cepillo los dientes."},
+          {"spanish": "peinarse", "english": "to comb one's hair", "example": "Me peino después de ducharme."},
+          {"spanish": "vestirse", "english": "to get dressed", "example": "Me visto rápidamente."},
+          {"spanish": "maquillarse", "english": "to put on makeup", "example": "Me maquillo antes de salir."},
+          {"spanish": "afeitarse", "english": "to shave", "example": "Me afeito todos los días."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Evening Routine (Reflexive)",
+        "words": [
+          {"spanish": "quitarse", "english": "to take off", "example": "Me quito los zapatos."},
+          {"spanish": "bañarse", "english": "to take a bath", "example": "Me baño por la noche."},
+          {"spanish": "acostarse", "english": "to go to bed", "example": "Me acuesto a las once."},
+          {"spanish": "dormirse", "english": "to fall asleep", "example": "Me duermo rápido."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Time Expressions",
+        "words": [
+          {"spanish": "por la mañana", "english": "in the morning", "example": "Trabajo por la mañana."},
+          {"spanish": "por la tarde", "english": "in the afternoon", "example": "Estudio por la tarde."},
+          {"spanish": "por la noche", "english": "at night", "example": "Descanso por la noche."},
+          {"spanish": "temprano", "english": "early", "example": "Me levanto temprano."},
+          {"spanish": "tarde", "english": "late", "example": "Nunca llego tarde."},
+          {"spanish": "todos los días", "english": "every day", "example": "Hago ejercicio todos los días."}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match the reflexive verbs:",
+        "pairs": [
+          {"left": "despertarse", "right": "to wake up"},
+          {"left": "ducharse", "right": "to shower"},
+          {"left": "vestirse", "right": "to get dressed"},
+          {"left": "acostarse", "right": "to go to bed"}
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Daily Routine",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen to María's routine:",
+        "transcript": "Me despierto a las seis y media. Me levanto, me ducho y me visto. Desayuno a las siete y salgo de casa a las siete y media.",
+        "options": [
+          "Wakes at 6:00, leaves at 7:00",
+          "Wakes at 6:30, leaves at 7:30",
+          "Wakes at 7:00, leaves at 7:30",
+          "Wakes at 6:30, leaves at 8:00"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 What time does he go to bed?",
+        "transcript": "Por la noche, ceno a las nueve, veo la televisión un poco y me acuesto a las once.",
+        "options": ["10:00", "10:30", "11:00", "11:30"],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: My Daily Routine",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Mi rutina diaria",
+        "passage": "Todos los días me despierto a las seis de la mañana. Me levanto inmediatamente porque no me gusta quedarme en la cama. Primero, me ducho con agua caliente. Después, me visto y me peino. A las seis y media, desayuno café con tostadas. Me lavo los dientes y salgo de casa a las siete. Por la noche, llego a casa a las seis, ceno con mi familia, me baño y me acuesto a las diez. Me duermo rápidamente porque estoy muy cansado.",
+        "translation": "Every day I wake up at six in the morning. I get up immediately because I don't like staying in bed. First, I shower with hot water. Then, I get dressed and comb my hair. At six thirty, I have coffee with toast for breakfast. I brush my teeth and leave the house at seven. In the evening, I get home at six, I have dinner with my family, I take a bath and I go to bed at ten. I fall asleep quickly because I'm very tired.",
+        "wordCount": 95
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿A qué hora se levanta?",
+        "options": ["A las cinco", "A las seis", "A las siete", "A las ocho"],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

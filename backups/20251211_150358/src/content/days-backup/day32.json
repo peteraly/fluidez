@@ -1,0 +1,208 @@
+{
+  "day": 32,
+  "title": "Subjunctive with Emotions",
+  "subtitle": "Expressing feelings about others' actions",
+  "level": "B1",
+  "objectives": [
+    "Use subjunctive after emotion verbs",
+    "Express happiness, sadness, fear, and surprise",
+    "Distinguish when to use indicative vs subjunctive with emotions"
+  ],
+  "grammar": {
+    "title": "Emotions Trigger Subjunctive",
+    "estimatedMinutes": 18,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Emotions + Que = Subjunctive",
+        "content": "When you express an emotion about someone else's action, use subjunctive after que:",
+        "examples": [
+          {"spanish": "Me alegra que estés aquí", "english": "I'm glad (that) you're here"},
+          {"spanish": "Siento que tengas que irte", "english": "I'm sorry (that) you have to leave"},
+          {"spanish": "Me sorprende que no lo sepas", "english": "It surprises me (that) you don't know"}
+        ],
+        "tip": "The emotion is your reaction to someone else's reality - hence subjunctive."
+      },
+      {
+        "type": "lesson",
+        "heading": "Common Emotion Verbs",
+        "content": "These verbs/expressions trigger subjunctive when followed by que:",
+        "examples": [
+          {"spanish": "alegrarse de que", "english": "to be glad that"},
+          {"spanish": "sentir que", "english": "to be sorry that / regret that"},
+          {"spanish": "temer que / tener miedo de que", "english": "to fear that"},
+          {"spanish": "sorprenderse de que", "english": "to be surprised that"},
+          {"spanish": "molestar que", "english": "to bother that"},
+          {"spanish": "encantar que", "english": "to love that"},
+          {"spanish": "odiar que", "english": "to hate that"},
+          {"spanish": "preocupar que", "english": "to worry that"}
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Gustar-Style Emotion Verbs",
+        "content": "Many emotion verbs work like GUSTAR (indirect object + verb):",
+        "examples": [
+          {"spanish": "Me alegra que vengas", "english": "It makes me happy that you're coming"},
+          {"spanish": "Me molesta que llegues tarde", "english": "It bothers me that you arrive late"},
+          {"spanish": "Me preocupa que no comas", "english": "It worries me that you don't eat"},
+          {"spanish": "Nos encanta que nos visites", "english": "We love that you visit us"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Me alegra que tú ___ aquí. (estar)",
+        "correctAnswers": ["estés"],
+        "explanation": "Me alegra que triggers subjunctive: estés"
+      },
+      {
+        "type": "lesson",
+        "heading": "Same Subject = Infinitive",
+        "content": "If the same person feels the emotion AND does the action, use infinitive (no que):",
+        "examples": [
+          {"spanish": "Me alegra estar aquí", "english": "I'm glad to be here (I'm glad, I'm here)"},
+          {"spanish": "Siento llegar tarde", "english": "I'm sorry to arrive late (I'm sorry, I arrive late)"},
+          {"spanish": "Temo no poder ir", "english": "I fear not being able to go"}
+        ],
+        "tip": "Compare: Me alegra estar aquí (same subject) vs Me alegra que estés aquí (different subjects)"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "She's happy to be here (same subject) = ",
+        "options": [
+          "Le alegra que esté aquí",
+          "Le alegra estar aquí",
+          "Se alegra que esté aquí",
+          "Se alegra de estar aquí"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Same subject = infinitive: Se alegra de estar aquí"
+      },
+      {
+        "type": "lesson",
+        "heading": "Es + Adjective + Que",
+        "content": "Impersonal expressions of emotion also trigger subjunctive:",
+        "examples": [
+          {"spanish": "Es triste que no puedas venir", "english": "It's sad that you can't come"},
+          {"spanish": "Es maravilloso que te cases", "english": "It's wonderful that you're getting married"},
+          {"spanish": "Es terrible que haya tanta pobreza", "english": "It's terrible that there's so much poverty"},
+          {"spanish": "Es increíble que no lo sepan", "english": "It's incredible that they don't know"}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Es terrible que él ___ enfermo. (estar)",
+        "correctAnswers": ["esté"],
+        "explanation": "Es terrible que triggers subjunctive: esté"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Emotion Vocabulary",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Positive Emotions",
+        "words": [
+          {"spanish": "alegrarse de", "english": "to be glad about", "example": "Me alegro de que estés bien."},
+          {"spanish": "estar contento/a de", "english": "to be happy about", "example": "Estoy contento de que vengas."},
+          {"spanish": "encantar", "english": "to love/delight", "example": "Me encanta que cocines para mí."},
+          {"spanish": "gustar", "english": "to like/please", "example": "Me gusta que seas honesto."},
+          {"spanish": "emocionar", "english": "to excite/thrill", "example": "Me emociona que te cases."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Negative Emotions",
+        "words": [
+          {"spanish": "sentir", "english": "to be sorry/regret", "example": "Siento que tengas problemas."},
+          {"spanish": "temer", "english": "to fear", "example": "Temo que sea demasiado tarde."},
+          {"spanish": "preocupar", "english": "to worry", "example": "Me preocupa que no duermas."},
+          {"spanish": "molestar", "english": "to bother/annoy", "example": "Me molesta que mientas."},
+          {"spanish": "frustrar", "english": "to frustrate", "example": "Me frustra que no entiendas."},
+          {"spanish": "entristecer", "english": "to sadden", "example": "Me entristece que te vayas."}
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Surprise & Wonder",
+        "words": [
+          {"spanish": "sorprender", "english": "to surprise", "example": "Me sorprende que hables chino."},
+          {"spanish": "extrañar", "english": "to find strange", "example": "Me extraña que no llame."},
+          {"spanish": "parecer raro/extraño", "english": "to seem strange", "example": "Me parece raro que no esté."},
+          {"spanish": "asombrar", "english": "to astonish", "example": "Me asombra que lo hayas logrado."}
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match emotions:",
+        "pairs": [
+          {"left": "alegrarse", "right": "to be glad"},
+          {"left": "sentir", "right": "to be sorry"},
+          {"left": "temer", "right": "to fear"},
+          {"left": "sorprender", "right": "to surprise"}
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening: Emotional Reactions",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 How does she feel?",
+        "transcript": "Me alegra mucho que hayas conseguido el trabajo. ¡Felicidades! Me sorprende que haya sido tan rápido.",
+        "options": [
+          "Sad about job loss",
+          "Happy about new job, surprised it was quick",
+          "Worried about the interview",
+          "Angry about the decision"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "listening",
+        "instruction": "🔊 What worries the mother?",
+        "transcript": "Me preocupa que mi hijo no coma bien. Solo quiere comida rápida. Me frustra que no escuche mis consejos.",
+        "options": [
+          "Son doesn't study",
+          "Son doesn't sleep",
+          "Son doesn't eat well",
+          "Son doesn't exercise"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: A Letter of Feelings",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Carta a un amigo",
+        "passage": "Querido Pablo:\n\nMe alegra mucho que te vaya bien en tu nuevo trabajo. Me sorprende que ya te hayan dado un ascenso después de solo tres meses. ¡Es increíble!\n\nSiento mucho que no puedas venir a mi boda. Entiendo que estés muy ocupado. Me entristece que estemos tan lejos ahora, pero me emociona que planees visitarnos en diciembre.\n\nMe preocupa que trabajes demasiado. Es importante que descanses también. Espero que cuides tu salud.\n\nTe extraño mucho.\nUn abrazo,\nCarlos",
+        "translation": "Dear Pablo:\n\nI'm very glad that things are going well at your new job. I'm surprised that they've already given you a promotion after only three months. It's incredible!\n\nI'm very sorry that you can't come to my wedding. I understand that you're very busy. It saddens me that we're so far away now, but it excites me that you're planning to visit us in December.\n\nI worry that you work too much. It's important that you rest too. I hope you take care of your health.\n\nI miss you a lot.\nA hug,\nCarlos",
+        "wordCount": 112
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Por qué está triste Carlos?",
+        "options": [
+          "Pablo no tiene trabajo",
+          "Pablo trabaja demasiado",
+          "Pablo no puede ir a la boda",
+          "Pablo no va a visitarlo"
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  }
+}

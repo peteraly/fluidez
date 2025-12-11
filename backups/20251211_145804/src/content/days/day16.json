@@ -1,0 +1,337 @@
+{
+  "day": 16,
+  "title": "Simple Future Tense",
+  "subtitle": "Will + verb (-ré, -rás, -rá)",
+  "objectives": [
+    "Conjugate regular verbs in simple future",
+    "Learn irregular future stems",
+    "Express predictions and plans",
+    "Use future for probability"
+  ],
+  "grammar": {
+    "title": "Simple Future Tense",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Future Tense Formation",
+        "content": "Add endings to the FULL infinitive (don't remove -ar/-er/-ir!):\n                              → -án = ellos/Uds.",
+        "examples": [
+          {
+            "spanish": "-é",
+            "english": "yo"
+          },
+          {
+            "spanish": "-ás",
+            "english": "tú"
+          },
+          {
+            "spanish": "-á",
+            "english": "él/ella/Ud."
+          },
+          {
+            "spanish": "-emos",
+            "english": "nosotros"
+          },
+          {
+            "spanish": "-án",
+            "english": "ellos/Uds."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Examples: HABLAR",
+        "content": "Full infinitive + endings:\n                              \n   ✏️ Exercise: Mañana yo ___ español. (hablar)\n\n   ✏️ Exercise: Ellos ___ a las ocho. (llegar)",
+        "examples": [
+          {
+            "spanish": "hablaré",
+            "english": "I will speak"
+          },
+          {
+            "spanish": "hablarás",
+            "english": "you will speak"
+          },
+          {
+            "spanish": "hablará",
+            "english": "he/she will speak"
+          },
+          {
+            "spanish": "hablaremos",
+            "english": "we will speak"
+          },
+          {
+            "spanish": "hablarán",
+            "english": "they will speak"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Future Stems",
+        "content": "12 verbs have irregular stems (but same endings):\n                              \n   ✏️ Exercise: Mañana ___ buen tiempo. (hacer)\n\n   ✏️ Exercise: Translate: 'I will be able to come' (poder, venir)",
+        "examples": [
+          {
+            "spanish": "tener → tendr-",
+            "english": "tendré, tendrás..."
+          },
+          {
+            "spanish": "venir → vendr-",
+            "english": "vendré, vendrás..."
+          },
+          {
+            "spanish": "poner → pondr-",
+            "english": "pondré, pondrás..."
+          },
+          {
+            "spanish": "salir → saldr-",
+            "english": "saldré, saldrás..."
+          },
+          {
+            "spanish": "poder → podr-",
+            "english": "podré, podrás..."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Future for Probability",
+        "content": "Future can express 'probably' or 'I wonder':\n                  → Tendrá unos 30 años = She's probably about 30",
+        "examples": [
+          {
+            "spanish": "¿Qué hora será?",
+            "english": "I wonder what time it is / What time could it be?"
+          },
+          {
+            "spanish": "Estará en casa",
+            "english": "He's probably at home"
+          },
+          {
+            "spanish": "Tendrá unos 30 años",
+            "english": "She's probably about 30"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Future Expressions",
+    "screens": [
+      {
+        "category": "Time Markers",
+        "words": [
+          {
+            "spanish": "mañana",
+            "english": "tomorrow"
+          },
+          {
+            "spanish": "la semana que viene",
+            "english": "next week"
+          },
+          {
+            "spanish": "el año que viene",
+            "english": "next year"
+          },
+          {
+            "spanish": "dentro de",
+            "english": "in",
+            "example": "time"
+          },
+          {
+            "spanish": "algún día",
+            "english": "someday"
+          },
+          {
+            "spanish": "pronto",
+            "english": "soon"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "-é -ás hablaré"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Simple Future Tense",
+        "passage": "Esta es una lectura de práctica para el día 16. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 16. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "embarazada",
+        "means": "pregnant",
+        "notMean": "embarrassed (= avergonzado/a)"
+      },
+      {
+        "spanish": "actualmente",
+        "means": "currently",
+        "notMean": "actually (= en realidad)"
+      },
+      {
+        "spanish": "realizar",
+        "means": "to accomplish",
+        "notMean": "to realize (= darse cuenta)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "B1",
+  "processabilityTheory": {
+    "stage": 5,
+    "stageName": "Subordinate Clause",
+    "description": "Stage 5: Subordinate Clause"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "verb_endings",
+    "colorCodes": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 Where do lo/la/los/las go in the sentence?"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: Object pronouns go BEFORE the conjugated verb"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'Lo veo' (I see it/him) - pronoun before verb!"
+      }
+    ],
+    "inputFlooding": [
+      "Lo veo",
+      "La llamo",
+      "Los conozco",
+      "Las necesito",
+      "Lo quiero comprar",
+      "Quiero comprarlo"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_16_20",
+    "config": {
+      "maxWords": 10,
+      "speed": 1.0,
+      "primaryFocus": "stress"
+    },
+    "phrases": [
+      {
+        "spanish": "¿En qué trabaja usted?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Soy ingeniero de software",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Trabajo desde casa los viernes",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿A qué hora termina su jornada?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Tengo una reunión a las tres",
+        "focus": "rhythm"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the stress of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.306228",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

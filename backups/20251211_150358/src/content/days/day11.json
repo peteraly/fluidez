@@ -1,0 +1,290 @@
+{
+  "day": 11,
+  "title": "Preterite vs Imperfect",
+  "subtitle": "Using both past tenses together",
+  "objectives": [
+    "Understand when to use each tense",
+    "Combine preterite and imperfect in narratives",
+    "Use story connectors",
+    "Tell stories about the past"
+  ],
+  "grammar": {
+    "title": "Combining Past Tenses",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "The Key Distinction",
+        "content": "PRETERITE: Completed actions, specific times, sequence of events. IMPERFECT: Background, descriptions, ongoing/habitual actions."
+      },
+      {
+        "type": "lesson",
+        "heading": "Classic Examples",
+        "content": "See how they work together:\n                  \n   ✏️ Exercise: Mientras yo ___ (dormir), mi hermano llegó.",
+        "examples": [
+          {
+            "spanish": "Llovía cuando salí",
+            "english": "It was raining (ongoing) when I left (completed)"
+          },
+          {
+            "spanish": "Mientras estudiaba, sonó el teléfono",
+            "english": "While I was studying (ongoing), the phone rang (completed)"
+          },
+          {
+            "spanish": "Era las ocho cuando llegué",
+            "english": "It was 8:00 (background) when I arrived (completed)"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Story Connectors",
+        "content": "Use these to connect ideas:\n                              \n   ✏️ Exercise: Hacía sol cuando ___ a llover.\n\n   ✏️ Exercise: Translate: 'I was eating when she called'",
+        "examples": [
+          {
+            "spanish": "mientras",
+            "english": "while"
+          },
+          {
+            "spanish": "cuando",
+            "english": "when"
+          },
+          {
+            "spanish": "de repente",
+            "english": "suddenly"
+          },
+          {
+            "spanish": "entonces",
+            "english": "then"
+          },
+          {
+            "spanish": "después",
+            "english": "after"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Story Connectors",
+    "screens": [
+      {
+        "category": "Narrative Words",
+        "words": [
+          {
+            "spanish": "mientras",
+            "english": "while"
+          },
+          {
+            "spanish": "cuando",
+            "english": "when"
+          },
+          {
+            "spanish": "de repente",
+            "english": "suddenly"
+          },
+          {
+            "spanish": "entonces",
+            "english": "then"
+          },
+          {
+            "spanish": "primero",
+            "english": "first"
+          },
+          {
+            "spanish": "luego",
+            "english": "then/later"
+          },
+          {
+            "spanish": "por fin",
+            "english": "finally"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "Llovía cuando salí Mientras estudiaba, sonó el teléfono mientras"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Preterite vs Imperfect",
+        "passage": "Esta es una lectura de práctica para el día 11. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 11. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "pretender",
+        "means": "to try/attempt",
+        "notMean": "to pretend (= fingir)"
+      },
+      {
+        "spanish": "introducir",
+        "means": "to insert",
+        "notMean": "to introduce (= presentar)"
+      },
+      {
+        "spanish": "largo",
+        "means": "long",
+        "notMean": "large (= grande)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "A2",
+  "processabilityTheory": {
+    "stage": 4,
+    "stageName": "Sentence Procedure",
+    "description": "Stage 4: Sentence Procedure"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "verb_endings",
+    "colorCodes": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 Watch how questions are formed in Spanish"
+      },
+      {
+        "type": "post_pattern",
+        "text": "💡 Did you notice? Spanish just adds ¿? marks - word order often stays the same!"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'Tú hablas español' → '¿Hablas español?' (just intonation change)"
+      }
+    ],
+    "inputFlooding": [
+      "¿Cuánto cuesta?",
+      "¿Qué talla es?",
+      "¿Tiene en azul?",
+      "¿Puedo probármelo?",
+      "¿Dónde están los probadores?"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_11_15",
+    "config": {
+      "maxWords": 7,
+      "speed": 0.9,
+      "primaryFocus": "intonation"
+    },
+    "phrases": [
+      {
+        "spanish": "¿Cuánto cuesta esta camisa?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "¿Tiene una talla más grande?",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "Me queda un poco pequeño",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿Puedo pagar con tarjeta?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Me lo llevo, gracias",
+        "focus": "rhythm"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the intonation of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.304831",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

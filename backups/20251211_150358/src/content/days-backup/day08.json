@@ -1,0 +1,26 @@
+{
+  "day": 8,
+  "title": "Family & Relationships",
+  "subtitle": "Possessive adjectives",
+  "objectives": ["Learn family vocabulary", "Use possessive adjectives", "Describe family relationships", "Talk about your family"],
+  "grammar": {
+    "title": "Possessive Adjectives",
+    "estimatedMinutes": 12,
+    "screens": [
+      {"type": "lesson", "heading": "Possessive Adjectives", "content": "Show ownership. They agree with the THING possessed, not the owner:", "examples": [{"spanish": "mi/mis", "english": "my", "word": "mi hermano, mis hermanos"}, {"spanish": "tu/tus", "english": "your (informal)", "word": "tu madre, tus padres"}, {"spanish": "su/sus", "english": "his/her/your(formal)/their", "word": "su casa, sus libros"}, {"spanish": "nuestro/a/os/as", "english": "our", "word": "nuestro padre, nuestra madre"}]},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "___ madre es doctora. (My)", "correctAnswers": ["Mi"], "explanation": "Mi madre = My mother"},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "___ hermanos son altos. (My - plural)", "options": ["Mi", "Mis", "Tu", "Su"], "correctAnswer": 1, "explanation": "Mis for plural: mis hermanos"}
+    ]
+  },
+  "vocabulary": {
+    "title": "Family Members",
+    "estimatedMinutes": 12,
+    "screens": [
+      {"type": "vocab", "category": "Immediate Family", "words": [{"spanish": "la madre/mamá", "english": "mother/mom", "example": "Mi madre es profesora."}, {"spanish": "el padre/papá", "english": "father/dad", "example": "Mi padre trabaja mucho."}, {"spanish": "los padres", "english": "parents", "example": "Mis padres viven en México."}, {"spanish": "el hermano", "english": "brother", "example": "Tengo un hermano."}, {"spanish": "la hermana", "english": "sister", "example": "Mi hermana es mayor."}, {"spanish": "el hijo", "english": "son", "example": "Su hijo tiene tres años."}, {"spanish": "la hija", "english": "daughter", "example": "Mi hija estudia medicina."}]},
+      {"type": "vocab", "category": "Extended Family", "words": [{"spanish": "el abuelo", "english": "grandfather", "example": "Mi abuelo tiene 80 años."}, {"spanish": "la abuela", "english": "grandmother", "example": "Mi abuela cocina muy bien."}, {"spanish": "el tío", "english": "uncle", "example": "Mi tío vive en California."}, {"spanish": "la tía", "english": "aunt", "example": "Mi tía es profesora."}, {"spanish": "el primo/la prima", "english": "cousin", "example": "Mi primo tiene mi edad."}, {"spanish": "el esposo/marido", "english": "husband", "example": "Mi esposo es ingeniero."}, {"spanish": "la esposa/mujer", "english": "wife", "example": "Su esposa es abogada."}]},
+      {"type": "exercise", "exerciseType": "matching", "instruction": "Match family members:", "pairs": [{"left": "madre", "right": "mother"}, {"left": "hermano", "right": "brother"}, {"left": "abuelo", "right": "grandfather"}, {"left": "tía", "right": "aunt"}]}
+    ]
+  },
+  "listening": {"title": "Listening Practice", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen:", "transcript": "Mi familia es grande. Tengo dos hermanos.", "options": ["Small family, one brother", "Big family, two siblings", "Small family, two sisters", "Big family, one brother"], "correctAnswer": 1}]},
+  "reading": {"title": "Reading: My Family", "estimatedMinutes": 8, "screens": [{"type": "reading", "title": "La familia de María", "passage": "Mi familia es muy grande. Mis padres se llaman Roberto y Carmen. Tengo dos hermanos: Pablo y Luis. Pablo es mayor que yo y Luis es menor. También tengo una hermana que se llama Sofía. Mis abuelos viven cerca de nosotros. Mi abuela siempre cocina para toda la familia los domingos. Mis tíos y primos también vienen a comer. Somos muy unidos.", "translation": "My family is very big. My parents are named Roberto and Carmen. I have two brothers: Pablo and Luis. Pablo is older than me and Luis is younger. I also have a sister named Sofía. My grandparents live near us. My grandmother always cooks for the whole family on Sundays. My aunts, uncles, and cousins also come to eat. We are very close.", "wordCount": 75}, {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "¿Cuántos hermanos tiene María?", "options": ["Uno", "Dos", "Tres", "Cuatro"], "correctAnswer": 2, "explanation": "Two brothers + one sister = 3 siblings"}]}
+}

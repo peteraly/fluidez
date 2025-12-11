@@ -1,0 +1,441 @@
+{
+  "day": 28,
+  "title": "Advanced Grammar Mastery",
+  "subtitle": "Passive voice, por vs para, relative pronouns",
+  "level": "B2-C1",
+  "objectives": [
+    "Use passive voice and se constructions",
+    "Master relative pronouns",
+    "Distinguish por and para perfectly",
+    "Sound more sophisticated in Spanish"
+  ],
+  "grammar": {
+    "title": "B2-C1 Grammar",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Passive Voice: SER + Past Participle",
+        "content": "True passive (less common in Spanish):\n                  → Las cartas fueron enviadas ayer. = The letters were sent yesterday.",
+        "examples": [
+          {
+            "spanish": "El libro fue escrito por Cervantes.",
+            "english": "The book was written by Cervantes."
+          },
+          {
+            "spanish": "La casa será vendida mañana.",
+            "english": "The house will be sold tomorrow."
+          },
+          {
+            "spanish": "Las cartas fueron enviadas ayer.",
+            "english": "The letters were sent yesterday."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Se Pasiva (More Common)",
+        "content": "SE + verb (3rd person) - agent unknown:\n                        → ¿Cómo se dice 'hello'? = How do you say 'hello'?",
+        "examples": [
+          {
+            "spanish": "Se habla español aquí.",
+            "english": "Spanish is spoken here."
+          },
+          {
+            "spanish": "Se venden casas.",
+            "english": "Houses are sold. (Houses for sale)"
+          },
+          {
+            "spanish": "Se necesitan empleados.",
+            "english": "Employees are needed."
+          },
+          {
+            "spanish": "¿Cómo se dice 'hello'?",
+            "english": "How do you say 'hello'?"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Se Impersonal",
+        "content": "SE + verb (3rd singular) for 'one/you/people':\n                  \n   ✏️ Exercise: ¿Cómo ___ 'goodbye' en español?",
+        "examples": [
+          {
+            "spanish": "Se come bien aquí.",
+            "english": "One eats well here."
+          },
+          {
+            "spanish": "No se puede fumar.",
+            "english": "One cannot smoke."
+          },
+          {
+            "spanish": "Se dice que va a llover.",
+            "english": "They say it's going to rain."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Relative Pronouns",
+        "content": "Connecting clauses:\n                              → cuyo/cuya = whose",
+        "examples": [
+          {
+            "spanish": "que",
+            "english": "that/which/who (most common)"
+          },
+          {
+            "spanish": "quien/quienes",
+            "english": "who (for people, after preposition)"
+          },
+          {
+            "spanish": "el que/la que/los que/las que",
+            "english": "the one who/which"
+          },
+          {
+            "spanish": "lo que",
+            "english": "what/that which (abstract)"
+          },
+          {
+            "spanish": "cuyo/cuya",
+            "english": "whose"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Relative Pronoun Examples",
+        "content": "In context:\n                        \n   ✏️ Exercise: ___ me dijiste es interesante.",
+        "examples": [
+          {
+            "spanish": "El hombre que vi era alto.",
+            "english": "The man (that) I saw was tall."
+          },
+          {
+            "spanish": "La mujer con quien hablé...",
+            "english": "The woman with whom I spoke..."
+          },
+          {
+            "spanish": "Lo que dices es verdad.",
+            "english": "What you say is true."
+          },
+          {
+            "spanish": "La ciudad donde nací...",
+            "english": "The city where I was born..."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "POR - Uses",
+        "content": "Through, because of, exchange, duration, per:\n                              → Per: Tres veces por semana. = Three times per week.",
+        "examples": [
+          {
+            "spanish": "Cause: Por la lluvia, no salí.",
+            "english": "Because of the rain, I didn't go out."
+          },
+          {
+            "spanish": "Exchange: Pagué $10 por el libro.",
+            "english": "I paid $10 for the book."
+          },
+          {
+            "spanish": "Duration: Estudié por tres horas.",
+            "english": "I studied for three hours."
+          },
+          {
+            "spanish": "Through: Caminé por el parque.",
+            "english": "I walked through the park."
+          },
+          {
+            "spanish": "Per: Tres veces por semana.",
+            "english": "Three times per week."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "PARA - Uses",
+        "content": "Purpose, destination, deadline, recipient, opinion:\n                              \n   ✏️ Exercise: Este libro es ___ mi madre. (recipient)\n\n   ✏️ Exercise: Gracias ___ ayudarme. (cause/reason)",
+        "examples": [
+          {
+            "spanish": "Purpose: Estudio para aprender.",
+            "english": "I study (in order) to learn."
+          },
+          {
+            "spanish": "Destination: Voy para Madrid.",
+            "english": "I'm heading for Madrid."
+          },
+          {
+            "spanish": "Deadline: Es para mañana.",
+            "english": "It's for (due) tomorrow."
+          },
+          {
+            "spanish": "Recipient: Este regalo es para ti.",
+            "english": "This gift is for you."
+          },
+          {
+            "spanish": "Opinion: Para mí, es fácil.",
+            "english": "For me, it's easy."
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Advanced Connectors",
+    "screens": [
+      {
+        "category": "Sophisticated Connectors",
+        "words": [
+          {
+            "spanish": "sin embargo",
+            "english": "however"
+          },
+          {
+            "spanish": "no obstante",
+            "english": "nevertheless"
+          },
+          {
+            "spanish": "por lo tanto",
+            "english": "therefore"
+          },
+          {
+            "spanish": "en cambio",
+            "english": "on the other hand"
+          },
+          {
+            "spanish": "de hecho",
+            "english": "in fact"
+          },
+          {
+            "spanish": "es decir",
+            "english": "that is to say"
+          },
+          {
+            "spanish": "a pesar de (que)",
+            "english": "despite/in spite of"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "El libro fue escrito por Cervantes. La casa será vendida mañana. Se habla español aquí."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Advanced Grammar Mastery",
+        "passage": "Esta es una lectura de práctica para el día 28. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 28. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "largo",
+        "means": "long",
+        "notMean": "large (= grande)"
+      },
+      {
+        "spanish": "recordar",
+        "means": "to remember",
+        "notMean": "to record (= grabar)"
+      },
+      {
+        "spanish": "ropa",
+        "means": "clothes",
+        "notMean": "rope (= cuerda)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "future_subjunctive": {
+    "title": "Future Subjunctive (Subjuntivo Futuro)",
+    "note": "Rarely used in modern Spanish, but appears in legal documents, proverbs, and very formal writing.",
+    "formation": "Based on preterite stem + -re, -res, -re, -remos, -reis, -ren",
+    "examples": [
+      {
+        "spanish": "hablar → hablare, hablares, hablare...",
+        "english": ""
+      },
+      {
+        "spanish": "tener → tuviere, tuvieres, tuviere...",
+        "english": ""
+      },
+      {
+        "spanish": "ser/ir → fuere, fueres, fuere...",
+        "english": ""
+      }
+    ],
+    "where_found": [
+      {
+        "context": "Legal documents",
+        "example": "Si el acusado cometiere el delito...",
+        "english": "If the accused commits the crime..."
+      },
+      {
+        "context": "Proverbs",
+        "example": "Donde fueres, haz lo que vieres.",
+        "english": "When in Rome, do as the Romans do."
+      },
+      {
+        "context": "Bible/religious",
+        "example": "Adondequiera que fueres...",
+        "english": "Wherever you may go..."
+      }
+    ],
+    "modern_replacement": "In modern Spanish, use present subjunctive or present indicative instead."
+  },
+  "processabilityTheory": {
+    "stage": 6,
+    "stageName": "Complex Structures",
+    "description": "Stage 6: Complex Structures"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "tense",
+    "colorCodes": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 'Si' clauses follow specific patterns"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: Si + present, present/future (real possibility)"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'Si llueve, me quedo en casa' - both verbs present for real conditions"
+      }
+    ],
+    "inputFlooding": [
+      "Si tengo tiempo, voy",
+      "Si llueve, nos quedamos",
+      "Si quieres, te ayudo",
+      "Si vienes, cenamos juntos",
+      "Si no funciona, lo devuelvo"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_26_30",
+    "config": {
+      "maxWords": 15,
+      "speed": 1.1,
+      "primaryFocus": "naturalness"
+    },
+    "phrases": [
+      {
+        "spanish": "Si tengo tiempo, te llamo esta noche",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Qué harías si ganaras la lotería?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Si pudiera, viajaría por todo el mundo",
+        "focus": "stress"
+      },
+      {
+        "spanish": "Si no llueve, vamos a la playa",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Y si mejor vamos mañana?",
+        "focus": "intonation"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the naturalness of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.309962",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

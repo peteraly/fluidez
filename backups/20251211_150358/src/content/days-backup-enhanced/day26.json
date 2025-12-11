@@ -1,0 +1,301 @@
+{
+  "day": 26,
+  "title": "Imperfect Subjunctive & Si Clauses",
+  "subtitle": "Hypotheticals and past wishes",
+  "level": "B2",
+  "objectives": [
+    "Form the imperfect subjunctive",
+    "Use si clauses for hypotheticals",
+    "Express past wishes and regrets",
+    "Understand contrary-to-fact conditions"
+  ],
+  "grammar": {
+    "title": "Imperfect Subjunctive",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Forming Imperfect Subjunctive",
+        "content": "Take the ellos form of preterite, remove -ron, add these endings:\n                        → vivieron → vivie- → viviera, vivieras, viviera... = to live",
+        "examples": [
+          {
+            "spanish": "-ra, -ras, -ra, -ramos, -ran",
+            "english": "Common form"
+          },
+          {
+            "spanish": "hablaron → habla- → hablara, hablaras, hablara...",
+            "english": "to speak"
+          },
+          {
+            "spanish": "comieron → comie- → comiera, comieras, comiera...",
+            "english": "to eat"
+          },
+          {
+            "spanish": "vivieron → vivie- → viviera, vivieras, viviera...",
+            "english": "to live"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Imperfect Subjunctives",
+        "content": "Use the irregular preterite stem:\n                              \n   ✏️ Exercise: Quería que tú ___ conmigo. (venir)",
+        "examples": [
+          {
+            "spanish": "ser/ir → fueron → fuera, fueras, fuera...",
+            "english": "were/went"
+          },
+          {
+            "spanish": "tener → tuvieron → tuviera, tuvieras...",
+            "english": "had"
+          },
+          {
+            "spanish": "hacer → hicieron → hiciera, hicieras...",
+            "english": "did/made"
+          },
+          {
+            "spanish": "poder → pudieron → pudiera, pudieras...",
+            "english": "could"
+          },
+          {
+            "spanish": "estar → estuvieron → estuviera, estuvieras...",
+            "english": "were"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Si Clauses (If Clauses)",
+        "content": "Three types of conditions:\n                  → Type 3 (Past Unreal): Si hubiera tenido tiempo, habría ido. = If I had had time, I would have gone.",
+        "examples": [
+          {
+            "spanish": "Type 1 (Real): Si tengo tiempo, voy.",
+            "english": "If I have time, I go. (present + present)"
+          },
+          {
+            "spanish": "Type 2 (Hypothetical): Si tuviera tiempo, iría.",
+            "english": "If I had time, I would go. (imp subj + conditional)"
+          },
+          {
+            "spanish": "Type 3 (Past Unreal): Si hubiera tenido tiempo, habría ido.",
+            "english": "If I had had time, I would have gone."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Type 2 Si Clause Examples",
+        "content": "Hypothetical situations:\n                        \n   ✏️ Exercise: Si ___ más dinero, compraría una casa. (tener)",
+        "examples": [
+          {
+            "spanish": "Si fuera rico, viajaría por el mundo.",
+            "english": "If I were rich, I would travel the world."
+          },
+          {
+            "spanish": "Si tuviera más tiempo, estudiaría más.",
+            "english": "If I had more time, I would study more."
+          },
+          {
+            "spanish": "Si pudiera, te ayudaría.",
+            "english": "If I could, I would help you."
+          },
+          {
+            "spanish": "Si estuviera en tu lugar, no lo haría.",
+            "english": "If I were in your place, I wouldn't do it."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Ojalá with Imperfect Subjunctive",
+        "content": "Use for unlikely/impossible wishes:\n                  → Ojalá estuvieras aquí. = I wish you were here. (but you're not)",
+        "examples": [
+          {
+            "spanish": "Ojalá pudiera ir.",
+            "english": "I wish I could go. (but probably can't)"
+          },
+          {
+            "spanish": "Ojalá tuviera más tiempo.",
+            "english": "I wish I had more time. (but I don't)"
+          },
+          {
+            "spanish": "Ojalá estuvieras aquí.",
+            "english": "I wish you were here. (but you're not)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Hypothetical Expressions",
+    "screens": [
+      {
+        "category": "Si Clause Vocabulary",
+        "words": [
+          {
+            "spanish": "si pudiera",
+            "english": "if I could"
+          },
+          {
+            "spanish": "si tuviera",
+            "english": "if I had"
+          },
+          {
+            "spanish": "si fuera",
+            "english": "if I were"
+          },
+          {
+            "spanish": "si supiera",
+            "english": "if I knew"
+          },
+          {
+            "spanish": "como si",
+            "english": "as if"
+          }
+        ]
+      },
+      {
+        "category": "Result Clause Phrases",
+        "words": [
+          {
+            "spanish": "iría",
+            "english": "I would go"
+          },
+          {
+            "spanish": "haría",
+            "english": "I would do"
+          },
+          {
+            "spanish": "diría",
+            "english": "I would say"
+          },
+          {
+            "spanish": "sería",
+            "english": "it would be"
+          },
+          {
+            "spanish": "tendría",
+            "english": "I would have"
+          }
+        ]
+      },
+      {
+        "category": "Bonus Vocabulary",
+        "words": [
+          {
+            "spanish": "el médico/la médica",
+            "english": "doctor"
+          },
+          {
+            "spanish": "el/la enfermero/a",
+            "english": "nurse"
+          },
+          {
+            "spanish": "el hospital",
+            "english": "hospital"
+          },
+          {
+            "spanish": "la farmacia",
+            "english": "pharmacy"
+          },
+          {
+            "spanish": "la receta",
+            "english": "prescription"
+          },
+          {
+            "spanish": "la pastilla",
+            "english": "pill"
+          },
+          {
+            "spanish": "el dolor",
+            "english": "pain"
+          },
+          {
+            "spanish": "la fiebre",
+            "english": "fever"
+          },
+          {
+            "spanish": "el resfriado",
+            "english": "cold"
+          },
+          {
+            "spanish": "la alergia",
+            "english": "allergy"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "-ra, -ras, -ra, -ramos, -ran hablaron → habla- → hablara, hablaras, hablara... ser/ir → fueron → fuera, fueras, fuera..."
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Imperfect Subjunctive & Si Clauses",
+        "passage": "Esta es una lectura de práctica para el día 26. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 26. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "pretender",
+        "means": "to try/attempt",
+        "notMean": "to pretend (= fingir)"
+      },
+      {
+        "spanish": "introducir",
+        "means": "to insert",
+        "notMean": "to introduce (= presentar)"
+      },
+      {
+        "spanish": "largo",
+        "means": "long",
+        "notMean": "large (= grande)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

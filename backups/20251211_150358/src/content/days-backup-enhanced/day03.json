@@ -1,0 +1,353 @@
+{
+  "day": 3,
+  "title": "Being & Describing",
+  "subtitle": "SER vs ESTAR & Adjectives",
+  "level": "A1",
+  "objectives": [
+    "Master the crucial SER vs ESTAR distinction",
+    "Conjugate ESTAR in present tense",
+    "Use adjectives with correct agreement",
+    "Describe people, places, and emotions"
+  ],
+  "grammar": {
+    "title": "SER vs ESTAR",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Two Verbs for 'To Be'",
+        "content": "Spanish has TWO verbs meaning 'to be': SER and ESTAR. This is one of the most important distinctions in Spanish. Mastering this will make you sound natural!"
+      },
+      {
+        "type": "lesson",
+        "heading": "ESTAR Conjugation",
+        "content": "Here's how to conjugate ESTAR:\n                              \n   ✏️ Exercise: Complete: Yo ___ en casa. (I am at home)",
+        "examples": [
+          {
+            "spanish": "yo estoy",
+            "english": "I am"
+          },
+          {
+            "spanish": "tú estás",
+            "english": "you are (informal)"
+          },
+          {
+            "spanish": "él/ella/usted está",
+            "english": "he/she is, you are (formal)"
+          },
+          {
+            "spanish": "nosotros estamos",
+            "english": "we are"
+          },
+          {
+            "spanish": "ellos/ustedes están",
+            "english": "they are, you all are"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "When to Use ESTAR",
+        "content": "Use ESTAR for: Location (where something is), Temporary states & conditions, Emotions & feelings, Progressive tense (estar + -ando/-iendo).\n                        → Estoy trabajando = I am working (progressive)",
+        "examples": [
+          {
+            "spanish": "Estoy en Madrid",
+            "english": "I am in Madrid (location)"
+          },
+          {
+            "spanish": "Ella está cansada",
+            "english": "She is tired (temporary)"
+          },
+          {
+            "spanish": "Estamos contentos",
+            "english": "We are happy (emotion)"
+          },
+          {
+            "spanish": "Estoy trabajando",
+            "english": "I am working (progressive)"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "SER vs ESTAR: The Key Difference",
+        "content": "SER = permanent, essential, defining characteristics. ESTAR = temporary states, location, emotions.\n                              → La manzana es roja = The apple is red (inherent - SER)",
+        "examples": [
+          {
+            "spanish": "Ella es alta",
+            "english": "She is tall (permanent trait - SER)"
+          },
+          {
+            "spanish": "Ella está cansada",
+            "english": "She is tired (temporary - ESTAR)"
+          },
+          {
+            "spanish": "Él es inteligente",
+            "english": "He is intelligent (personality - SER)"
+          },
+          {
+            "spanish": "Él está nervioso",
+            "english": "He is nervous (emotion - ESTAR)"
+          },
+          {
+            "spanish": "La manzana es roja",
+            "english": "The apple is red (inherent - SER)"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Adjective Agreement",
+        "content": "Spanish adjectives must agree with the noun in GENDER (masculine/feminine) and NUMBER (singular/plural). Most adjectives ending in -o change to -a for feminine.\n                        → las chicas altas = the tall girls",
+        "examples": [
+          {
+            "spanish": "el chico alto",
+            "english": "the tall boy"
+          },
+          {
+            "spanish": "la chica alta",
+            "english": "the tall girl"
+          },
+          {
+            "spanish": "los chicos altos",
+            "english": "the tall boys"
+          },
+          {
+            "spanish": "las chicas altas",
+            "english": "the tall girls"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Descriptions & Emotions",
+    "screens": [
+      {
+        "category": "Physical Descriptions",
+        "words": [
+          {
+            "spanish": "alto/a",
+            "english": "tall"
+          },
+          {
+            "spanish": "bajo/a",
+            "english": "short"
+          },
+          {
+            "spanish": "grande",
+            "english": "big/large"
+          },
+          {
+            "spanish": "pequeño/a",
+            "english": "small"
+          },
+          {
+            "spanish": "gordo/a",
+            "english": "fat"
+          },
+          {
+            "spanish": "delgado/a",
+            "english": "thin/slim"
+          },
+          {
+            "spanish": "guapo/a",
+            "english": "handsome/pretty"
+          },
+          {
+            "spanish": "joven",
+            "english": "young"
+          },
+          {
+            "spanish": "viejo/a",
+            "english": "old"
+          },
+          {
+            "spanish": "rubio/a",
+            "english": "blonde"
+          }
+        ]
+      },
+      {
+        "category": "Personality Traits",
+        "words": [
+          {
+            "spanish": "simpático/a",
+            "english": "nice/friendly"
+          },
+          {
+            "spanish": "antipático/a",
+            "english": "unpleasant/mean"
+          },
+          {
+            "spanish": "inteligente",
+            "english": "intelligent"
+          },
+          {
+            "spanish": "trabajador/a",
+            "english": "hardworking"
+          },
+          {
+            "spanish": "perezoso/a",
+            "english": "lazy"
+          },
+          {
+            "spanish": "amable",
+            "english": "kind"
+          },
+          {
+            "spanish": "serio/a",
+            "english": "serious"
+          },
+          {
+            "spanish": "gracioso/a",
+            "english": "funny"
+          },
+          {
+            "spanish": "tímido/a",
+            "english": "shy"
+          }
+        ]
+      },
+      {
+        "category": "Emotions & States (use with ESTAR)",
+        "words": [
+          {
+            "spanish": "contento/a",
+            "english": "happy/content"
+          },
+          {
+            "spanish": "triste",
+            "english": "sad"
+          },
+          {
+            "spanish": "feliz",
+            "english": "happy"
+          },
+          {
+            "spanish": "cansado/a",
+            "english": "tired"
+          },
+          {
+            "spanish": "enfermo/a",
+            "english": "sick"
+          },
+          {
+            "spanish": "nervioso/a",
+            "english": "nervous"
+          },
+          {
+            "spanish": "emocionado/a",
+            "english": "excited"
+          },
+          {
+            "spanish": "enojado/a",
+            "english": "angry"
+          },
+          {
+            "spanish": "preocupado/a",
+            "english": "worried"
+          },
+          {
+            "spanish": "aburrido/a",
+            "english": "bored"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "yo estoy tú estás Estoy en Madrid"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Being & Describing",
+        "passage": "Hoy estoy muy cansado. Estoy en mi casa. Mi casa es grande y bonita. La cocina está limpia. Mi hermana está feliz porque es su cumpleaños.",
+        "wordCount": 26
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Housing Culture",
+    "content": "Housing vocabulary varies across Spanish-speaking countries. In Spain, 'piso' means apartment while in Latin America 'apartamento' or 'departamento' is used. 'Refrigerador' is common in Latin America while Spain uses 'nevera' or 'frigorífico'. Living arrangements also differ - in many Hispanic cultures, it's common for adult children to live with parents until marriage, and multigenerational households are valued."
+  },
+  "falseFriends": {
+    "title": "False Friends",
+    "words": [
+      {
+        "spanish": "embarazada",
+        "means": "pregnant",
+        "notMean": "embarrassed (= avergonzado/a)"
+      },
+      {
+        "spanish": "carpeta",
+        "means": "folder",
+        "notMean": "carpet (= alfombra)"
+      },
+      {
+        "spanish": "éxito",
+        "means": "success",
+        "notMean": "exit (= salida)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Recommended Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "description": "Comprehensible input videos",
+        "icon": "📺"
+      },
+      {
+        "name": "SpanishPod101",
+        "description": "Structured audio lessons",
+        "icon": "🎧"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "description": "Podcast with Scottish teacher",
+        "icon": "☕"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards",
+        "icon": "📱"
+      }
+    ]
+  },
+  "practical_scenarios": {
+    "describing_your_home": {
+      "title": "Describing Your Home",
+      "phrases": [
+        {
+          "spanish": "Vivo en un apartamento/una casa",
+          "english": "I live in an apartment/house"
+        },
+        {
+          "spanish": "Tiene dos dormitorios",
+          "english": "It has two bedrooms"
+        },
+        {
+          "spanish": "La cocina es pequeña pero cómoda",
+          "english": "The kitchen is small but comfortable"
+        },
+        {
+          "spanish": "Mi habitación favorita es...",
+          "english": "My favorite room is..."
+        },
+        {
+          "spanish": "Está cerca del centro",
+          "english": "It's close to downtown"
+        }
+      ]
+    }
+  }
+}

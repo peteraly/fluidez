@@ -1,0 +1,213 @@
+{
+  "day": 15,
+  "title": "The Near Future",
+  "subtitle": "IR + a + infinitive",
+  "objectives": [
+    "Express future plans with IR + a",
+    "Talk about what you're going to do",
+    "Make plans and appointments",
+    "Discuss upcoming events"
+  ],
+  "grammar": {
+    "title": "Near Future Tense",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "IR + A + Infinitive",
+        "content": "The easiest way to express future in Spanish! Use the verb IR (to go) + a + any infinitive verb."
+      },
+      {
+        "type": "lesson",
+        "heading": "Formation",
+        "content": "Conjugate IR, add 'a', then the infinitive:\n                              \n   ✏️ Exercise: Mañana yo ___ a estudiar español.\n\n   ✏️ Exercise: Nosotros ___ a viajar a México.",
+        "examples": [
+          {
+            "spanish": "voy a hablar",
+            "english": "I'm going to speak"
+          },
+          {
+            "spanish": "vas a comer",
+            "english": "you're going to eat"
+          },
+          {
+            "spanish": "va a vivir",
+            "english": "he/she is going to live"
+          },
+          {
+            "spanish": "vamos a estudiar",
+            "english": "we're going to study"
+          },
+          {
+            "spanish": "van a trabajar",
+            "english": "they're going to work"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Time Expressions for Future",
+        "content": "Common phrases to use with near future:\n                              \n   ✏️ Exercise: Translate: 'She is going to travel tomorrow'\n\n   ✏️ Exercise: Put in order: 'We are going to eat at eight'",
+        "examples": [
+          {
+            "spanish": "mañana",
+            "english": "tomorrow"
+          },
+          {
+            "spanish": "esta noche",
+            "english": "tonight"
+          },
+          {
+            "spanish": "la semana que viene",
+            "english": "next week"
+          },
+          {
+            "spanish": "el mes que viene",
+            "english": "next month"
+          },
+          {
+            "spanish": "el año que viene",
+            "english": "next year"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Questions in Near Future",
+        "content": "Form questions naturally:\n                  \n   ✏️ Exercise: ¿Qué ___ a hacer este fin de semana?",
+        "examples": [
+          {
+            "spanish": "¿Qué vas a hacer?",
+            "english": "What are you going to do?"
+          },
+          {
+            "spanish": "¿Cuándo van a llegar?",
+            "english": "When are they going to arrive?"
+          },
+          {
+            "spanish": "¿Dónde vamos a comer?",
+            "english": "Where are we going to eat?"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Future Plans Vocabulary",
+    "screens": [
+      {
+        "category": "Time Expressions",
+        "words": [
+          {
+            "spanish": "mañana",
+            "english": "tomorrow"
+          },
+          {
+            "spanish": "pasado mañana",
+            "english": "day after tomorrow"
+          },
+          {
+            "spanish": "esta noche",
+            "english": "tonight"
+          },
+          {
+            "spanish": "este fin de semana",
+            "english": "this weekend"
+          },
+          {
+            "spanish": "la semana que viene",
+            "english": "next week"
+          },
+          {
+            "spanish": "el próximo mes",
+            "english": "next month"
+          }
+        ]
+      },
+      {
+        "category": "Common Plans",
+        "words": [
+          {
+            "spanish": "viajar",
+            "english": "to travel"
+          },
+          {
+            "spanish": "visitar",
+            "english": "to visit"
+          },
+          {
+            "spanish": "celebrar",
+            "english": "to celebrate"
+          },
+          {
+            "spanish": "empezar",
+            "english": "to start"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "voy a hablar vas a comer mañana"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: The Near Future",
+        "passage": "Esta es una lectura de práctica para el día 15. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 15. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "ropa",
+        "means": "clothes",
+        "notMean": "rope (= cuerda)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "level": "B1"
+}

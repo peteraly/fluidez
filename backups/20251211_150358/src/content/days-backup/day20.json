@@ -1,0 +1,181 @@
+{
+  "day": 20,
+  "title": "Health & Body",
+  "subtitle": "At the doctor",
+  "objectives": [
+    "Learn body parts",
+    "Describe symptoms",
+    "Use DOLER (to hurt)",
+    "Navigate medical situations"
+  ],
+  "grammar": {
+    "title": "DOLER - To Hurt",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "DOLER Structure",
+        "content": "Works like GUSTAR:",
+        "examples": [
+          {
+            "spanish": "Me duele la cabeza",
+            "english": "My head hurts"
+          },
+          {
+            "spanish": "Me duelen los pies",
+            "english": "My feet hurt"
+          },
+          {
+            "spanish": "¿Te duele algo?",
+            "english": "Does something hurt?"
+          }
+        ],
+        "tip": "DUELE for singular, DUELEN for plural"
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Me ___ las piernas.",
+        "options": [
+          "duele",
+          "duelen",
+          "duelo",
+          "dolor"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "lesson",
+        "heading": "B1 Enrichment: Subjunctive with health (wishes)",
+        "content": "As you advance, notice how the subjunctive appears in this context:",
+        "examples": [
+          {
+            "spanish": "Ojalá que te mejores pronto.",
+            "english": "(You'll master this soon!)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Body & Health",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Body Parts",
+        "words": [
+          {
+            "spanish": "la cabeza",
+            "english": "head",
+            "example": "Me duele la cabeza."
+          },
+          {
+            "spanish": "el estómago",
+            "english": "stomach",
+            "example": "Me duele el estómago."
+          },
+          {
+            "spanish": "la espalda",
+            "english": "back",
+            "example": "Me duele la espalda."
+          },
+          {
+            "spanish": "el brazo",
+            "english": "arm",
+            "example": "Me duele el brazo."
+          },
+          {
+            "spanish": "la pierna",
+            "english": "leg",
+            "example": "Me duele la pierna."
+          },
+          {
+            "spanish": "el pie",
+            "english": "foot",
+            "example": "Me duelen los pies."
+          },
+          {
+            "spanish": "la mano",
+            "english": "hand",
+            "example": "Me duele la mano."
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Health Words",
+        "words": [
+          {
+            "spanish": "enfermo/a",
+            "english": "sick",
+            "example": "Estoy enfermo."
+          },
+          {
+            "spanish": "la fiebre",
+            "english": "fever",
+            "example": "Tengo fiebre."
+          },
+          {
+            "spanish": "el dolor",
+            "english": "pain",
+            "example": "Tengo dolor."
+          },
+          {
+            "spanish": "la farmacia",
+            "english": "pharmacy",
+            "example": "Voy a la farmacia."
+          },
+          {
+            "spanish": "el médico",
+            "english": "doctor",
+            "example": "Necesito ver al médico."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Me duele mucho la cabeza y tengo fiebre",
+        "options": [
+          "Stomach hurts, has fever",
+          "Head hurts, has fever",
+          "Back hurts, no fever",
+          "Head hurts, no fever"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "En el médico",
+        "passage": "Paciente: Buenos días, doctor. No me siento bien.\nDoctor: ¿Qué le pasa?\nPaciente: Me duele mucho la cabeza y tengo fiebre.\nDoctor: ¿Desde cuándo?\nPaciente: Desde ayer.\nDoctor: ¿Le duele la garganta?\nPaciente: Sí, un poco.\nDoctor: Parece un resfriado. Tome estas pastillas y descanse mucho.\nPaciente: ¿Necesito receta?\nDoctor: Sí, aquí tiene.",
+        "translation": "Patient: Good morning, doctor. I don't feel well.\nDoctor: What's wrong?\nPatient: My head hurts a lot and I have a fever.\nDoctor: Since when?\nPatient: Since yesterday.\nDoctor: Does your throat hurt?\nPatient: Yes, a little.\nDoctor: It looks like a cold. Take these pills and rest a lot.\nPatient: Do I need a prescription?\nDoctor: Yes, here you go.",
+        "wordCount": 70
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Qué tiene el paciente?",
+        "options": [
+          "Gripe",
+          "Resfriado",
+          "Alergia",
+          "Infección"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

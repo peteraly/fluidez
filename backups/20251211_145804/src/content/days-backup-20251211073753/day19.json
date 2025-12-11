@@ -1,0 +1,170 @@
+{
+  "day": 19,
+  "title": "Commands (Usted)",
+  "subtitle": "Formal commands",
+  "objectives": [
+    "Master formal commands",
+    "Build practical vocabulary",
+    "Practice real-world scenarios",
+    "Increase fluency confidence"
+  ],
+  "grammar": {
+    "title": "Commands (Usted)",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Day 19: Commands (Usted)",
+        "content": "Today we focus on formal commands. This is an essential skill for conversational Spanish that you'll use every day.",
+        "tip": "Practice these patterns until they become automatic!"
+      },
+      {
+        "type": "lesson",
+        "heading": "Key Concepts",
+        "content": "Let's explore the main ideas for formal commands.",
+        "examples": [
+          {
+            "spanish": "Example phrase in Spanish",
+            "english": "English translation"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Practice question for formal commands:",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correctAnswer": 0,
+        "explanation": "This tests your understanding of formal commands."
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "fill_blank",
+        "instruction": "Complete this sentence about formal commands:",
+        "hint": "Think about the rules",
+        "correctAnswers": [
+          "respuesta"
+        ],
+        "explanation": "This is how formal commands works."
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Day 19 Vocabulary",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Commands (Usted) Words",
+        "words": [
+          {
+            "spanish": "palabra",
+            "english": "word",
+            "example": "Una frase de ejemplo."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "matching",
+        "instruction": "Match the pairs:",
+        "pairs": [
+          {
+            "left": "Spanish",
+            "right": "English"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen and select:",
+        "transcript": "Audio transcript",
+        "options": [
+          "Option 1",
+          "Option 2",
+          "Option 3",
+          "Option 4"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Day 19 Reading",
+        "passage": "Este es un texto de práctica para el día 19. El tema es formal commands. Practica leyendo este texto en voz alta para mejorar tu pronunciación.",
+        "translation": "This is a practice text for day 19. The topic is formal commands. Practice reading this text aloud to improve your pronunciation.",
+        "wordCount": 30
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 19. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "sensible",
+        "means": "sensitive",
+        "notMean": "sensible (= sensato)"
+      },
+      {
+        "spanish": "éxito",
+        "means": "success",
+        "notMean": "exit (= salida)"
+      },
+      {
+        "spanish": "librería",
+        "means": "bookstore",
+        "notMean": "library (= biblioteca)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  }
+}

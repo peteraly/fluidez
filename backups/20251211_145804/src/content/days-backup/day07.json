@@ -1,0 +1,34 @@
+{
+  "day": 7,
+  "title": "Week 1 Review",
+  "subtitle": "Consolidating your foundation",
+  "objectives": ["Review all Week 1 concepts", "Practice pronunciation", "Strengthen verb conjugations", "Build conversation confidence"],
+  "grammar": {
+    "title": "Week 1 Grammar Summary",
+    "estimatedMinutes": 15,
+    "screens": [
+      {"type": "lesson", "heading": "What You've Learned!", "content": "Congratulations on completing Week 1! Let's review everything.", "tip": "Review is where real learning happens!"},
+      {"type": "lesson", "heading": "Pronunciation Recap", "content": "Key sounds to remember:", "examples": [{"spanish": "Vowels", "english": "A=ah, E=eh, I=ee, O=oh, U=oo"}, {"spanish": "H", "english": "Always silent"}, {"spanish": "J", "english": "Like English 'h'"}, {"spanish": "LL", "english": "Like 'y' in yes"}, {"spanish": "Ñ", "english": "Like 'ny' in canyon"}]},
+      {"type": "lesson", "heading": "Subject Pronouns", "content": "Review:", "examples": [{"spanish": "yo", "english": "I"}, {"spanish": "tú", "english": "you (informal)"}, {"spanish": "él/ella/usted", "english": "he/she/you (formal)"}, {"spanish": "nosotros", "english": "we"}, {"spanish": "ellos/ellas/ustedes", "english": "they/you all"}]},
+      {"type": "exercise", "exerciseType": "matching", "instruction": "Match SER conjugations:", "pairs": [{"left": "yo", "right": "soy"}, {"left": "tú", "right": "eres"}, {"left": "él", "right": "es"}, {"left": "nosotros", "right": "somos"}, {"left": "ellos", "right": "son"}]},
+      {"type": "lesson", "heading": "SER vs ESTAR", "content": "Remember the difference:", "examples": [{"spanish": "SER", "english": "Permanent: identity, origin, profession, traits"}, {"spanish": "ESTAR", "english": "Temporary: location, feelings, conditions"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Ella ___ de México. (origin)", "options": ["es", "está"], "correctAnswer": 0, "explanation": "SER for origin"},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Yo ___ cansado. (tired)", "options": ["soy", "estoy"], "correctAnswer": 1, "explanation": "ESTAR for temporary feelings"},
+      {"type": "lesson", "heading": "Regular Verbs", "content": "Endings recap:", "examples": [{"spanish": "-AR: -o, -as, -a, -amos, -an", "english": "hablar → hablo, hablas..."}, {"spanish": "-ER: -o, -es, -e, -emos, -en", "english": "comer → como, comes..."}, {"spanish": "-IR: -o, -es, -e, -imos, -en", "english": "vivir → vivo, vives..."}]},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "Nosotros ___ español. (hablar)", "correctAnswers": ["hablamos"], "explanation": "Nosotros hablamos"},
+      {"type": "lesson", "heading": "Key Irregular Verbs", "content": "Don't forget:", "examples": [{"spanish": "IR", "english": "voy, vas, va, vamos, van"}, {"spanish": "TENER", "english": "tengo, tienes, tiene, tenemos, tienen"}, {"spanish": "HACER", "english": "hago, haces, hace, hacemos, hacen"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Yo ___ al cine. (ir)", "options": ["voy", "vas", "va", "vamos"], "correctAnswer": 0}
+    ]
+  },
+  "vocabulary": {
+    "title": "Week 1 Vocabulary Review",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "Greetings & Basics", "words": [{"spanish": "hola", "english": "hello"}, {"spanish": "adiós", "english": "goodbye"}, {"spanish": "gracias", "english": "thank you"}, {"spanish": "por favor", "english": "please"}, {"spanish": "sí/no", "english": "yes/no"}, {"spanish": "buenos días", "english": "good morning"}, {"spanish": "buenas noches", "english": "good night"}]},
+      {"type": "vocab", "category": "Questions", "words": [{"spanish": "¿Qué?", "english": "What?"}, {"spanish": "¿Quién?", "english": "Who?"}, {"spanish": "¿Dónde?", "english": "Where?"}, {"spanish": "¿Cuándo?", "english": "When?"}, {"spanish": "¿Por qué?", "english": "Why?"}, {"spanish": "¿Cómo?", "english": "How?"}, {"spanish": "¿Cuánto?", "english": "How much?"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "How do you say 'please'?", "options": ["gracias", "por favor", "de nada", "perdón"], "correctAnswer": 1}
+    ]
+  },
+  "listening": {"title": "Listening Review", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen:", "transcript": "Hola, me llamo Carlos. Soy de México. Tengo veinte años.", "options": ["Carlos is 20 and from Mexico", "Carlos is 25 and from Spain", "Carlos is 20 and from Spain", "Carlos is 25 and from Mexico"], "correctAnswer": 0}]},
+  "reading": {"title": "Reading: Comprehensive Review", "estimatedMinutes": 8, "screens": [{"type": "reading", "title": "Mi vida", "passage": "¡Hola! Me llamo Ana. Soy de Colombia pero vivo en Estados Unidos. Tengo veinticinco años y soy profesora de español. Trabajo en una escuela. Estoy muy contenta con mi trabajo. ¿Dónde vives tú? ¿Hablas español? Yo hablo español e inglés. Voy a la escuela todos los días. Los fines de semana no trabajo. Hago ejercicio y voy al parque. ¿Qué haces tú los fines de semana?", "translation": "Hello! My name is Ana. I'm from Colombia but I live in the United States. I'm 25 years old and I'm a Spanish teacher. I work at a school. I'm very happy with my job. Where do you live? Do you speak Spanish? I speak Spanish and English. I go to school every day. On weekends I don't work. I exercise and go to the park. What do you do on weekends?", "wordCount": 85}, {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "¿Cuántos años tiene Ana?", "options": ["20", "22", "25", "30"], "correctAnswer": 2}]}
+}

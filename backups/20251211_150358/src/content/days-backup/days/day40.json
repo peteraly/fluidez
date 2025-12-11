@@ -1,0 +1,11 @@
+{
+  "day": 40,
+  "title": "B2 Content Day 40",
+  "subtitle": "Advanced grammar and vocabulary",
+  "level": "B1-B2",
+  "objectives": ["Continue subjunctive mastery", "Expand vocabulary", "Improve fluency"],
+  "grammar": {"title": "Grammar Day 40", "estimatedMinutes": 15, "screens": [{"type": "lesson", "heading": "Placeholder", "content": "Content for day 40"}]},
+  "vocabulary": {"title": "Vocabulary Day 40", "estimatedMinutes": 10, "screens": [{"type": "vocab", "category": "General", "words": [{"spanish": "palabra", "english": "word", "example": "Una palabra nueva."}]}]},
+  "listening": {"title": "Listening Day 40", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "Listen:", "transcript": "Texto de ejemplo.", "options": ["A", "B", "C", "D"], "correctAnswer": 0}]},
+  "reading": {"title": "Reading Day 40", "estimatedMinutes": 8, "screens": [{"type": "reading", "title": "Lectura", "passage": "Texto de lectura para el día 40.", "translation": "Reading text for day 40.", "wordCount": 10}]}
+}

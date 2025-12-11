@@ -1,0 +1,451 @@
+{
+  "day": 23,
+  "title": "Subjunctive: Emotions & Doubt",
+  "subtitle": "Express feelings about others' actions",
+  "level": "B2",
+  "objectives": [
+    "Use subjunctive with emotion verbs",
+    "Express doubt and disbelief",
+    "Master common emotional expressions",
+    "Distinguish indicative vs subjunctive"
+  ],
+  "grammar": {
+    "title": "Subjunctive with Emotions & Doubt",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Emotions Trigger Subjunctive",
+        "content": "When you express emotions about someone ELSE's action, you need subjunctive. The key is: Main subject ≠ subordinate subject.",
+        "examples": [
+          {
+            "spanish": "Me alegro de que estés aquí.",
+            "english": "I'm happy that you're here."
+          },
+          {
+            "spanish": "Siento que no puedas venir.",
+            "english": "I'm sorry you can't come."
+          },
+          {
+            "spanish": "Me sorprende que hables español.",
+            "english": "It surprises me that you speak Spanish."
+          },
+          {
+            "spanish": "Tengo miedo de que llueva.",
+            "english": "I'm afraid it will rain."
+          },
+          {
+            "spanish": "Es triste que se vaya.",
+            "english": "It's sad that he's leaving."
+          }
+        ],
+        "tip": "If both verbs have the SAME subject, use infinitive instead: Me alegro de estar aquí."
+      },
+      {
+        "type": "lesson",
+        "heading": "Doubt & Disbelief",
+        "content": "Expressions of doubt, denial, and disbelief require subjunctive.",
+        "examples": [
+          {
+            "spanish": "Dudo que venga.",
+            "english": "I doubt he'll come."
+          },
+          {
+            "spanish": "No creo que sea verdad.",
+            "english": "I don't think it's true."
+          },
+          {
+            "spanish": "No es cierto que lo sepa.",
+            "english": "It's not certain that he knows."
+          },
+          {
+            "spanish": "Es imposible que llegue a tiempo.",
+            "english": "It's impossible for him to arrive on time."
+          }
+        ],
+        "tip": "CREER QUE (positive) uses indicative. NO CREER QUE uses subjunctive!"
+      },
+      {
+        "type": "lesson",
+        "heading": "Emotion Verbs List",
+        "content": "Common verbs and expressions that trigger subjunctive:",
+        "examples": [
+          {
+            "spanish": "alegrarse de que",
+            "english": "to be happy that"
+          },
+          {
+            "spanish": "sentir que",
+            "english": "to regret/feel sorry that"
+          },
+          {
+            "spanish": "temer que",
+            "english": "to fear that"
+          },
+          {
+            "spanish": "molestar que",
+            "english": "to bother that"
+          },
+          {
+            "spanish": "gustar que",
+            "english": "to like that"
+          },
+          {
+            "spanish": "encantar que",
+            "english": "to love that"
+          },
+          {
+            "spanish": "odiar que",
+            "english": "to hate that"
+          },
+          {
+            "spanish": "es una lástima que",
+            "english": "it's a pity that"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Indicative vs Subjunctive Contrast",
+        "content": "Compare certainty (indicative) vs uncertainty (subjunctive):",
+        "examples": [
+          {
+            "spanish": "Creo que viene. / No creo que venga.",
+            "english": "I think he's coming. / I don't think he's coming."
+          },
+          {
+            "spanish": "Es cierto que sabe. / No es cierto que sepa.",
+            "english": "It's certain he knows. / It's not certain he knows."
+          },
+          {
+            "spanish": "Es verdad que está aquí. / No es verdad que esté aquí.",
+            "english": "It's true he's here. / It's not true he's here."
+          }
+        ],
+        "tip": "The negative flips certainty to doubt, triggering subjunctive!"
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Emotion & Doubt Expressions",
+    "screens": [
+      {
+        "category": "Emotion Expressions",
+        "words": [
+          {
+            "spanish": "alegrarse de que",
+            "english": "to be happy that",
+            "example": "Me alegro de que estés bien."
+          },
+          {
+            "spanish": "sentir que",
+            "english": "to regret/feel sorry that",
+            "example": "Siento que no puedas venir."
+          },
+          {
+            "spanish": "tener miedo de que",
+            "english": "to be afraid that",
+            "example": "Tengo miedo de que llueva."
+          },
+          {
+            "spanish": "sorprenderse de que",
+            "english": "to be surprised that",
+            "example": "Me sorprende que lo sepas."
+          },
+          {
+            "spanish": "es una lástima que",
+            "english": "it's a pity that",
+            "example": "Es una lástima que se vaya."
+          },
+          {
+            "spanish": "molestar que",
+            "english": "to bother that",
+            "example": "Me molesta que llegue tarde."
+          },
+          {
+            "spanish": "encantar que",
+            "english": "to love that",
+            "example": "Me encanta que cocines."
+          },
+          {
+            "spanish": "odiar que",
+            "english": "to hate that",
+            "example": "Odio que mientas."
+          }
+        ]
+      },
+      {
+        "category": "Doubt Expressions",
+        "words": [
+          {
+            "spanish": "dudar que",
+            "english": "to doubt that",
+            "example": "Dudo que venga."
+          },
+          {
+            "spanish": "no creer que",
+            "english": "to not believe that",
+            "example": "No creo que sea verdad."
+          },
+          {
+            "spanish": "no estar seguro de que",
+            "english": "to not be sure that",
+            "example": "No estoy seguro de que entienda."
+          },
+          {
+            "spanish": "es posible que",
+            "english": "it's possible that",
+            "example": "Es posible que llueva."
+          },
+          {
+            "spanish": "es imposible que",
+            "english": "it's impossible that",
+            "example": "Es imposible que llegue a tiempo."
+          },
+          {
+            "spanish": "es probable que",
+            "english": "it's probable that",
+            "example": "Es probable que venga mañana."
+          },
+          {
+            "spanish": "quizás / tal vez",
+            "english": "maybe / perhaps",
+            "example": "Quizás venga mañana."
+          },
+          {
+            "spanish": "puede que",
+            "english": "it may be that",
+            "example": "Puede que tenga razón."
+          }
+        ]
+      },
+      {
+        "category": "Certainty (Indicative)",
+        "words": [
+          {
+            "spanish": "creer que",
+            "english": "to believe that (+ indicative)",
+            "example": "Creo que viene."
+          },
+          {
+            "spanish": "estar seguro de que",
+            "english": "to be sure that (+ indicative)",
+            "example": "Estoy seguro de que sabe."
+          },
+          {
+            "spanish": "es cierto que",
+            "english": "it's certain that (+ indicative)",
+            "example": "Es cierto que está aquí."
+          },
+          {
+            "spanish": "es verdad que",
+            "english": "it's true that (+ indicative)",
+            "example": "Es verdad que habla español."
+          },
+          {
+            "spanish": "es obvio que",
+            "english": "it's obvious that (+ indicative)",
+            "example": "Es obvio que está cansado."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Practice",
+    "screens": [
+      {
+        "instruction": "Listen to emotions being expressed",
+        "transcript": "Me alegro de que estés aquí. Es una lástima que no puedas quedarte más tiempo. Tengo miedo de que el examen sea muy difícil.",
+        "question": "What emotions are expressed?",
+        "options": [
+          "happiness, regret, fear",
+          "anger, sadness, joy",
+          "surprise, doubt, certainty"
+        ]
+      },
+      {
+        "instruction": "Listen to doubt expressions",
+        "transcript": "No creo que Juan venga a la fiesta. Dudo que termine el proyecto a tiempo. Es posible que llueva mañana.",
+        "question": "What mood do these sentences use?",
+        "options": [
+          "subjunctive",
+          "indicative",
+          "imperative"
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Una carta emocional",
+        "passage": "Querida mamá, me alegro de que estés mejor de salud. Siento mucho que no pueda visitarte este fin de semana, pero tengo mucho trabajo. Es una lástima que vivamos tan lejos. Dudo que pueda tomar vacaciones antes de diciembre, pero es posible que consiga unos días libres en noviembre. No estoy seguro de que mi jefe apruebe mi solicitud, pero tengo esperanza. Tengo miedo de que pienses que no me importas, pero no es verdad. Te quiero mucho y espero verte pronto. Un abrazo fuerte, tu hijo Carlos.",
+        "wordCount": 95,
+        "comprehension": [
+          {
+            "question": "¿Por qué Carlos no puede visitar a su mamá?",
+            "answer": "Porque tiene mucho trabajo"
+          },
+          {
+            "question": "¿Cuándo es posible que tenga días libres?",
+            "answer": "En noviembre"
+          },
+          {
+            "question": "¿De qué tiene miedo Carlos?",
+            "answer": "De que su mamá piense que no le importa"
+          }
+        ]
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "In Spanish-speaking cultures, expressing emotions openly is common and valued. Phrases like \"me alegro de que\" and \"siento que\" are used frequently in daily conversation. The subjunctive mood, while complex for learners, allows speakers to express nuanced emotions and attitudes that would require longer explanations in English."
+  },
+  "falseFriends": {
+    "title": "False Friends",
+    "words": [
+      {
+        "spanish": "soportar",
+        "means": "to tolerate/bear",
+        "notMean": "to support (= apoyar)"
+      },
+      {
+        "spanish": "constipado",
+        "means": "having a cold",
+        "notMean": "constipated (= estreñido)"
+      },
+      {
+        "spanish": "asistir",
+        "means": "to attend",
+        "notMean": "to assist (= ayudar)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Recommended Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "description": "Comprehensible input videos",
+        "icon": "📺"
+      },
+      {
+        "name": "SpanishPod101",
+        "description": "Structured audio lessons",
+        "icon": "🎧"
+      },
+      {
+        "name": "Language Transfer",
+        "description": "Free audio course",
+        "icon": "🎙️"
+      }
+    ]
+  },
+  "processabilityTheory": {
+    "stage": 6,
+    "stageName": "Complex Structures",
+    "description": "Stage 6: Complex Structures"
+  },
+  "noticingEnhancements": {
+    "colorScheme": null,
+    "colorCodes": null,
+    "callouts": [
+      {
+        "type": "rule",
+        "text": "📐 The pattern: más/menos + adjective + que"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'más grande que' = bigger than, 'menos caro que' = less expensive than"
+      },
+      {
+        "type": "exception",
+        "text": "⚠️ Watch out: mejor (better), peor (worse), mayor (older), menor (younger)"
+      }
+    ],
+    "inputFlooding": [
+      "más interesante que",
+      "menos caro que",
+      "tan bonito como",
+      "mejor que",
+      "peor que",
+      "el más famoso"
+    ]
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_21_25",
+    "config": {
+      "maxWords": 12,
+      "speed": 1.0,
+      "primaryFocus": "fluency"
+    },
+    "phrases": [
+      {
+        "spanish": "Este museo es más interesante que el otro",
+        "focus": "stress"
+      },
+      {
+        "spanish": "¿Cuál es el monumento más famoso?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Esta zona es menos turística",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Hay tours en español?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "Me encantó la arquitectura de la ciudad",
+        "focus": "stress"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the fluency of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.308281",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

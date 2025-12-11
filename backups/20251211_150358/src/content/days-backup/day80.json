@@ -1,0 +1,36 @@
+{
+  "day": 80,
+  "title": "Proverbs & Sayings",
+  "subtitle": "C1 Advanced Content",
+  "level": "C1",
+  "objectives": ["Master Proverbs & Sayings", "Native-like expression", "Academic proficiency"],
+  "grammar": {
+    "title": "Proverbs & Sayings",
+    "estimatedMinutes": 20,
+    "screens": [
+      {"type": "lesson", "heading": "Introduction to Proverbs & Sayings", "content": "Advanced content for Proverbs & Sayings at C1 level."},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "Complete with appropriate form", "correctAnswers": ["respuesta"], "explanation": "Explanation of the answer."}
+    ]
+  },
+  "vocabulary": {
+    "title": "C1 Vocabulary: Proverbs & Sayings",
+    "estimatedMinutes": 12,
+    "screens": [
+      {"type": "vocab", "category": "Advanced Terms", "words": [{"spanish": "sofisticado", "english": "sophisticated", "example": "Un análisis sofisticado."}]}
+    ]
+  },
+  "listening": {
+    "title": "Advanced Listening",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "listening", "instruction": "Listen to this advanced dialogue:", "transcript": "Advanced audio content for C1 learners.", "options": ["A", "B", "C", "D"], "correctAnswer": 0}
+    ]
+  },
+  "reading": {
+    "title": "Advanced Reading",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "reading", "title": "Texto Avanzado", "passage": "This C1 level reading passage covers Proverbs & Sayings in depth, using sophisticated vocabulary and complex grammatical structures that native speakers use in formal contexts.", "translation": "Translation provided for reference.", "wordCount": 100}
+    ]
+  }
+}

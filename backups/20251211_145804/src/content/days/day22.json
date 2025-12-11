@@ -1,0 +1,393 @@
+{
+  "day": 22,
+  "title": "Introduction to Subjunctive",
+  "subtitle": "A new mood for Spanish",
+  "level": "B1-B2",
+  "objectives": [
+    "Understand what the subjunctive mood is",
+    "Learn when subjunctive is required",
+    "Conjugate regular verbs in present subjunctive",
+    "Use subjunctive with expressions of desire"
+  ],
+  "grammar": {
+    "title": "The Subjunctive Mood",
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "What is the Subjunctive?",
+        "content": "The subjunctive is not a tense but a MOOD. It expresses subjectivity: wishes, doubts, emotions, possibilities, and hypotheticals. The indicative states facts; the subjunctive expresses non-facts."
+      },
+      {
+        "type": "lesson",
+        "heading": "The WEIRDO Triggers",
+        "content": "Subjunctive is triggered by these categories in the main clause:\n                              → D - Doubt/Denial = dudar que, no creer que",
+        "examples": [
+          {
+            "spanish": "W - Wishes/Wants",
+            "english": "querer que, desear que, preferir que"
+          },
+          {
+            "spanish": "E - Emotions",
+            "english": "alegrarse de que, tener miedo de que"
+          },
+          {
+            "spanish": "I - Impersonal expressions",
+            "english": "es importante que, es necesario que"
+          },
+          {
+            "spanish": "R - Recommendations",
+            "english": "recomendar que, sugerir que"
+          },
+          {
+            "spanish": "D - Doubt/Denial",
+            "english": "dudar que, no creer que"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Forming Present Subjunctive",
+        "content": "Start with yo form of present indicative, drop -o, add opposite endings:\n            → -ER/-IR verbs: -a, -as, -a, -amos, -an = coma, comas, coma, comamos, coman",
+        "examples": [
+          {
+            "spanish": "-AR verbs: -e, -es, -e, -emos, -en",
+            "english": "hable, hables, hable, hablemos, hablen"
+          },
+          {
+            "spanish": "-ER/-IR verbs: -a, -as, -a, -amos, -an",
+            "english": "coma, comas, coma, comamos, coman"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "HABLAR in Subjunctive",
+        "content": "From hablo                               \n   ✏️ Exercise: Quiero que tú ___ español. (hablar)",
+        "examples": [
+          {
+            "spanish": "yo hable",
+            "english": "that I speak"
+          },
+          {
+            "spanish": "tú hables",
+            "english": "that you speak"
+          },
+          {
+            "spanish": "él/ella hable",
+            "english": "that he/she speak"
+          },
+          {
+            "spanish": "nosotros hablemos",
+            "english": "that we speak"
+          },
+          {
+            "spanish": "ellos hablen",
+            "english": "that they speak"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Subjunctive with Wishes",
+        "content": "When the subjects are different, use subjunctive after que:\n                  → Espero que llueva = I hope it rains",
+        "examples": [
+          {
+            "spanish": "Quiero que vengas",
+            "english": "I want you to come"
+          },
+          {
+            "spanish": "Deseo que seas feliz",
+            "english": "I wish you to be happy"
+          },
+          {
+            "spanish": "Espero que llueva",
+            "english": "I hope it rains"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Subjunctives",
+        "content": "Common irregular verbs:\n                              \n   ✏️ Exercise: Match subjunctive forms:",
+        "examples": [
+          {
+            "spanish": "ser: sea, seas, sea, seamos, sean",
+            "english": "to be"
+          },
+          {
+            "spanish": "estar: esté, estés, esté, estemos, estén",
+            "english": "to be"
+          },
+          {
+            "spanish": "ir: vaya, vayas, vaya, vayamos, vayan",
+            "english": "to go"
+          },
+          {
+            "spanish": "haber: haya",
+            "english": "there is (subjunctive)"
+          },
+          {
+            "spanish": "saber: sepa, sepas, sepa, sepamos, sepan",
+            "english": "to know"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Subjunctive Triggers",
+    "screens": [
+      {
+        "category": "Wishes & Desires",
+        "words": [
+          {
+            "spanish": "querer que",
+            "english": "to want",
+            "example": "that"
+          },
+          {
+            "spanish": "desear que",
+            "english": "to wish",
+            "example": "that"
+          },
+          {
+            "spanish": "esperar que",
+            "english": "to hope",
+            "example": "that"
+          },
+          {
+            "spanish": "preferir que",
+            "english": "to prefer",
+            "example": "that"
+          },
+          {
+            "spanish": "necesitar que",
+            "english": "to need",
+            "example": "that"
+          }
+        ]
+      },
+      {
+        "category": "Impersonal Expressions",
+        "words": [
+          {
+            "spanish": "es importante que",
+            "english": "it's important that"
+          },
+          {
+            "spanish": "es necesario que",
+            "english": "it's necessary that"
+          },
+          {
+            "spanish": "es mejor que",
+            "english": "it's better that"
+          },
+          {
+            "spanish": "es posible que",
+            "english": "it's possible that"
+          },
+          {
+            "spanish": "ojalá (que)",
+            "english": "I hope that"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listen & Repeat",
+    "screens": [
+      {
+        "instruction": "Listen and repeat these phrases",
+        "transcript": "W - Wishes/Wants E - Emotions -AR verbs: -e, -es, -e, -emos, -en"
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Practice",
+    "screens": [
+      {
+        "title": "Reading: Introduction to Subjunctive",
+        "passage": "Esta es una lectura de práctica para el día 22. Estudia el vocabulario y la gramática de hoy.",
+        "wordCount": 18
+      }
+    ]
+  },
+  "cultural": {
+    "title": "Cultural Note",
+    "content": "Cultural context for Day 22. Spanish is spoken in 21 countries with rich regional variations."
+  },
+  "falseFriends": {
+    "title": "False Friends Alert!",
+    "words": [
+      {
+        "spanish": "carpeta",
+        "means": "folder",
+        "notMean": "carpet (= alfombra)"
+      },
+      {
+        "spanish": "soportar",
+        "means": "to tolerate",
+        "notMean": "to support (= apoyar)"
+      },
+      {
+        "spanish": "constipado",
+        "means": "having a cold",
+        "notMean": "constipated (= estreñido)"
+      }
+    ]
+  },
+  "multimedia": {
+    "title": "Practice Resources",
+    "items": [
+      {
+        "name": "Dreaming Spanish",
+        "url": "youtube.com/dreamingspanish",
+        "level": "All",
+        "description": "Comprehensible input"
+      },
+      {
+        "name": "SpanishPod101",
+        "url": "youtube.com/spanishpod101",
+        "level": "A1-B1",
+        "description": "Structured lessons"
+      },
+      {
+        "name": "Coffee Break Spanish",
+        "level": "A1-B2",
+        "description": "Scottish teacher"
+      },
+      {
+        "name": "Anki",
+        "description": "Spaced repetition flashcards"
+      },
+      {
+        "name": "HelloTalk",
+        "description": "Chat with natives"
+      }
+    ]
+  },
+  "processabilityTheory": {
+    "stage": 5,
+    "stageName": "Subordinate Clause",
+    "description": "Stage 5: Subordinate Clause"
+  },
+  "noticingEnhancements": {
+    "colorScheme": "tense",
+    "colorCodes": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "callouts": [
+      {
+        "type": "pre_pattern",
+        "text": "👀 The conditional is used for polite requests and hypotheticals"
+      },
+      {
+        "type": "rule",
+        "text": "📐 The pattern: Add -ía, -ías, -ía, -íamos, -íais, -ían to infinitive"
+      },
+      {
+        "type": "comparison",
+        "text": "🔍 Notice: 'Quiero' (I want) vs 'Querría' (I would like) - more polite!"
+      }
+    ],
+    "inputFlooding": [
+      "Me gustaría una habitación",
+      "¿Podría ver el menú?",
+      "Querría reservar",
+      "¿Sería posible...?",
+      "¿Tendría una mesa disponible?"
+    ],
+    "morphemeDisplay": {
+      "verb": "hablar (conditional)",
+      "stem": "hablar-",
+      "endings": [
+        "ía",
+        "ías",
+        "ía",
+        "íamos",
+        "íais",
+        "ían"
+      ]
+    }
+  },
+  "shadowingMode": {
+    "enabled": true,
+    "tier": "day_21_25",
+    "config": {
+      "maxWords": 12,
+      "speed": 1.0,
+      "primaryFocus": "fluency"
+    },
+    "phrases": [
+      {
+        "spanish": "Me gustaría reservar una habitación",
+        "focus": "rhythm"
+      },
+      {
+        "spanish": "¿Tendría algo con vista al mar?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "¿A qué hora es el desayuno?",
+        "focus": "intonation"
+      },
+      {
+        "spanish": "¿Podría llamar un taxi, por favor?",
+        "focus": "stress"
+      },
+      {
+        "spanish": "La habitación está muy bien, gracias",
+        "focus": "rhythm"
+      }
+    ],
+    "instructions": {
+      "intro": "Listen to each phrase, then repeat it immediately after.",
+      "focus": "Focus on matching the fluency of the speaker.",
+      "tip": "Don't worry about perfect pronunciation - focus on the rhythm and flow!"
+    }
+  },
+  "colorSchemes": {
+    "verb_endings": {
+      "yo": "#F44336",
+      "tú": "#2196F3",
+      "él_ella_usted": "#4CAF50",
+      "nosotros": "#9C27B0",
+      "vosotros": "#FF5722",
+      "ellos_ustedes": "#FF9800"
+    },
+    "gender": {
+      "masculine": "#2196F3",
+      "feminine": "#E91E63"
+    },
+    "tense": {
+      "present": "#4CAF50",
+      "preterite": "#F44336",
+      "imperfect": "#FF9800",
+      "future": "#2196F3",
+      "conditional": "#9C27B0",
+      "subjunctive": "#E91E63"
+    },
+    "sentence_structure": {
+      "subject": "#E3F2FD",
+      "verb": "#E8F5E9",
+      "object": "#FFF3E0",
+      "complement": "#F3E5F5"
+    }
+  },
+  "enhancementMeta": {
+    "version": "2.0",
+    "enhanced": true,
+    "enhancedAt": "2025-12-11T14:02:58.307942",
+    "frameworks": [
+      "ProcessabilityTheory",
+      "NoticingHypothesis",
+      "ShadowingMode"
+    ]
+  }
+}

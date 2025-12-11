@@ -1,0 +1,149 @@
+{
+  "day": 21,
+  "title": "Week 3 Review",
+  "subtitle": "Practical skills consolidated",
+  "objectives": [
+    "Review past tense",
+    "Practice shopping and directions",
+    "Review health vocabulary",
+    "Build real-world confidence"
+  ],
+  "grammar": {
+    "title": "Week 3 Summary",
+    "estimatedMinutes": 15,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "Past Tense Review",
+        "content": "Preterite for completed actions:",
+        "examples": [
+          {
+            "spanish": "-AR: -é, -aste, -ó, -amos, -aron",
+            "english": "hablé, hablaste, habló..."
+          },
+          {
+            "spanish": "-ER/-IR: -í, -iste, -ió, -imos, -ieron",
+            "english": "comí, comiste, comió..."
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "Irregular Preterite",
+        "content": "Key forms:",
+        "examples": [
+          {
+            "spanish": "fui, fuiste, fue",
+            "english": "IR/SER"
+          },
+          {
+            "spanish": "hice, hiciste, hizo",
+            "english": "HACER"
+          },
+          {
+            "spanish": "tuve, tuviste, tuvo",
+            "english": "TENER"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "Ayer yo ___ al cine.",
+        "options": [
+          "voy",
+          "fui",
+          "iba",
+          "iré"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "lesson",
+        "heading": "B1 Enrichment: Subjunctive review in real contexts",
+        "content": "As you advance, notice how the subjunctive appears in this context:",
+        "examples": [
+          {
+            "spanish": "Quiero que repases todo.",
+            "english": "(You'll master this soon!)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Week 3 Review",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Key Phrases",
+        "words": [
+          {
+            "spanish": "¿Cuánto cuesta?",
+            "english": "How much?"
+          },
+          {
+            "spanish": "¿Dónde está...?",
+            "english": "Where is...?"
+          },
+          {
+            "spanish": "Me duele...",
+            "english": "My... hurts"
+          },
+          {
+            "spanish": "Quisiera...",
+            "english": "I would like..."
+          },
+          {
+            "spanish": "A la derecha/izquierda",
+            "english": "To the right/left"
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Review",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Ayer fui de compras y compré una camisa por treinta euros",
+        "options": [
+          "Went shopping today, bought pants",
+          "Went shopping yesterday, bought shirt for 30",
+          "Went shopping yesterday, bought shirt for 13",
+          "Went shopping last week, bought shirt"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading Review",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "Mi semana",
+        "passage": "Esta semana fue muy ocupada. El lunes fui al médico porque me dolía la cabeza. El martes trabajé todo el día. El miércoles fui de compras y compré ropa nueva. El jueves tomé el tren a otra ciudad para visitar a mi familia. El viernes volví a casa muy cansado. Este fin de semana voy a descansar.",
+        "translation": "This week was very busy. Monday I went to the doctor because my head hurt. Tuesday I worked all day. Wednesday I went shopping and bought new clothes. Thursday I took the train to another city to visit my family. Friday I returned home very tired. This weekend I'm going to rest.",
+        "wordCount": 65
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Por qué fue al médico?",
+        "options": [
+          "Le dolía el estómago",
+          "Le dolía la cabeza",
+          "Tenía fiebre",
+          "Estaba cansado"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}

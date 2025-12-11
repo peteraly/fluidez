@@ -1,0 +1,26 @@
+{
+  "day": 29,
+  "title": "Culture & Customs",
+  "subtitle": "Spanish-speaking world",
+  "objectives": ["Master cultural expressions", "Build practical vocabulary", "Practice real-world scenarios", "Increase fluency confidence"],
+  "grammar": {
+    "title": "Culture & Customs",
+    "estimatedMinutes": 15,
+    "screens": [
+      {"type": "lesson", "heading": "Day 29: Culture & Customs", "content": "Today we focus on cultural expressions. This is an essential skill for conversational Spanish that you'll use every day.", "tip": "Practice these patterns until they become automatic!"},
+      {"type": "lesson", "heading": "Key Concepts", "content": "Let's explore the main ideas for cultural expressions.", "examples": [{"spanish": "Example phrase in Spanish", "english": "English translation"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Practice question for cultural expressions:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": 0, "explanation": "This tests your understanding of cultural expressions."},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "Complete this sentence about cultural expressions:", "hint": "Think about the rules", "correctAnswers": ["respuesta"], "explanation": "This is how cultural expressions works."}
+    ]
+  },
+  "vocabulary": {
+    "title": "Day 29 Vocabulary",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "Culture & Customs Words", "words": [{"spanish": "palabra", "english": "word", "example": "Una frase de ejemplo."}]},
+      {"type": "exercise", "exerciseType": "matching", "instruction": "Match the pairs:", "pairs": [{"left": "Spanish", "right": "English"}]}
+    ]
+  },
+  "listening": {"title": "Listening Practice", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen and select:", "transcript": "Audio transcript", "options": ["Option 1", "Option 2", "Option 3", "Option 4"], "correctAnswer": 0}]},
+  "reading": {"title": "Reading Practice", "estimatedMinutes": 10, "screens": [{"type": "reading", "title": "Day 29 Reading", "passage": "Este es un texto de práctica para el día 29. El tema es cultural expressions. Practica leyendo este texto en voz alta para mejorar tu pronunciación.", "translation": "This is a practice text for day 29. The topic is cultural expressions. Practice reading this text aloud to improve your pronunciation.", "wordCount": 30}]}
+}

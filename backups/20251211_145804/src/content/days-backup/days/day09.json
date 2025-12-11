@@ -1,0 +1,21 @@
+{
+  "day": 9,
+  "title": "Irregular Preterite",
+  "subtitle": "Key irregular past tense verbs",
+  "objectives": ["Learn SER/IR preterite (same forms!)", "Master HACER, TENER, ESTAR preterite", "Use irregular verbs in past narratives"],
+  "grammar": {
+    "title": "Irregular Preterite Verbs",
+    "estimatedMinutes": 15,
+    "screens": [
+      {"type": "lesson", "heading": "SER and IR (Same Forms!)", "content": "SER and IR have identical preterite forms! Context tells you which:", "examples": [{"spanish": "yo fui", "english": "I was / I went"}, {"spanish": "tú fuiste", "english": "you were / you went"}, {"spanish": "él/ella fue", "english": "he was/went"}, {"spanish": "nosotros fuimos", "english": "we were / we went"}, {"spanish": "ellos fueron", "english": "they were / they went"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Ayer ___ al cine. (ir)", "options": ["voy", "fui", "fue", "iba"], "correctAnswer": 1, "explanation": "Ir in preterite: fui (I went)"},
+      {"type": "lesson", "heading": "HACER Preterite", "content": "HACER (to do/make) is irregular:", "examples": [{"spanish": "yo hice", "english": "I did/made"}, {"spanish": "tú hiciste", "english": "you did"}, {"spanish": "él/ella hizo", "english": "he/she did"}, {"spanish": "nosotros hicimos", "english": "we did"}, {"spanish": "ellos hicieron", "english": "they did"}], "tip": "Note: hizo (not hico) to keep the 's' sound!"},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "¿Qué ___ ayer? (hacer, tú)", "hint": "Past tense, tú form", "correctAnswers": ["hiciste"], "explanation": "Hacer → hiciste for tú in preterite"},
+      {"type": "lesson", "heading": "TENER & ESTAR Preterite", "content": "More essential irregular verbs:", "examples": [{"spanish": "tuve/tuviste/tuvo/tuvimos/tuvieron", "english": "had (TENER)"}, {"spanish": "estuve/estuviste/estuvo/estuvimos/estuvieron", "english": "was (ESTAR)"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "___ un problema ayer. (tener, yo)", "options": ["Tengo", "Tenía", "Tuve", "Tuvo"], "correctAnswer": 2, "explanation": "Tener preterite yo form: tuve"}
+    ]
+  },
+  "vocabulary": {"title": "Irregular Verb Review", "estimatedMinutes": 10, "screens": [{"type": "vocab", "category": "Irregular Preterite Forms", "words": [{"spanish": "fui", "english": "I went/was", "example": "Fui al cine."}, {"spanish": "fue", "english": "he/she went/was", "example": "Fue una fiesta increíble."}, {"spanish": "hice", "english": "I did/made", "example": "Hice la tarea."}, {"spanish": "hizo", "english": "he/she did", "example": "Ella hizo el desayuno."}, {"spanish": "tuve", "english": "I had", "example": "Tuve un problema."}, {"spanish": "estuve", "english": "I was", "example": "Estuve enfermo."}]}]},
+  "listening": {"title": "Listening Practice", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen:", "transcript": "Ayer fui al supermercado", "options": ["Ayer fui al supermercado", "Ayer voy al supermercado", "Ayer fue al supermercado", "Ayer fuimos al supermercado"], "correctAnswer": 0}]},
+  "reading": {"title": "Reading: El fin de semana", "estimatedMinutes": 10, "screens": [{"type": "reading", "title": "Un buen fin de semana", "passage": "El fin de semana pasado fue muy divertido. El sábado fui al cine con mis amigos. Vimos una película de acción. Después, fuimos a un restaurante y comimos pizza. El domingo estuve en casa. Hice la tarea y estudié para un examen. Por la tarde, mi hermano vino a visitarme. Tuvimos una conversación muy interesante.", "translation": "Last weekend was very fun. On Saturday I went to the movies with my friends. We saw an action movie. Then, we went to a restaurant and ate pizza. On Sunday I was at home. I did homework and studied for an exam. In the afternoon, my brother came to visit me. We had a very interesting conversation.", "wordCount": 72}]}
+}

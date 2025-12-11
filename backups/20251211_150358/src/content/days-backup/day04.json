@@ -1,0 +1,31 @@
+{
+  "day": 4,
+  "title": "Present Tense Regular Verbs",
+  "subtitle": "-AR, -ER, -IR conjugations",
+  "objectives": ["Conjugate -AR verbs", "Conjugate -ER verbs", "Conjugate -IR verbs", "Use verbs in sentences"],
+  "grammar": {
+    "title": "Regular Verb Conjugation",
+    "estimatedMinutes": 15,
+    "screens": [
+      {"type": "lesson", "heading": "Three Verb Types", "content": "Spanish verbs end in -AR, -ER, or -IR. Each type follows a pattern. Learn the pattern, conjugate any regular verb!", "tip": "Remove the ending, add the correct ending for each person."},
+      {"type": "lesson", "heading": "-AR Verbs (hablar)", "content": "The most common type. Remove -ar, add:", "examples": [{"spanish": "yo hablo", "english": "I speak"}, {"spanish": "tú hablas", "english": "you speak"}, {"spanish": "él/ella habla", "english": "he/she speaks"}, {"spanish": "nosotros hablamos", "english": "we speak"}, {"spanish": "ellos hablan", "english": "they speak"}]},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "Yo ___ español. (hablar)", "hint": "-o for yo", "correctAnswers": ["hablo"], "explanation": "Yo hablo = I speak"},
+      {"type": "lesson", "heading": "-ER Verbs (comer)", "content": "Remove -er, add:", "examples": [{"spanish": "yo como", "english": "I eat"}, {"spanish": "tú comes", "english": "you eat"}, {"spanish": "él/ella come", "english": "he/she eats"}, {"spanish": "nosotros comemos", "english": "we eat"}, {"spanish": "ellos comen", "english": "they eat"}]},
+      {"type": "exercise", "exerciseType": "fill_blank", "instruction": "Ella ___ pizza. (comer)", "hint": "-e for él/ella", "correctAnswers": ["come"], "explanation": "Ella come = She eats"},
+      {"type": "lesson", "heading": "-IR Verbs (vivir)", "content": "Remove -ir, add:", "examples": [{"spanish": "yo vivo", "english": "I live"}, {"spanish": "tú vives", "english": "you live"}, {"spanish": "él/ella vive", "english": "he/she lives"}, {"spanish": "nosotros vivimos", "english": "we live"}, {"spanish": "ellos viven", "english": "they live"}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "Nosotros ___ en Madrid. (vivir)", "options": ["vivo", "vives", "vivimos", "viven"], "correctAnswer": 2, "explanation": "Nosotros vivimos = We live"},
+      {"type": "exercise", "exerciseType": "matching", "instruction": "Match the conjugations:", "pairs": [{"left": "yo + hablar", "right": "hablo"}, {"left": "tú + comer", "right": "comes"}, {"left": "ella + vivir", "right": "vive"}, {"left": "nosotros + hablar", "right": "hablamos"}]}
+    ]
+  },
+  "vocabulary": {
+    "title": "Common Verbs",
+    "estimatedMinutes": 10,
+    "screens": [
+      {"type": "vocab", "category": "-AR Verbs", "words": [{"spanish": "hablar", "english": "to speak", "example": "Hablo español e inglés."}, {"spanish": "trabajar", "english": "to work", "example": "Trabajo en una oficina."}, {"spanish": "estudiar", "english": "to study", "example": "Estudio medicina."}, {"spanish": "comprar", "english": "to buy", "example": "Compro frutas."}, {"spanish": "escuchar", "english": "to listen", "example": "Escucho música."}, {"spanish": "llamar", "english": "to call", "example": "Llamo a mi madre."}, {"spanish": "necesitar", "english": "to need", "example": "Necesito ayuda."}]},
+      {"type": "vocab", "category": "-ER/-IR Verbs", "words": [{"spanish": "comer", "english": "to eat", "example": "Como a las dos."}, {"spanish": "beber", "english": "to drink", "example": "Bebo agua."}, {"spanish": "leer", "english": "to read", "example": "Leo libros."}, {"spanish": "aprender", "english": "to learn", "example": "Aprendo español."}, {"spanish": "vivir", "english": "to live", "example": "Vivo en Nueva York."}, {"spanish": "escribir", "english": "to write", "example": "Escribo emails."}, {"spanish": "abrir", "english": "to open", "example": "Abro la puerta."}]},
+      {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "What does 'trabajar' mean?", "options": ["to study", "to work", "to live", "to eat"], "correctAnswer": 1, "explanation": "trabajar = to work"}
+    ]
+  },
+  "listening": {"title": "Listening Practice", "estimatedMinutes": 8, "screens": [{"type": "listening", "instruction": "🔊 Listen:", "transcript": "Trabajo en un hospital", "options": ["I study at a hospital", "I work at a hospital", "I live at a hospital", "I eat at a hospital"], "correctAnswer": 1}, {"type": "listening", "instruction": "🔊 Listen:", "transcript": "Nosotros hablamos español", "options": ["We speak Spanish", "They speak Spanish", "I speak Spanish", "You speak Spanish"], "correctAnswer": 0}]},
+  "reading": {"title": "Reading: Daily Life", "estimatedMinutes": 8, "screens": [{"type": "reading", "title": "Un día normal", "passage": "Me llamo Pedro. Vivo en Barcelona con mi familia. Trabajo en una oficina y mi esposa trabaja en un hospital. Por la mañana, estudiamos inglés juntos. Después, yo como en la cafetería y ella come en el hospital. Por la noche, leemos libros o escuchamos música. Los fines de semana, compramos comida en el mercado.", "translation": "My name is Pedro. I live in Barcelona with my family. I work in an office and my wife works in a hospital. In the morning, we study English together. Then, I eat in the cafeteria and she eats at the hospital. At night, we read books or listen to music. On weekends, we buy food at the market.", "wordCount": 70}, {"type": "exercise", "exerciseType": "multiple_choice", "instruction": "¿Dónde trabaja la esposa de Pedro?", "options": ["En una oficina", "En un mercado", "En un hospital", "En una cafetería"], "correctAnswer": 2}]}
+}

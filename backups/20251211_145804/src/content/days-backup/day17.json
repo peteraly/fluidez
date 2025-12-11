@@ -1,0 +1,216 @@
+{
+  "day": 17,
+  "title": "Shopping & Money",
+  "subtitle": "Making purchases",
+  "objectives": [
+    "Navigate shopping situations",
+    "Discuss prices and money",
+    "Use demonstratives (this, that)",
+    "Bargain and make purchases"
+  ],
+  "grammar": {
+    "title": "Demonstratives",
+    "estimatedMinutes": 12,
+    "screens": [
+      {
+        "type": "lesson",
+        "heading": "This, That, Those",
+        "content": "Point to things:",
+        "examples": [
+          {
+            "spanish": "este/esta",
+            "english": "this (near you)"
+          },
+          {
+            "spanish": "ese/esa",
+            "english": "that (near listener)"
+          },
+          {
+            "spanish": "aquel/aquella",
+            "english": "that (far from both)"
+          },
+          {
+            "spanish": "estos/estas",
+            "english": "these"
+          },
+          {
+            "spanish": "esos/esas",
+            "english": "those"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "___ camisa es bonita. (This)",
+        "options": [
+          "Este",
+          "Esta",
+          "Esto",
+          "Eso"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta (feminine) for camisa"
+      },
+      {
+        "type": "lesson",
+        "heading": "Shopping Phrases",
+        "content": "Essential expressions:",
+        "examples": [
+          {
+            "spanish": "¿Cuánto cuesta?",
+            "english": "How much does it cost?"
+          },
+          {
+            "spanish": "¿Tiene talla...?",
+            "english": "Do you have size...?"
+          },
+          {
+            "spanish": "¿Puedo probármelo?",
+            "english": "Can I try it on?"
+          },
+          {
+            "spanish": "Me lo llevo",
+            "english": "I'll take it"
+          },
+          {
+            "spanish": "Es muy caro",
+            "english": "It's very expensive"
+          }
+        ]
+      },
+      {
+        "type": "lesson",
+        "heading": "B1 Enrichment: Subjunctive in shopping (polite requests)",
+        "content": "As you advance, notice how the subjunctive appears in this context:",
+        "examples": [
+          {
+            "spanish": "¿Tiene algo que sea más barato?",
+            "english": "(You'll master this soon!)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Shopping Words",
+    "estimatedMinutes": 10,
+    "screens": [
+      {
+        "type": "vocab",
+        "category": "Shopping",
+        "words": [
+          {
+            "spanish": "la tienda",
+            "english": "store",
+            "example": "Voy a la tienda."
+          },
+          {
+            "spanish": "el precio",
+            "english": "price",
+            "example": "¿Cuál es el precio?"
+          },
+          {
+            "spanish": "el descuento",
+            "english": "discount",
+            "example": "¿Hay descuento?"
+          },
+          {
+            "spanish": "la oferta",
+            "english": "sale",
+            "example": "Está en oferta."
+          },
+          {
+            "spanish": "la talla",
+            "english": "size",
+            "example": "¿Qué talla es?"
+          },
+          {
+            "spanish": "el probador",
+            "english": "fitting room",
+            "example": "¿Dónde está el probador?"
+          },
+          {
+            "spanish": "caro/a",
+            "english": "expensive",
+            "example": "Es muy caro."
+          },
+          {
+            "spanish": "barato/a",
+            "english": "cheap",
+            "example": "Es barato."
+          }
+        ]
+      },
+      {
+        "type": "vocab",
+        "category": "Payment",
+        "words": [
+          {
+            "spanish": "pagar",
+            "english": "to pay",
+            "example": "¿Dónde pago?"
+          },
+          {
+            "spanish": "el efectivo",
+            "english": "cash",
+            "example": "Pago en efectivo."
+          },
+          {
+            "spanish": "la tarjeta",
+            "english": "card",
+            "example": "¿Aceptan tarjeta?"
+          },
+          {
+            "spanish": "el cambio",
+            "english": "change",
+            "example": "Aquí está su cambio."
+          }
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "title": "Listening Practice",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "listening",
+        "instruction": "🔊 Listen:",
+        "transcript": "Esta camisa cuesta treinta euros. ¿Aceptan tarjeta?",
+        "options": [
+          "Shirt costs 30, asking about cash",
+          "Shirt costs 30, asking about card",
+          "Pants cost 30, asking about card",
+          "Shirt costs 13, asking about cash"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading: Shopping Trip",
+    "estimatedMinutes": 8,
+    "screens": [
+      {
+        "type": "reading",
+        "title": "De compras",
+        "passage": "Hoy fui de compras al centro comercial. Vi una camisa muy bonita. Le pregunté a la vendedora: '¿Cuánto cuesta esta camisa?' Ella dijo: 'Cuesta cincuenta euros, pero hoy está en oferta por treinta.' '¡Perfecto! ¿Puedo probármela?' Fui al probador. Me quedó bien. 'Me la llevo. ¿Aceptan tarjeta?' 'Sí, por supuesto.' Pagué y salí muy contento.",
+        "translation": "Today I went shopping at the mall. I saw a very nice shirt. I asked the saleswoman: 'How much does this shirt cost?' She said: 'It costs 50 euros, but today it's on sale for 30.' 'Perfect! Can I try it on?' I went to the fitting room. It fit me well. 'I'll take it. Do you accept cards?' 'Yes, of course.' I paid and left very happy.",
+        "wordCount": 75
+      },
+      {
+        "type": "exercise",
+        "exerciseType": "multiple_choice",
+        "instruction": "¿Cuánto pagó por la camisa?",
+        "options": [
+          "20 euros",
+          "30 euros",
+          "50 euros",
+          "80 euros"
+        ],
+        "correctAnswer": 1
+      }
+    ]
+  }
+}
