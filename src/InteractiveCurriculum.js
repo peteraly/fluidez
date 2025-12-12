@@ -29,19 +29,36 @@ const CURRICULUM = {
       {
         "heading": "Welcome to Spanish!",
         "content": "¡Bienvenidos! Today you'll master the sounds of Spanish. The great news? Spanish is phonetic — once you learn the sounds, you can pronounce any word c",
-        "examples": [],
+        "examples": [
+          {"es": "¡Hola!", "en": "Hello!"},
+          {"es": "¡Buenos días!", "en": "Good morning!"},
+          {"es": "¿Cómo estás?", "en": "How are you?"},
+          {"es": "Muy bien, gracias.", "en": "Very well, thank you."}
+        ],
         "tip": "Spanish has only 5 vowel sounds (English has 14+). Master these first!"
       },
       {
         "heading": "The 5 Vowels",
         "content": "Each vowel has ONE sound that never changes:",
-        "examples": [],
+        "examples": [
+          {"es": "A - padre, casa, hablar", "en": "Like 'ah' in father - always the same"},
+          {"es": "E - leche, verde, comer", "en": "Like 'e' in bet - short and crisp"},
+          {"es": "I - sí, libro, vivir", "en": "Like 'ee' in see - always long"},
+          {"es": "O - hola, como, ocho", "en": "Like 'o' in go - but shorter"},
+          {"es": "U - uno, tú, azul", "en": "Like 'oo' in moon - rounded lips"}
+        ],
         "tip": null
       },
       {
         "heading": "Consonants That Differ",
         "content": "Most consonants are like English, but these are different:",
-        "examples": [],
+        "examples": [
+          {"es": "H is SILENT: hola → 'ola'", "en": "Never pronounced in Spanish"},
+          {"es": "J sounds like H: julio, joven", "en": "Like English 'h' in hello"},
+          {"es": "LL sounds like Y: llamar, calle", "en": "Like 'y' in yes"},
+          {"es": "Ñ has 'ny' sound: España, niño", "en": "Like 'ny' in canyon"},
+          {"es": "RR is trilled: perro, carro", "en": "Roll your tongue!"}
+        ],
         "tip": null
       },
       {
@@ -6649,11 +6666,10 @@ export default function InteractiveCurriculum({ day = 1, onBack, onComplete }) {
             <p style={{color: theme.textLight, marginBottom: 16}}>Tap each phrase to hear it, then repeat aloud:</p>
             
             <div style={{background: '#fff', borderRadius: 12, padding: 16}}>
-              {dayData.grammar?.slice(0, 3).flatMap((g, gi) => 
-                g.examples?.slice(0, 4).map((ex, i) => (
+              {dayData.listening?.phrases?.map((phrase, i) => (
                   <button 
-                    key={`g${gi}-${i}`}
-                    onClick={() => speak(ex.es)}
+                    key={`listen-${i}`}
+                    onClick={() => speak(phrase)}
                     style={{
                       display: 'flex', alignItems: 'center', gap: 12, width: '100%',
                       padding: '14px', margin: '6px 0', background: '#f0f7ff', border: 'none',
@@ -6661,15 +6677,15 @@ export default function InteractiveCurriculum({ day = 1, onBack, onComplete }) {
                     }}
                   >
                     <span style={{fontSize: 20}}>🔊</span>
-                    <span style={{fontSize: 15}}>{ex.es}</span>
+                    <span style={{fontSize: 15}}>{phrase}</span>
                   </button>
-                ))
-              )}
+                ))}
               
-              {dayData.vocabulary?.[0]?.words?.slice(0, 6).map((w, i) => (
+              {/* Fallback if no listening phrases */}
+              {!dayData.listening?.phrases && dayData.vocabulary?.[0]?.words?.slice(0, 6).map((w, i) => (
                 <button 
                   key={`v${i}`}
-                  onClick={() => speak(w.es)}
+                  onClick={() => speak(w.spanish || w.es)}
                   style={{
                     display: 'flex', alignItems: 'center', gap: 12, width: '100%',
                     padding: '14px', margin: '6px 0', background: '#f5f0ff', border: 'none',
